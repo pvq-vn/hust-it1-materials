@@ -1,0 +1,29 @@
+<p>Id: <em>TSP_precedence_constraints</em></p><p><strong>Problem: TSP with precedence constraints</strong></p><p>Created at: <em>2024-11-19 08:49:09.612</em> by <em>son.nguyenvan@hust.edu.vn</em></p><p>Public: <em>false</em></p><p>Time limit: <em>0</em> s</p><p>Memory limit: <em>256</em> MB</p><p>Level: <em>hard</em></p><p>Tags: <em>[GREEDY, VEHICLE_ROUTING]</em></p><p>Score evaluation type: <em>CUSTOM_EVALUATION</em></p><br/><div style = "padding: 12px; border: 2px gray solid"><p><strong><em>Problem Description</em></strong></p><p>Given n points 1, 2, …, n in which d(i,j) is the distance from point i to point j, We need to create a tour starting from one point, then visiting all the remaining points and terminating at the starting point.  Let P be the set containing precedence pairs of points (x_i, y_i) such that point x_i must be visited before point y_i in the tour (x_i, y_i in {1, ..., n}).</p>
+<p>Find the shortest closed tour so that the total travel distance is minimal.</p>
+<p>Input:</p>
+<ul>
+<li>Line 1: n, the number of points</li>
+<li>Line i+1 (i = 1, ..., n): the distance values from point i to point j (j = 1, ..., n)</li>
+<li>Line n+2: |P|, the number of precedence pairs</li>
+<li>Line n+2+i (i = 1, ..., |P|): the pair (x_i, y_i)</li>
+</ul>
+<p>Output:</p>
+<ul>
+<li>Line 1: the number of points in the best solution</li>
+<li>Line 2: the sequence of points in the best solution</li>
+</ul>
+<p>Example:</p>
+<p>Input:</p>
+<p>5</p>
+<p>0 1 2 3 4</p>
+<p>3 0 2 4 5</p>
+<p>1 3 0 4 2</p>
+<p>4 2 1 0 3</p>
+<p>2 3 4 1 0</p>
+<p>2</p>
+<p>2 4</p>
+<p>2 1</p>
+<p>Output:</p>
+<p>5</p>
+<p>2 3 1 5 4</p>
+</div>

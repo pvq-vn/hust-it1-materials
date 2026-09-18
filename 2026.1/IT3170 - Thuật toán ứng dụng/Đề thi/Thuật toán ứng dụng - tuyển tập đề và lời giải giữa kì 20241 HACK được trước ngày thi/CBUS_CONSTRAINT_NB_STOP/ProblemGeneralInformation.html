@@ -1,0 +1,34 @@
+<p>Id: <em>CBUS_CONSTRAINT_NB_STOP</em></p><p><strong>Problem: Capacitated Bus with Constraint on number of stops between pickup and drop off points</strong></p><p>Created at: <em>2024-12-12 03:38:25.608</em> by <em>admin</em></p><p>Public: <em>false</em></p><p>Time limit: <em>0</em> s</p><p>Memory limit: <em>256</em> MB</p><p>Level: <em>medium</em></p><p>Tags: <em>[Back Tracking, BRANCH_AND_BOUND, EXAM]</em></p><p>Score evaluation type: <em>NORMAL_EVALUATION</em></p><br/><div style = "padding: 12px; border: 2px gray solid"><p><strong><em>Problem Description</em></strong></p><p>There are n passengers 1, 2, …, n. The passenger i want to travel from point i to point i + n (i = 1,2,…,n).  The number of stops (intermediate points) on the route from the pickup point i to the drop-off point i+n must be less than or equal to a constant s[i] (i = 1, ..., n). There is a bus located at point 0 and has k places for transporting the passengers (it means at any time, there are at most k passengers on the bus). You are given the distance matrix c in which c(i,j) is the traveling distance from point i to point j (i, j = 0,1,…, 2n).&nbsp;</p>
+<p>Compute the shortest route for the bus, serving n passengers and coming back to point 0.&nbsp;</p>
+<p></p>
+<p><strong>Input</strong></p>
+<ul>
+<li>&nbsp;Line 1 contains n and k (1≤n≤11,1≤k≤10)</li>
+<li>&nbsp;Line i+1 (i=1,2,…,2n+1) contains the (i−1)th line of the matrix c (rows and columns are indexed from 0,1,2,..,2n).</li>
+<li>&nbsp;Line 2n+2: contains n integers s[1], s[2], . . ., s[n] (0 &lt;= s[i] &lt;= 10)</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>Unique line contains the length of the shortest route.</li>
+</ul>
+<p><strong>Example</strong></p>
+<p><strong>Input</strong></p>
+<p>3 2</p>
+<p>0 8 5 1 10 5 9</p>
+<p>9 0 5 6 6 2 8</p>
+<p>2 2 0 3 8 7 2</p>
+<p>5 3 4 0 3 2 7</p>
+<p>9 6 8 7 0 9 10</p>
+<p>3 8 10 6 5 0 2</p>
+<p>3 4 4 5 2 2 0</p>
+<p>1 2 1</p>
+<p></p>
+<p><strong>Output</strong></p>
+<p>27</p>
+<p></p>
+<p><strong>Explanation</strong>: the optimal route is: 0 3 2 6 1 5 4</p>
+<p>Number of stops (intermediate points on the route between 1 and 4 is 1)</p>
+<p>Number of stops (intermediate points on the route between 2 and 5 is 2)</p>
+<p>Number of stops (intermediate points on the route between 3 and 6 is 1)</p>
+<p></p>
+</div>

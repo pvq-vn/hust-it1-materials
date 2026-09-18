@@ -1,0 +1,795 @@
+[
+  {
+    "id": 1,
+    "topic": "Chương 1: Các hệ thống xử lý tệp truyền thống",
+    "type": "multiple",
+    "question": "Những nhược điểm nào sau đây thuộc về hệ thống xử lý tệp truyền thống? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Dư thừa và mâu thuẫn dữ liệu" },
+      { "id": "B", "text": "Tính độc lập dữ liệu cao" },
+      { "id": "C", "text": "Khó khăn trong việc truy xuất dữ liệu" },
+      { "id": "D", "text": "Dữ liệu bị cô lập" }
+    ],
+    "correct": ["A", "C", "D"],
+    "explanation": "Hệ thống tệp truyền thống có nhược điểm: dư thừa, mâu thuẫn, khó truy xuất, dữ liệu bị cô lập, dị thường truy xuất đồng thời, vấn đề an toàn bảo mật. Nó bị phụ thuộc dữ liệu chứ không có tính độc lập cao.",
+    "slideRef": "Chương 1, Slide 6-9"
+  },
+  {
+    "id": 2,
+    "topic": "Chương 1: Khái niệm CSDL",
+    "type": "single",
+    "question": "Cơ sở dữ liệu (Database) được định nghĩa chính xác nhất là gì?",
+    "options": [
+      { "id": "A", "text": "Một phần mềm dùng để xử lý văn bản và bảng tính." },
+      { "id": "B", "text": "Một tập hợp các dữ liệu có liên quan với nhau, mang một ý nghĩa nhất định và được lưu trữ trên máy tính." },
+      { "id": "C", "text": "Một ngôn ngữ lập trình dùng để viết các ứng dụng quản lý." },
+      { "id": "D", "text": "Một thiết bị phần cứng dùng để lưu trữ thông tin." }
+    ],
+    "correct": "B",
+    "explanation": "Theo định nghĩa, CSDL là một tập hợp các dữ liệu có liên quan logic với nhau, chứa đựng những ý nghĩa nhất định (hỗ trợ cho một ứng dụng của doanh nghiệp).",
+    "slideRef": "Chương 1, Slide 12"
+  },
+  {
+    "id": 3,
+    "topic": "Chương 1: Khái niệm CSDL",
+    "type": "single",
+    "question": "Đặc trưng nào của hệ CSDL cho phép nó chứa không chỉ bản thân dữ liệu mà còn cả mô tả đầy đủ về cấu trúc và các ràng buộc của dữ liệu?",
+    "options": [
+      { "id": "A", "text": "Tính độc lập dữ liệu" },
+      { "id": "B", "text": "Tính chia sẻ dữ liệu" },
+      { "id": "C", "text": "Bản chất tự mô tả của CSDL (Metadata)" },
+      { "id": "D", "text": "Sự hỗ trợ nhiều khung nhìn" }
+    ],
+    "correct": "C",
+    "explanation": "Hệ CSDL không chỉ chứa CSDL mà còn chứa định nghĩa về CSDL. Thông tin mô tả này được gọi là Metadata, lưu trong Catalog.",
+    "slideRef": "Chương 1, Slide 15"
+  },
+  {
+    "id": 4,
+    "topic": "Chương 1: Các đối tượng người dùng",
+    "type": "fill",
+    "question": "Cá nhân/nhóm người chịu trách nhiệm chính về điều khiển các truy cập vào CSDL, cấp phát tài nguyên và theo dõi hoạt động của hệ CSDL được gọi là gì? (Viết tắt bằng 3 chữ cái tiếng Anh)",
+    "correct": ["dba"],
+    "explanation": "DBA (Database Administrator) - Người quản trị CSDL là người chịu trách nhiệm toàn bộ về hệ thống CSDL, bao gồm cấp quyền truy cập, bảo mật, sao lưu.",
+    "slideRef": "Chương 1, Slide 17"
+  },
+  {
+    "id": 5,
+    "topic": "Chương 1: Các đối tượng người dùng",
+    "type": "single",
+    "question": "Người thiết kế cơ sở dữ liệu (Database Designer) có nhiệm vụ chủ yếu là gì?",
+    "options": [
+      { "id": "A", "text": "Lập trình các chức năng ứng dụng" },
+      { "id": "B", "text": "Xác định các dữ liệu cần lưu trữ, thiết kế cấu trúc lưu trữ và các ràng buộc trên dữ liệu" },
+      { "id": "C", "text": "Cấp phát tài khoản cho người dùng cuối" },
+      { "id": "D", "text": "Mua sắm thiết bị phần cứng cho hệ thống máy chủ" }
+    ],
+    "correct": "B",
+    "explanation": "Người thiết kế CSDL chịu trách nhiệm xác định dữ liệu cần lưu trữ, cấu trúc và ràng buộc; thiết kế các khung nhìn. Họ cần trao đổi chặt chẽ với người dùng để hiểu rõ yêu cầu.",
+    "slideRef": "Chương 1, Slide 18"
+  },
+  {
+    "id": 6,
+    "topic": "Chương 1: Các mức trừu tượng",
+    "type": "multiple",
+    "question": "Kiến trúc của một hệ CSDL thường được chia thành mấy mức trừu tượng? Đó là những mức nào?",
+    "options": [
+      { "id": "A", "text": "Mức vật lý (Physical level)" },
+      { "id": "B", "text": "Mức khái niệm / Mức logic (Logical level)" },
+      { "id": "C", "text": "Mức khung nhìn / Mức ngoài (View level)" },
+      { "id": "D", "text": "Mức phân tán (Distributed level)" }
+    ],
+    "correct": ["A", "B", "C"],
+    "explanation": "Kiến trúc hệ CSDL gồm 3 mức: Mức vật lý (dữ liệu được lưu trữ như thế nào), Mức logic (dữ liệu gì được lưu trữ và có mối quan hệ gì), Mức khung nhìn (mô tả một phần của CSDL cho các nhóm người dùng).",
+    "slideRef": "Chương 1, Slide 24"
+  },
+  {
+    "id": 7,
+    "topic": "Chương 1: Các mức trừu tượng",
+    "type": "single",
+    "question": "Khả năng thay đổi lược đồ vật lý mà không làm thay đổi lược đồ logic hay các chương trình ứng dụng được gọi là gì?",
+    "options": [
+      { "id": "A", "text": "Độc lập dữ liệu mức logic" },
+      { "id": "B", "text": "Độc lập dữ liệu mức vật lý" },
+      { "id": "C", "text": "Tính an toàn dữ liệu" },
+      { "id": "D", "text": "Sự phân mảnh dữ liệu" }
+    ],
+    "correct": "B",
+    "explanation": "Độc lập dữ liệu mức vật lý là khả năng thay đổi lược đồ vật lý (cách lưu trữ, chỉ mục...) mà không ảnh hưởng tới lược đồ logic hoặc ứng dụng.",
+    "slideRef": "Chương 1, Slide 28"
+  },
+  {
+    "id": 8,
+    "topic": "Chương 1: Lược đồ và Thể hiện",
+    "type": "fill",
+    "question": "Nội dung thực tế chứa trong CSDL tại một thời điểm cụ thể được gọi là _____ của CSDL (điền 2 từ tiếng Việt).",
+    "correct": ["thể hiện"],
+    "explanation": "Lược đồ (Schema) là cấu trúc của CSDL (ít thay đổi), còn Thể hiện (Instance) là dữ liệu thực tế tại một thời điểm cụ thể (thay đổi thường xuyên).",
+    "slideRef": "Chương 1, Slide 26"
+  },
+  {
+    "id": 9,
+    "topic": "Chương 1: Ngôn ngữ CSDL",
+    "type": "single",
+    "question": "Trong Hệ quản trị CSDL, DDL (Data Definition Language) có chức năng gì?",
+    "options": [
+      { "id": "A", "text": "Truy vấn, trích xuất dữ liệu" },
+      { "id": "B", "text": "Định nghĩa lược đồ cấu trúc, các kiểu dữ liệu và các ràng buộc trên dữ liệu" },
+      { "id": "C", "text": "Thao tác thêm, sửa, xóa các bản ghi dữ liệu" },
+      { "id": "D", "text": "Cấp quyền truy cập cho người dùng" }
+    ],
+    "correct": "B",
+    "explanation": "DDL dùng để định nghĩa cấu trúc của CSDL (tạo bảng, khóa, chỉ mục...). Kết quả của các lệnh DDL được lưu trong từ điển dữ liệu (data dictionary).",
+    "slideRef": "Chương 1, Slide 29"
+  },
+  {
+    "id": 10,
+    "topic": "Chương 1: Ngôn ngữ CSDL",
+    "type": "fill",
+    "question": "Ngôn ngữ thao tác dữ liệu, cho phép người dùng truy xuất hoặc thay đổi dữ liệu (insert, update, delete, select) có tên viết tắt tiếng Anh là gì?",
+    "correct": ["dml"],
+    "explanation": "DML (Data Manipulation Language) là ngôn ngữ thao tác dữ liệu.",
+    "slideRef": "Chương 1, Slide 30"
+  },
+  {
+    "id": 11,
+    "topic": "Chương 1: Kiến trúc CSDL",
+    "type": "multiple",
+    "question": "Hệ CSDL phân tán có những tính chất đặc trưng nào sau đây? (Chọn các đáp án đúng)",
+    "options": [
+      { "id": "A", "text": "Tính chất quan hệ logic (dữ liệu có liên quan với nhau về mặt logic)" },
+      { "id": "B", "text": "Toàn bộ dữ liệu được lưu trữ trên một máy tính duy nhất" },
+      { "id": "C", "text": "Tính chất phân tán (dữ liệu được phân bố trên nhiều trạm của mạng máy tính)" },
+      { "id": "D", "text": "Không có sự hỗ trợ của Hệ quản trị CSDL" }
+    ],
+    "correct": ["A", "C"],
+    "explanation": "CSDL phân tán là tập hợp dữ liệu có liên quan logic (thuộc về cùng một hệ thống) được phân tán vật lý trên các trạm của một mạng máy tính.",
+    "slideRef": "Chương 1, Slide 33"
+  },
+  {
+    "id": 12,
+    "topic": "Chương 1: Thành phần HQT CSDL",
+    "type": "single",
+    "question": "Trong kiến trúc của Hệ quản trị CSDL, thành phần nào biên dịch các câu lệnh DML, tối ưu hóa câu truy vấn và thực thi chúng?",
+    "options": [
+      { "id": "A", "text": "Bộ quản lý lưu trữ (Storage Manager)" },
+      { "id": "B", "text": "Bộ xử lý câu hỏi (Query Processor)" },
+      { "id": "C", "text": "Hệ điều hành" },
+      { "id": "D", "text": "Trình quản lý giao dịch" }
+    ],
+    "correct": "B",
+    "explanation": "Bộ xử lý câu hỏi (Query Processor) bao gồm DML compiler, query optimizer và execution engine, có nhiệm vụ biên dịch và thực thi các câu lệnh truy vấn dữ liệu.",
+    "slideRef": "Chương 1, Slide 31"
+  },
+  {
+    "id": 13,
+    "topic": "Chương 2: Lịch sử Mô hình dữ liệu",
+    "type": "fill",
+    "question": "Năm 1970, E. F. Codd đã đề xuất mô hình dữ liệu gì? (Điền 2 từ tiếng Việt)",
+    "correct": ["quan hệ"],
+    "explanation": "Năm 1970, E.F. Codd (làm việc tại IBM) đã đưa ra bài báo nền tảng giới thiệu Mô hình quan hệ (Relational Model).",
+    "slideRef": "Chương 2, Slide 5"
+  },
+  {
+    "id": 14,
+    "topic": "Chương 2: Tổng quan Mô hình dữ liệu",
+    "type": "single",
+    "question": "Theo E. F. Codd (1980), một mô hình dữ liệu KHÔNG bao gồm thành phần nào dưới đây?",
+    "options": [
+      { "id": "A", "text": "Một tập hợp các cấu trúc biểu diễn dữ liệu" },
+      { "id": "B", "text": "Một tập hợp các phép toán để thao tác trên cấu trúc" },
+      { "id": "C", "text": "Ngôn ngữ lập trình Front-end để hiển thị dữ liệu" },
+      { "id": "D", "text": "Một tập hợp các ràng buộc về dữ liệu" }
+    ],
+    "correct": "C",
+    "explanation": "Mô hình dữ liệu theo Codd gồm 3 thành phần: Cấu trúc biểu diễn, Phép toán thao tác, và Các ràng buộc về dữ liệu. Ngôn ngữ Front-end không thuộc mô hình dữ liệu.",
+    "slideRef": "Chương 2, Slide 3"
+  },
+  {
+    "id": 15,
+    "topic": "Chương 2: Phân loại Mô hình dữ liệu",
+    "type": "multiple",
+    "question": "Những mô hình dữ liệu nào dưới đây tổ chức dữ liệu chủ yếu thông qua cấu trúc liên kết bằng con trỏ vật lý, gây khó khăn cho việc thay đổi cấu trúc?",
+    "options": [
+      { "id": "A", "text": "Mô hình phân cấp (Hierarchical Model)" },
+      { "id": "B", "text": "Mô hình quan hệ (Relational Model)" },
+      { "id": "C", "text": "Mô hình mạng (Network Model)" },
+      { "id": "D", "text": "Mô hình hướng đối tượng" }
+    ],
+    "correct": ["A", "C"],
+    "explanation": "Mô hình phân cấp (dạng cây) và Mô hình mạng (dạng đồ thị) là các mô hình ra đời trước, tổ chức dữ liệu khá cứng nhắc, dựa nhiều vào con trỏ vật lý, khó truy vấn và bảo trì.",
+    "slideRef": "Chương 2, Slide 6-9"
+  },
+  {
+    "id": 16,
+    "topic": "Chương 2: Mô hình Thực thể - Liên kết (ER)",
+    "type": "fill",
+    "question": "Trong sơ đồ ER, Thuộc tính đa trị (Multivalued attribute) được biểu diễn bằng hình elip có nét đường viền là nét _____? (Điền 1 từ)",
+    "correct": ["kép", "đôi"],
+    "explanation": "Thuộc tính đa trị (như Sở thích, Bằng cấp) có thể có nhiều giá trị cho một thực thể, được biểu diễn bằng hình elip nét kép (double-line ellipse).",
+    "slideRef": "Chương 2, Slide 23"
+  },
+  {
+    "id": 17,
+    "topic": "Chương 2: Mô hình Thực thể - Liên kết (ER)",
+    "type": "single",
+    "question": "Tuổi của một nhân viên có thể được suy ra từ thuộc tính Ngày sinh. Trong mô hình ER, 'Tuổi' được gọi là loại thuộc tính gì?",
+    "options": [
+      { "id": "A", "text": "Thuộc tính đơn trị" },
+      { "id": "B", "text": "Thuộc tính đa trị" },
+      { "id": "C", "text": "Thuộc tính dẫn xuất" },
+      { "id": "D", "text": "Thuộc tính phức hợp" }
+    ],
+    "correct": "C",
+    "explanation": "Thuộc tính dẫn xuất (Derived attribute) có giá trị có thể tính toán được từ các thuộc tính khác. Biểu diễn bằng hình elip nét đứt.",
+    "slideRef": "Chương 2, Slide 22"
+  },
+  {
+    "id": 18,
+    "topic": "Chương 2: Mô hình Thực thể - Liên kết (ER)",
+    "type": "single",
+    "question": "Phát biểu nào sau đây ĐÚNG khi mô tả về Tập thực thể yếu (Weak Entity)?",
+    "options": [
+      { "id": "A", "text": "Là tập thực thể có nhiều hơn 1 khóa chính." },
+      { "id": "B", "text": "Là tập thực thể không có khóa của riêng nó và sự tồn tại phụ thuộc vào tập thực thể chủ." },
+      { "id": "C", "text": "Được biểu diễn bằng hình thoi nét kép." },
+      { "id": "D", "text": "Luôn có mối liên kết với tập thực thể yếu khác." }
+    ],
+    "correct": "B",
+    "explanation": "Tập thực thể yếu là tập thực thể không có khóa riêng, phải phụ thuộc sự tồn tại vào tập thực thể nhận dạng (chủ). Khóa của nó gồm khóa của tập thực thể chủ ghép với khóa thành phần (discriminator) của nó. Nó được biểu diễn bằng hình chữ nhật nét kép.",
+    "slideRef": "Chương 2, Slide 29"
+  },
+  {
+    "id": 19,
+    "topic": "Chương 2: Mô hình Thực thể - Liên kết (ER)",
+    "type": "multiple",
+    "question": "Trong sơ đồ ER, những ký hiệu đồ họa nào sau đây được sử dụng đúng mục đích?",
+    "options": [
+      { "id": "A", "text": "Hình chữ nhật: biểu diễn Tập thực thể" },
+      { "id": "B", "text": "Hình thoi: biểu diễn Thuộc tính" },
+      { "id": "C", "text": "Hình thoi: biểu diễn Mối liên kết" },
+      { "id": "D", "text": "Hình elip: biểu diễn Thuộc tính" }
+    ],
+    "correct": ["A", "C", "D"],
+    "explanation": "Sơ đồ ER: Thực thể (hình chữ nhật), Liên kết (hình thoi), Thuộc tính (hình elip).",
+    "slideRef": "Chương 2, Slide 27"
+  },
+  {
+    "id": 20,
+    "topic": "Chương 2: Chuyển đổi ER sang Quan hệ",
+    "type": "fill",
+    "question": "Khi chuyển đổi một thuộc tính phức hợp (ví dụ: Địa chỉ gồm Số nhà, Đường, Quận) sang mô hình quan hệ, ta tạo ra các cột tương ứng với các thuộc tính _____ của nó. (Điền 2 từ tiếng Việt)",
+    "correct": ["thành phần", "đơn trị", "cơ sở"],
+    "explanation": "Thuộc tính phức hợp khi chuyển đổi sang quan hệ sẽ được tách ra thành các thuộc tính đơn trị cấu thành nên nó (ví dụ cột SoNha, cot Duong, cot Quan).",
+    "slideRef": "Chương 2, Slide 41"
+  },
+  {
+    "id": 21,
+    "topic": "Chương 2: Chuyển đổi ER sang Quan hệ",
+    "type": "single",
+    "question": "Khi ánh xạ một mối liên kết 1-N (Một - Nhiều) từ ER sang mô hình quan hệ, phương pháp nào dưới đây là đúng chuẩn?",
+    "options": [
+      { "id": "A", "text": "Tạo một bảng mới hoàn toàn chứa khóa của cả hai bảng." },
+      { "id": "B", "text": "Đưa khóa chính của tập thực thể bên phía '1' sang làm khóa ngoại tại tập thực thể bên phía 'N'." },
+      { "id": "C", "text": "Đưa khóa chính của tập thực thể bên phía 'N' sang làm khóa ngoại tại tập thực thể bên phía '1'." },
+      { "id": "D", "text": "Gộp hai tập thực thể thành 1 bảng duy nhất." }
+    ],
+    "correct": "B",
+    "explanation": "Ánh xạ liên kết 1-N: Bổ sung khóa chính của quan hệ bên phía '1' vào quan hệ bên phía 'N' làm khóa ngoại (Foreign Key). Nếu liên kết có thuộc tính thì cũng gắn vào bên N.",
+    "slideRef": "Chương 2, Slide 43"
+  },
+  {
+    "id": 22,
+    "topic": "Chương 2: Chuyển đổi ER sang Quan hệ",
+    "type": "single",
+    "question": "Khi ánh xạ một mối liên kết M-N (Nhiều - Nhiều) từ ER sang quan hệ, ta xử lý như thế nào?",
+    "options": [
+      { "id": "A", "text": "Đưa khóa bên này làm khóa ngoại bên kia tùy ý." },
+      { "id": "B", "text": "Tạo một quan hệ (bảng) mới, có khóa chính là tổ hợp khóa chính của 2 tập thực thể tham gia liên kết." },
+      { "id": "C", "text": "Tạo hai bảng mới cho mối liên kết." },
+      { "id": "D", "text": "Chỉ đưa thuộc tính của liên kết vào một trong hai bảng." }
+    ],
+    "correct": "B",
+    "explanation": "Ánh xạ liên kết M-N: Bắt buộc tạo một quan hệ (bảng) mới. Khóa chính của bảng mới là tổ hợp khóa của hai tập thực thể tham gia. Thuộc tính của liên kết (nếu có) cũng là thuộc tính của bảng mới.",
+    "slideRef": "Chương 2, Slide 44"
+  },
+  {
+    "id": 23,
+    "topic": "Chương 2: Mô hình Quan hệ",
+    "type": "multiple",
+    "question": "Trong Mô hình Quan hệ, các thuật ngữ nào sau đây mang ý nghĩa tương đương nhau?",
+    "options": [
+      { "id": "A", "text": "Relation (Quan hệ) và Table (Bảng)" },
+      { "id": "B", "text": "Tuple (Bộ) và Row (Bản ghi/Hàng)" },
+      { "id": "C", "text": "Attribute (Thuộc tính) và Column (Cột)" },
+      { "id": "D", "text": "Domain (Miền) và Primary Key (Khóa chính)" }
+    ],
+    "correct": ["A", "B", "C"],
+    "explanation": "Trong mô hình quan hệ: Quan hệ (Relation) tương đương Bảng (Table). Bộ (Tuple) tương đương Hàng (Row). Thuộc tính (Attribute) tương đương Cột (Column). Domain là miền giá trị, không phải khóa.",
+    "slideRef": "Chương 2, Slide 50"
+  },
+  {
+    "id": 24,
+    "topic": "Chương 2: Các ràng buộc trong Mô hình Quan hệ",
+    "type": "fill",
+    "question": "Ràng buộc Toàn vẹn _____ (Entity Integrity Constraint) quy định rằng không có bộ phận nào của khóa chính được phép chứa giá trị Null. (Điền 2 từ tiếng Việt)",
+    "correct": ["thực thể"],
+    "explanation": "Ràng buộc toàn vẹn thực thể (Entity Integrity Constraint) quy định thuộc tính cấu thành khóa chính không được phép nhận giá trị Null vì khóa chính dùng để phân biệt các bộ.",
+    "slideRef": "Chương 2, Slide 57"
+  },
+  {
+    "id": 25,
+    "topic": "Chương 2: Các ràng buộc trong Mô hình Quan hệ",
+    "type": "single",
+    "question": "Ràng buộc Toàn vẹn tham chiếu (Referential Integrity Constraint) dùng để làm gì?",
+    "options": [
+      { "id": "A", "text": "Đảm bảo mỗi bảng có ít nhất một khóa chính." },
+      { "id": "B", "text": "Bảo đảm tính nhất quán của dữ liệu giữa các quan hệ thông qua Khóa ngoại (Foreign Key)." },
+      { "id": "C", "text": "Giới hạn kiểu dữ liệu nhập vào cho một cột (ví dụ Tuổi > 0)." },
+      { "id": "D", "text": "Ngăn chặn việc 2 người cùng sửa một bản ghi cùng lúc." }
+    ],
+    "correct": "B",
+    "explanation": "Ràng buộc tham chiếu đảm bảo một bộ ở bảng này trỏ đến một bộ đang tồn tại ở bảng khác thông qua Khóa ngoại. Giá trị khóa ngoại phải bằng với một giá trị khóa chính đang tồn tại hoặc là Null.",
+    "slideRef": "Chương 2, Slide 58"
+  },
+  {
+    "id": 26,
+    "topic": "Chương 2: Chuyển đổi ER sang Quan hệ",
+    "type": "single",
+    "question": "Khi ánh xạ Thuộc tính Đa trị (Multivalued Attribute) sang mô hình Quan hệ, cách làm nào là chuẩn xác?",
+    "options": [
+      { "id": "A", "text": "Tạo một cột có kiểu dữ liệu Mảng (Array) chứa danh sách các giá trị." },
+      { "id": "B", "text": "Tạo nhiều cột trong bảng gốc (Vd: SoThich1, SoThich2...)." },
+      { "id": "C", "text": "Tạo một bảng mới bao gồm thuộc tính đa trị đó và khóa chính của bảng gốc." },
+      { "id": "D", "text": "Bỏ qua thuộc tính đa trị vì CSDL quan hệ không hỗ trợ." }
+    ],
+    "correct": "C",
+    "explanation": "Với thuộc tính đa trị, phải tạo ra một quan hệ (bảng) mới, chứa thuộc tính đó và khóa chính của tập thực thể gốc. Khóa chính của bảng mới là tổ hợp của 2 thuộc tính này.",
+    "slideRef": "Chương 2, Slide 45"
+  },
+  {
+    "id": 27,
+    "topic": "Chương 2: Mô hình Thực thể - Liên kết (ER)",
+    "type": "single",
+    "question": "Bậc của liên kết (Degree of a relationship type) là gì?",
+    "options": [
+      { "id": "A", "text": "Là số lượng thực thể tham gia vào mối liên kết đó." },
+      { "id": "B", "text": "Là số lượng tập thực thể tham gia vào kiểu liên kết đó." },
+      { "id": "C", "text": "Là số thuộc tính của mối liên kết đó." },
+      { "id": "D", "text": "Là số lượng khóa chính trong mối liên kết." }
+    ],
+    "correct": "B",
+    "explanation": "Bậc của liên kết là số các tập thực thể tham gia vào liên kết. Thường gặp nhất là liên kết bậc 2 (nhị phân), thỉnh thoảng có liên kết bậc 3 (tam phân).",
+    "slideRef": "Chương 2, Slide 30"
+  },
+  {
+    "id": 28,
+    "topic": "Chương 2: Mô hình Thực thể - Liên kết (ER)",
+    "type": "multiple",
+    "question": "Ràng buộc tỉ lệ tham gia của một tập thực thể vào mối liên kết có thể là:",
+    "options": [
+      { "id": "A", "text": "Tham gia toàn bộ (Total participation) - Biểu diễn bằng nét liền kép" },
+      { "id": "B", "text": "Tham gia một nửa - Biểu diễn bằng đường đứt nét" },
+      { "id": "C", "text": "Tham gia bộ phận (Partial participation) - Biểu diễn bằng nét liền đơn" },
+      { "id": "D", "text": "Tham gia ngẫu nhiên - Không biểu diễn" }
+    ],
+    "correct": ["A", "C"],
+    "explanation": "Có 2 loại tham gia: Toàn bộ (Total - mỗi thực thể đều phải liên kết, nét kép) và Bộ phận (Partial - có thực thể không tham gia, nét đơn).",
+    "slideRef": "Chương 2, Slide 35"
+  },
+  {
+    "id": 29,
+    "topic": "Chương 2: Các khái niệm Mô hình Quan hệ",
+    "type": "fill",
+    "question": "Tập hợp tất cả các giá trị nguyên tử (không phân chia được) có thể có của một thuộc tính được gọi là _____ giá trị của thuộc tính đó. (Điền 1 từ tiếng Việt)",
+    "correct": ["miền", "domain"],
+    "explanation": "Miền giá trị (Domain) của thuộc tính A là tập các giá trị nguyên tố (đơn trị) mà thuộc tính A có thể nhận. Ký hiệu là dom(A).",
+    "slideRef": "Chương 2, Slide 52"
+  },
+  {
+    "id": 30,
+    "topic": "Chương 2: Ràng buộc trong Quan hệ",
+    "type": "single",
+    "question": "Phát biểu nào về Siêu khóa (Super Key) và Khóa (Candidate Key) là ĐÚNG?",
+    "options": [
+      { "id": "A", "text": "Siêu khóa luôn là tập con của Khóa." },
+      { "id": "B", "text": "Một Khóa (Key) là một siêu khóa tối thiểu (không chứa tập con nào cũng là siêu khóa)." },
+      { "id": "C", "text": "Siêu khóa chỉ bao gồm đúng một thuộc tính." },
+      { "id": "D", "text": "Một bảng chỉ có thể có tối đa một siêu khóa." }
+    ],
+    "correct": "B",
+    "explanation": "Siêu khóa (Superkey) là tập thuộc tính xác định duy nhất một bộ. Khóa (Candidate Key) là một siêu khóa có kích thước cực tiểu (bỏ đi bất kỳ thuộc tính nào thì nó không còn là siêu khóa nữa).",
+    "slideRef": "Chương 2, Slide 56"
+  },
+  {
+    "id": 31,
+    "topic": "Chương 1: Các đối tượng sử dụng CSDL",
+    "type": "single",
+    "question": "Nhóm người dùng nào chịu trách nhiệm quản lý tài nguyên, cấp quyền truy cập và bảo trì hệ thống cơ sở dữ liệu?",
+    "options": [
+      { "id": "A", "text": "Người thiết kế CSDL (Database Designers)" },
+      { "id": "B", "text": "Người quản trị CSDL (Database Administrator - DBA)" },
+      { "id": "C", "text": "Lập trình viên ứng dụng (Application Programmers)" },
+      { "id": "D", "text": "Người dùng cuối (End Users)" }
+    ],
+    "correct": "B",
+    "explanation": "DBA (Database Administrator) là người có quyền cao nhất, kiểm soát hệ thống, cấp quyền truy cập, và tối ưu hóa hệ thống.",
+    "slideRef": "CSDL_Ch1.pdf, Các tác nhân của hệ CSDL"
+  },
+  {
+    "id": 32,
+    "topic": "Chương 1: Các mức trừu tượng của CSDL",
+    "type": "multiple",
+    "question": "Các mức trừu tượng của một hệ cơ sở dữ liệu bao gồm những mức nào? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Mức vật lý (Physical level)" },
+      { "id": "B", "text": "Mức mạng (Network level)" },
+      { "id": "C", "text": "Mức logic / khái niệm (Logical / Conceptual level)" },
+      { "id": "D", "text": "Mức khung nhìn / ngoài (View level)" }
+    ],
+    "correct": ["A", "C", "D"],
+    "explanation": "Kiến trúc 3 lược đồ của CSDL gồm: Mức vật lý (lưu trữ thế nào), Mức logic (lưu trữ cái gì), Mức khung nhìn (hiển thị thế nào cho từng người dùng).",
+    "slideRef": "CSDL_Ch1.pdf, Các mức trừu tượng của dữ liệu"
+  },
+  {
+    "id": 33,
+    "topic": "Chương 1: Đặc trưng của CSDL",
+    "type": "fill",
+    "question": "Khả năng thay đổi cấu trúc dữ liệu ở một mức mà không làm thay đổi các chương trình ứng dụng ở mức cao hơn được gọi là tính ____ dữ liệu. (Điền 2 từ tiếng Việt)",
+    "correct": ["độc lập"],
+    "explanation": "Tính độc lập dữ liệu (Data Independence) là một đặc trưng quan trọng, giúp chương trình ứng dụng không bị phụ thuộc vào cấu trúc lưu trữ vật lý hay logic.",
+    "slideRef": "CSDL_Ch1.pdf, Đặc trưng của CSDL"
+  },
+  {
+    "id": 34,
+    "topic": "Chương 2: Mô hình Thực thể - Liên kết (ER)",
+    "type": "single",
+    "question": "Mô hình Thực thể - Liên kết (Entity-Relationship Model) được đề xuất vào năm nào và bởi ai?",
+    "options": [
+      { "id": "A", "text": "Edgar F. Codd, 1970" },
+      { "id": "B", "text": "Peter Chen, 1976" },
+      { "id": "C", "text": "Raymond Boyce, 1974" },
+      { "id": "D", "text": "Charles Bachman, 1969" }
+    ],
+    "correct": "B",
+    "explanation": "Peter Chen đề xuất mô hình ER vào năm 1976 để thống nhất các khái niệm về thiết kế CSDL mức khái niệm.",
+    "slideRef": "CSDL_Ch2.pdf, Vài nét về lịch sử"
+  },
+  {
+    "id": 35,
+    "topic": "Chương 2: Các thành phần của mô hình dữ liệu",
+    "type": "multiple",
+    "question": "Theo Codd (1980), một mô hình dữ liệu bao gồm những thành phần cơ bản nào? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Một tập hợp các cấu trúc biểu diễn dữ liệu" },
+      { "id": "B", "text": "Giao diện đồ họa người dùng" },
+      { "id": "C", "text": "Một tập hợp các phép toán thao tác trên dữ liệu" },
+      { "id": "D", "text": "Một tập hợp các ràng buộc toàn vẹn dữ liệu" }
+    ],
+    "correct": ["A", "C", "D"],
+    "explanation": "Một mô hình dữ liệu (Data Model) phải có 3 thành phần: Cấu trúc (để lưu trữ), Phép toán (để truy vấn/cập nhật) và Ràng buộc (để đảm bảo tính đúng đắn).",
+    "slideRef": "CSDL_Ch2.pdf, Tổng quan về mô hình dữ liệu"
+  },
+  {
+    "id": 36,
+    "topic": "Chương 2: Ký hiệu ER",
+    "type": "fill",
+    "question": "Trong sơ đồ Thực thể - Liên kết (ER), hình thoi (diamond) được sử dụng để biểu diễn ____. (Điền 1-2 từ tiếng Việt)",
+    "correct": ["liên kết", "mối liên kết", "quan hệ"],
+    "explanation": "Hình chữ nhật biểu diễn Thực thể, Hình elip biểu diễn Thuộc tính, và Hình thoi biểu diễn Liên kết (Relationship).",
+    "slideRef": "CSDL_Ch2.pdf, Mô hình thực thể liên kết"
+  },
+  {
+    "id": 37,
+    "topic": "Chương 2: Chuyển đổi ER sang Quan hệ",
+    "type": "single",
+    "question": "Khi chuyển đổi từ sơ đồ ER sang mô hình quan hệ, một thuộc tính đa trị (multivalued attribute) của thực thể E sẽ được biến đổi như thế nào?",
+    "options": [
+      { "id": "A", "text": "Gộp chung thành một cột kiểu chuỗi trong bảng E." },
+      { "id": "B", "text": "Tạo ra một bảng (quan hệ) mới chứa thuộc tính đa trị đó và khóa chính của E." },
+      { "id": "C", "text": "Bỏ qua thuộc tính đa trị đó vì mô hình quan hệ không hỗ trợ." },
+      { "id": "D", "text": "Tạo các cột riêng biệt (VD: SDT1, SDT2) trong bảng E tùy ý." }
+    ],
+    "correct": "B",
+    "explanation": "Thuộc tính đa trị luôn phải tách thành một quan hệ riêng biệt. Khóa chính của quan hệ mới này bao gồm giá trị của thuộc tính đa trị và khóa ngoại tham chiếu đến thực thể cha.",
+    "slideRef": "CSDL_Ch2.pdf, Biến đổi ER sang mô hình quan hệ"
+  },
+  {
+    "id": 38,
+    "topic": "Chương 2: Ràng buộc trong mô hình quan hệ",
+    "type": "multiple",
+    "question": "Những phát biểu nào sau đây đúng khi nói về Khóa ngoại (Foreign Key)? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Khóa ngoại dùng để thiết lập mối liên kết giữa hai quan hệ." },
+      { "id": "B", "text": "Giá trị của khóa ngoại bắt buộc phải luôn khác NULL." },
+      { "id": "C", "text": "Khóa ngoại phải tham chiếu đến Khóa chính hoặc Khóa ứng viên của quan hệ đích." },
+      { "id": "D", "text": "Một bảng có thể chứa nhiều khóa ngoại." }
+    ],
+    "correct": ["A", "C", "D"],
+    "explanation": "Khóa ngoại có thể nhận giá trị NULL (trừ khi có ràng buộc NOT NULL đi kèm). Nó tham chiếu đến khóa chính của bảng khác để thể hiện liên kết.",
+    "slideRef": "CSDL_Ch2.pdf, Ràng buộc tham chiếu (Khóa ngoại)"
+  },
+  {
+    "id": 39,
+    "topic": "Chương 2: Khái niệm mô hình quan hệ",
+    "type": "fill",
+    "question": "Tập hợp tất cả các giá trị nguyên tử có thể có của một thuộc tính được gọi là ____ giá trị. (Điền 1 từ tiếng Việt)",
+    "correct": ["miền"],
+    "explanation": "Miền giá trị (Domain) là tập hợp các giá trị nguyên tố (nguyên tử) hợp lệ mà một thuộc tính có thể nhận.",
+    "slideRef": "CSDL_Ch2.pdf, Mô hình quan hệ - Khái niệm"
+  },
+  {
+    "id": 40,
+    "topic": "Chương 3: Đại cương ngôn ngữ",
+    "type": "single",
+    "question": "Đại số quan hệ (Relational Algebra) là một ngôn ngữ mang tính chất gì?",
+    "options": [
+      { "id": "A", "text": "Phi thủ tục (Non-procedural)" },
+      { "id": "B", "text": "Thủ tục (Procedural)" },
+      { "id": "C", "text": "Đồ họa người dùng" },
+      { "id": "D", "text": "Lập trình hướng đối tượng" }
+    ],
+    "correct": "B",
+    "explanation": "Đại số quan hệ là ngôn ngữ thủ tục (Procedural) vì nó chỉ ra MỘT TRÌNH TỰ các phép toán để đạt được kết quả mong muốn (how to get).",
+    "slideRef": "CSDL_Ch3.pdf, Ngôn ngữ hình thức - Đại số quan hệ"
+  },
+  {
+    "id": 41,
+    "topic": "Chương 3: Phép toán Đại số quan hệ",
+    "type": "multiple",
+    "question": "Các phép toán tập hợp cơ bản (được thừa kế từ lý thuyết tập hợp) trong Đại số quan hệ bao gồm? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Hợp (Union - ∪)" },
+      { "id": "B", "text": "Chọn (Selection - σ)" },
+      { "id": "C", "text": "Giao (Intersection - ∩)" },
+      { "id": "D", "text": "Tích Descartes (Cartesian Product - ×)" },
+      { "id": "E", "text": "Trừ (Difference - −)" }
+    ],
+    "correct": ["A", "C", "D", "E"],
+    "explanation": "Các phép toán tập hợp gồm: Hợp, Giao, Trừ, Tích Descartes. Phép Chọn (σ) và Chiếu (π) là các phép toán đặc thù của quan hệ.",
+    "slideRef": "CSDL_Ch3.pdf, Đại số quan hệ - Phép toán tập hợp"
+  },
+  {
+    "id": 42,
+    "topic": "Chương 3: Ký hiệu Đại số quan hệ",
+    "type": "fill",
+    "question": "Phép toán Chọn (Selection) dùng để trích xuất các DÒNG thỏa mãn điều kiện, được ký hiệu bằng chữ cái Hy Lạp ____. (Viết tên chữ cái bằng tiếng Việt không dấu hoặc ký hiệu, ví dụ: alpha)",
+    "correct": ["sigma", "σ"],
+    "explanation": "Phép chọn (Selection) ký hiệu là σ (Sigma). Ký hiệu tổng quát: σ_điều_kiện(R).",
+    "slideRef": "CSDL_Ch3.pdf, Phép chọn (Selection)"
+  },
+  {
+    "id": 43,
+    "topic": "Chương 3: Phép toán Đại số quan hệ",
+    "type": "single",
+    "question": "Trong Đại số quan hệ, phép toán nào sau đây CÓ THỂ làm giảm BẬC (số lượng thuộc tính/cột) của một quan hệ nhưng không bao giờ làm thay đổi số lượng BỘ (nếu không tính việc loại bỏ trùng lặp)?",
+    "options": [
+      { "id": "A", "text": "Phép Chọn (σ)" },
+      { "id": "B", "text": "Phép Kết nối (⋈)" },
+      { "id": "C", "text": "Phép Chiếu (π)" },
+      { "id": "D", "text": "Phép Trừ tập hợp (-)" }
+    ],
+    "correct": "C",
+    "explanation": "Phép Chiếu (π) giữ lại một số cột (làm giảm bậc) và loại bỏ các cột khác. (Lưu ý: theo lý thuyết tập hợp, phép chiếu tự động loại bỏ các dòng trùng lặp, nên số bộ có thể giảm, nhưng bản chất của nó tác động lên cột).",
+    "slideRef": "CSDL_Ch3.pdf, Phép chiếu (Projection)"
+  },
+  {
+    "id": 44,
+    "topic": "Chương 3: Khả hợp trong tập hợp",
+    "type": "multiple",
+    "question": "Hai quan hệ R và S được gọi là 'khả hợp' (Union-compatible) khi và chỉ khi thỏa mãn những điều kiện nào sau đây? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "R và S phải có cùng số lượng thuộc tính (cùng Bậc)." },
+      { "id": "B", "text": "R và S phải có cùng số lượng dòng (bộ)." },
+      { "id": "C", "text": "Miền giá trị của các thuộc tính tương ứng (theo thứ tự) của R và S phải giống nhau." },
+      { "id": "D", "text": "Tên các thuộc tính của R và S bắt buộc phải hoàn toàn giống nhau." }
+    ],
+    "correct": ["A", "C"],
+    "explanation": "Khả hợp (Union-compatible) yêu cầu: (1) Cùng bậc, (2) Các thuộc tính tương ứng có cùng miền giá trị. Tên thuộc tính không bắt buộc phải giống nhau, số lượng dòng không liên quan.",
+    "slideRef": "CSDL_Ch3.pdf, Khả hợp (Union-compatible)"
+  },
+  {
+    "id": 45,
+    "topic": "Chương 3: Ký hiệu Đại số quan hệ",
+    "type": "fill",
+    "question": "Phép đổi tên (Rename) trong đại số quan hệ, dùng để đổi tên quan hệ hoặc thuộc tính, được ký hiệu bằng chữ cái Hy Lạp ____. (Viết tên chữ cái, VD: alpha)",
+    "correct": ["rho", "ρ"],
+    "explanation": "Phép đổi tên sử dụng ký hiệu ρ (Rho).",
+    "slideRef": "CSDL_Ch3.pdf, Phép đổi tên (Rename)"
+  },
+  {
+    "id": 46,
+    "topic": "Chương 3: Tích Descartes",
+    "type": "single",
+    "question": "Nếu quan hệ R có 5 thuộc tính và 10 dòng, quan hệ S có 3 thuộc tính và 20 dòng. Kết quả của phép Tích Descartes (R × S) sẽ là một quan hệ có quy mô như thế nào?",
+    "options": [
+      { "id": "A", "text": "15 thuộc tính, 30 dòng" },
+      { "id": "B", "text": "8 thuộc tính, 200 dòng" },
+      { "id": "C", "text": "8 thuộc tính, 30 dòng" },
+      { "id": "D", "text": "15 thuộc tính, 200 dòng" }
+    ],
+    "correct": "B",
+    "explanation": "Tích Descartes R × S: Bậc (số cột) = Bậc(R) + Bậc(S) = 5 + 3 = 8. Số lượng bộ (số dòng) = Số dòng(R) * Số dòng(S) = 10 * 20 = 200.",
+    "slideRef": "CSDL_Ch3.pdf, Phép tích Descartes"
+  },
+  {
+    "id": 47,
+    "topic": "Chương 3: Các phép Kết nối",
+    "type": "multiple",
+    "question": "Về phép Kết nối tự nhiên (Natural Join - ⋈), các nhận định nào sau đây là ĐÚNG? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Tự động kết nối dựa trên tất cả các thuộc tính CÙNG TÊN giữa 2 quan hệ." },
+      { "id": "B", "text": "Chỉ giữ lại MỘT bản sao của cột thuộc tính chung trong quan hệ kết quả." },
+      { "id": "C", "text": "Yêu cầu người dùng phải tự định nghĩa phép so sánh (như <, >, =) bằng tay." },
+      { "id": "D", "text": "Các dòng không có giá trị khớp (không ghép cặp được) sẽ bị loại bỏ khỏi kết quả." }
+    ],
+    "correct": ["A", "B", "D"],
+    "explanation": "Kết nối tự nhiên tự động thực hiện trên các cột cùng tên bằng phép '=', tự động loại bỏ cột trùng lặp. Các dòng không khớp bị loại bỏ (khác với Outer Join).",
+    "slideRef": "CSDL_Ch3.pdf, Kết nối tự nhiên (Natural Join)"
+  },
+  {
+    "id": 48,
+    "topic": "Chương 3: Phép Chia",
+    "type": "fill",
+    "question": "Phép Chia (Division - ÷) trong đại số quan hệ thường được sử dụng lý tưởng nhất để biểu diễn các câu truy vấn có chứa cụm từ khóa 'Tất cả' hoặc '____'. (Điền 1 từ tiếng Việt)",
+    "correct": ["mọi"],
+    "explanation": "Phép chia R ÷ S dùng để tìm các bộ trong R có liên quan với 'tất cả' (hoặc 'mọi') bộ trong S.",
+    "slideRef": "CSDL_Ch3.pdf, Phép chia (Division)"
+  },
+  {
+    "id": 49,
+    "topic": "Chương 3: Phép tính quan hệ",
+    "type": "single",
+    "question": "Điểm khác biệt lớn nhất giữa Đại số quan hệ (Relational Algebra) và Phép tính quan hệ (Relational Calculus) là gì?",
+    "options": [
+      { "id": "A", "text": "Đại số quan hệ là ngôn ngữ phi thủ tục, còn Phép tính quan hệ là thủ tục." },
+      { "id": "B", "text": "Đại số quan hệ chỉ ra CÁCH LÀM để lấy dữ liệu, còn Phép tính quan hệ chỉ mô tả CÁI CẦN LẤY." },
+      { "id": "C", "text": "Đại số quan hệ chỉ dùng trong toán học, Phép tính quan hệ mới cài đặt được thực tế." },
+      { "id": "D", "text": "Đại số quan hệ có tính biểu diễn cao hơn, mạnh hơn Phép tính quan hệ." }
+    ],
+    "correct": "B",
+    "explanation": "Đại số quan hệ là ngôn ngữ thủ tục (how to get), Phép tính quan hệ là ngôn ngữ phi thủ tục / khai báo (what to get). Cả hai có sức mạnh biểu diễn tương đương nhau (Theo định lý Codd).",
+    "slideRef": "CSDL_Ch3.pdf, So sánh Đại số quan hệ và Phép tính quan hệ"
+  },
+  {
+    "id": 50,
+    "topic": "Chương 3: Phép tính quan hệ",
+    "type": "multiple",
+    "question": "Phép tính quan hệ (Relational Calculus) được chia thành những nhánh cơ bản nào? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Phép tính quan hệ dựa trên Bảng (Table Relational Calculus)" },
+      { "id": "B", "text": "Phép tính quan hệ dựa trên Bộ (Tuple Relational Calculus - TRC)" },
+      { "id": "C", "text": "Phép tính quan hệ dựa trên Miền (Domain Relational Calculus - DRC)" },
+      { "id": "D", "text": "Phép tính quan hệ đối tượng (Object Relational Calculus)" }
+    ],
+    "correct": ["B", "C"],
+    "explanation": "Relational Calculus gồm hai loại: TRC (biến chạy trên các bộ) và DRC (biến chạy trên các miền giá trị / thuộc tính).",
+    "slideRef": "CSDL_Ch3.pdf, Phép tính quan hệ"
+  },
+  {
+    "id": 51,
+    "topic": "Chương 3: Phép tính quan hệ - Bộ",
+    "type": "fill",
+    "question": "Trong Phép tính quan hệ dựa trên bộ (TRC), biểu thức có dạng { t | P(t) }. Trong đó, t được gọi là một ____ bộ. (Điền 1 từ tiếng Việt)",
+    "correct": ["biến"],
+    "explanation": "t là 'biến bộ' (tuple variable), nó chạy qua tất cả các dòng của quan hệ và P(t) là công thức logic (điều kiện).",
+    "slideRef": "CSDL_Ch3.pdf, Phép tính quan hệ dựa trên bộ (TRC)"
+  },
+  {
+    "id": 52,
+    "topic": "Chương 3: Ký hiệu Logic",
+    "type": "single",
+    "question": "Trong Phép tính quan hệ, ký hiệu lượng từ ∀ (Universal Quantifier) có ý nghĩa là gì?",
+    "options": [
+      { "id": "A", "text": "Tồn tại ít nhất một phần tử thỏa mãn..." },
+      { "id": "B", "text": "Với mọi phần tử đều thỏa mãn..." },
+      { "id": "C", "text": "Thuộc về tập hợp..." },
+      { "id": "D", "text": "Không có phần tử nào thỏa mãn..." }
+    ],
+    "correct": "B",
+    "explanation": "∀ mang nghĩa 'Với mọi' (For All). ∃ mang nghĩa 'Tồn tại ít nhất một' (There Exists).",
+    "slideRef": "CSDL_Ch3.pdf, Công thức (Formula) trong PTQH"
+  },
+  {
+    "id": 53,
+    "topic": "Chương 3: Đại cương ngôn ngữ QBE",
+    "type": "multiple",
+    "question": "Về ngôn ngữ QBE (Query By Example), các đặc điểm nào sau đây là ĐÚNG? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Là một ngôn ngữ truy vấn hướng đồ họa (Sử dụng các bảng xương cá 2 chiều)." },
+      { "id": "B", "text": "Được xây dựng dựa trên nền tảng của Phép tính quan hệ miền (DRC)." },
+      { "id": "C", "text": "Được xây dựng dựa trên nền tảng Đại số quan hệ." },
+      { "id": "D", "text": "Người dùng truy vấn bằng cách điền 'các ví dụ' vào các ô trống." }
+    ],
+    "correct": ["A", "B", "D"],
+    "explanation": "QBE (Query By Example) là ngôn ngữ đồ họa do IBM phát triển, sử dụng dạng bảng hai chiều và hoàn toàn dựa trên nền tảng lý thuyết của Phép tính quan hệ miền (DRC).",
+    "slideRef": "CSDL_Ch3.pdf, Ngôn ngữ QBE"
+  },
+  {
+    "id": 54,
+    "topic": "Chương 3: QBE",
+    "type": "fill",
+    "question": "Trong QBE, để chỉ định rằng một thuộc tính (cột) cần được in (hiển thị) ra màn hình kết quả, ta điền ký hiệu __. vào ô tương ứng. (Điền 1 chữ cái, phân biệt hoa thường)",
+    "correct": ["P"],
+    "explanation": "Ký hiệu 'P.' (viết tắt của Print) được đặt tại các trường dữ liệu mà người dùng muốn hiển thị ở kết quả.",
+    "slideRef": "CSDL_Ch3.pdf, Các quy tắc QBE cơ bản"
+  },
+  {
+    "id": 55,
+    "topic": "Chương 3: Phép toán dẫn xuất",
+    "type": "single",
+    "question": "Trong Đại số quan hệ, phép toán nào sau đây KHÔNG phải là phép toán nguyên thủy (tức là có thể được biểu diễn thông qua các phép toán khác)?",
+    "options": [
+      { "id": "A", "text": "Phép Chọn (σ)" },
+      { "id": "B", "text": "Phép Hợp (∪)" },
+      { "id": "C", "text": "Phép Trừ (-)" },
+      { "id": "D", "text": "Phép Giao (∩)" }
+    ],
+    "correct": "D",
+    "explanation": "6 phép toán nguyên thủy: Chọn (σ), Chiếu (π), Hợp (∪), Trừ (-), Tích Descartes (×), Đổi tên (ρ). Phép Giao (R ∩ S) là phép dẫn xuất, bằng R - (R - S).",
+    "slideRef": "CSDL_Ch3.pdf, 6 Phép toán cơ bản"
+  },
+  {
+    "id": 56,
+    "topic": "Chương 3: Kết nối Theta và Equi-join",
+    "type": "multiple",
+    "question": "Sự khác biệt giữa Kết nối Theta (Theta Join) và Kết nối Bằng (Equi-join) là gì? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Equi-join chỉ sử dụng toán tử bằng (=) trong điều kiện kết nối." },
+      { "id": "B", "text": "Theta join có thể sử dụng bất kỳ toán tử so sánh nào (<, >, <=, >=, =, ≠)." },
+      { "id": "C", "text": "Equi-join tự động xóa bỏ cột trùng lặp (giống Natural Join)." },
+      { "id": "D", "text": "Kết nối Theta là trường hợp đặc biệt của Equi-join." }
+    ],
+    "correct": ["A", "B"],
+    "explanation": "Equi-join là tập con của Theta join, nó chỉ dùng phép '='. Equi-join KHÔNG tự động bỏ cột trùng (có 2 cột bằng nhau được giữ lại), chỉ có Natural Join mới bỏ cột trùng.",
+    "slideRef": "CSDL_Ch3.pdf, Phép kết nối Theta và Bằng"
+  },
+  {
+    "id": 57,
+    "topic": "Chương 3: Tính chất Đại số quan hệ",
+    "type": "fill",
+    "question": "Một tính chất quan trọng của Đại số quan hệ là tính 'đóng' (Closure property). Điều này có nghĩa là kết quả của bất kỳ phép toán đại số quan hệ nào áp dụng lên quan hệ luôn trả về một ____. (Điền 1 từ tiếng Việt, có 2 chữ cái đầu là qu)",
+    "correct": ["quan hệ"],
+    "explanation": "Tính đóng: input là các quan hệ, output chắc chắn là một quan hệ. Điều này cho phép tạo các biểu thức phức tạp bằng cách lồng ghép (nesting) các phép toán.",
+    "slideRef": "CSDL_Ch3.pdf, Tính chất ĐSQH"
+  },
+  {
+    "id": 58,
+    "topic": "Chương 3: Kết nối ngoài",
+    "type": "single",
+    "question": "Phép toán Kết nối ngoài bên trái (Left Outer Join) có chức năng gì?",
+    "options": [
+      { "id": "A", "text": "Giữ lại mọi dòng của quan hệ bên trái, ngay cả khi không có dòng khớp ở quan hệ bên phải (phần thiếu được điền NULL)." },
+      { "id": "B", "text": "Chỉ giữ lại các dòng của quan hệ bên trái KHÔNG CÓ dòng khớp ở quan hệ bên phải." },
+      { "id": "C", "text": "Giữ lại tất cả dòng của cả hai quan hệ, điền NULL vào cả hai bên nếu không khớp." },
+      { "id": "D", "text": "Hoạt động giống hệt kết nối tự nhiên nhưng thay tên cột bên trái." }
+    ],
+    "correct": "A",
+    "explanation": "Left Outer Join ưu tiên giữ toàn bộ thông tin của bảng bên trái. Nếu bảng bên phải không có dòng khớp, các cột của bảng phải sẽ có giá trị NULL.",
+    "slideRef": "CSDL_Ch3.pdf, Phép kết nối ngoài (Outer Join)"
+  },
+  {
+    "id": 59,
+    "topic": "Chương 3: Phép Chọn",
+    "type": "multiple",
+    "question": "Trong biểu thức điều kiện (Predicate) của phép Chọn (σ), ta có thể sử dụng các thành phần nào sau đây? (Chọn nhiều đáp án)",
+    "options": [
+      { "id": "A", "text": "Các toán tử logic (AND, OR, NOT)" },
+      { "id": "B", "text": "Các toán tử so sánh (<, =, >...)" },
+      { "id": "C", "text": "Toán tử in kết quả (P.)" },
+      { "id": "D", "text": "Tên thuộc tính và Hằng số" }
+    ],
+    "correct": ["A", "B", "D"],
+    "explanation": "Điều kiện chọn có thể bao gồm so sánh giữa Thuộc tính với Hằng số hoặc Thuộc tính với Thuộc tính, kết hợp bằng các phép logic. (P.) chỉ có trong QBE.",
+    "slideRef": "CSDL_Ch3.pdf, Phép chọn - Điều kiện logic"
+  },
+  {
+    "id": 60,
+    "topic": "Chương 3: QBE nâng cao",
+    "type": "fill",
+    "question": "Trong ngôn ngữ QBE, để chèn một dòng dữ liệu mới vào bảng (Insert), ta gõ ký hiệu __. dưới tên quan hệ (cột Name). (Điền 1 chữ cái, phân biệt hoa thường)",
+    "correct": ["I"],
+    "explanation": "Ký hiệu 'I.' (viết tắt của Insert) dùng để chỉ định hành động chèn bản ghi mới.",
+    "slideRef": "CSDL_Ch3.pdf, Cập nhật dữ liệu bằng QBE"
+  }
+]

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trình Mô Phỏng Lập Lịch Đĩa Cứng (Disk Scheduling Simulator)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-950/50 backdrop-blur sticky top-0 z-10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-indigo-600/20 text-indigo-400 rounded-lg">
+                    <i data-lucide="disc" class="w-6 h-6 animate-spin-slow"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight text-white">Disk Scheduling Simulator Pro</h1>
+                    <p class="text-xs text-slate-400">Trình trực quan hóa các thuật toán điều phối đầu đọc đĩa</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2 text-xs bg-slate-800/80 px-3 py-1.5 rounded-full border border-slate-700/50">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Học phần: Hệ điều hành (Operating Systems)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow p-4 md:p-6 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Sidebar Controls (Left) -->
+        <section class="lg:col-span-4 space-y-6">
+            <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-5 space-y-5">
+                <div class="flex items-center gap-2 border-b border-slate-800 pb-3">
+                    <i data-lucide="sliders" class="w-5 h-5 text-indigo-400"></i>
+                    <h2 class="font-semibold text-white">Tham số đầu vào</h2>
+                </div>
+
+                <!-- Cylinders Range -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium text-slate-300">Giới hạn Cylinder (0 - Max)</label>
+                    <input type="number" id="maxCylinders" value="29" min="10" max="1000" 
+                           class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                </div>
+
+                <!-- Current & Previous Position -->
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-slate-300">Vị trí hiện tại</label>
+                        <input type="number" id="currentPos" value="15" min="0" 
+                               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-slate-300">Vị trí trước đó</label>
+                        <input type="number" id="prevPos" value="12" min="0" 
+                               class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                    </div>
+                </div>
+
+                <!-- Queue Input -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium text-slate-300 flex justify-between items-center">
+                        <span>Hàng đợi yêu cầu</span>
+                        <span class="text-xs text-slate-400 font-normal">Cách nhau bằng dấu phẩy</span>
+                    </label>
+                    <input type="text" id="queueInput" value="9, 19, 13, 25, 6, 18" 
+                           class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm font-mono">
+                </div>
+
+                <!-- Direction (For SCAN/LOOK/C-SCAN/C-LOOK) -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium text-slate-300">Hướng di chuyển ban đầu</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button type="button" id="dirUpBtn" onclick="setDirection('up')" 
+                                class="py-2 px-3 rounded-lg border text-sm font-medium transition-all flex items-center justify-center gap-1.5 bg-indigo-600/20 border-indigo-500 text-indigo-300">
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i> Tăng dần
+                        </button>
+                        <button type="button" id="dirDownBtn" onclick="setDirection('down')" 
+                                class="py-2 px-3 rounded-lg border text-sm font-medium transition-all flex items-center justify-center gap-1.5 bg-slate-900 border-slate-700 text-slate-400">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Giảm dần
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Select Algorithm -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium text-slate-300">Thuật toán lập lịch</label>
+                    <select id="algorithmSelect" onchange="runSimulation()" 
+                            class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2.5 text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                        <option value="SSTF" selected>SSTF (Shortest Seek Time First)</option>
+                        <option value="FCFS">FCFS (First-Come, First-Served)</option>
+                        <option value="SCAN">SCAN (Thang máy)</option>
+                        <option value="LOOK">LOOK (Thang máy tối ưu)</option>
+                        <option value="CSCAN">C-SCAN (Circular SCAN)</option>
+                        <option value="CLOOK">C-LOOK (Circular LOOK)</option>
+                    </select>
+                </div>
+
+                <!-- Quick Presets -->
+                <div class="pt-3 border-t border-slate-800">
+                    <span class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tình huống mẫu</span>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button onclick="loadPreset('current')" class="text-left text-xs bg-slate-800 hover:bg-slate-700 p-2 rounded border border-slate-700 transition">
+                            <p class="font-medium text-slate-200">Đề bài hiện tại</p>
+                            <p class="text-[10px] text-slate-400">Start 15, Prev 12, N=29</p>
+                        </button>
+                        <button onclick="loadPreset('classic')" class="text-left text-xs bg-slate-800 hover:bg-slate-700 p-2 rounded border border-slate-700 transition">
+                            <p class="font-medium text-slate-200">Đề bài mẫu SGK</p>
+                            <p class="text-[10px] text-slate-400">Start 53, N=199</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualization Canvas & Report (Right) -->
+        <section class="lg:col-span-8 flex flex-col gap-6">
+            
+            <!-- Statistical Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div class="p-3 bg-indigo-600/20 text-indigo-400 rounded-lg">
+                        <i data-lucide="milestone" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400">Tổng quãng đường</p>
+                        <p class="text-2xl font-bold text-white" id="totalSeekVal">28</p>
+                        <p class="text-[10px] text-slate-400">Cylinders dịch chuyển</p>
+                    </div>
+                </div>
+                <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div class="p-3 bg-amber-500/20 text-amber-400 rounded-lg">
+                        <i data-lucide="git-commit" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400">Số điểm phục vụ</p>
+                        <p class="text-2xl font-bold text-white" id="stopPointsVal">7</p>
+                        <p class="text-[10px] text-slate-400">Bao gồm cả điểm bắt đầu</p>
+                    </div>
+                </div>
+                <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-4 flex items-center gap-4">
+                    <div class="p-3 bg-sky-500/20 text-sky-400 rounded-lg">
+                        <i data-lucide="trending-up" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400">Hiệu năng trung bình</p>
+                        <p class="text-2xl font-bold text-white" id="avgSeekVal">4.67</p>
+                        <p class="text-[10px] text-slate-400">Cylinder / lượt phục vụ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graph Area -->
+            <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-5 flex flex-col gap-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="line-chart" class="w-5 h-5 text-indigo-400"></i>
+                        <h3 class="font-semibold text-white">Biểu đồ hành trình đầu đọc</h3>
+                    </div>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700 font-mono" id="currentDirectionLabel">
+                        Hướng: Tăng
+                    </span>
+                </div>
+                
+                <div class="relative bg-slate-900/60 rounded-lg p-4 border border-slate-800/80 overflow-x-auto">
+                    <!-- Graph container -->
+                    <div class="min-w-[600px] h-[360px] relative" id="canvasContainer">
+                        <canvas id="diskCanvas" class="w-full h-full"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trace Explanations (Step-by-Step Report) -->
+            <div class="bg-slate-950/40 border border-slate-800 rounded-xl p-5 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-5 h-5 text-indigo-400"></i>
+                        <h3 class="font-semibold text-white">Nhật ký dịch chuyển & Phân tích thuật toán</h3>
+                    </div>
+                    <button onclick="copyLogs()" class="flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 bg-indigo-500/10 px-2.5 py-1 rounded border border-indigo-500/20 transition">
+                        <i data-lucide="copy" class="w-3.5 h-3.5"></i> Sao chép kết quả
+                    </button>
+                </div>
+                <div id="stepLogs" class="space-y-3 max-h-[250px] overflow-y-auto pr-2 font-mono text-xs text-slate-300">
+                    <!-- Will be populated dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950/30 py-4 px-6 text-center text-xs text-slate-500">
+        <p>© 2026 Disk Scheduling Simulator Pro. Hỗ trợ học tập và nghiên cứu kiến trúc Hệ điều hành.</p>
+    </footer>
+
+    <!-- Interactive Logic scripts -->
+    <script>
+        // App states
+        let initialDirection = 'up'; // 'up' or 'down'
+        let finalPath = [];
+        let finalLogs = [];
+
+        // UI triggers on load
+        window.onload = function() {
+            lucide.createIcons();
+            // Load default setup
+            runSimulation();
+        };
+
+        // Resize Canvas dynamically
+        window.onresize = function() {
+            drawGraph();
+        };
+
+        function setDirection(dir) {
+            initialDirection = dir;
+            const upBtn = document.getElementById('dirUpBtn');
+            const downBtn = document.getElementById('dirDownBtn');
+            const dirLabel = document.getElementById('currentDirectionLabel');
+
+            if (dir === 'up') {
+                upBtn.className = "py-2 px-3 rounded-lg border text-sm font-medium transition-all flex items-center justify-center gap-1.5 bg-indigo-600/20 border-indigo-500 text-indigo-300";
+                downBtn.className = "py-2 px-3 rounded-lg border text-sm font-medium transition-all flex items-center justify-center gap-1.5 bg-slate-900 border-slate-700 text-slate-400";
+                dirLabel.innerText = "Hướng: Tăng";
+            } else {
+                downBtn.className = "py-2 px-3 rounded-lg border text-sm font-medium transition-all flex items-center justify-center gap-1.5 bg-indigo-600/20 border-indigo-500 text-indigo-300";
+                upBtn.className = "py-2 px-3 rounded-lg border text-sm font-medium transition-all flex items-center justify-center gap-1.5 bg-slate-900 border-slate-700 text-slate-400";
+                dirLabel.innerText = "Hướng: Giảm";
+            }
+            runSimulation();
+        }
+
+        function loadPreset(type) {
+            if (type === 'current') {
+                document.getElementById('maxCylinders').value = "29";
+                document.getElementById('currentPos').value = "15";
+                document.getElementById('prevPos').value = "12";
+                document.getElementById('queueInput').value = "9, 19, 13, 25, 6, 18";
+                setDirection('up');
+            } else if (type === 'classic') {
+                document.getElementById('maxCylinders').value = "199";
+                document.getElementById('currentPos').value = "53";
+                document.getElementById('prevPos').value = "50";
+                document.getElementById('queueInput').value = "98, 183, 37, 122, 14, 124, 65, 67";
+                setDirection('up');
+            }
+            runSimulation();
+        }
+
+        // Calculation of Paths
+        function runSimulation() {
+            const maxCyl = parseInt(document.getElementById('maxCylinders').value) || 199;
+            const start = parseInt(document.getElementById('currentPos').value) || 0;
+            const prev = parseInt(document.getElementById('prevPos').value) || 0;
+            const algo = document.getElementById('algorithmSelect').value;
+            
+            // Safe bounds check
+            if (start > maxCyl) {
+                alert(`Vị trí bắt đầu (${start}) không được lớn hơn giới hạn Cylinder (${maxCyl})`);
+                return;
+            }
+
+            // Parse queue input
+            const queueStr = document.getElementById('queueInput').value;
+            let queue = queueStr.split(',')
+                               .map(x => parseInt(x.trim()))
+                               .filter(x => !isNaN(x) && x >= 0 && x <= maxCyl);
+
+            // Deduplicate to make realistic
+            queue = [...new Set(queue)];
+
+            // Auto-detect direction if prev pos is configured differently
+            let direction = initialDirection;
+            if (start > prev) {
+                direction = 'up';
+            } else if (start < prev) {
+                direction = 'down';
+            }
+
+            // Run chosen algorithm
+            let result;
+            switch(algo) {
+                case 'FCFS':
+                    result = runFCFS(start, queue);
+                    break;
+                case 'SSTF':
+                    result = runSSTF(start, queue);
+                    break;
+                case 'SCAN':
+                    result = runSCAN(start, queue, maxCyl, direction);
+                    break;
+                case 'LOOK':
+                    result = runLOOK(start, queue, direction);
+                    break;
+                case 'CSCAN':
+                    result = runCSCAN(start, queue, maxCyl, direction);
+                    break;
+                case 'CLOOK':
+                    result = runCLOOK(start, queue, direction);
+                    break;
+            }
+
+            finalPath = result.path;
+            finalLogs = result.logs;
+
+            // Update stats
+            document.getElementById('totalSeekVal').innerText = result.totalSeek;
+            document.getElementById('stopPointsVal').innerText = finalPath.length;
+            document.getElementById('avgSeekVal').innerText = (result.totalSeek / Math.max(1, finalPath.length - 1)).toFixed(2);
+
+            // Populate text logs
+            const logContainer = document.getElementById('stepLogs');
+            logContainer.innerHTML = '';
+            
+            finalLogs.forEach((log, index) => {
+                const item = document.createElement('div');
+                item.className = "flex items-start gap-2 border-b border-slate-800/60 pb-1.5 last:border-0";
+                
+                let icon = `<span class="text-indigo-400">[${index}]</span>`;
+                if (index === 0) icon = `<span class="text-emerald-400">[Start]</span>`;
+                if (index === finalLogs.length - 1) icon = `<span class="text-red-400">[End]</span>`;
+
+                item.innerHTML = `
+                    <div class="flex-shrink-0">${icon}</div>
+                    <div class="flex-grow">${log}</div>
+                `;
+                logContainer.appendChild(item);
+            });
+
+            // Draw graphical visual representation
+            drawGraph();
+        }
+
+        // FCFS
+        function runFCFS(start, queue) {
+            const path = [start, ...queue];
+            const logs = [`Khởi tạo đầu đọc tại Cylinder ${start}.`];
+            let totalSeek = 0;
+
+            for(let i = 1; i < path.length; i++) {
+                const dist = Math.abs(path[i] - path[i-1]);
+                totalSeek += dist;
+                logs.push(`Di chuyển từ ${path[i-1]} đến ${path[i]} (Quãng đường dịch chuyển: |${path[i-1]} - ${path[i]}| = ${dist} cylinders)`);
+            }
+            return { path, totalSeek, logs };
+        }
+
+        // SSTF
+        function runSSTF(start, queue) {
+            const path = [start];
+            const logs = [`Khởi tạo đầu đọc tại Cylinder ${start}.`];
+            let current = start;
+            let list = [...queue];
+            let totalSeek = 0;
+
+            while(list.length > 0) {
+                // Find nearest
+                let minDist = Infinity;
+                let nearestIdx = -1;
+                for(let i=0; i<list.length; i++) {
+                    const dist = Math.abs(current - list[i]);
+                    if (dist < minDist) {
+                        minDist = dist;
+                        nearestIdx = i;
+                    }
+                }
+                const next = list[nearestIdx];
+                list.splice(nearestIdx, 1);
+                totalSeek += minDist;
+                logs.push(`Chọn ${next} vì khoảng cách gần hiện tại ${current} nhất (Quãng đường: |${current} - ${next}| = ${minDist} cylinders)`);
+                path.push(next);
+                current = next;
+            }
+            return { path, totalSeek, logs };
+        }
+
+        // SCAN
+        function runSCAN(start, queue, maxCyl, direction) {
+            const path = [start];
+            const logs = [`Khởi tạo đầu đọc tại Cylinder ${start} (Hướng: ${direction === 'up' ? 'Tăng' : 'Giảm'}).`];
+            let totalSeek = 0;
+
+            const left = queue.filter(x => x < start).sort((a,b) => b-a); // descending
+            const right = queue.filter(x => x > start).sort((a,b) => a-b); // ascending
+            
+            // Check if start itself is in queue
+            const hasStart = queue.includes(start);
+
+            if (direction === 'up') {
+                // Read right
+                right.forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Tăng đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+                
+                // Jump to boundary if there are outstanding left requests
+                if (left.length > 0) {
+                    const lastNode = path[path.length-1];
+                    const dist = Math.abs(maxCyl - lastNode);
+                    totalSeek += dist;
+                    logs.push(`Chạm biên tối đa ${maxCyl} (Quãng đường: |${lastNode} - ${maxCyl}| = ${dist} cylinders)`);
+                    path.push(maxCyl);
+
+                    // Revert direction and process left
+                    left.sort((a,b) => b-a).forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Đổi chiều di chuyển Giảm đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            } else {
+                // Read left
+                left.sort((a,b) => b-a).forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Giảm đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+
+                // Jump to boundary 0 if right has elements
+                if (right.length > 0) {
+                    const lastNode = path[path.length-1];
+                    const dist = Math.abs(0 - lastNode);
+                    totalSeek += dist;
+                    logs.push(`Chạm biên tối thiểu 0 (Quãng đường: |${lastNode} - 0| = ${dist} cylinders)`);
+                    path.push(0);
+
+                    // Revert direction and process right
+                    right.sort((a,b) => a-b).forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Đổi chiều di chuyển Tăng đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            }
+            return { path, totalSeek, logs };
+        }
+
+        // LOOK
+        function runLOOK(start, queue, direction) {
+            const path = [start];
+            const logs = [`Khởi tạo đầu đọc tại Cylinder ${start} (Hướng: ${direction === 'up' ? 'Tăng' : 'Giảm'}).`];
+            let totalSeek = 0;
+
+            const left = queue.filter(x => x < start).sort((a,b) => b-a);
+            const right = queue.filter(x => x > start).sort((a,b) => a-b);
+
+            if (direction === 'up') {
+                right.forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Tăng đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+                
+                if (left.length > 0) {
+                    left.sort((a,b) => b-a).forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Đổi chiều di chuyển Giảm đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            } else {
+                left.sort((a,b) => b-a).forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Giảm đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+
+                if (right.length > 0) {
+                    right.sort((a,b) => a-b).forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Đổi chiều di chuyển Tăng đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            }
+            return { path, totalSeek, logs };
+        }
+
+        // CSCAN
+        function runCSCAN(start, queue, maxCyl, direction) {
+            const path = [start];
+            const logs = [`Khởi tạo đầu đọc tại Cylinder ${start} (Hướng vòng tròn: ${direction === 'up' ? 'Tăng' : 'Giảm'}).`];
+            let totalSeek = 0;
+
+            const left = queue.filter(x => x < start).sort((a,b) => a-b);
+            const right = queue.filter(x => x > start).sort((a,b) => a-b);
+
+            if (direction === 'up') {
+                right.forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Tăng đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+
+                if (left.length > 0) {
+                    // Go to boundary
+                    const lastNode = path[path.length-1];
+                    let dist = Math.abs(maxCyl - lastNode);
+                    totalSeek += dist;
+                    logs.push(`Chạm biên tối đa ${maxCyl} (Quãng đường: |${lastNode} - ${maxCyl}| = ${dist} cylinders)`);
+                    path.push(maxCyl);
+
+                    // Revert instantly to 0
+                    dist = maxCyl; // Distance from maxCyl to 0 is maxCyl
+                    totalSeek += dist;
+                    logs.push(`Trượt nhanh (Không đọc dữ liệu) về biên đối diện 0 (Quãng đường: ${dist} cylinders)`);
+                    path.push(0);
+
+                    // Handle left items ascendingly
+                    left.forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Tiếp tục chu kỳ quét Tăng từ biên đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            } else {
+                left.sort((a,b) => b-a).forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Giảm đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+
+                if (right.length > 0) {
+                    const lastNode = path[path.length-1];
+                    let dist = Math.abs(0 - lastNode);
+                    totalSeek += dist;
+                    logs.push(`Chạm biên tối thiểu 0 (Quãng đường: |${lastNode} - 0| = ${dist} cylinders)`);
+                    path.push(0);
+
+                    dist = maxCyl;
+                    totalSeek += dist;
+                    logs.push(`Trượt nhanh (Không đọc dữ liệu) về biên đối diện ${maxCyl} (Quãng đường: ${dist} cylinders)`);
+                    path.push(maxCyl);
+
+                    right.sort((a,b) => b-a).forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Tiếp tục chu kỳ quét Giảm từ biên đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            }
+            return { path, totalSeek, logs };
+        }
+
+        // CLOOK
+        function runCLOOK(start, queue, direction) {
+            const path = [start];
+            const logs = [`Khởi tạo đầu đọc tại Cylinder ${start} (Hướng vòng tròn: ${direction === 'up' ? 'Tăng' : 'Giảm'}).`];
+            let totalSeek = 0;
+
+            const left = queue.filter(x => x < start).sort((a,b) => a-b);
+            const right = queue.filter(x => x > start).sort((a,b) => a-b);
+
+            if (direction === 'up') {
+                right.forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Tăng đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+
+                if (left.length > 0) {
+                    // Loop instantly to the lowest outstanding
+                    const lastNode = path[path.length-1];
+                    const firstLeft = left[0];
+                    const dist = Math.abs(lastNode - firstLeft);
+                    totalSeek += dist;
+                    logs.push(`Trượt nhanh (Không đọc dữ liệu) về yêu cầu thấp nhất ${firstLeft} (Quãng đường: ${dist} cylinders)`);
+                    path.push(firstLeft);
+
+                    left.slice(1).forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Tiếp tục chu kỳ quét Tăng từ vị trí thấp nhất đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            } else {
+                left.sort((a,b) => b-a).forEach(node => {
+                    const dist = Math.abs(node - path[path.length-1]);
+                    totalSeek += dist;
+                    logs.push(`Di chuyển theo chiều Giảm đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${dist} cylinders)`);
+                    path.push(node);
+                });
+
+                if (right.length > 0) {
+                    const lastNode = path[path.length-1];
+                    const highestRight = right[right.length-1];
+                    const dist = Math.abs(lastNode - highestRight);
+                    totalSeek += dist;
+                    logs.push(`Trượt nhanh (Không đọc dữ liệu) về yêu cầu cao nhất ${highestRight} (Quãng đường: ${dist} cylinders)`);
+                    path.push(highestRight);
+
+                    right.slice(0, -1).sort((a,b) => b-a).forEach(node => {
+                        const d = Math.abs(node - path[path.length-1]);
+                        totalSeek += d;
+                        logs.push(`Tiếp tục chu kỳ quét Giảm từ vị trí cao nhất đến ${node} (Quãng đường: |${path[path.length-1]} - ${node}| = ${d} cylinders)`);
+                        path.push(node);
+                    });
+                }
+            }
+            return { path, totalSeek, logs };
+        }
+
+        // Draw visual Canvas Graph representation
+        function drawGraph() {
+            const canvas = document.getElementById('diskCanvas');
+            const container = document.getElementById('canvasContainer');
+            
+            // Sync pixel resolution with layout size
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+
+            const ctx = canvas.getContext('2d');
+            const w = canvas.width;
+            const h = canvas.height;
+
+            const maxCyl = parseInt(document.getElementById('maxCylinders').value) || 199;
+            const queueStr = document.getElementById('queueInput').value;
+            const requests = queueStr.split(',')
+                                    .map(x => parseInt(x.trim()))
+                                    .filter(x => !isNaN(x) && x >= 0 && x <= maxCyl);
+
+            // Styling variables
+            const paddingX = 40;
+            const paddingY = 40;
+            const graphW = w - paddingX * 2;
+            const graphH = h - paddingY * 2;
+
+            // Clear Background
+            ctx.fillStyle = '#1e293b'; // slate-800
+            ctx.fillRect(0, 0, w, h);
+
+            // Map data projection values to X axis coordinates
+            function getX(val) {
+                return paddingX + (val / maxCyl) * graphW;
+            }
+
+            // Draw Top Axis Line (0 to maxCyl)
+            ctx.strokeStyle = '#475569';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(getX(0), paddingY - 10);
+            ctx.lineTo(getX(maxCyl), paddingY - 10);
+            ctx.stroke();
+
+            // Label boundaries
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '11px Inter, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('0', getX(0), paddingY - 22);
+            ctx.fillText(maxCyl.toString(), getX(maxCyl), paddingY - 22);
+
+            // Draw vertical guidelines for request stations
+            requests.forEach(req => {
+                ctx.strokeStyle = '#334155';
+                ctx.lineWidth = 1;
+                ctx.setLineDash([4, 4]);
+                ctx.beginPath();
+                ctx.moveTo(getX(req), paddingY - 10);
+                ctx.lineTo(getX(req), h - paddingY);
+                ctx.stroke();
+                ctx.setLineDash([]); // Reset dash
+
+                ctx.fillStyle = '#64748b';
+                ctx.fillText(req.toString(), getX(req), paddingY - 22);
+            });
+
+            // Map path sequences to Y axis segments
+            const stepsCount = finalPath.length;
+            function getY(index) {
+                if (stepsCount <= 1) return paddingY + graphH / 2;
+                return paddingY + (index / (stepsCount - 1)) * graphH;
+            }
+
+            // Draw head sequence routes
+            ctx.strokeStyle = '#6366f1'; // indigo-500
+            ctx.lineWidth = 3;
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = 'rgba(99, 102, 241, 0.4)';
+            ctx.beginPath();
+
+            finalPath.forEach((pt, idx) => {
+                const x = getX(pt);
+                const y = getY(idx);
+                if (idx === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            });
+            ctx.stroke();
+            
+            // Clean shadows
+            ctx.shadowBlur = 0;
+            ctx.shadowColor = 'transparent';
+
+            // Draw node positions
+            finalPath.forEach((pt, idx) => {
+                const x = getX(pt);
+                const y = getY(idx);
+
+                // Highlight starting point
+                if (idx === 0) {
+                    ctx.fillStyle = '#10b981'; // emerald-500
+                    ctx.beginPath();
+                    ctx.arc(x, y, 7, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.strokeStyle = '#ffffff';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+
+                    ctx.fillStyle = '#10b981';
+                    ctx.font = 'bold 10px Inter, sans-serif';
+                    ctx.textAlign = 'right';
+                    ctx.fillText(`Bắt đầu (${pt}) `, x - 10, y + 3);
+                } else {
+                    ctx.fillStyle = '#f43f5e'; // rose-500
+                    ctx.beginPath();
+                    ctx.arc(x, y, 5, 0, 2 * Math.PI);
+                    ctx.fill();
+
+                    ctx.fillStyle = '#cbd5e1';
+                    ctx.font = '9px Inter, sans-serif';
+                    ctx.textAlign = 'left';
+                    ctx.fillText(` ${pt} (${idx})`, x + 8, y + 3);
+                }
+            });
+        }
+
+        function copyLogs() {
+            const textToCopy = finalLogs.map((log, index) => `[${index === 0 ? 'Bắt đầu' : index}] ${log}`).join('\n');
+            const hiddenTextArea = document.createElement('textarea');
+            hiddenTextArea.value = `KẾT QUẢ PHÂN TÍCH:\n${textToCopy}\n\nTổng quãng đường: ${document.getElementById('totalSeekVal').innerText} Cylinders.`;
+            document.body.appendChild(hiddenTextArea);
+            hiddenTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(hiddenTextArea);
+            alert('Đã sao chép nhật ký phân tích vào khay nhớ tạm (Clipboard)!');
+        }
+    </script>
+</body>
+</html>

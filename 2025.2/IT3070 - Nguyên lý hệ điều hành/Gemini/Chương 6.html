@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS I/O Management - Traning Tool</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --primary-color: #00ffcc;
+            --text-color: #e0e0e0;
+            --danger: #ff5555;
+            --warning: #ffb86c;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 { color: var(--primary-color); }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tab-btn {
+            background-color: var(--surface-color);
+            color: var(--text-color);
+            border: 1px solid var(--primary-color);
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .tab-btn:hover, .tab-btn.active {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+        }
+        .tab-content {
+            display: none;
+            background: var(--surface-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .tab-content.active { display: block; }
+        .card {
+            border-left: 4px solid var(--primary-color);
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            background: rgba(255,255,255,0.05);
+        }
+        code {
+            background: #2a2a2a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--warning);
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 5px 0;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 4px;
+        }
+        button {
+            background: var(--primary-color);
+            color: var(--bg-color);
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover { opacity: 0.8; }
+        .result-box {
+            margin-top: 15px;
+            padding: 15px;
+            background: #000;
+            border: 1px dashed var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 Chuyên đề OS: Quản lý Vào/Ra (I/O)</h1>
+    
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('theory')">1. Lý thuyết Core</button>
+        <button class="tab-btn" onclick="openTab('algo')">2. Bí kíp Disk Scheduling</button>
+        <button class="tab-btn" onclick="openTab('tool')">3. Tool Tính Toán</button>
+    </div>
+
+    <div id="theory" class="tab-content active">
+        <h2>Phân tích Lý thuyết Trọng tâm</h2>
+        <div class="card">
+            <h3>1. Cấu trúc Phân cấp</h3>
+            <p>Nguyên tắc thiết kế từ máy thế hệ 3: <strong>Processor → Thiết bị điều khiển (Device Controller) → Thiết bị ngoại vi (I/O Devices)</strong>[cite: 79, 80]. CPU không làm việc trực tiếp với ngoại vi để giảm tải[cite: 79].</p>
+        </div>
+        <div class="card">
+            <h3>2. Vùng đệm (Buffer)</h3>
+            <p>Sinh ra để xử lý lệch pha tốc độ [cite: 305], cho phép CPU và I/O chạy song song[cite: 310]. <strong>Lưu ý:</strong> Buffer chỉ tối ưu phần mềm, KHÔNG làm tăng tốc độ cơ lý vật lý của thiết bị.</p>
+            <ul>
+                <li><strong>Vùng đệm hệ thống:</strong> Được xây dựng khi khởi tạo OS, tồn tại suốt chu kỳ hệ thống, tránh chi phí tạo/xóa liên tục[cite: 335, 336, 340].</li>
+                <li><strong>Vòng đệm vòng tròn:</strong> Ứng dụng tối ưu cho các luồng hỗ trợ đọc/ghi dữ liệu liên tục[cite: 352].</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>3. Kỹ thuật SPOOL</h3>
+            <p>SPOOL (Simultaneous Peripheral Operation On-Line) dùng để mô phỏng thiết bị song song (như máy in ảo), giải phóng tiến trình khỏi việc phải đợi phần cứng chậm chạp[cite: 411, 421]. Hoàn toàn không liên quan đến kỹ thuật duyệt file.</p>
+        </div>
+        <div class="card">
+            <h3>4. Quản lý Ngắt (Interrupts)</h3>
+            <ul>
+                <li><strong>Ngắt trong (Internal/Trap/Exception):</strong> Sinh ra đồng bộ bởi chính CPU trong lúc thực thi tiến trình (lỗi chia 0, gọi dịch vụ HĐH)[cite: 259].</li>
+                <li><strong>Ngắt ngoài (External):</strong> Do thiết bị phần cứng ngoại vi sinh ra (ví dụ ổ đĩa báo xong việc)[cite: 260]. Có thể bị CPU che (Maskable) hoặc bỏ qua.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="algo" class="tab-content">
+        <h2>Cách giải thuật toán lập lịch đĩa (Disk Scheduling)</h2>
+        <div class="card" style="border-color: var(--danger);">
+            <h3>⚠️ Bẫy tử thần: Sector to Cylinder</h3>
+            <p>Nếu đề bài cho <em>"Vị trí vừa truy xuất sector có số hiệu 20456, 1000 sector/Cylinder"</em>. <strong>Tuyệt đối không trace bằng số 20456</strong>. Phải chia lấy nguyên: <code>20456 // 1000 = Cylinder 20</code> rồi mới trace.</p>
+        </div>
+        
+        <h3>Bản chất các thuật toán[cite: 485, 486, 487, 488, 489, 490, 491, 492]:</h3>
+        <ul>
+            <li><strong>FCFS:</strong> Vào trước phục vụ trước. Cứ theo đúng thứ tự mảng mà đi. Dễ tính nhưng hiệu năng kém[cite: 502].</li>
+            <li><strong>SSTF:</strong> Tham lam cục bộ. Ưu tiên điểm gần đầu từ nhất. <strong>Nhược điểm chí mạng:</strong> Gây ra hiện tượng chờ đợi vô hạn (Starvation) cho các yêu cầu ở xa[cite: 700].</li>
+            <li><strong>SCAN (Thang máy):</strong> Đi theo một chiều, bắt buộc phải <strong>chạm tới biên vật lý</strong> (0 hoặc rãnh max) rồi mới đảo chiều quay về[cite: 909].</li>
+            <li><strong>C-SCAN:</strong> Giống SCAN nhưng khi chạm biên, nó "nhảy cóc" về luôn biên bên kia và <strong>KHÔNG phục vụ</strong> các điểm trên đường bay về[cite: 1137, 1141].</li>
+            <li><strong>LOOK:</strong> Bản "có não" của SCAN. Chỉ đi đến <strong>yêu cầu xa nhất</strong> rồi bẻ lái quay đầu ngay, không thèm chạy càn ra tận biên vật lý[cite: 1163].</li>
+            <li><strong>C-LOOK:</strong> Kết hợp C-SCAN và LOOK. Quét tới yêu cầu cao nhất/thấp nhất rồi vòng ngược ngay lập tức về điểm xa nhất phía bên kia không phục vụ dọc đường[cite: 1163].</li>
+        </ul>
+    </div>
+
+    <div id="tool" class="tab-content">
+        <h2>Interactive Disk Scheduling Trace Tool</h2>
+        <p>Nhập dữ liệu để kiểm tra lại quá trình tính toán quãng đường dịch chuyển đầu từ.</p>
+        
+        <div>
+            <label>Vị trí hiện tại (Cylinder):</label><br>
+            <input type="number" id="startPos" value="20" placeholder="VD: 20">
+        </div>
+        <div>
+            <label>Hàng đợi yêu cầu (Cách nhau bằng dấu phẩy):</label><br>
+            <input type="text" id="queue" value="10, 22, 20, 40, 2, 2, 6, 6, 38, 6" style="width: 100%;" placeholder="VD: 10, 22, 20...">
+        </div>
+        <div>
+            <label>Thuật toán:</label><br>
+            <select id="algoSelect">
+                <option value="FCFS">FCFS</option>
+                <option value="SSTF">SSTF</option>
+            </select>
+        </div>
+        <button onclick="calculatePath()">Tính toán quãng đường</button>
+
+        <div class="result-box" id="resultArea" style="display: none;">
+            <h3 style="margin-top: 0;">Kết quả trace:</h3>
+            <p><strong>Quỹ đạo di chuyển:</strong> <span id="pathStr" style="color: var(--primary-color);"></span></p>
+            <p><strong>Công thức tính:</strong> <span id="calcStr"></span></p>
+            <p><strong>Tổng quãng đường (Σ):</strong> <span id="totalSum" style="color: var(--danger); font-size: 1.5em; font-weight: bold;"></span> Cylinders</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Tab switching logic
+    function openTab(tabId) {
+        document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        event.target.classList.add('active');
+    }
+
+    // Calculation logic
+    function calculatePath() {
+        const startPos = parseInt(document.getElementById('startPos').value);
+        const queueStr = document.getElementById('queue').value;
+        const algo = document.getElementById('algoSelect').value;
+        
+        // Parse the queue, keep it as is for FCFS to maintain duplicates properly if needed, 
+        // though logically staying at the same cylinder costs 0.
+        let reqs = queueStr.split(',').map(x => parseInt(x.trim())).filter(x => !isNaN(x));
+        
+        let current = startPos;
+        let path = [current];
+        let calcStr = "";
+        let totalSum = 0;
+
+        if (algo === 'FCFS') {
+            for (let i = 0; i < reqs.length; i++) {
+                let target = reqs[i];
+                let dist = Math.abs(current - target);
+                path.push(target);
+                calcStr += `|${current} - ${target}|${i < reqs.length - 1 ? ' + ' : ''}`;
+                totalSum += dist;
+                current = target;
+            }
+        } 
+        else if (algo === 'SSTF') {
+            let pending = [...reqs];
+            while (pending.length > 0) {
+                // Find closest
+                let closestIdx = 0;
+                let minDist = Math.abs(current - pending[0]);
+                for (let i = 1; i < pending.length; i++) {
+                    let dist = Math.abs(current - pending[i]);
+                    if (dist < minDist) {
+                        minDist = dist;
+                        closestIdx = i;
+                    }
+                }
+                
+                let target = pending[closestIdx];
+                path.push(target);
+                calcStr += `|${current} - ${target}|${pending.length > 1 ? ' + ' : ''}`;
+                totalSum += minDist;
+                current = target;
+                pending.splice(closestIdx, 1);
+            }
+        }
+
+        // Display results
+        document.getElementById('resultArea').style.display = 'block';
+        document.getElementById('pathStr').innerText = path.join(' ➔ ');
+        document.getElementById('calcStr').innerText = calcStr;
+        document.getElementById('totalSum').innerText = totalSum;
+    }
+</script>
+</body>
+</html>

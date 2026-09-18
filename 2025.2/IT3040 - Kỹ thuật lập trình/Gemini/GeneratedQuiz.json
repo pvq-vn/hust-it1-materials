@@ -1,0 +1,3449 @@
+[
+  {
+    "id": 1,
+    "type": "multiple",
+    "text": "Mục tiêu cốt lõi của môn học IT3040 - Kỹ thuật lập trình là gì?",
+    "options": [
+      "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+      "Chỉ tập trung học cú pháp ngôn ngữ C/C++",
+      "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế",
+      "Sửa chữa và bảo trì phần cứng máy tính"
+    ],
+    "correctAnswers": [
+      "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+      "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế"
+    ],
+    "explanation": "Học phần trang bị các kỹ thuật (quản lý bộ nhớ, đệ quy, gỡ rối, tinh chỉnh) để sinh viên viết mã nguồn hiệu quả và phát triển phần mềm chất lượng cao.",
+    "slideRef": "IT3040.pdf - Trang 3, 5"
+  },
+  {
+    "id": 2,
+    "type": "single",
+    "text": "Trong chu trình lệnh, thanh ghi nào giữ vai trò trỏ tới địa chỉ của lệnh sẽ được nhận tiếp theo?",
+    "options": [
+      "IR (Instruction Register)",
+      "PC (Program Counter)",
+      "Accumulator",
+      "Stack Pointer"
+    ],
+    "correctAnswers": [
+      "PC (Program Counter)"
+    ],
+    "explanation": "PC (Program Counter) là thanh ghi giữ địa chỉ của lệnh tiếp theo sẽ được CPU nạp vào.",
+    "slideRef": "IT3040.pdf - Trang 10, 16"
+  },
+  {
+    "id": 3,
+    "type": "multiple",
+    "text": "Bất cứ một ngôn ngữ lập trình nào cũng được cấu thành từ 3 thành phần căn bản nào?",
+    "options": [
+      "Mô thức lập trình (Paradigm)",
+      "Cú pháp (Syntax)",
+      "Ngữ nghĩa (Semantics)",
+      "Trình biên dịch (Compiler)"
+    ],
+    "correctAnswers": [
+      "Mô thức lập trình (Paradigm)",
+      "Cú pháp (Syntax)",
+      "Ngữ nghĩa (Semantics)"
+    ],
+    "explanation": "Ba thành phần cốt lõi của NNLT là Paradigm, Syntax và Semantics.",
+    "slideRef": "IT3040.pdf - Trang 23, 28"
+  },
+  {
+    "id": 4,
+    "type": "single",
+    "text": "Trình biên dịch (Compiler) khác biệt gì so với Thông dịch (Interpreter)?",
+    "options": [
+      "Biên dịch toàn bộ chương trình thành mã máy trước khi thực hiện",
+      "Dịch và thực hiện từng dòng lệnh cùng lúc",
+      "Chạy trực tiếp mã nguồn không cần mã máy",
+      "Chỉ áp dụng cho ngôn ngữ hướng đối tượng"
+    ],
+    "correctAnswers": [
+      "Biên dịch toàn bộ chương trình thành mã máy trước khi thực hiện"
+    ],
+    "explanation": "Compiler dịch toàn bộ source thành mã máy/object trước khi chạy, trong khi Interpreter dịch và chạy từng dòng.",
+    "slideRef": "IT3040.pdf - Trang 32"
+  },
+  {
+    "id": 5,
+    "type": "multiple",
+    "text": "Công nghệ đối tượng (OOT) được ứng dụng mạnh mẽ trong các hệ thống nào?",
+    "options": [
+      "Hệ thống Client/Server và Web",
+      "Hệ nhúng (embedded system)",
+      "Hệ thống thời gian thực (real-time)",
+      "Phần mềm hệ thống nói chung"
+    ],
+    "correctAnswers": [
+      "Hệ thống Client/Server và Web",
+      "Hệ nhúng (embedded system)",
+      "Hệ thống thời gian thực (real-time)",
+      "Phần mềm hệ thống nói chung"
+    ],
+    "explanation": "OOT được sử dụng rộng rãi trong các hệ thống Web, Client/Server, Hệ nhúng, Real-time và phần mềm nói chung.",
+    "slideRef": "IT3040.pdf - Trang 37"
+  },
+  {
+    "id": 6,
+    "type": "single",
+    "text": "Trong lập trình Hướng đối tượng, 'Đối tượng' (Object) đặc trưng bởi các yếu tố nào?",
+    "options": [
+      "Thuộc tính (Trạng thái) và Phương thức (Hành vi)",
+      "Chỉ bao gồm dữ liệu (Data)",
+      "Cấu trúc dữ liệu và Thuật toán (Algorithms)",
+      "Chỉ gồm các hàm (Functions)"
+    ],
+    "correctAnswers": [
+      "Thuộc tính (Trạng thái) và Phương thức (Hành vi)"
+    ],
+    "explanation": "Tất cả các đối tượng đều có State (trạng thái/thuộc tính) và Behavior (hành vi/phương thức).",
+    "slideRef": "IT3040.pdf - Trang 39"
+  },
+  {
+    "id": 7,
+    "type": "single",
+    "text": "Sự khác biệt cốt lõi giữa Lập trình Hướng cấu trúc và Lập trình Hướng đối tượng (OOP) là gì?",
+    "options": [
+      "Hướng cấu trúc: objects + messages; OOP: data + algorithms",
+      "Hướng cấu trúc: data structures + algorithms; OOP: objects + messages",
+      "Không có sự khác biệt về mặt bản chất",
+      "OOP không có data structures"
+    ],
+    "correctAnswers": [
+      "Hướng cấu trúc: data structures + algorithms; OOP: objects + messages"
+    ],
+    "explanation": "OOP coi chương trình là các objects trao đổi messages với nhau, thay vì chỉ là cấu trúc dữ liệu và giải thuật.",
+    "slideRef": "IT3040.pdf - Trang 29"
+  },
+  {
+    "id": 8,
+    "type": "single",
+    "text": "Ngôn ngữ C++ ra đời năm 1979 đã bổ sung thêm tính năng gì cực kỳ quan trọng so với C?",
+    "options": [
+      "Lập trình hướng đối tượng (OOP) và Template",
+      "Trình thông dịch (Interpreter) tự động",
+      "Garbage Collection để giải phóng bộ nhớ",
+      "Giao diện người dùng đồ họa (GUI)"
+    ],
+    "correctAnswers": [
+      "Lập trình hướng đối tượng (OOP) và Template"
+    ],
+    "explanation": "Bjarne Stroustrup thêm OOP, Template, namespace, exception vào ngôn ngữ C để tạo ra C++.",
+    "slideRef": "IT3040.pdf - Trang 50"
+  },
+  {
+    "id": 9,
+    "type": "single",
+    "text": "Trong C++, file header `<iomanip>` có công dụng chính là gì?",
+    "options": [
+      "Xử lý các luồng file (đọc/ghi tệp)",
+      "Cung cấp trình thao tác để định dạng đầu ra (độ rộng, căn lề, độ chính xác)",
+      "Định nghĩa đối tượng cin, cout",
+      "Quản lý cấp phát bộ nhớ động"
+    ],
+    "correctAnswers": [
+      "Cung cấp trình thao tác để định dạng đầu ra (độ rộng, căn lề, độ chính xác)"
+    ],
+    "explanation": "iomanip chứa các manipulator như setw, setprecision để format output.",
+    "slideRef": "IT3040.pdf - Trang 54"
+  },
+  {
+    "id": 10,
+    "type": "fill",
+    "text": "Để nhập liên tiếp 2 giá trị vào biến 'ten' và 'tuoi', ta dùng cú pháp: cin >> ten __ tuoi; (Nhập toán tử còn thiếu vào ô trống)",
+    "options": [],
+    "correctAnswers": [
+      ">>"
+    ],
+    "explanation": "Toán tử trích luồng >> có thể được gọi liên tiếp để nhập nhiều biến.",
+    "slideRef": "IT3040.pdf - Trang 61"
+  },
+  {
+    "id": 11,
+    "type": "multiple",
+    "text": "Trong Chu trình phát triển phần mềm, các bước nào thuộc Program Development Cycle?",
+    "options": [
+      "Analyze Requirements",
+      "Design Solution",
+      "Validate Design",
+      "Market and Sell Software"
+    ],
+    "correctAnswers": [
+      "Analyze Requirements",
+      "Design Solution",
+      "Validate Design"
+    ],
+    "explanation": "Chu trình bao gồm Analyze, Design, Validate, Implement, Test, Document.",
+    "slideRef": "IT3040.pdf - Trang 64"
+  },
+  {
+    "id": 12,
+    "type": "single",
+    "text": "Desk check trong quá trình Validate Design là hành động gì?",
+    "options": [
+      "Chạy công cụ tự động dò tìm bộ nhớ",
+      "Nhập dữ liệu giả lập giống môi trường production",
+      "Lập trình viên duyệt bằng tay logic thuật toán để tìm lỗi",
+      "Thử nghiệm cấu trúc bảng CSDL"
+    ],
+    "correctAnswers": [
+      "Lập trình viên duyệt bằng tay logic thuật toán để tìm lỗi"
+    ],
+    "explanation": "Desk check (kiểm tra tại bàn) là việc xem lại logic code một cách thủ công.",
+    "slideRef": "IT3040.pdf - Trang 73"
+  },
+  {
+    "id": 13,
+    "type": "multiple",
+    "text": "Đâu là điểm khác biệt giữa `char s[30] = \"Da Lat\";` và `char *s = \"Da lat\";`?",
+    "options": [
+      "Cả hai đều cho phép gán lại s[3] = 'L'",
+      "Phép thay đổi nội dung chỉ dùng được với mảng (C1)",
+      "Hằng chuỗi (C2) không thể bị thay đổi nội dung",
+      "Thay đổi hằng chuỗi sẽ gây lỗi Segmentation Fault lúc chạy"
+    ],
+    "correctAnswers": [
+      "Phép thay đổi nội dung chỉ dùng được với mảng (C1)",
+      "Hằng chuỗi (C2) không thể bị thay đổi nội dung",
+      "Thay đổi hằng chuỗi sẽ gây lỗi Segmentation Fault lúc chạy"
+    ],
+    "explanation": "Con trỏ char * trỏ vào vùng nhớ read-only (literal string), mọi nỗ lực ghi đè sẽ gây lỗi run-time.",
+    "slideRef": "IT3040.pdf - Trang 85, 92"
+  },
+  {
+    "id": 14,
+    "type": "single",
+    "text": "Cho `int *pa = &a[0];`. Biểu thức `a[i]` tương đương với biểu thức nào qua con trỏ `pa`?",
+    "options": [
+      "pa + i",
+      "*(pa + i)",
+      "&pa[i]",
+      "*pa + i"
+    ],
+    "correctAnswers": [
+      "*(pa + i)"
+    ],
+    "explanation": "Bản chất a[i] chính là *(a + i). Do pa trỏ vào a[0], nên *(pa + i) tương đương a[i].",
+    "slideRef": "IT3040.pdf - Trang 83"
+  },
+  {
+    "id": 15,
+    "type": "single",
+    "text": "Khai báo `char *ds[10];` có nghĩa là gì?",
+    "options": [
+      "Một mảng gồm 10 phần tử, mỗi phần tử là 1 con trỏ kiểu char",
+      "Một con trỏ trỏ tới 10 phần tử kiểu char",
+      "Cấp phát 10 byte bộ nhớ cho chuỗi `ds`",
+      "Sai cú pháp"
+    ],
+    "correctAnswers": [
+      "Một mảng gồm 10 phần tử, mỗi phần tử là 1 con trỏ kiểu char"
+    ],
+    "explanation": "Cú pháp này tạo ra một Mảng các con trỏ (Array of pointers).",
+    "slideRef": "IT3040.pdf - Trang 94"
+  },
+  {
+    "id": 16,
+    "type": "fill",
+    "text": "Khi biểu diễn mảng 2 chiều kích thước (rows * cols) thành mảng 1 chiều (int *arr). Phần tử ở vị trí (i, j) sẽ được truy cập bởi `arr[_____]` (Viết liền không khoảng trắng, theo chuẩn biến i, cols, j)",
+    "options": [],
+    "correctAnswers": [
+      "i*cols+j"
+    ],
+    "explanation": "Cách tính offset 1D từ mảng 2D là lấy chỉ số hàng nhân với tổng số cột, rồi cộng chỉ số cột.",
+    "slideRef": "IT3040.pdf - Trang 114"
+  },
+  {
+    "id": 17,
+    "type": "multiple",
+    "text": "Để giải phóng bộ nhớ cho mảng 2 chiều `int **mt` cấp phát bằng con trỏ của con trỏ, ta phải làm gì?",
+    "options": [
+      "Sử dụng 1 lệnh `delete[] mt;` là đủ",
+      "Dùng vòng lặp `for(int i=0; i<rows; i++) delete[] mt[i];` để giải phóng các hàng",
+      "Sau khi giải phóng các hàng, dùng `delete[] mt;` để giải phóng mảng con trỏ",
+      "Dùng hàm `free()` thay thế"
+    ],
+    "correctAnswers": [
+      "Dùng vòng lặp `for(int i=0; i<rows; i++) delete[] mt[i];` để giải phóng các hàng",
+      "Sau khi giải phóng các hàng, dùng `delete[] mt;` để giải phóng mảng con trỏ"
+    ],
+    "explanation": "Bạn phải giải phóng từng con trỏ thành phần (các hàng), sau đó mới giải phóng mảng chứa các con trỏ đó.",
+    "slideRef": "IT3040.pdf - Trang 122"
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "text": "Trong cú pháp Hàm nặc danh (Lambda), mệnh đề bắt giữ (capture clause) `[=]` mang ý nghĩa gì?",
+    "options": [
+      "Không bắt giữ bất kỳ biến nào",
+      "Bắt giữ tất cả các biến đã sử dụng theo tham chiếu",
+      "Bắt giữ tất cả các biến đã sử dụng theo giá trị",
+      "Bỏ qua các lỗi ngoại lệ (exceptions)"
+    ],
+    "correctAnswers": [
+      "Bắt giữ tất cả các biến đã sử dụng theo giá trị"
+    ],
+    "explanation": "Dấu '=' đại diện cho pass-by-value đối với toàn bộ biến ngoài scope.",
+    "slideRef": "IT3040.pdf - Trang 142"
+  },
+  {
+    "id": 19,
+    "type": "single",
+    "text": "Capture clause `[x, &y]` trong hàm Lambda có nghĩa là:",
+    "options": [
+      "Bắt x theo tham chiếu, y theo giá trị",
+      "Bắt x theo giá trị, y theo tham chiếu",
+      "Cấp phát con trỏ mới cho x và y",
+      "Bắt tất cả các biến theo tham chiếu"
+    ],
+    "correctAnswers": [
+      "Bắt x theo giá trị, y theo tham chiếu"
+    ],
+    "explanation": "Biến có dấu & được bắt theo tham chiếu, biến không có được bắt theo giá trị.",
+    "slideRef": "IT3040.pdf - Trang 144"
+  },
+  {
+    "id": 20,
+    "type": "multiple",
+    "text": "Sự khác biệt giữa Inline Function và Macro là gì?",
+    "options": [
+      "Inline Function được Trình biên dịch (Compiler) xử lý, Macro do Trình tiền xử lý (Preprocessor) xử lý",
+      "Macro kiểm tra kiểu dữ liệu rất chặt chẽ",
+      "Inline Function có kiểm tra kiểu dữ liệu và tuân theo quy tắc phạm vi",
+      "Macro dễ bảo trì hơn Inline Function"
+    ],
+    "correctAnswers": [
+      "Inline Function được Trình biên dịch (Compiler) xử lý, Macro do Trình tiền xử lý (Preprocessor) xử lý",
+      "Inline Function có kiểm tra kiểu dữ liệu và tuân theo quy tắc phạm vi"
+    ],
+    "explanation": "Inline function an toàn hơn Macro vì nó là tính năng của trình biên dịch, đảm bảo scope và type check.",
+    "slideRef": "IT3040.pdf - Trang 168"
+  },
+  {
+    "id": 21,
+    "type": "single",
+    "text": "Đoạn code định nghĩa toán tử `A + B` cho struct MATRIX chứa mảng động Data. Nếu gán `C = A + B` trong vòng lặp 10,000 lần gây crash/lỗi run-time, lý do chính là:",
+    "options": [
+      "Chương trình chạy vượt quá giới hạn xung nhịp CPU",
+      "Hàm `operator+` trả về một MATRIX mới cấp phát bộ nhớ, việc gán lại C nhiều lần sẽ làm rò rỉ (leak) bộ nhớ cũ của C",
+      "Không thể dùng operator+ cho struct trong C++",
+      "Biến A và B bị xóa sau khi cộng"
+    ],
+    "correctAnswers": [
+      "Hàm `operator+` trả về một MATRIX mới cấp phát bộ nhớ, việc gán lại C nhiều lần sẽ làm rò rỉ (leak) bộ nhớ cũ của C"
+    ],
+    "explanation": "Biến C được gán vùng nhớ mới liên tục mà không free/delete vùng nhớ cũ, gây Memory Leak, cạn kiệt RAM và crash.",
+    "slideRef": "IT3040 - Đề thi.pdf - Trang 1"
+  },
+  {
+    "id": 22,
+    "type": "multiple",
+    "text": "Đặc điểm của biến cục bộ được khai báo với từ khóa `static` là gì?",
+    "options": [
+      "Phạm vi truy cập chỉ nằm trong hàm chứa nó",
+      "Thời gian sống từ khi chương trình bắt đầu đến khi kết thúc",
+      "Giữ được giá trị giữa các lần gọi hàm",
+      "Có thể được gọi từ bất kỳ file nào (toàn cục)"
+    ],
+    "correctAnswers": [
+      "Phạm vi truy cập chỉ nằm trong hàm chứa nó",
+      "Thời gian sống từ khi chương trình bắt đầu đến khi kết thúc",
+      "Giữ được giá trị giữa các lần gọi hàm"
+    ],
+    "explanation": "Static local variable sống trên Data Segment nên lưu giá trị xuyên suốt, nhưng Scope vẫn bị giới hạn trong hàm.",
+    "slideRef": "IT3040.pdf - Trang 179"
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "text": "Trong kỹ thuật lập trình, Kỹ thuật lính canh (Sentinel) đem lại hiệu quả gì rõ rệt nhất?",
+    "options": [
+      "Mã hóa bảo vệ dữ liệu khỏi hacker",
+      "Giảm thiểu phép kiểm tra điều kiện biên bên trong vòng lặp, giúp lặp nhanh hơn",
+      "Giải phóng bộ nhớ heap tự động",
+      "Tự động sửa các lỗi cú pháp (Syntax error)"
+    ],
+    "correctAnswers": [
+      "Giảm thiểu phép kiểm tra điều kiện biên bên trong vòng lặp, giúp lặp nhanh hơn"
+    ],
+    "explanation": "Bằng cách gắn lính canh ở cuối mảng, ta loại bỏ được lệnh check (i < size) ở mỗi vòng lặp.",
+    "slideRef": "IT3040.pdf - Trang 193"
+  },
+  {
+    "id": 24,
+    "type": "single",
+    "text": "Giá trị của x và y sau khi chạy đoạn lệnh sau: `int x = 5, y = 7; int *p = &x; int &r = x; *p += 2; y += r;`",
+    "options": [
+      "x = 5, y = 7",
+      "x = 7, y = 12",
+      "x = 7, y = 14",
+      "x = 10, y = 14"
+    ],
+    "correctAnswers": [
+      "x = 7, y = 14"
+    ],
+    "explanation": "*p += 2 làm x = 7. r là tham chiếu của x, nên lúc này r = 7. Vậy y += r tương đương y = 7 + 7 = 14.",
+    "slideRef": "IT3040 - Đề thi.pdf - Trang 29"
+  },
+  {
+    "id": 25,
+    "type": "multiple",
+    "text": "Khác biệt giữa 2 cách khai báo `'x'` và `\"x\"` là gì?",
+    "options": [
+      "'x' là một kiểu character, chiếm 1 byte",
+      "\"x\" là một chuỗi (string literal), thực chất chiếm 2 byte (cộng thêm kí tự null '\\0')",
+      "Cả hai cách đều khai báo kiểu String",
+      "'x' có thể gán cho kiểu con trỏ char*"
+    ],
+    "correctAnswers": [
+      "'x' là một kiểu character, chiếm 1 byte",
+      "\"x\" là một chuỗi (string literal), thực chất chiếm 2 byte (cộng thêm kí tự null '\\0')"
+    ],
+    "explanation": "Nháy đơn là ký tự, nháy kép là chuỗi kí tự (bao gồm kí tự '\\0' kết thúc).",
+    "slideRef": "IT3040 - Đề thi.pdf - Trang 2"
+  },
+  {
+    "id": 26,
+    "type": "single",
+    "text": "Khi đa năng hóa toán tử (Operator Overloading), đặc điểm nào sau đây KHÔNG ĐÚNG?",
+    "options": [
+      "Có thể đa năng hóa được cả toán tử điều kiện (?:)",
+      "Toán hạng phải có ít nhất 1 thuộc kiểu do người dùng định nghĩa",
+      "Không thể tự định nghĩa ra các toán tử mới hoàn toàn (như @, $)",
+      "Có thể dùng tham số có giá trị ngầm định"
+    ],
+    "correctAnswers": [
+      "Có thể đa năng hóa được cả toán tử điều kiện (?:)"
+    ],
+    "explanation": "Trong C++, một số toán tử không thể override như: `.` `.*` `::` `?:` `sizeof`.",
+    "slideRef": "IT3040 - Đề thi.pdf - Trang 32"
+  },
+  {
+    "id": 27,
+    "type": "multiple",
+    "text": "Để tối ưu mã đối với Số thực dấu phẩy động (Floating point), C++ khuyên dùng phương án nào?",
+    "options": [
+      "Dùng x * 0.5 thay vì x / 2.0 (nhân nhanh hơn chia)",
+      "Hạn chế dùng hàm sin, exp, log nếu có thể (chậm gấp 10 lần phép nhân)",
+      "Nên thay x * 3 bằng x + x + x",
+      "Luôn luôn dùng double vì nó xử lý nhanh hơn float"
+    ],
+    "correctAnswers": [
+      "Dùng x * 0.5 thay vì x / 2.0 (nhân nhanh hơn chia)",
+      "Hạn chế dùng hàm sin, exp, log nếu có thể (chậm gấp 10 lần phép nhân)",
+      "Nên thay x * 3 bằng x + x + x"
+    ],
+    "explanation": "Toán hạng nổi (Float) thường nhanh hơn double, Phép cộng nhanh hơn nhân, Phép nhân nhanh hơn chia.",
+    "slideRef": "IT3040.pdf - Trang 238"
+  },
+  {
+    "id": 28,
+    "type": "fill",
+    "text": "Khi phát triển phần mềm, hàm bắt lỗi macro `assert(expression)` thuộc thư viện chuẩn nào? Nhập tên file header (ví dụ: stdio.h)",
+    "options": [],
+    "correctAnswers": [
+      "assert.h"
+    ],
+    "explanation": "Hàm assert() nằm trong <assert.h> hoặc <cassert>.",
+    "slideRef": "IT3040.pdf - Trang 671"
+  },
+  {
+    "id": 29,
+    "type": "single",
+    "text": "Trong khối xử lý ngoại lệ của C++, từ khóa nào dùng để 'ném' ra một lỗi bất thường?",
+    "options": [
+      "try",
+      "catch",
+      "throw",
+      "break"
+    ],
+    "correctAnswers": [
+      "throw"
+    ],
+    "explanation": "Quy trình: try (thử thực thi) -> throw (ném lỗi nếu có) -> catch (chụp và xử lý lỗi).",
+    "slideRef": "IT3040.pdf - Trang 686"
+  },
+  {
+    "id": 30,
+    "type": "single",
+    "text": "Khuôn mẫu hàm (Template function) mang lại lợi ích gì?",
+    "options": [
+      "Tăng tốc độ vòng lặp",
+      "Định nghĩa một cấu trúc hàm chung cho nhiều hàm có cùng logic nhưng kiểu dữ liệu tham số và trả về khác nhau",
+      "Tiết kiệm dung lượng bộ nhớ Data segment",
+      "Thay thế cho biến static"
+    ],
+    "correctAnswers": [
+      "Định nghĩa một cấu trúc hàm chung cho nhiều hàm có cùng logic nhưng kiểu dữ liệu tham số và trả về khác nhau"
+    ],
+    "explanation": "Template hỗ trợ tính trừu tượng kiểu dữ liệu, giảm thiểu mã nguồn lặp lại (Generic Programming).",
+    "slideRef": "IT3040 - Đề thi.pdf - Trang 21"
+  },
+  {
+    "id": 31,
+    "type": "single",
+    "text": "Mục tiêu quan trọng nhất của học phần Kỹ thuật lập trình (IT3040) là gì?",
+    "options": [
+      "Học cách sử dụng thành thạo các framework lập trình Web như ReactJS, NodeJS.",
+      "Trang bị các kỹ thuật cơ bản nhất mà LTV chuyên nghiệp cần nắm vững để viết mã nguồn hiệu quả (quản lý bộ nhớ, hàm, cấu trúc dữ liệu,...).",
+      "Tìm hiểu sâu về cấu trúc phần cứng máy tính và cách thiết kế vi mạch.",
+      "Học cách quản trị dự án phần mềm theo mô hình Agile/Scrum."
+    ],
+    "correctAnswers": [
+      "Trang bị các kỹ thuật cơ bản nhất mà LTV chuyên nghiệp cần nắm vững để viết mã nguồn hiệu quả (quản lý bộ nhớ, hàm, cấu trúc dữ liệu,...)."
+    ],
+    "explanation": "Mục tiêu môn học là trang bị kỹ thuật lập trình quan trọng như quản lý bộ nhớ, kỹ thuật đệ quy, gỡ rối, tinh chỉnh mã nguồn...",
+    "slideRef": "Chương 1 - Lec1 - Slide 2"
+  },
+  {
+    "id": 32,
+    "type": "single",
+    "text": "Cho đoạn mã C++ sau. Giá trị của a và b sau khi thực thi là bao nhiêu?\n```cpp\nint a, b=10;\na = ++b + 5;\n```",
+    "code": "int a, b=10;\na = ++b + 5;",
+    "options": [
+      "a = 15, b = 10",
+      "a = 15, b = 11",
+      "a = 16, b = 11",
+      "a = 16, b = 10"
+    ],
+    "correctAnswers": [
+      "a = 16, b = 11"
+    ],
+    "explanation": "Toán tử tiền tố ++b sẽ tăng b lên 1 (thành 11) trước, sau đó mới thực hiện phép cộng 11 + 5 = 16 và gán cho a.",
+    "slideRef": "Chương 2 - Lec2 - Slide 3"
+  },
+  {
+    "id": 33,
+    "type": "single",
+    "text": "Phép toán `++b = c++;` (với b, c là các biến int đã khởi tạo) trong C++ có hợp lệ (biên dịch thành công) hay không?",
+    "options": [
+      "Hợp lệ",
+      "Không hợp lệ (Lỗi biên dịch)"
+    ],
+    "correctAnswers": [
+      "Hợp lệ"
+    ],
+    "explanation": "Hợp lệ. Toán tử tiền tố (++b) làm thay đổi giá trị biến và trả về chính tham chiếu đến biến đó (lvalue), nên có thể nằm ở vế trái phép gán.",
+    "slideRef": "Chương 2 - Lec2 - Slide 3"
+  },
+  {
+    "id": 34,
+    "type": "single",
+    "text": "Phép toán `a++ = b++ + 10;` trong C/C++ có hợp lệ hay không?",
+    "options": [
+      "Hợp lệ",
+      "Không hợp lệ (Lỗi biên dịch)"
+    ],
+    "correctAnswers": [
+      "Không hợp lệ (Lỗi biên dịch)"
+    ],
+    "explanation": "Không hợp lệ. Toán tử hậu tố (a++) trả về giá trị của biến trước khi thay đổi (một giá trị tạm - rvalue). Không thể gán giá trị cho một rvalue.",
+    "slideRef": "Chương 2 - Lec2 - Slide 3"
+  },
+  {
+    "id": 35,
+    "type": "multiple",
+    "text": "Thuật ngữ 'Extreme programming (XP)' trong bước Implement Design được mô tả như thế nào?",
+    "options": [
+      "Lập trình với các ngôn ngữ cực kỳ khó (như Assembly, Brainfuck).",
+      "Coding và testing ngay sau khi các yêu cầu được xác định.",
+      "Viết mã nguồn mà không cần tài liệu hướng dẫn (document).",
+      "Sự tham gia liên tục của quy trình kiểm thử vào quá trình lập trình."
+    ],
+    "correctAnswers": [
+      "Coding và testing ngay sau khi các yêu cầu được xác định.",
+      "Sự tham gia liên tục của quy trình kiểm thử vào quá trình lập trình."
+    ],
+    "explanation": "Extreme programming (XP) là phương pháp yêu cầu coding và testing diễn ra ngay lập tức sau khi requirement được xác định.",
+    "slideRef": "Chương 1 - Lec1 - Slide 56"
+  },
+  {
+    "id": 36,
+    "type": "multiple",
+    "text": "Các hoạt động nào dưới đây thuộc bước 'Document Solution' (Bước 6)?",
+    "options": [
+      "Tìm và sửa các lỗi syntax và logic.",
+      "Rà soát lại program code, loại bỏ các dead code.",
+      "Rà soát, hoàn thiện documentation.",
+      "Chuẩn bị cho bài kiểm thử Beta."
+    ],
+    "correctAnswers": [
+      "Rà soát lại program code, loại bỏ các dead code.",
+      "Rà soát, hoàn thiện documentation."
+    ],
+    "explanation": "Document Solution bao gồm: loại bỏ dead code (các lệnh không bao giờ được gọi) và hoàn thiện tài liệu.",
+    "slideRef": "Chương 1 - Lec1 - Slide 58"
+  },
+  {
+    "id": 37,
+    "type": "single",
+    "text": "Đoạn mã sau sẽ in ra màn hình kết quả gì?\n```cpp\nprintf(\"%d\", printf(\"%d\", 200));\n```",
+    "code": "printf(\"%d\", printf(\"%d\", 200));",
+    "options": [
+      "200",
+      "2001",
+      "2003",
+      "Lỗi biên dịch do lồng hàm printf."
+    ],
+    "correctAnswers": [
+      "2003"
+    ],
+    "explanation": "Hàm printf bên trong in ra '200' và trả về số lượng ký tự đã in (là 3 ký tự). Hàm printf bên ngoài nhận giá trị 3 và in ra tiếp. Kết quả gộp lại trên màn hình là 2003.",
+    "slideRef": "Chương 2 - Lec2 - Slide 4"
+  },
+  {
+    "id": 38,
+    "type": "multiple",
+    "text": "Vùng nhớ Stack (Ngăn xếp) trong kiến trúc bộ nhớ được dùng để lưu trữ những thành phần nào khi một hàm được gọi?",
+    "options": [
+      "Biến toàn cục (Global variables).",
+      "Biến cục bộ (Local variables) và Tham số (Parameters).",
+      "Địa chỉ trả về (Return address in main).",
+      "Bộ nhớ cấp phát động bằng toán tử 'new'."
+    ],
+    "correctAnswers": [
+      "Biến cục bộ (Local variables) và Tham số (Parameters).",
+      "Địa chỉ trả về (Return address in main)."
+    ],
+    "explanation": "Stack lưu trữ Local variables, Parameters, Return address, và Frame pointer (FP). Biến toàn cục lưu ở Data Segment, cấp phát động lưu ở Heap.",
+    "slideRef": "Chương 2 - Lec2 - Slide 44"
+  },
+  {
+    "id": 39,
+    "type": "single",
+    "text": "Theo mô hình tổ chức bộ nhớ tiêu chuẩn của một tiến trình, vùng nhớ Heap và Stack phát triển theo chiều nào?",
+    "options": [
+      "Cả hai đều phát triển từ vùng nhớ thấp lên cao.",
+      "Stack phát triển từ vùng nhớ cao xuống thấp, Heap phát triển từ vùng nhớ thấp lên cao.",
+      "Stack phát triển từ vùng nhớ thấp lên cao, Heap phát triển từ vùng nhớ cao xuống thấp.",
+      "Cả hai đều phát triển từ vùng nhớ cao xuống thấp."
+    ],
+    "correctAnswers": [
+      "Stack phát triển từ vùng nhớ cao xuống thấp, Heap phát triển từ vùng nhớ thấp lên cao."
+    ],
+    "explanation": "Thông thường (như trong slide), Stack bắt đầu từ địa chỉ cao và mở rộng xuống địa chỉ thấp. Ngược lại, Heap mở rộng từ địa chỉ thấp lên cao. Chúng phát triển ngược chiều nhau để tận dụng bộ nhớ trống ở giữa.",
+    "slideRef": "Chương 2 - Lec2 - Slide 44"
+  },
+  {
+    "id": 40,
+    "type": "text",
+    "text": "Điền vào chỗ trống mã lệnh C++ (sử dụng toán tử new) để cấp phát động cho một mảng gồm 10 phần tử kiểu số nguyên (int).\n`int* p = ____;`",
+    "correctAnswers": [
+      "new int[10]",
+      "new int [10]"
+    ],
+    "explanation": "Cú pháp chuẩn để cấp phát một mảng động kiểu int gồm 10 phần tử là `new int[10]`.",
+    "slideRef": "Chương 2 - Lec2 - Bộ nhớ động"
+  },
+  {
+    "id": 41,
+    "type": "single",
+    "text": "Cho khai báo: `int* p = new int[10];`. Cú pháp nào sau đây là chuẩn xác nhất trong C++ để thu hồi hoàn toàn vùng nhớ đã cấp phát cho con trỏ p?",
+    "options": [
+      "delete p;",
+      "free(p);",
+      "delete[] p;",
+      "p = NULL;"
+    ],
+    "correctAnswers": [
+      "delete[] p;"
+    ],
+    "explanation": "Vì p trỏ đến một mảng được cấp phát động (dùng new []), ta phải sử dụng toán tử delete[] để thu hồi toàn bộ các phần tử mảng, tránh rò rỉ bộ nhớ (memory leak).",
+    "slideRef": "Chương 2 - Lec2 - Giải phóng bộ nhớ"
+  },
+  {
+    "id": 42,
+    "type": "single",
+    "text": "Trong bước Validate Design (Step 3), khái niệm 'Desk check' được hiểu là:",
+    "options": [
+      "Kiểm tra lại xem máy tính lập trình có đủ cấu hình phần cứng không.",
+      "Lập trình viên sử dụng các dữ liệu thử nghiệm để kiểm tra chương trình (truy vết thủ công trên giấy/bàn làm việc).",
+      "Mô tả logic thuật toán cho team duyệt mã nguồn.",
+      "Dùng tool tự động (Unit Test) để rà soát lỗi cú pháp."
+    ],
+    "correctAnswers": [
+      "Lập trình viên sử dụng các dữ liệu thử nghiệm để kiểm tra chương trình (truy vết thủ công trên giấy/bàn làm việc)."
+    ],
+    "explanation": "Desk check là LTV dùng các dữ liệu thử nghiệm (test data) để kiểm tra logic chương trình một cách thủ công.",
+    "slideRef": "Chương 1 - Lec1 - Slide 55"
+  },
+  {
+    "id": 43,
+    "type": "text",
+    "text": "Điền vào chỗ trống: Các sai sót trong khi thiết kế thuật toán dẫn đến chương trình biên dịch thành công nhưng trả về kết quả không chính xác được gọi chung là lỗi gì? \n(Ghi bằng tiếng Anh, viết thường, 1 từ duy nhất, ví dụ: syntax)",
+    "correctAnswers": [
+      "logic"
+    ],
+    "explanation": "Logic error (Lỗi logic) là các sai sót khi thiết kế thuật toán, chương trình không crash nhưng kết quả trả ra sai.",
+    "slideRef": "Chương 1 - Lec1 - Slide 55"
+  },
+  {
+    "id": 44,
+    "type": "single",
+    "text": "Biến toàn cục (Global variables) đã được khởi tạo giá trị ban đầu sẽ được hệ điều hành xếp vào phân vùng nhớ nào khi chương trình chạy?",
+    "options": [
+      "Code Segment (Text Segment)",
+      "Data Segment (Initialized Data)",
+      "BSS Segment (Uninitialized Data)",
+      "Stack Segment"
+    ],
+    "correctAnswers": [
+      "Data Segment (Initialized Data)"
+    ],
+    "explanation": "Biến toàn cục và biến static đã khởi tạo được cấp phát cố định tại vùng Data Segment.",
+    "slideRef": "Chương 2 - Kiến thức bổ trợ về Memory Layout"
+  },
+  {
+    "id": 45,
+    "type": "multiple",
+    "text": "Hiện tượng rò rỉ bộ nhớ (Memory leak) trong C/C++ có thể xảy ra trong các trường hợp nào dưới đây?",
+    "options": [
+      "Cấp phát một mảng động bằng new, nhưng quên gọi delete hoặc delete[].",
+      "Con trỏ trỏ đến vùng nhớ động bị gán đè sang một địa chỉ khác trong khi vùng nhớ cũ chưa được giải phóng.",
+      "Sử dụng delete để giải phóng một biến cục bộ (local variable) lưu trên Stack.",
+      "Con trỏ quản lý vùng nhớ Heap bị hủy khi kết thúc hàm (vượt khỏi scope) nhưng vùng nhớ chưa được delete."
+    ],
+    "correctAnswers": [
+      "Cấp phát một mảng động bằng new, nhưng quên gọi delete hoặc delete[].",
+      "Con trỏ trỏ đến vùng nhớ động bị gán đè sang một địa chỉ khác trong khi vùng nhớ cũ chưa được giải phóng.",
+      "Con trỏ quản lý vùng nhớ Heap bị hủy khi kết thúc hàm (vượt khỏi scope) nhưng vùng nhớ chưa được delete."
+    ],
+    "explanation": "Bất kỳ tình huống nào làm mất dấu địa chỉ của bộ nhớ Heap đã cấp phát mà chưa giải phóng đều dẫn đến memory leak. Giải phóng biến cục bộ (Stack) bằng delete là Undefined Behavior (lỗi hệ thống), không hẳn là rò rỉ.",
+    "slideRef": "Chương 2 - Lec2"
+  },
+  {
+    "id": 46,
+    "type": "single",
+    "text": "Kỹ thuật Template function có thể kết hợp vào đa năng hóa toán tử (operator overloading) được không?",
+    "options": [
+      "Có thể kết hợp, giúp toán tử hoạt động được trên nhiều kiểu dữ liệu chung mà không cần viết lại mã nhiều lần.",
+      "Không thể kết hợp do Template chỉ áp dụng cho hàm thông thường, không áp dụng cho các toán tử hệ thống.",
+      "Chỉ kết hợp được với các toán tử so sánh (==, !=, <, >), không kết hợp được với toán tử toán học (+, -, *, /).",
+      "Có thể, nhưng sẽ làm giảm hiệu năng của chương trình rất nhiều nên bị cấm dùng."
+    ],
+    "correctAnswers": [
+      "Có thể kết hợp, giúp toán tử hoạt động được trên nhiều kiểu dữ liệu chung mà không cần viết lại mã nhiều lần."
+    ],
+    "explanation": "Template function hoàn toàn kết hợp được với đa năng hóa toán tử. Ví dụ: `template <class T> Complex<T> operator+(Complex<T> a, Complex<T> b)` giúp cộng 2 số phức có hệ số kiểu int, float, double đều được.",
+    "slideRef": "IT3040 - Đề thi Cuối kỳ 2020-2021, Câu 1"
+  },
+  {
+    "id": 47,
+    "type": "single",
+    "text": "Với cấu trúc `typedef struct { int Row, Col; float **Data; } MATRIX;`, cách cấp phát động bộ nhớ đúng nhất cho trường `Data` (mảng 2 chiều) là gì?",
+    "options": [
+      "Data = new float*[Row * Col];",
+      "Data = new float[Row][Col];",
+      "Cấp phát 1 mảng các con trỏ kiểu float* có kích thước Row. Sau đó dùng vòng lặp for duyệt từng dòng i, gán Data[i] = new float[Col];",
+      "Không thể cấp phát mảng 2 chiều cho con trỏ cấp 2 bằng new trong C++."
+    ],
+    "correctAnswers": [
+      "Cấp phát 1 mảng các con trỏ kiểu float* có kích thước Row. Sau đó dùng vòng lặp for duyệt từng dòng i, gán Data[i] = new float[Col];"
+    ],
+    "explanation": "Đối với con trỏ cấp 2 `float**`, ta phải cấp phát mảng 1 chiều chứa các con trỏ dòng trước, sau đó duyệt từng con trỏ dòng để cấp phát mảng 1 chiều chứa các cột.",
+    "slideRef": "IT3040 - Đề thi Cuối kỳ 2020-2021, Câu 2 / Lec2 - Slide 46"
+  },
+  {
+    "id": 48,
+    "type": "single",
+    "text": "Dangling pointer (Con trỏ lơ lửng) là hiện tượng gì?",
+    "options": [
+      "Con trỏ chưa được gán giá trị khởi tạo.",
+      "Con trỏ trỏ đến vùng nhớ bị thu hồi (đã được gọi delete/free) nhưng bản thân con trỏ vẫn giữ địa chỉ cũ.",
+      "Con trỏ trỏ đến địa chỉ NULL.",
+      "Con trỏ bị ép kiểu sai lệch."
+    ],
+    "correctAnswers": [
+      "Con trỏ trỏ đến vùng nhớ bị thu hồi (đã được gọi delete/free) nhưng bản thân con trỏ vẫn giữ địa chỉ cũ."
+    ],
+    "explanation": "Sau khi gọi delete/free, vùng nhớ được trả cho HĐH, nhưng con trỏ vẫn mang giá trị địa chỉ đó. Truy xuất vào con trỏ lúc này gây lỗi nghiêm trọng (Undefined behavior).",
+    "slideRef": "Chương 2 - Lec2 - Dangling Pointers"
+  },
+  {
+    "id": 49,
+    "type": "text",
+    "text": "Để phòng tránh lỗi 'Dangling pointer' sau khi giải phóng bộ nhớ `delete p;`, ta nên ngay lập tức gán con trỏ `p` bằng từ khóa gì? (Viết thường, 1 từ chuẩn của C++11 trở lên)",
+    "correctAnswers": [
+      "nullptr",
+      "null",
+      "0"
+    ],
+    "explanation": "Gán p = nullptr (trong C++11) hoặc NULL (trong C) sẽ giúp con trỏ trỏ về địa chỉ 0, nếu có lỡ truy xuất thì chương trình báo lỗi rõ ràng dễ debug hơn là ghi đè bộ nhớ rác.",
+    "slideRef": "Chương 2 - Lec2"
+  },
+  {
+    "id": 50,
+    "type": "single",
+    "text": "Kết quả in ra của đoạn mã sau là gì?\n```cpp\nint x = 5;\nint& ref = x;\nref++;\ncout << x;\n```",
+    "code": "int x = 5;\nint& ref = x;\nref++;\ncout << x;",
+    "options": [
+      "5",
+      "6",
+      "Lỗi biên dịch do toán tử ++ không dùng được với tham chiếu",
+      "Địa chỉ của biến x"
+    ],
+    "correctAnswers": [
+      "6"
+    ],
+    "explanation": "Biến ref là biến tham chiếu (reference), nó là 'bí danh' của x. Khi tăng ref lên 1, x cũng tăng theo và bằng 6.",
+    "slideRef": "Chương 2 - Truyền tham chiếu / Con trỏ"
+  },
+  {
+    "id": 51,
+    "type": "single",
+    "text": "Trong C++, khai báo `const int* p;` có ý nghĩa là gì?",
+    "options": [
+      "p là một hằng con trỏ (không thể trỏ p sang địa chỉ khác).",
+      "p là con trỏ trỏ tới một hằng số nguyên (không thể dùng *p để thay đổi giá trị của vùng nhớ nó đang trỏ).",
+      "Cả p và vùng nhớ nó trỏ tới đều là hằng số.",
+      "Khởi tạo một biến nguyên hằng và cho p trỏ tới nó."
+    ],
+    "correctAnswers": [
+      "p là con trỏ trỏ tới một hằng số nguyên (không thể dùng *p để thay đổi giá trị của vùng nhớ nó đang trỏ)."
+    ],
+    "explanation": "Từ khóa const nằm trước kiểu dữ liệu (hoặc dấu *) có nghĩa là Dữ liệu trỏ tới là hằng số. Ta không thể gán `*p = 10;`, nhưng có thể gán `p = &y;`.",
+    "slideRef": "Chương 2 - Lec2 - Const Pointers"
+  },
+  {
+    "id": 52,
+    "type": "single",
+    "text": "Trong C++, khai báo `int * const p = &x;` có ý nghĩa gì?",
+    "options": [
+      "p là một hằng con trỏ (không thể đổi địa chỉ p trỏ tới), nhưng có thể dùng *p để thay đổi giá trị x.",
+      "p là con trỏ trỏ tới hằng số (không thể đổi x thông qua p).",
+      "p không thể thay đổi giá trị và x cũng không thể bị thay đổi.",
+      "Khai báo sai cú pháp."
+    ],
+    "correctAnswers": [
+      "p là một hằng con trỏ (không thể đổi địa chỉ p trỏ tới), nhưng có thể dùng *p để thay đổi giá trị x."
+    ],
+    "explanation": "Từ khóa const nằm sau dấu * (`* const`) biến bản thân con trỏ thành hằng số. Nghĩa là không thể gán `p = &y;`, nhưng hoàn toàn làm được `*p = 10;`.",
+    "slideRef": "Chương 2 - Lec2 - Const Pointers"
+  },
+  {
+    "id": 53,
+    "type": "multiple",
+    "text": "Bước 'Debugging' (Step 5 - Test Solution) có nhiệm vụ tìm và sửa những loại lỗi (errors) nào?",
+    "options": [
+      "Syntax errors (Lỗi cú pháp).",
+      "Hardware failure (Hỏng hóc phần cứng).",
+      "Logic errors (Lỗi thuật toán/logic).",
+      "OS errors (Lỗi do hệ điều hành bị sập)."
+    ],
+    "correctAnswers": [
+      "Syntax errors (Lỗi cú pháp).",
+      "Logic errors (Lỗi thuật toán/logic)."
+    ],
+    "explanation": "Slide KTLT Lec1 - Step 5 (Test Solution) định nghĩa: Debugging — Tìm và sửa các lỗi syntax và logic errors.",
+    "slideRef": "Chương 1 - Lec1 - Slide 57"
+  },
+  {
+    "id": 54,
+    "type": "multiple",
+    "text": "Các trường hợp nào dưới đây khi chạy chương trình C/C++ sẽ sinh ra Hành vi không xác định (Undefined Behavior - UB)?",
+    "options": [
+      "Dùng toán tử sizeof để kiểm tra kích thước của mảng động.",
+      "Truy cập vào phần tử arr[100] của một mảng chỉ có 10 phần tử.",
+      "Gọi hàm delete hai lần liên tiếp (Double free) cho cùng một con trỏ.",
+      "Gán `int* p = nullptr;` sau đó giải tham chiếu `*p = 10;` (Dereference NULL pointer)."
+    ],
+    "correctAnswers": [
+      "Truy cập vào phần tử arr[100] của một mảng chỉ có 10 phần tử.",
+      "Gọi hàm delete hai lần liên tiếp (Double free) cho cùng một con trỏ.",
+      "Gán `int* p = nullptr;` sau đó giải tham chiếu `*p = 10;` (Dereference NULL pointer)."
+    ],
+    "explanation": "Out of bounds, Double free, Dereference NULL đều là những lỗi kinh điển dẫn đến UB hoặc Crash chương trình (Segfault). Dùng sizeof trên mảng động chỉ trả về kích thước con trỏ (8 byte) chứ không lỗi UB.",
+    "slideRef": "Chương 2 - Lec2 - Slide 44 (Undefined Behavior UB)"
+  },
+  {
+    "id": 55,
+    "type": "text",
+    "text": "Để đa năng hóa toán tử cộng (ví dụ `PhanSo c = a + b;`) cho đối tượng PhanSo, ta cần bắt đầu khai báo hàm bằng từ khóa gì? (Viết bằng tiếng Anh, 1 từ, chữ thường).",
+    "correctAnswers": [
+      "operator"
+    ],
+    "explanation": "Từ khóa `operator` bắt buộc phải có khi thực hiện nạp chồng toán tử (Operator Overloading). VD: `PhanSo operator+(PhanSo a, PhanSo b);`",
+    "slideRef": "IT3040 - Đề thi Cuối kỳ 2020-2021"
+  },
+  {
+    "id": 56,
+    "type": "single",
+    "text": "Khi truyền một mảng tĩnh `int arr[100]` vào một hàm có tham số `void process(int a[])`. Bên trong hàm, lệnh `sizeof(a)` sẽ trả về giá trị bao nhiêu trên một hệ điều hành 64-bit?",
+    "options": [
+      "400 (bởi vì 100 phần tử * 4 byte).",
+      "100 (số lượng phần tử).",
+      "8 (kích thước của một con trỏ trên hệ 64-bit).",
+      "Lỗi biên dịch."
+    ],
+    "correctAnswers": [
+      "8 (kích thước của một con trỏ trên hệ 64-bit)."
+    ],
+    "explanation": "Khi truyền mảng vào hàm, mảng sẽ bị suy biến (Array Decay) thành con trỏ trỏ tới phần tử đầu tiên (`int* a`). Do đó sizeof(a) chỉ trả về kích thước con trỏ (8 bytes trên x64).",
+    "slideRef": "Chương 2 - Mảng và Con trỏ"
+  },
+  {
+    "id": 57,
+    "type": "single",
+    "text": "Một sinh viên viết phép cộng ma trận C = A + B cho cấu trúc MATRIX cấp phát động. Biểu thức này chạy đúng nếu lặp vài lần, nhưng khi đưa vào vòng lặp hàng ngàn lần thì chương trình sinh lỗi run-time (crash). Nguyên nhân khả dĩ nhất là gì?",
+    "options": [
+      "Lỗi Logic (Logic error) khiến phép toán sai.",
+      "Lỗi rò rỉ bộ nhớ (Memory leak): Bên trong hàm `+` có cấp phát bộ nhớ mới cho ma trận kết quả trả về nhưng vùng nhớ trung gian của các phép lặp không bao giờ được `delete`, làm cạn kiệt Heap.",
+      "Hệ điều hành bị nóng và tự ngắt tiến trình.",
+      "Đa năng hóa toán tử không hỗ trợ lặp quá 100 lần."
+    ],
+    "correctAnswers": [
+      "Lỗi rò rỉ bộ nhớ (Memory leak): Bên trong hàm `+` có cấp phát bộ nhớ mới cho ma trận kết quả trả về nhưng vùng nhớ trung gian của các phép lặp không bao giờ được `delete`, làm cạn kiệt Heap."
+    ],
+    "explanation": "Đề thi năm 2020 nhấn mạnh lỗi này. Trong các biểu thức vòng lặp, nếu trả về con trỏ (ma trận) mà phía nhận/xử lý không thu hồi (hoặc quên copy constructor/assignment destructor) thì sẽ làm tràn RAM (Memory Leak).",
+    "slideRef": "IT3040 - Đề thi Cuối kỳ 2020-2021, Câu 2"
+  },
+  {
+    "id": 58,
+    "type": "single",
+    "text": "Cho đoạn mã `int* p = new int[10]; delete p;`. Câu lệnh `delete p;` trong trường hợp này có hệ quả gì?",
+    "options": [
+      "Hoàn toàn đúng và dọn dẹp sạch sẽ mảng 10 phần tử.",
+      "Chỉ xóa phần tử đầu tiên (p[0]), dẫn đến việc rò rỉ bộ nhớ (leak) 9 phần tử còn lại và gây ra Undefined Behavior.",
+      "Lỗi biên dịch, không cho phép chạy.",
+      "Mảng sẽ tự động được thu hồi toàn bộ khi kết thúc hàm nên không sao cả."
+    ],
+    "correctAnswers": [
+      "Chỉ xóa phần tử đầu tiên (p[0]), dẫn đến việc rò rỉ bộ nhớ (leak) 9 phần tử còn lại và gây ra Undefined Behavior."
+    ],
+    "explanation": "Phải dùng `delete[] p;` để trình dịch biết cần xóa n phần tử và gọi Destructor cho mảng đối tượng. Nếu dùng `delete p;` nó chỉ hiểu xóa 1 biến int đơn, sinh ra UB và leak bộ nhớ.",
+    "slideRef": "Chương 2 - Lec2"
+  },
+  {
+    "id": 59,
+    "type": "single",
+    "text": "Hàm `malloc()` trong ngôn ngữ C (được dùng phổ biến trước toán tử `new`) trả về kiểu dữ liệu gì?",
+    "options": [
+      "int*",
+      "void* (con trỏ kiểu void, cần ép kiểu khi sử dụng)",
+      "Tùy vào tham số truyền vào",
+      "char*"
+    ],
+    "correctAnswers": [
+      "void* (con trỏ kiểu void, cần ép kiểu khi sử dụng)"
+    ],
+    "explanation": "Hàm `malloc()` trả về con trỏ `void*`. Trong C++, bạn bắt buộc phải ép kiểu cụ thể (ví dụ `(int*) malloc(sizeof(int)*10)`).",
+    "slideRef": "Chương 2 - Lec2"
+  },
+  {
+    "id": 60,
+    "type": "multiple",
+    "text": "Sự khác biệt quan trọng giữa toán tử `new` và hàm `malloc()` là gì?",
+    "options": [
+      "`new` tự động tính kích thước bộ nhớ cần cấp phát, còn `malloc` cần phải tự truyền vào kích thước byte.",
+      "`new` sẽ gọi hàm dựng (Constructor) của đối tượng nếu là class/struct, trong khi `malloc` chỉ cấp phát bộ nhớ thô.",
+      "`malloc` có thể dùng chung với `delete` để thu hồi bộ nhớ.",
+      "`new` trả về con trỏ đúng kiểu dữ liệu, `malloc` trả về con trỏ void*."
+    ],
+    "correctAnswers": [
+      "`new` tự động tính kích thước bộ nhớ cần cấp phát, còn `malloc` cần phải tự truyền vào kích thước byte.",
+      "`new` sẽ gọi hàm dựng (Constructor) của đối tượng nếu là class/struct, trong khi `malloc` chỉ cấp phát bộ nhớ thô.",
+      "`new` trả về con trỏ đúng kiểu dữ liệu, `malloc` trả về con trỏ void*."
+    ],
+    "explanation": "Tuyệt đối không dùng trộn lẫn malloc/delete hoặc new/free. Hàm new ưu việt hơn vì nó lo trọn gói khởi tạo object (gọi Constructor) và tự ép kiểu.",
+    "slideRef": "Chương 2 - Lec2"
+  },
+  {
+    "id": 61,
+    "type": "single",
+    "text": "Kỹ thuật nào sau đây KHÔNG nằm trong mục tiêu giảng dạy chính của học phần IT3040 - Kỹ thuật lập trình?",
+    "options": [
+      "Quản lý bộ nhớ",
+      "Kỹ thuật đệ quy",
+      "Kỹ thuật lập trình phòng ngừa",
+      "Thiết kế cơ sở dữ liệu quan hệ"
+    ],
+    "correctAnswers": [
+      "Thiết kế cơ sở dữ liệu quan hệ"
+    ],
+    "explanation": "Học phần KTLT trang bị kỹ thuật lập trình như quản lý bộ nhớ, hàm, đệ quy, cấu trúc dữ liệu, lập trình phòng ngừa, gỡ rối, tinh chỉnh mã nguồn. Thiết kế CSDL không thuộc phạm vi môn học.",
+    "slideRef": "Lec1. KTLT - Slide 2"
+  },
+  {
+    "id": 62,
+    "type": "fill",
+    "text": "Trong bước Validate Design, việc Lập trình viên sử dụng các dữ liệu thử nghiệm giống như số liệu thực để tự kiểm tra tay (chạy chay) chương trình được gọi là gì? (Nhập thuật ngữ tiếng Anh)",
+    "correctAnswers": [
+      "desk check",
+      "desk-check",
+      "deskcheck"
+    ],
+    "explanation": "Desk check là kỹ thuật LTV dùng các dữ liệu thử nghiệm để kiểm tra chương trình trên giấy/bàn làm việc trước khi code.",
+    "slideRef": "Lec1. KTLT - Slide 55"
+  },
+  {
+    "id": 63,
+    "type": "single",
+    "text": "Cho đoạn code C/C++ sau. Giá trị của a và b sau khi thực thi là bao nhiêu?",
+    "code": "int a, b = 10;\na = ++b + 5;",
+    "options": [
+      "a = 15, b = 11",
+      "a = 16, b = 11",
+      "a = 15, b = 10",
+      "a = 16, b = 10"
+    ],
+    "correctAnswers": [
+      "a = 16, b = 11"
+    ],
+    "explanation": "Toán tử ++b (tiền tố) sẽ tăng b lên 1 (thành 11) trước, sau đó lấy giá trị mới của b cộng với 5 gán cho a. Vậy a = 11 + 5 = 16.",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 3"
+  },
+  {
+    "id": 64,
+    "type": "single",
+    "text": "Cho đoạn code C/C++ sau. Giá trị của a và b sau khi thực thi là bao nhiêu?",
+    "code": "int a, b = 10;\na = b++ + 5;",
+    "options": [
+      "a = 15, b = 11",
+      "a = 16, b = 11",
+      "a = 15, b = 10",
+      "a = 16, b = 10"
+    ],
+    "correctAnswers": [
+      "a = 15, b = 11"
+    ],
+    "explanation": "Toán tử b++ (hậu tố) sẽ lấy giá trị cũ của b (là 10) để thực hiện biểu thức trước: a = 10 + 5 = 15. Sau đó mới tăng b lên 1 (thành 11).",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 4"
+  },
+  {
+    "id": 65,
+    "type": "single",
+    "text": "Biểu thức nào sau đây sẽ bị lỗi biên dịch (Compile error)?",
+    "options": [
+      "++a = b++ + 10;",
+      "a++ = b++ + 10;",
+      "++b = c++;",
+      "a = printf(\"%d\", 200);"
+    ],
+    "correctAnswers": [
+      "a++ = b++ + 10;"
+    ],
+    "explanation": "Toán tử hậu tố a++ trả về giá trị l-value (rvalue) nên không thể đứng bên trái toán tử gán (không thể gán một giá trị cho một hằng số). Trong khi đó, tiền tố ++a trả về tham chiếu đến chính biến đó nên hợp lệ.",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 3"
+  },
+  {
+    "id": 66,
+    "type": "fill",
+    "text": "Kết quả in ra màn hình của câu lệnh sau là gì? (Nhập chính xác dãy ký tự in ra)",
+    "code": "printf(\"%d\", printf(\"%d\", 200));",
+    "correctAnswers": [
+      "2003"
+    ],
+    "explanation": "Hàm printf bên trong in ra '200' và trả về số lượng ký tự đã in (là 3 ký tự). Hàm printf bên ngoài sẽ nhận kết quả trả về này và in ra '3'. Do đó kết quả dính liền là 2003.",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 3"
+  },
+  {
+    "id": 67,
+    "type": "multiple",
+    "text": "Vùng nhớ Stack (Stack segment) thường được sử dụng để lưu trữ các thành phần nào sau đây?",
+    "options": [
+      "Biến cục bộ (Local variables)",
+      "Tham số truyền vào hàm (Parameters)",
+      "Địa chỉ trả về (Return address)",
+      "Biến toàn cục (Global variables)",
+      "Bộ nhớ cấp phát động bằng lệnh new"
+    ],
+    "correctAnswers": [
+      "Biến cục bộ (Local variables)",
+      "Tham số truyền vào hàm (Parameters)",
+      "Địa chỉ trả về (Return address)"
+    ],
+    "explanation": "Stack được dùng để cấp phát Frame cho các hàm, bao gồm: biến cục bộ, tham số của hàm, địa chỉ trả về của hàm gọi, và frame pointer cũ. Biến toàn cục nằm ở Data segment, còn 'new' nằm ở Heap.",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 44"
+  },
+  {
+    "id": 68,
+    "type": "multiple",
+    "text": "Trong kiến trúc phân vùng bộ nhớ, vùng nhớ Heap có đặc điểm gì?",
+    "options": [
+      "Dùng cho các biến toàn cục",
+      "Dùng để cấp phát động (Dynamic allocation)",
+      "Kích thước có thể thay đổi linh hoạt trong quá trình chạy",
+      "Tự động giải phóng biến khi kết thúc hàm",
+      "Vùng nhớ Heap có thể phân mảnh"
+    ],
+    "correctAnswers": [
+      "Dùng để cấp phát động (Dynamic allocation)",
+      "Kích thước có thể thay đổi linh hoạt trong quá trình chạy",
+      "Vùng nhớ Heap có thể phân mảnh"
+    ],
+    "explanation": "Heap dùng để cấp phát động bằng malloc/new, kích thước thay đổi linh hoạt, do lập trình viên tự quản lý (phải free/delete). Nếu thao tác liên tục có thể gây phân mảnh.",
+    "slideRef": "Lec2. Quan ly bo nho - Phân vùng bộ nhớ"
+  },
+  {
+    "id": 69,
+    "type": "single",
+    "text": "Trong bước Implement Design, phương pháp 'Extreme programming (XP)' được hiểu là gì?",
+    "options": [
+      "Viết toàn bộ code rồi mới bắt đầu test",
+      "Coding và testing ngay sau khi các yêu cầu được xác định",
+      "Chỉ viết code theo tài liệu đặc tả chặt chẽ từ trên xuống",
+      "Lập trình không cần viết comment"
+    ],
+    "correctAnswers": [
+      "Coding và testing ngay sau khi các yêu cầu được xác định"
+    ],
+    "explanation": "Extreme programming (XP) là một phương pháp phát triển linh hoạt (Agile), nhấn mạnh vào việc coding và testing (thường là Test-driven) ngay sau khi nắm được yêu cầu, thay vì chờ thiết kế hoàn chỉnh.",
+    "slideRef": "Lec1. KTLT - Slide 56"
+  },
+  {
+    "id": 70,
+    "type": "single",
+    "text": "Thuật ngữ 'Dead code' cần được loại bỏ trong quá trình Rà soát lại chương trình (Document Solution) có nghĩa là gì?",
+    "options": [
+      "Các mã nguồn gây ra lỗi biên dịch",
+      "Các hàm hoặc câu lệnh mà chương trình không bao giờ gọi đến hoặc thực thi tới",
+      "Các biến chưa được khởi tạo giá trị",
+      "Bộ nhớ rác không được giải phóng"
+    ],
+    "correctAnswers": [
+      "Các hàm hoặc câu lệnh mà chương trình không bao giờ gọi đến hoặc thực thi tới"
+    ],
+    "explanation": "Dead code (Mã chết) là phần mã nguồn tồn tại trong project nhưng luồng thực thi của chương trình không bao giờ chạy qua nó, cần được dọn dẹp để code sạch sẽ hơn.",
+    "slideRef": "Lec1. KTLT - Slide 58"
+  },
+  {
+    "id": 71,
+    "type": "single",
+    "text": "Trong cấu trúc một Stack frame của hàm, thanh ghi FP (Frame pointer) dùng để làm gì?",
+    "options": [
+      "Trỏ đến đỉnh hiện tại của Stack",
+      "Truy cập các biến cục bộ (local variables) và tham số (parameters) của hàm",
+      "Lưu trữ giá trị trả về của hàm",
+      "Chứa địa chỉ của lệnh sẽ được thực thi tiếp theo (Instruction Pointer)"
+    ],
+    "correctAnswers": [
+      "Truy cập các biến cục bộ (local variables) và tham số (parameters) của hàm"
+    ],
+    "explanation": "Frame pointer (FP) đóng vai trò như một điểm mốc cố định của hàm hiện tại, được sử dụng để tính toán địa chỉ và truy cập an toàn vào local variables và parameters. Stack pointer (SP) thì liên tục thay đổi.",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 44"
+  },
+  {
+    "id": 72,
+    "type": "fill",
+    "text": "Vùng nhớ chứa các biến toàn cục (global variables) và biến tĩnh (static variables) được gọi là vùng nhớ ______?",
+    "correctAnswers": [
+      "data",
+      "data segment",
+      "vùng nhớ data",
+      "phân vùng data",
+      "vùng data"
+    ],
+    "explanation": "Data segment (bao gồm initialized data và uninitialized data/BSS) là nơi lưu trữ các biến có thời gian sống (lifetime) trong toàn bộ thời gian chạy của chương trình.",
+    "slideRef": "Lec2. Quan ly bo nho"
+  },
+  {
+    "id": 73,
+    "type": "multiple",
+    "text": "Theo tài liệu khai thác hiệu quả phần cứng, dữ liệu được lưu trữ ở đâu sẽ có tốc độ truy xuất nhanh hơn đáng kể so với bộ nhớ chính (RAM)?",
+    "options": [
+      "Thanh ghi (Registers)",
+      "Bộ nhớ đệm (Cache)",
+      "Ổ cứng SSD",
+      "Đĩa từ (Magnetic disk)"
+    ],
+    "correctAnswers": [
+      "Thanh ghi (Registers)",
+      "Bộ nhớ đệm (Cache)"
+    ],
+    "explanation": "Dữ liệu trong thanh ghi (registers) nằm ngay trong CPU có tốc độ nhanh nhất, tiếp đó là bộ nhớ đệm (cache). Khai thác tốt điều này giúp tăng hiệu năng phần mềm (locality of reference).",
+    "slideRef": "IT3040.pdf - Slide 69 (Trang 266)"
+  },
+  {
+    "id": 74,
+    "type": "single",
+    "text": "Kỹ thuật 'Pipelining' trong phần cứng vi xử lý có nghĩa là gì?",
+    "options": [
+      "Thực hiện lệnh trước khi biết có đủ điều kiện để thực hiện hay không",
+      "Thực hiện nhiều thao tác trong cùng 1 chu kỳ đồng hồ",
+      "Giải mã 1 lệnh trong khi đang thực hiện 1 lệnh khác",
+      "Cấp phát bộ nhớ cho nhiều luồng cùng lúc"
+    ],
+    "correctAnswers": [
+      "Giải mã 1 lệnh trong khi đang thực hiện 1 lệnh khác"
+    ],
+    "explanation": "Pipelining (đường ống) cho phép CPU chia quá trình xử lý lệnh thành nhiều giai đoạn. Nó có thể nạp/giải mã lệnh tiếp theo trong khi đang thực thi lệnh hiện tại, giúp tăng throughput.",
+    "slideRef": "IT3040.pdf - Slide 70 (Trang 266)"
+  },
+  {
+    "id": 75,
+    "type": "single",
+    "text": "Đặc điểm của kiến trúc 'Superscalar' là gì?",
+    "options": [
+      "Giải mã 1 lệnh trong khi thực hiện 1 lệnh khác",
+      "Thực hiện nhiều thao tác trong cùng 1 chu kỳ đồng hồ (clock cycle)",
+      "Dành riêng cho các lệnh tuần tự, phụ thuộc lẫn nhau",
+      "Dự đoán nhánh để thực thi trước (Speculative execution)"
+    ],
+    "correctAnswers": [
+      "Thực hiện nhiều thao tác trong cùng 1 chu kỳ đồng hồ (clock cycle)"
+    ],
+    "explanation": "Superscalar processor có khả năng dispatch nhiều chỉ thị (instructions) tới nhiều đơn vị thực thi dư thừa trong cùng một chu kỳ xung nhịp, áp dụng tốt cho các lệnh độc lập.",
+    "slideRef": "IT3040.pdf - Slide 70 (Trang 266)"
+  },
+  {
+    "id": 76,
+    "type": "single",
+    "text": "Kỹ thuật 'Speculative execution' (Thực thi đầu cơ) được định nghĩa thế nào?",
+    "options": [
+      "Thực hiện lệnh trước khi biết chắc chắn có đủ điều kiện để thực hiện nó hay không",
+      "Giải mã toàn bộ chương trình trước khi chạy",
+      "Liên tục kiểm tra các lỗi logic trong quá trình chạy",
+      "Thực thi nhiều luồng (threads) trên các lõi khác nhau"
+    ],
+    "correctAnswers": [
+      "Thực hiện lệnh trước khi biết chắc chắn có đủ điều kiện để thực hiện nó hay không"
+    ],
+    "explanation": "Thực thi đầu cơ thường kết hợp với dự đoán nhánh (branch prediction). CPU 'đoán' xem nhánh nào của câu lệnh IF sẽ được chọn và thực thi trước để tiết kiệm thời gian.",
+    "slideRef": "IT3040.pdf - Slide 70 (Trang 266)"
+  },
+  {
+    "id": 77,
+    "type": "single",
+    "text": "Nếu trong hàm main() ta khai báo một mảng tĩnh cực lớn: `double arr[1000000];`, mảng này sẽ nằm ở đâu và có nguy cơ gây ra lỗi gì?",
+    "options": [
+      "Nằm ở Heap - Nguy cơ Memory Leak",
+      "Nằm ở Stack - Nguy cơ Stack Overflow",
+      "Nằm ở Data Segment - Nguy cơ Out of Memory",
+      "Nằm ở Text Segment - Nguy cơ Segmentation Fault"
+    ],
+    "correctAnswers": [
+      "Nằm ở Stack - Nguy cơ Stack Overflow"
+    ],
+    "explanation": "Biến cục bộ khai báo bình thường trong hàm sẽ nằm trên Stack. Kích thước Stack mặc định của OS thường khá nhỏ (ví dụ 1MB-8MB). Việc khai báo mảng tĩnh quá lớn sẽ làm cạn kiệt không gian này, gây lỗi Stack Overflow.",
+    "slideRef": "Lec2. Quan ly bo nho - Stack (Slide 44)"
+  },
+  {
+    "id": 78,
+    "type": "single",
+    "text": "Một sinh viên định nghĩa toán tử cộng ma trận trả về một con trỏ ma trận cấp phát động. Khi thực hiện C = A + B hàng ngàn lần trong vòng lặp, chương trình bị crash do hết bộ nhớ. Nguyên nhân cốt lõi là gì?",
+    "options": [
+      "Vòng lặp chạy quá nhanh làm CPU quá tải",
+      "Lỗi tràn bộ đệm (Buffer overflow)",
+      "Lỗi rò rỉ bộ nhớ (Memory leak) do không giải phóng vùng nhớ sinh ra bởi phép toán cộng",
+      "Kích thước ma trận vượt quá giới hạn mảng 2 chiều"
+    ],
+    "correctAnswers": [
+      "Lỗi rò rỉ bộ nhớ (Memory leak) do không giải phóng vùng nhớ sinh ra bởi phép toán cộng"
+    ],
+    "explanation": "Mỗi lần A+B, hàm sẽ dùng 'new' hoặc 'malloc' tạo một ma trận tạm thời. Nếu trong vòng lặp biến C chỉ nhận con trỏ mới mà không delete vùng nhớ cũ trước đó, hoặc ma trận trung gian không được dọn dẹp, nó sẽ dẫn đến rò rỉ bộ nhớ nghiêm trọng.",
+    "slideRef": "IT3040 - Đề thi - Câu 2 (Trang 1)"
+  },
+  {
+    "id": 79,
+    "type": "fill",
+    "text": "Trong quá trình kiểm tra Validate Design, hoạt động nhóm mà Lập trình viên mô tả logic thuật toán trong khi programming team duyệt theo logic chương trình được gọi là gì? (Viết bằng tiếng Anh)",
+    "correctAnswers": [
+      "structured walkthrough",
+      "structured walk-through",
+      "structured walk through"
+    ],
+    "explanation": "Structured walkthrough là hình thức rà soát chéo. LTV trình bày từng bước logic, còn các thành viên khác đóng vai trò kiểm định để bắt lỗi.",
+    "slideRef": "Lec1. KTLT - Slide 55"
+  },
+  {
+    "id": 80,
+    "type": "multiple",
+    "text": "Theo đề thi tham khảo, kỹ thuật Template Function khi kết hợp với Operator Overloading (ví dụ phép cộng số phức) mang lại những lợi ích gì?",
+    "options": [
+      "Tăng tốc độ chạy của vòng lặp",
+      "Tái sử dụng mã (Code reuse) cho nhiều kiểu dữ liệu của thuộc tính (như int, float, double)",
+      "Giảm bớt thời gian giải phóng bộ nhớ tự động",
+      "Viết hàm một cách tổng quát, tránh phải định nghĩa lại toán tử nhiều lần cho từng kiểu"
+    ],
+    "correctAnswers": [
+      "Tái sử dụng mã (Code reuse) cho nhiều kiểu dữ liệu của thuộc tính (như int, float, double)",
+      "Viết hàm một cách tổng quát, tránh phải định nghĩa lại toán tử nhiều lần cho từng kiểu"
+    ],
+    "explanation": "Template giúp tổng quát hóa kiểu dữ liệu. Khi định nghĩa operator+ cho số phức, thay vì viết riêng cho (int, int) và (float, float), ta chỉ cần viết 1 template để dùng cho mọi kiểu số.",
+    "slideRef": "IT3040 - Đề thi - Câu 1 (Trang 1)"
+  },
+  {
+    "id": 81,
+    "type": "single",
+    "text": "Khi cấp phát động một mảng 2 chiều bằng con trỏ cấp 2 (ví dụ `float **Data`), quá trình thu hồi bộ nhớ (delete) cần thực hiện theo trình tự nào để không bị memory leak?",
+    "options": [
+      "Xóa mảng con trỏ cấp 1 (Data) trước, sau đó xóa các hàng",
+      "Dùng vòng lặp delete từng mảng 1 chiều (các hàng) trước, sau đó delete mảng các con trỏ",
+      "Chỉ cần dùng lệnh `delete[] Data;` là tự động xóa tất cả",
+      "Dùng hàm `free()` thay thế cho toán tử `delete`"
+    ],
+    "correctAnswers": [
+      "Dùng vòng lặp delete từng mảng 1 chiều (các hàng) trước, sau đó delete mảng các con trỏ"
+    ],
+    "explanation": "Cấp phát mảng 2 chiều động thực chất là cấp phát một mảng chứa các con trỏ, mỗi con trỏ trỏ tới một mảng dữ liệu. Khi hủy, ta phải vòng lặp hủy từng 'mảng dữ liệu' trước, rồi mới hủy 'mảng các con trỏ'. Nếu làm ngược lại sẽ mất dấu địa chỉ các mảng dữ liệu.",
+    "slideRef": "Lec2. Quan ly bo nho - Bài tập cấp phát động (Slide 45, 46)"
+  },
+  {
+    "id": 82,
+    "type": "fill",
+    "text": "Từ khóa nào trong ngôn ngữ C/C++ được sử dụng để báo cho trình biên dịch biết một biến, mảng hoặc con trỏ không được phép thay đổi giá trị (chỉ đọc)?",
+    "correctAnswers": [
+      "const",
+      "constant"
+    ],
+    "explanation": "Từ khóa const dùng để định nghĩa hằng số hoặc các tham số chỉ đọc. Sử dụng const là một trong những best practice của Lập trình phòng ngừa (Defensive programming).",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 44 (Đọc thêm)"
+  },
+  {
+    "id": 83,
+    "type": "single",
+    "text": "Lỗi cú pháp (Syntax error) là gì?",
+    "options": [
+      "Lỗi vi phạm quy tắc xác định cách viết các lệnh của ngôn ngữ lập trình",
+      "Sự sai sót về thuật toán khiến kết quả bị sai lệch",
+      "Lỗi xảy ra khi chương trình chia cho 0 trong lúc đang chạy",
+      "Việc truy cập vào mảng ở vị trí vượt quá kích thước"
+    ],
+    "correctAnswers": [
+      "Lỗi vi phạm quy tắc xác định cách viết các lệnh của ngôn ngữ lập trình"
+    ],
+    "explanation": "Syntax error là lỗi ngữ pháp (ví dụ thiếu dấu chấm phẩy, sai tên từ khóa). Trình biên dịch sẽ bắt được lỗi này và không cho phép tạo file thực thi.",
+    "slideRef": "Lec1. KTLT - Slide 56"
+  },
+  {
+    "id": 84,
+    "type": "multiple",
+    "text": "Đâu là những hành vi được xem là Undefined Behavior (UB) trong C/C++?",
+    "options": [
+      "Truy cập mảng ngoài biên (Out of bounds)",
+      "Cộng trừ hai biến số nguyên bình thường",
+      "Sử dụng con trỏ chưa được khởi tạo (Uninitialized pointer)",
+      "Chia một số thực cho biến có giá trị 0"
+    ],
+    "correctAnswers": [
+      "Truy cập mảng ngoài biên (Out of bounds)",
+      "Sử dụng con trỏ chưa được khởi tạo (Uninitialized pointer)",
+      "Chia một số thực cho biến có giá trị 0"
+    ],
+    "explanation": "UB là những hành vi mà chuẩn ngôn ngữ C/C++ không quy định kết quả. Chương trình có thể crash ngay, có thể chạy tiếp nhưng sinh dữ liệu rác, hoặc thậm chí hoạt động 'đúng' một cách ngẫu nhiên. Chia cho số 0 với số nguyên là UB (thường báo Floating point exception).",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 44 (Undefined Behaviors)"
+  },
+  {
+    "id": 85,
+    "type": "single",
+    "text": "Khi xem xét tối ưu hóa mã nguồn (Performance Optimization), lời khuyên nào sau đây được nhắc đến trong kết luận của slide bài giảng?",
+    "options": [
+      "Luôn luôn ưu tiên viết mã nguồn phức tạp để chạy nhanh nhất có thể",
+      "Tối ưu hóa mọi hàm trong chương trình kể cả khi phần mềm đang chạy nhanh",
+      "Không cần cố gắng tối ưu hóa một chương trình đã chạy đủ nhanh",
+      "Bỏ qua các nguyên tắc Lập trình phòng ngừa để ép hiệu năng"
+    ],
+    "correctAnswers": [
+      "Không cần cố gắng tối ưu hóa một chương trình đã chạy đủ nhanh"
+    ],
+    "explanation": "Hãy lập trình một cách thông minh, đừng quá cứng nhắc. Nguyên tắc 'Premature optimization is the root of all evil' chỉ ra rằng ta chỉ nên dùng profiler (chạy thử) tìm 'hot spots' rồi mới tối ưu, không cần tối ưu đoạn code vốn không phải là nút thắt cổ chai.",
+    "slideRef": "IT3040.pdf - Slide 71 (Trang 267)"
+  },
+  {
+    "id": 86,
+    "type": "single",
+    "text": "Hoạt động Debugging (Gỡ rối) trong giai đoạn Test Solution được thực hiện nhằm mục đích gì?",
+    "options": [
+      "Viết báo cáo đánh giá giao diện người dùng",
+      "Dịch từ mã giả (pseudocode) sang C++",
+      "Khởi tạo dữ liệu ngẫu nhiên thay cho test data",
+      "Tìm và sửa các lỗi syntax và logic errors trong chương trình"
+    ],
+    "correctAnswers": [
+      "Tìm và sửa các lỗi syntax và logic errors trong chương trình"
+    ],
+    "explanation": "Debugging là quá trình tìm kiếm điểm gây ra lỗi (bugs) trong phần mềm để cô lập và sửa chữa chúng. Đảm bảo chương trình chạy thông suốt và kết quả chính xác.",
+    "slideRef": "Lec1. KTLT - Slide 57"
+  },
+  {
+    "id": 87,
+    "type": "single",
+    "text": "Cấu trúc điều khiển lặp 'Do-Until' khác với 'Do-While' ở điểm cơ bản nào theo lý thuyết?",
+    "options": [
+      "Do-Until lặp khi điều kiện còn sai (cho đến khi đúng), Do-While lặp khi điều kiện còn đúng",
+      "Do-Until kiểm tra điều kiện trước, Do-While kiểm tra điều kiện sau",
+      "Do-Until chỉ có trong ngôn ngữ C++",
+      "Không có sự khác biệt về logic"
+    ],
+    "correctAnswers": [
+      "Do-Until lặp khi điều kiện còn sai (cho đến khi đúng), Do-While lặp khi điều kiện còn đúng"
+    ],
+    "explanation": "Slide KTLT có phân loại: Do-while là lặp khi điều kiện còn đúng (True). Do-Until là lặp cho đến khi điều kiện trở nên đúng (tức là lặp khi nó đang Sai).",
+    "slideRef": "Lec1. KTLT - Slide 54"
+  },
+  {
+    "id": 88,
+    "type": "multiple",
+    "text": "Trong bước Document Solution, hoạt động nào cần được thực hiện để hoàn thiện dự án phần mềm?",
+    "options": [
+      "Rà soát lại program code để loại bỏ các dead code",
+      "Tuyển thêm lập trình viên",
+      "Rà soát và hoàn thiện documentation (tài liệu dự án)",
+      "Chuyển ngôn ngữ lập trình sang dạng assembly"
+    ],
+    "correctAnswers": [
+      "Rà soát lại program code để loại bỏ các dead code",
+      "Rà soát và hoàn thiện documentation (tài liệu dự án)"
+    ],
+    "explanation": "Bước 6 là bước lưu trữ tài liệu. Bao gồm dọn dẹp code (bỏ code rác/dead code) và viết tài liệu kỹ thuật (documentation) giải thích thiết kế, cấu trúc, comment hàm để sau này bảo trì.",
+    "slideRef": "Lec1. KTLT - Slide 58"
+  },
+  {
+    "id": 89,
+    "type": "fill",
+    "text": "Toán tử trong C++ được sử dụng để trả lại vùng nhớ đã được cấp phát động về cho hệ điều hành là gì?",
+    "correctAnswers": [
+      "delete",
+      "delete[]"
+    ],
+    "explanation": "Trong C++, ta dùng 'new' để xin cấp phát động và 'delete' (hoặc 'delete[]' cho mảng) để giải phóng vùng nhớ đó trên Heap.",
+    "slideRef": "Lec2. Quan ly bo nho - Slide 46"
+  },
+  {
+    "id": 90,
+    "type": "single",
+    "text": "Khi một biến cục bộ kiểu int được khai báo bên trong hàm nhưng chưa được gán giá trị khởi tạo, điều gì sẽ xảy ra nếu ta đem in nó ra màn hình?",
+    "options": [
+      "Trình biên dịch mặc định gán giá trị 0",
+      "Sẽ in ra một giá trị rác (garbage value) tùy thuộc vào dữ liệu tồn tại sẵn trên Stack",
+      "Chương trình sẽ tự động crash do lỗi Null Pointer",
+      "Sẽ báo lỗi Syntax error"
+    ],
+    "correctAnswers": [
+      "Sẽ in ra một giá trị rác (garbage value) tùy thuộc vào dữ liệu tồn tại sẵn trên Stack"
+    ],
+    "explanation": "Biến cục bộ không tự động khởi tạo. Vùng nhớ cấp cho biến trên Stack frame có thể chứa byte ngẫu nhiên của các lời gọi hàm trước đó, tạo thành giá trị rác. Nếu muốn, phải tự gán hoặc dùng biến toàn cục (sẽ được zero-initialized).",
+    "slideRef": "Lec2. Quan ly bo nho (Kiến thức về bộ nhớ)"
+  },
+  {
+    "id": 91,
+    "type": "single",
+    "text": "Mục tiêu cốt lõi của môn học IT3040 - Kỹ thuật lập trình là gì?",
+    "options": [
+      "Học cú pháp C/C++ cơ bản từ đầu",
+      "Trang bị kỹ thuật phát triển ứng dụng phần mềm chất lượng cao",
+      "Học cách cài đặt hệ điều hành",
+      "Nghiên cứu cấu trúc vật lý của phần cứng máy tính"
+    ],
+    "correctAnswers": [
+      "Trang bị kỹ thuật phát triển ứng dụng phần mềm chất lượng cao"
+    ],
+    "explanation": "Mục tiêu chính là trang bị các kỹ thuật (quản lý bộ nhớ, đệ quy, gỡ rối, tinh chỉnh) để sinh viên viết mã nguồn hiệu quả và phát triển phần mềm chất lượng cao trong thực tế.",
+    "slideRef": "Chương 1 - Slide 2"
+  },
+  {
+    "id": 92,
+    "type": "multiple",
+    "text": "Bước 'Test Solution' (bước 5) trong quy trình 6 bước lập trình bao gồm các hoạt động trọng tâm nào?",
+    "options": [
+      "Debugging (Tìm và sửa các lỗi syntax, logic)",
+      "Viết tài liệu người dùng và thiết kế API",
+      "Kiểm tra phiên bản beta, giao cho Users dùng thử và thu thập phản hồi",
+      "Thiết kế thuật toán trước khi code"
+    ],
+    "correctAnswers": [
+      "Debugging (Tìm và sửa các lỗi syntax, logic)",
+      "Kiểm tra phiên bản beta, giao cho Users dùng thử và thu thập phản hồi"
+    ],
+    "explanation": "Bước 5 (Test Solution) tập trung vào Debugging và đưa bản Beta cho User chạy thử, thu thập ý kiến để đảm bảo chương trình hoạt động đúng.",
+    "slideRef": "Chương 1 - Slide 47"
+  },
+  {
+    "id": 93,
+    "type": "fill",
+    "text": "Rà soát lại program code để loại bỏ các dead code (các lệnh không bao giờ được gọi đến) thuộc bước thứ mấy trong quy trình phát triển 6 bước? (Chỉ điền số)",
+    "correctAnswers": [
+      "6"
+    ],
+    "explanation": "Đây là một phần của Bước 6 - Document Solution, bao gồm rà soát lại code để loại bỏ dead code và hoàn thiện tài liệu.",
+    "slideRef": "Chương 1 - Slide 48"
+  },
+  {
+    "id": 94,
+    "type": "single",
+    "text": "Toán tử nào được sử dụng để lấy địa chỉ của một biến trong ngôn ngữ C/C++?",
+    "options": [
+      "*",
+      "&",
+      "->",
+      "new"
+    ],
+    "correctAnswers": [
+      "&"
+    ],
+    "explanation": "Toán tử '&' trả về địa chỉ của biến, tức là địa chỉ của ô nhớ đầu tiên trong vùng nhớ lưu trữ giá trị của biến đó.",
+    "slideRef": "Chương 2 - Slide 2"
+  },
+  {
+    "id": 95,
+    "type": "multiple",
+    "text": "Phát biểu nào sau đây đúng khi nói về vùng nhớ Heap?",
+    "options": [
+      "Được hệ điều hành cấp phát tự động cho các biến cục bộ",
+      "Do lập trình viên tự quản lý thông qua con trỏ và các lệnh cấp phát",
+      "Kích thước có thể thay đổi linh hoạt trong quá trình chạy chương trình (Run-time)",
+      "Tự động thu hồi bộ nhớ ngay khi thoát khỏi hàm môt cách an toàn"
+    ],
+    "correctAnswers": [
+      "Do lập trình viên tự quản lý thông qua con trỏ và các lệnh cấp phát",
+      "Kích thước có thể thay đổi linh hoạt trong quá trình chạy chương trình (Run-time)"
+    ],
+    "explanation": "Vùng nhớ Heap phục vụ cấp phát động lúc run-time. Trình biên dịch không tự động thu hồi; lập trình viên phải tự xin cấp phát (new/malloc) và tự giải phóng (delete/free).",
+    "slideRef": "Chương 2 - Slide 7"
+  },
+  {
+    "id": 96,
+    "type": "fill",
+    "text": "Để giải phóng vùng nhớ cho một mảng động chứa số nguyên đã được cấp phát bằng toán tử 'new int[100]', ta bắt buộc phải dùng lệnh gì (nhập chính xác toán tử kèm cặp dấu ngoặc)?",
+    "correctAnswers": [
+      "delete[]",
+      "delete []"
+    ],
+    "explanation": "Đối với mảng được cấp phát bằng toán tử new [], ta bắt buộc phải dùng delete [] (có cặp ngoặc vuông) để báo cho hệ thống thu hồi toàn bộ các phần tử mảng.",
+    "slideRef": "Chương 2 - Slide 28"
+  },
+  {
+    "id": 97,
+    "type": "single",
+    "text": "Đoạn code: `int **mt; mt = new int*[R]; ...` thể hiện cách cấp phát động cho cấu trúc dữ liệu nào?",
+    "options": [
+      "Mảng 1 chiều kích thước lớn",
+      "Mảng 2 chiều (Dùng con trỏ của con trỏ)",
+      "Danh sách liên kết đôi",
+      "Cây nhị phân tìm kiếm"
+    ],
+    "correctAnswers": [
+      "Mảng 2 chiều (Dùng con trỏ của con trỏ)"
+    ],
+    "explanation": "Việc khai báo con trỏ bậc 2 `**mt` và cấp phát một mảng các con trỏ `new int*[R]` là cách số 2 để cấp phát động cho mảng 2 chiều.",
+    "slideRef": "Chương 2 - Slide 30"
+  },
+  {
+    "id": 98,
+    "type": "single",
+    "text": "Điều gì xảy ra khi lập trình viên xin cấp phát bộ nhớ động trên Heap nhưng lại quên giải phóng khi không còn sử dụng, dẫn đến việc mất con trỏ quản lý vùng nhớ đó?",
+    "options": [
+      "Dangling pointer (Con trỏ lơ lửng)",
+      "Segmentation fault ngay lập tức",
+      "Memory Leak (Rò rỉ bộ nhớ)",
+      "Tràn ngăn xếp (Stack Overflow)"
+    ],
+    "correctAnswers": [
+      "Memory Leak (Rò rỉ bộ nhớ)"
+    ],
+    "explanation": "Khi mất dấu vùng nhớ đã cấp phát mà chưa giải phóng, vùng nhớ đó bị 'mồ côi' và không thể sử dụng lại, gây rò rỉ bộ nhớ (Memory leak).",
+    "slideRef": "Chương 2 - Kiến thức cốt lõi"
+  },
+  {
+    "id": 99,
+    "type": "fill",
+    "text": "Không gian bộ nhớ của chương trình khi thực thi thường chia làm 4 phân vùng chính: Code, Data, Heap và ________.",
+    "correctAnswers": [
+      "stack",
+      "Stack"
+    ],
+    "explanation": "Bốn phân vùng chính của bộ nhớ khi chạy chương trình là Code segment, Data segment, Stack và Heap.",
+    "slideRef": "Chương 2 - Slide 5"
+  },
+  {
+    "id": 100,
+    "type": "single",
+    "text": "Khái niệm nào sau đây mô tả đúng nhất về Hàm (Function) trong C/C++?",
+    "options": [
+      "Là một biến toàn cục đặc biệt chứa dữ liệu tĩnh",
+      "Là một nhóm các khai báo và câu lệnh được gán một tên gọi",
+      "Là một vùng nhớ động được lưu trữ trên Heap",
+      "Là định nghĩa một cấu trúc dữ liệu mới"
+    ],
+    "correctAnswers": [
+      "Là một nhóm các khai báo và câu lệnh được gán một tên gọi"
+    ],
+    "explanation": "Hàm là một chương trình con, bao gồm một nhóm các lệnh được đặt tên để tái sử dụng thuận tiện và hiệu quả.",
+    "slideRef": "Chương 3 - Slide 3"
+  },
+  {
+    "id": 101,
+    "type": "multiple",
+    "text": "Lợi ích khi sử dụng phương pháp 'Truyền tham biến' (Pass by reference) thay vì 'Truyền tham trị' (Pass by value) là gì?",
+    "options": [
+      "Đảm bảo hàm không bao giờ làm thay đổi giá trị của biến gốc",
+      "Cho phép hàm có thể trả về nhiều hơn một kết quả thông qua các tham số",
+      "Tránh việc sao chép dữ liệu, giúp tối ưu bộ nhớ khi truyền các đối tượng có kích thước lớn",
+      "Ngăn chặn được lỗi Memory Leak"
+    ],
+    "correctAnswers": [
+      "Cho phép hàm có thể trả về nhiều hơn một kết quả thông qua các tham số",
+      "Tránh việc sao chép dữ liệu, giúp tối ưu bộ nhớ khi truyền các đối tượng có kích thước lớn"
+    ],
+    "explanation": "Truyền tham biến giúp thay đổi trực tiếp biến gốc (ứng dụng để trả về nhiều giá trị) và tiết kiệm chi phí sao chép đối với struct/class lớn.",
+    "slideRef": "Chương 3 - Slide 9"
+  },
+  {
+    "id": 102,
+    "type": "fill",
+    "text": "Các tham số ngầm định (default arguments) bắt buộc phải được đặt ở vị trí nào của danh sách tham số hàm? (Nhập: 'đầu' hoặc 'cuối')",
+    "correctAnswers": [
+      "cuối",
+      "cuối cùng"
+    ],
+    "explanation": "Trong danh sách tham số, các tham số có giá trị ngầm định phải luôn nằm ở cuối cùng (bên phải nhất).",
+    "slideRef": "Chương 3 - Slide 11"
+  },
+  {
+    "id": 103,
+    "type": "single",
+    "text": "Đa năng hóa hàm (Function Overloading) là kỹ thuật cho phép tạo ra nhiều hàm:",
+    "options": [
+      "Cùng tên nhưng khác nhau về số lượng tham số hoặc kiểu dữ liệu của tham số",
+      "Khác tên nhưng thực hiện cùng một chức năng logic",
+      "Cùng tên, cùng tham số nhưng bắt buộc khác kiểu trả về (return type)",
+      "Cùng tên, cùng tham số nhưng khác nhau ở file mã nguồn"
+    ],
+    "correctAnswers": [
+      "Cùng tên nhưng khác nhau về số lượng tham số hoặc kiểu dữ liệu của tham số"
+    ],
+    "explanation": "Function Overload yêu cầu các hàm phải cùng tên nhưng có chữ ký hàm (danh sách tham số) khác nhau.",
+    "slideRef": "Chương 3 - Slide 13"
+  },
+  {
+    "id": 104,
+    "type": "single",
+    "text": "Theo quy tắc trong C++, việc khai báo hai hàm: `int test(int a);` và `double test(int a);` trong cùng phạm vi sẽ dẫn đến kết quả nào?",
+    "options": [
+      "Chương trình chạy bình thường (Function Overload hợp lệ)",
+      "Lỗi biên dịch do hàm overload không thể phân biệt chỉ bằng kiểu trả về",
+      "Trình biên dịch cảnh báo nhưng vẫn chạy, tự động chọn hàm `int`",
+      "Hàm trả về `double` sẽ ghi đè hoàn toàn hàm trả về `int`"
+    ],
+    "correctAnswers": [
+      "Lỗi biên dịch do hàm overload không thể phân biệt chỉ bằng kiểu trả về"
+    ],
+    "explanation": "Như giảng viên nhấn mạnh trong bài giảng, hai hàm cùng danh sách tham số nhưng khác kiểu trả về sẽ bị lỗi biên dịch, không được tính là overload.",
+    "slideRef": "Bài giảng.txt - Đoạn 1:34:21"
+  },
+  {
+    "id": 105,
+    "type": "multiple",
+    "text": "Cho hàm có chữ ký: `void In(int x = 1, int y = 2, int z = 3);`. Những lời gọi hàm nào sau đây là HỢP LỆ?",
+    "options": [
+      "In();",
+      "In(5);",
+      "In(5, , 7);",
+      "In(5, 6, 7);"
+    ],
+    "correctAnswers": [
+      "In();",
+      "In(5);",
+      "In(5, 6, 7);"
+    ],
+    "explanation": "C++ cung cấp tham số ngầm định từ phải sang trái. Không thể bỏ qua tham số ở giữa (như `In(5, , 7)` là sai cú pháp).",
+    "slideRef": "Chương 3 - Slide 11"
+  },
+  {
+    "id": 106,
+    "type": "fill",
+    "text": "Để truyền một hàm như một tham số vào bên trong một hàm khác, ta bắt buộc phải sử dụng khái niệm _________ hàm.",
+    "correctAnswers": [
+      "con trỏ",
+      "con trỏ hàm",
+      "function pointer"
+    ],
+    "explanation": "Ta sử dụng con trỏ hàm (Function Pointer) để lưu trữ địa chỉ của hàm, từ đó có thể truyền hàm đó như một tham số vào hàm khác.",
+    "slideRef": "Chương 3 - Slide 25"
+  },
+  {
+    "id": 107,
+    "type": "single",
+    "text": "Cú pháp nào sau đây là ĐÚNG để khai báo một con trỏ hàm tên `ptr` trỏ tới một hàm nhận 2 tham số `int` và trả về `int`?",
+    "options": [
+      "int *ptr(int, int);",
+      "int (*ptr)(int, int);",
+      "int ptr*(int, int);",
+      "int (ptr)(int, int)*;"
+    ],
+    "correctAnswers": [
+      "int (*ptr)(int, int);"
+    ],
+    "explanation": "Cú pháp chuẩn: `kiểu_trả_về (*tên_con_trỏ)(danh_sách_kiểu_tham_số);`. Dấu ngoặc quanh `*ptr` là bắt buộc.",
+    "slideRef": "Chương 3 - Slide 19"
+  },
+  {
+    "id": 108,
+    "type": "single",
+    "text": "Trong kỹ thuật Khái quát hóa hàm (Function Templates), từ khóa nào thường được đi kèm ngay sau từ khóa `template` bên trong cặp ngoặc nhọn `< >` để định nghĩa một kiểu dữ liệu tổng quát?",
+    "options": [
+      "class hoặc typename",
+      "struct",
+      "auto",
+      "type"
+    ],
+    "correctAnswers": [
+      "class hoặc typename"
+    ],
+    "explanation": "Ta định nghĩa template bằng cú pháp `template <class T>` hoặc `template <typename T>`.",
+    "slideRef": "Chương 3 - Slide 32"
+  },
+  {
+    "id": 109,
+    "type": "multiple",
+    "text": "Lợi ích lớn nhất của việc áp dụng Function Templates là gì?",
+    "options": [
+      "Tăng tốc độ chạy (Run-time) của chương trình",
+      "Tái sử dụng mã nguồn cho nhiều loại kiểu dữ liệu khác nhau",
+      "Tránh việc phải viết lại (duplicate) cùng một thuật toán logic nhiều lần",
+      "Tự động phát hiện và ngăn chặn Memory Leak"
+    ],
+    "correctAnswers": [
+      "Tái sử dụng mã nguồn cho nhiều loại kiểu dữ liệu khác nhau",
+      "Tránh việc phải viết lại (duplicate) cùng một thuật toán logic nhiều lần"
+    ],
+    "explanation": "Templates giúp DRY (Don't Repeat Yourself), viết một hàm duy nhất dùng chung cho nhiều kiểu (int, double, char...), không liên quan đến tăng tốc runtime hay chống rò rỉ.",
+    "slideRef": "Chương 3 - Slide 30, 31"
+  },
+  {
+    "id": 110,
+    "type": "fill",
+    "text": "Hàm không có tên, được định nghĩa trực tiếp ngay tại vị trí sử dụng bằng cách dùng dấu ngoặc vuông `[]` được gọi là biểu thức ________.",
+    "correctAnswers": [
+      "lambda",
+      "Lambda"
+    ],
+    "explanation": "Hàm nặc danh trong C++ được thực thi qua cú pháp Lambda expressions.",
+    "slideRef": "Chương 3 - Slide 36"
+  },
+  {
+    "id": 111,
+    "type": "single",
+    "text": "Trong cấu trúc cơ bản của biểu thức Lambda: `[capture](parameters) -> return_type { body }`, thành phần nào là BẮT bắt buộc phải có để báo cho trình biên dịch biết đây là lambda?",
+    "options": [
+      "(parameters)",
+      "-> return_type",
+      "{ body }",
+      "[capture]"
+    ],
+    "correctAnswers": [
+      "[capture]"
+    ],
+    "explanation": "Mệnh đề bắt giữ `[]` (capture clause) là dấu hiệu bắt buộc mở đầu một biểu thức lambda, các thành phần như tham số hay kiểu trả về có thể được lược bỏ tùy trường hợp.",
+    "slideRef": "Chương 3 - Slide 36"
+  },
+  {
+    "id": 112,
+    "type": "single",
+    "text": "Để một hàm lambda có quyền truy cập tất cả các biến toàn cục và cục bộ bên ngoài theo phương thức THAM CHIẾU (by reference), mệnh đề bắt giữ phải viết như thế nào?",
+    "options": [
+      "[]",
+      "[=]",
+      "[&]",
+      "[all]"
+    ],
+    "correctAnswers": [
+      "[&]"
+    ],
+    "explanation": "`[&]` thông báo cho trình biên dịch bắt giữ mọi biến bên ngoài lambda bằng tham chiếu. `[=]` là bằng giá trị.",
+    "slideRef": "Chương 3 - Slide 38"
+  },
+  {
+    "id": 113,
+    "type": "multiple",
+    "text": "Khi sử dụng mệnh đề bắt giữ `[=]` (bắt giữ theo giá trị) trong biểu thức lambda, các tính chất nào sau đây là ĐÚNG?",
+    "options": [
+      "Mọi biến ngoài phạm vi được sao chép (copy) vào lambda",
+      "Mặc định, code bên trong thân lambda KHÔNG thể thay đổi giá trị của các biến bị bắt giữ này",
+      "Có thể thay đổi trực tiếp giá trị của biến gốc bên ngoài lambda",
+      "Nếu muốn thay đổi giá trị của bản sao bên trong lambda, ta cần thêm từ khóa `mutable`"
+    ],
+    "correctAnswers": [
+      "Mọi biến ngoài phạm vi được sao chép (copy) vào lambda",
+      "Mặc định, code bên trong thân lambda KHÔNG thể thay đổi giá trị của các biến bị bắt giữ này",
+      "Nếu muốn thay đổi giá trị của bản sao bên trong lambda, ta cần thêm từ khóa `mutable`"
+    ],
+    "explanation": "Bắt giữ `[=]` chỉ lấy bản sao. Lambda mặc định là hằng đối với các bản sao này. Dùng `mutable` để bỏ tính hằng, cho phép sửa đổi bản sao (biến gốc vẫn không đổi).",
+    "slideRef": "Chương 3 - Slide 38, 39"
+  },
+  {
+    "id": 114,
+    "type": "single",
+    "text": "Cú pháp xác định rõ kiểu trả về sử dụng dấu `-> type` đặt ngay sau danh sách tham số của hàm lambda được gọi là gì?",
+    "options": [
+      "Trailing return type",
+      "Leading return type",
+      "Implicit return",
+      "Auto return"
+    ],
+    "correctAnswers": [
+      "Trailing return type"
+    ],
+    "explanation": "Việc sử dụng ký hiệu `->` để khai báo kiểu trả về phía sau hàm được C++ gọi là kỹ thuật Trailing return type.",
+    "slideRef": "Chương 3 - Slide 40"
+  },
+  {
+    "id": 115,
+    "type": "fill",
+    "text": "Đoạn code C++ sau in ra kết quả bao nhiêu? `auto func = [](int a) { return a * 2; }; cout << func(5);`",
+    "correctAnswers": [
+      "10"
+    ],
+    "explanation": "Lambda nhận a=5 và trả về a*2 = 10.",
+    "slideRef": "Chương 3 - Slide 37"
+  },
+  {
+    "id": 116,
+    "type": "single",
+    "text": "Với hàm khai báo `void swap(int &a, int &b)`, đoạn code `int x=5, y=10; swap(x, y);` sử dụng phương pháp truyền nào?",
+    "options": [
+      "Truyền tham số ngầm định",
+      "Truyền tham trị (Pass by value)",
+      "Truyền tham biến (Pass by reference)",
+      "Truyền con trỏ hàm"
+    ],
+    "correctAnswers": [
+      "Truyền tham biến (Pass by reference)"
+    ],
+    "explanation": "Ký hiệu `&a` và `&b` ở tham số hình thức thể hiện hàm này nhận tham chiếu, tức là truyền tham biến.",
+    "slideRef": "Chương 3 - Slide 9"
+  },
+  {
+    "id": 117,
+    "type": "single",
+    "text": "Một con trỏ hàm có thể trỏ đến các hàm Overload (Đa năng hóa) được không?",
+    "options": [
+      "Có, trình biên dịch sẽ tự động xác định hàm phù hợp dựa vào 'chữ ký' (danh sách tham số) của chính con trỏ hàm",
+      "Không, con trỏ hàm không phân biệt được vì các hàm overload trùng tên",
+      "Có, nhưng chỉ khi các hàm overload có cùng kiểu trả về",
+      "Chỉ được khi ép kiểu tường minh con trỏ về dạng auto"
+    ],
+    "correctAnswers": [
+      "Có, trình biên dịch sẽ tự động xác định hàm phù hợp dựa vào 'chữ ký' (danh sách tham số) của chính con trỏ hàm"
+    ],
+    "explanation": "Khi gán con trỏ hàm cho một tên hàm Overload, C++ Compiler sẽ đối chiếu danh sách tham số của con trỏ để chọn hàm Overload chính xác.",
+    "slideRef": "Chương 3 - Suy luận từ đặc tính Hàm"
+  },
+  {
+    "id": 118,
+    "type": "single",
+    "text": "Trong hàm mẫu `template <class T> T getMax(T a, T b)`, nếu có lời gọi `getMax(5.5, 3.2)` thì kiểu `T` sẽ được trình biên dịch hiểu ngầm định là kiểu gì?",
+    "options": [
+      "int",
+      "float",
+      "double",
+      "Xảy ra lỗi biên dịch"
+    ],
+    "correctAnswers": [
+      "double"
+    ],
+    "explanation": "Do số thực mặc định trong C++ là double, trình biên dịch tự động suy luận kiểu T là double từ các đối số truyền vào.",
+    "slideRef": "Chương 3 - Slide 34"
+  },
+  {
+    "id": 119,
+    "type": "multiple",
+    "text": "Trong mệnh đề bắt giữ `[&x, y]` của một biểu thức lambda, phát biểu nào sau đây MÔ TẢ ĐÚNG hành vi bắt giữ?",
+    "options": [
+      "Biến x được truyền vào theo dạng tham chiếu",
+      "Biến y được truyền vào theo dạng tham chiếu",
+      "Biến y được truyền vào theo dạng giá trị (sao chép)",
+      "Mọi biến bên ngoài đều bị chặn truy cập trừ x và y"
+    ],
+    "correctAnswers": [
+      "Biến x được truyền vào theo dạng tham chiếu",
+      "Biến y được truyền vào theo dạng giá trị (sao chép)",
+      "Mọi biến bên ngoài đều bị chặn truy cập trừ x và y"
+    ],
+    "explanation": "Khai báo rõ `&x` tức là bắt x bằng tham chiếu, `y` không có `&` nên bắt bằng giá trị. Việc liệt kê cụ thể giới hạn chỉ 2 biến này được truy cập bên trong.",
+    "slideRef": "Chương 3 - Slide 38"
+  },
+  {
+    "id": 120,
+    "type": "single",
+    "text": "Cho đoạn code: `int x = 10; auto f = [&x]() { x++; }; f(); cout << x;`. Giá trị được in ra là bao nhiêu?",
+    "options": [
+      "10",
+      "11",
+      "Sinh lỗi biên dịch do thiếu từ khóa mutable",
+      "Giá trị rác"
+    ],
+    "correctAnswers": [
+      "11"
+    ],
+    "explanation": "Biến x được bắt bằng tham chiếu `[&x]`, nên lệnh `x++` bên trong lambda tác động trực tiếp lên biến x gốc, biến thành 11.",
+    "slideRef": "Chương 3 - Slide 38, 41"
+  },
+  {
+        "id": 121,
+        "chapter": 3,
+        "type": "multiple",
+        "text": "Trong mệnh đề bắt giữ `[&x, y]` của một biểu thức lambda, phát biểu nào sau đây MÔ TẢ ĐÚNG hành vi bắt giữ?",
+        "options": [
+            "Biến x được bắt theo dạng tham chiếu",
+            "Biến y được bắt theo dạng tham chiếu",
+            "Biến y được bắt theo dạng giá trị (sao chép)",
+            "Mọi biến bên ngoài đều bị chặn truy cập trừ x và y"
+        ],
+        "correctAnswers": [
+            "Biến x được bắt theo dạng tham chiếu",
+            "Biến y được bắt theo dạng giá trị (sao chép)",
+            "Mọi biến bên ngoài đều bị chặn truy cập trừ x và y"
+        ],
+        "explanation": "Khai báo `&x` tức là bắt bằng tham chiếu, `y` không có `&` nên bắt bằng giá trị. Cú pháp này giới hạn chỉ x và y được truy cập bên trong lambda.",
+        "slideRef": "Chương 3 - Slide 38"
+    },
+    {
+        "id": 122,
+        "chapter": 3,
+        "type": "single",
+        "text": "Cho đoạn code: `int x = 10; auto f = [&x]() { x++; }; f();`. Giá trị của biến x sau khi thực thi là bao nhiêu?",
+        "code": "int x = 10;\nauto f = [&x]() { x++; };\nf();",
+        "options": [
+            "9",
+            "10",
+            "11",
+            "Lỗi biên dịch"
+        ],
+        "correctAnswer": "11",
+        "explanation": "Biến x được bắt theo tham chiếu (&x). Do đó, sự thay đổi x bên trong lambda (x++) sẽ thay đổi trực tiếp biến x bên ngoài.",
+        "slideRef": "Chương 3 - Cú pháp Lambda"
+    },
+    {
+        "id": 123,
+        "chapter": 3,
+        "type": "multiple",
+        "text": "Kỹ thuật Đa năng hóa hàm (Function Overloading) yêu cầu các hàm cùng tên phải khác nhau ở yếu tố nào?",
+        "options": [
+            "Kiểu dữ liệu trả về của hàm",
+            "Số lượng tham số",
+            "Kiểu dữ liệu của các tham số",
+            "Tên của các biến tham số"
+        ],
+        "correctAnswers": [
+            "Số lượng tham số",
+            "Kiểu dữ liệu của các tham số"
+        ],
+        "explanation": "Overloading yêu cầu chữ ký hàm khác nhau (số lượng hoặc kiểu tham số). Kiểu trả về khác nhau là chưa đủ để phân biệt.",
+        "slideRef": "Chương 3 - Slide 2 (Function overload)"
+    },
+    {
+        "id": 124,
+        "chapter": 3,
+        "type": "single",
+        "text": "Tham số ngầm định (default arguments) phải được đặt ở vị trí nào trong danh sách tham số của hàm?",
+        "options": [
+            "Bất kỳ vị trí nào",
+            "Ở đầu danh sách tham số",
+            "Nằm ở cuối (từ phải sang trái) của danh sách tham số",
+            "Chỉ được dùng nếu hàm có 1 tham số duy nhất"
+        ],
+        "correctAnswer": "Nằm ở cuối (từ phải sang trái) của danh sách tham số",
+        "explanation": "Các tham số có giá trị ngầm định bắt buộc phải nằm ở cuối danh sách tham số để trình biên dịch có thể ghép nối đúng đối số truyền vào.",
+        "slideRef": "Chương 3 - Tham số ngầm định"
+    },
+    {
+        "id": 125,
+        "chapter": 3,
+        "type": "fill",
+        "text": "Từ khóa nào được thêm vào sau danh sách tham số của lambda để cho phép sửa đổi các biến được bắt giữ theo giá trị (capture by value)?",
+        "correctAnswers": [
+            "mutable"
+        ],
+        "explanation": "Từ khóa 'mutable' cho phép phần thân của lambda thay đổi giá trị của các biến được bắt bằng giá trị (bản sao).",
+        "slideRef": "Chương 3 - Slide 42"
+    },
+    {
+        "id": 126,
+        "chapter": 3,
+        "type": "fill",
+        "text": "Viết cú pháp (2 từ, sử dụng ngoặc nhọn <> ) để khai báo một khuôn mẫu hàm (Function template) với tham số kiểu là T. Ví dụ: `... void swap(T& a, T& b)`",
+        "correctAnswers": [
+            "template <typename t>",
+            "template <class t>",
+            "template<typename t>",
+            "template<class t>"
+        ],
+        "explanation": "Cú pháp chuẩn để khai báo template hàm là 'template <typename T>' hoặc 'template <class T>'.",
+        "slideRef": "Chương 3 - Function templates"
+    },
+    {
+        "id": 127,
+        "chapter": 3,
+        "type": "single",
+        "text": "Khi truyền một biến theo dạng tham chiếu (pass by reference) trong C++, ta cần sử dụng ký hiệu nào đi kèm với kiểu dữ liệu của tham số?",
+        "options": [
+            "*",
+            "&",
+            "->",
+            "Không cần ký hiệu nào"
+        ],
+        "correctAnswer": "&",
+        "explanation": "Sử dụng ký hiệu & sau tên kiểu dữ liệu (ví dụ: int& x) để khai báo truyền tham chiếu.",
+        "slideRef": "Chương 3 - Truyền tham biến"
+    },
+    {
+        "id": 128,
+        "chapter": 3,
+        "type": "single",
+        "text": "Ưu điểm chính của hàm nội tuyến (inline function) là gì?",
+        "options": [
+            "Tiết kiệm bộ nhớ chương trình",
+            "Tránh phải khai báo biến toàn cục",
+            "Giảm chi phí (overhead) khi gọi hàm do mã hàm được chèn trực tiếp tại nơi gọi",
+            "Cho phép gọi đệ quy vô hạn"
+        ],
+        "correctAnswer": "Giảm chi phí (overhead) khi gọi hàm do mã hàm được chèn trực tiếp tại nơi gọi",
+        "explanation": "Từ khóa inline gợi ý cho trình biên dịch thay thế lời gọi hàm bằng chính thân hàm, giúp tránh overhead của việc rẽ nhánh nhảy tới hàm.",
+        "slideRef": "Chương 3 - Hàm"
+    },
+    {
+        "id": 129,
+        "chapter": 3,
+        "type": "fill",
+        "text": "Trong C++14, để trình biên dịch tự động suy luận kiểu dữ liệu trả về của hàm (kể cả hàm lambda), ta sử dụng từ khóa nào ở đầu khai báo?",
+        "correctAnswers": [
+            "auto"
+        ],
+        "explanation": "C++14 cho phép dùng 'auto' làm kiểu trả về, trình biên dịch sẽ tự động nội suy từ lệnh return.",
+        "slideRef": "Chương 3 - Slide 40"
+    },
+    {
+        "id": 130,
+        "chapter": 3,
+        "type": "multiple",
+        "text": "Phần thân của một biểu thức lambda có thể sử dụng những thành phần nào sau đây?",
+        "options": [
+            "Các biến được bắt giữ (capture) trong mệnh đề bắt giữ",
+            "Các tham số truyền vào lambda",
+            "Các biến toàn cục (global variables)",
+            "Chỉ các biến cục bộ khai báo bên trong lambda"
+        ],
+        "correctAnswers": [
+            "Các biến được bắt giữ (capture) trong mệnh đề bắt giữ",
+            "Các tham số truyền vào lambda",
+            "Các biến toàn cục (global variables)"
+        ],
+        "explanation": "Phần thân lambda có thể sử dụng biến capture, tham số, biến toàn cục/static, và con trỏ this nếu nằm trong class.",
+        "slideRef": "Chương 3 - Slide 41"
+    },
+    {
+        "id": 131,
+        "chapter": 3,
+        "type": "single",
+        "text": "Bên trong một biểu thức lambda, nếu muốn sử dụng các biến thành viên của struct/class chứa nó (trong lập trình OOP), ta phải bắt giữ con trỏ nào?",
+        "options": [
+            "self",
+            "this",
+            "base",
+            "super"
+        ],
+        "correctAnswer": "this",
+        "explanation": "Để truy cập các thành viên của class/struct bọc ngoài, lambda cần bắt giữ con trỏ 'this' (hoặc dùng capture mặc định [=], [&]).",
+        "slideRef": "Chương 3 - Slide 41"
+    },
+    {
+        "id": 132,
+        "chapter": 3,
+        "type": "single",
+        "text": "Trong cú pháp khai báo lambda, đoạn `-> type` dùng để làm gì? Ví dụ: `[](int i) -> int { return i; }`",
+        "options": [
+            "Ép kiểu tham số đầu vào",
+            "Trỏ đến một địa chỉ bộ nhớ",
+            "Chỉ định rõ kiểu dữ liệu trả về của hàm",
+            "Bắt ngoại lệ"
+        ],
+        "correctAnswer": "Chỉ định rõ kiểu dữ liệu trả về của hàm",
+        "explanation": "Trailing return type (-> type) giúp định nghĩa rõ kiểu trả về của lambda, đặc biệt hữu ích khi logic return phức tạp.",
+        "slideRef": "Chương 3 - Slide 40"
+    },
+    {
+        "id": 133,
+        "chapter": 3,
+        "type": "fill",
+        "text": "Nếu một hàm (function) được thiết kế chỉ để thực thi một loạt lệnh mà không trả về bất kỳ kết quả nào, kiểu dữ liệu trả về của nó phải được khai báo là gì?",
+        "correctAnswers": [
+            "void"
+        ],
+        "explanation": "Hàm không trả về kết quả sử dụng từ khóa 'void' làm kiểu trả về.",
+        "slideRef": "Chương 3 - Cú pháp hàm"
+    },
+    {
+        "id": 134,
+        "chapter": 1,
+        "type": "multiple",
+        "text": "Theo Bài giảng Chương 1, mục tiêu cốt lõi của môn học IT3040 - Kỹ thuật lập trình là gì?",
+        "options": [
+            "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+            "Chỉ tập trung học cú pháp ngôn ngữ C/C++ thuần túy",
+            "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế",
+            "Hướng dẫn sửa chữa, bảo trì phần cứng máy tính"
+        ],
+        "correctAnswers": [
+            "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+            "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế"
+        ],
+        "explanation": "Học phần trang bị các kỹ thuật (quản lý bộ nhớ, hàm, gỡ rối, tinh chỉnh) để viết mã nguồn hiệu quả, phát triển phần mềm tốt.",
+        "slideRef": "Chương 1 - Slide 2"
+    },
+    {
+        "id": 135,
+        "chapter": 2,
+        "type": "single",
+        "text": "Gọi X là mảng hai chiều có kích thước m dòng và n cột. Nếu biểu diễn X thành mảng một chiều A tương ứng, phần tử X[i][j] sẽ tương ứng với phần tử nào trong A?",
+        "options": [
+            "A[i + j]",
+            "A[i * n + j]",
+            "A[i * m + j]",
+            "A[i * j + n]"
+        ],
+        "correctAnswer": "A[i * n + j]",
+        "explanation": "Công thức ánh xạ mảng 2 chiều (m dòng, n cột) xuống 1 chiều (row-major order) là index = i * n + j (với n là số lượng phần tử trên 1 dòng/cột).",
+        "slideRef": "Chương 2 - Slide 29"
+    },
+    {
+        "id": 136,
+        "chapter": 2,
+        "type": "fill",
+        "text": "Cho mảng 2 chiều được cấp phát động bằng con trỏ cấp 2: `int **mt = new int * [R];`. Sau khi thực hiện lệnh `delete [] mt[0];` để giải phóng bộ nhớ lưu trữ dữ liệu, ta cần viết thêm lệnh gì (toàn bộ dòng lệnh) để giải phóng nốt mảng chứa các con trỏ dòng?",
+        "correctAnswers": [
+            "delete [] mt;",
+            "delete[] mt;"
+        ],
+        "explanation": "Ta phải giải phóng bộ nhớ được trỏ tới bởi từng phần tử mảng (nếu cấp phát riêng rẽ hoặc gộp chung), sau đó giải phóng chính mảng con trỏ dòng bằng `delete [] mt;`.",
+        "slideRef": "Chương 2 - Slide 30"
+    },
+    {
+        "id": 137,
+        "chapter": 2,
+        "type": "single",
+        "text": "Khi thực hiện lệnh `int x = 10;`, phép toán `&x` sẽ trả về kết quả mang ý nghĩa gì?",
+        "options": [
+            "Giá trị 10 của biến x",
+            "Địa chỉ của ô nhớ đầu tiên trong vùng nhớ lưu trữ giá trị của x",
+            "Kích thước bộ nhớ của biến x",
+            "Con trỏ tới một hàm ẩn danh"
+        ],
+        "correctAnswer": "Địa chỉ của ô nhớ đầu tiên trong vùng nhớ lưu trữ giá trị của x",
+        "explanation": "Toán tử & là toán tử lấy địa chỉ (Address-of operator). Nó trả về địa chỉ ô nhớ vật lý mà biến đó đang được cấp phát.",
+        "slideRef": "Chương 2 - Slide 2"
+    },
+    {
+        "id": 138,
+        "chapter": 2,
+        "type": "fill",
+        "text": "Trong C++, từ khóa nào được sử dụng để CẤP PHÁT một vùng nhớ động (dynamic memory)?",
+        "correctAnswers": [
+            "new"
+        ],
+        "explanation": "Toán tử 'new' trong C++ dùng để cấp phát bộ nhớ động trên Heap.",
+        "slideRef": "Chương 2 - Quản lý bộ nhớ động"
+    },
+    {
+        "id": 139,
+        "chapter": 1,
+        "type": "single",
+        "text": "Trong chu trình hoạt động của CPU, thanh ghi PC (Program Counter) đóng vai trò gì?",
+        "options": [
+            "Lưu trữ dữ liệu tạm thời của phép toán",
+            "Trỏ tới địa chỉ của lệnh sẽ được nhận (fetch) tiếp theo",
+            "Lưu mã lệnh (Opcode) đang được thực thi",
+            "Trỏ tới đỉnh của Stack"
+        ],
+        "correctAnswer": "Trỏ tới địa chỉ của lệnh sẽ được nhận (fetch) tiếp theo",
+        "explanation": "Thanh ghi PC luôn lưu giữ địa chỉ của lệnh kế tiếp trong bộ nhớ mà CPU cần thực thi.",
+        "slideRef": "GenQuiz - Kiến trúc máy tính"
+    },
+    {
+        "id": 140,
+        "chapter": 1,
+        "type": "multiple",
+        "text": "Theo quy trình phát triển, bước 'Document Solution' (Bước 6) bao gồm những hoạt động chính nào?",
+        "options": [
+            "Xác định yêu cầu (Requirements)",
+            "Rà soát lại program code, loại bỏ dead code",
+            "Rà soát, hoàn thiện documentation (tài liệu)",
+            "Chạy thử nghiệm phiên bản Beta"
+        ],
+        "correctAnswers": [
+            "Rà soát lại program code, loại bỏ dead code",
+            "Rà soát, hoàn thiện documentation (tài liệu)"
+        ],
+        "explanation": "Bước 6 gồm 2 việc: review code để dọn dẹp các lệnh không dùng (dead code) và hoàn thiện các tài liệu hướng dẫn/chú thích.",
+        "slideRef": "Chương 1 - Slide 48"
+    },
+    {
+        "id": 141,
+        "chapter": 1,
+        "type": "single",
+        "text": "Thuật ngữ 'Dead code' được định nghĩa là gì?",
+        "options": [
+            "Các dòng lệnh chứa lỗi Cú pháp (Syntax Error)",
+            "Các dòng lệnh mà chương trình không bao giờ gọi đến (không bao giờ thực thi)",
+            "Mã nguồn bị mất do quên lưu file",
+            "Vòng lặp vô tận gây treo máy"
+        ],
+        "correctAnswer": "Các dòng lệnh mà chương trình không bao giờ gọi đến (không bao giờ thực thi)",
+        "explanation": "Dead code là những phần code thừa, hàm không bao giờ được gọi hoặc code nằm sau lệnh return, cần được loại bỏ ở pha Document Solution.",
+        "slideRef": "Chương 1 - Slide 48"
+    },
+    {
+        "id": 142,
+        "chapter": 1,
+        "type": "single",
+        "text": "Khái niệm 'Extreme programming (XP)' được nhắc đến trong bài giảng nhấn mạnh điều gì?",
+        "options": [
+            "Chỉ viết tài liệu hướng dẫn trước khi code",
+            "Thực hiện coding và testing ngay sau khi các yêu cầu được xác định",
+            "Viết toàn bộ mã nguồn trên một file duy nhất",
+            "Không cần kiểm thử chương trình"
+        ],
+        "correctAnswer": "Thực hiện coding và testing ngay sau khi các yêu cầu được xác định",
+        "explanation": "Extreme programming (XP) là quy trình phần mềm ưu tiên thực hiện viết mã (coding) và kiểm thử (testing) liên tục ngay từ khi có yêu cầu.",
+        "slideRef": "Chương 1 - Slide 46"
+    },
+    {
+        "id": 143,
+        "chapter": 1,
+        "type": "fill",
+        "text": "Quá trình Debugging trong bước Test Solution có mục đích tìm và sửa các lỗi syntax (cú pháp) và lỗi _______ (tư duy, thuật toán).",
+        "correctAnswers": [
+            "logic"
+        ],
+        "explanation": "Debugging tập trung vào tìm lỗi Syntax errors (lỗi cú pháp) và Logic errors (lỗi logic/thuật toán sai).",
+        "slideRef": "Chương 1 - Slide 47"
+    },
+    {
+        "id": 144,
+        "chapter": 2,
+        "type": "single",
+        "text": "Hiện tượng rò rỉ bộ nhớ (Memory leak) trong lập trình C/C++ xảy ra trong trường hợp nào sau đây?",
+        "options": [
+            "Chương trình truy cập vào chỉ số nằm ngoài phạm vi mảng",
+            "Chương trình cấp phát vùng nhớ động nhưng không giải phóng (free/delete) khi không còn sử dụng",
+            "Trình biên dịch không tìm thấy thư viện hàm cấp phát",
+            "Dung lượng ổ cứng máy tính bị đầy"
+        ],
+        "correctAnswer": "Chương trình cấp phát vùng nhớ động nhưng không giải phóng (free/delete) khi không còn sử dụng",
+        "explanation": "Khi cấp phát bằng malloc/new mà quyên free/delete, vùng nhớ đó sẽ bị treo trên RAM, gây rò rỉ bộ nhớ (memory leak).",
+        "slideRef": "Chương 2 - Memory Management"
+    },
+    {
+        "id": 145,
+        "chapter": 2,
+        "type": "fill",
+        "text": "Khi khai báo lệnh `int x = 10;` trên các trình biên dịch thông dụng (hệ thống 32-bit/64-bit chuẩn), kích thước vùng nhớ được cấp phát cho biến kiểu int thường là bao nhiêu byte?",
+        "correctAnswers": [
+            "4",
+            "4 byte",
+            "bốn"
+        ],
+        "explanation": "Kiểu số nguyên int tiêu chuẩn thường chiếm 4 byte (32 bits) trong bộ nhớ.",
+        "slideRef": "Chương 2 - Slide 2"
+    },
+    {
+        "id": 146,
+        "chapter": 2,
+        "type": "single",
+        "text": "Biến con trỏ (Pointer variable) khác biệt với biến thông thường ở điểm nào?",
+        "options": [
+            "Biến con trỏ không bao giờ chiếm bộ nhớ lưu trữ",
+            "Biến con trỏ có thể chứa ký tự đặc biệt",
+            "Giá trị lưu trữ bên trong biến con trỏ là ĐỊA CHỈ của một vùng nhớ/biến khác",
+            "Biến con trỏ tự động giải phóng bộ nhớ khi ra khỏi hàm"
+        ],
+        "correctAnswer": "Giá trị lưu trữ bên trong biến con trỏ là ĐỊA CHỈ của một vùng nhớ/biến khác",
+        "explanation": "Khác với biến thường lưu giá trị trực tiếp (số, chữ), giá trị bên trong biến con trỏ là địa chỉ vật lý trỏ đến vùng nhớ của biến khác.",
+        "slideRef": "Chương 2 - Pointer"
+    },
+  {
+    "id": 147,
+    "chapter": 1,
+    "type": "multiple",
+    "source": "GeneratedQuiz",
+    "text": "Mục tiêu cốt lõi của môn học IT3040 - Kỹ thuật lập trình là gì?",
+    "options": [
+      "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+      "Chỉ tập trung học cú pháp ngôn ngữ C/C++",
+      "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế",
+      "Sửa chữa và bảo trì phần cứng máy tính"
+    ],
+    "correctAnswers": [
+      "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+      "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế"
+    ],
+    "explanation": "Học phần trang bị các kỹ thuật (quản lý bộ nhớ, đệ quy, gỡ rối...) để viết mã nguồn hiệu quả và phát triển ứng dụng chất lượng cao.",
+    "slideRef": "Chương 1 - Slide 2"
+  },
+  {
+    "id": 148,
+    "chapter": 1,
+    "type": "fill",
+    "source": "New",
+    "text": "Trong phương pháp XP (Extreme programming), việc coding và testing được thực hiện ngay sau khi các ____________ được xác định.",
+    "correctAnswers": [
+      "yêu cầu",
+      "yeu cau",
+      "requirements",
+      "requirement"
+    ],
+    "explanation": "Extreme programming (XP) nhấn mạnh việc coding và testing ngay sau khi các yêu cầu được xác định.",
+    "slideRef": "Chương 1 - Slide 46"
+  },
+  {
+    "id": 149,
+    "chapter": 1,
+    "type": "fill",
+    "source": "New",
+    "text": "Trong bước Document Solution, ta cần rà soát lại program code để loại bỏ các ____________ (tức các lệnh mà chương trình không bao giờ gọi đến).",
+    "correctAnswers": [
+      "dead code",
+      "dead-code",
+      "mã chết"
+    ],
+    "explanation": "Dead code là các đoạn mã không bao giờ được thực thi hoặc gọi đến, cần được loại bỏ trong bước rà soát mã.",
+    "slideRef": "Chương 1 - Slide 48"
+  },
+  {
+    "id": 150,
+    "chapter": 2,
+    "type": "single",
+    "source": "New",
+    "text": "Phép toán & trước tên biến (ví dụ &x) trong C trả về giá trị gì?",
+    "options": [
+      "Giá trị của biến x",
+      "Địa chỉ ô nhớ đầu tiên thuộc vùng nhớ của x",
+      "Kích thước vùng nhớ của x",
+      "Một tham chiếu ngẫu nhiên"
+    ],
+    "correctAnswer": "Địa chỉ ô nhớ đầu tiên thuộc vùng nhớ của x",
+    "explanation": "Phép toán & trả về địa chỉ của x, nghĩa là địa chỉ của ô nhớ đầu tiên trong vùng nhớ lưu trữ giá trị của x.",
+    "slideRef": "Chương 2 - Slide 2 & 3"
+  },
+  {
+    "id": 151,
+    "chapter": 2,
+    "type": "fill",
+    "source": "GeneratedQuiz",
+    "text": "Khi khai báo lệnh `int x = 10;` trên các hệ thống tiêu chuẩn 32-bit/64-bit, trình biên dịch thiết lập kích thước vùng nhớ cấp phát cho x thường là bao nhiêu byte?",
+    "correctAnswers": [
+      "4",
+      "4 byte",
+      "bốn"
+    ],
+    "explanation": "Kích thước vùng nhớ phụ thuộc kiểu của biến, đối với kiểu int tiêu chuẩn thường là 4 byte.",
+    "slideRef": "Chương 2 - Slide 2"
+  },
+  {
+    "id": 152,
+    "chapter": 2,
+    "type": "single",
+    "source": "New",
+    "text": "Gọi X là mảng 2 chiều kích thước m dòng, n cột. Nếu biểu diễn X thành mảng 1 chiều A tương ứng, phần tử X[i][j] sẽ tương ứng với phần tử nào trong A?",
+    "options": [
+      "A[i + j]",
+      "A[i * m + j]",
+      "A[i * n + j]",
+      "A[j * n + i]"
+    ],
+    "correctAnswer": "A[i * n + j]",
+    "explanation": "Công thức chuyển đổi chỉ số 2 chiều thành 1 chiều: A[i * n + j], với n là số phần tử trên 1 hàng (số cột).",
+    "slideRef": "Chương 2 - Slide 29"
+  },
+  {
+    "id": 153,
+    "chapter": 2,
+    "type": "multiple",
+    "source": "New",
+    "text": "Để giải phóng hoàn toàn bộ nhớ động cho mảng 2 chiều (kích thước R*C) được cấp phát bằng cách dùng con trỏ cấp 2 (int **mt) theo cách cấp phát 1 lần khối lớn, ta cần sử dụng (các) lệnh nào?",
+    "code": "mt = new int * [R];\nmt[0] = new int [R*C];\nfor(int i=1; i<R; ++i) mt[i] = mt[i-1] + C;",
+    "options": [
+      "delete mt;",
+      "delete [] mt[0];",
+      "delete [] mt;",
+      "free(mt);"
+    ],
+    "correctAnswers": [
+      "delete [] mt[0];",
+      "delete [] mt;"
+    ],
+    "explanation": "Phải giải phóng vùng nhớ chứa dữ liệu thực sự (mt[0]) trước, sau đó giải phóng mảng các con trỏ dòng (mt).",
+    "slideRef": "Chương 2 - Slide 30"
+  },
+  {
+    "id": 154,
+    "chapter": 3,
+    "type": "multiple",
+    "source": "New",
+    "text": "Theo bài giảng, nội dung chính của Chương 3 (Hàm) bao gồm các kỹ thuật nào sau đây?",
+    "options": [
+      "Đa năng hóa hàm (function overload)",
+      "Con trỏ hàm và tham số hóa hàm",
+      "Cấp phát bộ nhớ động",
+      "Biểu thức lamda và hàm nặc danh"
+    ],
+    "correctAnswers": [
+      "Đa năng hóa hàm (function overload)",
+      "Con trỏ hàm và tham số hóa hàm",
+      "Biểu thức lamda và hàm nặc danh"
+    ],
+    "explanation": "Chương 3 tập trung vào Truyền tham số, Đa năng hóa, Con trỏ hàm, Templates và Biểu thức Lambda. Cấp phát động thuộc Chương 2.",
+    "slideRef": "Chương 3 - Slide 2"
+  },
+  {
+    "id": 155,
+    "chapter": 3,
+    "type": "fill",
+    "source": "New",
+    "text": "Khi viết chương trình C/C++, ta luôn định nghĩa một hàm bắt buộc có tên là ____________ để chương trình bắt đầu thực thi.",
+    "correctAnswers": [
+      "main",
+      "main()",
+      "hàm main"
+    ],
+    "explanation": "Mọi chương trình C/C++ đều phải có hàm main làm điểm khởi đầu (entry point).",
+    "slideRef": "Chương 3 - Slide 3"
+  },
+  {
+    "id": 156,
+    "chapter": 3,
+    "type": "single",
+    "source": "New",
+    "text": "Trong cú pháp của biểu thức lambda, khai báo kiểu trả về (return type) bằng cách nào để giúp việc đọc hiểu mã nguồn dễ dàng hơn?",
+    "options": [
+      "Dùng từ khóa return_type ở đầu: `return_type [](){}`",
+      "Dùng mũi tên: `auto xl = [](int i) -> int { return i; };`",
+      "Dùng dấu hai chấm: `auto xl = [](int i) : int {}`",
+      "Lambda không cho phép định nghĩa kiểu trả về"
+    ],
+    "correctAnswer": "Dùng mũi tên: `auto xl = [](int i) -> int { return i; };`",
+    "explanation": "Trong C++11 trở lên, kiểu trả về của lambda có thể được chỉ định bằng `-> type` phía sau danh sách tham số (trailing return type).",
+    "slideRef": "Chương 3 - Slide 40"
+  },
+  {
+    "id": 157,
+    "chapter": 3,
+    "type": "fill",
+    "source": "New",
+    "text": "Phần thân của một lambda có thể sử dụng các biến được khai báo bên trong struct/class chứa nó thông qua con trỏ ____________ (đối với OOP).",
+    "correctAnswers": [
+      "this",
+      "*this"
+    ],
+    "explanation": "Lambda nằm trong các phương thức của class/struct có thể truy cập thành viên của class thông qua con trỏ this bằng cách capture [this].",
+    "slideRef": "Chương 3 - Slide 41"
+  },
+  {
+    "id": 158,
+    "chapter": 3,
+    "type": "single",
+    "source": "New",
+    "text": "Quan sát đoạn mã sau, biến `n` được bắt giữ (capture) vào lambda theo hình thức nào?\n`auto func = [&, n] (int a) mutable { m=++n+a; };`",
+    "options": [
+      "Tham chiếu (Reference)",
+      "Tham trị (Value)",
+      "Con trỏ (Pointer)",
+      "Biến toàn cục"
+    ],
+    "correctAnswer": "Tham trị (Value)",
+    "explanation": "Ký hiệu `[&, n]` nghĩa là: mặc định bắt tất cả biến bằng tham chiếu (&), ngoại trừ biến `n` được bắt bằng tham trị (copy giá trị).",
+    "slideRef": "Chương 3 - Slide 42"
+  },
+  {
+    "id": 159,
+    "chapter": 3,
+    "type": "single",
+    "source": "New",
+    "text": "Kết quả in ra màn hình của đoạn chương trình sau là gì?",
+    "code": "int m = 0;\nint n = 0;\nauto func = [&, n] (int a) mutable {\n  m = ++n + a;\n};\nfunc(4);\ncout << m << endl << n << endl;",
+    "options": [
+      "5 và 1",
+      "4 và 0",
+      "5 và 0",
+      "Lỗi biên dịch"
+    ],
+    "correctAnswer": "5 và 0",
+    "explanation": "n được truyền tham trị (copy n=0 vào lambda), từ khóa mutable cho phép thay đổi bản copy của n thành 1 bên trong lambda. Do đó m = 1+4=5. m được bắt tham chiếu nên m toàn cục = 5. n toàn cục không đổi = 0.",
+    "slideRef": "Chương 3 - Slide 42"
+  },
+  {
+    "id": 160,
+    "chapter": 3,
+    "type": "multiple",
+    "source": "New",
+    "text": "Dựa vào cú pháp cơ bản định nghĩa một hàm, các thành phần nào sau đây là BẮT BUỘC (hoặc thường có) trong chữ ký và cấu trúc hàm?",
+    "options": [
+      "return-type (Kiểu trả về)",
+      "name (Tên hàm)",
+      "lambda capture",
+      "argument-list (Danh sách tham số)"
+    ],
+    "correctAnswers": [
+      "return-type (Kiểu trả về)",
+      "name (Tên hàm)",
+      "argument-list (Danh sách tham số)"
+    ],
+    "explanation": "Cú pháp chuẩn: `return-type name(argument-list) { statements }`.",
+    "slideRef": "Chương 3 - Slide 4"
+  },
+  {
+    "id": 161,
+    "chapter": 3,
+    "type": "fill",
+    "source": "GeneratedQuiz",
+    "text": "Kỹ thuật ____________ (Function templates) cho phép định nghĩa một hàm duy nhất có thể hoạt động với nhiều kiểu dữ liệu khác nhau thông qua từ khóa `template <typename T>`.",
+    "correctAnswers": [
+      "khái quát hóa hàm",
+      "khái quát hóa",
+      "template",
+      "khái quát hoá hàm"
+    ],
+    "explanation": "Khái quát hóa hàm (Templates) giúp viết mã generic, cho phép compiler tự sinh ra các hàm cụ thể dựa trên kiểu dữ liệu khi gọi.",
+    "slideRef": "Chương 3 - Function templates"
+  },
+  {
+    "id": 162,
+    "chapter": 1,
+    "type": "multiple",
+    "text": "Mục tiêu cốt lõi của môn học IT3040 - Kỹ thuật lập trình là gì? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+      "Chỉ tập trung học cú pháp ngôn ngữ C/C++",
+      "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế",
+      "Học cách quản trị mạng và cấu hình hệ thống máy chủ"
+    ],
+    "correctAnswers": [
+      "Trang bị kỹ thuật cơ bản nhất mà một lập trình viên chuyên nghiệp cần nắm vững",
+      "Giúp sinh viên phát triển các ứng dụng phần mềm chất lượng cao trong thực tế"
+    ],
+    "explanation": "Học phần trang bị các kỹ thuật cơ bản (quản lý bộ nhớ, hàm, đệ quy,...) giúp sinh viên phát triển ứng dụng phần mềm chất lượng cao.",
+    "slideRef": "Chương 1 - Trang 2"
+  },
+  {
+    "id": 163,
+    "chapter": 1,
+    "type": "single",
+    "text": "Trong kỹ thuật Extreme Programming (XP), việc coding và testing được thực hiện vào thời điểm nào?",
+    "code": "",
+    "options": [
+      "Sau khi viết xong toàn bộ thiết kế kiến trúc",
+      "Ngay sau khi các yêu cầu được xác định",
+      "Vào giai đoạn cuối cùng trước khi bàn giao (Release)",
+      "Song song với quá trình bảo trì phần mềm"
+    ],
+    "correctAnswer": "Ngay sau khi các yêu cầu được xác định",
+    "explanation": "Slide định nghĩa Extreme programming (XP): coding và testing ngay sau khi các yêu cầu được xác định.",
+    "slideRef": "Chương 1 - Trang 46"
+  },
+  {
+    "id": 164,
+    "chapter": 1,
+    "type": "single",
+    "text": "Bước 'Document Solution' trong quy trình phát triển chương trình có nhiệm vụ gì quan trọng?",
+    "code": "",
+    "options": [
+      "Cài đặt phần mềm lên máy chủ của khách hàng",
+      "Tìm và sửa các lỗi syntax và logic errors",
+      "Rà soát lại program code, loại bỏ dead code và hoàn thiện tài liệu",
+      "Thu thập yêu cầu hệ thống từ phía người dùng"
+    ],
+    "correctAnswer": "Rà soát lại program code, loại bỏ dead code và hoàn thiện tài liệu",
+    "explanation": "Bước 6 - Document Solution gồm 2 hoạt động chính: Rà soát lại code (loại bỏ dead code) và Rà soát, hoàn thiện documentation.",
+    "slideRef": "Chương 1 - Trang 48"
+  },
+  {
+    "id": 165,
+    "chapter": 1,
+    "type": "fill",
+    "text": "Điền một từ/cụm từ tiếng Anh thích hợp: Thuật ngữ dùng để chỉ quá trình 'tìm và sửa các lỗi syntax và logic errors' trong chương trình được gọi là gì?",
+    "code": "",
+    "correctAnswers": [
+      "debugging",
+      "debug"
+    ],
+    "explanation": "Theo định nghĩa trong slide: Debugging - Tìm và sửa các lỗi syntax và logic errors.",
+    "slideRef": "Chương 1 - Trang 47"
+  },
+  {
+    "id": 166,
+    "chapter": 1,
+    "type": "single",
+    "text": "Kết quả của chương trình sau là gì?",
+    "code": "int main() { \n  int a = 40, b = 4;\n  while (a != b)\n    if (a > b) a = a - b;\n    else b = b - a;\n  printf(\"%d\", a);\n  return 0;\n}",
+    "options": [
+      "2",
+      "4",
+      "16",
+      "Lặp vô hạn"
+    ],
+    "correctAnswer": "4",
+    "explanation": "Đoạn code sử dụng thuật toán Euclid trừ lặp đi lặp lại để tìm ước chung lớn nhất (UCLN). UCLN của 40 và 4 là 4.",
+    "slideRef": "OldExam - ID 1"
+  },
+  {
+    "id": 167,
+    "chapter": 2,
+    "type": "fill",
+    "text": "Khi khai báo lệnh `int x = 10;` trên các trình biên dịch thông dụng (hệ thống 32-bit/64-bit chuẩn), kích thước vùng nhớ được cấp phát cho biến kiểu int thường là bao nhiêu byte? (Chỉ điền số)",
+    "code": "",
+    "correctAnswers": [
+      "4",
+      "4 byte",
+      "bốn"
+    ],
+    "explanation": "Kiểu số nguyên int tiêu chuẩn thường chiếm 4 byte vùng nhớ.",
+    "slideRef": "Chương 2 - Trang 2 / GeneratedQuiz Q145"
+  },
+  {
+    "id": 168,
+    "chapter": 2,
+    "type": "single",
+    "text": "Biến con trỏ (Pointer variable) khác biệt với biến thông thường ở điểm nào?",
+    "code": "",
+    "options": [
+      "Biến con trỏ không bao giờ chiếm bộ nhớ lưu trữ",
+      "Biến con trỏ có thể chứa ký tự đặc biệt",
+      "Giá trị lưu trữ bên trong biến con trỏ là ĐỊA CHỈ của một vùng nhớ/biến khác",
+      "Biến con trỏ tự động giải phóng bộ nhớ khi ra khỏi hàm"
+    ],
+    "correctAnswer": "Giá trị lưu trữ bên trong biến con trỏ là ĐỊA CHỈ của một vùng nhớ/biến khác",
+    "explanation": "Biến con trỏ là một biến đặc biệt dùng để lưu trữ địa chỉ của ô nhớ đầu tiên trong vùng nhớ của một biến khác.",
+    "slideRef": "Chương 2 / OldExam"
+  },
+  {
+    "id": 169,
+    "chapter": 2,
+    "type": "single",
+    "text": "Hàm malloc() trong C sẽ trả về kết quả gì nếu cấp phát vùng nhớ thành công?",
+    "code": "",
+    "options": [
+      "Trả về giá trị của vùng nhớ vừa cấp phát",
+      "Trả về con trỏ kiểu int trỏ tới vùng nhớ được cấp phát",
+      "Trả về con trỏ kiểu void trỏ tới địa chỉ đầu tiên của vùng nhớ được cấp phát",
+      "Trả về kích thước (số byte) đã cấp phát thành công"
+    ],
+    "correctAnswer": "Trả về con trỏ kiểu void trỏ tới địa chỉ đầu tiên của vùng nhớ được cấp phát",
+    "explanation": "Nguyên mẫu hàm void* malloc(size_t size). Hàm trả về con trỏ kiểu void trỏ tới block bộ nhớ, ta thường ép kiểu nó về loại dữ liệu mong muốn.",
+    "slideRef": "Chương 2 / OldExam Q1"
+  },
+  {
+    "id": 170,
+    "chapter": 2,
+    "type": "fill",
+    "text": "Ký tự nào được sử dụng làm toán tử để lấy địa chỉ của một biến trong C/C++? (Ví dụ lấy địa chỉ của biến x)",
+    "code": "",
+    "correctAnswers": [
+      "&"
+    ],
+    "explanation": "Phép toán & trả về địa chỉ của biến, nghĩa là địa chỉ của ô nhớ đầu tiên trong vùng nhớ lưu trữ biến đó.",
+    "slideRef": "Chương 2 - Trang 2"
+  },
+  {
+    "id": 171,
+    "chapter": 2,
+    "type": "single",
+    "text": "Giả sử bạn cấp phát bộ nhớ động cho mảng 2 chiều bằng con trỏ của con trỏ (Cách 2) như sau:\n`mt = new int * [R];`\n`int *temp = new int [R*C];`\n`for(i=0; i<R; ++i) { mt[i] = temp; temp += C; }`\n\nĐể giải phóng hoàn toàn bộ nhớ không gây memory leak, ta gọi lệnh gì?",
+    "code": "",
+    "options": [
+      "delete [] mt;",
+      "delete [] temp; delete [] mt;",
+      "delete [] mt[0]; delete [] mt;",
+      "Tất cả đều sai, hệ thống tự giải phóng"
+    ],
+    "correctAnswer": "delete [] mt[0]; delete [] mt;",
+    "explanation": "Theo slide chương 2 trang 30, vì vùng nhớ của các mảng con được cấp phát liền mạch thông qua 1 lần new (temp = mt[0]), ta giải phóng mảng liền mạch đó bằng delete [] mt[0], sau đó mới delete [] mt.",
+    "slideRef": "Chương 2 - Trang 30"
+  },
+  {
+    "id": 172,
+    "chapter": 2,
+    "type": "multiple",
+    "text": "Đâu là những đặc điểm khi sử dụng cấp phát bộ nhớ động (Dynamic memory allocation)? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "Kích thước bộ nhớ có thể được quyết định tại thời điểm chạy (runtime)",
+      "Lập trình viên phải tự quản lý việc thu hồi vùng nhớ (dùng free/delete)",
+      "Bộ nhớ động được cấp phát trên phân vùng Stack",
+      "Nếu không giải phóng đúng cách có thể dẫn đến rò rỉ bộ nhớ (memory leak)"
+    ],
+    "correctAnswers": [
+      "Kích thước bộ nhớ có thể được quyết định tại thời điểm chạy (runtime)",
+      "Lập trình viên phải tự quản lý việc thu hồi vùng nhớ (dùng free/delete)",
+      "Nếu không giải phóng đúng cách có thể dẫn đến rò rỉ bộ nhớ (memory leak)"
+    ],
+    "explanation": "Bộ nhớ động cấp phát trên vùng Heap, không phải Stack. Các đặc điểm còn lại là chính xác đối với bộ nhớ động.",
+    "slideRef": "Chương 2 - Bộ nhớ động"
+  },
+  {
+    "id": 173,
+    "chapter": 2,
+    "type": "single",
+    "text": "Để biểu diễn mảng 2 chiều kích thước m dòng, n cột thành mảng 1 chiều A. Địa chỉ tương đối của phần tử X[i][j] trong mảng A (giả sử chỉ số bắt đầu từ 0) được tính như thế nào?",
+    "code": "",
+    "options": [
+      "A[i + j * n]",
+      "A[i * n + j]",
+      "A[i * m + j]",
+      "A[j * m + i]"
+    ],
+    "correctAnswer": "A[i * n + j]",
+    "explanation": "Công thức chuyển đổi mảng 2 chiều thành 1 chiều (theo dòng): Vị trí ở mảng 1 chiều = chỉ số dòng * số cột + chỉ số cột = i * n + j.",
+    "slideRef": "Chương 2 - Trang 29"
+  },
+  {
+    "id": 174,
+    "chapter": 2,
+    "type": "single",
+    "text": "Hiện tượng 'Memory Leak' (Rò rỉ bộ nhớ) trong C/C++ xảy ra chủ yếu khi nào?",
+    "code": "",
+    "options": [
+      "Truy cập vào chỉ số nằm ngoài giới hạn của mảng",
+      "Cấp phát bộ nhớ động (new/malloc) nhưng quên không giải phóng (delete/free)",
+      "Sử dụng con trỏ lửng lơ (Dangling pointer)",
+      "Khai báo quá nhiều biến toàn cục"
+    ],
+    "correctAnswer": "Cấp phát bộ nhớ động (new/malloc) nhưng quên không giải phóng (delete/free)",
+    "explanation": "Memory leak xảy ra khi chương trình liên tục xin cấp phát trên Heap mà không trả lại, làm cạn kiệt bộ nhớ hệ thống.",
+    "slideRef": "Chương 2 - GeneratedQuiz"
+  },
+  {
+    "id": 175,
+    "chapter": 2,
+    "type": "fill",
+    "text": "Điền tên hàm (C chuẩn) dùng để cấp phát một mảng gồm n phần tử, mỗi phần tử có kích thước size byte, và tự động khởi tạo toàn bộ vùng nhớ bằng 0.",
+    "code": "",
+    "correctAnswers": [
+      "calloc",
+      "calloc()"
+    ],
+    "explanation": "Hàm calloc(num, size) cấp phát và gán các byte bằng 0. malloc chỉ cấp phát và chứa giá trị rác.",
+    "slideRef": "Chương 2 - Quản lý bộ nhớ"
+  },
+  {
+    "id": 176,
+    "chapter": 2,
+    "type": "single",
+    "text": "Lỗi 'Dangling pointer' (con trỏ lửng lơ) là gì?",
+    "code": "",
+    "options": [
+      "Con trỏ không có kiểu dữ liệu (void *)",
+      "Con trỏ được gán giá trị NULL ngay từ đầu",
+      "Con trỏ vẫn đang trỏ đến một vùng nhớ đã bị thu hồi (deleted/freed)",
+      "Con trỏ trỏ đến một hàm thay vì một biến"
+    ],
+    "correctAnswer": "Con trỏ vẫn đang trỏ đến một vùng nhớ đã bị thu hồi (deleted/freed)",
+    "explanation": "Dangling pointer xuất hiện khi vùng nhớ mà con trỏ đang trỏ tới đã bị hệ thống thu hồi, nhưng con trỏ vẫn giữ địa chỉ đó.",
+    "slideRef": "Chương 2 - Lỗi con trỏ"
+  },
+  {
+    "id": 177,
+    "chapter": 3,
+    "type": "fill",
+    "text": "Trong cú pháp của hàm Lambda (hàm nặc danh) C++, toán tử nào được sử dụng trong mệnh đề bắt giữ (capture clause) để bắt tất cả các biến bên ngoài bằng tham chiếu?",
+    "code": "",
+    "correctAnswers": [
+      "&"
+    ],
+    "explanation": "Cú pháp [&] dùng để bắt tất cả các biến local scope bên ngoài bằng tham chiếu (pass-by-reference).",
+    "slideRef": "Chương 3 / OldExam 26"
+  },
+  {
+    "id": 178,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khái niệm 'Đa năng hóa hàm' (Function overloading) trong C++ có nghĩa là gì?",
+    "code": "",
+    "options": [
+      "Cho phép một hàm có thể trả về nhiều kiểu dữ liệu khác nhau",
+      "Khai báo nhiều hàm có cùng tên nhưng khác nhau về danh sách tham số (số lượng, kiểu)",
+      "Một hàm có thể gọi đệ quy chính nó với cường độ lớn",
+      "Khái quát hóa một hàm bằng cách sử dụng từ khóa template"
+    ],
+    "correctAnswer": "Khai báo nhiều hàm có cùng tên nhưng khác nhau về danh sách tham số (số lượng, kiểu)",
+    "explanation": "Overload (Đa năng hóa) cho phép các hàm cùng tên tồn tại trong cùng một phạm vi, miễn là signature (danh sách tham số) của chúng khác nhau.",
+    "slideRef": "Chương 3 - Trang 2"
+  },
+  {
+    "id": 179,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khi khai báo các tham số ngầm định (Default arguments) cho một hàm, quy tắc bắt buộc về vị trí của chúng là gì?",
+    "code": "",
+    "options": [
+      "Phải được đặt ở đầu danh sách tham số",
+      "Có thể đặt ở bất kỳ đâu",
+      "Phải được đặt liên tiếp nhau ở cuối danh sách tham số",
+      "Chỉ được có duy nhất một tham số ngầm định"
+    ],
+    "correctAnswer": "Phải được đặt liên tiếp nhau ở cuối danh sách tham số",
+    "explanation": "Các tham số có giá trị ngầm định luôn phải đứng sau các tham số không có giá trị ngầm định (đặt ở cuối danh sách).",
+    "slideRef": "Chương 3 - Tham số ngầm định"
+  },
+  {
+    "id": 180,
+    "chapter": 3,
+    "type": "fill",
+    "text": "Kết quả in ra màn hình của đoạn chương trình sau là gì?",
+    "code": "int a = 5;\nvoid thay_doi(int &x) {\n    x = 10;\n}\nint main() {\n    thay_doi(a);\n    cout << a;\n    return 0;\n}",
+    "correctAnswers": [
+      "10"
+    ],
+    "explanation": "Vì hàm nhận tham chiếu (int &x), mọi thay đổi trên x sẽ trực tiếp thay đổi trên a. a biến thành 10.",
+    "slideRef": "Chương 3 - Truyền tham biến"
+  },
+  {
+    "id": 181,
+    "chapter": 3,
+    "type": "multiple",
+    "text": "Phần thân của một lambda function (hàm nặc danh) có thể làm những gì? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "Sử dụng những biến được bắt giữ trong mệnh đề bắt giữ (capture clause)",
+      "Sử dụng các tham số truyền vào hàm",
+      "Sử dụng các biến toàn cục, biến static",
+      "Không thể chứa các vòng lặp (for/while)"
+    ],
+    "correctAnswers": [
+      "Sử dụng những biến được bắt giữ trong mệnh đề bắt giữ (capture clause)",
+      "Sử dụng các tham số truyền vào hàm",
+      "Sử dụng các biến toàn cục, biến static"
+    ],
+    "explanation": "Thân hàm lambda hoàn toàn có thể chứa các vòng lặp bình thường. Các ý còn lại là những khả năng truy cập hợp lệ theo slide bài giảng.",
+    "slideRef": "Chương 3 - Trang 41"
+  },
+  {
+    "id": 182,
+    "chapter": 3,
+    "type": "single",
+    "text": "Đọc và phân tích đoạn code Lambda sau. Cho biết kết quả in ra màn hình?",
+    "code": "#include <iostream>\nusing namespace std;\nint m=0, n=0;\nint main() {\n    auto func = [&, n] (int a) mutable {\n        m = ++n + a;\n    };\n    func(4);\n    cout << m << \" \" << n << endl;\n}",
+    "options": [
+      "5 1",
+      "5 0",
+      "4 0",
+      "Lỗi biên dịch"
+    ],
+    "correctAnswer": "5 0",
+    "explanation": "Mệnh đề capture [&, n] bắt m bằng tham chiếu (thay đổi), bắt n bằng tham trị (chỉ copy, mutable cho phép đổi bản copy nhưng n gốc không đổi). ++n làm n(copy)=1, m = 1 + 4 = 5. Hết hàm, m(toàn cục)=5, n(toàn cục) vẫn = 0.",
+    "slideRef": "Chương 3 - Trang 42"
+  },
+  {
+    "id": 183,
+    "chapter": 3,
+    "type": "fill",
+    "text": "Cú pháp để khai báo một con trỏ hàm 'p' trỏ tới một hàm nhận vào 2 tham số nguyên (int, int) và trả về số nguyên (int) là gì? Điền phần còn thiếu:\n`int _______(int, int);`",
+    "code": "",
+    "correctAnswers": [
+      "(*p)"
+    ],
+    "explanation": "Khai báo con trỏ hàm: type (*pointer_name)(parameter_types). Ở đây là int (*p)(int, int). Chú ý dấu ngoặc quanh *p là bắt buộc.",
+    "slideRef": "Chương 3 - Con trỏ hàm"
+  },
+  {
+    "id": 184,
+    "chapter": 3,
+    "type": "single",
+    "text": "Trong C++, ta CÓ THỂ nạp chồng (overload) hai hàm chỉ dựa vào sự khác biệt của kiểu trả về hay không? (Ví dụ: `int foo();` và `double foo();`)",
+    "code": "",
+    "options": [
+      "Có",
+      "Không"
+    ],
+    "correctAnswer": "Không",
+    "explanation": "Overload chỉ dựa trên sự khác biệt về số lượng, kiểu, hoặc thứ tự của danh sách tham số truyền vào, KHÔNG được phép chỉ khác biệt kiểu trả về.",
+    "slideRef": "Chương 3 - Đa năng hóa hàm"
+  },
+  {
+    "id": 185,
+    "chapter": 3,
+    "type": "single",
+    "text": "Mệnh đề bắt giữ `[=]` trong định nghĩa một Lambda Expression có ý nghĩa gì?",
+    "code": "",
+    "options": [
+      "Bắt tất cả các biến ở phạm vi bên ngoài bằng tham chiếu",
+      "Chỉ bắt giữ những biến được chỉ định tên một cách rõ ràng",
+      "Không bắt giữ bất kỳ biến nào từ bên ngoài",
+      "Bắt tất cả các biến ở phạm vi bên ngoài bằng tham trị (copy value)"
+    ],
+    "correctAnswer": "Bắt tất cả các biến ở phạm vi bên ngoài bằng tham trị (copy value)",
+    "explanation": "Dấu = có nghĩa là pass-by-value. Hàm lambda sẽ sao chép giá trị của các biến local bên ngoài vào để sử dụng.",
+    "slideRef": "Chương 3 - Hàm nặc danh"
+  },
+  {
+    "id": 186,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khi khai báo một cấu trúc khái quát hóa hàm (Function Template), từ khóa nào thường đi liền với `template`?",
+    "code": "",
+    "options": [
+      "<class> hoặc <typename>",
+      "<struct> hoặc <datatype>",
+      "<type> hoặc <var>",
+      "<void>"
+    ],
+    "correctAnswer": "<class> hoặc <typename>",
+    "explanation": "Cú pháp chuẩn: template <class T> hoặc template <typename T>.",
+    "slideRef": "Chương 3 - Function Templates"
+  },
+  {
+    "id": 187,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khi ta truyền một mảng 1 chiều vào một hàm làm tham số (ví dụ: `void print(int arr[])`), thực chất C/C++ đang truyền cái gì?",
+    "code": "",
+    "options": [
+      "Toàn bộ dữ liệu của mảng được copy ra một vùng nhớ mới (truyền tham trị của mảng)",
+      "Truyền một con trỏ trỏ tới phần tử đầu tiên của mảng",
+      "Truyền độ dài của mảng",
+      "Truyền tham chiếu của một biến nguyên ngẫu nhiên"
+    ],
+    "correctAnswer": "Truyền một con trỏ trỏ tới phần tử đầu tiên của mảng",
+    "explanation": "Mảng khi truyền vào hàm sẽ bị suy biến (decay) thành con trỏ trỏ đến phần tử đầu tiên (pass by pointer).",
+    "slideRef": "Chương 3 - Tham số hàm"
+  },
+  {
+    "id": 188,
+    "chapter": 3,
+    "type": "single",
+    "text": "Vai trò của từ khóa `mutable` trong hàm nặc danh (Lambda function) là gì?",
+    "code": "",
+    "options": [
+      "Làm cho hàm lambda có thể được gọi đệ quy",
+      "Ngăn không cho hàm lambda thay đổi các biến toàn cục",
+      "Cho phép thay đổi giá trị của các biến được bắt giữ bằng tham trị (by value) ngay bên trong thân lambda",
+      "Bắt buộc kiểu trả về của lambda phải là kiểu nguyên"
+    ],
+    "correctAnswer": "Cho phép thay đổi giá trị của các biến được bắt giữ bằng tham trị (by value) ngay bên trong thân lambda",
+    "explanation": "Mặc định lambda bắt biến kiểu tham trị sẽ coi đó là const. Từ khóa mutable phá vỡ hạn chế này, cho phép chỉnh sửa bản copy của biến đó (không ảnh hưởng biến gốc).",
+    "slideRef": "Chương 3 - Trang 42 (Ví dụ có mutable)"
+  },
+  {
+    "id": 189,
+    "chapter": 3,
+    "type": "fill",
+    "text": "Trong khái niệm hàm của C/C++, nếu một hàm hoàn toàn không cần trả về bất kỳ giá trị nào cho nơi gọi nó, ta sử dụng từ khóa kiểu dữ liệu gì ở phần khai báo (return-type)?",
+    "code": "",
+    "correctAnswers": [
+      "void"
+    ],
+    "explanation": "void biểu thị hàm không có giá trị trả về.",
+    "slideRef": "Chương 3 - Cú pháp hàm"
+  },
+  {
+    "id": 190,
+    "chapter": 3,
+    "type": "multiple",
+    "text": "Những đặc điểm nào sau đây là ưu điểm của Khái quát hóa hàm (Function Templates)? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "Giúp tái sử dụng mã (Code reusability), tránh viết lặp lại nhiều hàm có logic giống hệt nhau nhưng khác kiểu dữ liệu",
+      "Tăng cường tính an toàn kiểu dữ liệu (Type-safe) hơn việc dùng macro",
+      "Chương trình chạy nhanh hơn gấp nhiều lần so với hàm thông thường",
+      "Làm cho file thực thi (exe) nhẹ hơn rất nhiều so với không dùng hàm"
+    ],
+    "correctAnswers": [
+      "Giúp tái sử dụng mã (Code reusability), tránh viết lặp lại nhiều hàm có logic giống hệt nhau nhưng khác kiểu dữ liệu",
+      "Tăng cường tính an toàn kiểu dữ liệu (Type-safe) hơn việc dùng macro"
+    ],
+    "explanation": "Templates giúp tái sử dụng mã và type-safe. Tuy nhiên khi dùng nhiều với các type khác nhau, compiler sẽ sinh ra nhiều bản copy hàm tương ứng, làm tăng kích thước file thực thi (code bloat), không làm file nhẹ đi.",
+    "slideRef": "Chương 3 - Khái quát hóa hàm"
+  },
+  {
+    "id": 191,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khai báo rõ ràng kiểu trả về cho lambda bằng cách sử dụng mũi tên `->` có tác dụng chính là gì?",
+    "code": "auto func = [](int i) -> int {\n  return i;\n};",
+    "options": [
+      "Bắt buộc phải có nếu hàm lambda có tham số",
+      "Chỉ để trang trí, không có ý nghĩa gì đối với trình biên dịch",
+      "Trình biên dịch bắt buộc yêu cầu mũi tên ở mọi lambda",
+      "Giúp việc đọc hiểu lambda dễ dàng hơn và giải quyết các trường hợp trình biên dịch không tự suy luận được (ví dụ hàm có nhiều lệnh return trả về các kiểu có thể ép cho nhau)"
+    ],
+    "correctAnswer": "Giúp việc đọc hiểu lambda dễ dàng hơn và giải quyết các trường hợp trình biên dịch không tự suy luận được (ví dụ hàm có nhiều lệnh return trả về các kiểu có thể ép cho nhau)",
+    "explanation": "Slide trang 40: Thêm khai báo -> int giúp việc đọc hiểu lambda dễ dàng hơn.",
+    "slideRef": "Chương 3 - Trang 40"
+  },
+  {
+    "id": 192,
+    "chapter": 2,
+    "type": "single",
+    "text": "Kết quả in ra của đoạn code C/C++ sau (giả sử hệ thống 64-bit, con trỏ chiếm 8 bytes, int chiếm 4 bytes) là gì?",
+    "code": "#include <iostream>\nusing namespace std;\nvoid printSize(int arr[10]) {\n    cout << sizeof(arr) << \" \";\n}\nint main() {\n    int arr[10];\n    cout << sizeof(arr) << \" \";\n    printSize(arr);\n    return 0;\n}",
+    "options": [
+      "40 40",
+      "8 8",
+      "40 8",
+      "Lỗi biên dịch do hàm không nhận mảng"
+    ],
+    "correctAnswer": "40 8",
+    "explanation": "Trong main(), arr là mảng thực sự nên sizeof(arr) = 10 * 4 = 40. Khi truyền vào hàm printSize, mảng bị suy biến (Array Decay) thành con trỏ int*, nên sizeof(arr) trong hàm là kích thước con trỏ = 8.",
+    "slideRef": "Chương 2 / Chương 3 - Tham số hàm"
+  },
+  {
+    "id": 193,
+    "chapter": 2,
+    "type": "single",
+    "text": "Đoạn mã sau mắc lỗi cực kỳ nghiêm trọng nào?",
+    "code": "char *str = \"Hello World\";\nstr[0] = 'h';\nprintf(\"%s\", str);",
+    "options": [
+      "Không in ra gì cả vì thiếu thư viện",
+      "Memory Leak (Rò rỉ bộ nhớ)",
+      "Undefined Behavior / Segmentation Fault vì cố gắng sửa đổi hằng chuỗi (String Literal)",
+      "Dangling Pointer (Con trỏ lửng lơ)"
+    ],
+    "correctAnswer": "Undefined Behavior / Segmentation Fault vì cố gắng sửa đổi hằng chuỗi (String Literal)",
+    "explanation": "Con trỏ str trỏ tới một hằng chuỗi được lưu ở vùng nhớ Read-Only (thường là Data segment). Cố gắng thay đổi nội dung ở vùng nhớ Read-Only sẽ gây lỗi thực thi (SegFault). Cần khai báo char str[] = \"Hello\" để lưu trên Stack.",
+    "slideRef": "Chương 2 - Quản lý bộ nhớ"
+  },
+  {
+    "id": 194,
+    "chapter": 2,
+    "type": "fill",
+    "text": "Cho `int a = 10; int *p = &a; int **q = &p;`. Lệnh nào sau đây thay đổi giá trị của a thành 20 thông qua `q`?\n(Chỉ điền 1 cụm ký tự ngắn gọn, ví dụ: `**q = 20;` hoặc `*q = 20;`)",
+    "code": "",
+    "correctAnswers": [
+      "**q = 20;",
+      "**q=20;",
+      "**q = 20"
+    ],
+    "explanation": "q là con trỏ cấp 2. *q giải tham chiếu lần 1 ra p. **q giải tham chiếu lần 2 ra a. Do đó, **q = 20 sẽ gán a = 20.",
+    "slideRef": "Chương 2 - Con trỏ của con trỏ"
+  },
+  {
+    "id": 195,
+    "chapter": 2,
+    "type": "single",
+    "text": "Đoạn code sau in ra màn hình giá trị bao nhiêu?",
+    "code": "int a[] = {10, 20, 30, 40, 50};\nint *p = a;\nint *q = a + 3;\nprintf(\"%ld\", q - p);",
+    "options": [
+      "3",
+      "12",
+      "Lỗi biên dịch",
+      "30"
+    ],
+    "correctAnswer": "3",
+    "explanation": "Phép trừ hai con trỏ cùng kiểu trả về KHOẢNG CÁCH (số lượng phần tử) giữa chúng, không phải khoảng cách tính bằng số byte. q trỏ vào a[3], p trỏ vào a[0] -> q - p = 3.",
+    "slideRef": "Chương 2 - Phép toán con trỏ"
+  },
+  {
+    "id": 196,
+    "chapter": 2,
+    "type": "multiple",
+    "text": "Những đoạn mã nào sau đây sẽ gây ra hiện tượng Undefined Behavior (Hành vi không xác định)? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "int *p = new int; free(p);",
+      "int *p = (int*)malloc(sizeof(int)); delete p;",
+      "int *p = new int[10]; delete p;",
+      "int *p = new int[10]; delete[] p;"
+    ],
+    "correctAnswers": [
+      "int *p = new int; free(p);",
+      "int *p = (int*)malloc(sizeof(int)); delete p;",
+      "int *p = new int[10]; delete p;"
+    ],
+    "explanation": "Phải sử dụng đúng cặp: new đi với delete, malloc đi với free, và new[] đi với delete[]. Trộn lẫn chúng hoặc dùng delete (thay vì delete[]) cho mảng cấp phát động đều gây Undefined Behavior.",
+    "slideRef": "Chương 2 - Cấp phát bộ nhớ động"
+  },
+  {
+    "id": 197,
+    "chapter": 2,
+    "type": "single",
+    "text": "Quan sát đoạn mã sau, chuyện gì sẽ xảy ra?",
+    "code": "void allocateMemory(int *p) {\n    p = new int(10);\n}\nint main() {\n    int *ptr = nullptr;\n    allocateMemory(ptr);\n    cout << *ptr;\n    return 0;\n}",
+    "options": [
+      "In ra 10",
+      "Lỗi Segmentation Fault / Access Violation khi chạy",
+      "In ra địa chỉ của vùng nhớ",
+      "Lỗi biên dịch"
+    ],
+    "correctAnswer": "Lỗi Segmentation Fault / Access Violation khi chạy",
+    "explanation": "Hàm allocateMemory nhận con trỏ 'p' theo THAM TRỊ (pass by value). Nghĩa là p trong hàm chỉ là bản sao của ptr. Khi cấp phát new int, bản sao 'p' trỏ tới vùng nhớ mới, nhưng 'ptr' trong main vẫn là nullptr. Khi cout << *ptr sẽ bị lỗi giải tham chiếu con trỏ NULL. Kèm theo đó là Memory Leak vùng nhớ 10.",
+    "slideRef": "Chương 2 & Chương 3"
+  },
+  {
+    "id": 198,
+    "chapter": 2,
+    "type": "fill",
+    "text": "Một lỗi phổ biến khi cấp phát mảng 2 chiều bằng con trỏ cấp 2 (ví dụ `int **A;`) là quên giải phóng các mảng con trước khi giải phóng mảng cha. Điền từ khóa thích hợp vào chỗ trống để giải phóng mảng cha sau khi đã lặp giải phóng các mảng con: `_______ [] A;`",
+    "code": "",
+    "correctAnswers": [
+      "delete"
+    ],
+    "explanation": "Cú pháp giải phóng mảng cấp phát động trong C++ là delete [].",
+    "slideRef": "Chương 2 - Trang 30"
+  },
+  {
+    "id": 199,
+    "chapter": 2,
+    "type": "single",
+    "text": "Kết quả in ra của đoạn chương trình C sau là gì?",
+    "code": "int arr[5] = {1, 2, 3, 4, 5};\nint *ptr = (int*)(&arr + 1);\nprintf(\"%d %d\", *(arr + 1), *(ptr - 1));",
+    "options": [
+      "2 5",
+      "2 1",
+      "Lỗi do truy cập ngoài mảng",
+      "2 2"
+    ],
+    "correctAnswer": "2 5",
+    "explanation": "&arr là địa chỉ của CẢ MẢNG. (&arr + 1) sẽ nhảy qua toàn bộ kích thước mảng (5 phần tử) để trỏ ngay sau phần tử cuối cùng. Ép kiểu về int* và gán cho ptr. ptr - 1 sẽ trỏ lùi lại 1 số nguyên, tức là trỏ vào arr[4] có giá trị 5. *(arr + 1) là arr[1] có giá trị 2.",
+    "slideRef": "Chương 2 - Các bài tập pointer phức tạp"
+  },
+  {
+    "id": 200,
+    "chapter": 1,
+    "type": "multiple",
+    "text": "Theo chuẩn quy trình phát triển phần mềm và Extreme Programming (Chương 1), những nhận định nào sau đây là SAI? (Lưu ý: Chọn đáp án SAI)",
+    "code": "",
+    "options": [
+      "Trong Extreme Programming, việc Testing chỉ diễn ra ở bước cuối cùng trước khi Release",
+      "Coding và Testing được thực hiện ngay sau khi yêu cầu được xác định",
+      "Bước Document Solution không cần thiết đối với dự án nhỏ",
+      "Debugging là việc tìm và sửa các lỗi syntax và logic"
+    ],
+    "correctAnswers": [
+      "Trong Extreme Programming, việc Testing chỉ diễn ra ở bước cuối cùng trước khi Release",
+      "Bước Document Solution không cần thiết đối với dự án nhỏ"
+    ],
+    "explanation": "Slide định nghĩa rõ: Extreme programming (XP) - coding và testing ngay sau khi yêu cầu được xác định. Document solution luôn quan trọng để rà soát dead code và bảo trì.",
+    "slideRef": "Chương 1 - Trang 46, 48"
+  },
+  {
+    "id": 201,
+    "chapter": 2,
+    "type": "single",
+    "text": "Hàm nào sau đây trong thư viện stdlib của C có khả năng TÁI CẤP PHÁT (thay đổi kích thước) một vùng nhớ đã được cấp phát động trước đó, đồng thời sao chép dữ liệu cũ sang vùng nhớ mới nếu cần?",
+    "code": "",
+    "options": [
+      "malloc",
+      "calloc",
+      "realloc",
+      "free"
+    ],
+    "correctAnswer": "realloc",
+    "explanation": "Hàm realloc(void *ptr, size_t new_size) dùng để thay đổi kích thước block nhớ. Nếu không đủ chỗ tại vị trí cũ, nó sẽ tự xin vùng nhớ mới, copy data sang và giải phóng vùng cũ.",
+    "slideRef": "Chương 2 - Quản lý bộ nhớ C"
+  },
+  {
+    "id": 202,
+    "chapter": 2,
+    "type": "single",
+    "text": "Cho `int a = 258; char *p = (char*)&a; cout << (int)*p;`. Giả sử chương trình chạy trên máy tính kiến trúc Little-Endian (Intel/AMD), kết quả in ra là gì?",
+    "code": "",
+    "options": [
+      "258",
+      "1",
+      "2",
+      "0"
+    ],
+    "correctAnswer": "2",
+    "explanation": "258 trong nhị phân 32-bit là 00000000 00000000 00000001 00000010 (Hex: 0x00000102). Little-Endian lưu byte ít quan trọng nhất (0x02) ở địa chỉ nhỏ nhất. Con trỏ char* chỉ đọc 1 byte đầu tiên tại địa chỉ đó, nên nó đọc được 0x02 (tức là 2).",
+    "slideRef": "Chương 2 - Ép kiểu con trỏ"
+  },
+  {
+    "id": 203,
+    "chapter": 2,
+    "type": "fill",
+    "text": "Nếu một chương trình cấp phát bộ nhớ bằng `new` bên trong một vòng lặp `while(true)` vô hạn mà không hề gọi `delete`, chương trình sẽ dần ngốn hết RAM của máy tính. Lỗi này có thuật ngữ chuyên ngành tiếng Anh là gì?",
+    "code": "",
+    "correctAnswers": [
+      "memory leak",
+      "memory leaks",
+      "rò rỉ bộ nhớ"
+    ],
+    "explanation": "Cấp phát không giải phóng làm mất dấu địa chỉ ô nhớ dẫn đến Memory Leak.",
+    "slideRef": "Chương 2"
+  },
+  {
+    "id": 204,
+    "chapter": 2,
+    "type": "single",
+    "text": "Dangling pointer (Con trỏ lửng lơ) CÓ THỂ xảy ra trong trường hợp nào sau đây?",
+    "code": "",
+    "options": [
+      "Chỉ khai báo biến con trỏ nhưng không khởi tạo giá trị ban đầu",
+      "Trả về địa chỉ của một biến cục bộ (local variable) từ một hàm",
+      "Ép kiểu con trỏ void* sang int*",
+      "Gán NULL cho một con trỏ sau khi giải phóng nó"
+    ],
+    "correctAnswer": "Trả về địa chỉ của một biến cục bộ (local variable) từ một hàm",
+    "explanation": "Biến cục bộ nằm trên Stack và sẽ bị hủy khi hàm kết thúc. Trả về địa chỉ của nó sẽ khiến con trỏ ở hàm gọi trỏ vào một vùng nhớ rác (đã bị thu hồi) -> Dangling pointer. Việc gán NULL sau khi giải phóng chính là cách PHÒNG TRÁNH dangling pointer.",
+    "slideRef": "Chương 2 & 3 - Biến cục bộ và Stack"
+  },
+  {
+    "id": 205,
+    "chapter": 1,
+    "type": "single",
+    "text": "Trong slide bài giảng, thuật ngữ 'Dead code' được nhắc đến ở bước 'Document Solution'. Đặc điểm của Dead code là gì?",
+    "code": "",
+    "options": [
+      "Là các dòng mã bị lỗi cú pháp không thể biên dịch",
+      "Là các vòng lặp vô hạn gây treo chương trình",
+      "Là các lệnh mà chương trình không bao giờ gọi đến hoặc thực thi đến",
+      "Là mã độc do virus chèn vào"
+    ],
+    "correctAnswer": "Là các lệnh mà chương trình không bao giờ gọi đến hoặc thực thi đến",
+    "explanation": "Slide trang 48 định nghĩa rõ: Rà soát lại program code - loại bỏ các dead code, tức các lệnh mà ct không bao giờ gọi đến.",
+    "slideRef": "Chương 1 - Trang 48"
+  },
+  {
+    "id": 206,
+    "chapter": 2,
+    "type": "multiple",
+    "text": "Đoạn code nào dưới đây thực hiện cấp phát và giải phóng ma trận 2 chiều KÍCH THƯỚC NxD ĐÚNG và KHÔNG GÂY LỖI TRÀN BỘ NHỚ? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "int** A = new int*[N]; for(int i=0;i<N;i++) A[i]=new int[D]; \n/* ... */ \nfor(int i=0;i<N;i++) delete[] A[i]; delete[] A;",
+      "int** A = new int*[N]; A[0] = new int[N*D]; for(int i=1;i<N;i++) A[i]=A[i-1]+D; \n/* ... */ \ndelete[] A[0]; delete[] A;",
+      "int* A = new int[N*D]; \n/* Truy cập bằng A[i*D + j] */ \ndelete[] A;",
+      "int** A = new int*[N]; for(int i=0;i<N;i++) A[i]=new int[D]; \n/* ... */ \ndelete[] A;"
+    ],
+    "correctAnswers": [
+      "int** A = new int*[N]; for(int i=0;i<N;i++) A[i]=new int[D]; \n/* ... */ \nfor(int i=0;i<N;i++) delete[] A[i]; delete[] A;",
+      "int** A = new int*[N]; A[0] = new int[N*D]; for(int i=1;i<N;i++) A[i]=A[i-1]+D; \n/* ... */ \ndelete[] A[0]; delete[] A;",
+      "int* A = new int[N*D]; \n/* Truy cập bằng A[i*D + j] */ \ndelete[] A;"
+    ],
+    "explanation": "Đáp án 4 SAI nghiêm trọng vì chỉ delete mảng cha, bỏ quên (leak) N mảng con. 3 cách trên đều là các phương pháp cấp phát mảng 2 chiều hợp lệ (Cách 1: rời rạc, Cách 2: con trỏ cấp 2 liền mạch, Cách 3: mảng 1 chiều giả 2 chiều).",
+    "slideRef": "Chương 2 - Trang 29, 30"
+  },
+  {
+    "id": 207,
+    "chapter": 3,
+    "type": "single",
+    "text": "Chuyện gì sẽ xảy ra khi biên dịch và gọi hàm sau: `foo(5.5);`?",
+    "code": "void foo(int x) { cout << \"INT\"; }\nvoid foo(long x) { cout << \"LONG\"; }\n// ... trong main() ...\nfoo(5.5);",
+    "options": [
+      "In ra INT do ép kiểu ngầm định cắt bỏ phần thập phân",
+      "In ra LONG do double ưu tiên ép sang kiểu có kích thước lớn hơn",
+      "Lỗi biên dịch: Lỗi nhập nhằng (Ambiguous call) khi nạp chồng hàm",
+      "Chương trình văng lỗi thực thi Runtime Error"
+    ],
+    "correctAnswer": "Lỗi biên dịch: Lỗi nhập nhằng (Ambiguous call) khi nạp chồng hàm",
+    "explanation": "Giá trị 5.5 là kiểu double. Trình biên dịch không biết nên ép double sang int hay long vì cả 2 phép ép kiểu (Standard Conversion) đều có mức độ ưu tiên ngang nhau. Gây ra lỗi Ambiguous call ở compile-time.",
+    "slideRef": "Chương 3 - Nạp chồng hàm (Function Overloading pitfalls)"
+  },
+  {
+    "id": 208,
+    "chapter": 3,
+    "type": "single",
+    "text": "Kết quả in ra của đoạn mã dùng Lambda C++ sau là gì?",
+    "code": "int a = 1;\nauto myLambda = [a]() mutable {\n    a++;\n    return a;\n};\ncout << myLambda() << \" \";\ncout << myLambda() << \" \";\ncout << a;",
+    "options": [
+      "2 2 1",
+      "2 3 1",
+      "2 3 3",
+      "Lỗi biên dịch vì bắt bằng tham trị không được thay đổi"
+    ],
+    "correctAnswer": "2 3 1",
+    "explanation": "Lambda bắt `a` bằng tham trị (copy value). Nhờ từ khóa `mutable`, bản sao này được phép sửa đổi bên trong lambda và NÓ GIỮ TRẠNG THÁI (state) qua các lần gọi hàm. Gọi lần 1 in 2, gọi lần 2 bản sao tăng tiếp lên 3. Biến `a` gốc ở main không bị ảnh hưởng, vẫn là 1.",
+    "slideRef": "Chương 3 - Trang 42"
+  },
+  {
+    "id": 209,
+    "chapter": 3,
+    "type": "fill",
+    "text": "Quan sát đoạn mã sau, giá trị nào của tham số ngầm định (Default Argument) không hợp lệ và gây lỗi biên dịch? Hãy điền tên biến bị lỗi (x, y, hoặc z):\n`void func(int x = 10, int y, int z = 20) { ... }`",
+    "code": "",
+    "correctAnswers": [
+      "x",
+      "biến x",
+      "tham số x"
+    ],
+    "explanation": "Trong C++, tham số có giá trị ngầm định (default arguments) PHẢI được đặt ở cuối danh sách. Nếu x có giá trị ngầm định thì mọi tham số sau nó (y) cũng BẮT BUỘC phải có giá trị ngầm định.",
+    "slideRef": "Chương 3 - Tham số ngầm định"
+  },
+  {
+    "id": 210,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khi một hàm mẫu (Function Template) và một hàm thông thường (Non-template function) CÓ CÙNG CHỮ KÝ (signature) trùng khớp hoàn toàn với tham số truyền vào, trình biên dịch sẽ ưu tiên gọi hàm nào?",
+    "code": "template <class T> void func(T x) { cout << \"Template\"; }\nvoid func(int x) { cout << \"Normal\"; }\n// ...\nfunc(5);",
+    "options": [
+      "Hàm mẫu (Template function)",
+      "Hàm thông thường (Normal function)",
+      "Báo lỗi nhập nhằng (Ambiguous error)",
+      "Gộp cả hai lại thành một hàm duy nhất"
+    ],
+    "correctAnswer": "Hàm thông thường (Normal function)",
+    "explanation": "Trình biên dịch C++ luôn ưu tiên hàm Non-template hơn hàm Template nếu cả hai đều khớp hoàn toàn với tham số truyền vào (trường hợp này là kiểu int).",
+    "slideRef": "Chương 3 - Khái quát hóa hàm"
+  },
+  {
+    "id": 211,
+    "chapter": 3,
+    "type": "single",
+    "text": "Đoạn code sau chứa một LỖI NGHIÊM TRỌNG (Dangling Reference) tiềm ẩn. Tại sao?",
+    "code": "int& getElement(int index) {\n    int arr[5] = {1, 2, 3, 4, 5};\n    return arr[index];\n}\nint main() {\n    int &ref = getElement(2);\n    cout << ref;\n}",
+    "options": [
+      "Cú pháp trả về tham chiếu sai quy cách",
+      "Truy cập ngoài mảng do index không được kiểm tra",
+      "Hàm getElement trả về tham chiếu của một biến cục bộ, biến này sẽ bị hủy khi hàm kết thúc",
+      "Không thể gán tham chiếu cho một tham chiếu khác trong C++"
+    ],
+    "correctAnswer": "Hàm getElement trả về tham chiếu của một biến cục bộ, biến này sẽ bị hủy khi hàm kết thúc",
+    "explanation": "arr là mảng cục bộ nằm trên Stack của getElement. Khi hàm return, Stack frame bị hủy. Trả về tham chiếu của mảng cục bộ là hành vi Undefined Behavior, y hệt như trả về con trỏ trỏ tới biến cục bộ.",
+    "slideRef": "Chương 3 - Hàm (Lỗi tham chiếu)"
+  },
+  {
+    "id": 212,
+    "chapter": 3,
+    "type": "multiple",
+    "text": "Cho khai báo hàm `void process(int *&p);`. Đặc điểm của khai báo này là gì? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "p là một tham chiếu đến một con trỏ kiểu int",
+      "p là một con trỏ trỏ đến một biến tham chiếu int",
+      "Trong hàm, nếu ta cấp phát vùng nhớ mới cho p (p = new int), thay đổi đó SẼ ẢNH HƯỞNG đến con trỏ gốc truyền vào",
+      "Cú pháp này gây lỗi biên dịch vì không được kết hợp * và &"
+    ],
+    "correctAnswers": [
+      "p là một tham chiếu đến một con trỏ kiểu int",
+      "Trong hàm, nếu ta cấp phát vùng nhớ mới cho p (p = new int), thay đổi đó SẼ ẢNH HƯỞNG đến con trỏ gốc truyền vào"
+    ],
+    "explanation": "int *&p (đọc từ phải qua trái) là một tham chiếu (&) tới một con trỏ (*) kiểu int. Cú pháp này cho phép hàm thay đổi chính ĐỊA CHỈ mà con trỏ gốc đang trỏ tới (ví dụ cấp phát new cho con trỏ NULL truyền vào).",
+    "slideRef": "Chương 3 - Tham biến nâng cao"
+  },
+  {
+    "id": 213,
+    "chapter": 3,
+    "type": "single",
+    "text": "Đoạn mã khai báo con trỏ hàm sau có đúng cú pháp không? Tại sao?\n`int *funcPtr(int, double);`",
+    "code": "",
+    "options": [
+      "Đúng, đây là khai báo con trỏ hàm chuẩn",
+      "Sai, đây là khai báo một HÀM tên funcPtr, nhận int và double, trả về kiểu (int*)",
+      "Sai, thiếu dấu bằng (=) để gán địa chỉ",
+      "Sai, C++ cấm truyền double vào con trỏ hàm"
+    ],
+    "correctAnswer": "Sai, đây là khai báo một HÀM tên funcPtr, nhận int và double, trả về kiểu (int*)",
+    "explanation": "Để khai báo con trỏ hàm, biến con trỏ PHẢI được đặt trong ngoặc đơn: `int (*funcPtr)(int, double);`. Nếu không có ngoặc, trình biên dịch coi đó là một hàm trả về con trỏ.",
+    "slideRef": "Chương 3 - Con trỏ hàm"
+  },
+  {
+    "id": 214,
+    "chapter": 3,
+    "type": "fill",
+    "text": "Cho biểu thức Lambda C++: `auto foo = []() -> double { return 5; };`. Mũi tên `-> double` được gọi là khai báo gì? (Điền bằng tiếng Việt hoặc tiếng Anh: \"kiểu trả về\")",
+    "code": "",
+    "correctAnswers": [
+      "kiểu trả về",
+      "return type",
+      "kieu tra ve"
+    ],
+    "explanation": "-> double là phần Trailing Return Type, giúp khai báo rõ ràng kiểu dữ liệu mà lambda function sẽ trả về.",
+    "slideRef": "Chương 3 - Trang 40"
+  },
+  {
+    "id": 215,
+    "chapter": 3,
+    "type": "single",
+    "text": "Kết quả in ra của chương trình sau là gì?",
+    "code": "void solve(int a, int b) { cout << \"A\"; }\nvoid solve(int &a, int &b) { cout << \"B\"; }\nint main() {\n    int x = 1, y = 2;\n    solve(x, y);\n    return 0;\n}",
+    "options": [
+      "A",
+      "B",
+      "Lỗi biên dịch: Ambiguous call",
+      "Không có đáp án đúng"
+    ],
+    "correctAnswer": "Lỗi biên dịch: Ambiguous call",
+    "explanation": "Hai hàm có cùng tên, số lượng và kiểu dữ liệu gốc (int). Truyền biến x, y vào thì cả `solve(int, int)` (tham trị) và `solve(int&, int&)` (tham chiếu) đều hợp lệ hoàn toàn. Trình biên dịch không thể phân giải được -> Ambiguous Error.",
+    "slideRef": "Chương 3 - Đa năng hóa hàm"
+  },
+  {
+    "id": 216,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khối lệnh nào sau đây gọi Lambda function NGAY LẬP TỨC (Immediately Invoked Lambda) sau khi khai báo?",
+    "code": "",
+    "options": [
+      "auto x = []() { return 5; };",
+      "int x = []() { return 5; }();",
+      "[]() { return 5; } -> invoke();",
+      "int x = execute([]() { return 5; });"
+    ],
+    "correctAnswer": "int x = []() { return 5; }();",
+    "explanation": "Cặp ngoặc tròn () ở cuối cùng dùng để kích hoạt / thực thi hàm (invoke) ngay tại thời điểm khai báo. Giá trị trả về (5) được gán ngay cho x.",
+    "slideRef": "Chương 3 - Biểu thức Lambda"
+  },
+  {
+    "id": 217,
+    "chapter": 3,
+    "type": "multiple",
+    "text": "Đặc điểm nào ĐÚNG với từ khóa `inline` trong C++? (Chọn các đáp án đúng)",
+    "code": "",
+    "options": [
+      "Bắt buộc trình biên dịch phải chèn trực tiếp mã của hàm vào nơi gọi (không nhảy đến địa chỉ hàm)",
+      "Giúp tăng tốc độ thực thi chương trình đối với các hàm nhỏ và gọi nhiều lần",
+      "Trình biên dịch có quyền TỪ CHỐI yêu cầu inline nếu hàm quá lớn hoặc chứa đệ quy",
+      "Dùng inline giúp giảm kích thước file thực thi (.exe) đáng kể"
+    ],
+    "correctAnswers": [
+      "Giúp tăng tốc độ thực thi chương trình đối với các hàm nhỏ và gọi nhiều lần",
+      "Trình biên dịch có quyền TỪ CHỐI yêu cầu inline nếu hàm quá lớn hoặc chứa đệ quy"
+    ],
+    "explanation": "Từ khóa inline chỉ là một 'lời đề nghị' (request), compiler có quyền từ chối nếu thấy không tối ưu. Inline làm mã được copy vào nhiều nơi nên thường làm TĂNG kích thước file exe (Code bloat), không phải giảm.",
+    "slideRef": "Chương 3 - Hàm Inline"
+  },
+  {
+    "id": 218,
+    "chapter": 3,
+    "type": "single",
+    "text": "Cho khai báo hàm nguyên mẫu (prototype) ở đầu file: `int compute(int x, int y = 5);`. Ở bên dưới, khi ĐỊNH NGHĨA hàm, đoạn code nào là hợp lệ?",
+    "code": "",
+    "options": [
+      "int compute(int x, int y = 5) { return x * y; }",
+      "int compute(int x, int y = 10) { return x * y; }",
+      "int compute(int x, int y) { return x * y; }",
+      "Tất cả đều hợp lệ"
+    ],
+    "correctAnswer": "int compute(int x, int y) { return x * y; }",
+    "explanation": "Theo chuẩn C++, giá trị mặc định chỉ được chỉ định MỘT LẦN ở một trong hai nơi (thường là ở phần khai báo). Lặp lại hoặc thay đổi giá trị mặc định ở phần định nghĩa (Implementation) sẽ gây lỗi biên dịch `redefinition of default argument`.",
+    "slideRef": "Chương 3 - Tham số ngầm định"
+  },
+  {
+    "id": 219,
+    "chapter": 3,
+    "type": "single",
+    "text": "Lỗi tiềm ẩn cực kỳ nguy hiểm trong đoạn Lambda sau là gì?",
+    "code": "auto makeCounter() {\n    int count = 0;\n    return [&count]() { return ++count; };\n}",
+    "options": [
+      "Lambda không thể thay đổi biến count nếu không có từ khóa mutable",
+      "Lambda bắt tham chiếu đến biến cục bộ count, biến này sẽ bị hủy khi hàm kết thúc -> Dangling Reference",
+      "Hàm auto không thể trả về một lambda",
+      "Cú pháp [&count] sai, phải là [&count=0]"
+    ],
+    "correctAnswer": "Lambda bắt tham chiếu đến biến cục bộ count, biến này sẽ bị hủy khi hàm kết thúc -> Dangling Reference",
+    "explanation": "Hàm makeCounter trả về một hàm lambda. Lambda này giữ một pointer/reference ẩn trỏ đến biến cục bộ `count` trên Stack. Khi makeCounter return, Stack bị dọn dẹp, lambda sẽ truy cập vào vùng nhớ rác.",
+    "slideRef": "Chương 3 - Trang 41 (Biến bị bắt giữ)"
+  },
+  {
+    "id": 220,
+    "chapter": 3,
+    "type": "fill",
+    "text": "Trong một Lambda C++, mệnh đề bắt giữ (capture clause) nào được sử dụng để CHỈ BẮT DUY NHẤT biến `x` bằng tham trị (copy), và biến `y` bằng tham chiếu? (Lưu ý viết đúng cú pháp không dấu cách dư, ví dụ: [a, &b])",
+    "code": "",
+    "correctAnswers": [
+      "[x, &y]",
+      "[x,&y]",
+      "[&y, x]",
+      "[&y,x]"
+    ],
+    "explanation": "Cú pháp kết hợp: x được truyền giá trị, y được truyền địa chỉ/tham chiếu.",
+    "slideRef": "Chương 3 - Hàm nặc danh"
+  },
+  {
+    "id": 221,
+    "chapter": 3,
+    "type": "single",
+    "text": "Khi truyền một hằng chuỗi C-style (ví dụ `\"Hello\"`) vào hàm có template `template<typename T> void print(T param);`. Kiểu của `T` được suy luận là gì?",
+    "code": "",
+    "options": [
+      "string",
+      "char*",
+      "const char[6]",
+      "char"
+    ],
+    "correctAnswer": "const char[6]",
+    "explanation": "Một hằng chuỗi như \"Hello\" thực chất là mảng ký tự không thay đổi (const) có kích thước bao gồm cả ký tự null '\\0'. Do đó kiểu chính xác của nó được template suy luận là const char[6]. Khi gán cho con trỏ, nó mới suy biến thành const char*.",
+    "slideRef": "Chương 3 - Khái quát hóa hàm"
+  }
+]

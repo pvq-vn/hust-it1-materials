@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống File - Nguyên Lý Hệ Điều Hành</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #2c3e50;
+            --accent-color: #2c3e50;
+            --highlight-color: #3498db;
+            --border-color: #e0e6ed;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--card-bg);
+            padding: 2rem 10%;
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+        }
+        nav button {
+            background: none;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        nav button:hover {
+            color: var(--highlight-color);
+        }
+        nav button.active {
+            color: var(--highlight-color);
+            border-bottom: 3px solid var(--highlight-color);
+        }
+        main {
+            padding: 2rem 10%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .tab-content {
+            display: none;
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .tab-content.active {
+            display: block;
+        }
+        h2 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+        h3 {
+            color: var(--highlight-color);
+            margin-top: 1.5rem;
+        }
+        .code-block {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 6px;
+            font-family: 'Consolas', 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border-left: 4px solid var(--highlight-color);
+        }
+        .quiz-question {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .quiz-question:last-child {
+            border-bottom: none;
+        }
+        .options label {
+            display: block;
+            margin: 0.75rem 0;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .options label:hover {
+            background-color: var(--bg-color);
+        }
+        input[type="radio"] {
+            margin-right: 12px;
+        }
+        .btn {
+            background-color: var(--highlight-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .feedback {
+            margin-top: 10px;
+            display: none;
+            padding: 1rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        .correct { color: #1e8449; background-color: #eafaf1; border: 1px solid #a9dfbf; }
+        .incorrect { color: #c0392b; background-color: #fadedb; border: 1px solid #f5b7b1; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        table, th, td {
+            border: 1px solid var(--border-color);
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: var(--bg-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Quản Lý Hệ Thống File (Chương 5)</h1>
+        <p>Kiến trúc lưu trữ, Cấu trúc FAT & Phân tích kỹ thuật byte</p>
+    </header>
+
+    <nav>
+        <button class="active" onclick="showTab('theory', this)">Lý Thuyết Trọng Tâm</button>
+        <button onclick="showTab('methods', this)">Giải Mã Bản Ghi (Hex)</button>
+        <button onclick="showTab('quiz', this)">Luyện Tập Phân Tích</button>
+    </nav>
+
+    <main>
+        <section id="theory" class="tab-content active">
+            <h2>Kiến Trúc Đĩa & Hệ Thống Tệp</h2>
+            
+            <h3>1. Cấu trúc vật lý đĩa</h3>
+            <ul>
+                <li><strong>Sector:</strong> Đơn vị lưu trữ vật lý nhỏ nhất. Kích thước chuẩn luôn là <b>512 Bytes</b>.</li>
+                <li><strong>Cylinder:</strong> Tập hợp các rãnh (Track) cùng bán kính trên toàn bộ các mặt đĩa.</li>
+                <li><strong>Địa chỉ CHS:</strong> Cylinder (10 bit), Head (8 bit), Sector (6 bit).</li>
+                <li>Công thức Sector/Cylinder = Số mặt đĩa (Head) × Số sector trên một rãnh.</li>
+            </ul>
+
+            <h3>2. Master Boot Record (MBR)</h3>
+            <ul>
+                <li>Nằm tại sector đầu tiên của ổ đĩa vật lý (LBA 0).</li>
+                <li><strong>Chữ ký khởi động (Boot Signature):</strong> 2 byte cuối cùng (byte 510 và 511) luôn có giá trị Hex là <b>55AA</b>.</li>
+                <li><strong>Bảng phân chương (Partition Table):</strong> Bắt đầu từ offset 1BEh. Dài 64 Bytes, chia làm 4 phần tử (mỗi phần tử 16 Bytes). 4 byte cuối của mỗi phần tử lưu tổng số sector của phân vùng đó.</li>
+            </ul>
+
+            <h3>3. Hệ thống FAT (File Allocation Table)</h3>
+            <ul>
+                <li>Sử dụng phương pháp cấp phát <b>Danh sách liên kết (Linked List)</b> (loại bỏ phân mảnh ngoài).</li>
+                <li>Mỗi phần tử (Entry) trong bảng FAT tương ứng với 1 Cluster (bắt đầu từ phần tử thứ 2).</li>
+                <li><strong>Vùng hệ thống:</strong> 
+                    <br>FAT16: MBR, Boot Sector, FAT1, FAT2, ROOT.
+                    <br>FAT32: MBR, Boot Sector, FAT1, FAT2 (ROOT được đẩy vào vùng Data).</li>
+                <li><strong>Giá trị FAT quan trọng:</strong> FAT16 kết thúc file (EOF) là <b>FFFF</b>. FAT32 EOF là <b>0FFFFFFF</b>, đánh dấu Cluster hỏng (Bad) là <b>0FFFFFF7</b>. FAT32 dùng 4 byte (32 bits) quản lý kích thước file, nên giới hạn kích thước tối đa của một file là <b>4GB</b>.</li>
+            </ul>
+
+            <h3>4. Phân phối không gian lưu trữ</h3>
+            <table>
+                <tr>
+                    <th>Phương pháp</th>
+                    <th>Đặc điểm</th>
+                    <th>Phân mảnh ngoài</th>
+                </tr>
+                <tr>
+                    <td>Liên tục (Continuous)</td>
+                    <td>Truy xuất nhanh, phải dịch chuyển khối liền kề.</td>
+                    <td>Có</td>
+                </tr>
+                <tr>
+                    <td>Liên kết (Linked List)</td>
+                    <td>Khối rải rác, truy xuất tuần tự, dễ mất dữ liệu nếu hỏng con trỏ. (FAT dùng cách này)</td>
+                    <td>Không</td>
+                </tr>
+                <tr>
+                    <td>Chỉ mục (Indexed)</td>
+                    <td>Mỗi file có Index block riêng, dễ truy xuất trực tiếp (Random Access).</td>
+                    <td>Không</td>
+                </tr>
+            </table>
+            <p><i>Lưu ý: Mọi phương pháp đều gặp hiện tượng <b>Phân mảnh trong</b> (Internal Fragmentation). Lệnh <b>Open File</b> giúp nạp thông tin lên bộ nhớ, tránh phải duyệt đĩa (duyệt cây thư mục) nhiều lần ở các thao tác Read/Write tiếp theo.</i></p>
+        </section>
+
+        <section id="methods" class="tab-content">
+            <h2>Kỹ Thuật Giải Mã Directory Entry (Phần tử ROOT 32-Byte)</h2>
+            <p>Bắt buộc áp dụng quy tắc <b>Little-Endian</b>: Byte có địa chỉ thấp (nằm trước trong chuỗi Hex) đại diện cho các bit thấp. Khi đọc giá trị từ chuỗi Hex, phải đảo ngược thứ tự các byte.</p>
+            
+            <div class="code-block">
+                Chuỗi mẫu: 52 45 41 44 4D 42 52 20 43 20 20 20 00 3C 86 5B<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A5 3E A5 3E 00 00 CF 79 A5 3E 40 2E BD 0A 00 00
+            </div>
+
+            <h3>1. Đọc tên File (11 Byte đầu)</h3>
+            <ul>
+                <li>8 byte đầu là Tên: `52 45 41 44 4D 42 52 20` -> Tra mã ASCII: <b>READMBR</b>.</li>
+                <li>3 byte tiếp là Phần mở rộng: `43 20 20` -> ASCII: <b>C</b>. File tên là <b>READMBR.C</b>.</li>
+            </ul>
+
+            <h3>2. Thuộc tính (Byte 11 - Offset 0x0B)</h3>
+            <ul>
+                <li>0x01 (Read-Only), 0x02 (Hidden), 0x04 (System), 0x10 (Directory).</li>
+                <li>Kỹ thuật C/C++ kiểm tra: <code>R & 0x02</code> (nếu khác 0 -> file có thuộc tính Ẩn).</li>
+            </ul>
+
+            <h3>3. Thời gian tạo / Cập nhật (16 bits)</h3>
+            <ul>
+                <li>Offset Time: Tạo (14h-15h), Cập nhật (16h-17h). Trích xuất 2 byte, ví dụ: <code>CF 79</code> -> Đảo Little Endian thành <code>79CF</code>.</li>
+                <li>Đổi 79CF sang nhị phân: <code>01111 001110 11111</code>.</li>
+                <li><b>Giờ (5 bit đầu):</b> 01111 = 15h.</li>
+                <li><b>Phút (6 bit giữa):</b> 001110 = 14m.</li>
+                <li><b>Giây (5 bit cuối):</b> 11111 = 31 (nhân đôi = 62s. Trong bài thi có câu lấy lỗi chập bit thành 30s).</li>
+            </ul>
+
+            <h3>4. Ngày tháng tạo / Cập nhật (16 bits)</h3>
+            <ul>
+                <li>Offset Date: Cập nhật (18h-19h). Ví dụ: <code>A5 3E</code> -> Đảo thành <code>3EA5</code>.</li>
+                <li>Đổi 3EA5 sang nhị phân: <code>0011111 0101 00101</code>.</li>
+                <li><b>Năm (7 bit đầu):</b> 0011111 = 31 -> (1980 + 31) = 2011.</li>
+                <li><b>Tháng (4 bit giữa):</b> 0101 = 5.</li>
+                <li><b>Ngày (5 bit cuối):</b> 00101 = 5. -> 05/05/2011.</li>
+            </ul>
+
+            <h3>5. Khối Cluster bắt đầu (2 Bytes)</h3>
+            <ul>
+                <li>Offset 1Ah-1Bh (Byte 26-27). Ví dụ: <code>40 2E</code> -> Đảo thành <code>2E40</code> (Hex).</li>
+                <li>Chuyển sang thập phân: 2*(16^3) + 14*(16^2) + 4*(16^1) + 0 = <b>11840</b>.</li>
+            </ul>
+
+            <h3>6. Kích thước File (4 Bytes)</h3>
+            <ul>
+                <li>4 byte cuối cùng (Offset 1Ch - 1Fh). Ví dụ: <code>BD 0A 00 00</code> -> Đảo thành <code>00000ABD</code>.</li>
+                <li>Chuyển sang thập phân: 10*(16^2) + 11*(16^1) + 13 = 2560 + 176 + 13 = <b>2749 Bytes</b>.</li>
+            </ul>
+        </section>
+
+        <section id="quiz" class="tab-content">
+            <h2>Luyện Tập Phân Tích Đề Thi</h2>
+            
+            <div id="quiz-container">
+                <div class="quiz-question" id="q1">
+                    <p><b>Câu 1:</b> Trong bảng MBR, chữ ký hệ thống (2 Byte cuối cùng) luôn có giá trị là:</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="A"> A. 5A5A</label>
+                        <label><input type="radio" name="q1" value="B"> B. A5A5</label>
+                        <label><input type="radio" name="q1" value="C"> C. 55AA</label>
+                        <label><input type="radio" name="q1" value="D"> D. AA55</label>
+                    </div>
+                    <div class="feedback" id="f1"></div>
+                </div>
+
+                <div class="quiz-question" id="q2">
+                    <p><b>Câu 2:</b> Kích thước của một phần tử thư mục (Directory Entry / ROOT element) trong hệ thống FAT là bao nhiêu?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="A"> A. 16 Byte</label>
+                        <label><input type="radio" name="q2" value="B"> B. 32 Byte</label>
+                        <label><input type="radio" name="q2" value="C"> C. 64 Byte</label>
+                        <label><input type="radio" name="q2" value="D"> D. 32 Bit</label>
+                    </div>
+                    <div class="feedback" id="f2"></div>
+                </div>
+
+                <div class="quiz-question" id="q3">
+                    <p><b>Câu 3:</b> Cấu trúc một phần tử ROOT cho 4 byte cuối cùng lưu kích thước file là: <code>30 A2 00 00</code>. Dung lượng tệp tin tính theo Byte là bao nhiêu?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="A"> A. 41520</label>
+                        <label><input type="radio" name="q3" value="B"> B. 40520</label>
+                        <label><input type="radio" name="q3" value="C"> C. 12450</label>
+                        <label><input type="radio" name="q3" value="D"> D. 41420</label>
+                    </div>
+                    <div class="feedback" id="f3"></div>
+                </div>
+
+                <div class="quiz-question" id="q4">
+                    <p><b>Câu 4:</b> Phương pháp cung cấp vùng lưu trữ cho file nào KHÔNG tồn tại hiện tượng phân mảnh ngoài (External Fragmentation)?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="A"> A. Cấp phát liên tục (Continuous)</label>
+                        <label><input type="radio" name="q4" value="B"> B. Cấp phát liên kết (Linked List)</label>
+                        <label><input type="radio" name="q4" value="C"> C. Cấp phát theo chỉ mục (Indexed)</label>
+                        <label><input type="radio" name="q4" value="D"> D. Cả Liên kết và Chỉ mục</label>
+                    </div>
+                    <div class="feedback" id="f4"></div>
+                </div>
+
+                <div class="quiz-question" id="q5">
+                    <p><b>Câu 5:</b> Trong FAT32, giá trị nào sau đây được sử dụng để đánh dấu Cluster bị hỏng vật lý (Bad Cluster)?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="A"> A. 0FFF FFF7</label>
+                        <label><input type="radio" name="q5" value="B"> B. 0FFF FFFF</label>
+                        <label><input type="radio" name="q5" value="C"> C. FFFF FFF7</label>
+                        <label><input type="radio" name="q5" value="D"> D. 0000 00F7</label>
+                    </div>
+                    <div class="feedback" id="f5"></div>
+                </div>
+
+                <button class="btn" onclick="checkQuiz()">Chấm Điểm Trắc Nghiệm</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Tab routing logic
+        function showTab(tabId, btn) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('nav button').forEach(button => {
+                button.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        // Quiz Logic
+        const answers = {
+            q1: { ans: 'C', exp: 'Trong thiết kế MBR, byte 510 và 511 được định dạng là Boot Signature để xác thực khả năng boot. Giá trị thập lục phân chuẩn là 0x55 và 0xAA (viết là 55AA).' },
+            q2: { ans: 'B', exp: 'Bản ghi ROOT (Directory Entry) của các hệ thống FAT luôn mang kích thước cố định là 32 Byte.' },
+            q3: { ans: 'A', exp: 'Chuỗi 30 A2 00 00 đọc theo Little Endian là 0000A230(Hex). Chuyển sang thập phân: 10*(16^3) + 2*(16^2) + 3*(16^1) + 0 = 40960 + 512 + 48 = 41520 Byte.' },
+            q4: { ans: 'D', exp: 'Cấp phát Liên kết và Chỉ mục cho phép dữ liệu lưu ở các sector rải rác trên đĩa, loại bỏ hoàn toàn hiện tượng phân mảnh ngoại (External Fragmentation).' },
+            q5: { ans: 'A', exp: 'FAT32 dùng 28 bit để đánh địa chỉ. Giá trị EOF là 0x0FFFFFFF. Giá trị Bad Cluster cố định là 0x0FFFFFF7.' }
+        };
+
+        function checkQuiz() {
+            for (let q in answers) {
+                const selected = document.querySelector(`input[name="${q}"]:checked`);
+                const feedbackDiv = document.getElementById(`f${q.substring(1)}`);
+                
+                feedbackDiv.style.display = 'block';
+                if (!selected) {
+                    feedbackDiv.className = 'feedback incorrect';
+                    feedbackDiv.innerHTML = `Chưa chọn đáp án. <br><b>Giải thích:</b> ${answers[q].exp}`;
+                } else if (selected.value === answers[q].ans) {
+                    feedbackDiv.className = 'feedback correct';
+                    feedbackDiv.innerHTML = `✓ Chính xác! <br><b>Giải thích:</b> ${answers[q].exp}`;
+                } else {
+                    feedbackDiv.className = 'feedback incorrect';
+                    feedbackDiv.innerHTML = `✗ Sai (Đáp án đúng là ${answers[q].ans}). <br><b>Giải thích:</b> ${answers[q].exp}`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

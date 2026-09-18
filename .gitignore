@@ -1,0 +1,97 @@
+# ==============================================================================
+# hust-it1-materials .gitignore
+# Chỉ push các file .json, .jsx, .html, .ipynb, .py trong 8 thư mục chỉ định
+# Các thư mục & định dạng khác không bao giờ push lên GitHub
+# ==============================================================================
+
+# 1. Bỏ qua mọi file và thư mục ở root theo mặc định
+/*
+
+# 2. Cho phép duyệt 8 thư mục tài liệu
+!/2024.1/
+!/2024.2/
+!/2025.1/
+!/2025.2/
+!/2026.1/
+!/2026.2/
+!/Bổ trợ/
+!/TOEIC/
+
+# 3. Cho phép tệp cấu hình của repo
+!.gitignore
+!README.md
+
+# 4. Bên trong 8 thư mục, bỏ qua mọi file theo mặc định
+2024.1/**
+2024.2/**
+2025.1/**
+2025.2/**
+2026.1/**
+2026.2/**
+Bổ trợ/**
+TOEIC/**
+
+# 5. Cho phép duyệt qua các thư mục con bên trong
+!2024.1/**/
+!2024.2/**/
+!2025.1/**/
+!2025.2/**/
+!2026.1/**/
+!2026.2/**/
+!Bổ trợ/**/
+!TOEIC/**/
+
+# 6. Chỉ cho phép các định dạng: json, jsx, html, ipynb, py
+!2024.1/**/*.json
+!2024.1/**/*.jsx
+!2024.1/**/*.html
+!2024.1/**/*.ipynb
+!2024.1/**/*.py
+
+!2024.2/**/*.json
+!2024.2/**/*.jsx
+!2024.2/**/*.html
+!2024.2/**/*.ipynb
+!2024.2/**/*.py
+
+!2025.1/**/*.json
+!2025.1/**/*.jsx
+!2025.1/**/*.html
+!2025.1/**/*.ipynb
+!2025.1/**/*.py
+
+!2025.2/**/*.json
+!2025.2/**/*.jsx
+!2025.2/**/*.html
+!2025.2/**/*.ipynb
+!2025.2/**/*.py
+
+!2026.1/**/*.json
+!2026.1/**/*.jsx
+!2026.1/**/*.html
+!2026.1/**/*.ipynb
+!2026.1/**/*.py
+
+!2026.2/**/*.json
+!2026.2/**/*.jsx
+!2026.2/**/*.html
+!2026.2/**/*.ipynb
+!2026.2/**/*.py
+
+!Bổ trợ/**/*.json
+!Bổ trợ/**/*.jsx
+!Bổ trợ/**/*.html
+!Bổ trợ/**/*.ipynb
+!Bổ trợ/**/*.py
+
+!TOEIC/**/*.json
+!TOEIC/**/*.jsx
+!TOEIC/**/*.html
+!TOEIC/**/*.ipynb
+!TOEIC/**/*.py
+
+# Bỏ qua checkpoint và cache
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo

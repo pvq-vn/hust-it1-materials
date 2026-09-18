@@ -1,0 +1,57 @@
+<p>Id: <em>BCA_CREDIT_LB_ON_NUMBER_COURSES</em></p><p><strong>Problem: Course assignment balancing sum credits and lower bound on number of courses between teachers</strong></p><p>Created at: <em>2024-12-11 16:34:06.2</em> by <em>admin</em></p><p>Public: <em>false</em></p><p>Time limit: <em>0</em> s</p><p>Memory limit: <em>256</em> MB</p><p>Level: <em>medium</em></p><p>Tags: <em>[Back Tracking]</em></p><p>Score evaluation type: <em>NORMAL_EVALUATION</em></p><br/><div style = "padding: 12px; border: 2px gray solid"><p><strong><em>Problem Description</em></strong></p><p>At the beginning of the semester, the head of a computer science department D have to assign courses to teachers in a balanced way. The department D has m teachers T={1,2,...,m} and n courses C={1,2,...,n}. Each course i has credit crd(i) (i = 1,2,...,n). Each teacher t∈T has a preference list which is a list of courses he/she can teach depending on his/her specialization.&nbsp;</p>
+<p>Each teacher j has LB(j) which is the minimum number of courses assigned to her/him.</p>
+<p>We known a list of pairs of conflicting two courses that cannot be assigned to the same teacher as these courses have been already scheduled in the same slot of the timetable. The load of a teacher is the sum of credits of courses assigned to her/him. How to assign nn courses to mm teacher such that each course assigned to a teacher is in his/her preference list, no two conflicting courses are assigned to the same teacher, and the maximal load is minimal.</p>
+<p><strong>Input</strong></p>
+<p>The input consists of following lines</p>
+<ul>
+<li>Line 1: contains two integer m and n (1≤m≤10, 1≤n≤30)</li>
+<li>Line i+1: contains an positive integer k and k positive integers indicating the courses that teacher i can teach (∀i=1,…,m)</li>
+<li>Line m+2: contains crd(1), crd(2), . . ., crd(n) (1 &lt;= crd(i) &lt;= 10)</li>
+<li>Line m+3: contains m integers LB(1), LB(2), . . ., LB(m);</li>
+<li>Line m+4: contains an integer k</li>
+<li>Line i+m+4: contains two integer i and j indicating two conflicting courses (∀i=1,…,k)</li>
+</ul>
+<p><strong>Output</strong></p>
+<ul>
+<li>The output contains a unique number which is the maximal load of the teachers in the solution found and the value -1 if not solution found.</li>
+</ul>
+<p><strong>Example</strong></p>
+<p><strong>Input</strong></p>
+<p>4 12</p>
+<p>5 1 3 5 10 12</p>
+<p>5 9 3 4 8 12</p>
+<p>6 1 2 3 4 9 7</p>
+<p>7 1 2 3 5 6 10 11</p>
+<p>2 3 3 2 1 2 3 2 2 2 3 1</p>
+<p>3 1 1 1</p>
+<p>25</p>
+<p>1 2</p>
+<p>1 3</p>
+<p>1 5</p>
+<p>2 4</p>
+<p>2 5</p>
+<p>2 6</p>
+<p>3 5</p>
+<p>3 7</p>
+<p>3 10</p>
+<p>4 6</p>
+<p>4 9</p>
+<p>5 6</p>
+<p>5 7</p>
+<p>5 8</p>
+<p>6 8</p>
+<p>6 9</p>
+<p>7 8</p>
+<p>7 10</p>
+<p>7 11</p>
+<p>8 9</p>
+<p>8 11</p>
+<p>8 12</p>
+<p>9 12</p>
+<p>10 11</p>
+<p>11 12</p>
+<p></p>
+<p></p>
+<p><strong>Output</strong></p>
+<p>8</p>
+</div>

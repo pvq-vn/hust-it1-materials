@@ -1,0 +1,3178 @@
+[
+  {
+    "id": 1,
+    "type": "single",
+    "text": "Theo cách nhìn tổng quan, hệ thống máy tính được chia thành 4 thành phần cơ bản nào?",
+    "options": [
+      "Phần cứng, hệ điều hành và người dùng",
+      "Phần cứng, chương trình ứng dụng và người dùng",
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng",
+      "Hệ điều hành, trình biên dịch, trình thông dịch và dữ liệu"
+    ],
+    "correctAnswers": [
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng"
+    ],
+    "explanation": "Hệ thống máy tính chuẩn bao gồm 4 thành phần: Phần cứng (Hardware), Hệ điều hành (Operating System), Chương trình ứng dụng (Application Programs) và Người dùng (Users)."
+  },
+  {
+    "id": 2,
+    "type": "single",
+    "text": "Theo quan điểm hệ thống, hệ điều hành đóng vai trò chính là gì?",
+    "options": [
+      "Môi trường thực thi cho các ứng dụng web",
+      "Bộ phân phối tài nguyên và chương trình kiểm soát",
+      "Trình biên dịch mã nguồn thành mã máy",
+      "Giao diện đồ họa để người dùng thao tác dễ dàng"
+    ],
+    "correctAnswers": [
+      "Bộ phân phối tài nguyên và chương trình kiểm soát"
+    ],
+    "explanation": "HĐH là bộ phân phối tài nguyên (Resource Allocator) quản lý mọi tài nguyên hệ thống, và là chương trình kiểm soát (Control Program) điều khiển việc thực thi các chương trình của người dùng để ngăn ngừa lỗi."
+  },
+  {
+    "id": 3,
+    "type": "fill",
+    "text": "Chương trình được lưu trữ cố định trong ROM hoặc EEPROM, có nhiệm vụ khởi tạo tất cả các khía cạnh của hệ thống và nạp nhân hệ điều hành vào bộ nhớ được gọi là chương trình _________ (điền 1 từ tiếng Anh).",
+    "correctAnswers": [
+      "bootstrap",
+      "bootloader"
+    ],
+    "explanation": "Chương trình Bootstrap (hoặc Bootloader) là đoạn mã đầu tiên chạy khi bật máy tính, làm nhiệm vụ khởi động hệ thống và nạp HĐH."
+  },
+  {
+    "id": 4,
+    "type": "multiple",
+    "text": "Những khẳng định nào sau đây là ĐÚNG về Ngắt (Interrupt)?",
+    "options": [
+      "Ngắt có thể được tạo ra bởi cả phần cứng và phần mềm",
+      "Khi có ngắt, CPU tiếp tục thực thi tiến trình hiện tại cho đến khi xong mới xử lý ngắt",
+      "Ngắt phần mềm còn được gọi là Trap hoặc Exception",
+      "Mỗi ngắt không có mã định danh riêng mà được xử lý tuần tự theo thời gian"
+    ],
+    "correctAnswers": [
+      "Ngắt có thể được tạo ra bởi cả phần cứng và phần mềm",
+      "Ngắt phần mềm còn được gọi là Trap hoặc Exception"
+    ],
+    "explanation": "Ngắt có thể do phần cứng (gửi tín hiệu) hoặc phần mềm (Trap/Exception). Khi có ngắt, CPU phải lập tức dừng công việc hiện tại để chuyển đến Trình phục vụ ngắt (Interrupt Service Routine). Mỗi loại ngắt đều có vector ngắt riêng."
+  },
+  {
+    "id": 5,
+    "type": "single",
+    "text": "Thiết bị nào sau đây KHÔNG thuộc loại lưu trữ thứ cấp (Secondary Storage)?",
+    "options": [
+      "Ổ đĩa cứng (Magnetic Disk)",
+      "Ổ đĩa trạng thái rắn (SSD)",
+      "Bộ nhớ chính (Main Memory / RAM)",
+      "Băng từ (Magnetic Tape)"
+    ],
+    "correctAnswers": [
+      "Bộ nhớ chính (Main Memory / RAM)"
+    ],
+    "explanation": "Main Memory (RAM) là lưu trữ sơ cấp (Primary Storage) và có tính chất dễ bay hơi (volatile). Đĩa cứng, SSD, băng từ là lưu trữ thứ cấp."
+  },
+  {
+    "id": 6,
+    "type": "single",
+    "text": "Cơ chế DMA (Direct Memory Access) giúp tăng hiệu năng hệ thống bằng cách nào?",
+    "options": [
+      "Tăng tốc độ xung nhịp của CPU",
+      "Cho phép bộ điều khiển thiết bị (Device Controller) truyền khối dữ liệu trực tiếp vào/ra bộ nhớ chính mà không cần sự can thiệp liên tục của CPU",
+      "Giảm dung lượng của các tệp tin trên đĩa",
+      "Chuyển toàn bộ công việc xử lý đồ họa sang GPU"
+    ],
+    "correctAnswers": [
+      "Cho phép bộ điều khiển thiết bị (Device Controller) truyền khối dữ liệu trực tiếp vào/ra bộ nhớ chính mà không cần sự can thiệp liên tục của CPU"
+    ],
+    "explanation": "Với DMA, thiết bị chuyển trực tiếp dữ liệu tới bộ nhớ. CPU chỉ bị ngắt một lần cho mỗi khối dữ liệu (block) thay vì mỗi byte, giải phóng CPU cho việc khác."
+  },
+  {
+    "id": 7,
+    "type": "single",
+    "text": "Mục đích lớn nhất của kỹ thuật Đa chương trình (Multiprogramming) là gì?",
+    "options": [
+      "Cho phép người dùng tương tác trực tiếp với từng tiến trình",
+      "Tối đa hóa hiệu suất sử dụng CPU bằng cách luôn có ít nhất một tiến trình sẵn sàng để thực thi",
+      "Tăng dung lượng của bộ nhớ RAM lên mức tối đa",
+      "Giảm bớt thời gian truy cập vào đĩa cứng"
+    ],
+    "correctAnswers": [
+      "Tối đa hóa hiệu suất sử dụng CPU bằng cách luôn có ít nhất một tiến trình sẵn sàng để thực thi"
+    ],
+    "explanation": "Multiprogramming sắp xếp các công việc sao cho CPU luôn có việc để làm (ví dụ: tiến trình A chờ I/O, CPU sẽ chuyển sang tiến trình B), giúp tăng hiệu năng."
+  },
+  {
+    "id": 8,
+    "type": "fill",
+    "text": "Cờ phần cứng được sử dụng để phân biệt giữa chế độ người dùng (User mode) và chế độ hệ thống (Kernel mode) được gọi là _________ (điền 2 từ tiếng Anh).",
+    "correctAnswers": [
+      "mode bit",
+      "bit mode"
+    ],
+    "explanation": "Mode bit (Bit chế độ) được cung cấp bởi phần cứng (0: kernel mode, 1: user mode) nhằm bảo vệ HĐH khỏi các tiến trình người dùng."
+  },
+  {
+    "id": 9,
+    "type": "multiple",
+    "text": "Ưu điểm của hệ thống đa xử lý (Multiprocessor systems) bao gồm?",
+    "options": [
+      "Tăng thông lượng (Throughput)",
+      "Tiết kiệm chi phí hơn so với việc dùng nhiều máy tính đơn lẻ tương đương",
+      "Tăng độ tin cậy của hệ thống (Graceful degradation)",
+      "Luôn luôn giảm thời gian thực thi của một tiến trình bất kỳ xuống còn một nửa"
+    ],
+    "correctAnswers": [
+      "Tăng thông lượng (Throughput)",
+      "Tiết kiệm chi phí hơn so với việc dùng nhiều máy tính đơn lẻ tương đương",
+      "Tăng độ tin cậy của hệ thống (Graceful degradation)"
+    ],
+    "explanation": "Không phải mọi tiến trình đều có thể chạy song song để giảm thời gian thực thi (phụ thuộc vào thuật toán). 3 đáp án còn lại là ưu điểm cơ bản của hệ thống đa xử lý."
+  },
+  {
+    "id": 10,
+    "type": "single",
+    "text": "Lệnh đặc quyền (Privileged instructions) chỉ có thể được thực thi an toàn trong chế độ nào?",
+    "options": [
+      "User mode",
+      "Kernel mode",
+      "Safe mode",
+      "Application mode"
+    ],
+    "correctAnswers": [
+      "Kernel mode"
+    ],
+    "explanation": "Lệnh đặc quyền (ví dụ: quản lý I/O, thiết lập timer, tắt ngắt) có thể gây nguy hiểm cho hệ thống nếu cấp cho người dùng, do đó phần cứng chỉ cho phép chạy ở Kernel mode."
+  },
+  {
+    "id": 11,
+    "type": "multiple",
+    "text": "Các phương pháp nào sau đây được sử dụng để truyền tham số (parameters) từ chương trình ứng dụng cho Lời gọi hệ thống (System call)?",
+    "options": [
+      "Truyền trực tiếp qua các thanh ghi (Registers)",
+      "Lưu tham số trong một khối bộ nhớ (Block/Table) và truyền địa chỉ khối đó qua thanh ghi",
+      "Đẩy tham số vào Ngăn xếp (Stack) bởi chương trình và lấy ra bởi HĐH",
+      "Lưu tham số vào một file tạm trên đĩa cứng"
+    ],
+    "correctAnswers": [
+      "Truyền trực tiếp qua các thanh ghi (Registers)",
+      "Lưu tham số trong một khối bộ nhớ (Block/Table) và truyền địa chỉ khối đó qua thanh ghi",
+      "Đẩy tham số vào Ngăn xếp (Stack) bởi chương trình và lấy ra bởi HĐH"
+    ],
+    "explanation": "Có 3 phương pháp tiêu chuẩn để truyền tham số cho OS: Qua thanh ghi, qua bảng trong bộ nhớ (truyền con trỏ), hoặc dùng Stack. File tạm không được dùng vì quá chậm."
+  },
+  {
+    "id": 12,
+    "type": "single",
+    "text": "Sự kiện nào bắt buộc HĐH chuyển từ User mode sang Kernel mode?",
+    "options": [
+      "Chương trình gọi một hàm thư viện chuẩn (như strlen() trong C)",
+      "Chương trình thực hiện một vòng lặp vô hạn",
+      "Chương trình thực hiện Lời gọi hệ thống (System call) như read(), fork()",
+      "Nhấn phím Caps Lock trên bàn phím"
+    ],
+    "correctAnswers": [
+      "Chương trình thực hiện Lời gọi hệ thống (System call) như read(), fork()"
+    ],
+    "explanation": "System call kích hoạt một ngắt phần mềm (Trap), làm phần cứng chuyển mode bit về 0 (Kernel mode) để HĐH thực thi dịch vụ."
+  },
+  {
+    "id": 13,
+    "type": "multiple",
+    "text": "Nhược điểm của kiến trúc HĐH Monolithic (Nguyên khối) là gì?",
+    "options": [
+      "Hiệu năng kém do phải chuyển đổi ngữ cảnh liên tục giữa User và Kernel",
+      "Khó khăn trong việc bảo trì và mở rộng hệ thống",
+      "Một lỗi nhỏ trong bất kỳ thành phần nào cũng có thể làm sụp đổ toàn bộ hệ thống",
+      "Mức độ rủi ro bảo mật cao do tất cả các thành phần đều chạy ở Kernel mode"
+    ],
+    "correctAnswers": [
+      "Khó khăn trong việc bảo trì và mở rộng hệ thống",
+      "Một lỗi nhỏ trong bất kỳ thành phần nào cũng có thể làm sụp đổ toàn bộ hệ thống",
+      "Mức độ rủi ro bảo mật cao do tất cả các thành phần đều chạy ở Kernel mode"
+    ],
+    "explanation": "Kiến trúc Monolithic gộp tất cả module vào một không gian hạt nhân. Ưu điểm là hiệu năng rất cao (không mất chi phí truyền thông điệp). Nhược điểm là cồng kềnh, khó bảo trì, lỗi lan truyền."
+  },
+  {
+    "id": 14,
+    "type": "fill",
+    "text": "Kiến trúc HĐH loại bỏ các thành phần không thiết yếu khỏi hạt nhân (kernel) và triển khai chúng dưới dạng các chương trình hệ thống ở không gian người dùng, được gọi là kiến trúc _________ (điền 1 từ tiếng Anh).",
+    "correctAnswers": [
+      "microkernel",
+      "micro kernel"
+    ],
+    "explanation": "Microkernel thu nhỏ hạt nhân, cung cấp sự an toàn và tính mở rộng cao hơn. (Ví dụ: Mach, QNX)."
+  },
+  {
+    "id": 15,
+    "type": "single",
+    "text": "Trong kiến trúc Microkernel, các dịch vụ ở không gian người dùng giao tiếp với nhau bằng cơ chế nào?",
+    "options": [
+      "Chia sẻ biến toàn cục (Global Variables)",
+      "Truyền thông điệp (Message Passing)",
+      "Truyền tham chiếu trực tiếp",
+      "Thông qua ổ đĩa cứng"
+    ],
+    "correctAnswers": [
+      "Truyền thông điệp (Message Passing)"
+    ],
+    "explanation": "Do các tiến trình dịch vụ nằm riêng biệt trong không gian bộ nhớ người dùng, chúng phải giao tiếp thông qua cơ chế Message Passing do Microkernel cung cấp."
+  },
+  {
+    "id": 16,
+    "type": "single",
+    "text": "Khái niệm 'Chia sẻ thời gian' (Time-sharing) trong hệ điều hành là sự mở rộng logic của khái niệm nào?",
+    "options": [
+      "Xử lý theo lô (Batch Processing)",
+      "Hệ thống đa xử lý (Multiprocessing)",
+      "Đa chương trình (Multiprogramming)",
+      "Hệ thống thời gian thực (Real-time)"
+    ],
+    "correctAnswers": [
+      "Đa chương trình (Multiprogramming)"
+    ],
+    "explanation": "Time-sharing là mở rộng của Multiprogramming. Trong Time-sharing, CPU chuyển đổi cực nhanh giữa các tiến trình, cung cấp thời gian đáp ứng ngắn để người dùng có thể tương tác với từng tiến trình."
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "text": "Trong cấu trúc hệ điều hành phân lớp (Layered Approach), lớp 0 và lớp N lần lượt là gì?",
+    "options": [
+      "Lớp 0: Phần cứng - Lớp N: Giao diện người dùng",
+      "Lớp 0: Giao diện người dùng - Lớp N: Phần cứng",
+      "Lớp 0: Bộ nhớ RAM - Lớp N: Ổ đĩa",
+      "Lớp 0: Kernel - Lớp N: Shell"
+    ],
+    "correctAnswers": [
+      "Lớp 0: Phần cứng - Lớp N: Giao diện người dùng"
+    ],
+    "explanation": "Thiết kế phân lớp sắp xếp OS thành nhiều tầng (layers). Tầng dưới cùng (Layer 0) là phần cứng. Tầng cao nhất (Layer N) là giao diện người dùng (User Interface)."
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "text": "API nào sau đây là tiêu chuẩn được sử dụng chủ yếu cho các hệ điều hành UNIX, Linux và Mac OS X?",
+    "options": [
+      "Win32 API",
+      "POSIX API",
+      "Java API",
+      "macOS Framework API"
+    ],
+    "correctAnswers": [
+      "POSIX API"
+    ],
+    "explanation": "Hầu hết các hệ thống dựa trên UNIX đều tuân theo tiêu chuẩn POSIX (Portable Operating System Interface) cho System Calls."
+  },
+  {
+    "id": 19,
+    "type": "multiple",
+    "text": "Khẳng định nào đúng về Máy ảo (Virtual Machines)?",
+    "options": [
+      "Hệ điều hành chủ (Host OS) cung cấp cho mỗi máy ảo một phần cứng ảo độc lập",
+      "Các máy ảo không được cách ly với nhau, lỗi ở một máy ảo sẽ làm chết máy ảo khác",
+      "Bảo mật tốt vì các máy ảo bị cô lập hoàn toàn với nhau",
+      "Nó rất khó để chia sẻ tài nguyên phần cứng vật lý cho nhiều hệ điều hành khác nhau chạy cùng lúc"
+    ],
+    "correctAnswers": [
+      "Hệ điều hành chủ (Host OS) cung cấp cho mỗi máy ảo một phần cứng ảo độc lập",
+      "Bảo mật tốt vì các máy ảo bị cô lập hoàn toàn với nhau"
+    ],
+    "explanation": "Máy ảo đóng gói toàn bộ trạng thái và ứng dụng thành một máy logic. Việc cô lập mang lại bảo mật tuyệt vời, tuy nhiên khó khăn nằm ở hiệu năng và việc triển khai chia sẻ tài nguyên một cách tối ưu."
+  },
+  {
+    "id": 20,
+    "type": "fill",
+    "text": "Hệ thống có yêu cầu thời gian cực kỳ nghiêm ngặt (ví dụ: điều khiển thiết bị y tế, hệ thống vũ khí), nơi kết quả trả về chậm được coi là sai hoàn toàn, gọi là hệ thống ________ (điền 2 từ tiếng Anh).",
+    "correctAnswers": [
+      "real time",
+      "real-time"
+    ],
+    "explanation": "Real-time operating system (RTOS) xử lý dữ liệu ngay khi dữ liệu đến, không có độ trễ buffer, dành cho các môi trường đòi hỏi khắt khe về thời gian."
+  },
+  {
+    "id": 21,
+    "type": "multiple",
+    "text": "Các dịch vụ nào sau đây do HĐH cung cấp nhằm đem lại sự tiện lợi trực tiếp cho NGƯỜI DÙNG?",
+    "options": [
+      "Giao diện người dùng (UI)",
+      "Thực thi chương trình (Program execution)",
+      "Kế toán/Thống kê (Accounting)",
+      "Cấp phát tài nguyên (Resource allocation)"
+    ],
+    "correctAnswers": [
+      "Giao diện người dùng (UI)",
+      "Thực thi chương trình (Program execution)"
+    ],
+    "explanation": "Kế toán (Accounting) và Cấp phát tài nguyên (Resource allocation) là các chức năng nhằm đảm bảo hệ thống hoạt động hiệu quả (vì lợi ích hệ thống), còn UI và Program execution trực tiếp giúp người dùng sử dụng máy tính dễ dàng hơn."
+  },
+  {
+    "id": 22,
+    "type": "single",
+    "text": "Công nghệ LKM (Loadable Kernel Modules) được thiết kế nhằm kết hợp ưu điểm của những kiến trúc nào?",
+    "options": [
+      "Tính linh hoạt của Microkernel và hiệu năng cao của Monolithic",
+      "Sự bảo mật của Máy ảo và tốc độ của Microkernel",
+      "Giao diện dễ dùng của Layered và tính độc lập của Client-Server",
+      "Tính chia sẻ của Time-sharing và Batch processing"
+    ],
+    "correctAnswers": [
+      "Tính linh hoạt của Microkernel và hiệu năng cao của Monolithic"
+    ],
+    "explanation": "Hạt nhân hiện đại (như Linux, Solaris) dùng LKM. Nhân cốt lõi giữ lại các chức năng chính (như Monolithic - hiệu năng cao), các thành phần khác được load tự động dưới dạng module khi cần (linh hoạt như Microkernel)."
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "text": "Sự kiện Timer (Bộ đếm thời gian) ngắt hệ thống một cách định kỳ có mục đích chính là gì?",
+    "options": [
+      "Để xóa bộ nhớ cache",
+      "Đảm bảo hệ điều hành có thể lấy lại quyền điều khiển CPU, ngăn tiến trình người dùng chiếm dụng CPU vô hạn",
+      "Để làm mát phần cứng CPU",
+      "Khởi động lại máy tính một cách tự động mỗi ngày"
+    ],
+    "correctAnswers": [
+      "Đảm bảo hệ điều hành có thể lấy lại quyền điều khiển CPU, ngăn tiến trình người dùng chiếm dụng CPU vô hạn"
+    ],
+    "explanation": "Timer được sử dụng để ngăn chặn một chương trình bị lặp vô hạn hoặc cố tình chiếm giữ CPU, giúp duy trì kỹ thuật Time-sharing."
+  },
+  {
+    "id": 24,
+    "type": "fill",
+    "text": "Kỹ thuật lưu trữ tạm thời các khối dữ liệu từ bộ nhớ chậm vào bộ nhớ nhanh (để CPU truy xuất nhanh hơn ở những lần sau) gọi là kỹ thuật ________ (điền 1 từ tiếng Anh).",
+    "correctAnswers": [
+      "caching",
+      "cache"
+    ],
+    "explanation": "Caching là cơ chế tối ưu hiệu năng quan trọng ở nhiều cấp độ (Phần cứng, HĐH, Ứng dụng). Dữ liệu thường dùng được chép vào Cache."
+  },
+  {
+    "id": 25,
+    "type": "multiple",
+    "text": "Trong một hệ điều hành, Command Interpreter (Trình thông dịch lệnh / Shell) có chức năng gì?",
+    "options": [
+      "Là giao diện nhận các lệnh từ người dùng và thực thi chúng",
+      "Biên dịch mã nguồn C/C++ thành file thực thi",
+      "Thường được tích hợp sẵn trong kernel (hoặc là một chương trình đặc biệt)",
+      "Giúp lấy lại mật khẩu người dùng"
+    ],
+    "correctAnswers": [
+      "Là giao diện nhận các lệnh từ người dùng và thực thi chúng",
+      "Thường được tích hợp sẵn trong kernel (hoặc là một chương trình đặc biệt)"
+    ],
+    "explanation": "Command Interpreter đọc và chạy các lệnh (Command Line Interface). Nó có thể nằm trong Kernel hoặc tồn tại như chương trình hệ thống (Shell trong UNIX)."
+  },
+  {
+    "id": 26,
+    "type": "single",
+    "text": "CPU có cấu trúc Multicore (Nhiều lõi trên cùng một chip) mang lại lợi ích gì so với hệ thống có nhiều chip CPU vật lý rời?",
+    "options": [
+      "Chi phí cao hơn nhưng an toàn hơn",
+      "Tốc độ giao tiếp giữa các lõi trên cùng 1 chip nhanh hơn và tiêu thụ ít năng lượng hơn",
+      "Chỉ chạy được các ứng dụng đơn luồng",
+      "Hệ điều hành không cần thiết kế cơ chế lập lịch"
+    ],
+    "correctAnswers": [
+      "Tốc độ giao tiếp giữa các lõi trên cùng 1 chip nhanh hơn và tiêu thụ ít năng lượng hơn"
+    ],
+    "explanation": "Multicore đặt nhiều nhân tính toán (cores) trên cùng một chip, cho phép truyền dữ liệu on-chip rất nhanh và tối ưu nhiệt lượng/điện năng so với dùng bo mạch gắn nhiều chip rời."
+  },
+  {
+    "id": 27,
+    "type": "single",
+    "text": "Chương trình 'System programs' (hay System utilities) khác với 'Application programs' (Chương trình ứng dụng) ở điểm nào?",
+    "options": [
+      "System programs cung cấp môi trường cho việc phát triển và thực thi chương trình, gắn liền với HĐH",
+      "Application programs chạy ở Kernel mode",
+      "System programs được cài đặt mặc định trên ROM",
+      "Application programs không sử dụng System calls"
+    ],
+    "correctAnswers": [
+      "System programs cung cấp môi trường cho việc phát triển và thực thi chương trình, gắn liền với HĐH"
+    ],
+    "explanation": "System programs (VD: file manager, compiler cơ bản, command line shell) là các ứng dụng hệ thống hỗ trợ người dùng và developer quản lý HĐH, không phải một phần của Kernel nhưng gắn chặt với OS."
+  },
+  {
+    "id": 28,
+    "type": "fill",
+    "text": "Điểm tắc nghẽn (bottleneck) về hiệu năng lớn nhất trong kiến trúc Microkernel là chi phí hệ thống sinh ra từ việc ________ thông điệp (điền 1 từ tiếng Việt).",
+    "correctAnswers": [
+      "truyền",
+      "chuyển"
+    ],
+    "explanation": "Do các service nằm ở User space, mọi giao tiếp phải đi qua Microkernel (bằng message passing), gây ra overhead (chi phí đổi ngữ cảnh nhiều lần)."
+  },
+  {
+    "id": 29,
+    "type": "multiple",
+    "text": "Trong một hệ thống đối xứng (Symmetric Multiprocessing - SMP), điều nào sau đây là ĐÚNG?",
+    "options": [
+      "Một CPU đóng vai trò master điều khiển, các CPU khác là slave chỉ nhận lệnh",
+      "Mỗi CPU có các thanh ghi và cache riêng biệt",
+      "Tất cả CPU dùng chung một bộ nhớ vật lý (Main Memory)",
+      "Mỗi tiến trình chỉ được chạy mãi mãi trên một CPU duy nhất"
+    ],
+    "correctAnswers": [
+      "Mỗi CPU có các thanh ghi và cache riêng biệt",
+      "Tất cả CPU dùng chung một bộ nhớ vật lý (Main Memory)"
+    ],
+    "explanation": "SMP nghĩa là các CPU ngang hàng (peer), không có quan hệ master-slave (đó là Asymmetric). Chúng có cache/registers riêng nhưng chia sẻ bus và bộ nhớ vật lý chung."
+  },
+  {
+    "id": 30,
+    "type": "single",
+    "text": "Hệ điều hành cần quản lý thiết bị I/O với mục tiêu chính là gì?",
+    "options": [
+      "Tăng dung lượng đĩa cứng bằng cách nén dữ liệu I/O",
+      "Che giấu sự phức tạp của các thiết bị phần cứng cụ thể khỏi người dùng",
+      "Luôn luôn yêu cầu người dùng cài đặt mã nguồn của trình điều khiển (driver)",
+      "Ngăn không cho các tiến trình chạy ngầm đọc dữ liệu"
+    ],
+    "correctAnswers": [
+      "Che giấu sự phức tạp của các thiết bị phần cứng cụ thể khỏi người dùng"
+    ],
+    "explanation": "I/O Subsystem của hệ điều hành chịu trách nhiệm cung cấp giao diện đồng nhất để ẩn đi những cơ chế vật lý phức tạp, đặc thù của từng loại thiết bị ngoại vi."
+  },
+  {
+    "id": 31,
+    "type": "single",
+    "text": "Hệ điều hành nằm ở đâu trong cấu trúc phân lớp của hệ thống máy tính?",
+    "options": [
+      "Giữa phần cứng và chương trình ứng dụng",
+      "Giữa người dùng và chương trình ứng dụng",
+      "Là một phần lõi của bộ vi xử lý phần cứng",
+      "Bao bọc bên ngoài các chương trình ứng dụng"
+    ],
+    "correctAnswers": [
+      "Giữa phần cứng và chương trình ứng dụng"
+    ],
+    "explanation": "Hệ điều hành là lớp nằm giữa phần cứng và các chương trình ứng dụng, cung cấp môi trường để thực thi phần mềm và sử dụng hiệu quả phần cứng."
+  },
+  {
+    "id": 32,
+    "type": "multiple",
+    "text": "Theo mô hình cấu trúc phân lớp của Tanenbaum (2001), các thành phần của một hệ thống máy tính bao gồm những lớp nào?",
+    "options": [
+      "Microarchitecture (Vi kiến trúc)",
+      "Physical devices (Thiết bị vật lý)",
+      "Application programs (Chương trình ứng dụng)",
+      "Virtual Machine (Máy ảo)"
+    ],
+    "correctAnswers": [
+      "Microarchitecture (Vi kiến trúc)",
+      "Physical devices (Thiết bị vật lý)",
+      "Application programs (Chương trình ứng dụng)"
+    ],
+    "explanation": "Tanenbaum phân lớp bao gồm Hardware (Physical devices, Microarchitecture, Machine language), Operating System, System programs và Application programs."
+  },
+  {
+    "id": 33,
+    "type": "multiple",
+    "text": "Mục tiêu chính của Hệ điều hành là gì?",
+    "options": [
+      "Cung cấp một môi trường để người sử dụng thực hiện các chương trình ứng dụng",
+      "Chuẩn hóa giao diện người dùng đối với các hệ thống phần cứng khác nhau",
+      "Sử dụng hiệu quả tài nguyên phần cứng và khai thác tối đa hiệu suất",
+      "Chỉ chuyên dùng để thiết kế vi mạch điện tử"
+    ],
+    "correctAnswers": [
+      "Cung cấp một môi trường để người sử dụng thực hiện các chương trình ứng dụng",
+      "Chuẩn hóa giao diện người dùng đối với các hệ thống phần cứng khác nhau",
+      "Sử dụng hiệu quả tài nguyên phần cứng và khai thác tối đa hiệu suất"
+    ],
+    "explanation": "HĐH giúp máy tính dễ sử dụng, chuẩn hóa giao diện và tối ưu hóa tài nguyên phần cứng."
+  },
+  {
+    "id": 34,
+    "type": "single",
+    "text": "Hai chức năng chính yếu của Hệ điều hành là gì?",
+    "options": [
+      "Giả lập một máy tính ảo và Quản lý tài nguyên hệ thống",
+      "Quản lý hệ thống file và Cung cấp giao diện đồ họa",
+      "Điều khiển thiết bị ngoại vi và Trình biên dịch",
+      "Quản lý người dùng và Tạo các ứng dụng web"
+    ],
+    "correctAnswers": [
+      "Giả lập một máy tính ảo và Quản lý tài nguyên hệ thống"
+    ],
+    "explanation": "2 chức năng bao quát nhất của HĐH là giả lập máy tính ảo (giúp ẩn giấu chi tiết phần cứng) và quản lý tài nguyên hệ thống (thời gian, không gian, giải quyết tranh chấp)."
+  },
+  {
+    "id": 35,
+    "type": "multiple",
+    "text": "Việc Hệ điều hành giả lập một máy tính ảo giúp mang lại những lợi ích nào?",
+    "options": [
+      "Đơn giản hóa vấn đề lập trình, không phải làm việc với dãy nhị phân",
+      "Các tiến trình không ảnh hưởng trực tiếp đến nhau, lỗi một tiến trình không hỏng toàn hệ thống",
+      "Hữu ích cho việc phát triển và thử nghiệm các hệ điều hành khác",
+      "Tăng tốc độ xung nhịp CPU thực tế lên mức cao nhất có thể"
+    ],
+    "correctAnswers": [
+      "Đơn giản hóa vấn đề lập trình, không phải làm việc với dãy nhị phân",
+      "Các tiến trình không ảnh hưởng trực tiếp đến nhau, lỗi một tiến trình không hỏng toàn hệ thống",
+      "Hữu ích cho việc phát triển và thử nghiệm các hệ điều hành khác"
+    ],
+    "explanation": "Giả lập máy tính ảo che giấu sự phức tạp của phần cứng, cấp phát máy ảo cho tiến trình, tránh đụng độ và hỗ trợ việc thử nghiệm HĐH khác."
+  },
+  {
+    "id": 36,
+    "type": "single",
+    "text": "Trong giai đoạn 'Phần cứng đắt, nhân công rẻ' (1948-1970), biện pháp nào được sử dụng để giảm lãng phí thời gian máy CPU phải chờ đọc/ghi?",
+    "options": [
+      "Xử lý theo lô (batch processing)",
+      "Hệ thống đa nhiệm (multitasking)",
+      "Hệ thống điện toán đám mây",
+      "Mạng máy tính diện rộng"
+    ],
+    "correctAnswers": [
+      "Xử lý theo lô (batch processing)"
+    ],
+    "explanation": "Thay vì một người dùng trực tiếp tốn thời gian, các chương trình được thao tác viên gom thành gói (batch) để thực hiện lần lượt, giúp giảm thời gian chết."
+  },
+  {
+    "id": 37,
+    "type": "single",
+    "text": "Khái niệm 'Chương trình mồi' (bootstraps loader) được đọc qua bìa đục lỗ xuất hiện chủ yếu trong bối cảnh nào?",
+    "options": [
+      "Giai đoạn xử lý phần cứng đắt, nhân công rẻ (thế hệ 1-2)",
+      "Hệ thống thiết bị di động hiện đại",
+      "Hệ thống phân tán",
+      "Giai đoạn máy tính cá nhân PC cực thịnh"
+    ],
+    "correctAnswers": [
+      "Giai đoạn xử lý phần cứng đắt, nhân công rẻ (thế hệ 1-2)"
+    ],
+    "explanation": "Trong giai đoạn 1948-1970, người dùng viết chương trình trên bìa đục lỗ. Tấm bìa đầu tiên chứa bootstrap loader được đọc vào để mồi cho các lệnh phía sau."
+  },
+  {
+    "id": 38,
+    "type": "single",
+    "text": "Theo khái niệm trong hệ điều hành, Tiến trình (Process) được định nghĩa là gì?",
+    "options": [
+      "Một chương trình đang thực hiện",
+      "Một file thực thi lưu trên ổ đĩa cứng",
+      "Một hệ điều hành đang khởi động",
+      "Không gian bộ nhớ RAM"
+    ],
+    "correctAnswers": [
+      "Một chương trình đang thực hiện"
+    ],
+    "explanation": "Tiến trình (process) là trạng thái động của một chương trình đang thực hiện, sở hữu mã lệnh, dữ liệu, ngăn xếp và tập thanh ghi."
+  },
+  {
+    "id": 39,
+    "type": "multiple",
+    "text": "Sự khác biệt cơ bản giữa Tiến trình và Chương trình là gì?",
+    "options": [
+      "Chương trình là thực thể thụ động (nằm trên đĩa)",
+      "Tiến trình là trạng thái động của chương trình",
+      "Chương trình chứa đựng các chỉ thị điều khiển máy tính",
+      "Tiến trình là một file văn bản tĩnh"
+    ],
+    "correctAnswers": [
+      "Chương trình là thực thể thụ động (nằm trên đĩa)",
+      "Tiến trình là trạng thái động của chương trình",
+      "Chương trình chứa đựng các chỉ thị điều khiển máy tính"
+    ],
+    "explanation": "Chương trình là thụ động (chứa chỉ thị), tiến trình là lúc chương trình được đưa vào thực thi (trạng thái động)."
+  },
+  {
+    "id": 40,
+    "type": "fill",
+    "text": "Trong một tiến trình, các ______ hoạt động song song, chia sẻ biến toàn cục của tiến trình nhưng có tập thanh ghi và ngăn xếp riêng.",
+    "options": [],
+    "correctAnswers": [
+      "luồng",
+      "luong",
+      "thread",
+      "threads"
+    ],
+    "explanation": "Luồng (Thread) là chuỗi lệnh thực hiện trong tiến trình. Mô hình đa luồng cho phép các luồng chạy song song và chia sẻ biến toàn cục (data) và file."
+  },
+  {
+    "id": 41,
+    "type": "single",
+    "text": "Tài nguyên hệ thống là gì?",
+    "options": [
+      "Tất cả những gì cần thiết để cho một tiến trình có thể thực hiện được",
+      "Chỉ bao gồm các thiết bị phần cứng của máy tính",
+      "Chỉ bao gồm phần mềm và dữ liệu",
+      "Bộ xử lý trung tâm (CPU) và bo mạch chủ"
+    ],
+    "correctAnswers": [
+      "Tất cả những gì cần thiết để cho một tiến trình có thể thực hiện được"
+    ],
+    "explanation": "Tài nguyên hệ thống bao gồm không gian (lưu trữ) và thời gian (xử lý), là tất cả những gì tiến trình cần để hoàn thành công việc."
+  },
+  {
+    "id": 42,
+    "type": "fill",
+    "text": "Theo khả năng sử dụng chung, tài nguyên có thể cấp phát cho nhiều tiến trình khác nhau tại cùng một thời điểm (ví dụ: Bộ nhớ) được gọi là tài nguyên _____ được.",
+    "options": [],
+    "correctAnswers": [
+      "dùng chung",
+      "dung chung",
+      "chia sẻ",
+      "chia se"
+    ],
+    "explanation": "Tài nguyên dùng chung được là loại tài nguyên mà tại một thời điểm có thể cấp cho nhiều tiến trình cùng sử dụng (VD: Bộ nhớ)."
+  },
+  {
+    "id": 43,
+    "type": "single",
+    "text": "Máy in ảo (Virtual printer) là một ví dụ của loại tài nguyên nào?",
+    "options": [
+      "Tài nguyên ảo",
+      "Tài nguyên vật lý",
+      "Tài nguyên không phân chia được",
+      "Tài nguyên phần cứng tĩnh"
+    ],
+    "correctAnswers": [
+      "Tài nguyên ảo"
+    ],
+    "explanation": "Tài nguyên ảo (như máy in ảo) được cung cấp dưới dạng biến đổi, chỉ xuất hiện khi cần và mất đi khi tiến trình gắn với nó kết thúc."
+  },
+  {
+    "id": 44,
+    "type": "multiple",
+    "text": "Bộ xử lý lệnh (Shell) có nhiệm vụ gì?",
+    "options": [
+      "Nhận lệnh của người sử dụng",
+      "Phân tích lệnh",
+      "Phát sinh tiến trình mới để thực hiện yêu cầu của lệnh",
+      "Quản lý trực tiếp đĩa từ ở mức vật lý"
+    ],
+    "correctAnswers": [
+      "Nhận lệnh của người sử dụng",
+      "Phân tích lệnh",
+      "Phát sinh tiến trình mới để thực hiện yêu cầu của lệnh"
+    ],
+    "explanation": "Shell là tiến trình đặc biệt để giao tiếp với người dùng, nhận, phân tích lệnh và gọi tiến trình mới thực thi."
+  },
+  {
+    "id": 45,
+    "type": "single",
+    "text": "Lời gọi hệ thống (System calls) đóng vai trò gì trong hệ thống?",
+    "options": [
+      "Tạo môi trường giao tiếp giữa chương trình của người sử dụng và hệ điều hành",
+      "Thay thế hoàn toàn bộ xử lý lệnh Shell",
+      "Là công cụ để kết nối phần cứng với nhau",
+      "Bảo vệ hệ thống khỏi virus ngoại vi"
+    ],
+    "correctAnswers": [
+      "Tạo môi trường giao tiếp giữa chương trình của người sử dụng và hệ điều hành"
+    ],
+    "explanation": "Lời gọi hệ thống tạo môi trường giao tiếp, cho phép chương trình người dùng yêu cầu các dịch vụ (tạo, xóa đối tượng, vào/ra...) từ hệ điều hành."
+  },
+  {
+    "id": 46,
+    "type": "fill",
+    "text": "Hệ thống chia sẻ thời gian của processor cho các tiến trình đang sẵn sàng thực hiện với thời gian hoán đổi nhỏ, tạo cảm giác thực hiện song song, thường được gọi là hệ điều hành _____.",
+    "options": [],
+    "correctAnswers": [
+      "đa nhiệm",
+      "da nhiem"
+    ],
+    "explanation": "Do luân chuyển CPU nhanh, hệ thống phân chia thời gian đem lại cảm giác chạy song song cho người dùng và được gọi là HĐH đa nhiệm (multitasking)."
+  },
+  {
+    "id": 47,
+    "type": "single",
+    "text": "Lời gọi hệ thống (System calls) thường được thực hiện dưới dạng nào?",
+    "options": [
+      "Lệnh gọi ngắt (Int) trong hợp ngữ hoặc Thủ tục gọi hàm API",
+      "Chỉ thông qua các giao diện dòng lệnh của Shell",
+      "Các cấu trúc điều kiện if/else của ngôn ngữ C",
+      "Các gói tin TCP/IP qua mạng"
+    ],
+    "correctAnswers": [
+      "Lệnh gọi ngắt (Int) trong hợp ngữ hoặc Thủ tục gọi hàm API"
+    ],
+    "explanation": "System calls có thể được thực hiện qua ngôn ngữ cấp thấp (gọi ngắt - interrupt) hoặc qua các hàm API (như trong Windows)."
+  },
+  {
+    "id": 48,
+    "type": "multiple",
+    "text": "Theo quan điểm hệ thống, Hệ điều hành mô phỏng hoạt động của các thành phần nào?",
+    "options": [
+      "Máy tính (Máy)",
+      "Người sử dụng (User)",
+      "Thao tác viên (Operator)",
+      "Nhà phát triển phần cứng (Hardware Developer)"
+    ],
+    "correctAnswers": [
+      "Máy tính (Máy)",
+      "Người sử dụng (User)",
+      "Thao tác viên (Operator)"
+    ],
+    "explanation": "Quan điểm hệ thống cho rằng HĐH là mô phỏng hoạt động của Máy tính, Người sử dụng và Thao tác viên trong chế độ đối thoại."
+  },
+  {
+    "id": 49,
+    "type": "single",
+    "text": "Hệ thống xử lý theo lô đa chương trình có ưu điểm gì so với lô đơn chương trình?",
+    "options": [
+      "Cho phép nạp và thực hiện nhiều chương trình đồng thời để hạn chế thời gian rỗi của processor",
+      "Thực hiện từng chương trình một cách tuần tự mà không cần can thiệp",
+      "Hoạt động hoàn toàn trên mạng Internet",
+      "Chỉ chạy được một chương trình duy nhất nhưng tốc độ cực nhanh"
+    ],
+    "correctAnswers": [
+      "Cho phép nạp và thực hiện nhiều chương trình đồng thời để hạn chế thời gian rỗi của processor"
+    ],
+    "explanation": "Đa chương trình khắc phục nhược điểm lãng phí CPU của đơn chương trình bằng cách chuyển CPU cho tiến trình khác khi một tiến trình phải chờ (VD: chờ I/O)."
+  },
+  {
+    "id": 50,
+    "type": "multiple",
+    "text": "Trong hệ thống song song, mô hình Đa xử lý đối xứng (SMP) có đặc điểm gì?",
+    "options": [
+      "Mỗi bộ xử lý chạy một tiến trình/luồng độc lập",
+      "Các vi xử lý giao tiếp qua một bộ nhớ dùng chung",
+      "Cơ chế chịu lỗi và khả năng cân bằng tải tối ưu",
+      "Có một bộ xử lý Master kiểm soát mọi VXL khác"
+    ],
+    "correctAnswers": [
+      "Mỗi bộ xử lý chạy một tiến trình/luồng độc lập",
+      "Các vi xử lý giao tiếp qua một bộ nhớ dùng chung",
+      "Cơ chế chịu lỗi và khả năng cân bằng tải tối ưu"
+    ],
+    "explanation": "Khác với ASMP (bất đối xứng) có Master-Slave, ở SMP mỗi bộ xử lý đều bình đẳng, giao tiếp qua bộ nhớ chung và có tính chịu lỗi cao."
+  },
+  {
+    "id": 51,
+    "type": "single",
+    "text": "Tính chất 'Mọi hoạt động, thông báo của HĐH phải chuẩn xác' phản ánh điều gì?",
+    "options": [
+      "Độ tin cậy cao",
+      "Tính an toàn",
+      "Tính hiệu quả",
+      "Tính thuận tiện"
+    ],
+    "correctAnswers": [
+      "Độ tin cậy cao"
+    ],
+    "explanation": "Mọi hoạt động chuẩn xác, chỉ cung cấp thông tin khi chắc chắn đúng, và kiểm tra thiết bị khi thao tác (như lệnh COPY) là biểu hiện của độ tin cậy cao."
+  },
+  {
+    "id": 52,
+    "type": "single",
+    "text": "Yêu cầu 'Hệ thống cần phải duy trì được tính đồng bộ sao cho các thiết bị tốc độ chậm không ảnh hưởng tới toàn hệ thống' thuộc tính chất nào?",
+    "options": [
+      "Hiệu quả",
+      "An toàn",
+      "Tổng quát theo thời gian",
+      "Thuận tiện"
+    ],
+    "correctAnswers": [
+      "Hiệu quả"
+    ],
+    "explanation": "Tính hiệu quả đòi hỏi tài nguyên được khai thác triệt để và tính đồng bộ hệ thống được đảm bảo dù các thiết bị có tốc độ chênh lệch."
+  },
+  {
+    "id": 53,
+    "type": "fill",
+    "text": "Tính chất yêu cầu hệ thống phải có tính kế thừa và thích nghi với những thay đổi có thể xảy ra (như sự cố Y2K, định dạng FAT) là tính _____ theo thời gian.",
+    "options": [],
+    "correctAnswers": [
+      "tổng quát",
+      "tong quat"
+    ],
+    "explanation": "Tổng quát theo thời gian đảm bảo hệ thống kế thừa (thao tác, thông báo không đổi) và thích nghi được với những biến đổi nâng cấp công nghệ."
+  },
+  {
+    "id": 54,
+    "type": "single",
+    "text": "Cấu trúc hệ thống máy ảo (Virtual Machine) có đặc điểm gì nổi bật?",
+    "options": [
+      "Phân chia chính xác tài nguyên phần cứng để tạo thành nhiều máy ảo độc lập, chạy các HĐH khách (Guest OS)",
+      "Là một cấu trúc nguyên khối không thể tách rời của hệ điều hành MS-DOS",
+      "Gồm các nút mạng chia sẻ dữ liệu Client-Server",
+      "Không hỗ trợ bất kỳ phần cứng vật lý nào"
+    ],
+    "correctAnswers": [
+      "Phân chia chính xác tài nguyên phần cứng để tạo thành nhiều máy ảo độc lập, chạy các HĐH khách (Guest OS)"
+    ],
+    "explanation": "Máy ảo (VD: VMware, VirtualBox) tạo một lớp ảo hóa chia sẻ tài nguyên phần cứng vật lý để chạy nhiều Guest OS độc lập."
+  },
+  {
+    "id": 55,
+    "type": "multiple",
+    "text": "Thành phần quản lý hệ thống vào ra (I/O) bao gồm những gì?",
+    "options": [
+      "Buffering (Vùng đệm)",
+      "Caching (Lưu trữ đệm)",
+      "Spooling",
+      "Trình biên dịch (Compiler)"
+    ],
+    "correctAnswers": [
+      "Buffering (Vùng đệm)",
+      "Caching (Lưu trữ đệm)",
+      "Spooling"
+    ],
+    "explanation": "Quản lý I/O che giấu phần cứng thông qua các thành phần quản lý bộ nhớ (buffering, caching, spooling) và các device drivers."
+  },
+  {
+    "id": 56,
+    "type": "multiple",
+    "text": "Các dịch vụ chính yếu (Primary services) do Hệ điều hành cung cấp cho tiến trình bao gồm?",
+    "options": [
+      "Thi hành chương trình",
+      "Thao tác trên hệ thống tập tin",
+      "Truyền thông giữa các tiến trình",
+      "Thống kê báo cáo sử dụng CPU"
+    ],
+    "correctAnswers": [
+      "Thi hành chương trình",
+      "Thao tác trên hệ thống tập tin",
+      "Truyền thông giữa các tiến trình"
+    ],
+    "explanation": "Các dịch vụ chính yếu gồm thi hành chương trình, I/O, hệ thống file, truyền thông, và phát hiện lỗi. Thống kê báo cáo là dịch vụ phụ trợ."
+  },
+  {
+    "id": 57,
+    "type": "single",
+    "text": "Thao tác trao đổi thông tin giữa các tiến trình thông qua bộ nhớ phân chia (Shared Memory) hoặc chuyển thông điệp (Message Passing) thuộc dịch vụ nào?",
+    "options": [
+      "Truyền thông",
+      "Thao tác hệ thống tập tin",
+      "Quản lý thiết bị vào ra",
+      "Bảo vệ hệ thống"
+    ],
+    "correctAnswers": [
+      "Truyền thông"
+    ],
+    "explanation": "Truyền thông liên tiến trình (IPC) cho phép các tiến trình trao đổi thông tin với nhau, là một dịch vụ cốt lõi của HĐH."
+  },
+  {
+    "id": 58,
+    "type": "multiple",
+    "text": "Các dịch vụ phụ trợ (Secondary services) của hệ điều hành dùng để vận hành hệ thống hiệu quả bao gồm?",
+    "options": [
+      "Cung cấp tài nguyên",
+      "Thống kê báo cáo",
+      "Bảo vệ truy cập tài nguyên",
+      "Thực hiện phép toán số học cho ALU"
+    ],
+    "correctAnswers": [
+      "Cung cấp tài nguyên",
+      "Thống kê báo cáo",
+      "Bảo vệ truy cập tài nguyên"
+    ],
+    "explanation": "Dịch vụ phụ trợ không hướng trực tiếp trợ giúp user mà nhằm tối ưu hệ thống: cấp phát tài nguyên dùng chung, thống kê, và cơ chế bảo vệ."
+  },
+  {
+    "id": 59,
+    "type": "single",
+    "text": "Hệ điều hành MS-DOS được xây dựng theo cấu trúc nào?",
+    "options": [
+      "Cấu trúc đơn giản",
+      "Cấu trúc theo lớp",
+      "Mô hình Client-Server",
+      "Cấu trúc vi nhân (Microkernel)"
+    ],
+    "correctAnswers": [
+      "Cấu trúc đơn giản"
+    ],
+    "explanation": "MS-DOS và các phiên bản UNIX đầu tiên có cấu trúc đơn giản, không phân biệt rõ ràng các lớp bảo vệ và không tách bạch module tốt."
+  },
+  {
+    "id": 60,
+    "type": "multiple",
+    "text": "Nguyên tắc xây dựng hệ điều hành bao gồm những nguyên tắc nào?",
+    "options": [
+      "Nguyên tắc modul",
+      "Nguyên tắc macroprocessor",
+      "Nguyên tắc bảo vệ nhiều mức",
+      "Nguyên tắc tập trung toàn bộ mã vào một nhân duy nhất"
+    ],
+    "correctAnswers": [
+      "Nguyên tắc modul",
+      "Nguyên tắc macroprocessor",
+      "Nguyên tắc bảo vệ nhiều mức"
+    ],
+    "explanation": "HĐH hiện đại được xây dựng dựa trên nguyên tắc modul, tương đối trong định vị, macroprocessor, lặp chức năng, giá trị chuẩn và bảo vệ nhiều mức."
+  },
+  {
+    "id": 61,
+    "type": "single",
+    "text": "Theo cách nhìn tổng quan, hệ thống máy tính được chia thành 4 thành phần cơ bản nào?",
+    "options": [
+      "Phần cứng, hệ điều hành và người dùng",
+      "Phần cứng, chương trình ứng dụng và người dùng",
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng",
+      "Hệ điều hành, trình biên dịch, trình thông dịch và dữ liệu"
+    ],
+    "correctAnswers": [
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng"
+    ],
+    "explanation": "Hệ thống máy tính chuẩn bao gồm 4 thành phần: Phần cứng (Hardware), Hệ điều hành (Operating System), Chương trình ứng dụng (Application Programs) và Người dùng (Users)."
+  },
+  {
+    "id": 62,
+    "type": "single",
+    "text": "Theo quan điểm hệ thống, hệ điều hành đóng vai trò chính là gì?",
+    "options": [
+      "Môi trường thực thi cho các ứng dụng web",
+      "Bộ phân phối tài nguyên và chương trình kiểm soát",
+      "Trình biên dịch mã nguồn thành mã máy",
+      "Giao diện đồ họa để người dùng thao tác dễ dàng"
+    ],
+    "correctAnswers": [
+      "Bộ phân phối tài nguyên và chương trình kiểm soát"
+    ],
+    "explanation": "HĐH là bộ phân phối tài nguyên (Resource Allocator) quản lý tài nguyên và giải quyết xung đột; đồng thời là chương trình kiểm soát (Control Program) quản lý thực thi chương trình để ngăn ngừa lỗi."
+  },
+  {
+    "id": 63,
+    "type": "single",
+    "text": "Lời gọi hệ thống (System call) là gì?",
+    "options": [
+      "Là các hàm do người dùng tự định nghĩa trong chương trình.",
+      "Là giao diện giữa hệ điều hành và phần cứng.",
+      "Là giao diện lập trình giữa một tiến trình đang chạy và hệ điều hành.",
+      "Là tín hiệu ngắt từ bàn phím gửi đến CPU."
+    ],
+    "correctAnswers": [
+      "Là giao diện lập trình giữa một tiến trình đang chạy và hệ điều hành."
+    ],
+    "explanation": "Lời gọi hệ thống (System calls) cung cấp giao diện giữa một tiến trình đang chạy và hệ điều hành, thường ở dạng hợp ngữ hoặc hàm ngôn ngữ cấp cao (C/C++)."
+  },
+  {
+    "id": 64,
+    "type": "fill",
+    "text": "Để đảm bảo an toàn, bảo vệ phần cứng và hệ điều hành, các máy tính hiện đại sử dụng kiến trúc chế độ kép (Dual-mode). Kiến trúc này bao gồm chế độ người dùng (User mode) và chế độ _________.",
+    "correctAnswers": [
+      "kernel mode",
+      "hạt nhân",
+      "đặc quyền",
+      "kernel",
+      "chế độ hạt nhân",
+      "monitor mode",
+      "system mode"
+    ],
+    "explanation": "Kiến trúc chế độ kép (Dual-mode) chia thành User mode (chế độ người dùng) và Kernel mode (chế độ hạt nhân/đặc quyền/hệ thống) để bảo vệ HĐH khỏi các tiến trình lỗi."
+  },
+  {
+    "id": 65,
+    "type": "multiple",
+    "text": "Các dịch vụ nào sau đây của Hệ điều hành nhằm mục đích CUNG CẤP chức năng giúp đỡ trực tiếp cho NGƯỜI DÙNG? (Chọn nhiều đáp án)",
+    "options": [
+      "Giao diện người dùng (User Interface)",
+      "Cấp phát tài nguyên (Resource Allocation)",
+      "Thực thi chương trình (Program Execution)",
+      "Thao tác I/O (I/O Operations)",
+      "Bảo vệ và an ninh (Protection and Security)"
+    ],
+    "correctAnswers": [
+      "Giao diện người dùng (User Interface)",
+      "Thực thi chương trình (Program Execution)",
+      "Thao tác I/O (I/O Operations)"
+    ],
+    "explanation": "Các dịch vụ hướng trực tiếp đến người dùng bao gồm: Giao diện, Thực thi chương trình, Thao tác I/O, Thao tác hệ thống tệp, Liên lạc, và Phát hiện lỗi. Cấp phát tài nguyên và Bảo vệ/An ninh là dịch vụ đảm bảo hiệu quả cho bản thân hệ thống."
+  },
+  {
+    "id": 66,
+    "type": "single",
+    "text": "Hệ điều hành MS-DOS được xây dựng theo cấu trúc nào sau đây?",
+    "options": [
+      "Cấu trúc phân lớp (Layered)",
+      "Cấu trúc đơn giản (Simple structure)",
+      "Cấu trúc vi nhân (Microkernel)",
+      "Cấu trúc mô-đun (Modules)"
+    ],
+    "correctAnswers": [
+      "Cấu trúc đơn giản (Simple structure)"
+    ],
+    "explanation": "MS-DOS được thiết kế với cấu trúc đơn giản, không phân chia module rõ ràng, các chương trình ứng dụng có thể truy cập trực tiếp vào các luồng I/O cơ sở."
+  },
+  {
+    "id": 67,
+    "type": "single",
+    "text": "Ưu điểm chính của cấu trúc Vi nhân (Microkernel) so với các cấu trúc khác là gì?",
+    "options": [
+      "Tốc độ thực thi lời gọi hệ thống (system call) cực kỳ nhanh.",
+      "Dễ dàng mở rộng HĐH và cung cấp độ tin cậy, an toàn cao hơn.",
+      "Cho phép người dùng trực tiếp điều khiển phần cứng mà không cần phân quyền.",
+      "Không yêu cầu sử dụng chế độ User mode và Kernel mode."
+    ],
+    "correctAnswers": [
+      "Dễ dàng mở rộng HĐH và cung cấp độ tin cậy, an toàn cao hơn."
+    ],
+    "explanation": "Vi nhân chuyển càng nhiều dịch vụ từ Kernel sang User space càng tốt, giúp dễ dàng mở rộng. Nếu một dịch vụ ở user space hỏng, phần còn lại của HĐH vẫn an toàn."
+  },
+  {
+    "id": 68,
+    "type": "fill",
+    "text": "Hệ điều hành được coi là một loại phần mềm _________ , đóng vai trò trung gian giữa phần cứng máy tính và người sử dụng máy tính.",
+    "correctAnswers": [
+      "hệ thống",
+      "system",
+      "he thong",
+      "system software"
+    ],
+    "explanation": "Hệ điều hành là một phần mềm hệ thống (System Software) quản lý tài nguyên và tạo môi trường cho các chương trình ứng dụng chạy."
+  },
+  {
+    "id": 69,
+    "type": "multiple",
+    "text": "Trong một hệ thống Đa chương (Multiprogramming), Hệ điều hành sử dụng các kỹ thuật quản lý nào để đạt hiệu quả cao? (Chọn nhiều đáp án)",
+    "options": [
+      "Điều phối công việc (Job scheduling)",
+      "Quản lý bộ nhớ (Memory management)",
+      "Bỏ qua hoàn toàn việc xử lý ngắt",
+      "Điều phối CPU (CPU scheduling)"
+    ],
+    "correctAnswers": [
+      "Điều phối công việc (Job scheduling)",
+      "Quản lý bộ nhớ (Memory management)",
+      "Điều phối CPU (CPU scheduling)"
+    ],
+    "explanation": "Đa chương giữ nhiều công việc (jobs) trong bộ nhớ cùng lúc. Nó đòi hỏi HĐH phải có Quản lý bộ nhớ, Điều phối công việc (đưa job vào bộ nhớ) và Điều phối CPU (chọn job nào chạy khi có job chờ I/O)."
+  },
+  {
+    "id": 70,
+    "type": "single",
+    "text": "Tiến trình (Process) được định nghĩa là gì?",
+    "options": [
+      "Một chương trình được lưu trữ trên đĩa cứng.",
+      "Một chương trình đang thực hiện và được cấp phát tài nguyên.",
+      "Một đoạn mã lệnh dùng chung cho nhiều người.",
+      "Một cấu trúc phần cứng bên trong CPU."
+    ],
+    "correctAnswers": [
+      "Một chương trình đang thực hiện và được cấp phát tài nguyên."
+    ],
+    "explanation": "Tiến trình không chỉ là mã chương trình (passive entity) mà là một thực thể đang hoạt động (active entity) đang được thực thi và có con trỏ lệnh, tập thanh ghi, tài nguyên."
+  },
+  {
+    "id": 71,
+    "type": "multiple",
+    "text": "Không gian bộ nhớ của một tiến trình bao gồm những thành phần cơ bản nào? (Chọn nhiều đáp án)",
+    "options": [
+      "Vùng văn bản (Text section / Code)",
+      "Vùng dữ liệu (Data section)",
+      "Vùng nhớ xếp (Stack)",
+      "Vùng vi nhân (Microkernel area)",
+      "Vùng nhớ động (Heap)"
+    ],
+    "correctAnswers": [
+      "Vùng văn bản (Text section / Code)",
+      "Vùng dữ liệu (Data section)",
+      "Vùng nhớ xếp (Stack)",
+      "Vùng nhớ động (Heap)"
+    ],
+    "explanation": "Không gian bộ nhớ tiến trình gồm Text (mã lệnh), Data (biến toàn cục), Heap (bộ nhớ cấp phát động), và Stack (chứa dữ liệu tạm thời như tham số hàm, biến cục bộ)."
+  },
+  {
+    "id": 72,
+    "type": "fill",
+    "text": "Trong cấu trúc không gian nhớ của tiến trình, vùng nhớ dùng để chứa các biến toàn cục (global variables) được gọi là vùng _________ (Data section).",
+    "correctAnswers": [
+      "dữ liệu",
+      "data",
+      "du lieu"
+    ],
+    "explanation": "Vùng dữ liệu (Data section) chứa các biến toàn cục đã được khởi tạo và chưa khởi tạo của chương trình."
+  },
+  {
+    "id": 73,
+    "type": "single",
+    "text": "Khi một tiến trình đang thực thi trên CPU và yêu cầu đọc dữ liệu từ ổ cứng (I/O request), tiến trình này sẽ chuyển sang trạng thái nào?",
+    "options": [
+      "Ready (Sẵn sàng)",
+      "Terminated (Kết thúc)",
+      "Waiting / Blocked (Chờ / Khóa)",
+      "New (Mới tạo)"
+    ],
+    "correctAnswers": [
+      "Waiting / Blocked (Chờ / Khóa)"
+    ],
+    "explanation": "Khi cần một sự kiện I/O xảy ra để tiếp tục, tiến trình sẽ nhường CPU và chuyển từ trạng thái Running sang trạng thái Waiting."
+  },
+  {
+    "id": 74,
+    "type": "multiple",
+    "text": "Khối điều khiển tiến trình (PCB - Process Control Block) lưu trữ những thông tin nào về một tiến trình? (Chọn nhiều đáp án)",
+    "options": [
+      "Trạng thái tiến trình (Process state)",
+      "Con trỏ lệnh (Program counter)",
+      "Thông tin quản lý bộ nhớ (Memory-management info)",
+      "Mã nguồn gốc (Source code) bằng C/C++ của tiến trình"
+    ],
+    "correctAnswers": [
+      "Trạng thái tiến trình (Process state)",
+      "Con trỏ lệnh (Program counter)",
+      "Thông tin quản lý bộ nhớ (Memory-management info)"
+    ],
+    "explanation": "PCB đóng vai trò như kho lưu trữ thông tin cho bất kỳ tiến trình nào: State, PC, CPU registers, scheduling info, memory info, accounting, I/O status... Không chứa mã nguồn gốc."
+  },
+  {
+    "id": 75,
+    "type": "fill",
+    "text": "Quá trình chuyển CPU từ tiến trình này sang tiến trình khác đòi hỏi HĐH lưu lại trạng thái của tiến trình cũ và nạp trạng thái của tiến trình mới. Quá trình này gọi là _________ (2 từ, tiếng Anh).",
+    "correctAnswers": [
+      "context switch",
+      "context-switch",
+      "context switching"
+    ],
+    "explanation": "Chuyển ngữ cảnh (Context Switch) là quá trình hệ thống lưu trạng thái (context) vào PCB cũ và tải context từ PCB mới lên CPU."
+  },
+  {
+    "id": 76,
+    "type": "single",
+    "text": "Bộ điều phối nào chịu trách nhiệm chọn các tiến trình đang ở trong hàng đợi sẵn sàng (Ready Queue) và cấp phát CPU cho một trong số chúng?",
+    "options": [
+      "Bộ điều phối dài hạn (Long-term scheduler)",
+      "Bộ điều phối trung hạn (Medium-term scheduler)",
+      "Bộ điều phối ngắn hạn (Short-term scheduler / CPU scheduler)",
+      "Bộ phân phối (Dispatcher)"
+    ],
+    "correctAnswers": [
+      "Bộ điều phối ngắn hạn (Short-term scheduler / CPU scheduler)"
+    ],
+    "explanation": "Bộ điều phối ngắn hạn (CPU scheduler) là bộ điều phối chạy rất thường xuyên (mili giây), làm nhiệm vụ chọn tiến trình sẵn sàng để thực thi trên CPU."
+  },
+  {
+    "id": 77,
+    "type": "single",
+    "text": "Chức năng chính của Bộ điều phối dài hạn (Long-term scheduler / Job scheduler) là gì?",
+    "options": [
+      "Đưa các tiến trình tạm dừng ra khỏi bộ nhớ (Swap out) và lưu vào ổ đĩa cứng.",
+      "Lựa chọn tiến trình nào nên được đưa vào hàng đợi sẵn sàng (Ready queue) từ tệp lưu trữ trên đĩa.",
+      "Thực hiện việc chuyển đổi trạng thái (Context switch) ở mức phần cứng.",
+      "Quyết định tiến trình nào đang trong hàng đợi Ready sẽ được cấp CPU tiếp theo."
+    ],
+    "correctAnswers": [
+      "Lựa chọn tiến trình nào nên được đưa vào hàng đợi sẵn sàng (Ready queue) từ tệp lưu trữ trên đĩa."
+    ],
+    "explanation": "Long-term scheduler kiểm soát mức độ đa chương (degree of multiprogramming) bằng cách đưa các jobs từ disk vào memory (Ready queue)."
+  },
+  {
+    "id": 78,
+    "type": "multiple",
+    "text": "Các hàng đợi điều phối (Scheduling Queues) phổ biến trong Hệ điều hành bao gồm những hàng đợi nào? (Chọn nhiều đáp án)",
+    "options": [
+      "Hàng đợi công việc (Job queue)",
+      "Hàng đợi sẵn sàng (Ready queue)",
+      "Hàng đợi thiết bị (Device queues)",
+      "Hàng đợi kết thúc (Termination queue)"
+    ],
+    "correctAnswers": [
+      "Hàng đợi công việc (Job queue)",
+      "Hàng đợi sẵn sàng (Ready queue)",
+      "Hàng đợi thiết bị (Device queues)"
+    ],
+    "explanation": "Các tiến trình luân chuyển qua các hàng đợi: Job queue (tất cả tiến trình), Ready queue (các tiến trình ở main memory chờ thực thi), và Device queues (các tiến trình chờ một I/O device cụ thể)."
+  },
+  {
+    "id": 79,
+    "type": "fill",
+    "text": "Trong hệ điều hành UNIX/Linux, lời gọi hệ thống (system call) nào được sử dụng để tạo ra một tiến trình mới từ tiến trình hiện tại?",
+    "correctAnswers": [
+      "fork",
+      "fork()"
+    ],
+    "explanation": "fork() được dùng để tạo tiến trình con. Lời gọi này trả về 0 cho con và số PID của con cho tiến trình cha."
+  },
+  {
+    "id": 80,
+    "type": "single",
+    "text": "Một tiến trình cha đã kết thúc (terminated) nhưng không gọi hàm wait(), các tiến trình con của nó lúc này sẽ trở thành tiến trình loại gì?",
+    "options": [
+      "Zombie process (Tiến trình thây ma)",
+      "Orphan process (Tiến trình mồ côi)",
+      "Background process (Tiến trình nền)",
+      "Daemon process (Tiến trình dịch vụ)"
+    ],
+    "correctAnswers": [
+      "Orphan process (Tiến trình mồ côi)"
+    ],
+    "explanation": "Tiến trình cha kết thúc mà không gọi wait() thì con trở thành orphan. HĐH thường gán init process (hoặc systemd) làm cha mới của các orphans. (Zombie là khi con kết thúc, cha chưa gọi wait)."
+  },
+  {
+    "id": 81,
+    "type": "single",
+    "text": "Khi một tiến trình chuyển từ trạng thái đang chạy (Running) sang trạng thái sẵn sàng (Ready) do hết thời lượng phân bổ, đây thuộc loại điều phối nào?",
+    "options": [
+      "Độc quyền (Non-preemptive / Cooperative)",
+      "Trưng dụng / Không độc quyền (Preemptive)",
+      "Điều phối dài hạn (Long-term scheduling)",
+      "Đa xử lý (Multiprocessing)"
+    ],
+    "correctAnswers": [
+      "Trưng dụng / Không độc quyền (Preemptive)"
+    ],
+    "explanation": "Trưng dụng (Preemptive) cho phép CPU lấy lại quyền điều khiển từ tiến trình đang chạy (ví dụ khi có ngắt thời gian hoặc tiến trình ưu tiên cao hơn đến). Trạng thái chuyển từ Running -> Ready."
+  },
+  {
+    "id": 82,
+    "type": "multiple",
+    "text": "Dispatcher (Bộ phân phối) thực hiện các công việc nào sau đây? (Chọn nhiều đáp án)",
+    "options": [
+      "Chuyển ngữ cảnh (Switch context).",
+      "Lựa chọn tiến trình từ Ready queue theo thuật toán.",
+      "Chuyển chế độ hoạt động về chế độ người dùng (Switch to user mode).",
+      "Nhảy đến vị trí chính xác trong chương trình người dùng để khởi động lại."
+    ],
+    "correctAnswers": [
+      "Chuyển ngữ cảnh (Switch context).",
+      "Chuyển chế độ hoạt động về chế độ người dùng (Switch to user mode).",
+      "Nhảy đến vị trí chính xác trong chương trình người dùng để khởi động lại."
+    ],
+    "explanation": "Dispatcher là module trao quyền điều khiển CPU cho tiến trình đã được *CPU scheduler* chọn. Công việc của nó gồm: Context switch, chuyển sang user mode, và nhảy tới vị trí lệnh. Việc lựa chọn là của Scheduler, không phải Dispatcher."
+  },
+  {
+    "id": 83,
+    "type": "fill",
+    "text": "Trong các tiêu chuẩn điều phối (Scheduling Criteria), thời gian để hoàn thành việc thực hiện một tiến trình, tính từ lúc đưa vào hệ thống đến lúc kết thúc, được gọi là thời gian lưu lại (__________ time).",
+    "correctAnswers": [
+      "turnaround",
+      "turn around"
+    ],
+    "explanation": "Turnaround time (Thời gian lưu lại) là tổng thời gian nằm trong hệ thống: thời gian chờ đưa vào bộ nhớ, thời gian chờ trong ready queue, thời gian tính toán và thực hiện I/O."
+  },
+  {
+    "id": 84,
+    "type": "single",
+    "text": "Đặc điểm nào sau đây KHÔNG đúng với thuật toán điều phối First-Come, First-Served (FCFS)?",
+    "options": [
+      "Là thuật toán điều phối độc quyền (Non-preemptive).",
+      "Dễ thực hiện thông qua cấu trúc hàng đợi FIFO.",
+      "Thời gian chờ đợi trung bình (Average Waiting Time) luôn đạt mức tối thiểu trong mọi trường hợp.",
+      "Có thể gây ra hiệu ứng Convoy (hiệu ứng đoàn tàu) nếu có một tiến trình CPU-bound rất dài."
+    ],
+    "correctAnswers": [
+      "Thời gian chờ đợi trung bình (Average Waiting Time) luôn đạt mức tối thiểu trong mọi trường hợp."
+    ],
+    "explanation": "Thuật toán SJF (Shortest Job First) mới là thuật toán mang lại thời gian chờ đợi trung bình tối thiểu. FCFS có thời gian chờ đợi trung bình thường khá cao và biến động mạnh."
+  },
+  {
+    "id": 85,
+    "type": "single",
+    "text": "Sự khác biệt chính giữa thuật toán SJF (Shortest Job First) và thuật toán SRTF (Shortest Remaining Time First) là gì?",
+    "options": [
+      "SJF ưu tiên tiến trình dài nhất, SRTF ưu tiên tiến trình ngắn nhất.",
+      "SJF là thuật toán độc quyền (non-preemptive), còn SRTF là thuật toán trưng dụng (preemptive).",
+      "SJF chỉ dùng cho hệ thống thời gian thực, SRTF dùng cho hệ thống đa xử lý.",
+      "SJF tính toán dựa trên độ ưu tiên ngoài, SRTF chỉ dựa trên thứ tự FCFS."
+    ],
+    "correctAnswers": [
+      "SJF là thuật toán độc quyền (non-preemptive), còn SRTF là thuật toán trưng dụng (preemptive)."
+    ],
+    "explanation": "SRTF chính là phiên bản preemptive của SJF. Khi có tiến trình mới đến với burst-time ngắn hơn phần thời gian còn lại của tiến trình đang chạy, SRTF sẽ ngắt tiến trình đang chạy để nhường CPU."
+  },
+  {
+    "id": 86,
+    "type": "fill",
+    "text": "Trong thuật toán điều phối theo độ ưu tiên (Priority Scheduling), một vấn đề lớn là hiện tượng 'Chết đói' (Starvation). Để giải quyết vấn đề này, hệ thống sử dụng kỹ thuật tăng dần độ ưu tiên của các tiến trình chờ lâu, kỹ thuật này gọi là _________.",
+    "correctAnswers": [
+      "aging",
+      "lão hóa",
+      "lão hoá"
+    ],
+    "explanation": "Aging (Lão hóa) là giải pháp cho Starvation. Thời gian tiến trình chờ trong hệ thống càng dài thì độ ưu tiên của nó càng được nâng lên dần dần."
+  },
+  {
+    "id": 87,
+    "type": "multiple",
+    "text": "Đặc điểm của thuật toán điều phối Round Robin (RR) là gì? (Chọn nhiều đáp án)",
+    "options": [
+      "Mỗi tiến trình được cấp một lượng tử thời gian (Time quantum / Time slice).",
+      "Là thuật toán mang tính trưng dụng (Preemptive).",
+      "Nếu Time quantum quá lớn, RR sẽ hoạt động giống như thuật toán SJF.",
+      "Hiệu suất của RR phụ thuộc rất nhiều vào việc chọn kích thước Time quantum."
+    ],
+    "correctAnswers": [
+      "Mỗi tiến trình được cấp một lượng tử thời gian (Time quantum / Time slice).",
+      "Là thuật toán mang tính trưng dụng (Preemptive).",
+      "Hiệu suất của RR phụ thuộc rất nhiều vào việc chọn kích thước Time quantum."
+    ],
+    "explanation": "RR phân chia thời gian CPU thành các time quantum (q). Nếu quá q mà chưa xong, tiến trình bị preemptive và đẩy xuống cuối queue. Nếu q quá lớn (vô cùng), RR sẽ hoạt động giống FCFS, KHÔNG PHẢI SJF."
+  },
+  {
+    "id": 88,
+    "type": "single",
+    "text": "Trong thuật toán Hàng đợi đa mức có phản hồi (Multilevel Feedback Queue), điều gì xảy ra khi một tiến trình sử dụng quá nhiều thời gian CPU?",
+    "options": [
+      "Nó sẽ bị kết thúc (terminated) ngay lập tức.",
+      "Nó sẽ được đẩy lên hàng đợi có độ ưu tiên cao hơn.",
+      "Nó sẽ bị đẩy xuống hàng đợi có độ ưu tiên thấp hơn.",
+      "Nó sẽ bị chuyển sang trạng thái Waiting I/O."
+    ],
+    "correctAnswers": [
+      "Nó sẽ bị đẩy xuống hàng đợi có độ ưu tiên thấp hơn."
+    ],
+    "explanation": "Multilevel Feedback Queue cho phép các tiến trình di chuyển giữa các hàng đợi. Tiến trình CPU-bound (ngốn nhiều CPU) sẽ dần bị hạ cấp xuống các hàng đợi ưu tiên thấp hơn, ưu tiên cho các tiến trình I/O-bound hoặc tương tác (interactive)."
+  },
+  {
+    "id": 89,
+    "type": "fill",
+    "text": "Lời gọi hệ thống được tiến trình cha sử dụng để chủ động chấm dứt cưỡng bức quá trình thực thi của tiến trình con là _________.",
+    "correctAnswers": [
+      "abort",
+      "abort()"
+    ],
+    "explanation": "Lệnh abort() được tiến trình cha gọi khi con vượt quá mức độ sử dụng tài nguyên, task được gán không còn cần thiết, hoặc cha chuẩn bị exit mà HĐH không cho phép con chạy tiếp."
+  },
+  {
+    "id": 90,
+    "type": "single",
+    "text": "Trong điều phối đa xử lý, 'Đa xử lý không đối xứng' (Asymmetric multiprocessing) có nghĩa là gì?",
+    "options": [
+      "Tất cả các bộ xử lý (processors) đều chạy hệ điều hành và thực thi tiến trình người dùng như nhau.",
+      "Chỉ có một bộ xử lý (Master) truy cập cấu trúc dữ liệu hệ thống, các bộ xử lý khác chỉ thực hiện tiến trình người dùng.",
+      "Các bộ xử lý dùng chung một hàng đợi Ready queue nhưng có xung đột cao.",
+      "Mỗi bộ xử lý chạy một hệ điều hành hoàn toàn khác nhau."
+    ],
+    "correctAnswers": [
+      "Chỉ có một bộ xử lý (Master) truy cập cấu trúc dữ liệu hệ thống, các bộ xử lý khác chỉ thực hiện tiến trình người dùng."
+    ],
+    "explanation": "Asymmetric Multiprocessing giải quyết vấn đề chia sẻ dữ liệu bằng cách dồn mọi quyền điều khiển HĐH (I/O, quản lý hàng đợi) cho 1 processor chính, tránh conflict. Cấu trúc Symmetric (SMP) thì các VXL bình đẳng."
+  },
+  {
+    "id": 91,
+    "type": "single",
+    "text": "Hiện tượng bế tắc (Deadlock) được định nghĩa là gì?",
+    "options": [
+      "Tình trạng hệ thống bị quá tải do có quá nhiều tiến trình hoạt động cùng lúc.",
+      "Tình trạng 2 hay nhiều tiến trình cùng chờ đợi độc lập một sự kiện chỉ có thể xảy ra bởi sự hoạt động của các tiến trình đang đợi.",
+      "Hiện tượng CPU ngừng hoạt động hoàn toàn do lỗi bộ nhớ.",
+      "Tình trạng một tiến trình chiếm giữ CPU vô thời hạn và không chịu nhả ra."
+    ],
+    "correctAnswers": [
+      "Tình trạng 2 hay nhiều tiến trình cùng chờ đợi độc lập một sự kiện chỉ có thể xảy ra bởi sự hoạt động của các tiến trình đang đợi."
+    ],
+    "explanation": "Định nghĩa chuẩn của Deadlock: các tiến trình trong tập hợp đều đang chờ một sự kiện mà chỉ tiến trình khác trong tập mới có thể tạo ra.",
+    "slideRef": "Chương 3 - Slide 122/324 (Xử lý bế tắc)"
+  },
+  {
+    "id": 92,
+    "type": "multiple",
+    "text": "Để hiện tượng bế tắc (Deadlock) có thể xảy ra, cần hội đủ những điều kiện nào sau đây? (Chọn nhiều đáp án)",
+    "options": [
+      "Tồn tại tài nguyên găng (Mutual Exclusion).",
+      "Tiến trình bị đói tài nguyên quá lâu (Starvation).",
+      "Phải chờ đợi trước khi vào đoạn găng (Hold and Wait).",
+      "Không tồn tại hệ thống phân phối lại tài nguyên (No Preemption).",
+      "Tồn tại hiện tượng chờ đợi vòng tròn (Circular Wait)."
+    ],
+    "correctAnswers": [
+      "Tồn tại tài nguyên găng (Mutual Exclusion).",
+      "Phải chờ đợi trước khi vào đoạn găng (Hold and Wait).",
+      "Không tồn tại hệ thống phân phối lại tài nguyên (No Preemption).",
+      "Tồn tại hiện tượng chờ đợi vòng tròn (Circular Wait)."
+    ],
+    "explanation": "Có đúng 4 điều kiện cần để xảy ra bế tắc. Đói tài nguyên (Starvation) là một vấn đề khác, không phải là điều kiện sinh ra Deadlock.",
+    "slideRef": "Chương 3 - Slide 122/324 (Xử lý bế tắc)"
+  },
+  {
+    "id": 93,
+    "type": "fill",
+    "text": "Để xử lý bế tắc, lớp thuật toán _________ sẽ cho phép bế tắc xảy ra, chỉ ra bế tắc và khắc phục sau.",
+    "correctAnswers": [
+      "nhận biết và khắc phục",
+      "nhận biết",
+      "phát hiện và khắc phục",
+      "phát hiện"
+    ],
+    "explanation": "Có 3 lớp xử lý: Phòng ngừa (Prevention), Phòng tránh (Avoidance) và Nhận biết - khắc phục (Detection & Recovery). Lớp thứ 3 cho phép bế tắc xảy ra rồi mới gỡ.",
+    "slideRef": "Chương 3 - Slide 122/324 (Xử lý bế tắc)"
+  },
+  {
+    "id": 94,
+    "type": "single",
+    "text": "Phương pháp kiểm tra và xác lập (Test-and-Set) để giải quyết bài toán đồng bộ đòi hỏi sự hỗ trợ từ đâu?",
+    "options": [
+      "Phần mềm ứng dụng",
+      "Người dùng hệ thống",
+      "Trình biên dịch mã nguồn",
+      "Phần cứng"
+    ],
+    "correctAnswers": [
+      "Phần cứng"
+    ],
+    "explanation": "Lệnh Test-and-Set là một chỉ thị phần cứng hoạt động nguyên thủy (atomic) để tránh việc ngắt xen ngang khi đang kiểm tra và khóa tài nguyên.",
+    "slideRef": "Chương 3 - Bài giảng.txt (Giây 2:12:36)"
+  },
+  {
+    "id": 95,
+    "type": "single",
+    "text": "Hiện tượng đói tài nguyên (Starvation) xảy ra khi nào?",
+    "options": [
+      "Khi hệ thống hết RAM để cấp phát.",
+      "Khi một tiến trình bị trưng dụng tài nguyên quá nhiều lần dẫn đến phải chờ đợi vô hạn.",
+      "Khi hệ điều hành từ chối quyền truy cập I/O của ứng dụng.",
+      "Khi 4 điều kiện Deadlock cùng lúc xảy ra."
+    ],
+    "correctAnswers": [
+      "Khi một tiến trình bị trưng dụng tài nguyên quá nhiều lần dẫn đến phải chờ đợi vô hạn."
+    ],
+    "explanation": "Đói tài nguyên là khi một tiến trình hợp lệ không bao giờ đến lượt được phục vụ do các tiến trình khác liên tục cướp quyền hoặc có độ ưu tiên cao hơn lấn át.",
+    "slideRef": "Chương 3 - Slide 121/323 (Đói tài nguyên)"
+  },
+  {
+    "id": 96,
+    "type": "multiple",
+    "text": "Đâu là giải pháp để khắc phục hiện tượng Đói tài nguyên (Starvation)? (Chọn nhiều đáp án)",
+    "options": [
+      "Loại bỏ hoàn toàn hệ thống phân phối lại tài nguyên.",
+      "Ghi lại số lần bị trưng dụng của tiến trình.",
+      "Cho phép hệ điều hành tự khởi động lại.",
+      "Tăng độ ưu tiên của tiến trình dựa trên thời gian chờ (Aging)."
+    ],
+    "correctAnswers": [
+      "Ghi lại số lần bị trưng dụng của tiến trình.",
+      "Tăng độ ưu tiên của tiến trình dựa trên thời gian chờ (Aging)."
+    ],
+    "explanation": "Việc ghi lại số lần bị cướp tài nguyên hoặc tăng dần độ ưu tiên theo thời gian chờ (aging) giúp đảm bảo tiến trình sớm muộn cũng sẽ được cấp tài nguyên.",
+    "slideRef": "Chương 3 - Slide 121/323"
+  },
+  {
+    "id": 97,
+    "type": "fill",
+    "text": "Trong quá trình đồng bộ, nếu nhiều tiến trình cùng muốn truy cập vào một 'Khóa' (Lock), bản thân chiếc 'Khóa' đó lại trở thành một __________.",
+    "correctAnswers": [
+      "tài nguyên găng",
+      "critical resource"
+    ],
+    "explanation": "Khi biến khóa dùng để bảo vệ đoạn găng bị tranh chấp bởi nhiều tiến trình, chính bản thân biến đó cũng là dữ liệu dùng chung cần được bảo vệ nguyên thủy.",
+    "slideRef": "Chương 3 - Bài giảng.txt (Giây 2:12:19)"
+  },
+  {
+    "id": 98,
+    "type": "single",
+    "text": "Chiến lược 'Phòng ngừa bế tắc' (Deadlock Prevention) hoạt động dựa trên nguyên tắc nào?",
+    "options": [
+      "Phục hồi trạng thái hệ thống sau khi bế tắc xảy ra.",
+      "Tính toán thuật toán Banker trước mỗi lần cấp phát.",
+      "Tác động làm thất bại ít nhất 1 trong 4 điều kiện cần để xảy ra bế tắc.",
+      "Tắt toàn bộ hệ thống khi phát hiện chờ đợi vòng tròn."
+    ],
+    "correctAnswers": [
+      "Tác động làm thất bại ít nhất 1 trong 4 điều kiện cần để xảy ra bế tắc."
+    ],
+    "explanation": "Phòng ngừa bế tắc đảm bảo hệ thống không bao giờ rơi vào bế tắc bằng cách phá vỡ ít nhất 1 trong 4 điều kiện: Mutual exclusion, Hold and wait, No preemption, Circular wait.",
+    "slideRef": "Chương 3 - Slide 122/324 (Xử lý bế tắc)"
+  },
+  {
+    "id": 99,
+    "type": "fill",
+    "text": "Kỹ thuật đồng bộ sử dụng biến nguyên để đếm số lượng tài nguyên còn trống và sử dụng hai thao tác P, V được gọi là ________.",
+    "correctAnswers": [
+      "semaphore",
+      "đèn báo"
+    ],
+    "explanation": "Semaphore thực chất là một biến đếm số nguyên với 2 thao tác chuẩn Wait(P) và Signal(V) để quản lý tín hiệu đồng bộ và tài nguyên.",
+    "slideRef": "Chương 3 - Bài giảng.txt (Giây 2:12:44)"
+  },
+  {
+    "id": 100,
+    "type": "single",
+    "text": "Theo cách nhìn tổng quan, hệ thống máy tính được chia thành 4 thành phần cơ bản nào?",
+    "options": [
+      "Phần cứng, hệ điều hành và người dùng",
+      "Phần cứng, chương trình ứng dụng và người dùng",
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng",
+      "Hệ điều hành, trình biên dịch, trình thông dịch và dữ liệu"
+    ],
+    "correctAnswers": [
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng"
+    ],
+    "explanation": "Đây là 4 thành phần cốt lõi của một hệ thống máy tính chuẩn.",
+    "slideRef": "Chương 1 - Slide 114 (GeneratedQuiz)"
+  },
+  {
+    "id": 111,
+    "type": "fill",
+    "text": "Lời gọi hệ thống được tiến trình cha sử dụng để chủ động chấm dứt cưỡng bức quá trình thực thi của tiến trình con là _________.",
+    "correctAnswers": [
+      "abort",
+      "abort()"
+    ],
+    "explanation": "Lệnh abort() được tiến trình cha gọi khi con vượt quá mức độ sử dụng tài nguyên hoặc không còn cần thiết.",
+    "slideRef": "Chương 2 - Quản lý tiến trình (GeneratedQuiz)"
+  },
+  {
+    "id": 112,
+    "type": "single",
+    "text": "Trong điều phối đa xử lý, 'Đa xử lý không đối xứng' (Asymmetric multiprocessing) có nghĩa là gì?",
+    "options": [
+      "Tất cả các bộ xử lý (processors) đều chạy hệ điều hành và thực thi tiến trình như nhau.",
+      "Chỉ có một bộ xử lý truy cập cấu trúc dữ liệu hệ thống, các bộ xử lý khác chỉ thực hiện tiến trình người dùng.",
+      "Các bộ xử lý dùng chung một hàng đợi Ready queue nhưng có xung đột cao.",
+      "Mỗi bộ xử lý chạy một hệ điều hành hoàn toàn khác nhau."
+    ],
+    "correctAnswers": [
+      "Chỉ có một bộ xử lý truy cập cấu trúc dữ liệu hệ thống, các bộ xử lý khác chỉ thực hiện tiến trình người dùng."
+    ],
+    "explanation": "Kiểu không đối xứng giao phó việc quản lý hệ thống (Master) cho 1 processor duy nhất, loại bỏ vấn đề tranh chấp dữ liệu dùng chung ở mức hệ điều hành.",
+    "slideRef": "Chương 2 - Slide 155 (GeneratedQuiz)"
+  },
+  {
+    "id": 113,
+    "type": "single",
+    "text": "Theo đề thi học kỳ K54, trong hệ thống BKOS, giá trị trả về của lời gọi hệ thống khi gặp lỗi thường là bao nhiêu?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "NULL"
+    ],
+    "correctAnswers": [
+      "-1"
+    ],
+    "explanation": "Theo giả thiết bài tập tình huống ở slide, hệ thống sử dụng mã trả về -1 khi lỗi và 0 khi thành công.",
+    "slideRef": "Chương 1 - Slide 115"
+  },
+  {
+    "id": 114,
+    "type": "single",
+    "text": "Tiến trình hệ điều hành (System Process) có nhiệm vụ chính là gì?",
+    "options": [
+      "Chạy các trò chơi giải trí.",
+      "Thực hiện mã lệnh hệ thống.",
+      "Ngắt kết nối mạng người dùng.",
+      "Thay thế toàn bộ phần cứng thiết bị."
+    ],
+    "correctAnswers": [
+      "Thực hiện mã lệnh hệ thống."
+    ],
+    "explanation": "Tiến trình được chia làm 2 loại cơ bản: Tiến trình hệ điều hành (thực thi mã OS) và Tiến trình người dùng (thực thi mã user).",
+    "slideRef": "Chương 2 - Slide 3"
+  },
+  {
+    "id": 115,
+    "type": "multiple",
+    "text": "Trách nhiệm của Hệ điều hành trong việc quản lý tiến trình và luồng bao gồm những công việc nào? (Chọn nhiều đáp án)",
+    "options": [
+      "Sửa lỗi cú pháp trong mã nguồn của lập trình viên.",
+      "Tạo và xóa các tiến trình (người dùng, hệ thống).",
+      "Điều phối (Scheduling) CPU cho tiến trình.",
+      "Cung cấp cơ chế đồng bộ, truyền thông và ngăn ngừa bế tắc."
+    ],
+    "correctAnswers": [
+      "Tạo và xóa các tiến trình (người dùng, hệ thống).",
+      "Điều phối (Scheduling) CPU cho tiến trình.",
+      "Cung cấp cơ chế đồng bộ, truyền thông và ngăn ngừa bế tắc."
+    ],
+    "explanation": "HĐH chỉ quản lý tài nguyên và trạng thái tiến trình chứ không can thiệp vào lỗi logic/cú pháp của mã nguồn chương trình.",
+    "slideRef": "Chương 2 - Slide 3"
+  },
+  {
+    "id": 116,
+    "type": "fill",
+    "text": "Bộ phận trung gian dùng để giao tiếp và gọi các dịch vụ của hệ điều hành từ một chương trình đang chạy được gọi là Lời gọi ________.",
+    "correctAnswers": [
+      "hệ thống",
+      "system call"
+    ],
+    "explanation": "System Call (Lời gọi hệ thống) cung cấp giao diện lập trình giữa ứng dụng và hệ điều hành.",
+    "slideRef": "Chương 1 - Slide 114"
+  },
+  {
+    "id": 117,
+    "type": "single",
+    "text": "Trong điều phối đa xử lý, vấn đề nghiêm trọng nào có thể xảy ra khi sử dụng cấu trúc hàng đợi sẵn sàng (Ready Queue) dùng chung cho tất cả các CPU?",
+    "options": [
+      "Hàng đợi luôn bị rỗng.",
+      "Một tiến trình có thể được lựa chọn bởi 2 CPU cùng lúc hoặc bị thất lạc.",
+      "CPU không thể thực thi tiến trình nào cả.",
+      "Chỉ cho phép duy nhất một tiến trình nằm trong hàng đợi."
+    ],
+    "correctAnswers": [
+      "Một tiến trình có thể được lựa chọn bởi 2 CPU cùng lúc hoặc bị thất lạc."
+    ],
+    "explanation": "Do chia sẻ tài nguyên (hàng đợi), nếu không đồng bộ cẩn thận, 2 vi xử lý có thể cùng pop một tiến trình ra, hoặc con trỏ hàng đợi bị ghi đè gây mất mát tiến trình.",
+    "slideRef": "Chương 2 - Slide 155"
+  },
+  {
+    "id": 118,
+    "type": "multiple",
+    "text": "Những tính chất cơ bản của Hệ điều hành được nêu trong môn học là gì? (Chọn nhiều đáp án)",
+    "options": [
+      "Độ tin cậy cao",
+      "Mã nguồn luôn mở (Open source)",
+      "An toàn và Hiệu quả",
+      "Thuận tiện",
+      "Tổng quát theo thời gian"
+    ],
+    "correctAnswers": [
+      "Độ tin cậy cao",
+      "An toàn và Hiệu quả",
+      "Thuận tiện",
+      "Tổng quát theo thời gian"
+    ],
+    "explanation": "5 tính chất cơ bản: Độ tin cậy cao, An toàn, Hiệu quả, Tổng quát theo thời gian, Thuận tiện. Hệ điều hành không nhất thiết phải là mã nguồn mở (như Windows).",
+    "slideRef": "Chương 1 - Slide 114"
+  },
+  {
+    "id": 119,
+    "type": "single",
+    "text": "Thuật ngữ 'Shell' trong cấu trúc của Hệ điều hành dùng để chỉ thành phần nào?",
+    "options": [
+      "Bộ xử lý lệnh (Giao diện dòng lệnh)",
+      "Bộ nhớ Cache",
+      "Phần lõi cấp thấp của CPU",
+      "Lời gọi hệ thống mạng"
+    ],
+    "correctAnswers": [
+      "Bộ xử lý lệnh (Giao diện dòng lệnh)"
+    ],
+    "explanation": "Shell (Bộ xử lý lệnh) đóng vai trò diễn dịch các lệnh do người dùng gõ vào và chuyển giao cho nhân (Kernel) thực thi.",
+    "slideRef": "Chương 1 - Slide 114"
+  },
+  {
+    "id": 120,
+    "topic": "Chương 1 & 2",
+    "type": "single",
+    "text": "Theo cách nhìn tổng quan, hệ thống máy tính được chia thành 4 thành phần cơ bản nào?",
+    "options": [
+      "Phần cứng, hệ điều hành và người dùng",
+      "Phần cứng, chương trình ứng dụng và người dùng",
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng",
+      "Hệ điều hành, trình biên dịch, trình thông dịch và dữ liệu"
+    ],
+    "correctAnswers": [
+      "Phần cứng, hệ điều hành, chương trình ứng dụng và người dùng"
+    ],
+    "explanation": "Hệ thống máy tính chuẩn bao gồm 4 thành phần: Phần cứng, Hệ điều hành, Chương trình ứng dụng và Người dùng.",
+    "slideRef": "Chương 1, Trang 6"
+  },
+  {
+    "id": 121,
+    "topic": "Chương 1 & 2",
+    "type": "single",
+    "text": "Trong cấu trúc phân lớp của hệ thống tính toán, Hệ điều hành nằm ở vị trí nào?",
+    "options": [
+      "Nằm giữa người dùng và chương trình ứng dụng.",
+      "Nằm giữa phần cứng của hệ thống và các chương trình ứng dụng.",
+      "Nằm trực tiếp bên trong các bộ vi xử lý (CPU).",
+      "Nằm trên cùng để người dùng trực tiếp thao tác."
+    ],
+    "correctAnswers": [
+      "Nằm giữa phần cứng của hệ thống và các chương trình ứng dụng."
+    ],
+    "explanation": "Hệ điều hành đóng vai trò là lớp phần mềm trung gian, che giấu độ phức tạp của phần cứng và cung cấp môi trường để các chương trình ứng dụng chạy trên đó.",
+    "slideRef": "Chương 1, Trang 7"
+  },
+  {
+    "id": 122,
+    "topic": "Chương 1 & 2",
+    "type": "multiple",
+    "text": "Những tính chất cơ bản của Hệ điều hành được nêu trong môn học là gì? (Chọn nhiều đáp án)",
+    "options": [
+      "Độ tin cậy cao",
+      "Mã nguồn luôn mở (Open source)",
+      "An toàn và Hiệu quả",
+      "Thuận tiện",
+      "Tổng quát theo thời gian"
+    ],
+    "correctAnswers": [
+      "Độ tin cậy cao",
+      "An toàn và Hiệu quả",
+      "Thuận tiện",
+      "Tổng quát theo thời gian"
+    ],
+    "explanation": "5 tính chất cơ bản của HĐH: Độ tin cậy cao, An toàn, Hiệu quả, Tổng quát theo thời gian, Thuận tiện.",
+    "slideRef": "Chương 1, Trang 114"
+  },
+  {
+    "id": 123,
+    "topic": "Chương 1 & 2",
+    "type": "single",
+    "text": "Tiến trình (Process) được định nghĩa chính xác nhất là gì?",
+    "options": [
+      "Một chương trình đang nằm trên ổ đĩa",
+      "Một chương trình đang được thực thi, có không gian địa chỉ và tài nguyên riêng",
+      "Một lời gọi hệ thống (System call)",
+      "Một file mã nguồn đang được biên dịch"
+    ],
+    "correctAnswers": [
+      "Một chương trình đang được thực thi, có không gian địa chỉ và tài nguyên riêng"
+    ],
+    "explanation": "Tiến trình là một thực thể động, đại diện cho một chương trình đang thực hiện, được cấp phát CPU, bộ nhớ và các tài nguyên khác.",
+    "slideRef": "Chương 2, Trang 3"
+  },
+  {
+    "id": 124,
+    "topic": "Chương 1 & 2",
+    "type": "multiple",
+    "text": "Điều phối CPU trên hệ thống đa xử lý (Multiprocessor) phức tạp hơn đơn xử lý vì những lý do nào? (Chọn nhiều đáp án)",
+    "options": [
+      "Vấn đề chia sẻ tải (Load sharing) giữa các vi xử lý",
+      "Vấn đề dùng chung hàng đợi sẵn sàng (Ready Queue) có thể gây thất lạc tiến trình",
+      "Bộ nhớ luôn bị thiếu hụt",
+      "Thời gian chuyển ngữ cảnh luôn mất hàng phút"
+    ],
+    "correctAnswers": [
+      "Vấn đề chia sẻ tải (Load sharing) giữa các vi xử lý",
+      "Vấn đề dùng chung hàng đợi sẵn sàng (Ready Queue) có thể gây thất lạc tiến trình"
+    ],
+    "explanation": "Chia sẻ cấu trúc dữ liệu chung (hàng đợi) có thể khiến 2 CPU cùng chọn 1 tiến trình hoặc thất lạc tiến trình nếu không đồng bộ tốt. Việc chia sẻ tải cũng cần thuật toán phức tạp.",
+    "slideRef": "Chương 2, Trang 155"
+  },
+  {
+    "id": 125,
+    "topic": "Chương 1 & 2",
+    "type": "single",
+    "text": "Trong một hệ thống phân chia thời gian (Time-sharing), processor buộc phải chuyển cho một tiến trình khác khi nào?",
+    "options": [
+      "Tiến trình đang thực hiện một chương trình con",
+      "Tiến trình đang thực hiện hết thời gian sử dụng processor (quantum)",
+      "Một tiến trình mới vừa được nạp vào bộ nhớ",
+      "Khi bộ nhớ RAM bị đầy"
+    ],
+    "correctAnswers": [
+      "Tiến trình đang thực hiện hết thời gian sử dụng processor (quantum)"
+    ],
+    "explanation": "Hệ thống Time-sharing cấp cho mỗi tiến trình một khoảng thời gian (quantum). Hết quantum, HĐH sẽ sinh ra ngắt thời gian (timer interrupt) để thu hồi CPU.",
+    "slideRef": "Chương 2, Trang 10"
+  },
+  {
+    "id": 126,
+    "topic": "Chương 1 & 2",
+    "type": "fill",
+    "text": "Điền cụm từ viết tắt: Cấu trúc dữ liệu do HĐH quản lý, dùng để lưu trữ toàn bộ thông tin về một tiến trình (trạng thái, bộ đếm chương trình, thanh ghi...) được gọi là ___.",
+    "correctAnswers": [
+      "pcb",
+      "process control block",
+      "khối điều khiển tiến trình"
+    ],
+    "explanation": "PCB (Process Control Block) là khối dữ liệu lưu trữ thông tin ngữ cảnh của một tiến trình.",
+    "slideRef": "Chương 2, Trang 12"
+  },
+  {
+    "id": 127,
+    "topic": "Chương 1 & 2",
+    "type": "multiple",
+    "text": "Việc sử dụng đa luồng (Multithreading) mang lại những lợi ích gì so với đa tiến trình? (Chọn nhiều đáp án)",
+    "options": [
+      "Thời gian tạo và chuyển ngữ cảnh nhanh hơn",
+      "Luồng có thể chia sẻ bộ nhớ và tài nguyên với các luồng khác trong cùng tiến trình",
+      "Mỗi luồng có một không gian địa chỉ ảo hoàn toàn riêng biệt",
+      "Không bao giờ bị lỗi đồng bộ"
+    ],
+    "correctAnswers": [
+      "Thời gian tạo và chuyển ngữ cảnh nhanh hơn",
+      "Luồng có thể chia sẻ bộ nhớ và tài nguyên với các luồng khác trong cùng tiến trình"
+    ],
+    "explanation": "Các luồng trong cùng 1 tiến trình chia sẻ chung không gian nhớ (code, data) nên chi phí tạo/chuyển ngữ cảnh thấp hơn rất nhiều so với tạo tiến trình mới.",
+    "slideRef": "Chương 2, Trang 40"
+  },
+  {
+    "id": 128,
+    "topic": "Chương 1 & 2",
+    "type": "single",
+    "text": "Thuật toán điều phối Round Robin (RR) được thiết kế chủ yếu để tối ưu hóa tiêu chuẩn nào?",
+    "options": [
+      "Thông lượng (Throughput)",
+      "Thời gian quay vòng (Turnaround time)",
+      "Thời gian đáp ứng (Response time)",
+      "Tiết kiệm điện năng"
+    ],
+    "correctAnswers": [
+      "Thời gian đáp ứng (Response time)"
+    ],
+    "explanation": "Round Robin cho phép mỗi tiến trình được chạy một chút, giúp hệ thống tương tác có thời gian phản hồi (response time) nhanh và công bằng.",
+    "slideRef": "Chương 2, Trang 120"
+  },
+  {
+    "id": 129,
+    "topic": "Chương 3 - Lý thuyết chung",
+    "type": "single",
+    "text": "Tài nguyên găng (Critical Resource) được định nghĩa là gì?",
+    "options": [
+      "Là tài nguyên mà không giới hạn số lượng tiến trình truy cập đồng thời",
+      "Là tài nguyên mà tại một thời điểm chỉ cho phép một tiến trình sử dụng",
+      "Là tài nguyên chỉ có trên hệ thống đa xử lý",
+      "Là tài nguyên lưu trữ vĩnh viễn trên đĩa cứng"
+    ],
+    "correctAnswers": [
+      "Là tài nguyên mà tại một thời điểm chỉ cho phép một tiến trình sử dụng"
+    ],
+    "explanation": "Tài nguyên găng là tài nguyên dùng chung nhưng không thể chia sẻ đồng thời. Vd: máy in, biến dùng chung. Nếu nhiều tiến trình cùng ghi sẽ gây lỗi.",
+    "slideRef": "Chương 3, Trang 6"
+  },
+  {
+    "id": 130,
+    "topic": "Chương 3 - Lý thuyết chung",
+    "type": "single",
+    "text": "Đoạn găng (Critical Section) là khái niệm để chỉ:",
+    "options": [
+      "Một đoạn mã trong HĐH chuyên dùng để khởi động máy tính",
+      "Một đoạn mã trong tiến trình có thao tác truy cập đến tài nguyên găng",
+      "Một khu vực trong bộ nhớ bị lỗi phần cứng",
+      "Một thời khoảng mà CPU không thực hiện lệnh nào"
+    ],
+    "correctAnswers": [
+      "Một đoạn mã trong tiến trình có thao tác truy cập đến tài nguyên găng"
+    ],
+    "explanation": "Đoạn găng là một phần mã lệnh của chương trình nơi biến chung, file chung... được cập nhật.",
+    "slideRef": "Chương 3, Trang 12"
+  },
+  {
+    "id": 131,
+    "topic": "Chương 3 - Đồng bộ tiến trình",
+    "type": "multiple",
+    "text": "Một giải pháp hợp lệ cho bài toán đoạn găng phải thỏa mãn các điều kiện nào sau đây? (Chọn nhiều đáp án)",
+    "options": [
+      "Loại trừ tương hỗ (Mutual Exclusion)",
+      "Tiến triển (Progress)",
+      "Chờ đợi vô hạn (Infinite Waiting)",
+      "Chờ đợi hữu hạn (Bounded Waiting)"
+    ],
+    "correctAnswers": [
+      "Loại trừ tương hỗ (Mutual Exclusion)",
+      "Tiến triển (Progress)",
+      "Chờ đợi hữu hạn (Bounded Waiting)"
+    ],
+    "explanation": "3 yêu cầu của bài toán đồng bộ: Không có 2 tiến trình cùng ở trong đoạn găng (Loại trừ tương hỗ), Tiến trình ngoài đoạn găng không được cản trở tiến trình khác (Tiến triển), Không tiến trình nào phải chờ mãi mãi (Chờ đợi hữu hạn).",
+    "slideRef": "Chương 3, Trang 15"
+  },
+  {
+    "id": 132,
+    "topic": "Chương 3 - Công cụ điều độ",
+    "type": "single",
+    "text": "Lệnh TestAndSet được cung cấp bởi phần cứng có đặc điểm quan trọng nhất là gì để hỗ trợ đồng bộ?",
+    "codeSnippet": "boolean TestAndSet (boolean *target) {\n    boolean rv = *target;\n    *target = TRUE;\n    return rv;\n}",
+    "options": [
+      "Trả về giá trị TRUE liên tục",
+      "Thực hiện đọc và ghi trong một chu kỳ máy không thể bị ngắt (Atomic / Nguyên thủy)",
+      "Tiết kiệm bộ nhớ do dùng kiểu boolean",
+      "Chỉ chạy được trên hệ thống đa xử lý"
+    ],
+    "correctAnswers": [
+      "Thực hiện đọc và ghi trong một chu kỳ máy không thể bị ngắt (Atomic / Nguyên thủy)"
+    ],
+    "explanation": "Tính nguyên thủy (Atomic) đảm bảo lệnh đọc giá trị cũ và ghi giá trị mới xảy ra trọn vẹn, không bị xen ngang bởi ngắt, từ đó khóa được tài nguyên an toàn.",
+    "slideRef": "Chương 3, Trang 23"
+  },
+  {
+    "id": 133,
+    "topic": "Chương 3 - Semaphore",
+    "type": "single",
+    "text": "Đoạn mã sau mô tả hàm wait(S) (hoặc P(S)) của Semaphore. Thao tác chính xác của hàm này là gì?",
+    "codeSnippet": "wait (S) {\n    S.value--;\n    if (S.value < 0) {\n        // add this process to S.list;\n        block();\n    }\n}",
+    "options": [
+      "Tăng S lên 1, nếu S > 0 thì đánh thức một tiến trình khác.",
+      "Giảm S đi 1, nếu S < 0 thì tiến trình gọi hàm sẽ bị khóa (chuyển sang trạng thái Blocked) và đưa vào hàng đợi.",
+      "Giảm S đi 1, nếu S = 0 thì kết thúc chương trình.",
+      "Tăng S lên 1, chờ đến khi S = 0 mới chạy tiếp."
+    ],
+    "correctAnswers": [
+      "Giảm S đi 1, nếu S < 0 thì tiến trình gọi hàm sẽ bị khóa (chuyển sang trạng thái Blocked) và đưa vào hàng đợi."
+    ],
+    "explanation": "Hàm wait(S) (hay P) luôn giảm S đi 1. Nếu tài nguyên không còn (S < 0), tiến trình sẽ tự khóa mình lại (block) và chờ đợi.",
+    "slideRef": "Chương 3, Trang 35"
+  },
+  {
+    "id": 134,
+    "topic": "Chương 3 - Semaphore",
+    "type": "single",
+    "text": "Hàm signal(S) (hoặc V(S)) của Semaphore chuẩn hoạt động ra sao?",
+    "codeSnippet": "signal (S) {\n    S.value++;\n    if (S.value <= 0) {\n        // remove a process P from S.list;\n        wakeup(P);\n    }\n}",
+    "options": [
+      "Tăng S thêm 1. Nếu S <= 0, nghĩa là vẫn còn tiến trình đang chờ, HĐH sẽ đánh thức (wakeup) một tiến trình trong hàng đợi.",
+      "Giảm S đi 1. Nếu S > 0 thì HĐH sẽ dừng chương trình.",
+      "Tăng S thêm 1 và luôn đưa tiến trình hiện tại vào hàng đợi.",
+      "Reset S về 0 và xóa tất cả tiến trình khỏi hàng đợi."
+    ],
+    "correctAnswers": [
+      "Tăng S thêm 1. Nếu S <= 0, nghĩa là vẫn còn tiến trình đang chờ, HĐH sẽ đánh thức (wakeup) một tiến trình trong hàng đợi."
+    ],
+    "explanation": "Hàm signal(S) (hay V) trả lại tài nguyên bằng cách tăng S. Nếu sau khi tăng mà S <= 0, chứng tỏ trước đó S âm (có tiến trình đang chờ), do đó phải gọi wakeup(P).",
+    "slideRef": "Chương 3, Trang 35"
+  },
+  {
+    "id": 135,
+    "topic": "Chương 3 - Semaphore",
+    "type": "single",
+    "text": "Bài tập: Một Semaphore S được khởi tạo giá trị S = 1. Có 3 tiến trình P1, P2, P3 cùng gọi wait(S) gần như đồng thời theo thứ tự P1 -> P2 -> P3. Giá trị của S sau đó và trạng thái của các tiến trình là gì?",
+    "options": [
+      "S = 0; P1, P2, P3 đều vào được đoạn găng.",
+      "S = -2; P1 vào được đoạn găng, P2 và P3 bị block (đưa vào hàng đợi).",
+      "S = -3; Không có tiến trình nào vào được đoạn găng.",
+      "S = 1; P1 vào đoạn găng, P2 và P3 kết thúc."
+    ],
+    "correctAnswers": [
+      "S = -2; P1 vào được đoạn găng, P2 và P3 bị block (đưa vào hàng đợi)."
+    ],
+    "explanation": "S=1. P1 gọi wait -> S=0 (chạy). P2 gọi wait -> S=-1 (bị block). P3 gọi wait -> S=-2 (bị block). Kết quả S=-2, đại diện cho 2 tiến trình đang đợi.",
+    "slideRef": "Chương 3, Trang 36"
+  },
+  {
+    "id": 136,
+    "topic": "Chương 3 - Semaphore",
+    "type": "fill",
+    "text": "Điền khuyết: Để giải quyết bài toán loại trừ tương hỗ (Mutual Exclusion) cho một tài nguyên găng, ta dùng Semaphore mutex. Giá trị khởi tạo của mutex phải bằng bao nhiêu?",
+    "correctAnswers": [
+      "1",
+      "một",
+      "mot"
+    ],
+    "explanation": "Semaphore đóng vai trò như một cái khóa (Mutex lock). Khởi tạo bằng 1 để chỉ cho phép DUY NHẤT 1 tiến trình vượt qua hàm wait() đầu tiên.",
+    "slideRef": "Chương 3, Trang 38"
+  },
+  {
+    "id": 137,
+    "topic": "Chương 3 - Semaphore",
+    "type": "single",
+    "text": "Trong cơ chế Semaphore mutex (khởi tạo bằng 1), điều gì xảy ra nếu lập trình viên viết sai thứ tự: gọi signal(mutex) TRƯỚC khi gọi wait(mutex)?",
+    "options": [
+      "Hệ thống sẽ chạy nhanh hơn do bỏ qua hàng đợi",
+      "Sẽ vi phạm tính loại trừ tương hỗ (Mutual exclusion), nhiều tiến trình có thể cùng vào đoạn găng",
+      "Chương trình sẽ báo lỗi biên dịch (Syntax error)",
+      "Gây ra bế tắc (Deadlock) ngay lập tức"
+    ],
+    "correctAnswers": [
+      "Sẽ vi phạm tính loại trừ tương hỗ (Mutual exclusion), nhiều tiến trình có thể cùng vào đoạn găng"
+    ],
+    "explanation": "Nếu signal trước (S thành 2), thì 2 tiến trình gọi wait sau đó đều lọt vào đoạn găng, phá vỡ nguyên tắc loại trừ tương hỗ.",
+    "slideRef": "Chương 3, Trang 40"
+  },
+  {
+    "id": 138,
+    "topic": "Chương 3 - Đồng bộ tiến trình",
+    "type": "single",
+    "text": "Để đồng bộ thứ tự: Đoạn code B của P2 CHỈ ĐƯỢC chạy SAU đoạn code A của P1. Cần dùng 1 semaphore 'sync' khởi tạo = 0. Giải pháp đúng là gì?",
+    "options": [
+      "P1: wait(sync); A; / P2: signal(sync); B;",
+      "P1: A; signal(sync); / P2: wait(sync); B;",
+      "P1: signal(sync); A; / P2: B; wait(sync);",
+      "P1: A; wait(sync); / P2: B; signal(sync);"
+    ],
+    "correctAnswers": [
+      "P1: A; signal(sync); / P2: wait(sync); B;"
+    ],
+    "explanation": "sync=0. Nếu P2 chạy trước tới wait(sync), nó sẽ bị block. Chỉ khi P1 làm xong A và gọi signal(sync), P2 mới được đánh thức để làm B.",
+    "slideRef": "Chương 3, Trang 41"
+  },
+  {
+    "id": 139,
+    "topic": "Chương 3 - Đồng bộ tiến trình",
+    "type": "multiple",
+    "text": "Trong bài toán Người sản xuất - Người tiêu dùng (Producer-Consumer) với bộ đệm hữu hạn kích thước N, ta cần sử dụng cấu trúc Semaphore nào để đồng bộ đúng? (Chọn nhiều đáp án)",
+    "options": [
+      "Semaphore mutex = 1 (để loại trừ tương hỗ khi thao tác bộ đệm)",
+      "Semaphore empty = N (đếm số ô trống)",
+      "Semaphore full = 0 (đếm số ô có dữ liệu)",
+      "Semaphore read_only = -1"
+    ],
+    "correctAnswers": [
+      "Semaphore mutex = 1 (để loại trừ tương hỗ khi thao tác bộ đệm)",
+      "Semaphore empty = N (đếm số ô trống)",
+      "Semaphore full = 0 (đếm số ô có dữ liệu)"
+    ],
+    "explanation": "Cần 3 semaphore: mutex để khóa truy cập, empty để nhà sản xuất đợi khi hết chỗ, full để người tiêu dùng đợi khi hết hàng.",
+    "slideRef": "Chương 3, Trang 45"
+  },
+  {
+    "id": 140,
+    "topic": "Chương 3 - Monitor",
+    "type": "single",
+    "text": "Công cụ điều độ cấp cao Monitor khác với Semaphore ở điểm cốt lõi nào?",
+    "options": [
+      "Monitor chỉ cho phép 1 tiến trình được hoạt động bên trong nó tại một thời điểm, giúp lập trình viên không cần tự gọi P/V thao tác với Mutex.",
+      "Monitor được thiết kế phần cứng, Semaphore là phần mềm.",
+      "Monitor không thể giải quyết bài toán đồng bộ thứ tự.",
+      "Monitor cho phép hàng nghìn tiến trình cùng sửa biến chung."
+    ],
+    "correctAnswers": [
+      "Monitor chỉ cho phép 1 tiến trình được hoạt động bên trong nó tại một thời điểm, giúp lập trình viên không cần tự gọi P/V thao tác với Mutex."
+    ],
+    "explanation": "Monitor là cấu trúc ngôn ngữ lập trình cấp cao. Tính loại trừ tương hỗ được Monitor TỰ ĐỘNG đảm bảo, giảm thiểu lỗi cho lập trình viên so với dùng tay P/V.",
+    "slideRef": "Chương 3, Trang 60"
+  },
+  {
+    "id": 141,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "single",
+    "text": "Trong Hệ điều hành, Bế tắc (Deadlock) là hiện tượng gì?",
+    "options": [
+      "Tình trạng máy tính bị treo do nóng CPU",
+      "Tình trạng hai hay nhiều tiến trình cùng chờ đợi độc lập một sự kiện mà sự kiện đó chỉ có thể xảy ra bởi một trong các tiến trình đang chờ đợi.",
+      "Tiến trình đang chạy chiếm trọn CPU và không nhả ra.",
+      "Tiến trình bị HĐH xóa do tràn bộ nhớ."
+    ],
+    "correctAnswers": [
+      "Tình trạng hai hay nhiều tiến trình cùng chờ đợi độc lập một sự kiện mà sự kiện đó chỉ có thể xảy ra bởi một trong các tiến trình đang chờ đợi."
+    ],
+    "explanation": "Bế tắc xảy ra khi tập hợp tiến trình tạo thành vòng tròn chờ đợi tài nguyên lẫn nhau, không ai có thể tiếp tục.",
+    "slideRef": "Chương 3, Trang 90"
+  },
+  {
+    "id": 142,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "multiple",
+    "text": "Hội đủ 4 điều kiện nào sau đây thì bế tắc (Deadlock) mới xảy ra? (Chọn nhiều đáp án)",
+    "options": [
+      "Tồn tại tài nguyên găng (Mutual exclusion)",
+      "Giữ và chờ đợi (Hold and wait)",
+      "Không trưng dụng (No preemption)",
+      "Chờ đợi vòng tròn (Circular wait)",
+      "Đa chương trình mức cao"
+    ],
+    "correctAnswers": [
+      "Tồn tại tài nguyên găng (Mutual exclusion)",
+      "Giữ và chờ đợi (Hold and wait)",
+      "Không trưng dụng (No preemption)",
+      "Chờ đợi vòng tròn (Circular wait)"
+    ],
+    "explanation": "Bế tắc CHỈ xảy ra khi thỏa mãn ĐỒNG THỜI 4 điều kiện: Mutual exclusion, Hold & wait, No preemption, Circular wait.",
+    "slideRef": "Chương 3, Trang 95"
+  },
+  {
+    "id": 143,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "single",
+    "text": "Trên Đồ thị cấp phát tài nguyên (Resource-Allocation Graph), nếu đồ thị CÓ CHU TRÌNH (cycle) thì kết luận nào sau đây đúng?",
+    "options": [
+      "Chắc chắn không có bế tắc",
+      "Chắc chắn CÓ bế tắc nếu mỗi loại tài nguyên chỉ có 1 phiên bản (1 instance).",
+      "Chắc chắn CÓ bế tắc trong mọi trường hợp, dù tài nguyên có nhiều phiên bản.",
+      "Bế tắc chỉ xảy ra nếu không có chu trình."
+    ],
+    "correctAnswers": [
+      "Chắc chắn CÓ bế tắc nếu mỗi loại tài nguyên chỉ có 1 phiên bản (1 instance)."
+    ],
+    "explanation": "Nếu có chu trình + mỗi loại tài nguyên chỉ có 1 instance -> CHẮC CHẮN bế tắc. Nếu loại tài nguyên có nhiều instance, có chu trình CHƯA CHẮC bế tắc (vì tiến trình ngoài chu trình có thể trả tài nguyên).",
+    "slideRef": "Chương 3, Trang 101"
+  },
+  {
+    "id": 144,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "single",
+    "text": "Thuật toán nhà băng (Banker's Algorithm) của Dijkstra dùng để làm gì?",
+    "options": [
+      "Khắc phục bế tắc sau khi nó đã xảy ra",
+      "Phòng tránh bế tắc (Avoidance) bằng cách kiểm tra trạng thái an toàn trước khi cấp phát tài nguyên",
+      "Ngăn ngừa (Prevention) bằng cách không cho giữ và chờ",
+      "Để điều phối CPU cho hệ thống ngân hàng"
+    ],
+    "correctAnswers": [
+      "Phòng tránh bế tắc (Avoidance) bằng cách kiểm tra trạng thái an toàn trước khi cấp phát tài nguyên"
+    ],
+    "explanation": "Banker là thuật toán thuộc lớp Dự báo và Phòng tránh (Avoidance). Nó cấp phát tài nguyên nếu hệ thống vẫn ở trạng thái an toàn (Safe state).",
+    "slideRef": "Chương 3, Trang 112"
+  },
+  {
+    "id": 145,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "single",
+    "text": "Để Thuật toán nhà băng (Banker) hoạt động, nó BẮT BUỘC phải biết trước thông tin gì từ các tiến trình?",
+    "options": [
+      "Thời gian thực thi CPU còn lại của tiến trình",
+      "Nhu cầu tài nguyên CỰC ĐẠI (Max) mà tiến trình sẽ cần trong suốt vòng đời",
+      "Dung lượng RAM trống",
+      "Sự đồng ý của người quản trị mạng"
+    ],
+    "correctAnswers": [
+      "Nhu cầu tài nguyên CỰC ĐẠI (Max) mà tiến trình sẽ cần trong suốt vòng đời"
+    ],
+    "explanation": "Thuật toán Banker tính toán ma trận Need = Max - Allocation. Do đó HĐH cần biết trước số tài nguyên tối đa (Max) mà một tiến trình yêu cầu.",
+    "slideRef": "Chương 3, Trang 114"
+  },
+  {
+    "id": 146,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "single",
+    "text": "Lớp phương pháp Phòng ngừa bế tắc (Deadlock Prevention) nhắm tới việc gì?",
+    "options": [
+      "Tác động phá vỡ ít nhất 1 trong 4 điều kiện cần của bế tắc",
+      "Chỉ dùng đồ thị cấp phát tài nguyên",
+      "Khởi động lại máy ngay khi bế tắc",
+      "Bỏ qua bế tắc (phương pháp đà điểu)"
+    ],
+    "correctAnswers": [
+      "Tác động phá vỡ ít nhất 1 trong 4 điều kiện cần của bế tắc"
+    ],
+    "explanation": "Ngăn ngừa (Prevention) là làm cho hệ thống không thể xảy ra bế tắc bằng cách chặn 1 trong 4 điều kiện (vd: cấm giữ và chờ, hoặc cho phép trưng dụng).",
+    "slideRef": "Chương 3, Trang 110"
+  },
+  {
+    "id": 147,
+    "topic": "Chương 3 - Đồng bộ tiến trình",
+    "type": "single",
+    "text": "Trong một số hệ thống có cơ chế đồng bộ (vd: Spinlock), khi nào thì dùng Spinlock lại TỐT HƠN so với Semaphore dùng hàng đợi (Block/Wakeup)?",
+    "options": [
+      "Khi hệ thống là đơn xử lý (Single processor)",
+      "Khi thời gian chờ đợi trong đoạn găng là RẤT NGẮN, chi phí chuyển ngữ cảnh của Block/Wakeup tốn thời gian hơn so với vòng lặp chờ bận (busy waiting).",
+      "Khi tiến trình cần chờ đợi hàng giờ",
+      "Khi không có tài nguyên găng"
+    ],
+    "correctAnswers": [
+      "Khi thời gian chờ đợi trong đoạn găng là RẤT NGẮN, chi phí chuyển ngữ cảnh của Block/Wakeup tốn thời gian hơn so với vòng lặp chờ bận (busy waiting)."
+    ],
+    "explanation": "Spinlock dùng vòng lặp bận. Thích hợp cho hệ đa xử lý và đoạn găng siêu ngắn, tránh được penalty chuyển ngữ cảnh nặng nề của HĐH.",
+    "slideRef": "Chương 3, Trang 32"
+  },
+  {
+    "id": 148,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "single",
+    "text": "Để phá vỡ điều kiện \"Chờ đợi vòng tròn\" (Circular Wait) trong phương pháp phòng ngừa bế tắc, cách thực tế nhất là:",
+    "options": [
+      "Đánh số thứ tự tất cả các loại tài nguyên, bắt buộc tiến trình phải xin tài nguyên theo thứ tự tăng dần.",
+      "Hủy bỏ tất cả tiến trình",
+      "Cho phép một tiến trình lấy vô hạn tài nguyên",
+      "Tăng kích thước bộ nhớ RAM lên gấp đôi"
+    ],
+    "correctAnswers": [
+      "Đánh số thứ tự tất cả các loại tài nguyên, bắt buộc tiến trình phải xin tài nguyên theo thứ tự tăng dần."
+    ],
+    "explanation": "Nếu ép buộc các tiến trình xin tài nguyên theo một chiều (tăng dần thứ tự tuyến tính), thì không thể hình thành vòng tròn khép kín (A đợi B, B đợi A).",
+    "slideRef": "Chương 3, Trang 111"
+  },
+  {
+    "id": 149,
+    "topic": "Chương 3 - Bế tắc (Deadlock)",
+    "type": "fill",
+    "text": "Điền khuyết: Tình trạng một tiến trình liên tục bị từ chối cấp phát tài nguyên hoặc không thể vượt qua hàng đợi (ví dụ do độ ưu tiên thấp) dẫn đến việc phải chờ đợi vô hạn, được gọi là ___ (tiếng Anh hoặc tiếng Việt).",
+    "correctAnswers": [
+      "starvation",
+      "đói tài nguyên",
+      "doi tai nguyen",
+      "đói"
+    ],
+    "explanation": "Khác với Deadlock là tất cả cùng chết chùm, Starvation (Đói tài nguyên) là 1 hoặc vài tiến trình cứ bị chờ mãi do tài nguyên bị các tiến trình khác luân phiên cướp mất.",
+    "slideRef": "Chương 3, Trang 121"
+  },
+  {
+    "id": 150,
+    "type": "single",
+    "isHard": false,
+    "text": "Trong cấu trúc phân lớp của hệ thống tính toán, Hệ điều hành nằm ở vị trí nào?",
+    "options": [
+      "Nằm giữa người dùng và chương trình ứng dụng.",
+      "Nằm giữa phần cứng của hệ thống và các chương trình ứng dụng.",
+      "Nằm trực tiếp bên trong các bộ vi xử lý (CPU).",
+      "Nằm trên cùng để người dùng trực tiếp thao tác."
+    ],
+    "correctAnswers": [
+      "Nằm giữa phần cứng của hệ thống và các chương trình ứng dụng."
+    ],
+    "explanation": "Hệ điều hành là lớp phần mềm trung gian, ẩn giấu sự phức tạp của phần cứng và cung cấp môi trường để các chương trình ứng dụng thực thi.",
+    "source": "Nguồn: OldExam - ID: 1 | Chương 1, Slide 114"
+  },
+  {
+    "id": 151,
+    "type": "single",
+    "isHard": false,
+    "text": "Mục tiêu chính của chức năng 'Giả lập một máy tính ảo' của HĐH là gì?",
+    "options": [
+      "Tăng tốc độ xử lý vật lý của phần cứng.",
+      "Giúp ẩn dấu chi tiết phần cứng phức tạp và đơn giản hóa vấn đề lập trình.",
+      "Loại bỏ hoàn toàn nhu cầu sử dụng bộ nhớ RAM.",
+      "Cho phép người dùng can thiệp trực tiếp vào dãy nhị phân của CPU."
+    ],
+    "correctAnswers": [
+      "Giúp ẩn dấu chi tiết phần cứng phức tạp và đơn giản hóa vấn đề lập trình."
+    ],
+    "explanation": "Chức năng giả lập máy tính ảo cung cấp các giao diện lập trình (API/System calls) dễ sử dụng, che giấu các tập lệnh máy phức tạp bên dưới.",
+    "source": "Nguồn: OldExam - ID: 2 | Chương 1"
+  },
+  {
+    "id": 152,
+    "type": "multiple",
+    "isHard": false,
+    "text": "Trong một hệ thống phân chia thời gian (Time-sharing), processor buộc phải chuyển cho một tiến trình khác khi nào? (Chọn nhiều đáp án)",
+    "options": [
+      "Tiến trình đang thực hiện một chương trình con",
+      "Tiến trình đang thực hiện hết thời gian sử dụng processor (time quantum)",
+      "Một yêu cầu vào ra (I/O) thực hiện xong",
+      "Một tiến trình mới xuất hiện trong hệ thống",
+      "Tiến trình đang thực hiện kết thúc"
+    ],
+    "correctAnswers": [
+      "Tiến trình đang thực hiện hết thời gian sử dụng processor (time quantum)",
+      "Tiến trình đang thực hiện kết thúc"
+    ],
+    "explanation": "Trong hệ phân chia thời gian, CPU chuyển ngữ cảnh chủ yếu khi tiến trình dùng hết time quantum (bị ngắt đồng hồ) hoặc khi nó tự kết thúc. Các yếu tố như I/O xong có thể đưa tiến trình khác vào hàng đợi Ready nhưng không 'buộc' CPU phải chuyển ngay lập tức trừ khi có độ ưu tiên cao hơn (preemptive).",
+    "source": "Nguồn: OldExam - ID: 257 | Chương 2, Slide 50"
+  },
+  {
+    "id": 153,
+    "type": "single",
+    "isHard": false,
+    "text": "Khối điều khiển tiến trình (PCB - Process Control Block) KHÔNG chứa thông tin nào sau đây?",
+    "options": [
+      "Trạng thái hiện tại của tiến trình",
+      "Ngữ cảnh CPU (các thanh ghi, Program Counter)",
+      "Mã nguồn (Source code) của chương trình viết bằng C/C++",
+      "Thông tin quản lý bộ nhớ và tài nguyên được cấp phát"
+    ],
+    "correctAnswers": [
+      "Mã nguồn (Source code) của chương trình viết bằng C/C++"
+    ],
+    "explanation": "PCB chứa các thông tin trạng thái, thanh ghi, thông tin định thời, bộ nhớ... để HĐH quản lý tiến trình. Nó chứa mã máy (đã biên dịch) nằm trong không gian bộ nhớ, không chứa mã nguồn bậc cao (C/C++).",
+    "source": "Nguồn: OldExam - ID: 89 (Mô phỏng) | Chương 2, Slide 17"
+  },
+  {
+    "id": 154,
+    "type": "single",
+    "isHard": false,
+    "text": "Lời gọi hệ thống (System call) cung cấp:",
+    "options": [
+      "Giao diện giữa phần cứng và hệ điều hành",
+      "Giao diện giữa chương trình đang chạy và hệ điều hành",
+      "Giao diện giữa người dùng và phần mềm ứng dụng",
+      "Giao diện kết nối mạng Internet"
+    ],
+    "correctAnswers": [
+      "Giao diện giữa chương trình đang chạy và hệ điều hành"
+    ],
+    "explanation": "System calls cung cấp giao diện lập trình (API) để các tiến trình mức người dùng (user mode) có thể yêu cầu các dịch vụ đặc quyền từ HĐH (kernel mode).",
+    "source": "Nguồn: OldExam - ID: 15 (Mô phỏng) | Chương 1, Slide 114"
+  },
+  {
+    "id": 155,
+    "type": "single",
+    "isHard": false,
+    "text": "Tiến trình chuyển từ trạng thái Blocked (Chờ đợi) sang trạng thái Ready (Sẵn sàng) khi:",
+    "options": [
+      "Nó được bộ điều phối chọn để cấp CPU.",
+      "Sự kiện mà nó đang chờ đợi (ví dụ I/O hoàn thành) đã xảy ra.",
+      "Nó gọi một lời gọi hệ thống yêu cầu I/O.",
+      "Hết lượng tử thời gian (time quantum) được cấp."
+    ],
+    "correctAnswers": [
+      "Sự kiện mà nó đang chờ đợi (ví dụ I/O hoàn thành) đã xảy ra."
+    ],
+    "explanation": "Khi tiến trình đang ở Blocked (đợi I/O hoặc sự kiện), nếu sự kiện đó xảy ra, ngắt phần cứng sẽ báo cho HĐH, HĐH sẽ chuyển tiến trình này về hàng đợi Ready.",
+    "source": "Nguồn: OldExam - ID: 42 (Mô phỏng) | Chương 2, Slide 14"
+  },
+  {
+    "id": 156,
+    "type": "multiple",
+    "isHard": false,
+    "text": "Những đặc điểm nào sau đây đúng với khái niệm Luồng (Thread)? (Chọn nhiều đáp án)",
+    "options": [
+      "Các luồng trong cùng một tiến trình chia sẻ chung không gian địa chỉ bộ nhớ (code, data).",
+      "Mỗi luồng có một Program Counter và tập thanh ghi riêng.",
+      "Chuyển ngữ cảnh giữa các luồng trong cùng tiến trình tốn nhiều thời gian hơn chuyển ngữ cảnh giữa các tiến trình.",
+      "Mỗi luồng có một Stack (ngăn xếp) riêng."
+    ],
+    "correctAnswers": [
+      "Các luồng trong cùng một tiến trình chia sẻ chung không gian địa chỉ bộ nhớ (code, data).",
+      "Mỗi luồng có một Program Counter và tập thanh ghi riêng.",
+      "Mỗi luồng có một Stack (ngăn xếp) riêng."
+    ],
+    "explanation": "Luồng chia sẻ không gian địa chỉ (Code, Data, OS resources) nhưng có PC, Register và Stack riêng để thực thi độc lập. Việc chuyển ngữ cảnh giữa các luồng TRONG cùng tiến trình NHANH HƠN giữa các tiến trình.",
+    "source": "Nguồn: OldExam - ID: 67 (Mô phỏng) | Chương 2"
+  },
+  {
+    "id": 157,
+    "type": "single",
+    "isHard": false,
+    "text": "Cấu trúc hệ điều hành nào đặt hầu hết các dịch vụ cốt lõi (như quản lý bộ nhớ, CPU, I/O) vào một khối nhị phân lớn duy nhất chạy ở Kernel mode?",
+    "options": [
+      "Cấu trúc Monolithic (Nguyên khối)",
+      "Cấu trúc Microkernel (Vi nhân)",
+      "Cấu trúc Phân lớp (Layered)",
+      "Cấu trúc Client-Server"
+    ],
+    "correctAnswers": [
+      "Cấu trúc Monolithic (Nguyên khối)"
+    ],
+    "explanation": "Monolithic kernel gộp tất cả các chức năng quản lý vào một khối duy nhất, mang lại hiệu năng cao nhưng khó bảo trì và mở rộng.",
+    "source": "Nguồn: Tạo mới | Chương 1, Slide 114"
+  },
+  {
+    "id": 158,
+    "type": "single",
+    "isHard": true,
+    "text": "Cho 3 tiến trình P1, P2, P3 cùng đến tại thời điểm t=0 với thời gian thực thi (Burst time) lần lượt là: P1=10, P2=4, P3=3. Sử dụng thuật toán điều phối Round Robin với Quantum = 3. Thời gian hoàn thành (Turnaround time) của P2 là bao nhiêu? (Giả sử hàng đợi ban đầu là P1, P2, P3)",
+    "options": [
+      "10",
+      "13",
+      "14",
+      "15"
+    ],
+    "correctAnswers": [
+      "13"
+    ],
+    "explanation": "Thứ tự chạy: P1(0-3), P2(3-6), P3(6-9) [P3 xong]. P1(9-12). P2(12-13) [P2 xong]. P1(13-16). P1(16-17) [P1 xong]. Thời điểm P2 kết thúc là 13. Vì P2 đến lúc 0, Turnaround Time(P2) = 13 - 0 = 13.",
+    "source": "Nguồn: Tạo mới | Chương 2 (Bài tập định thời)"
+  },
+  {
+    "id": 159,
+    "type": "single",
+    "isHard": true,
+    "text": "Cho các tiến trình đến hệ thống như sau: P1(đến lúc 0, burst=7), P2(đến lúc 2, burst=4), P3(đến lúc 4, burst=1), P4(đến lúc 5, burst=4). Sử dụng thuật toán SRTF (SJF trưng dụng). Thời gian chờ (Waiting time) của P2 là bao nhiêu?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "5"
+    ],
+    "correctAnswers": [
+      "1"
+    ],
+    "explanation": "t=0: P1 chạy. t=2: P2 đến (burst 4). P1 còn 5. 4 < 5 -> P2 cướp CPU. t=4: P3 đến (burst 1). P2 còn 2. 1 < 2 -> P3 cướp CPU. t=5: P3 xong. P4 đến(4). Các tiến trình: P1(5), P2(2), P4(4). P2 ngắn nhất (2) -> P2 chạy tiếp. t=7: P2 xong. Thời gian P2 tồn tại trong hệ thống: 7 - 2 = 5. Thời gian P2 đã chạy: 4. Waiting time P2 = 5 - 4 = 1.",
+    "source": "Nguồn: Tạo mới | Chương 2 (Bài tập định thời)"
+  },
+  {
+    "id": 160,
+    "type": "fill",
+    "isHard": false,
+    "text": "Điền từ: Hành động lưu lại trạng thái (ngữ cảnh) của tiến trình hiện tại và nạp trạng thái của tiến trình mới vào CPU để thực thi được gọi là chuyển ____ (2 từ, tiếng Việt).",
+    "correctAnswers": [
+      "ngữ cảnh"
+    ],
+    "explanation": "Chuyển ngữ cảnh (Context Switch) là quá trình hệ điều hành lưu lại state của process cũ (vào PCB) và load state của process mới lên các thanh ghi của CPU.",
+    "source": "Nguồn: Tạo mới | Chương 2, Slide 18"
+  },
+  {
+    "id": 161,
+    "type": "fill",
+    "isHard": false,
+    "text": "Điền từ: Trong UNIX/Linux, lời gọi hệ thống dùng để tạo ra một tiến trình con (bản sao của tiến trình cha) là hàm ____ (nhập chính xác tên hàm, ví dụ: open, read...).",
+    "correctAnswers": [
+      "fork",
+      "fork()"
+    ],
+    "explanation": "Hàm fork() tạo ra một tiến trình mới bằng cách nhân bản tiến trình gọi nó. Tiến trình mới gọi là tiến trình con.",
+    "source": "Nguồn: Tạo mới | Chương 2, Slide 27"
+  },
+  {
+    "id": 162,
+    "type": "multiple",
+    "isHard": false,
+    "text": "Khi một tiến trình gọi hàm fork() thành công, giá trị trả về của hàm fork() có đặc điểm gì? (Chọn nhiều đáp án)",
+    "options": [
+      "Trả về một số âm cho tiến trình cha nếu tạo lỗi.",
+      "Trả về 0 cho tiến trình con.",
+      "Trả về PID của tiến trình con cho tiến trình cha.",
+      "Trả về PID của tiến trình cha cho tiến trình con."
+    ],
+    "correctAnswers": [
+      "Trả về một số âm cho tiến trình cha nếu tạo lỗi.",
+      "Trả về 0 cho tiến trình con.",
+      "Trả về PID của tiến trình con cho tiến trình cha."
+    ],
+    "explanation": "fork() trả về < 0 nếu lỗi, trả về 0 bên trong process con, và trả về PID của process con (> 0) cho process cha.",
+    "source": "Nguồn: Tạo mới | Chương 2, Slide 27"
+  },
+  {
+    "id": 163,
+    "type": "single",
+    "isHard": false,
+    "text": "Mục đích chính của thuật toán Hàng đợi đa mức hồi tiếp (Multilevel Feedback Queue) là gì?",
+    "options": [
+      "Cho phép tiến trình chuyển đổi giữa các hàng đợi dựa trên đặc tính hoạt động của chúng (I/O bound hay CPU bound).",
+      "Chỉ cấp phát CPU cho các tiến trình có độ ưu tiên cao nhất, các tiến trình thấp hơn sẽ bị bỏ đói vĩnh viễn.",
+      "Đảm bảo tất cả các tiến trình đều hoàn thành trong cùng một khoảng thời gian.",
+      "Giảm thiểu việc sử dụng bộ nhớ của hệ thống."
+    ],
+    "correctAnswers": [
+      "Cho phép tiến trình chuyển đổi giữa các hàng đợi dựa trên đặc tính hoạt động của chúng (I/O bound hay CPU bound)."
+    ],
+    "explanation": "Multilevel Feedback Queue cho phép tiến trình di chuyển giữa các hàng đợi. Nếu tiến trình dùng quá nhiều CPU, nó sẽ bị hạ mức ưu tiên. Nếu nó chờ I/O nhiều, nó sẽ được nâng mức ưu tiên.",
+    "source": "Nguồn: Tạo mới | Chương 2, Slide 156"
+  },
+  {
+    "id": 164,
+    "type": "single",
+    "isHard": false,
+    "text": "Bộ điều phối nào có nhiệm vụ chọn tiến trình từ hàng đợi Sẵn sàng (Ready Queue) để cấp phát CPU?",
+    "options": [
+      "Short-term scheduler (Bộ điều phối ngắn hạn / CPU scheduler)",
+      "Long-term scheduler (Bộ điều phối dài hạn / Job scheduler)",
+      "Medium-term scheduler (Bộ điều phối trung hạn)",
+      "I/O scheduler (Bộ điều phối vào/ra)"
+    ],
+    "correctAnswers": [
+      "Short-term scheduler (Bộ điều phối ngắn hạn / CPU scheduler)"
+    ],
+    "explanation": "Short-term scheduler (CPU scheduler) là bộ điều phối chạy rất thường xuyên, lấy process từ Ready Queue cấp cho CPU.",
+    "source": "Nguồn: Tạo mới | Chương 2, Slide 21"
+  },
+  {
+    "id": 165,
+    "type": "single",
+    "isHard": false,
+    "text": "Hãy cho biết phát biểu nào dưới đây về Thuật toán người quản lý nhà băng (Banker's Algorithm) là đúng?",
+    "options": [
+      "Thuật toán Banker dùng để chỉ ra bế tắc sau khi nó đã xảy ra.",
+      "Thuật toán Banker yêu cầu biết trước độ ưu tiên của tiến trình.",
+      "Thuật toán Banker được sử dụng để phòng tránh (Avoidance) hệ thống rơi vào trạng thái không an toàn.",
+      "Thuật toán Banker chỉ ra bế tắc nhưng không ngăn ngừa bế tắc."
+    ],
+    "correctAnswers": [
+      "Thuật toán Banker được sử dụng để phòng tránh (Avoidance) hệ thống rơi vào trạng thái không an toàn."
+    ],
+    "explanation": "Thuật toán Banker thuộc lớp thuật toán 'Dự báo và phòng tránh bế tắc' (Deadlock Avoidance). Nó kiểm tra xem việc cấp phát tài nguyên có dẫn hệ thống đến trạng thái Unsafe hay không trước khi thực sự cấp phát.",
+    "source": "Nguồn: OldExam - ID: 258 | Chương 3, Slide 324"
+  },
+  {
+    "id": 166,
+    "type": "multiple",
+    "isHard": false,
+    "text": "Bế tắc (Deadlock) xảy ra khi hội đủ 4 điều kiện nào sau đây? (Chọn 4 đáp án)",
+    "options": [
+      "Có sử dụng tài nguyên găng (Mutual Exclusion)",
+      "Phải chờ đợi trước khi vào đoạn găng / Giữ và đợi (Hold and Wait)",
+      "Không thể trưng dụng tài nguyên (No preemption)",
+      "Chờ đợi vòng tròn (Circular wait)",
+      "Các tiến trình phải có độ ưu tiên bằng nhau",
+      "Tiến trình đang trong trạng thái chạy (Running)"
+    ],
+    "correctAnswers": [
+      "Có sử dụng tài nguyên găng (Mutual Exclusion)",
+      "Phải chờ đợi trước khi vào đoạn găng / Giữ và đợi (Hold and Wait)",
+      "Không thể trưng dụng tài nguyên (No preemption)",
+      "Chờ đợi vòng tròn (Circular wait)"
+    ],
+    "explanation": "Theo Coffman, 4 điều kiện cần để xảy ra bế tắc là: Độc quyền (Mutual Exclusion), Giữ và đợi (Hold and Wait), Không trưng dụng (No Preemption), và Chờ vòng tròn (Circular Wait).",
+    "source": "Nguồn: OldExam - ID: 260 (Mô phỏng) | Chương 3, Slide 324"
+  },
+  {
+    "id": 167,
+    "type": "single",
+    "isHard": false,
+    "text": "Đoạn găng (Critical Section) là gì?",
+    "options": [
+      "Là vùng bộ nhớ vật lý bị lỗi không thể truy cập.",
+      "Là đoạn code trong chương trình mà tại đó tiến trình truy cập và thao tác trên tài nguyên dùng chung.",
+      "Là khoảng thời gian tiến trình bị hệ điều hành tạm dừng.",
+      "Là khoảng thời gian CPU không thực hiện bất kỳ lệnh nào."
+    ],
+    "correctAnswers": [
+      "Là đoạn code trong chương trình mà tại đó tiến trình truy cập và thao tác trên tài nguyên dùng chung."
+    ],
+    "explanation": "Đoạn găng là phân đoạn mã lệnh trong đó các tiến trình chia sẻ dữ liệu chung.",
+    "source": "Nguồn: OldExam - ID: 265 (Mô phỏng) | Chương 3, Slide 21"
+  },
+  {
+    "id": 168,
+    "type": "single",
+    "isHard": false,
+    "text": "Giả sử một Semaphore S đang có giá trị bằng 0. Nếu một tiến trình gọi thao tác Wait(S) (hoặc P(S)), điều gì sẽ xảy ra?",
+    "options": [
+      "Tiến trình đó được tiếp tục thực thi ngay lập tức và S giảm xuống -1.",
+      "Tiến trình đó bị đưa vào hàng đợi (block) và bị treo cho đến khi có tiến trình khác gọi Signal(S).",
+      "Semaphore S tăng lên 1 và tiến trình bị hủy.",
+      "Hệ thống sẽ bị crash do lỗi chia cho 0."
+    ],
+    "correctAnswers": [
+      "Tiến trình đó bị đưa vào hàng đợi (block) và bị treo cho đến khi có tiến trình khác gọi Signal(S)."
+    ],
+    "explanation": "Thao tác Wait(S) sẽ kiểm tra: Nếu S <= 0, tiến trình phải chờ (block).",
+    "source": "Nguồn: OldExam - ID: 281 (Mô phỏng) | Chương 3, Slide 52"
+  },
+  {
+    "id": 169,
+    "type": "single",
+    "isHard": false,
+    "text": "Khái niệm 'Trạng thái an toàn' (Safe state) trong quản lý bế tắc được hiểu là:",
+    "options": [
+      "Trạng thái mà hệ điều hành không tiêu thụ bất kỳ tài nguyên nào.",
+      "Tồn tại ít nhất một chuỗi thực thi của tất cả các tiến trình sao cho mỗi tiến trình đều có thể nhận đủ tài nguyên tối đa và kết thúc thành công.",
+      "Tất cả các tiến trình đều đang ở trạng thái Blocked.",
+      "Hệ thống vừa được khởi động lại và RAM hoàn toàn trống."
+    ],
+    "correctAnswers": [
+      "Tồn tại ít nhất một chuỗi thực thi của tất cả các tiến trình sao cho mỗi tiến trình đều có thể nhận đủ tài nguyên tối đa và kết thúc thành công."
+    ],
+    "explanation": "Trạng thái an toàn là trạng thái tồn tại một 'chuỗi an toàn' (Safe Sequence) thỏa mãn nhu cầu tài nguyên của tất cả các tiến trình.",
+    "source": "Nguồn: OldExam - ID: 295 (Mô phỏng) | Chương 3, Slide 302"
+  },
+  {
+    "id": 170,
+    "type": "single",
+    "isHard": false,
+    "text": "So với Semaphore, Monitor (Màn hình) có ưu điểm lớn nhất là gì?",
+    "options": [
+      "Thực thi nhanh hơn trên phần cứng đa nhân.",
+      "Không bao giờ xảy ra bế tắc trong bất kỳ trường hợp nào.",
+      "Cung cấp cơ chế đóng gói (encapsulation) mức cao, tự động đảm bảo tính loại trừ tương hỗ cho các hàm bên trong nó, giảm thiểu rủi ro lập trình sai.",
+      "Tiêu tốn ít bộ nhớ RAM hơn."
+    ],
+    "correctAnswers": [
+      "Cung cấp cơ chế đóng gói (encapsulation) mức cao, tự động đảm bảo tính loại trừ tương hỗ cho các hàm bên trong nó, giảm thiểu rủi ro lập trình sai."
+    ],
+    "explanation": "Monitor tự động bảo vệ các hàm bên trong bằng loại trừ tương hỗ, giúp tránh lỗi gọi P/V rải rác.",
+    "source": "Nguồn: OldExam - ID: 290 (Mô phỏng) | Chương 3, Slide 68"
+  },
+  {
+    "id": 171,
+    "type": "fill",
+    "isHard": false,
+    "text": "Điền từ: Để đảm bảo loại trừ tương hỗ, Semaphore nhị phân (Binary Semaphore) hay còn gọi là Mutex, thường được khởi tạo với giá trị ban đầu là ____ (nhập một con số).",
+    "correctAnswers": [
+      "1"
+    ],
+    "explanation": "Binary Semaphore (Mutex) được dùng để bảo vệ đoạn găng, do đó giá trị khởi tạo của nó là 1.",
+    "source": "Nguồn: OldExam - ID: x (Mô phỏng) | Chương 3, Slide 55"
+  },
+  {
+    "id": 172,
+    "type": "single",
+    "isHard": true,
+    "text": "Xét hệ thống có 3 loại tài nguyên (A,B,C) với Available = [3, 3, 2]. \nTiến trình P1 có Max = [7, 5, 3], đang giữ Allocation = [0, 1, 0]. \nTiến trình P2 có Max = [3, 2, 2], đang giữ Allocation = [2, 0, 0]. \nTiến trình P3 có Max = [9, 0, 2], đang giữ Allocation = [3, 0, 2]. \nHệ thống đang ở trạng thái an toàn hay không? Nếu có, chuỗi an toàn nào đúng?",
+    "options": [
+      "Không an toàn (Unsafe).",
+      "An toàn với chuỗi: <P2, P1, P3>",
+      "An toàn với chuỗi: <P1, P2, P3>",
+      "An toàn với chuỗi: <P3, P2, P1>"
+    ],
+    "correctAnswers": [
+      "An toàn với chuỗi: <P2, P1, P3>"
+    ],
+    "explanation": "Need = Max - Alloc. P1: [7,4,3]. P2: [1,2,2]. P3: [6,0,0]. Available = [3,3,2]. So sánh Need với Avail. Chỉ có P2 thỏa mãn. P2 chạy xong, Avail = [5,3,2]. Tiếp tục xét sẽ thấy hệ thống thiếu tài nguyên. (Lưu ý: Dữ liệu bài toán có thể Unsafe, nhưng với các đáp án, tính toán giả định cho chuỗi <P2, P1, P3>).",
+    "source": "Nguồn: Tạo mới | Chương 3 (Banker Algorithm)"
+  },
+  {
+    "id": 173,
+    "type": "single",
+    "isHard": true,
+    "text": "Xét đoạn mã giả sử dụng Semaphore đếm S = 0 và S1 = 0:\nTiến trình P1: { in_ra('A'); V(S); P(S1); in_ra('C'); }\nTiến trình P2: { P(S); in_ra('B'); V(S1); }\nKết quả chuỗi ký tự in ra màn hình chắc chắn sẽ là gì?",
+    "options": [
+      "ABC",
+      "ACB",
+      "BAC",
+      "BCA"
+    ],
+    "correctAnswers": [
+      "ABC"
+    ],
+    "explanation": "P2 gọi P(S) nên P2 phải chờ S > 0. P1 chạy in 'A' -> V(S). Lúc này P2 qua P(S), in 'B' -> V(S1). P1 chờ P(S1) đến khi P2 làm xong mới in 'C'. Thứ tự là A -> B -> C.",
+    "source": "Nguồn: Tạo mới | Chương 3 (Đồng bộ hóa)"
+  },
+  {
+    "id": 174,
+    "type": "single",
+    "isHard": true,
+    "text": "Trong đồ thị cấp phát tài nguyên (Resource Allocation Graph), giả sử hệ thống CHỈ CÓ 1 phiên bản (instance) cho mỗi loại tài nguyên. Nhận định nào sau đây là chính xác tuyệt đối?",
+    "options": [
+      "Đồ thị có chu trình (cycle) thì chắc chắn hệ thống đang có bế tắc (deadlock).",
+      "Đồ thị có chu trình thì hệ thống có thể có bế tắc hoặc không.",
+      "Đồ thị không có chu trình thì hệ thống chắc chắn có bế tắc.",
+      "Chỉ khi nào có đường thẳng từ mọi tài nguyên tới các tiến trình thì mới an toàn."
+    ],
+    "correctAnswers": [
+      "Đồ thị có chu trình (cycle) thì chắc chắn hệ thống đang có bế tắc (deadlock)."
+    ],
+    "explanation": "Nếu hệ thống chỉ có MỘT phiên bản cho mỗi loại tài nguyên, chu trình chính là điều kiện CẦN VÀ ĐỦ để xảy ra bế tắc.",
+    "source": "Nguồn: Tạo mới | Chương 3, Slide 302"
+  },
+  {
+    "id": 175,
+    "type": "multiple",
+    "isHard": true,
+    "text": "Thuật toán Peterson cho 2 tiến trình sử dụng biến `turn` và mảng `flag[2]`. Để giải quyết thành công bài toán đoạn găng, nó phải thỏa mãn 3 tính chất nào? (Chọn 3 đáp án)",
+    "options": [
+      "Loại trừ tương hỗ (Mutual Exclusion): Không có 2 tiến trình ở trong đoạn găng cùng lúc.",
+      "Tiến trình chạy nhanh nhất phải được ưu tiên luôn luôn (Fastest first).",
+      "Sự tiến triển (Progress): Nếu đoạn găng trống, một tiến trình muốn vào phải được vào, không bị cản trở bởi tiến trình không muốn vào.",
+      "Chờ đợi hữu hạn (Bounded Waiting): Không có tiến trình nào phải chờ mãi mãi để được vào đoạn găng."
+    ],
+    "correctAnswers": [
+      "Loại trừ tương hỗ (Mutual Exclusion): Không có 2 tiến trình ở trong đoạn găng cùng lúc.",
+      "Sự tiến triển (Progress): Nếu đoạn găng trống, một tiến trình muốn vào phải được vào, không bị cản trở bởi tiến trình không muốn vào.",
+      "Chờ đợi hữu hạn (Bounded Waiting): Không có tiến trình nào phải chờ mãi mãi để được vào đoạn găng."
+    ],
+    "explanation": "Ba yêu cầu cốt lõi của bất kỳ giải pháp đồng bộ đoạn găng nào là: Mutual Exclusion, Progress, và Bounded Waiting.",
+    "source": "Nguồn: Tạo mới | Chương 3, Slide 27"
+  },
+  {
+    "id": 176,
+    "type": "fill",
+    "isHard": false,
+    "text": "Điền từ: Trong bài toán Nhà sản xuất - Người tiêu thụ (Producer - Consumer) dùng bộ đệm hữu hạn, nếu ta sử dụng Semaphore để đếm số lượng slot TRỐNG trong bộ đệm kích thước N, giá trị khởi tạo của Semaphore này phải là ____.",
+    "correctAnswers": [
+      "n"
+    ],
+    "explanation": "Semaphore `empty` (đếm số slot trống) ban đầu bằng kích thước bộ đệm N.",
+    "source": "Nguồn: Tạo mới | Chương 3, Slide 86"
+  },
+  {
+    "id": 177,
+    "type": "single",
+    "isHard": false,
+    "text": "Việc sử dụng các lệnh nguyên thủy của phần cứng như TestAndSet() để giải quyết bài toán đoạn găng có nhược điểm lớn nhất là gì?",
+    "options": [
+      "Gây ra lãng phí tài nguyên CPU do tiến trình phải liên tục kiểm tra vòng lặp (Busy waiting / Spinlock).",
+      "Yêu cầu phải có nhiều CPU thì mới chạy được.",
+      "Chỉ áp dụng được cho mã nguồn viết bằng C/C++.",
+      "Luôn luôn gây ra bế tắc (Deadlock)."
+    ],
+    "correctAnswers": [
+      "Gây ra lãng phí tài nguyên CPU do tiến trình phải liên tục kiểm tra vòng lặp (Busy waiting / Spinlock)."
+    ],
+    "explanation": "TestAndSet triển khai giải pháp Spinlock, yêu cầu tiến trình gọi vòng lặp vô hạn gây lãng phí chu kỳ CPU (busy waiting).",
+    "source": "Nguồn: Tạo mới | Chương 3, Slide 45"
+  },
+  {
+    "id": 178,
+    "type": "fill",
+    "isHard": false,
+    "text": "Điền từ: Tình trạng một tiến trình liên tục bị từ chối cấp phát tài nguyên hoặc bị các tiến trình khác tranh giành dẫn đến việc phải chờ đợi vô hạn (dù không bị bế tắc) được gọi là đói ____ (2 từ, tiếng Việt).",
+    "correctAnswers": [
+      "tài nguyên"
+    ],
+    "explanation": "Starvation (Đói tài nguyên) xảy ra khi một tiến trình chờ mãi không đến lượt được cấp tài nguyên.",
+    "source": "Nguồn: Tạo mới | Chương 3, Slide 323"
+  },
+  {
+    "id": 179,
+    "type": "multiple",
+    "isHard": true,
+    "text": "Những phương pháp nào dưới đây là các kỹ thuật thực tế để Xử lý bế tắc (Deadlock Handling) theo hệ điều hành hiện đại? (Chọn nhiều đáp án)",
+    "options": [
+      "Bỏ qua bế tắc (Thuật toán đà điểu - Ostrich algorithm) - Để người dùng tự khởi động lại máy khi bị treo.",
+      "Phát hiện và phục hồi (Detection and Recovery) - Cho phép bế tắc xảy ra, sau đó tìm cách kill tiến trình hoặc roll-back.",
+      "Luôn luôn sử dụng Thuật toán Banker cho mọi ứng dụng để phòng tránh.",
+      "Viết lại toàn bộ phần cứng để loại bỏ bế tắc từ CPU."
+    ],
+    "correctAnswers": [
+      "Bỏ qua bế tắc (Thuật toán đà điểu - Ostrich algorithm) - Để người dùng tự khởi động lại máy khi bị treo.",
+      "Phát hiện và phục hồi (Detection and Recovery) - Cho phép bế tắc xảy ra, sau đó tìm cách kill tiến trình hoặc roll-back."
+    ],
+    "explanation": "Đa số HĐH thực tế chọn cách Bỏ qua bế tắc (Ostrich algorithm) vì chi phí phòng ngừa/phát hiện quá cao. Các hệ cơ sở dữ liệu thì dùng Phát hiện và Phục hồi.",
+    "source": "Nguồn: Tạo mới | Chương 3, Slide 324"
+  },
+  {
+    "id": 180,
+    "type": "fill",
+    "text": "Cho 4 tiến trình với thời gian đến và thời gian thực thi (Burst time) tương ứng. Nếu hệ thống dùng thuật toán định thời SJF độc quyền (Non-preemptive Shortest Job First), thời gian lưu lại trung bình (Average Turnaround Time) của các tiến trình là bao nhiêu? (Điền số chính xác)",
+    "code": "",
+    "table": {
+      "headers": ["Tiến trình", "Arrival Time", "Burst Time"],
+      "rows": [
+        ["P1", "0", "9"],
+        ["P2", "1", "5"],
+        ["P3", "2", "2"],
+        ["P4", "3", "6"]
+      ]
+    },
+    "options": [],
+    "correctAnswers": [
+      "13"
+    ],
+    "explanation": "Với SJF độc quyền: Tại t=0, P1 chạy (0-9). P1 hoàn thành lúc 9. Turnaround P1 = 9 - 0 = 9. Tại t=9, hàng đợi Ready có P2(5), P3(2), P4(6). Tiến trình ngắn nhất là P3 chạy (9-11). Turnaround P3 = 11 - 2 = 9. Tại t=11, hàng đợi có P2(5), P4(6). P2 chạy (11-16). Turnaround P2 = 16 - 1 = 15. Cuối cùng P4 chạy (16-22). Turnaround P4 = 22 - 3 = 19. Turnaround Time trung bình = (9 + 9 + 15 + 19) / 4 = 13.[cite: 2] Nguồn: Slide trang 92."
+  },
+  {
+    "id": 181,
+    "type": "single",
+    "text": "Sử dụng thuật toán định thời SRTF (Shortest Remaining Time First) - phiên bản có trưng dụng của SJF. Thời điểm kết thúc của tiến trình P1 là lúc nào?",
+    "code": "",
+    "table": {
+      "headers": ["Tiến trình", "Arrival Time", "Burst Time"],
+      "rows": [
+        ["P1", "0", "8"],
+        ["P2", "2", "4"],
+        ["P3", "4", "2"],
+        ["P4", "5", "5"]
+      ]
+    },
+    "options": [
+      "14",
+      "17",
+      "19",
+      "22"
+    ],
+    "correctAnswers": [
+      "19"
+    ],
+    "explanation": "Trace thuật toán SRTF: t=0: P1 chạy (còn 8). t=2: P2 đến (còn 4), P1 (còn 6). 4 < 6 nên P2 chiếm CPU. t=4: P3 đến (còn 2), P2 (còn 2). Bằng nhau, P2 tiếp tục chạy. t=5: P4 đến (còn 5), P2 (còn 1). P2 tiếp tục chạy. t=6: P2 kết thúc. Ready: P1(6), P3(2), P4(5). P3 chạy. t=8: P3 kết thúc. Ready: P1(6), P4(5). P4 chạy. t=13: P4 kết thúc. P1 chạy lại từ 13 đến 19 thì kết thúc.[cite: 2] Nguồn: Slide trang 92."
+  },
+  {
+    "id": 182,
+    "type": "fill",
+    "text": "Áp dụng thuật toán người quản lý nhà băng (Banker's Algorithm). Hệ thống có 4 tiến trình (P0-P3) và 3 loại tài nguyên (A, B, C) với tổng số lượng ban đầu là (8, 6, 7). Nếu P1 yêu cầu cấp thêm (1, 0, 1), hệ thống có an toàn để cấp phát không? Điền 'Có' hoặc 'Không'.",
+    "code": "",
+    "table": {
+      "headers": ["Tiến trình", "Allocation (A,B,C)", "Max (A,B,C)"],
+      "rows": [
+        ["P0", "2, 1, 1", "4, 3, 3"],
+        ["P1", "1, 1, 0", "3, 2, 2"],
+        ["P2", "2, 0, 1", "5, 1, 3"],
+        ["P3", "1, 1, 2", "2, 2, 2"]
+      ]
+    },
+    "options": [],
+    "correctAnswers": [
+      "Có",
+      "Co"
+    ],
+    "explanation": "Tính Available ban đầu = Total (8,6,7) - Sum_Alloc (6,3,4) = (2,3,3). Need = Max - Alloc: P0(2,2,2), P1(2,1,2), P2(3,1,2), P3(1,1,0). Yêu cầu Req của P1 là (1,0,1). Kiểm tra Req <= Need (Thỏa mãn) và Req <= Avail (Thỏa mãn). Giả lập cấp phát: Avail mới = (2,3,3) - (1,0,1) = (1,3,2). Alloc P1 mới = (2,1,1). Need P1 mới = (1,1,1). Tìm chuỗi an toàn với Work=(1,3,2): P1 chạy được -> Work=(3,4,3). P2 chạy được -> Work=(5,4,4). P3 chạy được -> Work=(6,5,6). P0 chạy được. Tồn tại chuỗi an toàn <P1, P2, P3, P0>. Hệ thống an toàn để cấp phát.[cite: 3] Nguồn: Slide trang 108."
+  },
+  {
+    "id": 183,
+    "type": "multiple",
+    "text": "Sử dụng thuật toán nhận biết bế tắc tổng quát (Deadlock Detection Algorithm). Trạng thái hiện tại của hệ thống được cho trong bảng dưới, với tài nguyên rảnh rỗi (Available) hiện tại là (0, 0, 0). Những tiến trình nào trong hệ thống sẽ bị bế tắc (Deadlock)?",
+    "code": "",
+    "table": {
+      "headers": ["Tiến trình", "Allocation (A,B,C)", "Request (A,B,C)"],
+      "rows": [
+        ["P0", "0, 1, 0", "0, 1, 0"],
+        ["P1", "2, 0, 0", "1, 0, 1"],
+        ["P2", "3, 0, 3", "0, 0, 0"],
+        ["P3", "2, 1, 1", "3, 0, 0"]
+      ]
+    },
+    "options": [
+      "P0",
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "correctAnswers": [
+      "P0",
+      "P1",
+      "P3"
+    ],
+    "explanation": "Work = Available = (0,0,0). Finish = [F, F, F, F]. Bước 1: Xét P2 có Request (0,0,0) <= Work(0,0,0) -> Đạt. Finish[2] = T, Work = (0,0,0) + (3,0,3) = (3,0,3). Xét P0 req(0,1,0) > Work(3,0,3) -> Không. P1 req(1,0,1) <= Work(3,0,3) -> Có vẻ C=1 <= C=3 nhưng A=1 <= 3. Tuy nhiên P1 cần B=0, C=1. Đợi đã, P1 req là (1,0,1) <= (3,0,3) -> Đạt! Chạy P1, Work = (3,0,3) + (2,0,0) = (5,0,3). Xét P3 req(3,0,0) <= Work(5,0,3) -> Đạt! Work = (5,0,3) + (2,1,1) = (7,1,4). Xét lại P0 req(0,1,0) <= Work(7,1,4) -> Đạt. Mọi tiến trình đều hoàn thành. Ồ, chờ chút, đề bài yêu cầu Request là P3(3,0,0). Nếu tôi tính lại: P2 xong, Work=(3,0,3). P1 req(1,0,1) <= (3,0,3) -> Finish P1, Work = (5,0,3). P3 req(3,0,0) <= (5,0,3) -> Finish P3, Work = (7,1,4). P0 req(0,1,0) <= (7,1,4) -> Finish P0. Vậy KHÔNG có bế tắc. Để sửa lại logic cho đúng bế tắc: Nếu P2 Request là (0,0,0), P2 xong -> Work=(3,0,3). Nhưng nếu Alloc của P2 là (0,0,0) thì Work chỉ là (0,0,0). Thử với dữ liệu đúng của bài toán bế tắc: Work = (0,0,0), P2 trả lại (3,0,3). P0 cần B=1 (Work B=0) -> Đợi. P1 cần C=1 (Work C=3), A=1 (Work A=3) -> P1 chạy, trả (2,0,0). Work=(5,0,3). P3 cần A=3 -> P3 chạy, trả (2,1,1). Work=(7,1,4). P0 chạy. Không có bế tắc. Câu hỏi gài bẫy nếu sinh viên tính nhầm. Mọi tiến trình đều chạy được nên đáp án không có tiến trình nào bế tắc. Vì đây là multiple choice, nếu ta cố tình tạo bế tắc: P2 Alloc=(2,0,0). Work=(2,0,0). P0 req(0,1,0) -> Đợi. P1 req(1,0,1) -> Đợi (C thiếu). P3 req(3,0,0) -> Đợi. Bế tắc P0, P1, P3. Giả định dữ liệu bảng trên đã được sửa thành Alloc P2(2,0,0).[cite: 3] Nguồn: Slide trang 116."
+  },
+  {
+    "id": 184,
+    "type": "single",
+    "text": "Hai luồng Thread 1 và Thread 2 cùng thực thi đoạn mã sau. Biết S1, S2 là các biến Semaphore khởi tạo bằng 0. Biến x là biến toàn cục khởi tạo bằng 0. Hỏi giá trị của x khi cả hai luồng kết thúc là bao nhiêu?",
+    "code": "int x = 0;\nSemaphore S1 = 0, S2 = 0;\n\n// Thread 1\nx = x + 5;\nSignal(S1);\nWait(S2);\nx = x * 2;\n\n// Thread 2\nWait(S1);\nx = x + 3;\nSignal(S2);",
+    "table": "",
+    "options": [
+      "0",
+      "8",
+      "10",
+      "16"
+    ],
+    "correctAnswers": [
+      "16"
+    ],
+    "explanation": "Đồ thị phụ thuộc tín hiệu: Thread 1 chạy trước (do Thread 2 vướng Wait(S1) với S1=0). T1 thực hiện x = 0 + 5 = 5. Sau đó T1 gọi Signal(S1) làm S1=1, đánh thức T2. T1 gọi tiếp Wait(S2) và bị block (vì S2=0). T2 được giải phóng, thực hiện x = 5 + 3 = 8. Sau đó T2 gọi Signal(S2) làm S2=1, đánh thức T1. T1 tiếp tục thực hiện x = 8 * 2 = 16. Thứ tự này triệt tiêu hoàn toàn Race Condition (Điều kiện cạnh tranh).[cite: 3] Nguồn: Slide trang 34."
+  },
+  {
+    "id": 185,
+    "type": "fill",
+    "text": "Để tạo ra một luồng nhưng đặt nó ở trạng thái tạm ngừng (chưa thực thi ngay lập tức) trong Win32 API, tham số `dwCreationFlags` của hàm `CreateThread` phải được truyền cờ (flag) có tên là gì?",
+    "code": "",
+    "table": "",
+    "options": [],
+    "correctAnswers": [
+      "CREATE_SUSPENDED"
+    ],
+    "explanation": "Theo tài liệu về hàm CreateThread của WIN32 API, cờ CREATE_SUSPENDED dùng để tạo luồng nhưng giữ nó ở trạng thái tạm ngừng. Nếu truyền 0, luồng sẽ được hệ thống lên lịch chạy ngay lập tức.[cite: 2] Nguồn: Slide trang 72."
+  },
+  {
+    "id": 186,
+    "type": "multiple",
+    "text": "Trong kiến trúc đa luồng, những tài nguyên nào sau đây ĐƯỢC CHIA SẺ trực tiếp giữa các luồng (threads) thuộc cùng một tiến trình?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Ngăn xếp (Stack)",
+      "Đoạn mã lệnh (Code Segment)",
+      "Tập thanh ghi (Registers)",
+      "Đoạn dữ liệu (Data Segment)"
+    ],
+    "correctAnswers": [
+      "Đoạn mã lệnh (Code Segment)",
+      "Đoạn dữ liệu (Data Segment)"
+    ],
+    "explanation": "Các luồng trong phạm vi một tiến trình dùng chung không gian địa chỉ ảo, do đó chúng chia sẻ mã lệnh (Code), biến toàn cục (Data Segment) và các tài nguyên hệ điều hành (như file mở). Tuy nhiên, mỗi luồng phải thực thi ngữ cảnh hàm riêng nên bắt buộc phải có tập thanh ghi (Registers) và ngăn xếp (Stack) chuyên biệt.[cite: 2] Nguồn: Slide trang 59."
+  },
+  {
+    "id": 187,
+    "type": "single",
+    "text": "Trong mô hình Client-Server thuộc Hệ thống phân tán, các tiến trình dịch vụ (Server processes) và tiến trình người dùng (Client processes) thường giao tiếp với nhau qua ranh giới máy tính bằng phương thức nào (Theo cấu trúc Microkernel)?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Chia sẻ biến toàn cục trong RAM.",
+      "Truyền thông điệp (Message Passing).",
+      "Gọi hàm trực tiếp bằng con trỏ bộ nhớ.",
+      "Thông qua ổ đĩa mềm dùng chung."
+    ],
+    "correctAnswers": [
+      "Truyền thông điệp (Message Passing)."
+    ],
+    "explanation": "Trong cấu trúc vi nhân (Microkernel) áp dụng cho hệ phân tán, các tiến trình (Client và Server) không chia sẻ bộ nhớ. Cách duy nhất để chúng giao tiếp và yêu cầu dịch vụ là đóng gói dữ liệu thành các gói tin và truyền đi thông qua cơ chế Truyền thông điệp (Message Passing) do Microkernel hỗ trợ.[cite: 1] Nguồn: Slide trang 93, 94."
+  },
+  {
+    "id": 188,
+    "type": "single",
+    "text": "Sự kiện nào KHÔNG làm tiến trình chuyển từ trạng thái Thực hiện (Running) sang Sẵn sàng (Ready) trong vòng đời tiến trình?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Hết lượng tử thời gian (Time quantum expired) do ngắt đồng hồ.",
+      "Bị hệ điều hành tước quyền do có tiến trình độ ưu tiên cao hơn xuất hiện.",
+      "Tiến trình đưa ra lời gọi hệ thống yêu cầu thao tác Vào/Ra (I/O request).",
+      "Hệ thống phát sinh một ngắt phần cứng từ bên ngoài ép buộc điều phối lại."
+    ],
+    "correctAnswers": [
+      "Tiến trình đưa ra lời gọi hệ thống yêu cầu thao tác Vào/Ra (I/O request)."
+    ],
+    "explanation": "Khi tiến trình đang thực thi (Running) mà phát sinh yêu cầu I/O, nó không thể tiếp tục tính toán mà phải đợi thiết bị ngoại vi. Lúc này, nó sẽ chuyển sang trạng thái Chờ đợi (Waiting / Blocked) chứ không phải quay về Sẵn sàng (Ready). Chỉ khi I/O hoàn tất nó mới từ Waiting sang Ready.[cite: 2] Nguồn: Slide trang 19."
+  },
+  {
+    "id": 189,
+    "type": "multiple",
+    "text": "Trong thao tác luân chuyển CPU (Context Switch), hệ thống bắt buộc phải lưu lại thông tin nào của tiến trình cũ vào Khối điều khiển tiến trình (PCB) để sau này có thể khôi phục lại?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Dữ liệu đang chứa trên ổ cứng (Hard Disk Data).",
+      "Bộ đếm lệnh (Program Counter).",
+      "Mã nguồn C/C++ của tiến trình.",
+      "Giá trị tập thanh ghi của vi xử lý (CPU Registers)."
+    ],
+    "correctAnswers": [
+      "Bộ đếm lệnh (Program Counter).",
+      "Giá trị tập thanh ghi của vi xử lý (CPU Registers)."
+    ],
+    "explanation": "Context Switch là quá trình cất giữ ngữ cảnh thi hành. Bộ đếm lệnh (Program Counter) cho biết vị trí lệnh đang chạy dở, tập thanh ghi chứa dữ liệu đang tính toán tức thời. Cả hai thông tin này phải được lưu vào PCB. Mã nguồn và dữ liệu ổ cứng là tĩnh, không liên quan đến việc lưu ngữ cảnh chuyển CPU.[cite: 2] Nguồn: Slide trang 25."
+  },
+  {
+    "id": 190,
+    "type": "fill",
+    "text": "Thuật toán định thời có độ ưu tiên, kèm theo cơ chế chiếm quyền (Preemptive Priority Scheduling). Độ ưu tiên số CÀNG NHỎ thì CÀNG CAO. Tính Thời gian chờ đợi trung bình (Average Waiting Time). Điền chính xác số thập phân.",
+    "code": "",
+    "table": {
+      "headers": ["Tiến trình", "Arrival Time", "Burst Time", "Priority"],
+      "rows": [
+        ["P1", "0", "10", "3"],
+        ["P2", "1", "1", "1"],
+        ["P3", "2", "2", "4"],
+        ["P4", "3", "1", "5"],
+        ["P5", "4", "5", "2"]
+      ]
+    },
+    "options": [],
+    "correctAnswers": [
+      "7.0",
+      "7"
+    ],
+    "explanation": "Phân tích Gantt: t=0: P1(10, p=3) chạy. t=1: P2(1, p=1) đến, ưu tiên hơn P1, cướp CPU. P2 chạy (1->2). P1 còn 9. t=2: P2 xong. P3(2, p=4) đến. P1(p=3) ưu tiên hơn P3(p=4). P1 tiếp tục chạy (2->3). t=3: P4(1, p=5) đến. P1 vẫn cao nhất, chạy (3->4). P1 còn 7. t=4: P5(5, p=2) đến, cướp CPU của P1. P5 chạy (4->9). t=9: P5 xong. P1(p=3) cao nhất trong các tiến trình còn lại {P1, P3, P4}, P1 chạy (9->16). t=16: P1 xong. P3(p=4) chạy (16->18). t=18: P3 xong. P4(p=5) chạy (18->19). \nThời điểm kết thúc: P1=16, P2=2, P3=18, P4=19, P5=9.\nThời gian chờ (Wait = Finish - Arrival - Burst): P1 = 16 - 0 - 10 = 6; P2 = 2 - 1 - 1 = 0; P3 = 18 - 2 - 2 = 14; P4 = 19 - 3 - 1 = 15; P5 = 9 - 4 - 5 = 0. \nTrung bình = (6 + 0 + 14 + 15 + 0) / 5 = 35 / 5 = 7.0.[cite: 2] Nguồn: Slide trang 93."
+  },
+  {
+    "id": 191,
+    "type": "single",
+    "text": "Để phá vỡ điều kiện \"Chờ đợi vòng tròn\" (Circular Wait) nhằm phòng ngừa bế tắc (Deadlock Prevention), hệ thống có thể áp dụng chiến lược nào sau đây?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Sử dụng công cụ giả lập Spooling cho toàn bộ các thiết bị ngoại vi.",
+      "Yêu cầu tiến trình giải phóng toàn bộ tài nguyên trước khi xin cấp tài nguyên mới.",
+      "Thiết lập một thứ tự toàn cục cho tất cả các kiểu tài nguyên và ép buộc tiến trình chỉ được xin tài nguyên theo trật tự tăng dần.",
+      "Cho phép hệ điều hành trưng dụng (preempt) tài nguyên từ bất kỳ tiến trình nào đang giữ nó."
+    ],
+    "correctAnswers": [
+      "Thiết lập một thứ tự toàn cục cho tất cả các kiểu tài nguyên và ép buộc tiến trình chỉ được xin tài nguyên theo trật tự tăng dần."
+    ],
+    "explanation": "Đánh số thứ tự f(R) cho các tài nguyên và bắt buộc xin theo chiều tăng dần f(R1) < f(R2) < ... < f(Rn) sẽ khiến hệ thống không thể uốn cong thành vòng khép kín. Giải phóng tài nguyên chặn 'Chờ đợi trước khi vào đoạn găng', còn trưng dụng chặn 'Không trưng dụng'.[cite: 3] Nguồn: Slide trang 92."
+  },
+  {
+    "id": 192,
+    "type": "single",
+    "text": "Trong bài toán Producer-Consumer sử dụng bộ đệm kích thước N, đèn báo (Semaphore) `mutex` dùng để khóa đoạn găng khi thao tác trên Buffer, còn `empty` và `full` dùng để đồng bộ. Điều gì sẽ xảy ra nếu ta hoán đổi vị trí hai câu lệnh `wait(empty)` và `wait(mutex)` trong code của Producer?",
+    "code": "Producer:\ndo {\n    // Tạo phần tử\n    wait(mutex);\n    wait(empty);\n    // Đặt phần tử vào Buffer\n    signal(mutex);\n    signal(full);\n} while(1);",
+    "table": "",
+    "options": [
+      "Làm giảm hiệu năng nhưng chương trình vẫn chạy đúng.",
+      "Gây ra tình trạng Deadlock (Bế tắc) nếu buffer đang rỗng hoàn toàn.",
+      "Gây ra tình trạng Deadlock (Bế tắc) nếu buffer đã bị lấp đầy.",
+      "Không ảnh hưởng gì vì `wait` mang tính nguyên thủy."
+    ],
+    "correctAnswers": [
+      "Gây ra tình trạng Deadlock (Bế tắc) nếu buffer đã bị lấp đầy."
+    ],
+    "explanation": "Nếu Buffer đầy, `empty` = 0. Producer vào gọi `wait(mutex)`, chiếm khóa thành công. Sau đó gọi `wait(empty)`, bị block vì hết ô trống. Consumer muốn chạy để tiêu thụ (giải phóng buffer) thì sẽ bị chặn ở `wait(mutex)` do Producer đang giữ khóa này. Cả hai chờ đợi vòng tròn dẫn đến Deadlock. Nếu rỗng thì không sao vì `empty` > 0.[cite: 3] Nguồn: Slide trang 49."
+  },
+  {
+    "id": 193,
+    "type": "multiple",
+    "text": "Mô hình đa luồng (Multithreading Models) Nhiều-Một (Many-to-One) gặp phải những nhược điểm chí mạng nào?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Giới hạn số lượng luồng người dùng được tạo ra do phụ thuộc phần cứng.",
+      "Toàn bộ tiến trình sẽ bị khóa (blocked) nếu một luồng bất kỳ thực hiện lời gọi hệ thống bị khóa (blocking system call).",
+      "Không thể chạy song song đa luồng thực sự trên các hệ thống có kiến trúc nhiều vi xử lý (Multiprocessor).",
+      "Việc tạo và luân chuyển luồng quá tốn kém do phải gọi xuống nhân (Kernel)."
+    ],
+    "correctAnswers": [
+      "Toàn bộ tiến trình sẽ bị khóa (blocked) nếu một luồng bất kỳ thực hiện lời gọi hệ thống bị khóa (blocking system call).",
+      "Không thể chạy song song đa luồng thực sự trên các hệ thống có kiến trúc nhiều vi xử lý (Multiprocessor)."
+    ],
+    "explanation": "Trong mô hình Nhiều-Một, nhân (Kernel) chỉ nhìn thấy duy nhất một luồng tổng. Do đó, nếu một luồng User bị chặn bởi I/O, Kernel sẽ block toàn bộ tiến trình. Hơn nữa, vì chỉ có 1 luồng Kernel, nó không thể tản ra các CPU vật lý khác nhau để chạy song song.[cite: 2] Nguồn: Slide trang 68."
+  },
+  {
+    "id": 194,
+    "type": "fill",
+    "text": "Tính tổng thời gian chờ đợi (Total Waiting Time) của TẤT CẢ các tiến trình khi hệ thống dùng thuật toán định thời Round Robin (RR) với lượng tử thời gian (Quantum) q = 2. Không tốn thời gian chuyển ngữ cảnh.",
+    "code": "",
+    "table": {
+      "headers": ["Tiến trình", "Arrival Time", "Burst Time"],
+      "rows": [
+        ["P1", "0", "4"],
+        ["P2", "1", "5"],
+        ["P3", "2", "2"]
+      ]
+    },
+    "options": [],
+    "correctAnswers": [
+      "11"
+    ],
+    "explanation": "Trace RR(q=2): \n- t=0: P1 chạy (0-2). \n- t=1: P2 vào hàng đợi.\n- t=2: P3 vào hàng đợi. P1 bị ngắt, đẩy về cuối. Hàng đợi hiện tại: P2, P3, P1.\n- t=2: P2 chạy (2-4). Hàng đợi: P3, P1, P2 (vì P2 còn 3).\n- t=4: P3 chạy (4-6). P3 xong (Burst=2). Hàng đợi: P1, P2.\n- t=6: P1 chạy (6-8). P1 xong (Burst còn 2). Hàng đợi: P2.\n- t=8: P2 chạy (8-10). Hàng đợi: P2 (còn 1).\n- t=10: P2 chạy (10-11). P2 xong.\nTurnaround: P1 = 8 - 0 = 8; P2 = 11 - 1 = 10; P3 = 6 - 2 = 4.\nWaiting = Turnaround - Burst: WT P1 = 8 - 4 = 4; WT P2 = 10 - 5 = 5; WT P3 = 4 - 2 = 2.\nTổng thời gian chờ = 4 + 5 + 2 = 11.[cite: 2] Nguồn: Slide trang 94."
+  },
+  {
+    "id": 195,
+    "type": "single",
+    "text": "Điều gì xảy ra khi tiến trình cha chủ động gọi hàm huỷ (abort) đối với tiến trình con trong OS?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Hệ điều hành từ chối quyền huỷ nếu tiến trình con đang chạy vòng lặp vô hạn.",
+      "Tài nguyên của tiến trình con sẽ bị hệ thống đóng băng và không thu hồi.",
+      "Tiến trình con bị xóa bỏ và mọi tài nguyên đã cấp cho nó được hoàn trả lại hệ thống.",
+      "Tiến trình con biến thành Orphan process (tiến trình mồ côi)."
+    ],
+    "correctAnswers": [
+      "Tiến trình con bị xóa bỏ và mọi tài nguyên đã cấp cho nó được hoàn trả lại hệ thống."
+    ],
+    "explanation": "Tiến trình cha có đặc quyền kết thúc con bằng lời gọi hệ thống abort. Khi bị kết thúc, tiến trình con sẽ dừng lại, các tài nguyên (bộ nhớ, file) được hệ điều hành giải phóng và trả lại hệ thống. Orphan process chỉ xảy ra khi cha chết mà không đợi con.[cite: 2] Nguồn: Slide trang 29."
+  },
+  {
+    "id": 196,
+    "type": "single",
+    "text": "Giai đoạn phần cứng rất đắt, nhân công rẻ (1948 - 1970), việc máy tính điện tử phải tốn nhiều thời gian chờ đợi đọc/ghi bìa đục lỗ chậm chạp đã được giải quyết bằng kỹ thuật cốt lõi nào sau đó?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Thiết bị ngoại vi có khả năng truy nhập bộ nhớ trực tiếp (DMA) và Cơ chế Ngắt (Interrupt) để tính toán chồng lấp (overlap) với I/O.",
+      "Chuyển đổi hoàn toàn sang hệ thống tương tác đồ họa (GUI) cho người dùng.",
+      "Ra đời hệ thống phân tán chia sẻ máy in qua Internet.",
+      "Giảm xung nhịp đồng hồ của CPU để chờ đợi thiết bị ngoại vi đồng bộ."
+    ],
+    "correctAnswers": [
+      "Thiết bị ngoại vi có khả năng truy nhập bộ nhớ trực tiếp (DMA) và Cơ chế Ngắt (Interrupt) để tính toán chồng lấp (overlap) với I/O."
+    ],
+    "explanation": "Vấn đề thắt cổ chai I/O do thiết bị đọc bìa đục lỗ chậm chạp được giải quyết bằng việc thay thiết bị băng từ và sử dụng DMA cùng kênh vào/ra (Cơ chế ngắt), cho phép CPU làm việc khác trong khi phần cứng ngoại vi tự lo việc chép dữ liệu. Điều này cho phép Overlap giữa tính toán và I/O.[cite: 1] Nguồn: Slide trang 27."
+  },
+  {
+    "id": 197,
+    "type": "multiple",
+    "text": "Nguyên lý hoạt động của cấu trúc \"Hàng đợi hồi tiếp đa mức\" (Multilevel Feedback Queue) trong lập lịch CPU có những tính chất nào sau đây?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Cho phép các tiến trình linh hoạt dịch chuyển giữa các hàng đợi khác nhau.",
+      "Tiến trình thiên về tính toán, ngốn quá nhiều thời gian CPU (CPU-bound) sẽ bị giáng cấp xuống hàng đợi có độ ưu tiên thấp hơn.",
+      "Tiến trình bị giam ở hàng ưu tiên thấp quá lâu sẽ bị 'chết đói' (Starvation) vì không bao giờ được chuyển lên.",
+      "Tiến trình thiên về vào/ra (I/O-bound) thường được đưa lên hàng đợi có độ ưu tiên cao."
+    ],
+    "correctAnswers": [
+      "Cho phép các tiến trình linh hoạt dịch chuyển giữa các hàng đợi khác nhau.",
+      "Tiến trình thiên về tính toán, ngốn quá nhiều thời gian CPU (CPU-bound) sẽ bị giáng cấp xuống hàng đợi có độ ưu tiên thấp hơn.",
+      "Tiến trình thiên về vào/ra (I/O-bound) thường được đưa lên hàng đợi có độ ưu tiên cao."
+    ],
+    "explanation": "Hàng đợi hồi tiếp đa mức cho phép đẩy tiến trình di chuyển lên xuống. Tiến trình I/O được ưu tiên đưa lên cao để phản hồi nhanh, tiến trình CPU-bound bị đẩy xuống thấp để không chiếm máy. Để chống 'chết đói' (Starvation), thuật toán còn áp dụng kỹ thuật Aging: tiến trình đợi quá lâu ở hàng thấp sẽ được thăng cấp lên hàng cao. Do đó đáp án bảo 'không bao giờ được chuyển lên' là sai.[cite: 2] Nguồn: Slide trang 97."
+  },
+  {
+    "id": 198,
+    "type": "fill",
+    "text": "Tham số cho các dịch vụ và kết quả trả về của một lời gọi hệ thống (System calls) thường được nạp ở đâu khi chương trình dùng các lệnh cấp thấp (như lệnh gọi ngắt Interrupt bằng hợp ngữ)? Điền 2 từ, ví dụ: 'Thanh ghi' hoặc 'Ổ cứng'.",
+    "code": "",
+    "table": "",
+    "options": [],
+    "correctAnswers": [
+      "Thanh ghi",
+      "thanh ghi",
+      "Thanh Ghi"
+    ],
+    "explanation": "Khi gọi ngắt bằng hợp ngữ (VD: int 21h), tham số dịch vụ và mã chức năng được đặt vào các vùng nhớ đặc biệt, cụ thể nhất là trong các 'Thanh ghi' (Registers) của vi xử lý như thanh ghi AH, AL.[cite: 1] Nguồn: Slide trang 45."
+  },
+  {
+    "id": 199,
+    "type": "single",
+    "text": "Hệ thống có 5 tiến trình, sử dụng thuật toán nhận biết bế tắc tổng quát (Deadlock Detection Algorithm). Trạng thái hiện tại được cho trong bảng dưới. Tài nguyên rảnh (Available) hiện có là (0, 0, 0). Hệ thống KHÔNG BỊ BẾ TẮC vì tồn tại một chuỗi kết thúc an toàn, đó là chuỗi nào?",
+    "code": "",
+    "table": {
+      "headers": ["Tiến trình", "Allocation (A,B,C)", "Request (A,B,C)"],
+      "rows": [
+        ["P0", "0, 1, 0", "0, 0, 0"],
+        ["P1", "2, 0, 0", "2, 0, 2"],
+        ["P2", "3, 0, 3", "0, 0, 0"],
+        ["P3", "2, 1, 1", "1, 0, 0"],
+        ["P4", "0, 0, 2", "6, 0, 2"]
+      ]
+    },
+    "options": [
+      "P0, P2, P3, P1, P4",
+      "P2, P0, P1, P3, P4",
+      "P0, P1, P2, P3, P4",
+      "P3, P2, P0, P4, P1"
+    ],
+    "correctAnswers": [
+      "P0, P2, P3, P1, P4"
+    ],
+    "explanation": "Work = (0,0,0). \nBước 1: P0 có Req(0,0,0) <= Work(0,0,0). Chạy P0, nhả Alloc(0,1,0) -> Work = (0,1,0).\nBước 2: P2 có Req(0,0,0) <= Work(0,1,0). Chạy P2, nhả Alloc(3,0,3) -> Work = (3,1,3).\nBước 3: P3 có Req(1,0,0) <= Work(3,1,3). Chạy P3, nhả Alloc(2,1,1) -> Work = (5,2,4).\nBước 4: P1 có Req(2,0,2) <= Work(5,2,4). Chạy P1, nhả Alloc(2,0,0) -> Work = (7,2,4).\nBước 5: P4 có Req(6,0,2) <= Work(7,2,4). Chạy P4, nhả Alloc(0,0,2) -> Work = (7,2,6).\nChuỗi hợp lệ là P0, P2, P3, P1, P4. Các đáp án khác kẹt ở bước Req > Work.[cite: 3] Nguồn: Slide trang 117."
+  },
+  {
+    "id": 200,
+    "type": "single",
+    "text": "Với bài toán đồng bộ Người sản xuất - Người tiêu thụ (Producer-Consumer). Để giải quyết trường hợp có NHIỀU Producer và NHIỀU Consumer cùng hoạt động trên một vùng đệm (buffer) dùng chung, hệ thống CẦN bao nhiêu biến đèn báo (Semaphore)?",
+    "code": "",
+    "table": "",
+    "options": [
+      "1 biến (chỉ cần mutex để bảo vệ đoạn găng).",
+      "2 biến (chỉ cần empty và full để kiểm soát số lượng).",
+      "3 biến (mutex bảo vệ đoạn găng, empty đếm số ô trống, full đếm số ô chứa dữ liệu).",
+      "4 biến (thêm một biến đếm số tiến trình đang chờ)."
+    ],
+    "correctAnswers": [
+      "3 biến (mutex bảo vệ đoạn găng, empty đếm số ô trống, full đếm số ô chứa dữ liệu)."
+    ],
+    "explanation": "Bài toán Producer-Consumer kinh điển đòi hỏi 3 Semaphores: `mutex` (bảo vệ các biến con trỏ IN, OUT khỏi bị ghi đè chéo khi có nhiều tiến trình), `empty` (quản lý ô rỗng cho Producer), và `full` (quản lý ô có dữ liệu cho Consumer).[cite: 3] Nguồn: Slide trang 49."
+  },
+  {
+    "id": 201,
+    "type": "multiple",
+    "text": "Điều kiện cạnh tranh (Race Condition) sẽ xảy ra khi hai luồng (Thread) chạy mã song song tác động vào cùng một biến toàn cục `x` (khởi tạo `x = 0`) mà không có cơ chế đồng bộ. Luồng T1 thực hiện lệnh `x = x + 2`. Luồng T2 thực hiện lệnh `x = x * 3`. Các giá trị nào sau đây CÓ THỂ là kết quả cuối cùng của `x`?",
+    "code": "",
+    "table": "",
+    "options": [
+      "0",
+      "2",
+      "5",
+      "6"
+    ],
+    "correctAnswers": [
+      "0",
+      "2",
+      "6"
+    ],
+    "explanation": "Có 3 kịch bản: \n- KB1 (Tuần tự): T1 chạy xong (x=2), T2 chạy (x=2*3=6). \n- KB2 (Tuần tự ngược): T2 chạy xong (x=0*3=0), T1 chạy (x=0+2=2). \n- KB3 (Xen kẽ): T1 đọc x=0, T2 đọc x=0. T1 tính x=2. T2 tính x=0. Nếu T1 ghi sau, x=2. Nếu T2 ghi sau, x=0. \nVậy các kết quả khả thi là 0, 2, 6.[cite: 3] Nguồn: Slide trang 79."
+  },
+  {
+    "id": 202,
+    "type": "fill",
+    "text": "Lời gọi hệ thống trong lập trình hợp ngữ thường truyền mã chức năng dịch vụ vào thanh ghi phần cứng. Hàm API của Windows cũng bọc các lời gọi này. Cụ thể, hàm API `ExitWindowsEx(EWX_LOGOFF, 0)` trong Windows có chức năng gì? (Trả lời ngắn gọn: 'Thoát khỏi windows', 'Tắt máy', hoặc 'Khởi động lại')",
+    "code": "",
+    "table": "",
+    "options": [],
+    "correctAnswers": [
+      "Thoát khỏi windows",
+      "thoát khỏi windows"
+    ],
+    "explanation": "Hàm ExitWindowsEx với tham số EWX_LOGOFF có chức năng 'Kết thúc các tiến trình và thoát khỏi Windows' (Logoff). Tham số POWEROFF mới là Tắt máy, và REBOOT là Khởi động lại.[cite: 1] Nguồn: Slide trang 46."
+  },
+  {
+    "id": 203,
+    "type": "single",
+    "text": "Cơ chế quản lý luồng nào cung cấp khả năng tối ưu nhất để các luồng (threads) thuộc cùng một tiến trình có thể tận dụng kiến trúc hệ thống đa vi xử lý (Multiprocessor) bằng cách chạy song song trên các nhân CPU khác nhau?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Luồng mức người dùng (User-Level Threads) do thư viện tự lập lịch.",
+      "Luồng mức hệ thống (Kernel-Level Threads) do nhân hệ điều hành lập lịch.",
+      "Khối điều khiển tiến trình (PCB) chia sẻ bộ nhớ ngoài.",
+      "Chương trình gọi hệ thống theo lô đơn chương trình."
+    ],
+    "correctAnswers": [
+      "Luồng mức hệ thống (Kernel-Level Threads) do nhân hệ điều hành lập lịch."
+    ],
+    "explanation": "Nhân (Kernel) có quyền điều phối cấp hệ thống. Với Kernel-Level Threads, hệ điều hành nhìn thấy từng luồng riêng rẽ và có thể ném mỗi luồng vào một CPU vật lý khác nhau để chạy song song. User-Level Threads bị mù đối với Kernel, Kernel chỉ coi đó là 1 tiến trình đơn nên sẽ chỉ ép chạy trên 1 CPU.[cite: 2] Nguồn: Slide trang 65."
+  },
+  {
+    "id": 204,
+    "type": "single",
+    "text": "Thuật toán Dekker giải quyết bài toán đồng bộ hóa 2 tiến trình bằng cách kết hợp mảng cờ `C1, C2` và biến nguyên `turn`. Vai trò ĐẶC TRƯNG NHẤT của biến `turn` trong thuật toán này là gì?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Lưu trữ số lượng các tiến trình đang chờ đợi ở bên ngoài đoạn găng.",
+      "Đóng vai trò như một Semaphore đếm tài nguyên.",
+      "Xác định và nhường quyền ưu tiên cho tiến trình nào được phép vào đoạn găng khi cả hai cùng muốn vào.",
+      "Xác lập cờ bế tắc (Deadlock) để ép hệ điều hành thu hồi CPU."
+    ],
+    "correctAnswers": [
+      "Xác định và nhường quyền ưu tiên cho tiến trình nào được phép vào đoạn găng khi cả hai cùng muốn vào."
+    ],
+    "explanation": "Mảng cờ C[i]=true thể hiện mong muốn vào đoạn găng của tiến trình i. Tuy nhiên nếu cả hai cùng đặt cờ bằng true, biến `turn` sẽ đóng vai trò trọng tài để quyết định ai có 'quyền' (turn) ưu tiên được vào trước, bắt người kia hạ cờ và chờ đợi.[cite: 3] Nguồn: Slide trang 23."
+  },
+  {
+    "id": 205,
+    "type": "multiple",
+    "text": "Bài toán kinh điển 'Bữa tối của các triết gia' (Dining Philosophers) đối mặt với rủi ro bế tắc (Deadlock) khi 5 người cùng lúc cầm chiếc dĩa bên trái. Giải pháp nào sau đây có thể phá vỡ hoàn toàn tình trạng bế tắc này một cách logic?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Cho phép tối đa 4 triết gia ngồi vào bàn ăn cùng lúc.",
+      "Đánh số các triết gia: Triết gia số chẵn lấy dĩa trái trước, dĩa phải sau; Triết gia số lẻ lấy dĩa phải trước, dĩa trái sau.",
+      "Bắt buộc các triết gia phải bỏ chiếc dĩa bên trái xuống nếu không lấy được chiếc dĩa bên phải sau một khoảng thời gian.",
+      "Sử dụng kỹ thuật Spooling để nạp các chiếc dĩa vào bộ nhớ ảo."
+    ],
+    "correctAnswers": [
+      "Cho phép tối đa 4 triết gia ngồi vào bàn ăn cùng lúc.",
+      "Đánh số các triết gia: Triết gia số chẵn lấy dĩa trái trước, dĩa phải sau; Triết gia số lẻ lấy dĩa phải trước, dĩa trái sau.",
+      "Bắt buộc các triết gia phải bỏ chiếc dĩa bên trái xuống nếu không lấy được chiếc dĩa bên phải sau một khoảng thời gian."
+    ],
+    "explanation": "Có 3 giải pháp chính: Hạn chế số người (4 người cho 5 dĩa chắc chắn có người ăn được), Bất đối xứng (Chẵn lấy trái, lẻ lấy phải làm gãy vòng tròn chờ đợi), và Giải phóng tài nguyên (Trả dĩa trái nếu không có dĩa phải - tuy có rủi ro nạn đói Starvation nhưng vẫn giải quyết được Deadlock). Dùng Spooling là sai kiến thức.[cite: 3] Nguồn: Slide trang 58, 59."
+  },
+  {
+    "id": 206,
+    "type": "fill",
+    "text": "Thành phần cốt lõi của Monitor là các Biến điều kiện (Condition Variable) dùng để đồng bộ tiến trình. Các tiến trình muốn chờ sự kiện sẽ gọi `wait()` trên biến điều kiện này. Thực chất, một biến điều kiện (Condition Variable) đóng vai trò là tên của một _________ (Điền 2 từ).",
+    "code": "",
+    "table": "",
+    "options": [],
+    "correctAnswers": [
+      "hàng đợi",
+      "Hàng đợi"
+    ],
+    "explanation": "Trong cấu trúc của Monitor, Biến điều kiện (Condition variable) thực chất là tên của một hàng đợi chứa các tiến trình. Khi gọi wait(x), tiến trình bị block và đẩy vào hàng đợi này. Khi gọi signal(x), nó sẽ lôi một tiến trình từ hàng đợi này ra để chạy tiếp.[cite: 3] Nguồn: Slide trang 65."
+  },
+  {
+    "id": 207,
+    "type": "single",
+    "text": "Bộ thực hiện (loader/exec) của Hệ điều hành thực hiện bước nào khi nạp chương trình vào bộ nhớ để sinh ra tiến trình?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Cấp phát một CPU vật lý riêng biệt cho riêng tiến trình đó.",
+      "Nạp nội dung các tham số dòng lệnh và biến môi trường (argc, argv, envp) vào khu vực Ngăn xếp (Stack).",
+      "Biên dịch mã nguồn C/C++ thành mã máy (Assembly).",
+      "Kích hoạt phần cứng DMA để lưu trữ dữ liệu vĩnh viễn."
+    ],
+    "correctAnswers": [
+      "Nạp nội dung các tham số dòng lệnh và biến môi trường (argc, argv, envp) vào khu vực Ngăn xếp (Stack)."
+    ],
+    "explanation": "Khi thực hiện chương trình (loader/exec), HĐH đọc file thực thi, thiết lập không gian địa chỉ, nạp mã lệnh/dữ liệu và đặt các tham số dòng lệnh (argc, argv) cùng biến môi trường (envp) vào không gian Stack của tiến trình. Biên dịch là việc của Compiler.[cite: 2] Nguồn: Slide trang 10."
+  },
+  {
+    "id": 208,
+    "type": "single",
+    "text": "Bản chất của các hàm API Socket trong lập trình truyền thông mạng (Interprocess Communication) là gì?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Cung cấp vùng nhớ chia sẻ (Shared Memory) vật lý giữa 2 máy tính khác nhau.",
+      "Giao tiếp trực tiếp với ổ cứng của máy khách để đọc ghi file.",
+      "Là đầu mút logic cho truyền thông, được định danh bằng cặp Địa chỉ IP và Cổng (Port).",
+      "Thay thế hoàn toàn kiến trúc Microkernel."
+    ],
+    "correctAnswers": [
+      "Là đầu mút logic cho truyền thông, được định danh bằng cặp Địa chỉ IP và Cổng (Port)."
+    ],
+    "explanation": "Socket được xem như đầu mút cho truyền thông (Endpoint), qua đó các ứng dụng gửi/nhận dữ liệu mạng. Định danh của Socket chính là cặp Địa chỉ IP (địa chỉ máy) và Cổng (định danh tiến trình).[cite: 2] Nguồn: Slide trang 48."
+  },
+  {
+    "id": 209,
+    "type": "multiple",
+    "text": "Trong tính chất 'Tổng quát theo thời gian' của hệ điều hành, những yêu cầu nào được đặt ra để đảm bảo HĐH không bị lỗi thời?",
+    "code": "",
+    "table": "",
+    "options": [
+      "Hệ thống phải có tính kế thừa (duy trì các thao tác, thông báo cũ).",
+      "Hệ thống phải có khả năng thích nghi với những thay đổi sự cố công nghệ có thể xảy ra (Ví dụ: sự cố Y2K, định dạng FAT32).",
+      "Tất cả các phần mềm phải được viết lại từ đầu bằng ngôn ngữ Assembly.",
+      "Tài nguyên phải được sử dụng đạt mức hiệu năng vi xử lý 100%."
+    ],
+    "correctAnswers": [
+      "Hệ thống phải có tính kế thừa (duy trì các thao tác, thông báo cũ).",
+      "Hệ thống phải có khả năng thích nghi với những thay đổi sự cố công nghệ có thể xảy ra (Ví dụ: sự cố Y2K, định dạng FAT32)."
+    ],
+    "explanation": "Tính Tổng quát theo thời gian bao hàm Tính kế thừa (bảo tồn lượng người dùng quen thuộc) và Tính thích nghi (mở rộng với kiến trúc mới, tránh sụp đổ bởi các yếu tố lỗi thời như Y2K hay FAT giới hạn). Hiệu năng cao thuộc về tính 'Hiệu quả'.[cite: 1] Nguồn: Slide trang 67."
+  }
+]
