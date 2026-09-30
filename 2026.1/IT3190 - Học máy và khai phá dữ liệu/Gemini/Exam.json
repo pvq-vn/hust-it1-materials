@@ -2191,22 +2191,18 @@
   },
   {
     "id": 104,
-    "type": "single",
-    "text": "Những hàm khoảng cách nào sau đây có thể được dùng trong giải thuật học láng giềng gần nhất đối với các biến (thuộc tính) kiểu định danh?\n1. Hàm khoảng cách Hamming\n2. Hàm khoảng cách Manhattan\n3. Hàm khoảng cách Euclidean",
+    "type": "multiple",
+    "text": "Những hàm khoảng cách nào sau đây có thể được dùng trong giải thuật học láng giềng gần nhất đối với các biến (thuộc tính) kiểu định danh?",
     "code": "",
     "tables": [],
     "link": "",
     "options": [
-      "1, 2 and 3",
-      "1",
-      "3",
-      "2",
-      "1 and 2",
-      "2 and 3",
-      "1 and 3"
+      "Hàm khoảng cách Hamming",
+      "Hàm khoảng cách Manhattan",
+      "Hàm khoảng cách Euclidean"
     ],
     "correctAnswers": [
-      "1"
+      "Hàm khoảng cách Hamming"
     ],
     "explanation": "Thuộc tính định danh (Nominal variables) là các dữ liệu danh mục không biểu diễn độ lớn hoặc thứ tự toán học (ví dụ: Màu sắc, Giới tính, Mã vùng). \n- Khoảng cách Manhattan (L1) và Euclidean (L2) đòi hỏi việc tính toán phép trừ độ lớn tọa độ, vì vậy chúng vô dụng đối với kiểu định danh.\n- **Khoảng cách Hamming (1)** là phép đo độ khớp (matching) đếm số lượng vị trí mà hai chuỗi/vector khác biệt nhau, do đó nó là hàm duy nhất phù hợp để đánh giá khoảng cách dữ liệu định danh.",
     "scope": "2022.1 - Ảnh 7"

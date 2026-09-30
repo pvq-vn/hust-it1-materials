@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "type": "essay",
+    "text": "Câu 1.1 (2 điểm): Trình bày ngắn gọn ưu và nhược điểm của các phương pháp gợi ý:\n- Gợi ý dựa trên lọc cộng tác (Collaborative Filtering)\n- Gợi ý dựa trên nội dung (Content-based Filtering)\n- Gợi ý dựa trên tri thức (Knowledge-based Recommendation)\n- Gợi ý dựa trên phiên (Session-based Recommendation)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "1. **Lọc cộng tác (Collaborative Filtering)**:\n- *Ưu điểm*: Không phụ thuộc vào nội dung/đặc trưng của sản phẩm; có khả năng gợi ý các sản phẩm bất ngờ/đa dạng (serendipity) dựa trên hành vi tương đồng của cộng đồng.\n- *Nhược điểm*: Vấn đề khởi đầu lạnh (Cold-start) cho người dùng mới và sản phẩm mới; ma trận tương tác thường rất thưa (data sparsity); khó giải thích kết quả gợi ý.\n\n2. **Gợi ý dựa trên nội dung (Content-based Filtering)**:\n- *Ưu điểm*: Không gặp vấn đề cold-start đối với sản phẩm mới (chỉ cần có mô tả/thuộc tính); dễ dàng giải thích kết quả gợi ý dựa trên thuộc tính phù hợp với sở thích người dùng; hoạt động tốt ngay cả khi chỉ có một người dùng độc lập.\n- *Nhược điểm*: Gặp vấn đề cold-start với người dùng mới; xu hướng gợi ý quá chuyên biệt (overspecialization), thiếu tính đa dạng; phụ thuộc lớn vào chất lượng trích xuất đặc trưng sản phẩm.\n\n3. **Gợi ý dựa trên tri thức (Knowledge-based Recommendation)**:\n- *Ưu điểm*: Giải quyết triệt để cold-start vì hoạt động dựa trên các luật tri thức, ràng buộc nghiệp vụ hoặc truy vấn trực tiếp từ người dùng; phù hợp cho các mặt hàng đắt tiền, ít khi mua lặp lại (bất động sản, ô tô, máy tính cao cấp).\n- *Nhược điểm*: Chi phí xây dựng và bảo trì cơ sở tri thức (knowledge acquisition bottleneck) rất cao; không tự động học linh hoạt từ dữ liệu hành vi lớn.\n\n4. **Gợi ý dựa trên phiên (Session-based Recommendation)**:\n- *Ưu điểm*: Không yêu cầu định danh người dùng dài hạn hay lịch sử cá nhân (phù hợp người dùng ẩn danh, bảo vệ quyền riêng tư); nắm bắt tốt ngữ cảnh và sở thích tức thời (short-term intent) theo thời gian thực.\n- *Nhược điểm*: Bỏ qua sở thích dài hạn (long-term preference) nếu không kết hợp mô hình lai; các phiên tương tác quá ngắn (1-2 click) khó cung cấp đủ tín hiệu để dự đoán chính xác.",
+    "scope": "Hệ gợi ý - cuối kì 20241.pdf — Trang 1"
+  },
+  {
+    "id": 2,
+    "type": "essay",
+    "text": "Câu 1.2 (2 điểm): Chúng ta nhận được một đặt hàng như sau: Xây dựng hệ thống website thương mại điện tử như amazon, trong đó có 1 chức năng gợi ý sản phẩm cho người dùng. Chúng ta phải demo cho khách hàng về hệ thống gợi ý trước khi bàn giao sản phẩm cho khách hàng. Hãy chọn giải pháp xây dựng hệ thống gợi ý trong trường hợp này và giải thích vì sao nó phù hợp?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "**Giải pháp đề xuất: Hệ thống gợi ý lai (Hybrid Recommendation) kết hợp Gợi ý dựa trên nội dung (Content-based), Gợi ý dựa trên độ phổ biến (Popularity-based/Rule-based) và Lọc cộng tác theo sản phẩm (Item-to-Item Collaborative Filtering).**\n\n**Giải thích lý do phù hợp trong kịch bản Demo:**\n1. *Khắc phục triệt để vấn đề Cold-Start*: Giai đoạn ban đầu khi website mới xây dựng hoặc chuẩn bị demo, hệ thống chưa có dữ liệu tương tác thực tế từ số lượng lớn người dùng. Nếu dùng Collaborative Filtering thuần túy (Matrix Factorization) thì trang chủ và trang sản phẩm sẽ bị trống do không đủ dữ liệu huấn luyện.\n2. *Độ trực quan cao và dễ kiểm chứng khi demo*:\n   - Với người dùng chưa đăng nhập (khách vãng lai): Dùng Content-based dựa trên danh mục/thuộc tính sản phẩm đang xem (\"Sản phẩm tương tự\") kết hợp Popularity (\"Sản phẩm bán chạy nhất / nổi bật nhất\"). Khách hàng thẩm định có thể thấy ngay kết quả gợi ý hợp lý, đẹp mắt.\n   - Với sản phẩm liên quan: Sử dụng Item-to-Item (tương tự thuật toán kinh điển của Amazon) tính độ tương đồng nội dung và danh mục, cho phép demo mượt mà không bị lỗi thiếu dữ liệu.\n3. *Khả năng mở rộng*: Sau khi bàn giao hệ thống và tích lũy đủ dữ liệu tương tác thực, kiến trúc này cho phép kích hoạt thêm các mô hình học máy nâng cao (Deep Learning, NeuMF) mà không cần viết lại toàn bộ luồng nghiệp vụ.",
+    "scope": "Hệ gợi ý - cuối kì 20241.pdf — Trang 1"
+  },
+  {
+    "id": 3,
+    "type": "essay",
+    "text": "Câu 2.1 (2 điểm): Xét 2 phương pháp lọc cộng tác dựa trên dữ liệu tiềm ẩn (implicit feedback): Phân tích ma trận có trọng số (Weighted Matrix Factorization - WMF) và Cá nhân hóa xếp hạng (Bayesian Personalized Ranking - BPR). Phân tích tổng quan điểm giống và điểm khác của 2 phương pháp này.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "**1. Điểm giống nhau:**\n- Cả hai đều thuộc họ mô hình Lọc cộng tác nhân tử hóa ma trận (Matrix Factorization / Latent Factor Models).\n- Đều được thiết kế đặc thù để xử lý dữ liệu phản hồi tiềm ẩn (implicit feedback như click, view, mua hàng) - nơi chỉ có tín hiệu dương (positive) được quan sát, còn dữ liệu không tương tác chứa hỗn hợp giữa phản hồi âm (negative) và sản phẩm chưa biết (unobserved).\n- Đều biểu diễn người dùng (user) và sản phẩm (item) dưới dạng các vector tiềm ẩn (latent vectors/embeddings) trong không gian nhiều chiều để tính điểm số tương thích $\\hat{x}_{ui} = u_u^T v_i$.\n\n**2. Điểm khác nhau:**\n- *Mục tiêu tối ưu (Objective / Loss Function)*:\n  + **WMF (Point-wise approach)**: Coi bài toán là hồi quy điểm số. Mục tiêu là xấp xỉ ma trận nhị phân $P_{ui} \\in \\{0, 1\\}$ với ma trận trọng số tin cậy $C_{ui} = 1 + \\alpha r_{ui}$. Cực tiểu hóa tổng bình phương sai số có trọng số: $\\mathcal{L}_{WMF} = \\sum_{u,i} C_{ui} (P_{ui} - u_u^T v_i)^2 + \\text{Reg}$.\n  + **BPR (Pair-wise ranking approach)**: Coi bài toán là xếp hạng tương đối theo cặp. Mục tiêu tối đa hóa xác suất hậu nghiệm Bayesian sao cho item $i$ đã quan sát được xếp hạng cao hơn item $j$ chưa quan sát đối với user $u$: $\\mathcal{L}_{BPR} = \\sum_{(u,i,j)} -\\ln \\sigma(\\hat{x}_{ui} - \\hat{x}_{uj}) + \\text{Reg}$.\n- *Xử lý dữ liệu chưa quan sát (Unobserved items)*:\n  + **WMF**: Gán tất cả mục chưa tương tác nhãn 0 nhưng với độ tin cậy thấp ($C_{ui} = 1$).\n  + **BPR**: Lấy mẫu âm (negative sampling), so sánh trực tiếp cặp $(i, j)$ thay vì coi $j$ là nhãn âm tuyệt đối.\n- *Phương pháp giải/huấn luyện*:\n  + **WMF**: Thường sử dụng phương pháp Bình phương tối thiểu luân phiên (Alternating Least Squares - ALS/iALS) cho phép cập nhật song song hiệu quả.\n  + **BPR**: Thường sử dụng Stochastic Gradient Descent (SGD) với kỹ thuật lấy mẫu cặp ngẫu nhiên Bootstrap.",
+    "scope": "Hệ gợi ý - cuối kì 20241.pdf — Trang 1"
+  },
+  {
+    "id": 4,
+    "type": "essay",
+    "text": "Câu 2.2 (2 điểm): Sử dụng 3 phương pháp gợi ý sau cho gợi ý tin tức: Phân tích ma trận dựa trên mạng nơ-ron (NeuMF), Gợi ý phiên dựa trên Bert (BERT4Rec), Gợi ý tin tức dựa trên chú ý đa góc nhìn (NAML). Phân tích tổng quan những khía cạnh chính làm nổi bật điểm khác biệt của 3 phương pháp? Bạn hãy chọn 1 trong 3 phương pháp, hãy trình bày kịch bản ứng dụng phù hợp nhất của phương pháp đó?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "**1. Phân tích khác biệt tổng quan:**\n- **NeuMF (Neural Matrix Factorization)**: Kết hợp Generalized Matrix Factorization (GMF) tuyến tính và Multilayer Perceptron (MLP) phi tuyến để học tương tác phức tạp giữa User ID và Item ID. Mô hình này dựa trên ID tĩnh, không tận dụng thông tin nội dung văn bản tin tức cũng như thứ tự thời gian của các lượt đọc.\n- **BERT4Rec**: Mô hình gợi ý tuần tự (Sequential Recommendation) sử dụng kiến trúc Transformer hai chiều (Bidirectional Self-Attention) và cơ chế học Cloze task (dự đoán token bị che) để nắm bắt chuỗi tương tác trong quá khứ của người dùng nhằm dự đoán bài đọc tiếp theo. Tập trung vào động lực chuỗi hành vi thời gian ngắn.\n- **NAML (Neural News Recommendation with Multi-View Attention)**: Mô hình chuyên biệt sâu sắc cho tin tức, sử dụng mạng nơ-ron chú ý đa góc nhìn để trích xuất đặc trưng phong phú từ nội dung bài báo: Tiêu đề (Title), Tóm tắt (Abstract), Thân bài (Body), Chuyên mục (Category). Sau đó tổng hợp biểu diễn người dùng từ lịch sử các bài báo đã đọc thông qua cơ chế chú ý (Attention).\n\n**2. Chọn 1 phương pháp và kịch bản ứng dụng phù hợp nhất:**\n- **Lựa chọn: NAML (Neural News Recommendation with Multi-View Attention)**.\n- **Kịch bản ứng dụng phù hợp nhất**: Hệ thống gợi ý cho trang báo điện tử tin tức tổng hợp có lượng phát hành bài viết mới liên tục hàng giờ (ví dụ: VnExpress, Tuổi Trẻ, BBC).\n- **Lý do**: Tin tức có tính thời sự cao và vòng đời rất ngắn (tin sau 24-48 giờ mất giá trị). Do đó, các mô hình dựa trên ID như NeuMF sẽ thất bại hoàn toàn vì gặp vấn đề cold-start tin mới liên tục. NAML đọc hiểu sâu sắc nội dung tin mới xuất bản qua đa góc nhìn (tiêu đề, chuyên mục, nội dung) và ánh xạ ngay lập tức với hồ sơ sở thích của độc giả để phân phối tin bài nóng hổi tới đúng nhóm người đọc quan tâm.",
+    "scope": "Hệ gợi ý - cuối kì 20241.pdf — Trang 1"
+  },
+  {
+    "id": 5,
+    "type": "essay",
+    "text": "Câu 3.1 (1 điểm): Cuộc thi của Netflix đưa ra: Dữ liệu là 1 matrix đánh giá (từ 1 đến 5) của các users trên các movies. Dữ liệu được chia ngẫu nhiên theo tỷ lệ nhất định thành tập training và testing sets bao gồm các cặp (user,movie) đã có tương tác. Độ đo đánh giá là trung bình bình phương lỗi (RMSE). Câu hỏi: Liệu độ đo này có phù hợp khi đánh giá hệ thống gợi ý danh sách các movies cho mỗi user trong thực tế? Hãy gợi ý cách xây dựng tập test và cách đánh giá phù hợp hơn?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "**1. Đánh giá độ phù hợp của RMSE:**\n- Độ đo RMSE **KHÔNG phù hợp** khi đánh giá hệ thống gợi ý thực tế vì:\n  + RMSE đo độ sai lệch dự đoán điểm số trên toàn bộ tập dữ liệu (Rating Prediction), trong khi mục tiêu thực tế của người dùng là nhận một danh sách đề xuất Top-K sản phẩm tốt nhất (Top-N Ranking).\n  + Dự đoán sai một phim mà user ghét (dự đoán 1 sao thành 2 sao) chịu phạt như dự đoán sai phim user cực thích (dự đoán 5 sao thành 4 sao), trong khi trải nghiệm người dùng chỉ quan tâm đến các phim ở đầu danh sách đề xuất.\n  + Chia tập ngẫu nhiên (random split) bỏ qua yếu tố thời gian, gây ra rò rỉ dữ liệu tương lai (data leakage) khi dùng tương tác tương lai để dự đoán quá khứ.\n\n**2. Gợi ý cách xây dựng tập test và độ đo phù hợp hơn:**\n- *Cách chia tập dữ liệu (Test Split)*: Sử dụng **phân chia theo thời gian (Temporal Split / Leave-one-last)**: Lấy tương tác cuối cùng (hoặc các tương tác trong khoảng thời gian sau cùng) của mỗi người dùng làm tập test, toàn bộ tương tác trước đó làm tập train nhằm mô phỏng đúng kịch bản triển khai thực tế.\n- *Độ đo đánh giá phù hợp*: Sử dụng các độ đo xếp hạng Top-K:\n  + **NDCG@K**: Đánh giá vị trí xếp hạng của các bộ phim người dùng thực sự thích (xếp càng cao điểm càng cao).\n  + **Hit Ratio@K (HR@K) / Recall@K**: Đo lường tỷ lệ các bộ phim mục tiêu xuất hiện trong Top-K gợi ý.\n  + **Precision@K** và **MAP (Mean Average Precision)**.",
+    "scope": "Hệ gợi ý - cuối kì 20241.pdf — Trang 1"
+  },
+  {
+    "id": 6,
+    "type": "essay",
+    "text": "Câu 3.2 (1 điểm): Khi nào chúng ta sử dùng độ đo Hit ratio hoặc recall để đánh giá hệ thống gợi ý? Tại sao nên dùng NDCG để đo cùng Hit ratio hoặc recall?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "**1. Khi nào dùng Hit Ratio hoặc Recall:**\n- Dùng khi đánh giá bài toán **gợi ý danh sách Top-K (Top-N Item Recommendation)** từ dữ liệu phản hồi tiềm ẩn (implicit feedback).\n- Dùng khi mục tiêu chính của hệ thống là **độ bao phủ/khả năng tìm thấy** (discovery): Liệu hệ thống có đề xuất được ít nhất một (Hit Ratio) hoặc bao nhiêu phần trăm (Recall) các mục người dùng thực sự quan tâm trong Top-K hay không.\n\n**2. Tại sao nên dùng NDCG kết hợp cùng Hit Ratio / Recall:**\n- **Hạn chế của Hit Ratio và Recall**: Cả hai độ đo này đều **bình đẳng về vị trí** (order-agnostic) trong Top-K. Nếu một bộ phim hay được gợi ý ở vị trí số 1 hay vị trí số 10 thì Hit Ratio và Recall đều cho kết quả giống hệt nhau.\n- **Ưu thế bổ khuyết của NDCG (Normalized Discounted Cumulative Gain)**: NDCG tích hợp hàm suy giảm vị trí logarithmic ($1 / \\log_2(i+1)$), gán trọng số thưởng rất cao cho các mục liên quan xuất hiện ở các vị trí đầu bảng (vị trí 1, 2, 3) và phạt nặng nếu đẩy mục liên quan xuống cuối danh sách.\n- **Kết luận**: Đo cùng NDCG giúp phản ánh trung thực trải nghiệm của người dùng: vừa đảm bảo tìm thấy món đồ mong muốn (Recall/Hit Ratio), vừa đảm bảo món đồ đó được đưa ngay lên đầu tầm mắt người dùng (NDCG).",
+    "scope": "Hệ gợi ý - cuối kì 20241.pdf — Trang 1"
+  }
+]

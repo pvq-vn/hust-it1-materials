@@ -1,0 +1,409 @@
+[
+  {
+    "id": 1,
+    "type": "single",
+    "text": "Which command is used to clear the Matlab command window?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "clear",
+      "close all",
+      "clc",
+      "clear all"
+    ],
+    "correctAnswers": [
+      "clc"
+    ],
+    "explanation": "**Chủ đề: Matlab Commands**\n\nIn Matlab, there are several commands for clearing different parts of the environment:\n• clear: Removes all variables from the current workspace.\n• close all: Closes all open figure windows.\n• clc: Clears all text from the Command Window, providing a ”clean screen”.\n• clear all: A more powerful version of clear that also removes functions, MEX-\nlinks, etc., from memory.\nThe command specifically used to clear the text display in the command window is clc.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 1"
+  },
+  {
+    "id": 2,
+    "type": "single",
+    "text": "Use the linear regression method to find the straight line (y = a0 + a1x) that fits the data\nset (0,3), (1,6), (2,8), (3,11), (4,13), (5,14)?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "y=3.5238+2.2571x"
+    ],
+    "correctAnswers": [
+      "y=3.5238+2.2571x"
+    ],
+    "explanation": "**Chủ đề: Linear Regression**\n\nLinear regression finds the best-fitting line by minimizing the sum of squared errors. The\nformulas for the coefficients a0 (intercept) and a1 (slope) are:\na1 = n P(xiyi) −P xi\nP yi\nn P(x2\ni ) −(P xi)2\na0 = ¯y −a1¯x\n(where ¯x and ¯y are the means)\nCalculations (with n = 6 points):\n1\n\n• P xi = 0 + 1 + 2 + 3 + 4 + 5 = 15\n• P yi = 3 + 6 + 8 + 11 + 13 + 14 = 55\n• P x2\ni = 02 + 12 + 22 + 32 + 42 + 52 = 0 + 1 + 4 + 9 + 16 + 25 = 55\n• P(xiyi) = (0 · 3) + (1 · 6) + (2 · 8) + (3 · 11) + (4 · 13) + (5 · 14) = 177\nNow, we substitute these sums into the formulas:\na1 = 6 · 177 −15 · 55\n6 · 55 −152\n= 1062 −825\n330 −225 = 237\n105 ≈2.2571\na0 =\nP yi\nn\n−a1\nP xi\nn\n= 55\n6 −(2.2571 · 15\n6 ) ≈9.1667 −5.6428 ≈3.5239\nThe resulting equation is y = 3.5239 + 2.2571x.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 1"
+  },
+  {
+    "id": 3,
+    "type": "single",
+    "text": "Use non-linear regression to find the parameters (a,b,c) for the curve y = a + bx + cx2\nthat fits the data set (1,2), (2,4), (3,6), (4,7), (5,9).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(-0.0000, 2.1286, -0.0714)"
+    ],
+    "correctAnswers": [
+      "(-0.0000, 2.1286, -0.0714)"
+    ],
+    "explanation": "**Chủ đề: Polynomial Regression**\n\nFor a quadratic fit, we solve the following system of normal equations for a, b, c:\nna + (\nX\nxi)b + (\nX\nx2\ni )c =\nX\nyi\n(\nX\nxi)a + (\nX\nx2\ni )b + (\nX\nx3\ni )c =\nX\nxiyi\n(\nX\nx2\ni )a + (\nX\nx3\ni )b + (\nX\nx4\ni )c =\nX\nyix2\ni\nCalculations (with n = 5 points):\n• P x = 15, P y = 28, P x2 = 55, P x3 = 225, P x4 = 979\n• P xy = 101, P x2y = 409\nThe system of equations becomes:\n5a + 15b + 55c = 28\n15a + 55b + 225c = 101\n55a + 225b + 979c = 409\nSolving this system (e.g., using a matrix solver) yields: a = 0, b ≈2.1286, c ≈−0.0714.\n2",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 2"
+  },
+  {
+    "id": 4,
+    "type": "single",
+    "text": "Use the Secant method to find the pair (root, actual error) for y = 3x3 + 2x −2 with a\ntolerance of 0.01, starting with the interval [0.6, 1].",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(0.6279, -0.0015)"
+    ],
+    "correctAnswers": [
+      "(0.6279, -0.0015)"
+    ],
+    "explanation": "**Chủ đề: Root Finding (Secant Method)**\n\nThe Secant method formula is:\nxi+1 = xi −f(xi)\nxi −xi−1\nf(xi) −f(xi−1)\nCalculations: Let f(x) = 3x3 + 2x −2.\n• Initial points: x0 = 0.6 and x1 = 1.\n• f(x0) = f(0.6) = 3(0.6)3 + 2(0.6) −2 = −0.152\n• f(x1) = f(1) = 3(1)3 + 2(1) −2 = 3\nIteration 1:\nx2 = 1 −3\n1 −0.6\n3 −(−0.152) ≈0.6192\nf(x2) ≈−0.0492. Since |f(x2)| > 0.01, we continue.\nIteration 2:\nx3 = 0.6192 −(−0.0492) 0.6192 −1\n−0.0492 −3 ≈0.6254\nf(x3) ≈−0.0151. Since |f(x3)| > 0.01, we continue.\nIteration 3:\nx4 = 0.6254 −(−0.0151)\n0.6254 −0.6192\n−0.0151 −(−0.0492) ≈0.6279\nf(x4) ≈f(0.6279) ≈−0.0015. Since |f(x4)| < 0.01, we stop. The result is root x ≈\n0.6279 with an actual error f(x) ≈−0.0015.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 3"
+  },
+  {
+    "id": 5,
+    "type": "single",
+    "text": "Use the bisection method to find (root, actual error) for y = 2x3 + x −2 with a tolerance\nof 0.15, starting with the interval [0.5, 1].",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(0.8125, -0.1147)"
+    ],
+    "correctAnswers": [
+      "(0.8125, -0.1147)"
+    ],
+    "explanation": "**Chủ đề: Root Finding (Bisection Method)**\n\nThe bisection method sets the new approximation to the midpoint c = (a + b)/2. Cal-\nculations: Let f(x) = 2x3 + x −2.\n• Initial interval: a = 0.5, b = 1.\n• f(a) = f(0.5) = −1.25 (negative)\n• f(b) = f(1) = 1 (positive)\nIteration 1:\n• c = (0.5 + 1)/2 = 0.75\n• f(0.75) = −0.40625 (negative). |f(c)| > 0.15.\n• New interval is [0.75, 1].\nIteration 2:\n• c = (0.75 + 1)/2 = 0.875\n• f(0.875) ≈0.2148 (positive). |f(c)| > 0.15.\n• New interval is [0.75, 0.875].\nIteration 3:\n• c = (0.75 + 0.875)/2 = 0.8125\n• f(0.8125) ≈−0.1152.\n• |f(c)| ≈0.1152 < 0.15. We stop.\nThe approximate root is 0.8125, and the actual error is ≈−0.1152.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 3"
+  },
+  {
+    "id": 6,
+    "type": "single",
+    "text": "Use Newton’s method for y = x2 −cos(x) with an initial guess x0 = 2 and a tolerance of\n0.01. Find the pair (root, actual error).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(0.8247, 0.0013)"
+    ],
+    "correctAnswers": [
+      "(0.8247, 0.0013)"
+    ],
+    "explanation": "**Chủ đề: Root Finding (Newton’s Method)**\n\nNewton’s method formula is xi+1 = xi −f(xi)/f ′(xi). Note: all calculations must be in\nradians.\n• f(x) = x2 −cos(x)\n• f ′(x) = 2x + sin(x)\n• x0 = 2, ε = 0.01\nIterations:\n• Step 1: x1 = 2 −\n22−cos(2)\n2(2)+sin(2) = 2 −4.4161\n4.9093 ≈1.1005. |f(x0)| > 0.01.\n• Step 2: x2 = 1.1005 −\n1.10052−cos(1.1005)\n2(1.1005)+sin(1.1005) = 1.1005 −0.7579\n3.0924 ≈0.8554. |f(x1)| > 0.01.\n• Step 3: x3 = 0.8554 −\n0.85542−cos(0.8554)\n2(0.8554)+sin(0.8554) = 0.8554 −0.0758\n2.4662 ≈0.8247. |f(x2)| > 0.01.\n• Step 4: f(0.8247) = 0.82472 −cos(0.8247) ≈0.0011. |f(x3)| < 0.01. Stop.\nThe root is x ≈0.8247 with an error f(x) ≈0.0011. This matches option 1.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 4"
+  },
+  {
+    "id": 7,
+    "type": "single",
+    "text": "Use the backward finite difference formula to find the derivative of f(x) = x4 + 2x3 + 1\nat x = 2 with h = 0.01.\n5",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "55.6410"
+    ],
+    "correctAnswers": [
+      "55.6410"
+    ],
+    "explanation": "**Chủ đề: Numerical Differentiation**\n\nThe backward finite difference formula for the first derivative is:\nf ′(x) ≈f(x) −f(x −h)\nh\nCalculations:\n• f(x) = x4 + 2x3 + 1\n• x = 2, h = 0.01, so x −h = 1.99\n• f(2) = (2)4 + 2(2)3 + 1 = 16 + 16 + 1 = 33\n• f(1.99) = (1.99)4 + 2(1.99)3 + 1 ≈15.6824 + 15.7612 + 1 = 32.4436\n• f ′(2) ≈33−32.4436\n0.01\n= 0.5564\n0.01 = 55.64",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 5"
+  },
+  {
+    "id": 8,
+    "type": "single",
+    "text": "Use the (single-application) trapezoidal rule to integrate f(x) = 2x4+x3+1 on the interval\n[1, 2].",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "22.5"
+    ],
+    "correctAnswers": [
+      "22.5"
+    ],
+    "explanation": "**Chủ đề: Numerical Integration (Trapezoidal Rule)**\n\nThe single-application trapezoidal rule formula is:\nI ≈(b −a)f(a) + f(b)\n2\nCalculations:\n• f(x) = 2x4 + x3 + 1\n• a = 1, b = 2\n• f(a) = f(1) = 2(1)4 + 13 + 1 = 4\n• f(b) = f(2) = 2(2)4 + 23 + 1 = 32 + 8 + 1 = 41\n• I ≈(2 −1)4+41\n2\n= 1 · 45\n2 = 22.5\n6",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 5"
+  },
+  {
+    "id": 9,
+    "type": "single",
+    "text": "Use the composite trapezoidal rule with N = 3 subintervals to integrate f(x) = x4+2x3+1\non the interval [0, 2].",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "18.4609"
+    ],
+    "correctAnswers": [
+      "18.4609"
+    ],
+    "explanation": "**Chủ đề: Numerical Integration (Composite Trapezoidal Rule)**\n\nThe composite trapezoidal rule formula is:\nI ≈h\n2\n\"\nf(x0) + 2\nN−1\nX\ni=1\nf(xi) + f(xN)\n#\nCalculations:\n• a = 0, b = 2, N = 3. Step size h = (2 −0)/3 = 2/3.\n• Points: x0 = 0, x1 = 2/3, x2 = 4/3, x3 = 2.\n• Function values:\n– f(0) = 1\n– f(2/3) = (2/3)4 + 2(2/3)3 + 1 ≈1.7901\n– f(4/3) = (4/3)4 + 2(4/3)3 + 1 ≈8.9012\n– f(2) = 33\n• I ≈2/3\n2 [1 + 2(1.7901 + 8.9012) + 33] = 1\n3[1 + 2(10.6913) + 33] = 55.3826\n3\n≈18.4609",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 6"
+  },
+  {
+    "id": 10,
+    "type": "single",
+    "text": "Use Simpson’s rule to integrate f(x) = 2x4 + x3 + 1 on the interval [0, 1].",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "1.6667"
+    ],
+    "correctAnswers": [
+      "1.6667"
+    ],
+    "explanation": "**Chủ đề: Numerical Integration (Simpson’s Rule) 7**\n\nThis implies the single-application Simpson’s 1/3 rule (N = 2 subintervals). The formula\nis:\nI ≈h\n3[f(x0) + 4f(x1) + f(x2)]\nCalculations:\n• a = 0, b = 1, N = 2. Step size h = (1 −0)/2 = 0.5.\n• Points: x0 = 0, x1 = 0.5, x2 = 1.\n• Function values: f(0) = 1, f(0.5) = 1.25, f(1) = 4.\n• I ≈0.5\n3 [1 + 4(1.25) + 4] = 1\n6[1 + 5 + 4] = 10\n6 ≈1.6667",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 7"
+  },
+  {
+    "id": 11,
+    "type": "single",
+    "text": "Given y′(t) = y + t2y + 1 with y(0) = 2, find y(0.2) using a step size h = 0.1.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "2.6323"
+    ],
+    "correctAnswers": [
+      "2.6323"
+    ],
+    "explanation": "**Chủ đề: Ordinary Differential Equations (Euler’s Method)**\n\nThe Forward Euler method is yi+1 = yi + hf(ti, yi). Let f(t, y) = (1 + t2)y + 1.\n• Step 1 (Find y at t=0.1):\n– f(t0, y0) = f(0, 2) = (1 + 02) · 2 + 1 = 3\n– y1 = y0 + hf(t0, y0) = 2 + 0.1 · 3 = 2.3\n• Step 2 (Find y at t=0.2):\n– f(t1, y1) = f(0.1, 2.3) = (1 + 0.12) · 2.3 + 1 = 1.01 · 2.3 + 1 = 3.323\n– y2 = y1 + hf(t1, y1) = 2.3 + 0.1 · 3.323 = 2.3 + 0.3323 = 2.6323\n8",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 7"
+  },
+  {
+    "id": 12,
+    "type": "single",
+    "text": "Given y′(t) = y + t2y + 1 with y(0) = 1, find y(0.4) using a step size h = 0.2.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "1.8912"
+    ],
+    "correctAnswers": [
+      "1.8912"
+    ],
+    "explanation": "**Chủ đề: Ordinary Differential Equations (Euler’s Method)**\n\nThe Forward Euler method is yi+1 = yi + hf(ti, yi). Let f(t, y) = (1 + t2)y + 1.\n• Step 1 (Find y at t=0.2):\n– f(t0, y0) = f(0, 1) = (1 + 02) · 1 + 1 = 2\n– y1 = y0 + hf(t0, y0) = 1 + 0.2 · 2 = 1.4\n• Step 2 (Find y at t=0.4):\n– f(t1, y1) = f(0.2, 1.4) = (1 + 0.22) · 1.4 + 1 = 1.04 · 1.4 + 1 = 2.456\n– y2 = y1 + hf(t1, y1) = 1.4 + 0.2 · 2.456 = 1.4 + 0.4912 = 1.8912",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 8"
+  },
+  {
+    "id": 13,
+    "type": "single",
+    "text": "What is the advantage of the Backward Euler method compared to the Forward Euler\nmethod when solving differential equations?\n9",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Backward Euler has a larger stability region."
+    ],
+    "correctAnswers": [
+      "Backward Euler has a larger stability region."
+    ],
+    "explanation": "**Chủ đề: ODE Methods (Theory)**\n\n• Forward Euler is an explicit method. It is simple but only conditionally stable.\nFor stiff ODEs, it requires an extremely small step size to remain stable.\n• Backward Euler is an implicit method. It is more computationally expensive per\nstep but is unconditionally stable (A-stable). This means it remains stable for any\nstep size when applied to a stable problem, making it far superior for stiff equations.\nThe primary advantage is its much larger stability region.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 9"
+  },
+  {
+    "id": 14,
+    "type": "single",
+    "text": "When using Newton’s method for minimizing a single-variable function, if the initial value\nis closer to the exact solution, does the problem converge faster?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "explanation": "**Chủ đề: Optimization (Theory)**\n\nYes. Newton’s method for optimization exhibits quadratic convergence, meaning the error\nat each step is proportional to the square of the previous error (errork+1 ≈C · (errork)2).\nThis is extremely fast, but it is only guaranteed if the initial guess is ”sufficiently close”\nto the true solution. A closer initial guess means a smaller initial error, which leads to\nmuch faster convergence.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 9"
+  },
+  {
+    "id": 15,
+    "type": "single",
+    "text": "What form is this linear programming problem in? minimize f(x) = 2x1 −4x2 −x3 + 6x4\nSubject to: x1 + x4 + x5 ≥12, 12x1 + x3 + x6 ≥3, x1 + x2 −x3 −x4 ≥6, xj ≥0 for all j",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Canonical form"
+    ],
+    "correctAnswers": [
+      "Canonical form"
+    ],
+    "explanation": "**Chủ đề: Linear Programming (Formulations) 10**\n\n• Canonical Form: A minimize problem where all constraints are ≥inequalities,\nand all variables are non-negative.\n• Standard Form: A problem where all constraints are equalities (=), and all vari-\nables are non-negative.\nThe given problem is a minimization problem, all constraints are of the form ’≥’, and all\nvariables are non-negative. This perfectly matches the definition of Canonical Form.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 10"
+  },
+  {
+    "id": 16,
+    "type": "single",
+    "text": "Is the statement ”a linear programming problem in the plane always has an optimal so-\nlution that is a vertex of the feasible region” true or false?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "False"
+    ],
+    "explanation": "**Chủ đề: Linear Programming (Theory)**\n\nThis statement is false because it uses the word ”always”. A linear program does not\nalways have an optimal solution. It can be:\n1. Infeasible: The feasible region is empty, so there are no solutions.\n2. Unbounded: The objective function can be made arbitrarily large (for max) or\nsmall (for min). No finite optimal solution exists.\nThe Fundamental Theorem of Linear Programming states that if an optimal solution\nexists, then at least one optimal solution must be a vertex. The initial statement is false\nbecause it does not account for the cases where no optimal solution exists.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 11"
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "text": "Is the statement ”A linear programming problem always finds a feasible basic solution”\ntrue or false?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "False"
+    ],
+    "explanation": "**Chủ đề: Linear Programming (Theory)**\n\nThis statement is false. A feasible basic solution corresponds to a vertex of the feasible\nregion. However, a linear program can be infeasible, meaning its feasible region is empty.\nIf there are no feasible points at all, there can be no feasible basic solutions (vertices).\nPhase I of the Simplex method is designed specifically to find a feasible basic solution or\nprove that none exist.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 11"
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "text": "Find the maximum value of Z = 3x + 5y subject to x + 4y ≤24, 3x + y ≤21, x + y ≤9,\nx ≥0, y ≥0.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      ""
+    ],
+    "correctAnswers": [
+      ""
+    ],
+    "explanation": "**Chủ đề: Linear Programming (Graphical Method)**\n\nWe find the vertices of the feasible region by finding the intersection points of the bound-\nary lines.\n• Vertex A (Origin): (0, 0)\n• Vertex B (L2 & x-axis): 3x + y = 21, y = 0 =⇒x = 7 =⇒(7, 0)\n• Vertex C (L2 & L3): 3x+y = 21, x+y = 9 =⇒2x = 12, x = 6, y = 3 =⇒(6, 3)\n• Vertex D (L1 & L3): x+4y = 24, x+y = 9 =⇒3y = 15, y = 5, x = 4 =⇒(4, 5)\n• Vertex E (L1 & y-axis): x + 4y = 24, x = 0 =⇒y = 6 =⇒(0, 6)\nEvaluate Z = 3x + 5y at each vertex:\n12\n\n• Z(0, 0) = 0\n• Z(7, 0) = 21\n• Z(6, 3) = 3(6) + 5(3) = 18 + 15 = 33\n• Z(4, 5) = 3(4) + 5(5) = 12 + 25 = 37 (Maximum)\n• Z(0, 6) = 30",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 12"
+  },
+  {
+    "id": 19,
+    "type": "single",
+    "text": "What is the result of the Matlab script:",
+    "code": "j=0; i=1; while(j>5) for i=1:8 j=j+i;",
+    "table": "",
+    "link": "",
+    "options": [
+      "j=0 & i=1"
+    ],
+    "correctAnswers": [
+      "j=0 & i=1"
+    ],
+    "explanation": "**Chủ đề: Matlab Scripting**\n\n1. j=0;: Variable j is initialized to 0.\n2. i=1;: Variable i is initialized to 1.\n3. while(j>5): The condition for the while loop is checked. Since j = 0, the condition\n0 > 5 is false.\n4. The body of the while loop is never executed.\n5. The script terminates with the variables at their last assigned values.\nThe final values are j = 0 and i = 1.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 13"
+  },
+  {
+    "id": 20,
+    "type": "single",
+    "text": "What is the result of the script:",
+    "code": "if((-10 && 00)||(20134 && 900)) fprintf(\"%s\",",
+    "table": "",
+    "link": "",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswers": [
+      "True"
+    ],
+    "explanation": "**Chủ đề: Matlab Scripting (Logical Operators) 13**\n\nIn Matlab, any non-zero number is treated as ‘true‘, and 0 is ‘false‘. We evaluate the\ncondition:\n((-10 && 0) || (20134 && 900))\n• (-10 && 0): ‘true && false‘ evaluates to ‘false‘.\n• (20134 && 900): ‘true && true‘ evaluates to ‘true‘.\n• Combined: (false || true) evaluates to ‘true‘.\nSince the overall condition is ‘true‘, the ‘if‘ block is executed, printing ”True.”.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 13"
+  },
+  {
+    "id": 21,
+    "type": "single",
+    "text": "What is the result of",
+    "code": "A = [1, 2, 3, 4; 5, 6, 7, 8; 9, 10, 11, 12]; B = A(2,",
+    "table": "",
+    "link": "",
+    "options": [
+      "B = [5,6,7,8]"
+    ],
+    "correctAnswers": [
+      "B = [5,6,7,8]"
+    ],
+    "explanation": "**Chủ đề: Matlab Indexing**\n\nThe command B = A(2, :) selects a submatrix from A.\n• The first index, ‘2‘, specifies the 2nd row.\n• The second index, ‘:‘, is a wildcard that specifies all columns.\nTherefore, B is assigned the entire second row of A, which is ‘[5, 6, 7, 8]‘.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 14"
+  },
+  {
+    "id": 22,
+    "type": "single",
+    "text": "Choose the most correct statement about a system Ax = b.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Both PA1 and PA2 are wrong"
+    ],
+    "correctAnswers": [
+      "Both PA1 and PA2 are wrong"
+    ],
+    "explanation": "**Chủ đề: Systems of Linear Equations (Theory)**\n\nLet’s analyze the statements for a general linear system Ax = b:\n• PA1: ”A system Ax = b has a unique solution if and only if rank(A) = rank(Ab)”.\nThis is false. This condition (Rouch´e–Capelli theorem) only guarantees that the\nsystem is consistent (has at least one solution). For a unique solution, the rank\nmust also equal the number of variables, n.\n• PA2: ”A system Ax = b has a unique solution if and only if det(A)̸ = 0”. This is\nfalse for a general system, as the determinant is only defined for square matrices.\nThis statement is true only for square systems.\nSince both statements are incorrect for the general case, both are considered wrong.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 15"
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "text": "Use interpolation to find the curve that fits the data: (0.1, -2.9750), (0.2, -2.9400), (0.3,\n-2.8950).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "0.5*x*x + 0.2*x-3"
+    ],
+    "correctAnswers": [
+      "0.5*x*x + 0.2*x-3"
+    ],
+    "explanation": "**Chủ đề: Interpolation**\n\nWith three points, we can find a unique quadratic polynomial P(x) = ax2 +bx+c. Since\nthe x-values are equally spaced (h = 0.1), we can use finite differences.\n• First Differences:\n– ∆y1 = −2.9400 −(−2.9750) = 0.0350\n– ∆y2 = −2.8950 −(−2.9400) = 0.0450\n15\n\n• Second Difference: ∆2y = ∆y2 −∆y1 = 0.0100\nThe coefficient a is given by a = ∆2y\n2!h2 =\n0.01\n2·0.12 = 0.5. The polynomial is y = 0.5x2 +bx+c.\nWe plug in two points to find b and c:\n−2.9750 = 0.5(0.1)2 + b(0.1) + c =⇒−2.98 = 0.1b + c\n−2.9400 = 0.5(0.2)2 + b(0.2) + c =⇒−2.96 = 0.2b + c\nSubtracting the equations gives 0.02 = 0.1b\n=⇒\nb = 0.2.\nSubstituting back gives\nc = −3. The polynomial is y = 0.5x2 + 0.2x −3.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 15"
+  },
+  {
+    "id": 24,
+    "type": "single",
+    "text": "Given the system y′ = (z −y)x, z′ = (z + y)x with y(0) = 1, z(0) = 1, find the solution\nat x = 0.6 using Euler’s method with h = 0.1.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "y=1.0170; z=1.3179"
+    ],
+    "correctAnswers": [
+      "y=1.0170; z=1.3179"
+    ],
+    "explanation": "**Chủ đề: Systems of ODEs (Euler’s Method)**\n\nWe apply Euler’s method iteratively: yi+1 = yi+hf(xi, yi, zi) and zi+1 = zi+hg(xi, yi, zi).\nThe results of each step are shown in the table below:\nStep (i)\nxi\nyi\nzi\nyi+1\nzi+1\n0\n0.0\n1.0000\n1.0000\n1.0000\n1.0000\n1\n0.1\n1.0000\n1.0000\n1.0000\n1.0200\n2\n0.2\n1.0000\n1.0200\n1.0004\n1.0604\n3\n0.3\n1.0004\n1.0604\n1.0022\n1.1222\n4\n0.4\n1.0022\n1.1222\n1.0070\n1.2072\n5\n0.5\n1.0070\n1.2072\n1.0170\n1.3179\n6\n0.6\n1.0170\n1.3179\n—",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 16"
+  },
+  {
+    "id": 25,
+    "type": "single",
+    "text": "Approximate\nR 1\n0\ndx\n1+x using Simpson’s rules with n = 5 subintervals.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "0.69315"
+    ],
+    "correctAnswers": [
+      "0.69315"
+    ],
+    "explanation": "**Chủ đề: Numerical Integration (Simpson’s Rules) 16**\n\nSince n = 5 is odd, we cannot use a single composite rule. We combine Simpson’s 1/3\nrule for the first 2 intervals and Simpson’s 3/8 rule for the last 3 intervals.\n• f(x) = 1/(1 + x), h = (1 −0)/5 = 0.2.\n• Points:\nf(0) = 1, f(0.2) ≈0.8333, f(0.4) ≈0.7143, f(0.6) = 0.625, f(0.8) ≈\n0.5556, f(1) = 0.5.\nPart 1: Simpson’s 1/3 on [0, 0.4] (n = 2)\nI1 = h\n3[f(0) + 4f(0.2) + f(0.4)] = 0.2\n3 [1 + 4(0.83333) + 0.71429] ≈0.3365\nPart 2: Simpson’s 3/8 on [0.4, 1.0] (n = 3)\nI2 = 3h\n8 [f(0.4)+3f(0.6)+3f(0.8)+f(1.0)] = 3(0.2)\n8\n[0.7143+3(0.625)+3(0.5556)+0.5] ≈0.3567\nTotal Integral:\nI = I1 + I2 = 0.3365 + 0.3567 = 0.6932\nThe exact value is ln(2) ≈0.69315. The calculated value matches this very closely.",
+    "scope": "Tính toán khoa học - ôn tập 1.pdf — Trang 17"
+  }
+]

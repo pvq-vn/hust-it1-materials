@@ -17,9 +17,28 @@
 !/Bổ trợ/
 !/TOEIC/
 
-# 3. Cho phép tệp cấu hình của repo
+# 3. Cho phép tệp cấu hình của repo và web application
 !.gitignore
 !README.md
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.node.json
+!vite.config.ts
+!tailwind.config.js
+!postcss.config.js
+!index.html
+!.env.example
+!src/
+!src/**
+!public/
+!public/**
+
+node_modules/
+dist/
+dist-ssr/
+.env
+*.local
 
 # 4. Bên trong 8 thư mục, bỏ qua mọi file theo mặc định
 2024.1/**

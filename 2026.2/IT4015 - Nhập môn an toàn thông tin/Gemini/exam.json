@@ -1,0 +1,1878 @@
+[
+  {
+    "id": 1,
+    "type": "single",
+    "text": "What is the most appropriate cryptographic primitive to use if a company wants to distribute authenticated software updates to its customers?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Hash function.",
+      "Digital signature scheme.",
+      "Message authentication code.",
+      "Block cipher",
+      "Public-key encryption scheme."
+    ],
+    "correctAnswers": [
+      "Digital signature scheme."
+    ],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 2,
+    "type": "single",
+    "text": "What is the most appropriate cryptographic primitive to use if an individual wants to ensure confidentiality of the files stored on her hard drive?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Message authentication code.",
+      "Block cipher.",
+      "Public-key encryption.",
+      "Hash function.",
+      "Private-key encryption."
+    ],
+    "correctAnswers": [
+      "Message authentication code."
+    ],
+    "explanation": "Mã hóa khóa công khai (hoặc khóa đối xứng) bảo đảm tính bí mật (confidentiality) khi gửi thông điệp.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 3,
+    "type": "single",
+    "text": "Let X be a uniform random variable over the set {0, 1}n. Let Y be an arbitrary random variable over the set {0, 1}n (not necessarily uniform) that is independent of X. Define the random variable Z = X ⊕Y . What is the probability that Z equals 0n?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "0.5",
+      "1/2n",
+      "2/2n",
+      "0"
+    ],
+    "correctAnswers": [
+      "0.5"
+    ],
+    "explanation": "Mã xác thực thông điệp (MAC) đảm bảo tính toàn vẹn và xác thực dựa trên khóa bí mật chung.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 4,
+    "type": "essay",
+    "text": "Suppose you are told that the one time pad encryption of the message “gui duc 100d” is 5c73d5340a948c86981bc294 (the plaintext letters are encoded as 8-bit ASCII and the given ciphertext is written in hex). The one time pad encryption of the message “gui duc 211d” under the same OTP key is . Note: you just write the 8-bit ASCII code of the ciphertext in hexadecimal.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Hàm băm một chiều (Cryptographic Hash Function) đảm bảo kiểm tra tính toàn vẹn dữ liệu.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 5,
+    "type": "essay",
+    "text": "CBC mode: The BkExam is a block cipher optimized for use on final exam. It operates on the 26 letters of the English alphabet: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 m A B C D E F G H I J K L M N O P Q R S T U V W X Y Z EK(m) P K X C Y W R S E J U D G O Z A T N M V F H L I B Q As the ⊕operation is not defined on the set {A, . . . , Z}, we replace it here during encryption with modulo-26 addition (e.g., C ⊕D = F and Y ⊕C = A). The ciphertext of the message: “DHBK” which were encrypted using CBC mode with IV=H is . Note: You should add IV to the ciphertext.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Mã khối (Block cipher như AES) mã hóa các khối dữ liệu kích thước cố định.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 2"
+  },
+  {
+    "id": 6,
+    "type": "essay",
+    "text": "Let m be a message consisting of ℓAES blocks (say ℓ= 100). Alice encrypts m using randomized counter mode and transmits the resulting ciphertext to Bob. Due to a network error, ciphertext block number ℓ/2 is corrupted during transmission. All other ciphertext blocks are transmitted and received correctly. Once Bob decrypts the received ciphertext, how many plaintext blocks will be corrupted?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 7,
+    "type": "single",
+    "text": "generator: Which of the following numbers is a generator of Z∗ 17?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "2, ⟨2⟩= {1, 2, 4, 8, 16, 15, 13, 9, 1, 2, 4, 8, 16, 15, 13, 9}",
+      "3, ⟨3⟩= {1, 3, 9, 10, 13, 5, 15, 11, 16, 14, 8, 7, 4, 12, 2, 6}",
+      "5, ⟨5⟩= {1, 5, 8, 6, 13, 14, 2, 10, 16, 12, 9, 11, 4, 3, 15, 7}",
+      "7, ⟨7⟩= {1, 7, 15, 3, 4, 11, 9, 12, 16, 10, 2, 14, 13, 6, 8, 5}",
+      "6, ⟨6⟩= {1, 6, 2, 12, 4, 7, 8, 14, 16, 11, 15, 5, 13, 10, 9, 3} F. 8, ⟨8⟩= {1, 8, 13, 2, 16, 9, 4, 15, 1, 8, 13, 2, 16, 9, 4, 15} G. 9, ⟨9⟩= {1, 9, 13, 15, 16, 8, 4, 2, 1, 9, 13, 15, 16, 8, 4, 2} H. 10, ⟨10⟩= {1, 10, 15, 14, 4, 6, 9, 5, 16, 7, 2, 3, 13, 11, 8, 12}"
+    ],
+    "correctAnswers": [
+      "2, ⟨2⟩= {1, 2, 4, 8, 16, 15, 13, 9, 1, 2, 4, 8, 16, 15, 13, 9}"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 8,
+    "type": "essay",
+    "text": "Compute 30−1 mod 113. The number 30−1 mod 113 is .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 9,
+    "type": "essay",
+    "text": "Compute 779168002 mod 11413 knowing that 11413 = (101 × 113). The number 779168002 mod 11413 is .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 10,
+    "type": "essay",
+    "text": "What is the discrete log of 4 base 3 in Z∗",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 11,
+    "type": "essay",
+    "text": "The number Dlog3(4) is .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 12,
+    "type": "single",
+    "text": "Let G be a finite cyclic group of order q and g is a generator of G. Suppose that the discrete log problem is hard in G. Which of the following problems is also hard:",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Randomly pick y ∈G, find x such that gx = y.",
+      "Randomly pick two values x ∈Zq and y ∈G, compute yx · g.",
+      "Randomly pick x ∈Zq, find y such that gx = y",
+      "Find x and y such that gx = y.",
+      "Randomly pick y ∈G, find x such that gx+1 = y. Page 2"
+    ],
+    "correctAnswers": [
+      "Randomly pick y ∈G, find x such that gx = y."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 3"
+  },
+  {
+    "id": 13,
+    "type": "essay",
+    "text": "An RSA encryption scheme has the set-up parameters p = 13 and q = 19. The public key is e = 17. You are asked to decrypt the ciphertext y = 16. The plaintext x is .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 14,
+    "type": "single",
+    "text": "In the following problems, N is the product of two large integers p and q; and e < N such that gcd(e, φ(N)) = 1. If RSA is hard, which of the following problems is hard?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Given N, e, and randomly pick y ∈Z∗ N, find x such that xe = y mod N.",
+      "Given N and e, find x, y such that xe = y mod N.",
+      "Given N and e, find x such that xe = 8 mod N.",
+      "Given N, e, and randomly pick x ∈Z∗ N, find y such that xe = y mod N"
+    ],
+    "correctAnswers": [
+      "Given N, e, and randomly pick y ∈Z∗ N, find x such that xe = y mod N."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 15,
+    "type": "essay",
+    "text": "Let Z∗ 19 be a cyclic group and 3 is a generator. Compute DH3(12, 15) in this group. The value DH3(12, 15) is .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 16,
+    "type": "single",
+    "text": "Suppose n+1 parties, call them B, A1, . . . , An, wish to setup a shared group key. They want a protocol so that at the end of the protocol they all have a common secret key k, but an eavesdropper who sees the entire conversation cannot determine k. The parties agree on the following protocol that runs in a group G of prime order q with generator g: • for i = 1, . . . , n party Ai chooses a random ai in {1, . . . , q} and sends to Party B the quantity Xi ←gai. • Party B generates a random b in {1, . . . , q} and for i = 1, . . . , n responds to Party Ai with the messages Yi ←Xb i . The final group key should be gb. Clearly Party B can compute this group key. How would each Party Ai compute this group key?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Party Ai computes gb as Y ai i",
+      "Party Ai computes gb as Y −1/ai i",
+      "Party Ai computes gb as Y 1/ai i",
+      "Party Ai computes gb as Y −ai i"
+    ],
+    "correctAnswers": [
+      "Party Ai computes gb as Y ai i"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "text": "Suppose ta sửa đổi giao thức Diﬀie-Hellman as follows. Alice vẫn tương tác như thông thường, tức is chooses a random numbera in {1, . . . , p −1} and gửi given Bob A ←ga. Bob, tuy vậy, chooses a random number b in {1, . . . , p−1} and gửi given Alice B ←g1/b. The shared secret value secret nào below họcó thểsinh and làm thếnào họsinh được?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "secret = gab. Alice compute giá trịsecret as Ba and Bob compute as Ab.",
+      "secret = ga/b. Alice compute giá trịsecret as Ba and Bob compute as A1/b. Page 3",
+      "secret = ga/b. Alice compute giá trịsecret as B1/b and Bob compute as Aa.",
+      "secret = gab. Alice compute giá trịsecret as B1/a and Bob compute as Ab."
+    ],
+    "correctAnswers": [
+      "secret = gab. Alice compute giá trịsecret as Ba and Bob compute as Ab."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 4"
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "text": "Which of the following statements is true about the basic Diﬀie-Hellman key-exchange protocol.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "The basic protocol provides key exchange secure against active adversaries that can inject and modify messages.",
+      "As with RSA, the protocol only provides eavesdropping security in the group Z∗ N where N is an RSA modulus.",
+      "The protocol can be converted to a public-key encryption system called the ElGamal public-key system."
+    ],
+    "correctAnswers": [
+      "The basic protocol provides key exchange secure against active adversaries that can inject and modify messages."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 19,
+    "type": "essay",
+    "text": "Given an elliptic curve E : y2 = x3 + 2x + 2 mod 17 The base point P = (13, 10). Compute the point Q = 78 · P. The point Q is . Note: Write the result as (p,q) with no space in between. For the sake of calculation, the points that are multiples of the primitive element (5, 1) are listed in the Table below. k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O",
+    "code": "",
+    "table": "| k | k · G |\n|---|---|\n| 1 | (5,1) |\n| 2 | (6,3) |\n| 3 | (10,6) |\n| 4 | (3,1) |\n| 5 | (9,16) |",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 20,
+    "type": "essay",
+    "text": "Given an elliptic curve E : y2 = x3 + 2x + 2 mod 17 Consider the point P = (13, 10). Alice and Bob are to compute a shared key in a Diﬀie-Hellman protocol based on elliptic curve E. That is, • Alice randomly pick a number a and compute the point aP = (16, 13), and send to Bob; • Alice receive the point bP = (16, 13) from Bob. The shared key abP between Alice and Bob is . Note: Write the result as (p,q) with no space in between. For the sake of calculation, the points that are multiples of the primitive element (5, 1) are listed in the Table below. Page 4 k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O",
+    "code": "",
+    "table": "| k | k · G |\n|---|---|\n| 1 | (5,1) |\n| 2 | (6,3) |\n| 3 | (10,6) |\n| 4 | (3,1) |\n| 5 | (9,16) |",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 5"
+  },
+  {
+    "id": 21,
+    "type": "single",
+    "text": "Collision resistance: Let H : M →T be a collision resistant hash function where |T| is smaller than |M|. Which of the following properties is implied by collision resistance?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Given H(m) the attacker learns nothing about m.",
+      "It is diﬀicult to find m0 and m1 such that H(m0) = H(m1) + 1. (here we treat the outputs of H as integers)",
+      "For all m in M, H(m) must be shorter than m.",
+      "It is diﬀicult to construct two distinct messages m0, m1 such that H(m0) = H(m1)."
+    ],
+    "correctAnswers": [
+      "Given H(m) the attacker learns nothing about m."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 22,
+    "type": "single",
+    "text": "Let (S, V ) be a secure MAC defined over (K, M, T) where M = {0, 1}n and T = {0, 1}128 (i.e. the key space is K, message space is {0, 1}n, and tag space is {0, 1}128). Which of the following is a secure MAC: (as usual, we use to denote string concate- nation).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m[0, . . . , n −2]"
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m[0, . . . , n −2]"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "text": "V ′(k, m, t) = V (k, m[0, . . . , n −2] 0, t)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m)[0, . . . , 126] V ′(k, m, t) = \u0002 V (k, m, t"
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m)[0, . . . , 126] V ′(k, m, t) = \u0002 V (k, m, t"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 24,
+    "type": "essay",
+    "text": "or V (k, m, t",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 25,
+    "type": "single",
+    "text": "\u0003 (i.e., V ′(k, m, t) outputs “1” if either t 0 or t 1 is a valid tag for m).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m m) V ′(k, m, t) = V (k, m m, t).",
+      "S′(k, m) = S(k, m) V ′(k, m, t) = ( V (k, m, t) if m̸ = 0n “1” otherwise",
+      "S′(k, m) = S(k, m) and V ′(k, m, t) = \u0002 V (k, m, t) or V (k, m ⊕1n, t) \u0003 (i.e., V ′(k, m, t) outputs “1” if t is a valid tag for either m or m ⊕1n). Page 5 F. S′((k1, k2), m) = \u0000S(k1, m), S(k2, m) \u0001 and V ′\u0000(k1, k2), m, (t1, t2) \u0001 = \u0002 V (k1, m, t1) and V (k2, m, t2) \u0003 (i.e., V ′\u0000(k1, k2), m, (t1, t2) \u0001 outputs “1” if both t1 and t2 are valid tags)."
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m m) V ′(k, m, t) = V (k, m m, t)."
+    ],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 6"
+  },
+  {
+    "id": 26,
+    "type": "single",
+    "text": "Suppose a MAC system (S, V ) is used to protect files in a file system by appending a MAC tag to each file. The MAC signing algorithm S is applied to the file contents and nothing else. What tampering attacks are not prevented by this system?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Swapping two files in the file system.",
+      "Replacing the tag and contents of one file with the tag and contents of a file from another computer protected by the same MAC system, but a different key.",
+      "Replacing the contents of a file with the concatenation of two files on the file system.",
+      "Erasing the last byte of the file contents."
+    ],
+    "correctAnswers": [
+      "Swapping two files in the file system."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 27,
+    "type": "single",
+    "text": "Given an RSA signature scheme with the public key (n = 9797, e = 7), which of the following signatures are valid? Given an RSA signature scheme with the public key (n = 9797, e = 7), which of the following signatures are valid?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(m = 2601, σ = 7496)",
+      "(m = 1894, σ = 8667)",
+      "(m = 4707, σ = 4976)",
+      "(m = 2016, σ = 8159)"
+    ],
+    "correctAnswers": [
+      "(m = 2601, σ = 7496)"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 28,
+    "type": "essay",
+    "text": "We consider the ElGamal signature scheme. You are given Bob’s private key sk = d = (12) and the corresponding public key pk = (p, g, gd) = (29, 2, 7). Compute the Elgamal signature (r, s) for a message from Bob to Alice with message m = 20 and ephemeral key kE = 5. The signature (r, s) is . Note: Write the signature as (r,s) with no spaces in between. Page 6 Name: Student ID: Introduction to Cryptography & Security Exam duration: 60 minutes. Multiple-Choice Questions",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 7"
+  },
+  {
+    "id": 29,
+    "type": "single",
+    "text": "What is the most appropriate cryptographic primitive to use if a company wants to distribute authenticated software updates to its customers?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Hash function.",
+      "Digital signature scheme.",
+      "Message authentication code.",
+      "Block cipher",
+      "Public-key encryption scheme."
+    ],
+    "correctAnswers": [
+      "Digital signature scheme."
+    ],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 30,
+    "type": "single",
+    "text": "What is the most appropriate cryptographic primitive to use if an individual wants to ensure confidentiality of the files stored on her hard drive?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Message authentication code.",
+      "Block cipher.",
+      "Public-key encryption.",
+      "Hash function.",
+      "Private-key encryption."
+    ],
+    "correctAnswers": [
+      "Message authentication code."
+    ],
+    "explanation": "Mã hóa khóa công khai (hoặc khóa đối xứng) bảo đảm tính bí mật (confidentiality) khi gửi thông điệp.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 31,
+    "type": "single",
+    "text": "Which of the following best characterizes Discretionary Access Control (DAC)?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Access decisions based on security labels.",
+      "An entity can grant access to others.",
+      "Centralized control by a security administrator.",
+      "Access based on roles within an organization."
+    ],
+    "correctAnswers": [
+      "Access decisions based on security labels."
+    ],
+    "explanation": "Mã xác thực thông điệp (MAC) đảm bảo tính toàn vẹn và xác thực dựa trên khóa bí mật chung.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 32,
+    "type": "essay",
+    "text": "Consider the following authentication protocol between Alice and Bob:",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Hàm băm một chiều (Cryptographic Hash Function) đảm bảo kiểm tra tính toàn vẹn dữ liệu.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 33,
+    "type": "essay",
+    "text": "Bob →Alice: nB",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 34,
+    "type": "essay",
+    "text": "Alice →Bob: nA ∥sigA(nA ∥nB ∥IDB)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Mã hóa khóa công khai (hoặc khóa đối xứng) bảo đảm tính bí mật (confidentiality) khi gửi thông điệp.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 35,
+    "type": "single",
+    "text": "Bob →Alice: n′ B ∥sigB(n′ B ∥nA ∥IDA) What is the primary objective of Alice’s message in step 2?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "To send her nonce nA to Bob.",
+      "To prove her identity to Bob and acknowledge Bob’s nonce nB.",
+      "To establish a shared secret key with Bob.",
+      "To request Bob’s public key."
+    ],
+    "correctAnswers": [
+      "To send her nonce nA to Bob."
+    ],
+    "explanation": "Mã xác thực thông điệp (MAC) đảm bảo tính toàn vẹn và xác thực dựa trên khóa bí mật chung.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 8"
+  },
+  {
+    "id": 36,
+    "type": "single",
+    "text": "Let X be a uniform random variable over the set {0, 1}n. Let Y be an arbitrary random variable over the set {0, 1}n (not necessarily uniform) that is independent of X. Define the random variable Z = X ⊕Y . What is the probability that Z equals 0n?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "0.5",
+      "1/2n",
+      "2/2n",
+      "0"
+    ],
+    "correctAnswers": [
+      "0.5"
+    ],
+    "explanation": "Mã khối (Block cipher như AES) mã hóa các khối dữ liệu kích thước cố định.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 37,
+    "type": "single",
+    "text": "Which of the following numbers is a generator of Z∗ 17?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "2, ⟨2⟩= {1, 2, 4, 8, 16, 15, 13, 9, 1, 2, 4, 8, 16, 15, 13, 9}",
+      "3, ⟨3⟩= {1, 3, 9, 10, 13, 5, 15, 11, 16, 14, 8, 7, 4, 12, 2, 6}",
+      "5, ⟨5⟩= {1, 5, 8, 6, 13, 14, 2, 10, 16, 12, 9, 11, 4, 3, 15, 7}",
+      "7, ⟨7⟩= {1, 7, 15, 3, 4, 11, 9, 12, 16, 10, 2, 14, 13, 6, 8, 5}",
+      "6, ⟨6⟩= {1, 6, 2, 12, 4, 7, 8, 14, 16, 11, 15, 5, 13, 10, 9, 3} F. 8, ⟨8⟩= {1, 8, 13, 2, 16, 9, 4, 15, 1, 8, 13, 2, 16, 9, 4, 15} G. 9, ⟨9⟩= {1, 9, 13, 15, 16, 8, 4, 2, 1, 9, 13, 15, 16, 8, 4, 2} H. 10, ⟨10⟩= {1, 10, 15, 14, 4, 6, 9, 5, 16, 7, 2, 3, 13, 11, 8, 12}"
+    ],
+    "correctAnswers": [
+      "2, ⟨2⟩= {1, 2, 4, 8, 16, 15, 13, 9, 1, 2, 4, 8, 16, 15, 13, 9}"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 38,
+    "type": "single",
+    "text": "Let G be a finite cyclic group of order q and g is a generator of G. Suppose that the discrete log problem is hard in G. Which of the following problems is also hard:",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Randomly pick y ∈G, find x such that gx = y.",
+      "Randomly pick two values x ∈Zq and y ∈G, compute yx · g.",
+      "Randomly pick x ∈Zq, find y such that gx = y",
+      "Find x and y such that gx = y.",
+      "Randomly pick y ∈G, find x such that gx+1 = y."
+    ],
+    "correctAnswers": [
+      "Randomly pick y ∈G, find x such that gx = y."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 39,
+    "type": "single",
+    "text": "In the following problems, N is the product of two large integers p and q; and e < N such that gcd(e, φ(N)) = 1. If RSA is hard, which of the following problems is hard?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Given N, e, and randomly pick y ∈Z∗ N, find x such that xe = y mod N.",
+      "Given N and e, find x, y such that xe = y mod N.",
+      "Given N and e, find x such that xe = 8 mod N.",
+      "Given N, e, and randomly pick x ∈Z∗ N, find y such that xe = y mod N"
+    ],
+    "correctAnswers": [
+      "Given N, e, and randomly pick y ∈Z∗ N, find x such that xe = y mod N."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 40,
+    "type": "single",
+    "text": "Which of the following statements is true about the basic Diﬀie-Hellman key-exchange protocol. Page 2",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "The basic protocol provides key exchange secure against active adversaries that can inject and modify messages.",
+      "As with RSA, the protocol only provides eavesdropping security in the group Z∗ N where N is an RSA modulus.",
+      "The protocol can be converted to a public-key encryption system called the ElGamal public-key system."
+    ],
+    "correctAnswers": [
+      "The basic protocol provides key exchange secure against active adversaries that can inject and modify messages."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 9"
+  },
+  {
+    "id": 41,
+    "type": "single",
+    "text": "Let H : M →T be a collision resistant hash function where |T| is smaller than |M|. Which of the following properties is implied by collision resistance?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Given H(m) the attacker learns nothing about m.",
+      "It is diﬀicult to find m0 and m1 such that H(m0) = H(m1) + 1. (here we treat the outputs of H as integers)",
+      "For all m in M, H(m) must be shorter than m.",
+      "It is diﬀicult to construct two distinct messages m0, m1 such that H(m0) = H(m1)."
+    ],
+    "correctAnswers": [
+      "Given H(m) the attacker learns nothing about m."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 42,
+    "type": "single",
+    "text": "Let (S, V ) be a secure MAC defined over (K, M, T) where M = {0, 1}n and T = {0, 1}128 (i.e. the key space is K, message space is {0, 1}n, and tag space is {0, 1}128). Which of the following is a secure MAC: (as usual, we use to denote string concate- nation).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m[0, . . . , n −2]"
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m[0, . . . , n −2]"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 43,
+    "type": "single",
+    "text": "V ′(k, m, t) = V (k, m[0, . . . , n −2] 0, t)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m)[0, . . . , 126] V ′(k, m, t) = \u0002 V (k, m, t"
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m)[0, . . . , 126] V ′(k, m, t) = \u0002 V (k, m, t"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 44,
+    "type": "essay",
+    "text": "or V (k, m, t",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 45,
+    "type": "single",
+    "text": "\u0003 (i.e., V ′(k, m, t) outputs “1” if either t 0 or t 1 is a valid tag for m).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m m) V ′(k, m, t) = V (k, m m, t).",
+      "S′(k, m) = S(k, m) V ′(k, m, t) = ( V (k, m, t) if m̸ = 0n “1” otherwise Page 3",
+      "S′(k, m) = S(k, m) and V ′(k, m, t) = \u0002 V (k, m, t) or V (k, m ⊕1n, t) \u0003 (i.e., V ′(k, m, t) outputs “1” if t is a valid tag for either m or m ⊕1n). F. S′((k1, k2), m) = \u0000S(k1, m), S(k2, m) \u0001 and V ′\u0000(k1, k2), m, (t1, t2) \u0001 = \u0002 V (k1, m, t1) and V (k2, m, t2) \u0003 (i.e., V ′\u0000(k1, k2), m, (t1, t2) \u0001 outputs “1” if both t1 and t2 are valid tags)."
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m m) V ′(k, m, t) = V (k, m m, t)."
+    ],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 10"
+  },
+  {
+    "id": 46,
+    "type": "single",
+    "text": "Suppose a MAC system (S, V ) is used to protect files in a file system by appending a MAC tag to each file. The MAC signing algorithm S is applied to the file contents and nothing else. What tampering attacks are not prevented by this system?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Swapping two files in the file system.",
+      "Replacing the tag and contents of one file with the tag and contents of a file from another computer protected by the same MAC system, but a different key.",
+      "Replacing the contents of a file with the concatenation of two files on the file system.",
+      "Erasing the last byte of the file contents."
+    ],
+    "correctAnswers": [
+      "Swapping two files in the file system."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 47,
+    "type": "single",
+    "text": "Given an RSA signature scheme with the public key (n = 9797, e = 7), which of the following signatures are valid?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(m = 2601, σ = 7496)",
+      "(m = 1894, σ = 8667)",
+      "(m = 4707, σ = 4976)",
+      "(m = 2016, σ = 8159) Calculation Questions"
+    ],
+    "correctAnswers": [
+      "(m = 2601, σ = 7496)"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 48,
+    "type": "essay",
+    "text": "Suppose you are told that the one time pad encryption of the message “gui duc 100d” is 5c73d5340a948c86981bc294 (the plaintext letters are encoded as 8-bit ASCII and the given ciphertext is written in hex). The one time pad encryption of the message “gui duc 211d” under the same OTP key is . Page 4 Note: you just write the 8-bit ASCII code of the ciphertext in hexadecimal. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 11"
+  },
+  {
+    "id": 49,
+    "type": "essay",
+    "text": "Using Table 1, the inverse of the bytes 29 is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Y X 0 1 2 3 4 5 6 7 8 9 A B C D E F 0 00 01 8D F6 CB 52 7B D1 E8 4F 29 C0 B0 E1 E5 C7 1 74 B4 AA 4B 99 2B 60 5F 58 3F FD CC FF 40 EE B2 2 3A 6E 5A F1 55 4D A8 C9 C1 0A 98 15 30 44 A2 C2 3 2C 45 92 6C F3 39 66 42 F2 35 20 6F 77 BB 59 19 4 1D FE 37 67 2D 31 F5 69 A7 64 AB 13 54 25 E9 09 5 ED 5C 05 CA 4C 24 87 BF 18 3E 22 F0 51 EC 61 17 6 16 5E AF D3 49 A6 36 43 F4 47 91 DF 33 93 21 3B 7 79 B7 97 85 10 B5 BA 3C B6 70 D0 06 A1 FA 81 82 8 83 7E 7F 80 96 73 BE 56 9B 9E 95 D9 F7 02 B9 A4 9 DE 6A 32 6D D8 8A 84 72 2A 14 9F 88 F9 DC 89 9A A FB 7C 2E C3 8F B8 65 48 26 C8 12 4A CE E7 D2 62 B 0C E0 1F EF 11 75 78 71 A5 8E 76 3D BD BC 86 57 C 0B 28 2F A3 DA D4 E4 0F A9 27 53 04 1B FC AC E6 D 7A 07 AE 63 C5 DB E2 EA 94 8B C4 D5 9D F8 90 6B E B1 0D D6 EB C6 0E CF AD 08 4E D7 E3 5D 50 1E B3 F 5B 23 38 34 68 46 03 8C DD 9C 7D A0 CD 1A 41 1C Table 1: Multiplicative Inverses in GF(28) for AES S-box",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 50,
+    "type": "essay",
+    "text": "The BkExam is a block cipher optimized for use on final exam. It operates on the 26 letters of the English alphabet: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 m A B C D E F G H I J K L M N O P Q R S T U V W X Y Z EK(m) P K X C Y W R S E J U D G O Z A T N M V F H L I B Q Page 5 As the ⊕operation is not defined on the set {A, . . . , Z}, we replace it here during encryption with modulo-26 addition (e.g., C ⊕D = F and Y ⊕C = A). The ciphertext of the message: “DHBK” which were encrypted using CBC mode with IV=H is . Note: You should add IV to the ciphertext. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 12"
+  },
+  {
+    "id": 51,
+    "type": "essay",
+    "text": "Let m be a message consisting of ℓAES blocks (say ℓ= 100). Alice encrypts m using randomized counter mode and transmits the resulting ciphertext to Bob. Due to a network error, ciphertext block number ℓ/2 is corrupted during transmission. All other ciphertext blocks are transmitted and received correctly. Once Bob decrypts the received ciphertext, how many plaintext blocks will be corrupted? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 52,
+    "type": "essay",
+    "text": "Compute 30−1 mod 113. The number 30−1 mod 113 is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 53,
+    "type": "essay",
+    "text": "Compute 779168002 mod 11413 knowing that 11413 = (101 × 113). The number 779168002 mod 11413 is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 54,
+    "type": "essay",
+    "text": "What is the discrete log of 4 base 3 in Z∗",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 55,
+    "type": "essay",
+    "text": "The number Dlog3(4) is . Page 6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 13"
+  },
+  {
+    "id": 56,
+    "type": "essay",
+    "text": "An RSA encryption scheme has the set-up parameters p = 13 and q = 19. The public key is e = 17. You are asked to decrypt the ciphertext y = 16. The plaintext x is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 57,
+    "type": "essay",
+    "text": "Let Z∗ 19 be a cyclic group and 3 is a generator. Compute DH3(12, 15) in this group. The value DH3(12, 15) is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 58,
+    "type": "essay",
+    "text": "Given an elliptic curve E : y2 = x3 + 2x + 2 mod 17 The base point P = (13, 10). Compute the point Q = 78 · P. The point Q is . Note: Write the result as (p,q) with no space in between. For the sake of calculation, the points that are multiples of the primitive element (5, 1) are listed in the Table below. k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Page 7",
+    "code": "",
+    "table": "| k | k · G |\n|---|---|\n| 1 | (5,1) |\n| 2 | (6,3) |\n| 3 | (10,6) |\n| 4 | (3,1) |\n| 5 | (9,16) |",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 14"
+  },
+  {
+    "id": 59,
+    "type": "essay",
+    "text": "Given an elliptic curve E : y2 = x3 + 2x + 2 mod 17 Consider the point P = (13, 10). Alice and Bob are to compute a shared key in a Diﬀie-Hellman protocol based on elliptic curve E. That is, • Alice randomly pick a number a and compute the point aP = (16, 13), and send to Bob; • Alice receive the point bP = (16, 13) from Bob. The shared key abP between Alice and Bob is . Note: Write the result as (p,q) with no space in between. For the sake of calculation, the points that are multiples of the primitive element (5, 1) are listed in the Table below. k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "| k | k · G |\n|---|---|\n| 1 | (5,1) |\n| 2 | (6,3) |\n| 3 | (10,6) |\n| 4 | (3,1) |\n| 5 | (9,16) |",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 60,
+    "type": "essay",
+    "text": "We consider the ElGamal signature scheme. You are given Bob’s private key sk = d = (12) and the corresponding public key pk = (p, g, gd) = (29, 2, 7). Compute the Elgamal signature (r, s) for a message from Bob to Alice with message m = 20 and ephemeral key kE = 5. The signature (r, s) is . Note: Write the signature as (r,s) with no spaces in between. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Page 8 Name: Student ID: Introduction to Cryptography & Security Exam duration: 60 minutes. Multiple-Choice Questions",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 15"
+  },
+  {
+    "id": 61,
+    "type": "single",
+    "text": "What is the most appropriate cryptographic primitive to use if a company wants to distribute authenticated software updates to its customers?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Hash function.",
+      "Digital signature scheme.",
+      "Message authentication code.",
+      "Block cipher",
+      "Public-key encryption scheme."
+    ],
+    "correctAnswers": [
+      "Digital signature scheme."
+    ],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 62,
+    "type": "single",
+    "text": "What is the most appropriate cryptographic primitive to use if an individual wants to ensure confidentiality of the files stored on her hard drive?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Message authentication code.",
+      "Block cipher.",
+      "Public-key encryption.",
+      "Hash function.",
+      "Private-key encryption."
+    ],
+    "correctAnswers": [
+      "Message authentication code."
+    ],
+    "explanation": "Mã hóa khóa công khai (hoặc khóa đối xứng) bảo đảm tính bí mật (confidentiality) khi gửi thông điệp.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 63,
+    "type": "single",
+    "text": "Which of the following best characterizes Discretionary Access Control (DAC)?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Access decisions based on security labels.",
+      "An entity can grant access to others.",
+      "Centralized control by a security administrator.",
+      "Access based on roles within an organization."
+    ],
+    "correctAnswers": [
+      "Access decisions based on security labels."
+    ],
+    "explanation": "Mã xác thực thông điệp (MAC) đảm bảo tính toàn vẹn và xác thực dựa trên khóa bí mật chung.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 64,
+    "type": "single",
+    "text": "Which of the following statements is true about the basic Diﬀie-Hellman key-exchange protocol.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "The basic protocol provides key exchange secure against active adversaries that can inject and modify messages.",
+      "As with RSA, the protocol only provides eavesdropping security in the group Z∗ N where N is an RSA modulus.",
+      "The protocol can be converted to a public-key encryption system called the ElGamal public-key system."
+    ],
+    "correctAnswers": [
+      "The basic protocol provides key exchange secure against active adversaries that can inject and modify messages."
+    ],
+    "explanation": "Hàm băm một chiều (Cryptographic Hash Function) đảm bảo kiểm tra tính toàn vẹn dữ liệu.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 16"
+  },
+  {
+    "id": 65,
+    "type": "single",
+    "text": "Let H : M →T be a collision resistant hash function where |T| is smaller than |M|. Which of the following properties is implied by collision resistance?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Given H(m) the attacker learns nothing about m.",
+      "It is diﬀicult to find m0 and m1 such that H(m0) = H(m1) + 1. (here we treat the outputs of H as integers)",
+      "For all m in M, H(m) must be shorter than m.",
+      "It is diﬀicult to construct two distinct messages m0, m1 such that H(m0) = H(m1)."
+    ],
+    "correctAnswers": [
+      "Given H(m) the attacker learns nothing about m."
+    ],
+    "explanation": "Mã khối (Block cipher như AES) mã hóa các khối dữ liệu kích thước cố định.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 66,
+    "type": "single",
+    "text": "In the Needham–Schroeder protocol, why does Alice send a nonce rA to the KDC?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "To serve as the session key.",
+      "To ensure that the response from the KDC is fresh and not a replay.",
+      "To encrypt her request.",
+      "To prove that she knows Bob’s identity."
+    ],
+    "correctAnswers": [
+      "To serve as the session key."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 67,
+    "type": "single",
+    "text": "What is a digital certificate?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "A password for the root user.",
+      "An encrypted email.",
+      "A document binding a user’s identity to their public key, signed by a Cer- tificate Authority (CA).",
+      "A list of revoked keys."
+    ],
+    "correctAnswers": [
+      "A password for the root user."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 68,
+    "type": "single",
+    "text": "How does a user verify a digital certificate?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "By calling the owner of the certificate.",
+      "By checking the expiration date only.",
+      "By using the trusted public key of the Certificate Authority (CA) to verify the CA’s digital signature on the certificate.",
+      "By decrypting the certificate with their own private key."
+    ],
+    "correctAnswers": [
+      "By calling the owner of the certificate."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 69,
+    "type": "single",
+    "text": "How does a Man-in-the-Middle attacker exploit the Diﬀie–Hellman key exchange?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "By guessing the private exponents a and b.",
+      "By intercepting the exchanged public values and sending their own public values to each party.",
+      "By shutting down the network.",
+      "By forcing the users to use a small prime number p. Page 2"
+    ],
+    "correctAnswers": [
+      "By guessing the private exponents a and b."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 17"
+  },
+  {
+    "id": 70,
+    "type": "single",
+    "text": "An email authentication system is designed to allow users to log in remotely and to protect against replay attacks. Indicate which of the following designs provides the best security, while allowing a user Alice to set up her account for exactly one year (with no updates), assuming Alice checks her email about three times on a normal weekday and about once a day on weekends.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Applying the S/Key Lamport scheme using a hash chain of size 1000.",
+      "The user password is hashed together with a timestamp (rounded to the hour), and the result is sent to the server for authentication.",
+      "Applying a challenge–response mechanism where the challenge is a random number of 10 bits.",
+      "Applying a challenge–response mechanism where the challenge is the number of seconds since the last hour mark according to the server’s clock (e.g., if the current time is 10:05:07 then the challenge is 307 = 60 × 5 + 7)."
+    ],
+    "correctAnswers": [
+      "Applying the S/Key Lamport scheme using a hash chain of size 1000."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 71,
+    "type": "essay",
+    "text": "Consider the following authentication protocol between Alice and Bob:",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 72,
+    "type": "essay",
+    "text": "Bob →Alice: nB",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 73,
+    "type": "essay",
+    "text": "Alice →Bob: nA ∥sigA(nA ∥nB ∥IDB)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Mã hóa khóa công khai (hoặc khóa đối xứng) bảo đảm tính bí mật (confidentiality) khi gửi thông điệp.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 74,
+    "type": "single",
+    "text": "Bob →Alice: n′ B ∥sigB(n′ B ∥nA ∥IDA) What is the primary objective of Alice’s message in step 2?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "To send her nonce nA to Bob.",
+      "To prove her identity to Bob and acknowledge Bob’s nonce nB.",
+      "To establish a shared secret key with Bob.",
+      "To request Bob’s public key."
+    ],
+    "correctAnswers": [
+      "To send her nonce nA to Bob."
+    ],
+    "explanation": "Mã xác thực thông điệp (MAC) đảm bảo tính toàn vẹn và xác thực dựa trên khóa bí mật chung.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 75,
+    "type": "single",
+    "text": "Let X be a uniform random variable over the set {0, 1}n. Let Y be an arbitrary random variable over the set {0, 1}n (not necessarily uniform) that is independent of X. Define the random variable Z = X ⊕Y . What is the probability that Z equals 0n?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "0.5",
+      "1/2n",
+      "2/2n",
+      "0 Page 3"
+    ],
+    "correctAnswers": [
+      "0.5"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 18"
+  },
+  {
+    "id": 76,
+    "type": "single",
+    "text": "Which of the following numbers is a generator of Z∗ 17?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "2, ⟨2⟩= {1, 2, 4, 8, 16, 15, 13, 9, 1, 2, 4, 8, 16, 15, 13, 9}",
+      "3, ⟨3⟩= {1, 3, 9, 10, 13, 5, 15, 11, 16, 14, 8, 7, 4, 12, 2, 6}",
+      "5, ⟨5⟩= {1, 5, 8, 6, 13, 14, 2, 10, 16, 12, 9, 11, 4, 3, 15, 7}",
+      "7, ⟨7⟩= {1, 7, 15, 3, 4, 11, 9, 12, 16, 10, 2, 14, 13, 6, 8, 5}",
+      "6, ⟨6⟩= {1, 6, 2, 12, 4, 7, 8, 14, 16, 11, 15, 5, 13, 10, 9, 3} F. 8, ⟨8⟩= {1, 8, 13, 2, 16, 9, 4, 15, 1, 8, 13, 2, 16, 9, 4, 15} G. 9, ⟨9⟩= {1, 9, 13, 15, 16, 8, 4, 2, 1, 9, 13, 15, 16, 8, 4, 2} H. 10, ⟨10⟩= {1, 10, 15, 14, 4, 6, 9, 5, 16, 7, 2, 3, 13, 11, 8, 12}"
+    ],
+    "correctAnswers": [
+      "2, ⟨2⟩= {1, 2, 4, 8, 16, 15, 13, 9, 1, 2, 4, 8, 16, 15, 13, 9}"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 77,
+    "type": "single",
+    "text": "Let G be a finite cyclic group of order q and g is a generator of G. Suppose that the discrete log problem is hard in G. Which of the following problems is also hard:",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Randomly pick y ∈G, find x such that gx = y.",
+      "Randomly pick two values x ∈Zq and y ∈G, compute yx · g.",
+      "Randomly pick x ∈Zq, find y such that gx = y",
+      "Find x and y such that gx = y.",
+      "Randomly pick y ∈G, find x such that gx+1 = y."
+    ],
+    "correctAnswers": [
+      "Randomly pick y ∈G, find x such that gx = y."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 78,
+    "type": "single",
+    "text": "An access control system according to the RBAC1 model has four system files A, B, C, and D, and four roles denoted by P, Q, R, and S. In the mathematical representation of this model, the Permission Assignment (PA) relation is defined as a set of triplets describing permissions as follows: (P, A, RW), (P, B, RX), (P, C, RWX), (Q, A, RX), (Q, B, O), (Q, C, RX), (Q, D, O), (R, A, RWX), (R, B, ORX), (R, C, RWX), (R, D, O), (S, A, R), (S, B, RX), (S, C, RX) In the initial phase of this system, there are four users with the following roles: • Alice has role R, • Bob has role P, • Cathy has role Q, • Dave has role S. Which of the following statements are likely to be true?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Alice is Bob’s boss but not Cathy’s.",
+      "Bob is not working under Cathy’s supervision but under Alice’s.",
+      "Alice has Read, Write, and eXecute permissions on file A.",
+      "File D has only one owner.",
+      "Bob is no one’s boss. Page 4"
+    ],
+    "correctAnswers": [
+      "Alice is Bob’s boss but not Cathy’s."
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 19"
+  },
+  {
+    "id": 79,
+    "type": "single",
+    "text": "Let (S, V ) be a secure MAC defined over (K, M, T) where M = {0, 1}n and T = {0, 1}128 (i.e. the key space is K, message space is {0, 1}n, and tag space is {0, 1}128). Which of the following is a secure MAC: (as usual, we use to denote string concate- nation).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m[0, . . . , n −2]"
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m[0, . . . , n −2]"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 80,
+    "type": "single",
+    "text": "V ′(k, m, t) = V (k, m[0, . . . , n −2] 0, t)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m)[0, . . . , 126] V ′(k, m, t) = \u0002 V (k, m, t"
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m)[0, . . . , 126] V ′(k, m, t) = \u0002 V (k, m, t"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 81,
+    "type": "essay",
+    "text": "or V (k, m, t",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 82,
+    "type": "single",
+    "text": "\u0003 (i.e., V ′(k, m, t) outputs “1” if either t 0 or t 1 is a valid tag for m).",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "S′(k, m) = S(k, m m) V ′(k, m, t) = V (k, m m, t).",
+      "S′(k, m) = S(k, m) V ′(k, m, t) = ( V (k, m, t) if m̸ = 0n “1” otherwise",
+      "S′(k, m) = S(k, m) and V ′(k, m, t) = \u0002 V (k, m, t) or V (k, m ⊕1n, t) \u0003 (i.e., V ′(k, m, t) outputs “1” if t is a valid tag for either m or m ⊕1n). F. S′((k1, k2), m) = \u0000S(k1, m), S(k2, m) \u0001 and V ′\u0000(k1, k2), m, (t1, t2) \u0001 = \u0002 V (k1, m, t1) and V (k2, m, t2) \u0003 (i.e., V ′\u0000(k1, k2), m, (t1, t2) \u0001 outputs “1” if both t1 and t2 are valid tags)."
+    ],
+    "correctAnswers": [
+      "S′(k, m) = S(k, m m) V ′(k, m, t) = V (k, m m, t)."
+    ],
+    "explanation": "Chữ ký số (Digital signature) cung cấp tính toàn vẹn (integrity) và xác thực nguồn gốc (authenticity/non-repudiation) cho các bản cập nhật phần mềm.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 83,
+    "type": "single",
+    "text": "Suppose a MAC system (S, V ) is used to protect files in a file system by appending a MAC tag to each file. The MAC signing algorithm S is applied to the file contents and nothing else. What tampering attacks are not prevented by this system?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Swapping two files in the file system. Page 5",
+      "Replacing the tag and contents of one file with the tag and contents of a file from another computer protected by the same MAC system, but a different key.",
+      "Replacing the contents of a file with the concatenation of two files on the file system.",
+      "Erasing the last byte of the file contents."
+    ],
+    "correctAnswers": [
+      "Swapping two files in the file system. Page 5"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 20"
+  },
+  {
+    "id": 84,
+    "type": "single",
+    "text": "Given an RSA signature scheme with the public key (n = 9797, e = 7), which of the following signatures are valid?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(m = 2601, σ = 7496)",
+      "(m = 1894, σ = 8667)",
+      "(m = 4707, σ = 4976)",
+      "(m = 2016, σ = 8159) Calculation Questions"
+    ],
+    "correctAnswers": [
+      "(m = 2601, σ = 7496)"
+    ],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 85,
+    "type": "essay",
+    "text": "Suppose you are told that the one time pad encryption of the message “gui duc 100d” is 5c73d5340a948c86981bc294 (the plaintext letters are encoded as 8-bit ASCII and the given ciphertext is written in hex). The one time pad encryption of the message “gui duc 211d” under the same OTP key is . Note: you just write the 8-bit ASCII code of the ciphertext in hexadecimal. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 86,
+    "type": "essay",
+    "text": "Using Table 1, the inverse of the bytes 29 is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Page 6 ...9b1ac394 Y X 0 1 2 3 4 5 6 7 8 9 A B C D E F 0 00 01 8D F6 CB 52 7B D1 E8 4F 29 C0 B0 E1 E5 C7 1 74 B4 AA 4B 99 2B 60 5F 58 3F FD CC FF 40 EE B2 2 3A 6E 5A F1 55 4D A8 C9 C1 0A 98 15 30 44 A2 C2 3 2C 45 92 6C F3 39 66 42 F2 35 20 6F 77 BB 59 19 4 1D FE 37 67 2D 31 F5 69 A7 64 AB 13 54 25 E9 09 5 ED 5C 05 CA 4C 24 87 BF 18 3E 22 F0 51 EC 61 17 6 16 5E AF D3 49 A6 36 43 F4 47 91 DF 33 93 21 3B 7 79 B7 97 85 10 B5 BA 3C B6 70 D0 06 A1 FA 81 82 8 83 7E 7F 80 96 73 BE 56 9B 9E 95 D9 F7 02 B9 A4 9 DE 6A 32 6D D8 8A 84 72 2A 14 9F 88 F9 DC 89 9A A FB 7C 2E C3 8F B8 65 48 26 C8 12 4A CE E7 D2 62 B 0C E0 1F EF 11 75 78 71 A5 8E 76 3D BD BC 86 57 C 0B 28 2F A3 DA D4 E4 0F A9 27 53 04 1B FC AC E6 D 7A 07 AE 63 C5 DB E2 EA 94 8B C4 D5 9D F8 90 6B E B1 0D D6 EB C6 0E CF AD 08 4E D7 E3 5D 50 1E B3 F 5B 23 38 34 68 46 03 8C DD 9C 7D A0 CD 1A 41 1C Table 1: Multiplicative Inverses in GF(28) for AES S-box",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 21"
+  },
+  {
+    "id": 87,
+    "type": "essay",
+    "text": "The BkExam is a block cipher optimized for use on final exam. It operates on the 26 letters of the English alphabet: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 m A B C D E F G H I J K L M N O P Q R S T U V W X Y Z EK(m) P K X C Y W R S E J U D G O Z A T N M V F H L I B Q As the ⊕operation is not defined on the set {A, . . . , Z}, we replace it here during encryption with modulo-26 addition (e.g., C ⊕D = F and Y ⊕C = A). The ciphertext of the message: “DHBK” which were encrypted using CBC mode with IV=H is . Note: You should add IV to the ciphertext. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 88,
+    "type": "essay",
+    "text": "Let m be a message consisting of ℓAES blocks (say ℓ= 100). Alice encrypts m using randomized counter mode and transmits the resulting ciphertext to Bob. Due to a network error, ciphertext block number ℓ/2 is corrupted during transmission. All Page 7 HUKDO other ciphertext blocks are transmitted and received correctly. Once Bob decrypts the received ciphertext, how many plaintext blocks will be corrupted? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 22"
+  },
+  {
+    "id": 89,
+    "type": "essay",
+    "text": "Compute 30−1 mod 113. The number 30−1 mod 113 is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 90,
+    "type": "essay",
+    "text": "Compute 779168002 mod 11413 knowing that 11413 = (101 × 113). The number 779168002 mod 11413 is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 91,
+    "type": "essay",
+    "text": "What is the discrete log of 4 base 3 in Z∗",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 92,
+    "type": "essay",
+    "text": "The number Dlog3(4) is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 93,
+    "type": "essay",
+    "text": "An RSA encryption scheme has the set-up parameters p = 13 and q = 19. The public key is e = 17. You are asked to decrypt the ciphertext y = 16. The plaintext x is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Page 8 1952 12 139",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 23"
+  },
+  {
+    "id": 94,
+    "type": "essay",
+    "text": "Let Z∗ 19 be a cyclic group and 3 is a generator. Compute DH3(12, 15) in this group. The value DH3(12, 15) is . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 95,
+    "type": "essay",
+    "text": "Given an elliptic curve E : y2 = x3 + 2x + 2 mod 17 The base point P = (13, 10). Compute the point Q = 78 · P. The point Q is . Note: Write the result as (p,q) with no space in between. For the sake of calculation, the points that are multiples of the primitive element (5, 1) are listed in the Table below. k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "| k | k · G |\n|---|---|\n| 1 | (5,1) |\n| 2 | (6,3) |\n| 3 | (10,6) |\n| 4 | (3,1) |\n| 5 | (9,16) |",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 96,
+    "type": "essay",
+    "text": "Given an elliptic curve E : y2 = x3 + 2x + 2 mod 17 Consider the point P = (13, 10). Alice and Bob are to compute a shared key in a Diﬀie-Hellman protocol based on elliptic curve E. That is, • Alice randomly pick a number a and compute the point aP = (16, 13), and send to Bob; • Alice receive the point bP = (16, 13) from Bob. The shared key abP between Alice and Bob is . Note: Write the result as (p,q) with no space in between. For the sake of calculation, the points that are multiples of the primitive element (5, 1) are listed in the Table below. Page 9 8 k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "code": "",
+    "table": "| k | k · G |\n|---|---|\n| 1 | (5,1) |\n| 2 | (6,3) |\n| 3 | (10,6) |\n| 4 | (3,1) |\n| 5 | (9,16) |",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 24"
+  },
+  {
+    "id": 97,
+    "type": "essay",
+    "text": "We consider the ElGamal signature scheme. You are given Bob’s private key sk = d = (12) and the corresponding public key pk = (p, g, gd) = (29, 2, 7). Compute the Elgamal signature (r, s) for a message from Bob to Alice with message m = 20 and ephemeral key kE = 5. The signature (r, s) is . Note: Write the signature as (r,s) with no spaces in between. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Page 10",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề mẫu An toàn thông tin 2025.1.",
+    "scope": "An toàn thông tin - đề mẫu kì 20251.pdf — Trang 1"
+  },
+  {
+    "id": 98,
+    "type": "multiple",
+    "text": "Các chế độ mật mã đối xứng a. Sử dụng chế độ mật mã nào sau đây có thể chống lại được tấn công CPA?(Chọn tất cả đáp án đúng)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Chế độ mã ECB (Gợi ý: Không chống được KPA nên không chống được CPA)",
+      "Chế độ mã CBC sử dụng giá trị IV từ một bộ đếm (Gợi ý: IV không ngẫu nhiên)",
+      "Chế độ mã CBC sử dụng giá trị IV tạo ra từ thao tác truy cập ổ đĩa cứng",
+      "Chế độ mã CTR sử dụng giá trị IV từ một bộ đếm",
+      "Chế độ mã CTR sử dụng giá trị IV là kích thước của thông điệp (Gợi ý: IV không ngẫu nhiên)",
+      "Bob thiết kế chế độ mã new-CBC như sau:",
+      "-",
+      "Khởi tạo giá trị IV có kích thước n bit theo ngẫu nhiên phân bố đều.",
+      "-",
+      "Khối m1 có kích thước n bit được mã hóa: c1 = E(k, m1) Å IV",
+      "-",
+      "Mỗi khối mi (với i > 1) có kích thước n bit được mã hóa: ci = E(k, mi) Å ci-1",
+      "-",
+      "Giá trị IV được đính kèm với bản mã",
+      "Hãy vẽ sơ đồ giải mã.",
+      "Chế độ mã new-CBC có an toàn trước tấn công CPA không? Hãy chứng minh câu trả lời.",
+      "Gợi ý: Giải thích bằng mô hình tấn công thử thách",
+      "1. Phía tấn công gửi hai bản tin kích thước 2 khối là a || a và a || b",
+      "2. Phía thử thách lựa chọn bản tin để mã:",
+      "Nếu a || a được mã: c1 = IV  E(k, a)",
+      "c2 = c1  E(k, a) = IV  E(k, a)  E(k, a) = IV",
+      "Nếu a || b được mã: c1 = IV  E(k, a)",
+      "c2 = c1  E(k, b) = IV  E(k, a)  E(k, b) ≠ IV",
+      "3. Khi nhận được c*, phía tấn công kiểm tra:",
+      "-  Nếu khối c2 = IV thì a || a đã được mã",
+      "-  Ngược lại, thì a || b đã được mã",
+      "Như vậy, xác suất đoán đúng là 1: new-CBC Không an toàn trước tấn công CPA",
+      "2"
+    ],
+    "correctAnswers": [
+      "Chế độ mã CBC sử dụng giá trị IV tạo ra từ thao tác truy cập ổ đĩa cứng",
+      "Chế độ mã CTR sử dụng giá trị IV từ một bộ đếm"
+    ],
+    "explanation": "Câu hỏi từ Đề thi thử An toàn thông tin kỳ 20252. Đáp án đúng: Chế độ mã CBC sử dụng giá trị IV tạo ra từ thao tác truy cập ổ đĩa cứng; Chế độ mã CTR sử dụng giá trị IV từ một bộ đếm.",
+    "scope": "An toàn thông tin - thi thử kì 20252.pdf — Trang 2"
+  },
+  {
+    "id": 99,
+    "type": "essay",
+    "text": "Xác thực thông điệp quảng bá Giả sử server cần gửi thông điệp tới tất cả client C1, C2, .., Cn. Mỗi client khi nhận được thông điệp này cần xác minh được rằng thông điệp do chính server gửi. Giả sử rằng đã có một kênh an toàn được sử dụng để phân phối khóa giữa các bên. d. Giả sử server và tất cả client chia sẻ một khóa đối xứng ngẫu nhiên cho từng phiên quảng bá. Server sử dụng khóa này để tạo mã MAC và gắn vào mỗi bản tin được gửi đi. Client có thể tin tưởng vào thông điệp nhận được là do server gửi và nội dung thông điệp toàn vẹn hay không? Giải thích. Gợi ý: Không, vì tất cả client đều sở hữu khóa nên có thể giả mạo thông điệp của server b. Giả sử server chia sẻ một khóa ngẫu nhiên với mỗi client cho từng phiên quảng bá. Server sử dụng khóa này để tạo mã MAC và gắn vào mỗi bản tin được gửi đi. Client có thể tin tưởng vào thông điệp nhận được là do server gửi hay không? Giải thích. Gợi ý: Có, vì khóa chỉ được chia sẻ giữa client và server e. Giả sử client nhận được một thông điệp từ server có chứa phần mềm độc hại. Client có thể khởi kiện server hay không? Giải thích. Gợi ý: Không, vì mã MAC không cung cấp tính năng chống từ chối. Server có thể phủ nhận bản tin đã gửi.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề thi thử An toàn thông tin kỳ 20252. Đáp án đúng: .",
+    "scope": "An toàn thông tin - thi thử kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 100,
+    "type": "essay",
+    "text": "Chữ ký số dựa trên RSA Alice sử dụng chữ ký số RSA xây dựng theo 2 sơ đồ sau: Sơ đồ đơn giản: Chữ ký số sig = E(KR, m) Sơ đồ tiêu chuẩn: Chữ ký số sig = E(KR, H (m)) Trong đó: KR = (d, n) là khóa cá nhân của Alice được giữ an toàn bí mật KU = (e, n) là khóa công khai của Alice đã được công bố trên website tin cậy H(m): Hàm băm mật mã an toàn Bản tin được Alice gửi cho Bob là (m, sig). a. Nếu Alice sử dụng chữ ký số đơn giản, bằng cách nào Bob có thể kiểm tra tính xác thực của bản tin. Gợi ý: Bob giải mã bằng khóa công khai để được bản tin và so sánh bản tin sau khi giải mã với bản tin nhận được b. David muốn tấn công vào tính xác thực của bản tin dùng chữ ký số đơn giản. Bằng cách nào David có thể tạo ra bản tin (m, sig) đánh lừa được Bob là bản tin này do Alice gửi. Gợi ý: Chọn sig là một chuỗi ngẫu nhiên bất kỳ, sau đó tìm ra bản tin m=D(KU, sig) c. Cách thức tấn công trên của David có tác dụng không nếu Alice sử dụng chữ ký số tiêu chuẩn. Hãy giải thích. Gợi ý: Với cách tấn công trên, kết quả giải mã là H(m), không thể xác định m vì hàm băm có tính chất một chiều",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề thi thử An toàn thông tin kỳ 20252. Đáp án đúng: .",
+    "scope": "An toàn thông tin - thi thử kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 101,
+    "type": "essay",
+    "text": "Xác thực danh tính bằng mật khẩu Thông tin tài khoản người dùng được lưu trong cơ sở dữ liệu của server gồm định danh (userID) và giá trị băm của mật khẩu Hash(password). Giao thức xác thực giữa server và client như sau: (1) Client → Server: userID || password 3 (2) Server băm mật khẩu nhận được từ yêu cầu của client và so sánh với giá trị đã lưu trong CSDL. Nếu trùng khớp thì xác thực thành công a. Hãy mô tả 2 điểm yếu của hệ thống xác thực trên. Gợi ý: Mật khẩu được gửi ở bản rõ Giao thức có thể bị tấn công phát lại b. Mô tả giải pháp để sữa chữa các điểm yếu đã chỉ ra. Gợi ý: Giao thức trên là PAP, xem lại giao thức CHAP",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề thi thử An toàn thông tin kỳ 20252. Đáp án đúng: .",
+    "scope": "An toàn thông tin - thi thử kì 20252.pdf — Trang 3"
+  },
+  {
+    "id": 102,
+    "type": "essay",
+    "text": "Lỗ hổng phần mềm Một số hàm chương trình được viết như sau: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 typedef struct product{ char name[256]; short quantity; } product; /* Order products of the store Return total quantity of products */ int order(product list[]) { char tmp_name[256]; int n_products = 0; while(1) { printf(“Product: ”); gets_s(tmp_name, 255); if(strlen(tmp_name) == 0) break; strcpy(list[n_products].name, tmp_name); printf(“Quantity: ”); scanf(“%d”, &list[n_products].quantity); n_products++; } return n_products; } /* Send shopping cart to server Return number of transferred bytes, -1 if error */ int sendCart(int socket, product list[], int n) { char buff[4096], str_quantity[10]; int ret, len; for (int i = 0; i < n, i++){ len = strlen(list[i].name); strncat(buff, list[i].name, len); strncat(buff, “ ”, 1); sprintf(str_quantity, “%d\\n”, list[i].quantity); len = strlen(str_quantity); strncat(buff, str_quantity, len); } ret = send(socket, buff, strlen(buff), 0); return ret; 4 41 } a. Hãy chỉ ra 2 lỗ hổng phần mềm trong đoạn chương trình trên dẫn đến kẻ tấn công có thể khai thác để chèn mã độc thực thi. Gợi ý: - Trong hàm order(), từ dòng 12 đến 21, thực hiện vòng lặp để thêm sản phầm vào mảng list[] mà không giới hạn số phần tử thêm vào. Lỗ hổng này có thể dẫn đến tấn công tràn bộ đệm. Lưu ý: strcpy(list[n_products].name, tmp_name) không gây ra lỗ hổng do lời gọi hàm gets_s(tmp_name, 255) đã giới hạn số ký tự tối đa ghi vào tmp_name là 255 ký tự. Khi đó kích thước của tmp_name tối đa là 256 ký tự, bao gồm ký tự kết thúc xâu, bằng với kích thước của trường name trong cấu trúc product. - Hàm sendCart(): Lệnh strncat(buff, list[i].name, len); tại dòng 33 và 37 không giới hạn kích thước xâu sau khi được nối thêm b. Viết lại mã nguồn cần thiết để sửa các lỗ hổng trên - Vá lỗ hổng trên hàm order() int order(product list[], unsigned int max) { char tmp_name[256]; int n_products = 0; while(n_products < max) { printf(“Product: ”); gets_s(tmp_name, 255); if(strlen(tmp_name) == 0) break; strcpy(list[n_products].name, tmp_name); printf(“Quantity: ”); scanf(“%d”, &list[n_products].quantity); n_products++; } return n_products; } - Vá lỗ hổng trên hàm sendCart() if(4096 – strlen(buff) - strlen(list[i].name) - strlen(str_quantity) – 1 >=0){ strncat(…); } Cách khác: Dùng hàm strlcat(char *dst, const char *src, unsigned int size) size: Giới hạn kích thước tối đa của xâu sau khi nối, bao gồm cả ký tự ‘\\0’ kết thúc xâu. 5 for (int i = 0; i < n, i++){ strlcat(buff, list[i].name, 4096); strncat(buff, “ ”, 4096); sprintf(str_quantity, “%d\\n”, list[i].quantity); strncat(buff, str_quantity, 4096); } Phụ lục: Một số hàm C/C++ char *gets_s(char *buffer, size_t n) Gets a line from the stdin stream. Parameters buffer: Storage location for input string. n: The size of the buffer. Return Value: Returns buffer if successful. A NULL pointer indicates an error. int sprintf(char *buffer, const char *format, [arguments] ...); Write formatted data to a string. Parameters buffer: Storage location for output format: Format-control string arguments: Optional arguments Return Value: The number of bytes stored in buffer, not counting the terminating null character. char *strncat(char *strDest, const char *strSource, size_t count); The strncat function concatenates two string. Parameters strDest: Null-terminated destination string. strSource: Null-terminated source string. count: Number of characters to append. Return Value: Returns a pointer to the destination string. No return value indicates an error. int send(int socket, char *buffer, size_t length, int flags); The send function sends data on a connected socket. Parameters socket: Specifies the socket file descriptor. buffer: Points to the buffer containing the message to send. length: Specifies the length of the message in bytes. flags: Specifies the type of message transmission. Return Value Upon successful completion, send() shall return the number of bytes sent. Otherwise, -1 shall be returned and errno set to indicate the error.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi từ Đề thi thử An toàn thông tin kỳ 20252. Đáp án đúng: .",
+    "scope": "An toàn thông tin - thi thử kì 20252.pdf — Trang 4"
+  },
+  {
+    "id": 103,
+    "type": "essay",
+    "text": "Mật mã khoá đối xứng \u0003 \u0002 \u0000\u0001 Hệmật mã khoá đối xứng có khoá bí mật đểmã hoá và khoá công khai đểgiải mã. khoá công khai đểmã hoá và khoá bí mật đểgiải mã. hai khoá khác nhau. khoá mã hoá và khoá giải mã giống nhau.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 104,
+    "type": "essay",
+    "text": "Mật mã khoá công khai \u0003 \u0002 \u0000\u0001 Khoá đối xứng có khoá bí mật đểmã hoá và khoá công khai đểgiải mã. khoá mã hoá và khoá giải mã giống nhau. hai khoá khác nhau. khoá công khai đểmã hoá và khoá bí mật đểgiải mã.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 105,
+    "type": "essay",
+    "text": "Hàm băm mật mã \u0003 \u0002 \u0000\u0001 Đầu ra của hàm băm mật mã có thểdễdàng tính được bởi kẻtấn công. là dãy bit độdài thay đổi. là dãy bit độdài cốđịnh. không thểtính được bởi kẻtấn công.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 106,
+    "type": "essay",
+    "text": "Chữký số \u0003 \u0002 \u0000\u0001 Trong các sơ đồchữký số, giá trịbăm của thông điệp thường được mã hoá dùng khoá công khai của người dùng mật khẩu của người dùng. khoá bí mật của người dùng khoá phiên Total of marks: 4 1 2 Hệmã dòng",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 2"
+  },
+  {
+    "id": 107,
+    "type": "essay",
+    "text": "One Time Pad Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Giảsửbạn biết mã hóa của thông điệp “attack at vn” dùng one time pad encryption là 6c73d5240a948c86981bc294 (bản rõ ởdạng mã ASCII 8-bit và bản mã được viết ởdạng hexa). Bản mã của thông điệp “attack at us” với cùng khóa OTP là . Chú ý: bạn chỉđiền mã ASCII 8-bit của bản mã ởdạng hexa. Total of marks: 1 2 3 Chếđộmã khối",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 3"
+  },
+  {
+    "id": 108,
+    "type": "essay",
+    "text": "ECB mode Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Xét hệmã khối BkExam chuyên dùng cho việc thi học kỳ. BkExam sửdụng các chữcái đểmã hoá. Hàm mã hoá BkExam với khoá cụthểK được cho bởi bảng sau: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 m A B C D E F G H I J K L M N O P Q R S T U V W X Y Z EK(m) P K X C Y W R S E J U D G O Z A T N M V F H L I B Q Bản mã của thông điệp: “ANTOAN” dùng ECB mode là .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 109,
+    "type": "essay",
+    "text": "CBC mode Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Xét hệmã khối BkExam chuyên dùng cho việc thi học kỳ. BkExam sửdụng các chữcái đểmã hoá. Hàm mã hoá BkExam với khoá cụthểK được cho bởi bảng sau: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 m A B C D E F G H I J K L M N O P Q R S T U V W X Y Z EK(m) P K X C Y W R S E J U D G O Z A T N M V F H L I B Q Do phép toán ⊕không định nghĩa trên tập {A, . . . , Z}, ta thay thếnó với phép cộng theo modun 26 (ví dụ, C ⊕D = F và Y ⊕C = A). Bản mã của thông điệp: “TT” dùng CBC mode với IV=C là . Chú ý: Bạn phải viết cảIV vào bản mã. Total of marks: 2 3 4 Lý thuyết số",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 4"
+  },
+  {
+    "id": 110,
+    "type": "essay",
+    "text": "Phần tửsinh \u0003 \u0002 \u0000\u0001 Những phần tửnào dưới đây là phần tửsinh của Z∗ 13? a. 2 b. 9 c. 3 d. 7 e. 5",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 111,
+    "type": "essay",
+    "text": "Euclid mởrộng Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Hãy dùng thuật toán Euclid mởrộng đểtính 15−1 mod 799. Giá trị15−1 là .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 112,
+    "type": "essay",
+    "text": "Tính luỹthừa nhanh Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Hãy dùng thuật toán tính luỹthừa nhanh đểtính 779280001 mod 11413 biết rằng 11413 = (101 × 113). Giá trị779280001 mod 11413 bằng .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 113,
+    "type": "essay",
+    "text": "Logarit rời rạc Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Hãy tính logrit rời rạc của 5 cơ sở2 trong Z∗ 13. Giá trịcủa Dlog2(5) bằng .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 114,
+    "type": "essay",
+    "text": "Logarit rời rạc \u0003 \u0002 \u0000\u0001 Xét G là một nhóm cyclic cấp q và g là một phần tửsinh. Giảsửrằng bài toán logarit rời rạc là khó trong G. Những bài toán nào dưới đây cũng là khó trong G? a. Lấy ngẫu nhiên x ∈Zq, tìm y sao cho gx = y b. Lấy ngẫu nhiên y ∈G, tìm x sao cho gx = y c. Tìm x và y sao cho gx = y. d. Lấy ngẫu nhiên hai giá trịx ∈Zq và y ∈G, tính yx · g Total of marks: 5 4 5 Hệmật mã RSA",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 5"
+  },
+  {
+    "id": 115,
+    "type": "essay",
+    "text": "Giải mã RSA Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Xét sơ đồmã hoá RSA được cài đặt các tham sốp = 31 và q = 37. Khoá công khai là e = 17. Ta cần giải mã bản mã y = 2. Ta giải mã được bản rõ x bằng .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 116,
+    "type": "essay",
+    "text": "Bài toán RSA \u0003 \u0002 \u0000\u0001 Trong các bài toán dưới đây, ta giảsửN là tích của hai sốnguyên tốlớn p và q, và e nguyên tốcùng nhau với ϕ(N). Nếu bài toán RSA là khó, vậy những bài toán nào dưới đây cũng khó? a. Cho trước N, e, và lấy ngẫu nhiên y ∈Z∗ N, tìm x sao cho xe = y mod N. b. Cho trước N và e, tìm x, y sao cho xe = y mod N. c. Cho trước N, e, và lấy ngẫu nhiên x ∈Z∗ N, tìm y sao cho xe = y mod N d. Cho trước N và e, tìm x sao cho xe = 8 mod N.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 117,
+    "type": "essay",
+    "text": "Sửa đổi bài toán RSA \u0003 \u0002 \u0000\u0001 Nhắc lại rằng hoán vịcửa sập RSA được định nghĩa trong nhóm Z∗ N với N là tích của hai sốnguyên tốlớn. Khóa công khai là (N, e) và khóa bí mật là (N, d) trong đó d là nghịch đảo của e trong Z∗ φ(N). Giảsửtrong thuật toán RSA, thay vì dùng hợp sốN bạn lại dùng sốnguyên tốp. Trong trường hợp này, bằng những cách nào dưới đây người ta có thểtính được khóa bí mật (N, d) từkhóa công khai (N, e). a. d ←e−1 (mod p −1). b. d ←e2 (mod p). c. d ←−e (mod p). d. d ←e−1 (mod p). Total of marks: 3 5 6 Giao thức Diﬀie-Hellman",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 6"
+  },
+  {
+    "id": 118,
+    "type": "essay",
+    "text": "Tính hàm Diﬀie-Hellman Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Xét Z∗ 19 là một nhóm cyclic với 3 là một phần tửsinh. Hãy tính giá trịDH3(7, 15) trong nhóm này. Gía trịDH3(7, 15) bằng .",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 119,
+    "type": "essay",
+    "text": "Diﬀie-Hellman sửa đổi \u0003 \u0002 \u0000\u0001 One answer only Giảsửta sửa đổi giao thức Diﬀie-Hellman như sau. Alice vẫn tương tác như thông thường, tức là chọn sốngẫu nhiêna trong {1, . . . , p−1} và gửi cho Bob A ←ga. Bob, tuy vậy, chọn sốngẫu nhiên b trong {1, . . . , p −1} và gửi cho Alice B ←g1/b. Giá trịchia sẻbí mật secret nào dưới đây họcó thểsinh và làm thếnào họsinh được? a. secret = gab. Alice tính giá trịsecret bằng B1/a và Bob tính bằng Ab. b. secret = gab. Alice tính giá trịsecret bằng Ba và Bob tính bằng Ab. c. secret = ga/b. Alice tính giá trịsecret bằng B1/b và Bob tính bằng Aa. d. secret = ga/b. Alice tính giá trịsecret bằng Ba và Bob tính bằng A1/b. Total of marks: 2 6 7 Đường cong Elliptic",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 7"
+  },
+  {
+    "id": 120,
+    "type": "essay",
+    "text": "Cộng điểm trên EC Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Xét đường cong Elliptic E : y2 = x3 + 2x + 2 mod 17 Đểtiện cho việc tính toán, các điểm là bội của phần tửsinh (5, 1) được liệt kê trong Bảng dưới đây. k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O Xét điểm P1 = (13, 10) và P2 = (6, 14). Hãy tính điểm Q = P1 + P2. Điểm Q là . Chú ý: Hãy viết đáp án dưới dạng (p,q), không có dấu cách ởgiữa.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 121,
+    "type": "single",
+    "text": "Chia sẻkhoá trên EC Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Xét đường cong Elliptic E : y2 = x3 + 2x + 2 mod 17 Đểtiện cho việc tính toán, các điểm là bội của phần tửsinh (5, 1) được liệt kê trong Bảng dưới đây. k 1 2 3 4 5 6 7 8 9 10 k · G (5,1) (6,3) (10,6) (3,1) (9,16) (16,13) (0,6) (13,7) (7,6) (7,11) k 11 12 13 14 15 16 17 18 19 k · G (13,10) (0,11) (16,4) (9,1) (3,16) (10,11) (6,14) (5,16) O Xét điểm P = (13, 10). Alice và Bob sẽthiết lập khoá chia sẻdùng giao thức Diﬀie-Hellman trên đường cong E. Cụthể, Alice sẽthực hiện:",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Chọn giá trịa = 4 và gửi điểm aP cho Bob;",
+      "Nhận được điểm bP = (16, 13) từBob. Khoá chia sẻabP giữa Alice và Bob là . Chú ý: Hãy viết đáp án dưới dạng (p,q), không có dấu cách ởgiữa. Total of marks: 2 7 8 Hàm băm"
+    ],
+    "correctAnswers": [
+      "Chọn giá trịa = 4 và gửi điểm aP cho Bob;"
+    ],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: 'Chọn giá trịa = 4 và gửi điểm aP cho Bob;'.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 8"
+  },
+  {
+    "id": 122,
+    "type": "essay",
+    "text": "Hàm băm \u0003 \u0002 \u0000\u0001 GiảsửH và H′ là các hàm băm kháng xung đột. Những hàm băm H′′ nào dưới đây là kháng xung đột. Chú ý: Phép toán ∥ký hiệu phép ghép xâu. H′′(x) = H(H′(x)) H′′(x) = H(x) H′(x) H′′(x) = H(x) ⊕H′(x). H′′(x) = H(x) 0 . . . 0 Total of marks: 1 8 9 Mac",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 9"
+  },
+  {
+    "id": 123,
+    "type": "essay",
+    "text": "MAC an toàn \u0003 \u0002 \u0000\u0001 Xét một hệMAC an toàn (S, V ) trên (K, M, T) với M = {0, 1}n và T = {0, 1}128 (cụthể, không gian khóa là K, không gian thông điệp là {0, 1}n, và không gian tag là {0, 1}128). Những MAC nào dưới đây là MAC an toàn: (ởđây, ta dùng ký hiệu là ghép xâu). S′(k, m) = S(k, m)[0, . . . , 126] và V ′(k, m, t) = \u0002 V (k, m, t 0) hoặc V (k, m, t 1) \u0003 (cụthể, V ′(k, m, t) outputs “1” nếu hoặc t 0 hoặc t 1 là tag hợp lệcho m). S′(k, m) = S(k, m m) và V ′(k, m, t) = V (k, m m, t). S′((k1, k2), m) = \u0000S(k1, m), S(k2, m) \u0001 và V ′\u0000(k1, k2), m, (t1, t2) \u0001 = \u0002 V (k1, m, t1) và V (k2, m, t2) \u0003 (cụthể, V ′\u0000(k1, k2), m, (t1, t2) \u0001 outputs “1” nếu cảt1 và t2 đều là tag hợp lệ). S′(k, m) = S(k, m[0, . . . , n−2] 0) và V ′(k, m, t) = V (k, m[0, . . . , n− 2] 0, t) S′(k, m) = S(k, m) và V ′(k, m, t) = \u0002 V (k, m, t) hoặc V (k, m ⊕1n, t) \u0003 (cụthể, V ′(k, m, t) outputs “1” nếu t là một tag hợp lệcho hoặc m hoặc m⊕1n). S′(k, m) = S(k, m) và V ′(k, m, t) = [ if m̸ = 0n return V (k, m, t) else return “1”] Total of marks: 1 9 10 Chữký số",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 10"
+  },
+  {
+    "id": 124,
+    "type": "essay",
+    "text": "Chữký RSA \u0003 \u0002 \u0000\u0001 Cho sơ đồchữký RSA (không kết hợp với hàm băm) với khoá công khai (n = 9797, e = 131), những chữký nào dưới đây là hợp lệ? (m = 4333, σ = 1424) (m = 4333, σ = 4768) (m = 123, σ = 6292)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  },
+  {
+    "id": 125,
+    "type": "essay",
+    "text": "Chữký ElGamal Short answer \u0003 \u0002 \u0000\u0001 Case-Insensitive Ta xem xét sơ đồchữký ElGamal. Bạn có khoá bí mật của Bob sk = d = (67) và khoá công khai tương ứng pk = (p, g, gd) = (97, 23, 15). Hãy tính chữký Elgamal (r, s) cho thông điệp m = 17 và khoá tạm thời kE = 31. Chữký (r, s) là . Chú ý: Hãy viết chữký dưới dạng (r,s) không có dấu cách ởgiữa. Total of marks: 2 10",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Câu hỏi ôn tập kiến thức cốt lõi An toàn thông tin. Đáp án chính xác: ''.",
+    "scope": "An toàn thông tin - ôn tập thầy Đức.pdf — Trang 1"
+  }
+]

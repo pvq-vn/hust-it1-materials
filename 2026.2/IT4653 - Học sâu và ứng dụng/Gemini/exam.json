@@ -1,0 +1,3511 @@
+[
+  {
+    "id": 1,
+    "type": "single",
+    "text": "Điều gì sau đây quyết định việc lựa chọn độ sâu của một mạng nơ ron? 1. Kiến trúc mạng nơ ron, ví dụ Multi-Layer Perceptron, CNN 2. Kiểu dữ liệu đầu vào 3. Hạ tầng tính toán 4. Tốc độ học 5. Đầu ra của mạng •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tiêu chí (1), (2), (4) và (5) •",
+      "Tiêu chí (2), (3), (4) và (5) •",
+      "Tiêu chí (1), (2), (3) và (4) •",
+      "Tiêu chí (1), (2), (3), (4) và (5) •",
+      "Tiêu chí (1), (2) và (4) •",
+      "Tiêu chí (2), (3) và (4)"
+    ],
+    "correctAnswers": [
+      "Tiêu chí (1), (2), (3), (4) và (5) •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Tiêu chí (1), (2), (3), (4) và (5) •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 2"
+  },
+  {
+    "id": 2,
+    "type": "essay",
+    "text": "Cho bộ dữ liệu học sau dành cho bài toán hồi quy phi tuyến: $$ D = {(3,4), (4,3), (1,2), (5,1)} $$ Với hàm dự đoán bậc 2: $$ f(x) = ax^2 + bx + c $$ Hãy cho biết giá trị bình phương lỗi nhỏ nhất trên $D$ là bao nhiêu? Làm tròn 3 số sau dấu phẩy.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 3,
+    "type": "single",
+    "text": "Khi di chuyển xuống các lớp càng sâu trong mạng tích chập thì thường xảy ra hiện tượng gì đối với kích thước khối đầu ra của các lớp tích chập, bao gồm chiều rộng $n_W$, chiều cao $n_H$ và chiều sâu $n_C$? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "$n_H$ và $n_W$ tăng, $n_C$ cũng tăng •",
+      "$n_H$ và $n_W$ giảm, $n_C$ cũng giảm •",
+      "$n_H$ và $n_W$ tăng, $n_C$ giảm •",
+      "$n_H$ và $n_W$ giảm, $n_C$ tăng"
+    ],
+    "correctAnswers": [
+      "$n_H$ và $n_W$ tăng, $n_C$ cũng tăng •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: '$n_H$ và $n_W$ tăng, $n_C$ cũng tăng •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 4,
+    "type": "essay",
+    "text": "Đầu vào của một lớp tích chập có kích thước $63 \\times 63 \\times 16$. Lớp tích chập này có 32 nơ- ron với kích thước vùng tiếp nhận $7 \\times 7$, bước nhảy stride = 1. Nếu muốn giữ nguyên kích thước chiều dài và chiều rộng của khối đầu ra thì phải thêm viền có độ rộng bằng bao nhiêu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 5,
+    "type": "essay",
+    "text": "Cho bộ dữ liệu huấn luyện gồm có ba mẫu dữ liệu minh họa bởi hình bên. Ghi chú: Cần bổ sung hình minh họa gốc cho câu này. Hãy tính giá trị lỗi SVM đa lớp của các mẫu này. Làm tròn 3 số sau dấu phẩy.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 3"
+  },
+  {
+    "id": 6,
+    "type": "single",
+    "text": "Lợi ích chính của các mạng sâu so với các mạng nông là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Giảm khả năng học quá khớp, overfitting •",
+      "Tính đơn giản của cấu trúc mạng và luyện nhanh hơn •",
+      "Suy diễn ổn định hơn và tốt hơn •",
+      "Chi phí tính toán giảm đi •",
+      "Số nơ ron ở các tầng ẩn ít hơn •",
+      "Khả năng học các đặc trưng phức tạp"
+    ],
+    "correctAnswers": [
+      "Khả năng học các đặc trưng phức tạp"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Khả năng học các đặc trưng phức tạp'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 7,
+    "type": "single",
+    "text": "Phương pháp nào sau đây được sử dụng để chống overfitting khi huấn luyện mạng nơ-ron? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Chuẩn hóa theo lô, Batch normalization •",
+      "Chính quy hóa, regularization •",
+      "Tất cả các phương án khác đều đúng •",
+      "Dropout •",
+      "Dừng sớm, early stopping"
+    ],
+    "correctAnswers": [
+      "Tất cả các phương án khác đều đúng •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Tất cả các phương án khác đều đúng •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 8,
+    "type": "single",
+    "text": "Ưu điểm chính của việc sử dụng kỹ thuật dropout trong mạng sâu là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cho phép hội tụ nhanh hơn trong khi huấn luyện •",
+      "Tránh bị nơ ron chết nhiều khi huấn luyện •",
+      "Ngăn chặn overfitting bởi việc vô hiệu hóa ngẫu nhiên các nơ ron trong khi luyện •",
+      "Giảm chi phí tính toán của việc huấn luyện •",
+      "Tăng khả năng học của mô hình •",
+      "Tăng cường dữ liệu khi huấn luyện"
+    ],
+    "correctAnswers": [
+      "Cho phép hội tụ nhanh hơn trong khi huấn luyện •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Cho phép hội tụ nhanh hơn trong khi huấn luyện •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 9,
+    "type": "single",
+    "text": "Chúng ta cần chồng bao nhiêu tầng tích chập với bộ lọc kích thước $3 \\times 3$, bước nhảy stride =   1 để có cùng hiệu quả thu nhận thông tin như một tầng tích chập chỉ với bộ lọc kích thước $7 \\times 7$? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "2 •",
+      "1 •",
+      "4 •",
+      "6 •",
+      "3 •",
+      "5"
+    ],
+    "correctAnswers": [
+      "2 •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: '2 •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 4"
+  },
+  {
+    "id": 10,
+    "type": "essay",
+    "text": "Giả sử đầu vào của mạng tích chập là một ảnh màu RGB kích thước $300 \\times 300$. Một lớp tích chập có 100 bộ lọc với kích thước vùng tiếp nhận là $5 \\times 5$ được áp dụng lên ảnh đầu vào. Hỏi lớp tích chập này có bao nhiêu tham số, tính cả trọng số $w$ lẫn độ lệch $b$?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 11,
+    "type": "single",
+    "text": "Đầu vào của một lớp tích chập có kích thước $63 \\times 63 \\times 16$. Lớp tích chập này có 32 bộ lọc với kích thước vùng tiếp nhận là $7 \\times 7$, bước nhảy 2 và không thêm viền. Hỏi kích thước đầu ra của lớp tích chập là bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "$29 \\times 29 \\times 16$ •",
+      "$16 \\times 16 \\times 32$ •",
+      "$16 \\times 16 \\times 16$ •",
+      "$29 \\times 29 \\times 32$ •",
+      "$36 \\times 36 \\times 32$ •",
+      "$32 \\times 32 \\times 16$"
+    ],
+    "correctAnswers": [
+      "$29 \\times 29 \\times 16$ •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: '$29 \\times 29 \\times 16$ •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 12,
+    "type": "single",
+    "text": "Kiến trúc mạng tích chập nào được đề xuất lần đầu tiên để giải quyết hiện tượng suy biến của mạng khi độ sâu tăng dần? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "AlexNet •",
+      "LeNet-5 •",
+      "ResNet •",
+      "GoogleNet •",
+      "VGG"
+    ],
+    "correctAnswers": [
+      "AlexNet •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'AlexNet •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 5"
+  },
+  {
+    "id": 13,
+    "type": "essay",
+    "text": "Hãy cho biết giá trị độ lệch chuẩn của khởi tạo trọng số Xavier cho bộ lọc tích chập có trường tiếp nhận $7 \\times 7$, hàm kích hoạt ReLU là bao nhiêu? Làm tròn 3 số sau dấu phẩy. Giả thiết các độ lệch khởi tạo bằng không và đầu vào là ảnh đen trắng kích thước $224 \\times 224$.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 14,
+    "type": "essay",
+    "text": "Cho biết giá trị đạo hàm đúng của hàm $\\tanh(x) = 0.5$. Trả lời bằng số: ____________________",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 15,
+    "type": "single",
+    "text": "Khái niệm “tiền xử lý” trong học sâu là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Lựa chọn các hàm kích hoạt thích hợp •",
+      "Xác định số tầng ẩn của mạng sâu •",
+      "Chuẩn bị và biến đổi dữ liệu thô trước khi đưa vào mô hình để huấn luyện •",
+      "Điều chỉnh tốc độ học trong khi huấn luyện •",
+      "Hiệu chỉnh một mô hình luyện trước trên một tác vụ mới •",
+      "Luyện trước mạng nơ ron sử dụng phương pháp học không giám sát"
+    ],
+    "correctAnswers": [
+      "Lựa chọn các hàm kích hoạt thích hợp •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Lựa chọn các hàm kích hoạt thích hợp •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 16,
+    "type": "essay",
+    "text": "Hãy cho biết giá trị độ lệch chuẩn của khởi tạo trọng số Xavier cho lớp kết nối đầy đủ, kích thước 1024, hàm kích hoạt tanh là bao nhiêu? Làm tròn 3 số sau dấu phẩy. Giả thiết các độ lệch khởi tạo bằng không.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 6"
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "text": "Lợi ích chính của sử dụng gradient descent so với stochastic gradient descent trong học sâu là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cung cấp một đánh giá chính xác hơn của gradient •",
+      "Yêu cầu tính toán ít hơn •",
+      "Giảm sử dụng bộ nhớ trong khi huấn luyện •",
+      "Lựa chọn ưu tiên khi học sâu với dữ liệu lớn •",
+      "Hội tụ nhanh hơn đến lời giải tối ưu •",
+      "Tăng nhiễu hơn khi huấn luyện"
+    ],
+    "correctAnswers": [
+      "Cung cấp một đánh giá chính xác hơn của gradient •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Cung cấp một đánh giá chính xác hơn của gradient •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "text": "Cho ảnh đầu vào là ảnh đặc trưng có kích thước $N \\times N$. Để bảo toàn kích thước đầu ra khi sử dụng một bộ lọc kích thước $F \\times F$ với bước nhảy stride = 1, chúng ta cần thêm viền, padding $P$, có độ rộng là bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "$(F + 1)/2$ •",
+      "$(F - 1)$ •",
+      "$(F + 1)$ •",
+      "$(F - 1)/2$ •",
+      "$F$ •",
+      "$F/2$"
+    ],
+    "correctAnswers": [
+      "$(F + 1)/2$ •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: '$(F + 1)/2$ •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 19,
+    "type": "essay",
+    "text": "Cho biết số tham số $w$ và $b$ của tầng mạng nơ ron tích chập CNN bằng bao nhiêu? Biết rằng đầu vào là ảnh RGB hình vuông kích thước $N = 224$, không thêm viền, padding $P = 0$. Tầng sử dụng 10 bộ lọc vuông kích thước $F = 7$, bước nhảy stride = 2.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 20,
+    "type": "single",
+    "text": "Thế nào là hiện tượng quá khớp, overfitting? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Mô hình quá phức tạp dẫn tới học cả nhiễu trong dữ liệu. Bias cao và variance cao. •",
+      "Mô hình quá phức tạp dẫn tới học cả nhiễu trong dữ liệu. Bias thấp và variance thấp. •",
+      "Mô hình quá phức tạp dẫn tới học cả nhiễu trong dữ liệu. Bias cao và variance thấp. •",
+      "Mô hình quá phức tạp dẫn tới học cả nhiễu trong dữ liệu. Bias thấp và variance cao."
+    ],
+    "correctAnswers": [
+      "Mô hình quá phức tạp dẫn tới học cả nhiễu trong dữ liệu. Bias cao và variance cao. •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Mô hình quá phức tạp dẫn tới học cả nhiễu trong dữ liệu. Bias cao và variance cao. •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 7"
+  },
+  {
+    "id": 21,
+    "type": "single",
+    "text": "Giả sử bạn có một mạng nơ-ron và bạn sử dụng hàm kích hoạt tanh cho tất cả các nơ-ron ở các lớp ẩn. Bạn khởi tạo các trọng số của mạng rất lớn bằng hàm np.random.randn(...)*1000. Vấn đề gì sẽ xảy ra? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Khi khởi tạo trọng số ngẫu nhiên, thuật toán không bị ảnh hưởng bởi giá trị trọng số lớn hay bé. •",
+      "Hàm tanh trở nên nhọn, peak, khi đầu vào lớn, làm cho đạo hàm gradient tiến đến 1, làm cho tốc độ huấn luyện nhanh hơn. •",
+      "Việc khởi tạo như vậy sẽ làm cho đầu vào hàm tanh lớn và làm cho gradient cũng trở nên lớn. Do đó cần thiết lập hệ số học nhỏ để tránh tràn số. •",
+      "Việc khởi tạo như vậy làm cho đầu vào của hàm tanh lớn và làm cho các nơ-ron bị kích hoạt mạnh, giúp tăng tốc giải thuật. •",
+      "Hàm tanh trở nên phẳng, flat, khi đầu vào lớn; điều này làm cho gradient của nó tiến đến 0 và làm chậm tốc độ huấn luyện. •",
+      "Việc khởi tạo như vậy dùng hàm np.random.randn(...) sẽ giúp cho mạng nơ ron luôn có được toàn bộ đạo hàm giá trị tối ưu."
+    ],
+    "correctAnswers": [
+      "Khi khởi tạo trọng số ngẫu nhiên, thuật toán không bị ảnh hưởng bởi giá trị trọng số lớn hay bé. •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Khi khởi tạo trọng số ngẫu nhiên, thuật toán không bị ảnh hưởng bởi giá trị trọng số lớn hay bé. •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 22,
+    "type": "single",
+    "text": "Ưu điểm chính của sử dụng SGD so với GD là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cực trị tổng thể được đảm bảo •",
+      "Tính đơn giản của cài đặt •",
+      "Sử dụng bộ nhớ và chi phí ít hơn •",
+      "SGD ít sử dụng đạo hàm hơn GD •",
+      "Tùy chọn khu huấn luyện học sâu •",
+      "Đảm bảo hội tụ và hội tụ nhanh hơn"
+    ],
+    "correctAnswers": [
+      "Cực trị tổng thể được đảm bảo •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Cực trị tổng thể được đảm bảo •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "text": "Khả năng chính của Học sâu là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Phân loại đơn nhãn •",
+      "Trích rút đặc trưng tự động •",
+      "Học các mẫu từ dữ liệu •",
+      "Dùng để sinh mẫu dữ liệu •",
+      "Nén dữ liệu •",
+      "Hồi quy phi tuyến"
+    ],
+    "correctAnswers": [
+      "Phân loại đơn nhãn •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Phân loại đơn nhãn •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 8"
+  },
+  {
+    "id": 24,
+    "type": "essay",
+    "text": "Cho biết kích thước của đầu ra chuyển vị tích chập, transposed convolution, biết rằng: • Đầu vào kích thước $16 \\times 16 \\times 3$ • Ba bộ lọc chuyển vị kích thước trường tiếp nhận $4 \\times 4$ • Độ dài bước nhảy stride = 2 • Độ rộng viền padding = 2 • A. $24 \\times 24 \\times 1$ • B. $18 \\times 18 \\times 3$ • C. $56 \\times 56 \\times 1$ • D. $30 \\times 30 \\times 3$ • E. $20 \\times 20 \\times 1$ • F. $40 \\times 40 \\times 3$",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 25,
+    "type": "single",
+    "text": "Trong các ứng dụng học sâu sau, hãy cho biết ứng dụng nào là Chat Bot? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Deep Fake •",
+      "Midjourney •",
+      "Dall-E •",
+      "Veo 3 •",
+      "Chat-GPT4 •",
+      "Sora"
+    ],
+    "correctAnswers": [
+      "Chat-GPT4 •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Chat-GPT4 •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 9"
+  },
+  {
+    "id": 26,
+    "type": "single",
+    "text": "Mục đích của gia tăng dữ liệu, data augmentation, trong học sâu là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tăng độ sâu của mạng và tăng độ phức tạp của mô hình cần học •",
+      "Mở rộng tập huấn luyện bởi các biến đổi khác nhau đối với các dữ liệu đã có trong tập luyện •",
+      "Giảm thiểu nhiễu khi huấn luyện •",
+      "Học các biến đổi mà vẫn bảo toàn nhãn đối với các dữ liệu đã có trong tập huấn luyện •",
+      "Thêm nhiễu vào dữ liệu để hiệu chỉnh mô hình cần học và giúp mô hình mạnh hơn và có khả năng tổng quát hóa tốt hơn •",
+      "Giảm thiểu chi phí huấn luyện đối với mô hình mạng sâu"
+    ],
+    "correctAnswers": [
+      "Tăng độ sâu của mạng và tăng độ phức tạp của mô hình cần học •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Tăng độ sâu của mạng và tăng độ phức tạp của mô hình cần học •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 27,
+    "type": "single",
+    "text": "Mục đích của một bộ lọc, filter/kernel, trong một tầng tích chập CNN là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Giúp tăng độ phân giải của dữ liệu vào •",
+      "Áp dụng một phép toán cục bộ trên dữ liệu vào •",
+      "Đưa vào yếu tố phi tuyến •",
+      "Giảm chiều của dữ liệu vào •",
+      "Tạo kết nối toàn bộ đến dữ liệu vào •",
+      "Cập nhật các trọng số"
+    ],
+    "correctAnswers": [
+      "Giúp tăng độ phân giải của dữ liệu vào •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Giúp tăng độ phân giải của dữ liệu vào •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 28,
+    "type": "essay",
+    "text": "Giả sử đầu vào của mạng kết nối đầy đủ là một ảnh màu RGB kích thước $300 \\times 300$. Lớp ẩn đầu tiên có 100 nơ-ron, mỗi nơ-ron kết nối đầy đủ với ảnh đầu vào. Hỏi lớp ẩn đầu tiên này có bao nhiêu tham số, tính cả trọng số $w$ lẫn độ lệch $b$?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 29,
+    "type": "essay",
+    "text": "Cho bộ dữ liệu học sau dành cho bài toán hồi quy tuyến tính: $$ D = {(5,1), (3,4), (4,3), (1,2)} $$ Với hàm dự đoán bậc 1:   $$ f(x) = mx + n $$ Hãy cho biết giá trị bình phương lỗi nhỏ nhất trên $D$ là bao nhiêu? Làm tròn 3 số sau dấu phẩy.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 10"
+  },
+  {
+    "id": 30,
+    "type": "essay",
+    "text": "Cho bài toán phân loại hình ảnh ba lớp [mèo, ếch, ôtô] có giá trị ma trận đầu ra lần lượt là [3.2, -1.7, 5.1]. Biết rằng mẫu hình ảnh hiện tại có nhãn gán đúng là con mèo, hàm đầu ra softmax sẽ có giá trị đạo hàm lỗi tại vị trí nhãn đúng là bao nhiêu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 31,
+    "type": "single",
+    "text": "Vấn đề gradient suy biến trong học sâu là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Gây hiện tượng lỗi trong quá trình huấn luyện •",
+      "Một vấn đề gây nên do tốc độ học nhỏ •",
+      "Một thách thức trong việc song song hóa các thuật toán học sâu •",
+      "Trọng số của nơ ron bị suy giảm về giá trị không •",
+      "Một tình huống mà ở đó các gradient tiệm cận giá trị 0, dẫn đến việc huấn luyện chậm lại hay bị đình trệ •",
+      "Một hiện tượng mà ở đó các gradient trở nên quá lớn trong quá trình huấn luyện"
+    ],
+    "correctAnswers": [
+      "Gây hiện tượng lỗi trong quá trình huấn luyện •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Gây hiện tượng lỗi trong quá trình huấn luyện •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 32,
+    "type": "single",
+    "text": "Thách thức chính trong huấn luyện các mạng sâu là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Khó xác định thuật toán tối ưu •",
+      "Thiếu tài nguyên tính toán •",
+      "Vấn đề suy biến gradient •",
+      "Khó định nghĩa hàm mất mát •",
+      "Yêu cầu dữ liệu có nhãn nhiều hơn •",
+      "Kiểm tra tính ổn định của mô hình"
+    ],
+    "correctAnswers": [
+      "Vấn đề suy biến gradient •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Vấn đề suy biến gradient •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 11"
+  },
+  {
+    "id": 33,
+    "type": "essay",
+    "text": "Số lượng phép toán tích chập, ops, của tầng mạng nơ ron tích chập CNN bằng bao nhiêu? Biết rằng đầu vào là ảnh RGB hình vuông kích thước $N = 224$, thêm viền, padding $P = 1$. Tầng sử dụng 64 bộ lọc vuông kích thước $F = 3$, bước nhảy stride = 1.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 34,
+    "type": "single",
+    "text": "Khẳng định nào sau đây đúng về khả năng của mạng nơ-ron trong việc xấp xỉ các hàm phức tạp? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Khả năng của mạng tăng khi tỉ lệ dropout, drop rate, tăng •",
+      "Khả năng của mạng nơ ron dùng hàm truyền tuyến tính luôn xấp xỉ tốt hơn hàm truyền phi tuyến do hội tụ nhanh •",
+      "Để xấp xỉ hàm phức tạp thì bộ dữ liệu huấn luyện phải đủ lớn •",
+      "Khả năng của mạng tăng khi tốc độ học, learning rate, tăng •",
+      "Khả năng của mạng tăng khi số lớp ẩn và số nơ-ron tăng •",
+      "Tất cả các đáp án trên đều sai"
+    ],
+    "correctAnswers": [
+      "Khả năng của mạng tăng khi tỉ lệ dropout, drop rate, tăng •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Khả năng của mạng tăng khi tỉ lệ dropout, drop rate, tăng •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 35,
+    "type": "single",
+    "text": "Đâu là khẳng định đúng nhất về khởi tạo Xavier? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Nó cho phép lấy tham số huấn luyện cho bài toán này để chuyển giao cho một bài toán khác, transfer learning •",
+      "Nó tối ưu về các tham số sau khi khởi tạo giúp cho hàm mục tiêu của bài toán đạt giá trị tối ưu •",
+      "Nó giảm thiểu sự suy giảm của nơ ron được kích hoạt cũng như tránh hiện tượng bị bão hòa khi khởi tạo mạng nơ ron •",
+      "Nó cho phép giải thuật Gradient descent thiết lập nhiều tham số mạng về 0, giúp thưa hóa các kết nối trong mạng •",
+      "Nó đảm bảo rằng các giá trị kích hoạt của mạng nơ ron luôn trong trạng thái bão hòa hoặc suy giảm về không •",
+      "Nó cho phép bộ phát hiện đặc trưng, feature detector, có thể áp dụng tại nhiều vị trí trong khối đầu vào"
+    ],
+    "correctAnswers": [
+      "Nó cho phép lấy tham số huấn luyện cho bài toán này để chuyển giao cho một bài toán khác, transfer learning •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Nó cho phép lấy tham số huấn luyện cho bài toán này để chuyển giao cho một bài toán khác, transfer learning •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 36,
+    "type": "single",
+    "text": "Giải thuật full-batch GD, gradient descent, tính giá trị gradient tại mỗi bước lặp dựa trên toàn bộ dữ   liệu huấn luyện, trong khi giải thuật mini-batch GD mỗi bước lặp chỉ dùng một lô dữ liệu, batch, để xấp xỉ gradient. Đâu là khẳng định đúng về thuật toán mini-batch GD? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Huấn luyện một epoch, một lần duyệt qua tất cả các mẫu huấn luyện, bằng giải thuật mini-batch GD nhanh hơn một epoch bằng giải thuật full-batch GD. •",
+      "Một bước lặp của mini-batch GD thực hiện nhanh hơn một bước lặp của giải thuật full-batch GD. •",
+      "Khi cài đặt giải thuật mini-batch GD không nên dùng vòng lặp for trực tiếp để duyệt qua từng lô dữ liệu, vì như thế sẽ giúp thuật toán xử lý song song tất cả các lô. •",
+      "Khi sử dụng giải thuật mini-batch GD thì dùng CPU đem lại hiệu quả cao hơn so với GPU hoàn toàn. •",
+      "Giải thuật mini-batch GD không hiệu quả khi xử lý dữ liệu lớn. •",
+      "Giải thuật mini-batch GD giúp cho hội tụ đến điểm tối ưu toàn cục."
+    ],
+    "correctAnswers": [
+      "Huấn luyện một epoch, một lần duyệt qua tất cả các mẫu huấn luyện, bằng giải thuật mini-batch GD nhanh hơn một epoch bằng giải thuật full-batch GD. •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Huấn luyện một epoch, một lần duyệt qua tất cả các mẫu huấn luyện, bằng giải thuật mini-batch GD nhanh hơn một epoch bằng giải thuật full-batch GD. •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 12"
+  },
+  {
+    "id": 37,
+    "type": "essay",
+    "text": "Cho biết chiều cao $H$ của bản đồ kích hoạt, activation map, đầu ra của tầng mạng nơ ron tích chập CNN bằng bao nhiêu? Biết rằng đầu vào là ảnh RGB hình vuông kích thước $N = 227$, có thêm viền, padding $P = 1$. Tầng sử dụng 32 bộ lọc vuông kích thước $F = 5$, bước nhảy stride = 2.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 38,
+    "type": "essay",
+    "text": "Cho bộ dữ liệu huấn luyện gồm có ba mẫu dữ liệu minh họa bởi hình bên. Ghi chú: Cần bổ sung hình minh họa gốc cho câu này. Hãy tính giá trị lỗi cross-entropy của các mẫu này. Làm tròn 3 số sau dấu phẩy với cơ số tự nhiên.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 39,
+    "type": "essay",
+    "text": "Cho mạng nơ ron gồm 2 tầng tích chập và 3 tầng kết nối đầy đủ theo hình bên. Ghi chú: Cần bổ sung hình minh họa gốc cho câu này. Hãy tính chi phí phép toán của toàn bộ mạng nơ ron trên một lần tiến, forward-pass. Trong đó, $f$ là số bộ lọc, $k$ là kích thước trường tiếp nhận, $s$ là hệ số trượt còn $p$ là kích thước viền.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN).",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 13"
+  },
+  {
+    "id": 40,
+    "type": "single",
+    "text": "Thế nào là hiện tượng chưa khớp, underfitting? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Mô hình quá đơn giản dẫn tới học cả nhiễu trong dữ liệu. Bias thấp và variance cao. •",
+      "Mô hình quá đơn giản dẫn tới học cả nhiễu trong dữ liệu. Bias cao và variance cao. •",
+      "Mô hình quá đơn giản dẫn tới học cả nhiễu trong dữ liệu. Bias cao và variance thấp. •",
+      "Mô hình quá đơn giản dẫn tới học cả nhiễu trong dữ liệu. Bias thấp và variance thấp. Phiếu trả lời Câu Đáp án / Kết quả Câu Đáp án / Kết quả 1 21 2 22 3 23 4 24 5 25 6 26 7 27 8 28 9 29 10 30 11 31 12 32 13 33 14 34 15 35 16 36 17 37 18 38 19 39 20 40"
+    ],
+    "correctAnswers": [
+      "Mô hình quá đơn giản dẫn tới học cả nhiễu trong dữ liệu. Bias thấp và variance cao. •"
+    ],
+    "explanation": "Dựa trên kiến thức cơ sở Mạng nơ-ron và Học sâu (Deep Learning & CNN). Đáp án đúng: 'Mô hình quá đơn giản dẫn tới học cả nhiễu trong dữ liệu. Bias thấp và variance cao. •'. Đây là nguyên lý cốt lõi trong kiến trúc CNN/Deep Learning.",
+    "scope": "Học sâu - giữa kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 41,
+    "type": "single",
+    "text": "Quy trình Non-Maximum Suppression (NMS) trong R-CNN thực hiện việc loại bỏ các hộp bao dư thừa theo nguyên tắc nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Giữ lại tất cả các hộp có IoU > 0.5 với nhau. •",
+      "Sắp xếp theo điểm tin cậy, chọn hộp cao nhất và loại bỏ các hộp khác có cùng lớp và có IoU > 0.5 với hộp đã chọn. •",
+      "Chỉ giữ lại duy nhất một hộp bao cho mỗi bức ảnh bất kể số lượng đối tượng. •",
+      "Loại bỏ các hộp bao có kích thước quá nhỏ so với ảnh gốc."
+    ],
+    "correctAnswers": [
+      "Sắp xếp theo điểm tin cậy, chọn hộp cao nhất và loại bỏ các hộp khác có cùng lớp và có IoU > 0.5 với hộp đã chọn. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Sắp xếp theo điểm tin cậy, chọn hộp cao nhất và loại bỏ các hộp khác có cùng lớp và có IoU > 0.5 với hộp đã chọn. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 42,
+    "type": "single",
+    "text": "Thời gian suy diễn trung bình của R-CNN cho mỗi bức ảnh khi sử dụng mạng backbone VGG16 là bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "0.2 giây/ảnh. •",
+      "2.3 giây/ảnh. •",
+      "47 giây/ảnh. •",
+      "84 giờ/ảnh."
+    ],
+    "correctAnswers": [
+      "47 giây/ảnh. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '47 giây/ảnh. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 2"
+  },
+  {
+    "id": 43,
+    "type": "single",
+    "text": "Tại sao bước \"Warp\" (thay đổi kích thước vùng) lại bắt buộc phải thực hiện trước khi đưa dữ liệu vào mạng CNN backbone (như AlexNet)? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Để tăng độ phân giải của hình ảnh lên gấp đôi. •",
+      "Vì các mạng CNN như AlexNet yêu cầu đầu vào có kích thước cố định (ví dụ 227x227x3) để đi qua các lớp Fully Connected. •",
+      "Để giảm thiểu sai số trong bước hồi quy hộp bao. •",
+      "Để thuật toán Selective Search có thể hoạt động hiệu quả hơn trên CPU."
+    ],
+    "correctAnswers": [
+      "Vì các mạng CNN như AlexNet yêu cầu đầu vào có kích thước cố định (ví dụ 227x227x3) để đi qua các lớp Fully Connected. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vì các mạng CNN như AlexNet yêu cầu đầu vào có kích thước cố định (ví dụ 227x227x3) để đi qua các lớp Fully Connected. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 44,
+    "type": "single",
+    "text": "Điều kiện cụ thể để một vùng dự đoán (predicted box) được giữ lại để huấn luyện mô hình Bounding Box Regression trong R-CNN là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Vùng dự đoán đó phải chứa hoàn toàn đối tượng thực tế. •",
+      "Vùng dự đoán phải có độ tin cậy (confidence score) lớn hơn 0.5. •",
+      "Vùng dự đoán đó phải nằm gần một đối tượng thực tế (ground truth) với chỉ số IoU ít nhất là 0.6. •",
+      "Tất cả 2.000 vùng đề xuất ban đầu đều được dùng để huấn luyện hồi quy."
+    ],
+    "correctAnswers": [
+      "Vùng dự đoán đó phải nằm gần một đối tượng thực tế (ground truth) với chỉ số IoU ít nhất là 0.6. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vùng dự đoán đó phải nằm gần một đối tượng thực tế (ground truth) với chỉ số IoU ít nhất là 0.6. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 45,
+    "type": "single",
+    "text": "R-CNN sử dụng thuật toán nào sau đây để đề xuất các vùng (region proposals) tiềm năng chứa đối tượng? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "K-means clustering •",
+      "Selective Search •",
+      "Region Proposal Network (RPN) •",
+      "Sliding Windows"
+    ],
+    "correctAnswers": [
+      "Selective Search •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Selective Search •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 46,
+    "type": "single",
+    "text": "Khái niệm \"Hard Negative Mining\" trong huấn luyện R-CNN được hiểu là: •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tìm kiếm các hình ảnh không chứa bất kỳ đối tượng nào. •",
+      "Tìm các mẫu âm (background) bị mô hình phân loại sai là đối tượng (false positives) để đưa vào huấn luyện lại nhằm cải thiện bộ phân loại. •",
+      "Loại bỏ các đối tượng quá nhỏ khỏi tập huấn luyện. •",
+      "Sử dụng GPU hiệu năng cao để đào tạo mô hình."
+    ],
+    "correctAnswers": [
+      "Tìm các mẫu âm (background) bị mô hình phân loại sai là đối tượng (false positives) để đưa vào huấn luyện lại nhằm cải thiện bộ phân loại. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Tìm các mẫu âm (background) bị mô hình phân loại sai là đối tượng (false positives) để đưa vào huấn luyện lại nhằm cải thiện bộ phân loại. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 3"
+  },
+  {
+    "id": 47,
+    "type": "single",
+    "text": "Tên đầy đủ của mô hình R-CNN là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Random Convolutional Neural Network •",
+      "Recursive Convolutional Neural Network •",
+      "Region-based Convolutional Neural Network •",
+      "Residual Convolutional Neural Network"
+    ],
+    "correctAnswers": [
+      "Region-based Convolutional Neural Network •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Region-based Convolutional Neural Network •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 48,
+    "type": "single",
+    "text": "Số lượng vùng đề xuất (region proposals) trung bình mà R-CNN tạo ra cho mỗi bức ảnh là bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Khoảng 500 vùng •",
+      "Khoảng 1.000 vùng •",
+      "Khoảng 2.000 vùng •",
+      "Khoảng 5.000 vùng"
+    ],
+    "correctAnswers": [
+      "Khoảng 2.000 vùng •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Khoảng 2.000 vùng •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 49,
+    "type": "single",
+    "text": "Thuật toán Selective Search được mô tả là một thuật toán \"greedy\" (tham lam) vì •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Luôn chọn vùng có diện tích lớn nhất ngay lập tức. •",
+      "Kết hợp một cách đệ quy các vùng phân đoạn nhỏ dựa trên sự tương đồng về màu sắc, kết cấu và kích thước để tạo ra vùng lớn hơn. •",
+      "Sử dụng mạng nơ-ron tích chập (FCN) để dự đoán vùng. •",
+      "Chỉ tập trung vào việc tối ưu hóa tốc độ thực thi mà không quan tâm đến độ phủ đối tượng."
+    ],
+    "correctAnswers": [
+      "Kết hợp một cách đệ quy các vùng phân đoạn nhỏ dựa trên sự tương đồng về màu sắc, kết cấu và kích thước để tạo ra vùng lớn hơn. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Kết hợp một cách đệ quy các vùng phân đoạn nhỏ dựa trên sự tương đồng về màu sắc, kết cấu và kích thước để tạo ra vùng lớn hơn. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 50,
+    "type": "single",
+    "text": "Kỹ thuật nào giúp R-CNN tránh việc phát hiện trùng lặp nhiều hộp bao cho cùng một thực thể đối tượng?   •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Hard Negative Mining •",
+      "Selective Search •",
+      "Non-Maximum Suppression (NMS) •",
+      "RoI Pooling"
+    ],
+    "correctAnswers": [
+      "Non-Maximum Suppression (NMS) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Non-Maximum Suppression (NMS) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 4"
+  },
+  {
+    "id": 51,
+    "type": "single",
+    "text": "Theo phân tích về nhược điểm, tại sao tốc độ suy diễn của R-CNN lại bị kéo chậm đáng kể (tốn khoảng 47 giây/ảnh)? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Do hàm loss quá phức tạp không thể tính toán trên GPU. •",
+      "Do phải chạy riêng biệt khoảng 2.000 vùng đề xuất qua mạng CNN backbone cho mỗi bức ảnh và không tái sử dụng được các đặc trưng dùng chung. •",
+      "Do thuật toán SVM yêu cầu cấu hình phần cứng cực cao. •",
+      "Do kích thước tensor đầu ra quá lớn (7x7x30)."
+    ],
+    "correctAnswers": [
+      "Do phải chạy riêng biệt khoảng 2.000 vùng đề xuất qua mạng CNN backbone cho mỗi bức ảnh và không tái sử dụng được các đặc trưng dùng chung. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Do phải chạy riêng biệt khoảng 2.000 vùng đề xuất qua mạng CNN backbone cho mỗi bức ảnh và không tái sử dụng được các đặc trưng dùng chung. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 52,
+    "type": "single",
+    "text": "Nhược điểm lớn nhất của mô hình R-CNN là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Độ chính xác (mAP) rất thấp. •",
+      "Quá trình huấn luyện và suy diễn (inference) rất chậm, tốn nhiều không gian lưu trữ. •",
+      "Không thể nhận diện được nhiều đối tượng trong cùng một ảnh. •",
+      "Chỉ hoạt động được trên các máy tính có CPU đời cũ."
+    ],
+    "correctAnswers": [
+      "Quá trình huấn luyện và suy diễn (inference) rất chậm, tốn nhiều không gian lưu trữ. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Quá trình huấn luyện và suy diễn (inference) rất chậm, tốn nhiều không gian lưu trữ. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 53,
+    "type": "single",
+    "text": "Trong mô hình R-CNN nguyên bản, công cụ nào được sử dụng để phân loại các đặc trưng (features) đã được trích xuất từ CNN vào các lớp đối tượng? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Softmax •",
+      "Support Vector Machine (SVM) •",
+      "Linear Regression •",
+      "Random Forest"
+    ],
+    "correctAnswers": [
+      "Support Vector Machine (SVM) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Support Vector Machine (SVM) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 54,
+    "type": "single",
+    "text": "Sau khi trích xuất đặc trưng từ mạng CNN backbone, R-CNN thu được một vector đặc trưng có   kích thước bao nhiêu cho mỗi vùng trước khi đưa vào SVM? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(1, 1000) •",
+      "(1, 227) •",
+      "(1, 4096) •",
+      "(1, 2000)"
+    ],
+    "correctAnswers": [
+      "(1, 4096) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '(1, 4096) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 5"
+  },
+  {
+    "id": 55,
+    "type": "single",
+    "text": "Ghi chú: Câu này trong nguồn có dấu hiệu bị thiếu hoặc chưa đầy đủ nội dung. Tọa độ tâm x và y của hộp bao. •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tọa độ tâm x và y của hộp bao. •",
+      "Chiều rộng (w) và chiều cao (h) của hộp bao. •",
+      "Chỉ số IoU giữa vùng dự đoán và đối tượng thực tế. •",
+      "Trọng số của mạng CNN trong bước trích xuất đặc trưng."
+    ],
+    "correctAnswers": [
+      "Tọa độ tâm x và y của hộp bao. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Tọa độ tâm x và y của hộp bao. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 56,
+    "type": "single",
+    "text": "Bước \"Warp\" trong quy trình hoạt động của R-CNN có mục đích gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Chuyển đổi ảnh màu sang ảnh xám. •",
+      "Loại bỏ các vùng chồng lấn nhau. •",
+      "Cắt và thay đổi kích thước các vùng đề xuất về một kích thước cố định để đưa vào mạng CNN. •",
+      "Tăng cường dữ liệu bằng cách lật hình ảnh."
+    ],
+    "correctAnswers": [
+      "Cắt và thay đổi kích thước các vùng đề xuất về một kích thước cố định để đưa vào mạng CNN. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Cắt và thay đổi kích thước các vùng đề xuất về một kích thước cố định để đưa vào mạng CNN. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 57,
+    "type": "single",
+    "text": "Ghi chú: Câu này trong nguồn có dấu hiệu bị thiếu hoặc chưa đầy đủ nội dung. Thuật toán Selective Search được mô tả là một thuật toán \"greedy\" (tham lam) vì: •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Option 1 •",
+      "Option 2"
+    ],
+    "correctAnswers": [
+      "Option 1 •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Option 1 •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 58,
+    "type": "single",
+    "text": "Lợi ích chính của việc áp dụng phép biến đổi toán học cụ thể trong Bounding Box Regression của   R-CNN là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Để làm cho các hộp bao luôn có kích thước cố định là 227x227. •",
+      "Để đảm bảo tọa độ tâm của hộp bao luôn nằm ở (0,0). •",
+      "Để các hàm hiệu chỉnh hộp bao di(P) có thể nhận bất kỳ giá trị nào trong khoảng [−∞, +∞] •",
+      "Để loại bỏ hoàn toàn nhu cầu sử dụng thuật toán Non-Maximum Suppression"
+    ],
+    "correctAnswers": [
+      "Để các hàm hiệu chỉnh hộp bao di(P) có thể nhận bất kỳ giá trị nào trong khoảng [−∞, +∞] •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Để các hàm hiệu chỉnh hộp bao di(P) có thể nhận bất kỳ giá trị nào trong khoảng [−∞, +∞] •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 6"
+  },
+  {
+    "id": 59,
+    "type": "single",
+    "text": "Trong mô hình R-CNN, tại sao việc huấn luyện lại được mô tả là \"ad hoc\" (không đồng nhất)? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Vì nó sử dụng cùng một hàm loss cho tất cả các nhiệm vụ. •",
+      "Vì nó chỉ sử dụng một mạng nơ-ron duy nhất để thực hiện cả phân loại và đề xuất vùng. •",
+      "Vì nó phải huấn luyện riêng biệt các thành phần khác nhau: tinh chỉnh CNN với softmax (log loss), huấn luyện SVM (hinge loss) và huấn luyện hồi quy hộp bao (least squares). •",
+      "Vì quá trình huấn luyện diễn ra rất nhanh, chỉ tốn khoảng 8.75 giờ."
+    ],
+    "correctAnswers": [
+      "Vì nó phải huấn luyện riêng biệt các thành phần khác nhau: tinh chỉnh CNN với softmax (log loss), huấn luyện SVM (hinge loss) và huấn luyện hồi quy hộp bao (least squares). •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vì nó phải huấn luyện riêng biệt các thành phần khác nhau: tinh chỉnh CNN với softmax (log loss), huấn luyện SVM (hinge loss) và huấn luyện hồi quy hộp bao (least squares). •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 60,
+    "type": "single",
+    "text": "Sự khác biệt cơ bản giữa \"Easy Negative\" và \"Hard Negative\" trong quá trình Hard Negative Mining là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Easy Negative là các đối tượng nhỏ, Hard Negative là các đối tượng lớn •",
+      "Easy Negative thường là nền trống, trong khi Hard Negative chứa các cấu trúc nhiễu hoặc một phần đối tượng khiến mô hình dễ phân loại sai. •",
+      "Easy Negative có chỉ số IoU > 0.5, Hard Negative có chỉ số IoU < 0.1. •",
+      "Easy Negative dùng để huấn luyện SVM, Hard Negative dùng để huấn luyện CNN backbone."
+    ],
+    "correctAnswers": [
+      "Easy Negative thường là nền trống, trong khi Hard Negative chứa các cấu trúc nhiễu hoặc một phần đối tượng khiến mô hình dễ phân loại sai. •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Easy Negative thường là nền trống, trong khi Hard Negative chứa các cấu trúc nhiễu hoặc một phần đối tượng khiến mô hình dễ phân loại sai. •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 61,
+    "type": "single",
+    "text": "Vai trò của \"Bounding Box Regression\" trong mô hình R-CNN là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đề xuất các vùng chứa đối tượng •",
+      "Tính toán xác suất đối tượng thuộc về một lớp cụ thể •",
+      "Hiệu chỉnh tọa độ của vùng dự đoán để khớp chính xác hơn với đối tượng thực tế (ground truth) •",
+      "Loại bỏ các vùng có độ tin cậy thấp"
+    ],
+    "correctAnswers": [
+      "Hiệu chỉnh tọa độ của vùng dự đoán để khớp chính xác hơn với đối tượng thực tế (ground truth) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Hiệu chỉnh tọa độ của vùng dự đoán để khớp chính xác hơn với đối tượng thực tế (ground truth) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 7"
+  },
+  {
+    "id": 62,
+    "type": "single",
+    "text": "Trong R-CNN, nguyên nhân chính khiến quá trình suy diễn (inference) rất chậm là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "CNN backbone quá nông •",
+      "Phải chạy CNN riêng cho từng region proposal •",
+      "Không sử dụng softmax •",
+      "Bounding box regression quá phức tạp Phiếu trả lời Câu Đáp án Câu Đáp án 3 14 4 15 5 16 6 17 7 18 8 19 9 20 10 21 11 22 12 23 13 24 ĐỀ ÔN TẬP PYTORCH Chủ đề: PyTorch cơ bản, Autograd, Dynamic Graph, torch.nn, torch.optim, torchvision Tổng số câu: 20 câu Điểm mỗi câu: 1 điểm Hướng dẫn làm bài • Với câu trắc nghiệm, chọn một đáp án đúng nhất. • Các đáp án đúng đã được đánh dấu bằng [x] để dùng cho mục đích ôn tập trên Obsidian. Phần câu hỏi"
+    ],
+    "correctAnswers": [
+      "Phải chạy CNN riêng cho từng region proposal •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Phải chạy CNN riêng cho từng region proposal •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 8"
+  },
+  {
+    "id": 63,
+    "type": "single",
+    "text": "Để sử dụng một mô hình ResNet101 đã được huấn luyện sẵn từ thư viện torchvision, bạn sẽ viết code như thế nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "torch.models.resnet101(pretrained=True) •",
+      "torchvision.get('resnet101') •",
+      "torchvision.models.resnet101(pretrained=True) •",
+      "torch.nn.Pretrained(resnet101=True)"
+    ],
+    "correctAnswers": [
+      "torchvision.models.resnet101(pretrained=True) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'torchvision.models.resnet101(pretrained=True) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 64,
+    "type": "single",
+    "text": "Tại sao cần phải gán gradient bằng 0, hoặc dùng zero_grad(), sau mỗi bước lặp trong PyTorch? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Để giải phóng bộ nhớ GPU •",
+      "Vì PyTorch có cơ chế tích lũy, accumulate, gradient •",
+      "Để tăng tốc độ hội tụ của mô hình •",
+      "Để tránh lỗi đồ thị tính toán bị xóa"
+    ],
+    "correctAnswers": [
+      "Vì PyTorch có cơ chế tích lũy, accumulate, gradient •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vì PyTorch có cơ chế tích lũy, accumulate, gradient •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 65,
+    "type": "single",
+    "text": "Để sử dụng các mô hình đã được huấn luyện sẵn, pretrained models, như ResNet hay AlexNet, người dùng nên sử dụng thư viện nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "torch.models •",
+      "torch.nn.pretrained •",
+      "torchvision •",
+      "torch.utils"
+    ],
+    "correctAnswers": [
+      "torchvision •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'torchvision •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 9"
+  },
+  {
+    "id": 66,
+    "type": "single",
+    "text": "Để bật tính năng tự động tính gradient, autograd, cho một Tensor, cần thiết lập tham số nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "auto_grad=True •",
+      "grad_enable=True •",
+      "requires_grad=True •",
+      "accumulate_grad=True"
+    ],
+    "correctAnswers": [
+      "auto_grad=True •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'auto_grad=True •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 67,
+    "type": "single",
+    "text": "Wrapper cấp cao, higher-level wrapper, nào trong PyTorch giúp việc lập trình mạng nơ-ron trở nên dễ dàng hơn? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "torch.nn •",
+      "torch.optim •",
+      "torch.autograd •",
+      "torch.tensors"
+    ],
+    "correctAnswers": [
+      "torch.nn •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'torch.nn •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 68,
+    "type": "single",
+    "text": "Thư viện nào của PyTorch cung cấp sẵn các giải thuật tối ưu như Adam hay SGD? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "torch.nn •",
+      "torch.optim •",
+      "torchvision •",
+      "tensorboardx"
+    ],
+    "correctAnswers": [
+      "torch.optim •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'torch.optim •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 69,
+    "type": "single",
+    "text": "Theo cơ chế Đồ thị tính toán động, Dynamic Graph, của PyTorch, đồ thị tính toán sẽ như thế nào ở bước lặp, iteration, tiếp theo? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Được giữ nguyên để tiết kiệm bộ nhớ •",
+      "Chỉ cập nhật các node có thay đổi giá trị •",
+      "Xóa tất cả đồ thị cũ và xây dựng lại từ đầu •",
+      "Tự động nén thành đồ thị tĩnh để chạy nhanh hơn"
+    ],
+    "correctAnswers": [
+      "Xóa tất cả đồ thị cũ và xây dựng lại từ đầu •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Xóa tất cả đồ thị cũ và xây dựng lại từ đầu •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 10"
+  },
+  {
+    "id": 70,
+    "type": "single",
+    "text": "Đoạn code loss.backward() có vai trò gì trong quá trình huấn luyện? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tính giá trị hàm mất mát, loss value •",
+      "Bắt đầu quá trình lan truyền ngược để tính gradient •",
+      "Cập nhật trọng số của mạng nơ-ron •",
+      "Xóa bỏ đồ thị tính toán hiện tại"
+    ],
+    "correctAnswers": [
+      "Bắt đầu quá trình lan truyền ngược để tính gradient •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Bắt đầu quá trình lan truyền ngược để tính gradient •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 71,
+    "type": "single",
+    "text": "Câu lệnh torch.no_grad() có ý nghĩa gì trong lập trình PyTorch? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Dừng toàn bộ quá trình huấn luyện •",
+      "Xóa bỏ các trọng số của mô hình •",
+      "Không đưa phần code này vào đồ thị tính toán, thường dùng khi kiểm thử •",
+      "Tự động tính đạo hàm cấp hai"
+    ],
+    "correctAnswers": [
+      "Không đưa phần code này vào đồ thị tính toán, thường dùng khi kiểm thử •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Không đưa phần code này vào đồ thị tính toán, thường dùng khi kiểm thử •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 72,
+    "type": "single",
+    "text": "Trong PyTorch, phương thức nào dùng để gán gradient của các tham số về 0 trước khi thực hiện bước tối ưu mới? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "optimizer.step() •",
+      "loss.clear() •",
+      "optimizer.zero_grad() hoặc grad.zero_() •",
+      "torch.autograd.reset()"
+    ],
+    "correctAnswers": [
+      "optimizer.zero_grad() hoặc grad.zero_() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'optimizer.zero_grad() hoặc grad.zero_() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 73,
+    "type": "single",
+    "text": "Cách khai báo để một Tensor trong PyTorch được tính toán trên CPU? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tensor.to_cpu() •",
+      "device = torch.device('cpu') và truyền device vào khi tạo tensor •",
+      "torch.Tensor(..., hardware='cpu') •",
+      "Tensor mặc định luôn chạy trên GPU, không thể chỉnh về CPU"
+    ],
+    "correctAnswers": [
+      "device = torch.device('cpu') và truyền device vào khi tạo tensor •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'device = torch.device('cpu') và truyền device vào khi tạo tensor •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 11"
+  },
+  {
+    "id": 74,
+    "type": "single",
+    "text": "Nền tảng lập trình PyTorch được phát triển bởi tổ chức nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Google •",
+      "Facebook •",
+      "Microsoft •",
+      "UC Berkeley"
+    ],
+    "correctAnswers": [
+      "Facebook •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Facebook •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 75,
+    "type": "single",
+    "text": "Công cụ nào hỗ trợ trực quan hóa quá trình tính toán trong PyTorch nhưng hiện tại chưa hỗ trợ trực quan hóa cấu trúc đồ thị? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tensorboard •",
+      "Visdom •",
+      "TensorboardX •",
+      "Matplotlib Ghi chú: Câu này phụ thuộc vào nội dung tài liệu/slide đang học. Trong một số tài liệu cũ, TensorboardX được nhắc như công cụ hỗ trợ trực quan hóa cho PyTorch nhưng chưa đầy đủ phần graph visualization."
+    ],
+    "correctAnswers": [
+      "TensorboardX •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'TensorboardX •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 76,
+    "type": "single",
+    "text": "Khi định nghĩa một lớp mạng mới bằng cách kế thừa torch.nn.Module, hàm nào bắt buộc phải có để thực hiện lan truyền xuôi? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "def __init__(self): •",
+      "def forward(self, x): •",
+      "def backward(self, grad): •",
+      "def predict(self, data):"
+    ],
+    "correctAnswers": [
+      "def forward(self, x): •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'def forward(self, x): •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 77,
+    "type": "single",
+    "text": "Ưu điểm nổi bật của PyTorch so với NumPy là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "API sáng sủa và dễ lập trình hơn •",
+      "Không cần cài đặt thư viện hỗ trợ •",
+      "Tensors của PyTorch có thể chạy được trên GPU •",
+      "Tự động nén mạng nơ-ron"
+    ],
+    "correctAnswers": [
+      "Tensors của PyTorch có thể chạy được trên GPU •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Tensors của PyTorch có thể chạy được trên GPU •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 12"
+  },
+  {
+    "id": 78,
+    "type": "single",
+    "text": "Phương thức nào được sử dụng để thực hiện phép nhân ma trận giữa hai tensor trong PyTorch? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tensor1 * tensor2 •",
+      "tensor1.dot(tensor2) •",
+      "tensor1.mm(tensor2) •",
+      "tensor1.multiply(tensor2)"
+    ],
+    "correctAnswers": [
+      "tensor1.mm(tensor2) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'tensor1.mm(tensor2) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 79,
+    "type": "single",
+    "text": "Lệnh optimizer.step() trong PyTorch thực hiện nhiệm vụ gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tính toán đạo hàm cho các trọng số •",
+      "Di chuyển dữ liệu sang bước lặp tiếp theo •",
+      "Cập nhật các trọng số dựa trên gradient đã tính •",
+      "Khởi tạo các giá trị ngẫu nhiên cho tham số"
+    ],
+    "correctAnswers": [
+      "Cập nhật các trọng số dựa trên gradient đã tính •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Cập nhật các trọng số dựa trên gradient đã tính •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 80,
+    "type": "single",
+    "text": "PyTorch sử dụng loại đồ thị tính toán nào là mặc định? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đồ thị tính toán tĩnh, Static Graph •",
+      "Đồ thị tính toán động, Dynamic Graph •",
+      "Đồ thị tính toán tuần tự •",
+      "Đồ thị tính toán cố định"
+    ],
+    "correctAnswers": [
+      "Đồ thị tính toán động, Dynamic Graph •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Đồ thị tính toán động, Dynamic Graph •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 81,
+    "type": "single",
+    "text": "Khi cập nhật trọng số thủ công, không dùng optimizer, tại sao cần đặt lệnh trong khối with torch.no_grad():? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Để tăng tốc độ tính toán gradient •",
+      "Để thông báo cho PyTorch không đưa các phép toán này vào đồ thị tính toán •",
+      "Để tự động lưu lại các giá trị trọng số cũ •",
+      "Để ngăn chặn việc truy cập vào bộ nhớ GPU"
+    ],
+    "correctAnswers": [
+      "Để thông báo cho PyTorch không đưa các phép toán này vào đồ thị tính toán •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Để thông báo cho PyTorch không đưa các phép toán này vào đồ thị tính toán •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 13"
+  },
+  {
+    "id": 82,
+    "type": "single",
+    "text": "Để định nghĩa một kiến trúc mạng nơ-ron theo dạng chuỗi các lớp liên tiếp một cách nhanh chóng, người dùng thường sử dụng công cụ nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "torch.nn.Sequential •",
+      "torch.nn.ModuleList •",
+      "torch.nn.Functional •",
+      "torch.optim.Series Phiếu trả lời Câu Đáp án Câu Đáp án 3 C 13 B 4 B 14 B 5 C 15 C 6 C 16 B 7 A 17 C 8 B 18 C 9 C 19 C 10 B 20 B 11 C 21 B 12 C 22 A Ghi chú ôn tập nhanh 1. Autograd trong PyTorch • Tensor muốn tính gradient cần có: requires_grad=True • Sau khi tính loss, gọi: loss.backward() để PyTorch tự động lan truyền ngược và tính gradient. • Trước mỗi vòng lặp huấn luyện mới, cần reset gradient: optimizer.zero_grad() vì PyTorch tích lũy gradient qua các lần gọi backward(). 2. Vòng lặp huấn luyện cơ bản for x, y in dataloader: optimizer.zero_grad() y_pred = model(x) loss = criterion(y_pred, y) loss.backward() optimizer.step() Trong đó: • optimizer.zero_grad() reset gradient. • loss.backward() tính gradient. • optimizer.step() cập nhật trọng số. 3. Dynamic Graph PyTorch sử dụng đồ thị tính toán động, nghĩa là đồ thị được xây dựng trong lúc chạy forward pass và có thể thay đổi theo từng iteration. 4. torch.no_grad() Dùng khi không cần tính gradient, ví dụ trong validation/testing hoặc khi cập nhật trọng số thủ công: with torch.no_grad(): w -= learning_rate * w.grad 5. Pretrained models Các pretrained model như ResNet, AlexNet thường lấy từ: import torchvision.models as models model = models.resnet101(pretrained=True) Với các phiên bản torchvision mới, cú pháp khuyến nghị có thể dùng tham số weights, nhưng trong ngữ cảnh câu hỏi trắc nghiệm này, đáp án đúng là pretrained=True. ĐỀ ÔN TẬP TENSORFLOW VÀ KERAS Chủ đề: TensorFlow, Keras, Eager Execution, Static/Dynamic Graph, GradientTape, TensorBoard Tổng số câu: 20 câu Điểm mỗi câu: 1 điểm Hướng dẫn làm bài • Với câu trắc nghiệm, chọn một đáp án đúng nhất. • Các đáp án đúng đã được đánh dấu bằng [x] để dùng cho mục đích ôn tập trên Obsidian. Phần câu hỏi"
+    ],
+    "correctAnswers": [
+      "torch.nn.Sequential •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'torch.nn.Sequential •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 14"
+  },
+  {
+    "id": 83,
+    "type": "single",
+    "text": "Để sử dụng các mô hình đã được huấn luyện sẵn, pretrained models, trong môi trường Keras, bạn có thể truy cập qua địa chỉ nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tf.models.pretrained •",
+      "tf.keras.applications •",
+      "tf.slim.models •",
+      "tf.pretrained.vision"
+    ],
+    "correctAnswers": [
+      "tf.keras.applications •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'tf.keras.applications •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 84,
+    "type": "single",
+    "text": "So sánh giữa đồ thị tính toán tĩnh và động, khẳng định nào sau đây đúng theo tài liệu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đồ thị động luôn chạy nhanh hơn đồ thị tĩnh •",
+      "Đồ thị tĩnh thường nhanh hơn và cho phép framework tối ưu hóa trước khi chạy •",
+      "Đồ thị tĩnh yêu cầu phải có mã nguồn xây dựng đồ thị ở mỗi bước lặp •",
+      "TensorFlow 2.0 không còn hỗ trợ đồ thị tĩnh dưới bất kỳ hình thức nào"
+    ],
+    "correctAnswers": [
+      "Đồ thị tĩnh thường nhanh hơn và cho phép framework tối ưu hóa trước khi chạy •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Đồ thị tĩnh thường nhanh hơn và cho phép framework tối ưu hóa trước khi chạy •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 85,
+    "type": "single",
+    "text": "Nền tảng lập trình TensorFlow được phát triển bởi tổ chức nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Facebook •",
+      "Microsoft •",
+      "Google •",
+      "UC Berkeley"
+    ],
+    "correctAnswers": [
+      "Google •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Google •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 16"
+  },
+  {
+    "id": 86,
+    "type": "single",
+    "text": "Chế độ Eager Execution trong TensorFlow 2.0 có đặc điểm gì nổi bật? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Phải xây dựng toàn bộ đồ thị trước khi chạy •",
+      "Thực thi các phép toán ngay tức thời và trả về giá trị cụ thể •",
+      "Chỉ hoạt động trên CPU, không hỗ trợ GPU •",
+      "Yêu cầu sử dụng tf.Session() để kích hoạt"
+    ],
+    "correctAnswers": [
+      "Thực thi các phép toán ngay tức thời và trả về giá trị cụ thể •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Thực thi các phép toán ngay tức thời và trả về giá trị cụ thể •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 87,
+    "type": "single",
+    "text": "Trong Keras, phương thức nào được dùng để thiết lập hàm mục tiêu, loss, và giải thuật tối ưu, optimizer, trước khi huấn luyện? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "model.fit() •",
+      "model.compile() •",
+      "model.summary() •",
+      "model.add()"
+    ],
+    "correctAnswers": [
+      "model.compile() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'model.compile() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 88,
+    "type": "single",
+    "text": "Để định nghĩa một mô hình Keras dưới dạng một chuỗi các lớp liên tiếp, bạn sử dụng lớp nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tf.keras.Model() •",
+      "tf.keras.Sequential() •",
+      "tf.keras.layers.Stack() •",
+      "tf.keras.Chain()"
+    ],
+    "correctAnswers": [
+      "tf.keras.Sequential() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'tf.keras.Sequential() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 89,
+    "type": "single",
+    "text": "Wrapper cấp cao, High-level wrapper, chính thức được tích hợp sâu vào TensorFlow để đơn giản hóa việc lập trình mạng nơ-ron là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "PyTorch •",
+      "Caffe2 •",
+      "Keras •",
+      "TF-Slim"
+    ],
+    "correctAnswers": [
+      "Keras •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Keras •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 17"
+  },
+  {
+    "id": 90,
+    "type": "single",
+    "text": "Trong TensorFlow 2.0, công cụ nào được sử dụng để xây dựng đồ thị tính toán động và phục vụ việc tính toán gradient? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tf.Session() •",
+      "tf.GradientTape() •",
+      "tf.optimizers •",
+      "tf.function"
+    ],
+    "correctAnswers": [
+      "tf.GradientTape() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'tf.GradientTape() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 91,
+    "type": "single",
+    "text": "Trong các phiên bản TensorFlow trước 2.0, Pre-2.0, cơ chế mặc định để thực hiện tính toán là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đồ thị tính toán động, Dynamic Graph •",
+      "Đồ thị tính toán tĩnh, Static Graph •",
+      "Thực thi nóng, Eager Execution •",
+      "Lập trình mệnh lệnh trực tiếp"
+    ],
+    "correctAnswers": [
+      "Đồ thị tính toán tĩnh, Static Graph •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Đồ thị tính toán tĩnh, Static Graph •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 92,
+    "type": "single",
+    "text": "Để biến một mảng NumPy thành một TensorFlow Tensor trong phiên bản 2.0, bạn sử dụng hàm nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tf.convert_to_tensor() •",
+      "tf.Variable() •",
+      "tf.placeholder() •",
+      "tf.cast_to_tensor()"
+    ],
+    "correctAnswers": [
+      "tf.convert_to_tensor() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'tf.convert_to_tensor() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 93,
+    "type": "single",
+    "text": "Để thực hiện vòng lặp huấn luyện mô hình trên dữ liệu thực tế trong Keras, lệnh nào được sử dụng? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "model.run() •",
+      "model.train() •",
+      "model.fit() •",
+      "model.execute()"
+    ],
+    "correctAnswers": [
+      "model.fit() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'model.fit() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 18"
+  },
+  {
+    "id": 94,
+    "type": "single",
+    "text": "Cách đơn giản nhất để lấy giá trị dự báo, output, từ một mô hình Keras đã định nghĩa là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "output = sess.run(model) •",
+      "y_pred = model(x) •",
+      "y_pred = model.get_output(x) •",
+      "output = tf.execute(model, x)"
+    ],
+    "correctAnswers": [
+      "y_pred = model(x) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'y_pred = model(x) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 95,
+    "type": "single",
+    "text": "Để định nghĩa các trọng số, weights, của mạng nơ-ron có khả năng cập nhật được, người dùng nên khai báo dưới dạng nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tf.constant() •",
+      "tf.placeholder() •",
+      "tf.Variable() •",
+      "tf.convert_to_tensor()"
+    ],
+    "correctAnswers": [
+      "tf.Variable() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'tf.Variable() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 96,
+    "type": "single",
+    "text": "Công cụ nào được thiết kế để tối ưu hóa và nén mạng giúp suy diễn nhanh hơn trên các thiết bị di động? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "TensorFlow Server •",
+      "TensorFlow Lite, LiteRT •",
+      "TensorFlow Mobile •",
+      "TensorRT"
+    ],
+    "correctAnswers": [
+      "TensorFlow Lite, LiteRT •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'TensorFlow Lite, LiteRT •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 97,
+    "type": "single",
+    "text": "Ưu điểm chính của chế độ Eager Execution đối với người lập trình là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tăng tốc độ huấn luyện mô hình lên gấp nhiều lần •",
+      "Giúp dễ dàng bắt đầu với các mô hình và dễ gỡ lỗi, debug, hơn •",
+      "Tự động nén mô hình để chạy trên di động •",
+      "Loại bỏ hoàn toàn nhu cầu về GPU"
+    ],
+    "correctAnswers": [
+      "Giúp dễ dàng bắt đầu với các mô hình và dễ gỡ lỗi, debug, hơn •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Giúp dễ dàng bắt đầu với các mô hình và dễ gỡ lỗi, debug, hơn •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 19"
+  },
+  {
+    "id": 98,
+    "type": "single",
+    "text": "Phương thức tape.gradient(loss, [w1, w2]) thực hiện nhiệm vụ gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cập nhật trực tiếp giá trị của các trọng số w1, w2 •",
+      "Sử dụng đồ thị đã lưu vết trước đó để tính toán đạo hàm của hàm mục tiêu •",
+      "Xóa bỏ các biến trung gian trong bộ nhớ GPU •",
+      "Khởi tạo ngẫu nhiên giá trị cho các tham số"
+    ],
+    "correctAnswers": [
+      "Sử dụng đồ thị đã lưu vết trước đó để tính toán đạo hàm của hàm mục tiêu •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Sử dụng đồ thị đã lưu vết trước đó để tính toán đạo hàm của hàm mục tiêu •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 99,
+    "type": "single",
+    "text": "Trong ví dụ huấn luyện mạng nơ-ron thủ công, không dùng optimizer, lệnh nào dùng để cập nhật giá trị mới cho trọng số? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "w1 = w1 - learning_rate * grad •",
+      "w1.assign(w1 - learning_rate * grad) •",
+      "w1.update(grad) •",
+      "w1 = tf.Variable(new_value)"
+    ],
+    "correctAnswers": [
+      "w1.assign(w1 - learning_rate * grad) •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'w1.assign(w1 - learning_rate * grad) •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 100,
+    "type": "single",
+    "text": "Công cụ nào của TensorFlow hỗ trợ trực quan hóa các đại lượng như hàm mục tiêu, loss, hay các tham số trong quá trình huấn luyện? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Visdom •",
+      "Matplotlib •",
+      "TensorBoard •",
+      "TF-Viz"
+    ],
+    "correctAnswers": [
+      "TensorBoard •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'TensorBoard •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 101,
+    "type": "single",
+    "text": "Trong TensorFlow 1.x, Pre-2.0, thành phần nào bắt buộc phải có để thực hiện chạy các phép toán trên đồ thị? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "tf.Session() •",
+      "tf.GradientTape() •",
+      "tf.keras.Model() •",
+      "@tf.function"
+    ],
+    "correctAnswers": [
+      "tf.Session() •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'tf.Session() •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 20"
+  },
+  {
+    "id": 102,
+    "type": "single",
+    "text": "Decorator @tf.function trong TensorFlow 2.0 có tác dụng gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Biên dịch hàm Python thành một đồ thị tính toán tĩnh để tăng hiệu suất •",
+      "Tự động tính gradient cho mọi biến trong hàm •",
+      "Chuyển đổi mô hình sang định dạng TensorFlow Lite •",
+      "Hiển thị cấu trúc mạng lên TensorBoard Phiếu trả lời Câu Đáp án Câu Đáp án 3 B 13 C 4 B 14 B 5 C 15 C 6 B 16 B 7 B 17 B 8 B 18 B 9 C 19 B 10 B 20 C 11 B 21 A 12 A 22 A Ghi chú ôn tập nhanh 1. TensorFlow 1.x và TensorFlow 2.x TensorFlow 1.x mặc định dùng đồ thị tính toán tĩnh, Static Graph. Người dùng phải xây dựng graph trước, sau đó chạy bằng tf.Session(). TensorFlow 2.x mặc định dùng Eager Execution, tức là phép toán được thực thi ngay lập tức, dễ debug hơn và gần với cách viết Python thông thường hơn. 2. Keras trong TensorFlow Keras là high-level API được tích hợp trong TensorFlow qua: tf.keras Ví dụ tạo mô hình tuần tự: model = tf.keras.Sequential([ tf.keras.layers.Dense(64, activation=\"relu\"), tf.keras.layers.Dense(10, activation=\"softmax\") ]) Trước khi huấn luyện, cần compile: model.compile( optimizer=\"adam\", loss=\"sparse_categorical_crossentropy\", metrics=[\"accuracy\"] ) Huấn luyện mô hình: model.fit(x_train, y_train, epochs=10) 3. GradientTape Trong TensorFlow 2.x, tf.GradientTape() dùng để ghi lại các phép toán trong forward pass, sau đó tính gradient. with tf.GradientTape() as tape: y_pred = model(x) loss = loss_fn(y, y_pred) grads = tape.gradient(loss, model.trainable_variables) 4. Biến có thể học được Trọng số cần cập nhật nên được khai báo bằng: tf.Variable() Khi cập nhật thủ công: w.assign(w - learning_rate * grad) 5. @tf.function @tf.function giúp chuyển hàm Python sang dạng graph để tăng hiệu suất. @tf.function def train_step(x, y): ... 6. Pretrained models trong Keras Các mô hình pretrained như ResNet, VGG, Inception có thể truy cập qua: tf.keras.applications Ví dụ: model = tf.keras.applications.ResNet50(weights=\"imagenet\") 7. TensorBoard TensorBoard dùng để trực quan hóa loss, accuracy, histogram tham số, graph và nhiều thông tin khác trong quá trình huấn luyện. ĐỀ ÔN TẬP YOLOv1 VÀ YOLOv2 Chủ đề: Object Detection — YOLOv1, YOLOv2, YOLO9000 Tổng số câu: 19 câu Điểm mỗi câu: 1 điểm Hướng dẫn làm bài • Với câu trắc nghiệm, chọn một đáp án đúng nhất. • Các đáp án đúng đã được đánh dấu bằng [x] để dùng cho mục đích ôn tập trên Obsidian. Phần câu hỏi"
+    ],
+    "correctAnswers": [
+      "Biên dịch hàm Python thành một đồ thị tính toán tĩnh để tăng hiệu suất •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Biên dịch hàm Python thành một đồ thị tính toán tĩnh để tăng hiệu suất •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 21"
+  },
+  {
+    "id": 103,
+    "type": "single",
+    "text": "YOLOv2 xác định kích thước mặc định của các Anchor Box bằng phương pháp nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Chọn ngẫu nhiên các giá trị từ 0 đến 1 •",
+      "Sử dụng các kích thước cố định từ Faster R-CNN •",
+      "Áp dụng thuật toán phân cụm K-means trên tập hợp các hộp bao của dữ liệu huấn luyện •",
+      "Dựa trên kích thước trung bình của tất cả các ảnh đầu vào"
+    ],
+    "correctAnswers": [
+      "Áp dụng thuật toán phân cụm K-means trên tập hợp các hộp bao của dữ liệu huấn luyện •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Áp dụng thuật toán phân cụm K-means trên tập hợp các hộp bao của dữ liệu huấn luyện •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 104,
+    "type": "single",
+    "text": "Kỹ thuật nào được YOLOv1 sử dụng ở thời điểm suy diễn, inference, để loại bỏ các hộp bao trùng lặp và có độ tin cậy thấp? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Hard Negative Mining •",
+      "Selective Search •",
+      "Non-maximal suppression, NMS •",
+      "Bounding Box Regression"
+    ],
+    "correctAnswers": [
+      "Non-maximal suppression, NMS •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Non-maximal suppression, NMS •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 105,
+    "type": "single",
+    "text": "Việc thêm lớp Batch Normalization vào tất cả các lớp tích chập trong YOLOv2 giúp cải thiện độ chính xác, mAP, thêm bao nhiêu phần trăm? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "1% •",
+      "2% •",
+      "5% •",
+      "10%"
+    ],
+    "correctAnswers": [
+      "2% •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '2% •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 24"
+  },
+  {
+    "id": 106,
+    "type": "single",
+    "text": "Cải tiến nào giúp YOLOv2 dự đoán được nhiều đối tượng hơn trên mỗi ô lưới, grid cell, so với YOLOv1? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tăng kích thước ô lưới từ $7 \\times 7$ lên $13 \\times 13$ •",
+      "Sử dụng cơ chế Anchor Box thay vì dự đoán trực tiếp tọa độ từ lớp Fully Connected •",
+      "Sử dụng mạng backbone Darknet-53 •",
+      "Thêm nhiều lớp Fully Connected hơn"
+    ],
+    "correctAnswers": [
+      "Sử dụng cơ chế Anchor Box thay vì dự đoán trực tiếp tọa độ từ lớp Fully Connected •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Sử dụng cơ chế Anchor Box thay vì dự đoán trực tiếp tọa độ từ lớp Fully Connected •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 107,
+    "type": "single",
+    "text": "Mục tiêu chính mà YOLOv2 tập trung cải thiện so với phiên bản YOLOv1 là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tăng tốc độ suy diễn lên gấp 10 lần •",
+      "Giảm số lượng tham số của mạng backbone •",
+      "Cải thiện chỉ số recall và khả năng định vị, localization, vật thể •",
+      "Loại bỏ hoàn toàn các lớp Convolutional"
+    ],
+    "correctAnswers": [
+      "Cải thiện chỉ số recall và khả năng định vị, localization, vật thể •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Cải thiện chỉ số recall và khả năng định vị, localization, vật thể •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 108,
+    "type": "single",
+    "text": "Mỗi ô lưới, grid cell, trong YOLOv1 chịu trách nhiệm dự đoán bao nhiêu bounding box, giá trị $B$, theo thiết lập chuẩn trên tập PASCAL VOC? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "1 •",
+      "2 •",
+      "5 •",
+      "9"
+    ],
+    "correctAnswers": [
+      "2 •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '2 •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 109,
+    "type": "single",
+    "text": "Với tập dữ liệu PASCAL VOC gồm 20 lớp, kích thước của tensor đầu ra cuối cùng của mạng YOLOv1 là bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "$7 \\times 7 \\times 1024$ •",
+      "$448 \\times 448 \\times 3$ •",
+      "$7 \\times 7 \\times 30$ •",
+      "$13 \\times 13 \\times 125$"
+    ],
+    "correctAnswers": [
+      "$7 \\times 7 \\times 30$ •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '$7 \\times 7 \\times 30$ •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 25"
+  },
+  {
+    "id": 110,
+    "type": "single",
+    "text": "Mô hình YOLOv1 được phân loại vào nhóm kiến trúc mạng nào trong bài toán phát hiện đối tượng? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Mạng đề xuất vùng, two-stage object detector •",
+      "Mạng không đề xuất vùng, one-stage object detector •",
+      "Mạng quét cửa sổ, sliding windows •",
+      "Mạng phân loại ảnh thuần túy"
+    ],
+    "correctAnswers": [
+      "Mạng không đề xuất vùng, one-stage object detector •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Mạng không đề xuất vùng, one-stage object detector •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 111,
+    "type": "single",
+    "text": "Phiên bản YOLO9000 có khả năng nhận diện hơn 9000 loại đối tượng nhờ vào phương pháp huấn luyện nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Huấn luyện trên siêu máy tính DGX-2 •",
+      "Huấn luyện đồng thời trên cả tập dữ liệu detection, COCO, và tập dữ liệu classification, ImageNet, sử dụng WordTree •",
+      "Sử dụng mạng backbone mạnh mẽ hơn là Darknet-53 •",
+      "Tăng số lượng Anchor Box lên 9000"
+    ],
+    "correctAnswers": [
+      "Huấn luyện đồng thời trên cả tập dữ liệu detection, COCO, và tập dữ liệu classification, ImageNet, sử dụng WordTree •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Huấn luyện đồng thời trên cả tập dữ liệu detection, COCO, và tập dữ liệu classification, ImageNet, sử dụng WordTree •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 112,
+    "type": "single",
+    "text": "Tổng số lượng đầu ra, output, của mỗi ô lưới trong YOLOv2 với 5 anchor box và 20 lớp đối tượng là bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "30 •",
+      "100 •",
+      "125 •",
+      "1024"
+    ],
+    "correctAnswers": [
+      "125 •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '125 •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 113,
+    "type": "single",
+    "text": "Kiến trúc mạng backbone của YOLOv1 được lấy cảm hứng từ mô hình nào sau đây? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "VGG-16 •",
+      "ResNet-50 •",
+      "GoogLeNet •",
+      "AlexNet"
+    ],
+    "correctAnswers": [
+      "GoogLeNet •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'GoogLeNet •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 26"
+  },
+  {
+    "id": 114,
+    "type": "single",
+    "text": "Mỗi bounding box được dự đoán bởi YOLOv1 bao gồm 5 thông số cụ thể nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "$x, y, w, h$ và class probability •",
+      "$x, y, w, h$ và confidence score •",
+      "Tọa độ 4 góc của hộp bao •",
+      "Tâm $x, y$ và xác suất của 20 lớp đối tượng"
+    ],
+    "correctAnswers": [
+      "$x, y, w, h$ và confidence score •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '$x, y, w, h$ và confidence score •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 115,
+    "type": "single",
+    "text": "YOLOv2 đã giải quyết vấn đề thay đổi độ phân giải bằng cách nào trước khi thực hiện huấn luyện phát hiện đối tượng? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Huấn luyện trực tiếp trên ảnh $448 \\times 448$ từ đầu •",
+      "Fine-tune mạng phân loại, classifier, ở độ phân giải $448 \\times 448$ trong 10 epoch trên ImageNet •",
+      "Loại bỏ tất cả các lớp Pooling •",
+      "Sử dụng cơ chế Attention"
+    ],
+    "correctAnswers": [
+      "Fine-tune mạng phân loại, classifier, ở độ phân giải $448 \\times 448$ trong 10 epoch trên ImageNet •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Fine-tune mạng phân loại, classifier, ở độ phân giải $448 \\times 448$ trong 10 epoch trên ImageNet •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 116,
+    "type": "single",
+    "text": "Trong bài báo gốc, YOLOv1 chia bức ảnh đầu vào thành một ô lưới, grid, có kích thước bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "$3 \\times 3$ •",
+      "$5 \\times 5$ •",
+      "$7 \\times 7$ •",
+      "Option 4"
+    ],
+    "correctAnswers": [
+      "$7 \\times 7$ •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '$7 \\times 7$ •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 117,
+    "type": "single",
+    "text": "Kỹ thuật Multi-Scale Training trong YOLOv2 thực hiện việc gì để mô hình thích ứng với nhiều độ phân giải khác nhau? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Thay đổi kích thước ảnh đầu vào sau mỗi 10 batch trong quá trình huấn luyện •",
+      "Huấn luyện nhiều mô hình riêng biệt cho mỗi kích thước ảnh •",
+      "Chỉ sử dụng ảnh có độ phân giải cao nhất để huấn luyện •",
+      "Sử dụng lớp Fully Connected để resize ảnh tự động"
+    ],
+    "correctAnswers": [
+      "Thay đổi kích thước ảnh đầu vào sau mỗi 10 batch trong quá trình huấn luyện •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Thay đổi kích thước ảnh đầu vào sau mỗi 10 batch trong quá trình huấn luyện •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 27"
+  },
+  {
+    "id": 118,
+    "type": "single",
+    "text": "Cơ chế Passthrough layer trong YOLOv2 có tác dụng gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Loại bỏ các đặc trưng không quan trọng •",
+      "Nối các đặc trưng có độ phân giải cao, $26 \\times 26$, với đặc trưng độ phân giải thấp, $13 \\times 13$, để hỗ trợ phát hiện vật thể nhỏ •",
+      "Tăng gấp đôi số lượng lớp tích chập của mạng •",
+      "Chuyển đổi mô hình từ đồ thị động sang đồ thị tĩnh"
+    ],
+    "correctAnswers": [
+      "Nối các đặc trưng có độ phân giải cao, $26 \\times 26$, với đặc trưng độ phân giải thấp, $13 \\times 13$, để hỗ trợ phát hiện vật thể nhỏ •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Nối các đặc trưng có độ phân giải cao, $26 \\times 26$, với đặc trưng độ phân giải thấp, $13 \\times 13$, để hỗ trợ phát hiện vật thể nhỏ •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 119,
+    "type": "single",
+    "text": "YOLOv1 thực hiện các lớp tích chập, Convolutional Layers, tiền huấn luyện, pretrain, trên tập ImageNet ở độ phân giải nào trước khi tăng gấp đôi để làm detection? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "$224 \\times 224$ •",
+      "$416 \\times 416$ •",
+      "$448 \\times 448$ •",
+      "$608 \\times 608$"
+    ],
+    "correctAnswers": [
+      "$224 \\times 224$ •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '$224 \\times 224$ •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 120,
+    "type": "single",
+    "text": "Tại sao YOLOv2 lại điều chỉnh kích thước ảnh đầu vào thành $416 \\times 416$ thay vì $448 \\times 448$? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Để giảm khối lượng tính toán cho GPU •",
+      "Để bản đồ đặc trưng, feature map, cuối cùng có kích thước lẻ, $13 \\times 13$, giúp có một ô lưới nằm chính giữa ảnh •",
+      "Để phù hợp với kiến trúc của ResNet •",
+      "Để tăng độ mịn của đặc trưng khi trích xuất"
+    ],
+    "correctAnswers": [
+      "Để bản đồ đặc trưng, feature map, cuối cùng có kích thước lẻ, $13 \\times 13$, giúp có một ô lưới nằm chính giữa ảnh •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Để bản đồ đặc trưng, feature map, cuối cùng có kích thước lẻ, $13 \\times 13$, giúp có một ô lưới nằm chính giữa ảnh •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 121,
+    "type": "single",
+    "text": "Nhược điểm lớn nhất của YOLOv1 dẫn đến sai số cao so với Faster R-CNN là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Sai số do nhầm lẫn với nền, background error •",
+      "Sai số do định vị vật thể không chính xác, localization error •",
+      "Sai số do phân loại sai lớp đối tượng •",
+      "Tốc độ xử lý quá chậm không đạt mức thời gian thực Phiếu trả lời Câu Đáp án Câu Đáp án 3 C 13 C 4 C 14 B 5 B 15 B 6 B 16 C 7 C 17 A 8 B 18 B 9 C 19 A 10 B 20 B 11 B 21 B 12 C Ghi chú ôn tập nhanh • YOLOv1 là one-stage detector, chia ảnh thành lưới $7 \\times 7$. • Với PASCAL VOC, YOLOv1 có $S = 7$, $B = 2$, $C = 20$ nên output là: $$ 7 \\times 7 \\times (2 \\times 5 + 20) = 7 \\times 7 \\times 30 $$ • YOLOv2 dùng anchor boxes, K-means clustering để chọn kích thước anchor, Batch Normalization, high-resolution classifier, passthrough layer và multi-scale training. • YOLO9000 kết hợp dữ liệu detection và classification thông qua WordTree để mở rộng số lớp nhận diện. Đề trắc nghiệm Bài 6 — Phần cứng và phần mềm cho học sâu Ghi chú: Các đáp án đúng đã được đánh dấu bằng [x]."
+    ],
+    "correctAnswers": [
+      "Sai số do định vị vật thể không chính xác, localization error •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Sai số do định vị vật thể không chính xác, localization error •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 28"
+  },
+  {
+    "id": 122,
+    "type": "single",
+    "text": "Hệ thống siêu máy tính NVIDIA DGX-2 được trang bị tổng cộng bao nhiêu GPU Tesla V100? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "8 GPU •",
+      "12 GPU •",
+      "16 GPU •",
+      "32 GPU"
+    ],
+    "correctAnswers": [
+      "16 GPU •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '16 GPU •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 123,
+    "type": "single",
+    "text": "Thiết bị biên Jetson Xavier NX sở hữu bao nhiêu nhân Tensor, Tensor cores? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "128 nhân •",
+      "256 nhân •",
+      "48 nhân •",
+      "64 nhân"
+    ],
+    "correctAnswers": [
+      "48 nhân •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '48 nhân •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 124,
+    "type": "single",
+    "text": "Trong kiến trúc bộ xử lý ARM ML Processor, thành phần nào chịu trách nhiệm xử lý các phép tính logic không cố định của các lớp mạng? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Fixed-function MAC Engine •",
+      "Programmable Layer Engine •",
+      "Network Control Unit •",
+      "DMA, Direct Memory Access"
+    ],
+    "correctAnswers": [
+      "Programmable Layer Engine •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Programmable Layer Engine •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 125,
+    "type": "single",
+    "text": "Dựa trên sự khác biệt về kiến trúc giữa CPU và GPU, tại sao tỉ lệ tăng tốc, speedup, của GPU Pascal Titan X so với CPU Intel E5 lại tăng từ 66x trên mạng VGG-16 lên đến 76x trên mạng ResNet-200?   •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Vì ResNet-200 có ít tham số cần tính toán hơn VGG-16 •",
+      "Vì CPU gặp lỗi khi xử lý các mạng nơ-ron có độ sâu vượt quá 100 lớp •",
+      "Vì các mạng sâu hơn như ResNet-200 chứa khối lượng cực lớn các phép toán song song, nhân ma trận, giúp khai thác triệt để lợi thế “nhiều nhân” của GPU so với kiến trúc “ít nhân tuần tự” của CPU •",
+      "Vì Pascal Titan X có tốc độ xung nhịp, Clock Speed, cao hơn CPU Intel E5"
+    ],
+    "correctAnswers": [
+      "Vì các mạng sâu hơn như ResNet-200 chứa khối lượng cực lớn các phép toán song song, nhân ma trận, giúp khai thác triệt để lợi thế “nhiều nhân” của GPU so với kiến trúc “ít nhân tuần tự” của CPU •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vì các mạng sâu hơn như ResNet-200 chứa khối lượng cực lớn các phép toán song song, nhân ma trận, giúp khai thác triệt để lợi thế “nhiều nhân” của GPU so với kiến trúc “ít nhân tuần tự” của CPU •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 30"
+  },
+  {
+    "id": 126,
+    "type": "single",
+    "text": "Theo sơ đồ phân cấp các giải pháp xử lý tối ưu hóa ML của ARM, dòng chip Ethos-U55 kết hợp với Cortex-M phù hợp nhất cho tác vụ nào sau đây? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Nhận diện vật thể, Object detection •",
+      "Nhận diện cử chỉ, Gesture detection •",
+      "Nhận diện khuôn mặt thời gian thực, Real-time recognition •",
+      "Phân loại vật thể phức tạp, Object classification"
+    ],
+    "correctAnswers": [
+      "Nhận diện cử chỉ, Gesture detection •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Nhận diện cử chỉ, Gesture detection •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 127,
+    "type": "single",
+    "text": "Thành phần Fixed-function MAC Engine trong kiến trúc ARM ML Processor đóng vai trò tương tự như bộ phận nào trong các phần cứng chuyên dụng khác? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Hệ thống System RAM trên CPU Intel Core i7 •",
+      "Bộ nhớ GDDR6 trên NVIDIA RTX 2080 Ti •",
+      "Tensor Cores trên NVIDIA TITAN V hoặc các đơn vị xử lý chuyên dụng trong TPU, vì đều tập trung tối ưu cực mạnh cho phép toán nhân-tích lũy, Matrix Multiplication •",
+      "Cổng kết nối EDR Infiniband trên hệ thống DGX-2"
+    ],
+    "correctAnswers": [
+      "Tensor Cores trên NVIDIA TITAN V hoặc các đơn vị xử lý chuyên dụng trong TPU, vì đều tập trung tối ưu cực mạnh cho phép toán nhân-tích lũy, Matrix Multiplication •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Tensor Cores trên NVIDIA TITAN V hoặc các đơn vị xử lý chuyên dụng trong TPU, vì đều tập trung tối ưu cực mạnh cho phép toán nhân-tích lũy, Matrix Multiplication •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 128,
+    "type": "single",
+    "text": "Tại sao việc sử dụng thư viện tối ưu như cuDNN 5.1 lại giúp Pascal Titan X chạy nhanh hơn đáng kể so với khi không dùng, no cuDNN, trên cùng một mô hình? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Vì cuDNN tự động tăng số lượng nhân CUDA có sẵn trên phần cứng •",
+      "Vì cuDNN là lớp phần mềm tối ưu hóa cách thức thực hiện các phép toán học sâu trên kiến trúc song song của GPU, giúp giảm thời gian thực hiện cả bước Forward và Backward •",
+      "Vì cuDNN cho phép GPU truy cập trực tiếp vào System RAM của CPU thay vì dùng bộ nhớ video •",
+      "Vì cuDNN chuyển đổi mô hình từ đồ thị động sang đồ thị tĩnh vĩnh viễn"
+    ],
+    "correctAnswers": [
+      "Vì cuDNN là lớp phần mềm tối ưu hóa cách thức thực hiện các phép toán học sâu trên kiến trúc song song của GPU, giúp giảm thời gian thực hiện cả bước Forward và Backward •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vì cuDNN là lớp phần mềm tối ưu hóa cách thức thực hiện các phép toán học sâu trên kiến trúc song song của GPU, giúp giảm thời gian thực hiện cả bước Forward và Backward •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 31"
+  },
+  {
+    "id": 129,
+    "type": "single",
+    "text": "Điểm khác biệt cốt lõi về mục tiêu giữa việc sử dụng máy chủ hiệu năng cao như DGX-2 và các công cụ như TensorFlow Lite là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "DGX-2 dùng để nén mạng, còn TensorFlow Lite dùng để huấn luyện mạng •",
+      "DGX-2 tập trung vào tài nguyên tính toán khổng lồ để đào tạo, training, mô hình DNN phức tạp, trong khi TensorFlow Lite tập trung vào việc nén và tối ưu hóa để suy diễn, inference, mô hình trên phần cứng hạn chế •",
+      "DGX-2 chỉ dùng cho dữ liệu văn bản, còn TensorFlow Lite chỉ dùng cho dữ liệu hình ảnh •",
+      "Không có sự khác biệt vì cả hai đều nhằm mục đích tăng độ chính xác của mô hình"
+    ],
+    "correctAnswers": [
+      "DGX-2 tập trung vào tài nguyên tính toán khổng lồ để đào tạo, training, mô hình DNN phức tạp, trong khi TensorFlow Lite tập trung vào việc nén và tối ưu hóa để suy diễn, inference, mô hình trên phần cứng hạn chế •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'DGX-2 tập trung vào tài nguyên tính toán khổng lồ để đào tạo, training, mô hình DNN phức tạp, trong khi TensorFlow Lite tập trung vào việc nén và tối ưu hóa để suy diễn, inference, mô hình trên phần cứng hạn chế •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 130,
+    "type": "single",
+    "text": "Nếu bạn phải thiết kế một hệ thống nhận diện vật thể thời gian thực chạy trên drone với ngân sách phần cứng cực thấp và yêu cầu tiết kiệm điện, lựa chọn nào là hợp lý nhất, chỉ xét các thiết bị đã học trên lớp? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Jetson Nano, kiến trúc Maxwell, 128 nhân CUDA, giá 129 USD •",
+      "NVIDIA DGX-2, 16 GPU Tesla V100, 1.5 TB System Memory •",
+      "NVIDIA TITAN V, giá 2999 USD •",
+      "Jetson AGX Xavier Series, giá 599 USD"
+    ],
+    "correctAnswers": [
+      "Jetson Nano, kiến trúc Maxwell, 128 nhân CUDA, giá 129 USD •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Jetson Nano, kiến trúc Maxwell, 128 nhân CUDA, giá 129 USD •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 131,
+    "type": "single",
+    "text": "Thách thức chính khi triển khai các mô hình mạng nơ-ron sâu, DNN, có kích thước càng lớn là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Độ chính xác của mô hình sẽ bị giảm •",
+      "Mô hình không thể đưa ra dự đoán về dữ liệu mới •",
+      "Cần càng nhiều tài nguyên tính toán và không gian lưu trữ •",
+      "Không thể sử dụng được các giải thuật tối ưu"
+    ],
+    "correctAnswers": [
+      "Cần càng nhiều tài nguyên tính toán và không gian lưu trữ •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Cần càng nhiều tài nguyên tính toán và không gian lưu trữ •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 132,
+    "type": "single",
+    "text": "Tại sao bộ nhớ HBM2 trên TITAN V lại được ưu tiên sử dụng trong các phần cứng chuyên dụng cho học sâu hơn là GDDR6 trên RTX 2080 Ti? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Vì HBM2 có dung lượng lớn hơn gấp nhiều lần so với GDDR6 •",
+      "Vì HBM2 cho phép lưu trữ cả dữ liệu hình ảnh và video cùng lúc •",
+      "Vì các tác vụ học sâu yêu cầu băng thông bộ nhớ cực cao để truyền tải lượng lớn tensor giữa bộ nhớ và các nhân tính toán, điều mà kiến trúc HBM2 đáp ứng tốt hơn •",
+      "Vì HBM2 có giá thành rẻ hơn đáng kể so với GDDR6"
+    ],
+    "correctAnswers": [
+      "Vì các tác vụ học sâu yêu cầu băng thông bộ nhớ cực cao để truyền tải lượng lớn tensor giữa bộ nhớ và các nhân tính toán, điều mà kiến trúc HBM2 đáp ứng tốt hơn •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vì các tác vụ học sâu yêu cầu băng thông bộ nhớ cực cao để truyền tải lượng lớn tensor giữa bộ nhớ và các nhân tính toán, điều mà kiến trúc HBM2 đáp ứng tốt hơn •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 32"
+  },
+  {
+    "id": 133,
+    "type": "single",
+    "text": "Thiết bị biên, edge device, nào của NVIDIA có giá khởi điểm thấp nhất, 129 USD, và sử dụng kiến trúc Maxwell? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Jetson TX2 Series •",
+      "Jetson Nano •",
+      "Jetson Xavier •",
+      "Jetson AGX Xavier Series"
+    ],
+    "correctAnswers": [
+      "Jetson Nano •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Jetson Nano •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 134,
+    "type": "single",
+    "text": "Thiết bị biên Google Coral thuộc nhóm sản phẩm nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Máy chủ hiệu năng cao •",
+      "Thiết bị biên, Edge device •",
+      "Bộ vi xử lý đồ họa cho máy tính để bàn •",
+      "Nền tảng lưu trữ đám mây"
+    ],
+    "correctAnswers": [
+      "Thiết bị biên, Edge device •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Thiết bị biên, Edge device •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 135,
+    "type": "single",
+    "text": "Hệ thống siêu máy tính NVIDIA DGX-2 được trang bị dung lượng lưu trữ nội bộ, Internal Storage, là bao nhiêu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "1.5 TB System Memory •",
+      "512 GB HBM2 •",
+      "30 TB NVME SSDs •",
+      "1600 Gb/sec Ethernet"
+    ],
+    "correctAnswers": [
+      "30 TB NVME SSDs •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '30 TB NVME SSDs •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 136,
+    "type": "single",
+    "text": "Loại bộ nhớ nào được sử dụng trong GPU NVIDIA TITAN V? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "GDDR6 •",
+      "12GB HBM2 •",
+      "64GB HBM •",
+      "System RAM"
+    ],
+    "correctAnswers": [
+      "12GB HBM2 •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '12GB HBM2 •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 33"
+  },
+  {
+    "id": 137,
+    "type": "single",
+    "text": "Kết hợp thông tin từ biểu đồ GigaFLOPs trên 1$ và danh sách thiết bị biên, sự kiện Deep Learning Explosion, 2012, gắn liền với cột mốc phần cứng nào sau đây? •",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [
+      "Sự ra đời của kiến trúc Jetson Nano giá 129 USD •",
+      "Sự vượt trội hoàn toàn về hiệu năng trên giá thành của GPU như dòng GTX 580 chạy AlexNet so với CPU, thúc đẩy việc sử dụng GPU làm tiêu chuẩn cho học sâu •",
+      "Việc Google Coral chính thức thay thế toàn bộ GPU trong các trung tâm dữ liệu •",
+      "Khi tốc độ xung nhịp của CPU Intel Core i7 vượt qua ngưỡng 4.2 GHz"
+    ],
+    "correctAnswers": [
+      "Sự vượt trội hoàn toàn về hiệu năng trên giá thành của GPU như dòng GTX 580 chạy AlexNet so với CPU, thúc đẩy việc sử dụng GPU làm tiêu chuẩn cho học sâu •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Sự vượt trội hoàn toàn về hiệu năng trên giá thành của GPU như dòng GTX 580 chạy AlexNet so với CPU, thúc đẩy việc sử dụng GPU làm tiêu chuẩn cho học sâu •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 138,
+    "type": "single",
+    "text": "Công nghệ nào được sử dụng trong hệ thống NVIDIA DGX-2 để hỗ trợ kết nối tốc độ cao giữa các GPU với băng thông bisection lên tới 2.4 TB/sec? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cổng EDR Infiniband •",
+      "Khe cắm PCIe Switch •",
+      "12 thiết bị NVSWITCHES •",
+      "Cổng Dual 10/25 GbE Ethernet"
+    ],
+    "correctAnswers": [
+      "12 thiết bị NVSWITCHES •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '12 thiết bị NVSWITCHES •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 139,
+    "type": "single",
+    "text": "Theo bảng so sánh hiệu năng thực tế, khi chạy mô hình ResNet-200, Pascal Titan X nhanh hơn CPU Intel E5-2620 v3 bao nhiêu lần? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "64x •",
+      "66x •",
+      "71x •",
+      "76x"
+    ],
+    "correctAnswers": [
+      "76x"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: '76x'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 140,
+    "type": "single",
+    "text": "Đặc điểm chính phân biệt giữa CPU và GPU là gì? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "CPU có nhiều nhân hơn GPU •",
+      "CPU có ít nhân nhưng mỗi nhân rất nhanh, phù hợp cho các tác vụ tuần tự •",
+      "GPU tốt cho các tác vụ tuần tự, CPU tốt cho các tác vụ song song •",
+      "Nhân GPU có khả năng xử lý các thao tác phức tạp hơn nhân CPU"
+    ],
+    "correctAnswers": [
+      "CPU có ít nhân nhưng mỗi nhân rất nhanh, phù hợp cho các tác vụ tuần tự •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'CPU có ít nhân nhưng mỗi nhân rất nhanh, phù hợp cho các tác vụ tuần tự •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 34"
+  },
+  {
+    "id": 141,
+    "type": "single",
+    "text": "Thành phần Fixed-function MAC Engine và Programmable Layer Engine nằm trong cấu trúc của thiết bị nào? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "NVIDIA DGX-2 •",
+      "Google Cloud TPU •",
+      "ARM ML Processor •",
+      "Intel Xeon Platinum"
+    ],
+    "correctAnswers": [
+      "ARM ML Processor •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'ARM ML Processor •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 142,
+    "type": "single",
+    "text": "Thiết bị nào sau đây được định nghĩa là phần cứng chuyên dụng cho học sâu? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Intel Core i7 •",
+      "NVIDIA RTX 2080 Ti •",
+      "TPU, Tensor Processing Unit •",
+      "ARM MALI-G72"
+    ],
+    "correctAnswers": [
+      "TPU, Tensor Processing Unit •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'TPU, Tensor Processing Unit •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 143,
+    "type": "single",
+    "text": "Tại sao GPU lại rất phù hợp cho các phép toán trong học sâu như nhân ma trận? •",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Vì GPU có tốc độ xung nhịp, Clock Speed, cao hơn CPU •",
+      "Vì GPU có nhiều nhân và rất tốt cho các tác vụ song song •",
+      "Vì GPU sử dụng bộ nhớ System RAM nhanh hơn •",
+      "Vì GPU rẻ hơn CPU trong mọi trường hợp"
+    ],
+    "correctAnswers": [
+      "Vì GPU có nhiều nhân và rất tốt cho các tác vụ song song •"
+    ],
+    "explanation": "Kiến thức chuyên đề R-CNN (Region-based Convolutional Neural Network) trong thị giác máy tính và học sâu. Đáp án chính xác: 'Vì GPU có nhiều nhân và rất tốt cho các tác vụ song song •'.",
+    "scope": "Học sâu - đề ôn tập kì 20252.pdf — Trang 1"
+  },
+  {
+    "id": 144,
+    "type": "single",
+    "text": "Which of the following is FALSE about Deep Learning and Machine Learning algorithms?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Deep Learning algorithms are more interpretable as compared to Machine Learning algorithms",
+      "None of the above",
+      "Data augmentation can be done easily in Deep Learning as compared to Machine Learning",
+      "Deep Learning algorithms efficiently solve computer vision problems"
+    ],
+    "correctAnswers": [
+      "Deep Learning algorithms are more interpretable as compared to Machine Learning algorithms"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 145,
+    "type": "single",
+    "text": "Which of the following is a type of neural network?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "All of the above",
+      "Autoencoders",
+      "Capsule Neural Networks",
+      "CNN (Convolutional Neural Network)"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 146,
+    "type": "single",
+    "text": "Which of the following is FALSE about Neural Networks?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "During backward propagation, we update the weights using gradient descent algorithm",
+      "We can use different activation functions in different layers",
+      "We can use different gradient descent algorithms in different epochs",
+      "None of the above"
+    ],
+    "correctAnswers": [
+      "During backward propagation, we update the weights using gradient descent algorithm"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 147,
+    "type": "single",
+    "text": "Which of the following is FALSE about step activation function?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "It is linear in nature",
+      "It either outputs 0 or 1",
+      "None of the above",
+      "It is also called Threshold activation function"
+    ],
+    "correctAnswers": [
+      "It is linear in nature"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 148,
+    "type": "single",
+    "text": "Which of the following is FALSE about activation functions?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Activation functions help in achieving non-linearity in deep neural networks",
+      "Commonly used activation functions are step, sigmoid, tanh, ReLU and softmax",
+      "Activation functions help in reducing overfitting problem",
+      "These are also called squashing functions as these squash the output under a certain range"
+    ],
+    "correctAnswers": [
+      "Activation functions help in achieving non-linearity in deep neural networks"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 149,
+    "type": "single",
+    "text": "Output of step (threshold) activation function ranges from:",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "0 to 1",
+      "-1 to 1",
+      "Either 0 or 1",
+      "Either -1 or 1"
+    ],
+    "correctAnswers": [
+      "0 to 1"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 150,
+    "type": "single",
+    "text": "Which of the following is FALSE about sigmoid and tanh activation function?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "None of the above",
+      "Both are non-linear activation functions",
+      "Output of both sigmoid and tanh is smooth, continuous and differentiable",
+      "Output of sigmoid ranges from -1 to 1 while output of tanh ranges from 0 to 1"
+    ],
+    "correctAnswers": [
+      "None of the above"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 151,
+    "type": "single",
+    "text": "Which of the following is FALSE about Dropout?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Dropout can be used in input, hidden and output layers",
+      "Dropout is a hyper-parameter",
+      "None of the above",
+      "Dropout is implemented per layer in a network"
+    ],
+    "correctAnswers": [
+      "Dropout can be used in input, hidden and output layers"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 152,
+    "type": "single",
+    "text": "Which of the following is FALSE about Dropout?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Dropout is a learnable parameter in the network",
+      "Dropout introduces sparsity in the network",
+      "Dropout increases the accuracy and performance of the model",
+      "Dropout makes training process noisy INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 1/8 - Mã đềthi 112"
+    ],
+    "correctAnswers": [
+      "Dropout is a learnable parameter in the network"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 2"
+  },
+  {
+    "id": 153,
+    "type": "single",
+    "text": "Which of the following is TRUE about Dropout?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Dropout can be compared to boosting technique in machine learning",
+      "Dropout should be implemented only during training phase, not in testing phase",
+      "Dropout is computationally complex as compared to L1 and L2 regularization methods",
+      "Dropout should be implemented during training phase as well as during testing phase"
+    ],
+    "correctAnswers": [
+      "Dropout can be compared to boosting technique in machine learning"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 154,
+    "type": "single",
+    "text": "Which of the following is TRUE about local and global minima?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Hyper-parameter tuning plays a vital role in avoiding global minima",
+      "All of the above",
+      "Ideally, SGD should reach till local minima and should not stuck in global minima",
+      "Sometimes local minimas are as good as global minimas"
+    ],
+    "correctAnswers": [
+      "Hyper-parameter tuning plays a vital role in avoiding global minima"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 155,
+    "type": "single",
+    "text": "Which of the following is a way to avoid local minima?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "All of the above",
+      "Use momentum and adaptive learning",
+      "Increase the learning rate",
+      "Add some noise while updating weights"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 156,
+    "type": "single",
+    "text": "Which of the following SGD variants is NOT based on adaptive learning?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Adagrad",
+      "Nesterov",
+      "AdaDelta",
+      "RMSprop"
+    ],
+    "correctAnswers": [
+      "Adagrad"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 157,
+    "type": "single",
+    "text": "Which of the following is TRUE about Weight Initialization?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "If weights are too high, it may lead to vanishing gradient",
+      "If weights are too low, it may lead to exploding gradient",
+      "All of the above",
+      "Model may never converge due to wrong weight initialization"
+    ],
+    "correctAnswers": [
+      "If weights are too high, it may lead to vanishing gradient"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 158,
+    "type": "single",
+    "text": "Which of the following is TRUE about Momentum?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "All of the above",
+      "It helps in faster convergence",
+      "It helps in accelerating SGD in a relevant direction",
+      "It helps SGD in avoiding local minima"
+    ],
+    "correctAnswers": [
+      "All of the above"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 159,
+    "type": "single",
+    "text": "Which of the following is FALSE about Pooling Layer in CNN?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "It does down-sampling of an image which reduces dimensions by retaining vital information",
+      "It does feature extraction and detects components of the image like edges, corners etc.",
+      "Output of convolutional layer acts as an input to the pooling layer",
+      "Pooling layer must be added after each convolutional layer"
+    ],
+    "correctAnswers": [
+      "It does down-sampling of an image which reduces dimensions by retaining vital information"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 160,
+    "type": "single",
+    "text": "Which of the following is a valid reason for not using fully connected networks for image recogni- tion?",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [
+      "It creates a lot more parameters for computation as compared to CNN",
+      "CNN is far efficient in terms of performance and accuracy for image recognition",
+      "All of the above",
+      "It may overfit easily as compared to CNN"
+    ],
+    "correctAnswers": [
+      "It creates a lot more parameters for computation as compared to CNN"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 161,
+    "type": "single",
+    "text": "Which of the following is FALSE about Padding in CNN?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "There are two types of padding: Zero Padding and Valid Padding (no padding)",
+      "In zero padding, we pad the image with zeros so that we do not lose any edge information",
+      "Padding is used to prevent the loss of information about edges and corners during convolution",
+      "There is no reduction in dimension when we use valid padding"
+    ],
+    "correctAnswers": [
+      "There are two types of padding: Zero Padding and Valid Padding (no padding)"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 162,
+    "type": "single",
+    "text": "Which of the following is FALSE about Kernels in CNN?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Kernels extract simple features in initial layers and complex features in deeper layers",
+      "Kernels can be used in convolutional as well as in pooling layers",
+      "Kernels keep sliding over an image to extract different components or patterns of an image",
+      "None of the above INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 2/8 - Mã đềthi 112"
+    ],
+    "correctAnswers": [
+      "Kernels extract simple features in initial layers and complex features in deeper layers"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 3"
+  },
+  {
+    "id": 163,
+    "type": "single",
+    "text": "Which of the following is NOT a hyper-parameter in CNN?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Number of convolutional layers",
+      "Number and size of kernels in a convolutional layer",
+      "Padding in a convolutional layer (zero or valid padding)",
+      "Code size for compression"
+    ],
+    "correctAnswers": [
+      "Number of convolutional layers"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 164,
+    "type": "single",
+    "text": "Which of the following is FALSE about LSTM?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "None of the above",
+      "LSTM is an extension for RNA which extends its memory",
+      "LSTM enables RNN to learn long-term dependencies",
+      "LSTM solves the exploding gradients issue in RNN"
+    ],
+    "correctAnswers": [
+      "None of the above"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 165,
+    "type": "single",
+    "text": "Which of the following is NOT an application of RNN?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Algorithmic trading",
+      "Image captioning",
+      "Image compression",
+      "Understanding DNA sequence"
+    ],
+    "correctAnswers": [
+      "Algorithmic trading"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 166,
+    "type": "single",
+    "text": "Which of the following is NOT an application of RNN?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Anomaly detection",
+      "Weather prediction",
+      "Stock market prediction",
+      "Time series prediction"
+    ],
+    "correctAnswers": [
+      "Anomaly detection"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 167,
+    "type": "single",
+    "text": "How many parts can the GAN be divided into?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correctAnswers": [
+      "3"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 168,
+    "type": "single",
+    "text": "Which of the following words is used to familiarize yourself with generative models and to explain how data is generated using probabilistic models.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Generative",
+      "Discriminator",
+      "Adversarial",
+      "Networks"
+    ],
+    "correctAnswers": [
+      "Generative"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 169,
+    "type": "single",
+    "text": "Which of the following is not an example of a generative model?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Naive Bayes",
+      "Discriminator models",
+      "GAN models",
+      "PixelRNN/PixelCNN"
+    ],
+    "correctAnswers": [
+      "Naive Bayes"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 170,
+    "type": "single",
+    "text": "What is the standard form of YOLO?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "None of the above",
+      "You Once Look Only",
+      "YOu Look Once",
+      "You Only Look Once"
+    ],
+    "correctAnswers": [
+      "None of the above"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 171,
+    "type": "single",
+    "text": "Which of the following are the components of object recognition system (a) Model database, (b) Hypothesizer, (c) Feature detector, (d) Hypothesis verifier",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(a) and (c)",
+      "(a) and (b)",
+      "None of the above",
+      "(c) and (d) E All (a), (b), (c) and (d)"
+    ],
+    "correctAnswers": [
+      "(a) and (c)"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 172,
+    "type": "single",
+    "text": "The face recognition system used in: (a) Biometric identification (b) Human and computer interface",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(a)",
+      "None of the above",
+      "Both (a) and (b)",
+      "(b)"
+    ],
+    "correctAnswers": [
+      "(a)"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 173,
+    "type": "single",
+    "text": "Which of the following is TRUE about types of Vectorization in NLP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Count vectorization considers count and weightage of each word in a text",
+      "All of the above",
+      "N-gram vectorization considers context of the word depending upon the value of N",
+      "TF-IDF vectorization considers both count and context of the words in the text INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 3/8 - Mã đềthi 112"
+    ],
+    "correctAnswers": [
+      "Count vectorization considers count and weightage of each word in a text"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 4"
+  },
+  {
+    "id": 174,
+    "type": "single",
+    "text": "Which of the following is an application of NLP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Google Assistant",
+      "Chatbots",
+      "Google Translate",
+      "All of the above"
+    ],
+    "correctAnswers": [
+      "Google Assistant"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 175,
+    "type": "single",
+    "text": "Which of the following is TRUE about NLP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "NLP can be used for spam filtering, sentiment analysis and machine translation",
+      "All of the above",
+      "We must take care of Syntax, Semantics and Pragmatics in NLP",
+      "Preprocessing tasks include Tokenization, Stemming, Lemmatization and Vectorization"
+    ],
+    "correctAnswers": [
+      "NLP can be used for spam filtering, sentiment analysis and machine translation"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 176,
+    "type": "single",
+    "text": "Which of the following techniques can be used to reduce model overfitting? (a) Data augmentation (b) Dropout (c) Batch Normalization (d) Using Adam instead of SGD",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "All the choices (a),(b),(c) and (d) are correct",
+      "(a) and (b)",
+      "(a), (b) and (c)",
+      "(a) E (b)"
+    ],
+    "correctAnswers": [
+      "All the choices (a),(b),(c) and (d) are correct"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 177,
+    "type": "single",
+    "text": "Which of the following is true about dropout? (a) Dropout leads to sparsity in the trained weights (b) At test time, dropout is applied with inverted keep probability (c) The larger the keep probability of a layer, the stronger the regularization of the weights in that layer",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(c)",
+      "All the choices (a),(b) and (c) are correct",
+      "(b)",
+      "(a) E None of the above"
+    ],
+    "correctAnswers": [
+      "(c)"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 178,
+    "type": "single",
+    "text": "You are training a Generative Adversarial Network to generate images of reptiles. But, you think your Generator might be showing mode collapse. Which of the options below could be indicators of this prob- lem? (a) The generator is only producing images of komodo dragons (b) The generator loss is oscillating. (c) The generator loss remains low whereas the discriminator loss is high (d) The discriminator has high accuracy on real images but low accuracy on fake ones",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [
+      "(a) and (b)",
+      "(c)",
+      "All the choices (a),(b),(c) and (d) are correct",
+      "(c) and (d) E (d)"
+    ],
+    "correctAnswers": [
+      "(a) and (b)"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 179,
+    "type": "single",
+    "text": "Which one of the following is not a pre-processing technique in NLP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "converting to lowercase",
+      "Stemming and Lemmatization",
+      "removal of stop words",
+      "Sentiment analysis E removing punctuations"
+    ],
+    "correctAnswers": [
+      "converting to lowercase"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 180,
+    "type": "single",
+    "text": "You are training a GANs to generate images of reptiles. But, you think your Generator might be showing mode collapse. Which of the options below could be indicators of this problem? (a) The generator is only producing images of komodo dragons. (b) The generator loss is not stable. (c) The generator loss remains low whereas the discriminator loss is high. (d) The discriminator has high accuracy on real images but low accuracy on fake ones. INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 4/8 - Mã đềthi 112",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [
+      "(a) and (b)",
+      "(a),(b) and (c)",
+      "(a)",
+      "(b) E All of the above"
+    ],
+    "correctAnswers": [
+      "(a) and (b)"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 5"
+  },
+  {
+    "id": 181,
+    "type": "single",
+    "text": "Which of the following propositions are TRUE about a CONV layer? (Check all that apply) (a) The number of weights depends on the depth of the input volume. (b) The number of biases is equal to the number of filters. (c) The total number of parameters depends on the stride. (d) The total number of parameters depends on the padding.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "(b) and (c)",
+      "(c) and (d)",
+      "(a) and (b)",
+      "All the choices are correct E (a) and (d) II. SHORT ANSWER QUESTIONS"
+    ],
+    "correctAnswers": [
+      "(b) and (c)"
+    ],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 182,
+    "type": "essay",
+    "text": "You have been tasked to build a classifier that takes in an image of a movie poster and classifies it into one of four genres: comedy, horror, action, and romance. You have been provided with a large dataset of movie posters where each movie poster corresponds to a move with exactly one of these genres. Your model now has 100% accuracy on the training set, and 96% accuracy on the validation set! You now decide to expand the model to posters of movies belonging to multiple genres. Now, each poster can have multiple genres associated with it; for example, the poster of a movie like ”Lật mặt: Nhà có khách” falls under both ”comedy” and ”action”. Propose a way to label new posters, where each example can simultaneously belong to multiple classes? To avoid extra work, you decide to retrain a new model with the same architecture (softmax output activation with cross-entropy loss). Explain why this is problematic?",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 183,
+    "type": "essay",
+    "text": "Explain the difference between gradient descent, stochastic gradient descent, and mini-batch gradi- ent descent",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 184,
+    "type": "essay",
+    "text": "Consider the convolutional neural network defined by the layers in the left column below. Fill in the shape of the output volume and the number of parameters at each layer. You can write the activation shapes in the format (H, W, C), where H, W, C are the height, width and channel dimensions, respectively. Unless specified, assume padding 1, stride 1 where appropriate. Notation: INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 5/8 - Mã đềthi 112   • CONVx-N denotes a convolutional layer with N filters with height and width equal to x. • POOL-n denotes a n × n max-pooling layer with stride of n and 0 padding. • FLATTEN flattens its inputs, identical to torch.nn.flatten / tf.layers.flatten • FC-N denotes a fully-connected layer with N neurons Layer Activation Volume Dimension Number of Parameters Input 32 × 32 × 3 0 CONV3-8 Leaky ReLU POOL-2 BATCHNORM CONV3-16 Leaky ReLU POOL-2 FLATTEN FC-10",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 6"
+  },
+  {
+    "id": 185,
+    "type": "essay",
+    "text": "Give a method to fight vanishing gradient in fully-connected neural networks. Assume we are using a network with Sigmoid activations trained using SGD.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 186,
+    "type": "essay",
+    "text": "How do we train the deep network? INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 6/8 - Mã đềthi 112",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 7"
+  },
+  {
+    "id": 187,
+    "type": "essay",
+    "text": "Explain the difference between the sigmoid and tanh activation function.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 188,
+    "type": "essay",
+    "text": "What is the Jacobian Matrix?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 189,
+    "type": "essay",
+    "text": "Explain Generative Adversarial Network.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 190,
+    "type": "essay",
+    "text": "How LSTM differ from the RNN? INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 7/8 - Mã đềthi 112",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 8"
+  },
+  {
+    "id": 191,
+    "type": "essay",
+    "text": "What is the difference between the same padding and valid padding?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 192,
+    "type": "essay",
+    "text": "What is IoU?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  },
+  {
+    "id": 193,
+    "type": "essay",
+    "text": "In NLP, how word embedding techniques help to establish the distance between 2 tokens? INTRODUCTION TO DEEP LEARNING - FINAL EXAM 2022-2023 Trang 8/8 - Mã đềthi 112",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Question from Deep Learning Final Exam 2022-2023. Key concepts related to neural network architecture, regularization, optimization, or computer vision.",
+    "scope": "Học sâu - cuối kì 20221.pdf — Trang 1"
+  }
+]

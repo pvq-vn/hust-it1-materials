@@ -1,0 +1,2641 @@
+[
+  {
+    "id": 1,
+    "type": "single",
+    "text": "Trong tiến trình xây dựng một sản phẩm khoa học dữ liệu, bước “Analytic approach” nói đến điều gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Việc biến đổi một bài toán thực tế về một bài toán khoa học dữ liệu",
+      "Việc chọn một công cụ phân tích để giải quyết một bài toán khoa học dữ liệu",
+      "Việc biến đổi một bài toán khoa học dữ liệu về một bài toán thực tế"
+    ],
+    "correctAnswers": [
+      "Việc biến đổi một bài toán thực tế về một bài toán khoa học dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): Chọn a: bài toán thực tế → bài toàn data science",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "text": "Trong khoa học dữ liệu, bước hiểu bài toán thực tế (Business understanding) là gì trong quá trình phát triển sản phẩm?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Là bước mà chúng ta cần hiểu rõ nhu cầu thực tế cần giải quyết",
+      "Là bước để hiểu các nội dung kinh doanh chính của tổ chức",
+      "Là bước để hiểu mối quan hệ giữa nhu cầu kinh doanh và Khoa học dữ liệu"
+    ],
+    "correctAnswers": [
+      "Là bước mà chúng ta cần hiểu rõ nhu cầu thực tế cần giải quyết"
+    ],
+    "explanation": "Lời giải (Sol): Chọn a: hiểu rõ nhu cầu thực tế",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "text": "Trong quy trình Khoa học dữ liệu, giai đoạn hiểu/trực quan hoá dữ liệu nên được tiến hành sau bước mô hình hoá không?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Có",
+      "Không, nó nên được thực hiện trước",
+      "Các đáp án đều đúng"
+    ],
+    "correctAnswers": [
+      "Không, nó nên được thực hiện trước"
+    ],
+    "explanation": "Lời giải (Sol): Chọn b: Từ ds process, data understanding thực hiện trước \nmodeling",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 7"
+  },
+  {
+    "id": 19,
+    "type": "single",
+    "text": "Hình sau đây gợi ý điều gì?",
+    "code": "",
+    "table": "",
+    "link": "https://drive.google.com/file/d/1xTZutaxN-GPaVe-pK3CnHP8YDQ6w5y9Z/view?usp=sharing",
+    "options": [
+      "Khoa học dữ liệu là một lĩnh vực liên ngành, nó động đến rất nhiều lĩnh vực khác",
+      "Khoa học dữ liệu là phần cốt lõi chung của Khoa học máy tính, Toán học, Thống kê, và Tri thức miền ứng dụng",
+      "Khoa học dữ liệu là một ngành, phần giao chung giữa Khoa học máy tính, Toán học, Thống kê, và Tri thức miền ứng dụng."
+    ],
+    "correctAnswers": [
+      "Khoa học dữ liệu là một lĩnh vực liên ngành, nó động đến rất nhiều lĩnh vực khác"
+    ],
+    "explanation": "Lời giải (Sol): Chọn a: lĩnh vực liên ngành.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 8"
+  },
+  {
+    "id": 20,
+    "type": "single",
+    "text": "Đánh giá (Evaluation) có phải là một bước cốt lõi trong quy trình Khoa học dữ liệu, dù hướng sản phẩm hay hướng khám phá tri thức, hay không?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đúng",
+      "Không, nó chưa chắc cần thiết khi ta muốn khám phá tri thức mới từ dữ liệu",
+      "Không"
+    ],
+    "correctAnswers": [
+      "Đúng"
+    ],
+    "explanation": "Lời giải (Sol): chọn a,đúng",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 21,
+    "type": "single",
+    "text": "Đánh giá (Evaluation) trong quy trình Khoa học dữ liệu có thể bao gồm",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Phân tích, kiểm định, so sánh các kết quả từ các kịch bản đã chọn (có thể gồm các kịch bản offline và real-life)",
+      "Đánh giá việc triển khai một hệ thống trong thực tế"
+    ],
+    "correctAnswers": [
+      "Phân tích, kiểm định, so sánh các kết quả từ các kịch bản đã chọn (có thể gồm các kịch bản offline và real-life)"
+    ],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 9"
+  },
+  {
+    "id": 22,
+    "type": "single",
+    "text": "Trong Khoa học dữ liệu, điểm khác nhau chính giữa làm sạch và tiền xử lý dữ liệu là gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Làm sạch dữ liệu đương đầu phần lớn với dữ liệu nhiễu, trong khi tiền xử lý dữ liệu đương đầu phần lớn với dữ liệu thiếu",
+      "Làm sạch dữ liệu đương đầu phần lớn với dữ liệu nhiễu, trong khi tiền xử lý dữ liệu đương đầu phần lớn với dữ liệu dư thừa",
+      "Làm sạch dữ liệu thường thực hiện trước tiền xử lý dữ liệu, và nhắm đến việc phát hiện những dữ liệu bẩn",
+      "Tiền xử lý dữ liệu bao gồm bước làm sạch dữ liệu"
+    ],
+    "correctAnswers": [
+      "Tiền xử lý dữ liệu bao gồm bước làm sạch dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): chọn d. Tiền xử lý thì bao gồm cả làm sạch",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "text": "Phán đoán (Prediction) có phải là nhiệm vụ chính của Khoa học dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đúng",
+      "Không, nó chỉ là một trong những nhiệm vụ trong Khoa học dữ liệu",
+      "Không, nó không thuộc lĩnh vực Khoa học Dữ liệu"
+    ],
+    "correctAnswers": [
+      "Không, nó chỉ là một trong những nhiệm vụ trong Khoa học dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): chọn b, chỉ là 1 trong những nhiệm vụ",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 10"
+  },
+  {
+    "id": 24,
+    "type": "single",
+    "text": "Phát biểu nào sau đây nói về ”Lời nguyền của số chiều” (The curse of dimensionality)?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Khi số chiều dữ liệu tăng, kích cỡ của không gian dữ liệu sẽ tăng quá nhanh đến nỗi những tập dữ liệu chúng ta thu thập được sẽ quá thưa thớt (sparse). Việc thưa thớt này sẽ tạo ra thách thức lớn cho các phương pháp phân tích dữ liệu.",
+      "Khi số chiều dữ liệu tăng, sự khó khăn trong phân tích dữ liệu sẽ không bị ảnh hưởng nhiều",
+      "Số chiều cao có thể tạo ra nhiều khó khăn cho lưu trữ và tính toán"
+    ],
+    "correctAnswers": [
+      "Khi số chiều dữ liệu tăng, kích cỡ của không gian dữ liệu sẽ tăng quá nhanh đến nỗi những tập dữ liệu chúng ta thu thập được sẽ quá thưa thớt (sparse). Việc thưa thớt này sẽ tạo ra thách thức lớn cho các phương pháp phân tích dữ liệu."
+    ],
+    "explanation": "Lời giải (Sol): chọn a: số chiều tăng ⇒ không gian dữ liệu tăng quá nhanh",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 25,
+    "type": "multiple",
+    "text": "“Vagueness” là một thách thức trong kỷ nguyên của Dữ liệu lớn và nó đang nói về …",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Việc dữ liệu rất khó hiểu",
+      "Vấn đề khó giao tiếp giữa nhà cung cấp và người sử dụng",
+      "Khó khăn đối với một người không phải là chuyên gia để diễn giải kết quả phân tích",
+      "Mức độ khó hiểu của những mẫu dữ liệu đến trong môi trường luồng",
+      "Mức độ khó hiểu của các thuật toán phân tích dữ liệu"
+    ],
+    "correctAnswers": [
+      "Vấn đề khó giao tiếp giữa nhà cung cấp và người sử dụng",
+      "Khó khăn đối với một người không phải là chuyên gia để diễn giải kết quả phân tích"
+    ],
+    "explanation": "Lời giải (Sol): Chọn b,c",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 11"
+  },
+  {
+    "id": 26,
+    "type": "multiple",
+    "text": "“Variability” là một thách thức trong kỷ nguyên của Dữ liệu lớn và nó đang nói về …",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Việc dữ liệu thay đổi nhiều",
+      "Những thay đổi có thể xảy ra trong cấu trúc của nguồn dữ liệu",
+      "Tốc độ mà dữ liệu đến trong môi trường luồng",
+      "Các tốc độ khác nhau mà khi đó các nguồn dữ liệu được làm mới"
+    ],
+    "correctAnswers": [
+      "Những thay đổi có thể xảy ra trong cấu trúc của nguồn dữ liệu",
+      "Các tốc độ khác nhau mà khi đó các nguồn dữ liệu được làm mới"
+    ],
+    "explanation": "Lời giải (Sol): chọn b,d",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 12"
+  },
+  {
+    "id": 27,
+    "type": "single",
+    "text": "Velocity là một thách thức của kỷ nguyên dữ liệu lớn, và nó nói tới",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đặc trưng thay đổi mạnh của dữ liệu",
+      "Những tính toán lớn",
+      "Đặc trưng đến liên tục và nhanh của dữ liệu",
+      "Tốc độ phân tích dữ liệu"
+    ],
+    "correctAnswers": [
+      "Đặc trưng đến liên tục và nhanh của dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): chọn c.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 28,
+    "type": "single",
+    "text": "Veracity là một thách thức của kỷ nguyên dữ liệu lớn, và nó nói tới",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đặc trưng thay đổi mạnh của dữ liệu",
+      "Những tính toán lớn",
+      "Tốc độ đến liên tục của dữ liệu trong môi trường luồng",
+      "Đặc trưng thiếu chắc chắn cao, do nhiễu, lỗi, mất mát, sai lệch,... trong dữ liệu"
+    ],
+    "correctAnswers": [
+      "Đặc trưng thiếu chắc chắn cao, do nhiễu, lỗi, mất mát, sai lệch,... trong dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): chọn d: đặc trưng thiếu chắn chắn cao…",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 13"
+  },
+  {
+    "id": 29,
+    "type": "single",
+    "text": "Khoa học dữ liệu là một lĩnh vực liên ngành và vượt ra ngoài phạm vi của Khoa học máy tính",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "đúng",
+      "sai"
+    ],
+    "correctAnswers": [
+      "đúng"
+    ],
+    "explanation": "Lời giải (Sol): chọn a: đúng",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 30,
+    "type": "multiple",
+    "text": "Đâu là ví dụ về một xpath đúng?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "/node/text()",
+      "//Parent[@id=’1’]/Children/child/@name",
+      "span::text",
+      "base::attr(href)"
+    ],
+    "correctAnswers": [
+      "/node/text()",
+      "//Parent[@id=’1’]/Children/child/@name"
+    ],
+    "explanation": "Lời giải (Sol): chọn a,b\nExplaination:\n\n\n\na) XPath\n/node: select the root element named ‘node’\n/text(): select the text content of the ‘node’ element\n⇒ Return the text content of the root ‘node’ element.\nb) XPath\n//Parent[@id=’1’] : Select any \"Parent\" element with an \"id\" \nattribute equal to '1' anywhere in the document.\n/Children/child: Descends into the \"Children\" and \"child\" \nelements within the selected \"Parent\" element.\n/@name: Selects the \"name\" attribute of the \"child\" element.\nc) CSS selector\nspan: select all <span> elements in the document\n::text: specifies the text content of the selected <span> \nelements\nd) CSS selector\nbase: selects <base> elements in the doc\n::attr(href): specify the ‘href’ attribute of the selected\nxpath-vs-css-selector",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 14"
+  },
+  {
+    "id": 31,
+    "type": "single",
+    "text": "Đâu là ví dụ về một css selector đúng?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "/a[contains(@href, ”image”)]/@href",
+      "a[href*=image]::attr(href)",
+      "a[href*=image]@attr(href)",
+      "//a[contains(@href, ”image”)]::@href"
+    ],
+    "correctAnswers": [
+      "a[href*=image]::attr(href)"
+    ],
+    "explanation": "Lời giải (Sol): chọn b\n\n\n\ncss selector thì không chứa ‘//’ hay ‘/’\nc là một css selector sai do css thì k có ‘@’\nd là một xpath sai do ko chữa ‘::’",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 16"
+  },
+  {
+    "id": 32,
+    "type": "single",
+    "text": "Thuật toán Page Rank được sử dụng cho mục đích gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Để tìm kết quả phù hợp nhất với một truy vấn",
+      "Để đo lường tầm quan trọng của một trang web",
+      "Để xác định mức độ phổ biến của một trang web",
+      "Để sắp xếp kết quả của công cụ tìm kiếm"
+    ],
+    "correctAnswers": [
+      "Để đo lường tầm quan trọng của một trang web"
+    ],
+    "explanation": "Lời giải (Sol): chọn b. đo tầm quan trọng của 1 web",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 33,
+    "type": "single",
+    "text": "Làm thế nào để có thể bóc tách được dữ liệu mong muốn khi viết bot thu thập dữ liệu trên scrapy?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Sử dụng bộ chọn (selector) expath và css để viết downloaders.",
+      "Sử dụng bộ chọn (selector) expath và css để viết spiders.",
+      "bộ chọn (selector) expath và css để viết item pipelines."
+    ],
+    "correctAnswers": [
+      "Sử dụng bộ chọn (selector) expath và css để viết spiders."
+    ],
+    "explanation": "Lời giải (Sol): chọn b: viết spiders",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 17"
+  },
+  {
+    "id": 34,
+    "type": "multiple",
+    "text": "Đâu là ví dụ về một css selector đúng?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "/node/text()",
+      "//Parent[@id=’1’]/Children/child/@name",
+      "span::text",
+      "base::attr(href)"
+    ],
+    "correctAnswers": [
+      "span::text",
+      "base::attr(href)"
+    ],
+    "explanation": "Lời giải (Sol): chọn c,d",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 35,
+    "type": "single",
+    "text": "Scrapy bot có thể bỏ qua thông tin trong robots.txt hay không?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Có.",
+      "Không."
+    ],
+    "correctAnswers": [
+      "Có."
+    ],
+    "explanation": "Lời giải (Sol): chọn A.có",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 18"
+  },
+  {
+    "id": 36,
+    "type": "single",
+    "text": "Scrapy có hỗ trợ mặc định cơ chế thu thập dữ liệu tăng dần (incremental crawling strategy) hay không?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không",
+      "Có"
+    ],
+    "correctAnswers": [
+      "Không"
+    ],
+    "explanation": "Lời giải (Sol): chọn a.ko",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 37,
+    "type": "single",
+    "text": "Sử dụng robots.txt có chặn được các chương trình cào dữ liệu Internet hay không",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không",
+      "Có"
+    ],
+    "correctAnswers": [
+      "Không"
+    ],
+    "explanation": "Lời giải (Sol): chọn a.không",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 38,
+    "type": "single",
+    "text": "Theo cách của Scrapy, đâu là nơi có thể ép buộc các yêu cầu tải trang web phải sử dụng proxy?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Downloader middlewares",
+      "Spider middlewares",
+      "Downloader",
+      "Spider",
+      "Item pipelines"
+    ],
+    "correctAnswers": [
+      "Downloader middlewares"
+    ],
+    "explanation": "Lời giải (Sol): chọn a. downloader middlewares.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 19"
+  },
+  {
+    "id": 39,
+    "type": "single",
+    "text": "Trong Scrapy, đâu là nơi có thể tiến hành thay đổi thuộc tính user-agent trong quá trình thu thập dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Downloader middlewares",
+      "Spider middlewares",
+      "Downloader",
+      "Spider"
+    ],
+    "correctAnswers": [
+      "Downloader middlewares"
+    ],
+    "explanation": "Lời giải (Sol): chọn a. down. middle.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 20"
+  },
+  {
+    "id": 40,
+    "type": "single",
+    "text": "Trong Scrapy, làm thế nào để ghi dữ liệu thu thập được vào các cơ sở dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Viết mã lệnh thêm vào trong spider middleware.",
+      "Viết mã lệnh thêm vào trong item pipelines.",
+      "Viết mã lệnh thêm vào trong downloader."
+    ],
+    "correctAnswers": [
+      "Viết mã lệnh thêm vào trong item pipelines."
+    ],
+    "explanation": "Lời giải (Sol): chọn b. item pipe.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 41,
+    "type": "single",
+    "text": "Trong Scrapy, vai trò của thành phần downloader là gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Nhận các yêu cầu (requests) từ thành phần engine, đưa các yêu cầu này vào hàng đợi để xử lý sau.",
+      "Tải về các trang web",
+      "Bóc tách các trả lời (responses)"
+    ],
+    "correctAnswers": [
+      "Tải về các trang web"
+    ],
+    "explanation": "Lời giải (Sol): chọn b. tải về các trang web",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 22"
+  },
+  {
+    "id": 42,
+    "type": "single",
+    "text": "Trong Scrapy, vai trò của thành phần spider là gì",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Bóc tách các trả lời (responses).",
+      "Tải về nội dung các trang web.",
+      "Điều phối luồng dữ liệu giữa tất cả các thành phần của Scrapy."
+    ],
+    "correctAnswers": [
+      "Bóc tách các trả lời (responses)."
+    ],
+    "explanation": "Lời giải (Sol): chọn a. bóc tách",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 43,
+    "type": "single",
+    "text": "Đâu là giải thuật dùng để xếp thứ hạng các trang web trong kết quả trả về của máy tìm kiếm",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Webrank",
+      "Pagerank",
+      "Textrank"
+    ],
+    "correctAnswers": [
+      "Pagerank"
+    ],
+    "explanation": "Lời giải (Sol): chọn b. Pagerank",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 44,
+    "type": "single",
+    "text": "Điều nào sau đây mô tả chính xác XPath?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "XPath là một ngôn ngữ lập trình.",
+      "XPath là một ngôn ngữ truy vấn .",
+      "XPath là cấu trúc tệp tin XML.",
+      "XPath có thể được đọc bởi Microsoft Word."
+    ],
+    "correctAnswers": [
+      "XPath là một ngôn ngữ truy vấn ."
+    ],
+    "explanation": "Lời giải (Sol): chọn b",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 23"
+  },
+  {
+    "id": 45,
+    "type": "single",
+    "text": "Bước nào trong phương pháp làm sạch dữ liệu sau đây không theo thứ tự thích hợp?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Trích xuất các trường dữ liệu có liên quan.",
+      "Sửa chữa các vấn đề về chất lượng dữ liệu ở mức giá trị (value level).",
+      "Chuẩn hóa giá trị dữ liệu.",
+      "Khắc phục các vấn đề về chất lượng dữ liệu ở mức tập giá trị (value set level).",
+      "Khắc phục các vấn đề về chất lượng dữ liệu ở cấp độ quan hệ",
+      "Sửa chữa các vấn đề về chất lượng dữ liệu ở cấp độ đa quan hệ.",
+      "Lấy phản hồi của người dùng"
+    ],
+    "correctAnswers": [
+      "Chuẩn hóa giá trị dữ liệu."
+    ],
+    "explanation": "Lời giải (Sol): chọn C.chuẩn hoá",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 24"
+  },
+  {
+    "id": 46,
+    "type": "single",
+    "text": "Google Openrefine có thể nhập dữ liệu từ Internet qua URL được không?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Có",
+      "Không"
+    ],
+    "correctAnswers": [
+      "Có"
+    ],
+    "explanation": "Lời giải (Sol): chọn a.Có",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 25"
+  },
+  {
+    "id": 47,
+    "type": "single",
+    "text": "Google Openrefine có thể được sử dụng để tự động phân nhóm dữ liệu không?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Có",
+      "Không"
+    ],
+    "correctAnswers": [
+      "Có"
+    ],
+    "explanation": "Lời giải (Sol): chọn a.Có",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 48,
+    "type": "multiple",
+    "text": "Kỹ thuật faceting trong Google Openrefine là gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cho phép nhìn thấy bức tranh toàn cảnh về dữ liệu.",
+      "Cho phép lọc xuống chỉ tập hợp con các hàng mà bạn muốn thay đổi hàng loạt.",
+      "Cho phép thực hiện các phán đoán xu thế từ dữ liệu."
+    ],
+    "correctAnswers": [
+      "Cho phép nhìn thấy bức tranh toàn cảnh về dữ liệu.",
+      "Cho phép lọc xuống chỉ tập hợp con các hàng mà bạn muốn thay đổi hàng loạt."
+    ],
+    "explanation": "Lời giải (Sol): chọn a,b",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 26"
+  },
+  {
+    "id": 49,
+    "type": "multiple",
+    "text": "Tại sao dữ liệu ngoài thực tiễn lại không sạch?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không đầy đủ.",
+      "Có nhiễu.",
+      "Không nhất quán."
+    ],
+    "correctAnswers": [
+      "Không đầy đủ.",
+      "Có nhiễu.",
+      "Không nhất quán."
+    ],
+    "explanation": "Lời giải (Sol): chọn a,b,c",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 50,
+    "type": "multiple",
+    "text": "Đặc trưng mô hình hoá dữ liệu trong OLAP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Lược đồ CSDL cần được chuẩn hoá, đảm bảo dữ liệu được nhất quán.",
+      "Thường sử dụng lược đồ CSDL phi chuẩn hoá.",
+      "Thường sử dụng mô hình dữ liệu đa chiều."
+    ],
+    "correctAnswers": [
+      "Thường sử dụng lược đồ CSDL phi chuẩn hoá.",
+      "Thường sử dụng mô hình dữ liệu đa chiều."
+    ],
+    "explanation": "Lời giải (Sol): b,c",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 27"
+  },
+  {
+    "id": 51,
+    "type": "single",
+    "text": "Đâu không phải là nguyên nhân dẫn đến dữ liệu bị nhiễu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Phương tiện, thiết bị thu thập dữ liệu bị lỗi.",
+      "Lỗi do người nhập dữ liệu vào hệ thống.",
+      "Do nhu cầu về dữ liệu khác nhau giữa thời điểm thu thập dữ liệu và thời điểm tiến hành phân tích dữ liệu."
+    ],
+    "correctAnswers": [
+      "Do nhu cầu về dữ liệu khác nhau giữa thời điểm thu thập dữ liệu và thời điểm tiến hành phân tích dữ liệu."
+    ],
+    "explanation": "Lời giải (Sol): c",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 28"
+  },
+  {
+    "id": 52,
+    "type": "single",
+    "text": "Đâu không phải là vấn đề về chất lượng dữ liệu ở mức giá trị (value level)?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Giá trị bị thiếu.",
+      "Vi phạm cú pháp.",
+      "Các từ đồng nghĩa."
+    ],
+    "correctAnswers": [
+      "Các từ đồng nghĩa."
+    ],
+    "explanation": "Lời giải (Sol): c",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 29"
+  },
+  {
+    "id": 53,
+    "type": "single",
+    "text": "Đâu không phải là vấn đề về chất lượng dữ liệu ở mức tập giá trị (value set level)?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tồn tại các từ đồng âm khác nghĩa.",
+      "Vi phạm tính duy nhất.",
+      "Vi phạm ràng buộc toàn vẹn.",
+      "Vi phạm tập xác định."
+    ],
+    "correctAnswers": [
+      "Vi phạm tập xác định."
+    ],
+    "explanation": "Lời giải (Sol): d.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 30"
+  },
+  {
+    "id": 54,
+    "type": "multiple",
+    "text": "Đâu là đặc trưng của OLAP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Chủ yếu là các giao dịch thêm, sửa, xoá có thời gian thực hiện ngắn.",
+      "Các truy vấn thường phức tạp và bao gồm các phép toán kết tập.",
+      "Chủ yếu là các truy vấn ad-hoc.",
+      "Thường truy cập tới nhiều bản ghi dữ liệu.",
+      "Hỗ trợ ra quyết định."
+    ],
+    "correctAnswers": [
+      "Các truy vấn thường phức tạp và bao gồm các phép toán kết tập.",
+      "Chủ yếu là các truy vấn ad-hoc.",
+      "Thường truy cập tới nhiều bản ghi dữ liệu.",
+      "Hỗ trợ ra quyết định."
+    ],
+    "explanation": "Lời giải (Sol): b,c,d,e\nOLAP: (Online Analytical Processing)\ntruy vấn ad-hoc\n\n\n\nphức tạp, gồm các phép toán kết tập (aggregation)\ntruy cập nhiều bản ghi\nhỗ trợ ra quyết định\nlược đồ CSDL phi chuẩn hoá\nmô hình dữ liệu đa chiều",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 31"
+  },
+  {
+    "id": 55,
+    "type": "multiple",
+    "text": "Đâu là đặc trưng của OLTP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Chủ yếu là các giao dịch thêm, sửa, xoá có thời gian thực hiện ngắn.",
+      "Hỗ trợ xử lý giao dịch, vận hành hàng ngày cho doanh nghiệp.",
+      "Thường truy cập tới dữ liệu lịch sử, dữ liệu đa chiều.",
+      "Thường là các truy vấn phức tạp."
+    ],
+    "correctAnswers": [
+      "Chủ yếu là các giao dịch thêm, sửa, xoá có thời gian thực hiện ngắn.",
+      "Hỗ trợ xử lý giao dịch, vận hành hàng ngày cho doanh nghiệp."
+    ],
+    "explanation": "Lời giải (Sol): a,b\nOLTP: (Online Transaction Processing)\ngiao dịch thêm,sửa,xoá và tgian ngắn\nhỗ trợ xử lý giao dịch, vận hành\nOLTP tập trung vào việc xử lý nhanh chóng và hiệu quả các giao \ndịch. Các giao dịch này thường là các thao tác cơ bản như thêm, \ncập nhật, hoặc xoá dữ liệu, và thường cần được thực hiện nhanh \nchóng để không gây cản trở hoạt động kinh doanh hàng ngày.\nOLTP cung cấp cơ sở hạ tầng cho các hoạt động hàng ngày của \ndoanh nghiệp, như quản lý đơn hàng, giao dịch ngân hàng, và \nquản lý kho hàng.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 56,
+    "type": "single",
+    "text": "Điều nào dưới đây là không đúng về OLAP?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Xử lý thông tin có tính lịch sử (được tạo ra trong quá khứ).",
+      "Hỗ trợ phân tích nghiệp vụ.",
+      "Khả mở, cho phép hàng triệu người sử dụng.",
+      "Lưu trữ hàng triệu bản ghi dữ liệu."
+    ],
+    "correctAnswers": [
+      "Khả mở, cho phép hàng triệu người sử dụng."
+    ],
+    "explanation": "Lời giải (Sol): c\nOLAP:\nxử lý thông tin có tính lịch sử\nhỗ trợ phân tích\nlưu trữ hàng triệu bản ghi",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 32"
+  },
+  {
+    "id": 57,
+    "type": "multiple",
+    "text": "Đâu là phát biểu đúng về Wrapper trong kiến trúc tích hợp dữ liệu ảo?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Là đoạn chương trình chuyển đổi dữ liệu từ định dạng ở nguồn qua định dạng chuẩn hoá của mediator",
+      "Có thể cài đặt ở phía nguồn dữ liệu hoặc phía mediator",
+      "Là thành phần không thể thiếu của mediator"
+    ],
+    "correctAnswers": [
+      "Là đoạn chương trình chuyển đổi dữ liệu từ định dạng ở nguồn qua định dạng chuẩn hoá của mediator",
+      "Có thể cài đặt ở phía nguồn dữ liệu hoặc phía mediator"
+    ],
+    "explanation": "Lời giải (Sol): a,b",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 33"
+  },
+  {
+    "id": 58,
+    "type": "multiple",
+    "text": "Đâu là siêu dữ liệu có trong Danh mục nguồn dữ liệu (Data source catalog) trong kiến trúc tích hợp dữ liệu ảo?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Danh sách các bản dữ liệu của nguồn",
+      "Khả năng truy vấn của nguồn (vd., Khả năng trả lời SQL)",
+      "Tần suất cập nhật dữ liệu",
+      "Kiểm soát truy cập, phân quyền"
+    ],
+    "correctAnswers": [
+      "Danh sách các bản dữ liệu của nguồn",
+      "Khả năng truy vấn của nguồn (vd., Khả năng trả lời SQL)",
+      "Tần suất cập nhật dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): a,b,c",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 34"
+  },
+  {
+    "id": 59,
+    "type": "single",
+    "text": "Đâu là phát biểu đúng về Apache Nifi?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Một công cụ ETL.",
+      "Một nền tảng kho dữ liệu cho phép lưu trữ dữ liệu kích thước lớn.",
+      "Một công cụ cho phép làm sạch và tiền xử lý dữ liệu."
+    ],
+    "correctAnswers": [
+      "Một công cụ ETL."
+    ],
+    "explanation": "Lời giải (Sol): chọn a. ETL",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 60,
+    "type": "multiple",
+    "text": "Đâu là các khái niệm có trong Apache NiFi?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "FlowFile",
+      "FlowFile Processor",
+      "Scheduler",
+      "Process Group"
+    ],
+    "correctAnswers": [
+      "FlowFile",
+      "FlowFile Processor",
+      "Process Group"
+    ],
+    "explanation": "Lời giải (Sol): Chọn a,b,d (bỏ scheduler)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 35"
+  },
+  {
+    "id": 61,
+    "type": "multiple",
+    "text": "Đâu là các chiều thang đo khi nói về chất lượng dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đầy đủ (Completeness), Xác thực (Validity), Toàn vẹn (Integrity)",
+      "Tính thời điểm (Timeliness), Chính xác (Accuracy), Nhất quán (Consistency)",
+      "Tính thời điểm (Timeliness), Tính cô lập (Isolation)",
+      "Đầy đủ (Completeness), Toàn vẹn (Integrity), Giá trị (Value)"
+    ],
+    "correctAnswers": [
+      "Đầy đủ (Completeness), Xác thực (Validity), Toàn vẹn (Integrity)",
+      "Tính thời điểm (Timeliness), Chính xác (Accuracy), Nhất quán (Consistency)"
+    ],
+    "explanation": "Lời giải (Sol): chọn a,b \nCompleteness\n\n\n\nValidity\nIntegrity\nTimeliness\nAcc.\nConsistency",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 36"
+  },
+  {
+    "id": 62,
+    "type": "single",
+    "text": "Biểu đồ này thể hiện điều gì?",
+    "code": "",
+    "table": "",
+    "link": "https://drive.google.com/file/d/15WbMQUhb5d41eaqq3U14Gvia0o87gHQI/view?usp=sharing",
+    "options": [
+      "Một biểu đồ cột thể hiện chiều cao của cây và số lượng cây tương ứng với chiều cao đó.",
+      "Một biểu đồ histogram thể hiện phân bố chiều cao của cây.",
+      "Một biểu đồ cột vẽ nhầm cần đổi tên trục trung và trục hoành."
+    ],
+    "correctAnswers": [
+      "Một biểu đồ histogram thể hiện phân bố chiều cao của cây."
+    ],
+    "explanation": "Lời giải (Sol): b.hist.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 37"
+  },
+  {
+    "id": 63,
+    "type": "multiple",
+    "text": "Biểu đồ box plot cho phép rút ra kết luận gì trong phân tích thăm dò dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Có đặc trưng (biến) nào quan trọng?",
+      "Độ tập trung vị trí có khác nhau giữa các nhóm con không?",
+      "Độ biến thiên có khác nhau giữa các nhóm con không?",
+      "Có ngoại lệ không?"
+    ],
+    "correctAnswers": [
+      "Có đặc trưng (biến) nào quan trọng?",
+      "Độ tập trung vị trí có khác nhau giữa các nhóm con không?",
+      "Độ biến thiên có khác nhau giữa các nhóm con không?",
+      "Có ngoại lệ không?"
+    ],
+    "explanation": "Lời giải (Sol): a,b,c,d",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 64,
+    "type": "multiple",
+    "text": "Biểu đồ histogram cho phép rút ra kết luận gì trong phân tích thăm dò dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Xem xét phân bố của tập các quan sát.",
+      "Xem xét độ tập trung của dữ liệu.",
+      "Xem xét sự phân tán của dữ liệu.",
+      "Phân bố của dữ liệu là đối xứng hay lêch.",
+      "Có ngoại lệ trong dữ liệu không?."
+    ],
+    "correctAnswers": [
+      "Xem xét phân bố của tập các quan sát.",
+      "Xem xét độ tập trung của dữ liệu.",
+      "Xem xét sự phân tán của dữ liệu.",
+      "Phân bố của dữ liệu là đối xứng hay lêch.",
+      "Có ngoại lệ trong dữ liệu không?."
+    ],
+    "explanation": "Lời giải (Sol): a,b,c,d,e (cũng dễ hiểu thôi)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 65,
+    "type": "multiple",
+    "text": "Biểu đồ scatter plot cho phép rút ra kết luận gì trong phân tích thăm dò dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Có mối quan hệ giữa biến X và Y hay không?",
+      "Mối liên hệ có phải là tuyến tính hay không?",
+      "Sự biến thiên của biến Y có phụ thuộc vào biến X hay không?",
+      "Biến X, Y biến nào quan trọng hơn."
+    ],
+    "correctAnswers": [
+      "Có mối quan hệ giữa biến X và Y hay không?",
+      "Mối liên hệ có phải là tuyến tính hay không?",
+      "Sự biến thiên của biến Y có phụ thuộc vào biến X hay không?"
+    ],
+    "explanation": "Lời giải (Sol): chọn a,b,c (bỏ X,Y cái nào quan trọng hơn)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 38"
+  },
+  {
+    "id": 66,
+    "type": "single",
+    "text": "Phân tích thăm dò dữ liệu (EDA) là gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "EDA không phải là một tập các kỹ thuật, mà là một triết lý về cách mà chúng ta nên làm khi muốn hiểu về dữ liệu",
+      "EDA là tập các kỹ thuật cho phép chúng ta hiểu về dữ liệu bao gồm việc sử dụng các biểu đồ và các kỹ thuật thống kê.",
+      "EDA là việc sử dụng các biểu đồ để hiểu dữ liệu"
+    ],
+    "correctAnswers": [
+      "EDA không phải là một tập các kỹ thuật, mà là một triết lý về cách mà chúng ta nên làm khi muốn hiểu về dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): chọn a. triết lý (not kĩ thuật)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 67,
+    "type": "multiple",
+    "text": "Thực hiện phân tích thăm dò dữ liệu như thế nào?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Xem xét các thuộc tính mô tả độ đo trung tâm và độ đo phân tán của dữ liệu",
+      "Xem xét phân bố của dữ liệu",
+      "Xem xét các mối liên hệ giữa các biến trong dữ liệu",
+      "Xem xét đặc trưng cấu trúc của dữ liệu"
+    ],
+    "correctAnswers": [
+      "Xem xét các thuộc tính mô tả độ đo trung tâm và độ đo phân tán của dữ liệu",
+      "Xem xét phân bố của dữ liệu",
+      "Xem xét các mối liên hệ giữa các biến trong dữ liệu",
+      "Xem xét đặc trưng cấu trúc của dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): chọn hết (cũng dễ hiểu thôi)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 39"
+  },
+  {
+    "id": 68,
+    "type": "single",
+    "text": "Trọng tâm của phân tích thăm dò dữ liệu EDA là gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "EDA quan tâm tới cấu trúc, các ngoại lệ, và các mô hình từ dữ liệu",
+      "EDA quan tâm tới tất cả các điểm dữ liệu trong tập dữ liệu",
+      "Trực quan hoá và làm sạch dữ liệu",
+      "EDA quan tâm tới các công cụ cho phép xem xét cấu trúc, các ngoại lệ từ dữ liệu"
+    ],
+    "correctAnswers": [
+      "EDA quan tâm tới cấu trúc, các ngoại lệ, và các mô hình từ dữ liệu",
+      "EDA quan tâm tới tất cả các điểm dữ liệu trong tập dữ liệu"
+    ],
+    "explanation": "Lời giải (Sol): Chọn a,b",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 69,
+    "type": "single",
+    "text": "Với biểu đồ dưới đây thì phát biểu nào SAI?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Số lượng các cây có chiều cao từ 250 tới 300 là nhiều nhất.",
+      "Số lượng các cây có chiều cao từ 100 tới 150 là nhỏ nhất.",
+      "Có 30 cây có chiều cao là 150.",
+      "Có ít hơn hoặc bằng 50 cây có chiều cao là 300."
+    ],
+    "correctAnswers": [
+      "Có 30 cây có chiều cao là 150."
+    ],
+    "explanation": "Lời giải (Sol): chọn c. 30 cây cao 150",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 40"
+  },
+  {
+    "id": 70,
+    "type": "multiple",
+    "text": "Với cùng 1 tập dữ liệu, kết quả của giải thuật phân cụm K-means phụ thuộc vào những yếu tố nào?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cách tính độ đo khoảng cách.",
+      "Cách gộp các cụm.",
+      "Cấu hình số cụm ban đầu K.",
+      "Một phép đoán khởi đầu cho các centroids."
+    ],
+    "correctAnswers": [
+      "Cách tính độ đo khoảng cách.",
+      "Cấu hình số cụm ban đầu K.",
+      "Một phép đoán khởi đầu cho các centroids."
+    ],
+    "explanation": "Lời giải (Sol): a, c, d",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 71,
+    "type": "multiple",
+    "text": "Với cùng 1 tập dữ liệu, kết quả của giải thuật phân cụm phân cấp (Hierarchical clustering) phụ thuộc vào những yếu tố nào?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cách tính độ đo khoảng cách.",
+      "Cách gộp các cụm.",
+      "Cấu hình số cụm ban đầu K."
+    ],
+    "correctAnswers": [
+      "Cách tính độ đo khoảng cách.",
+      "Cách gộp các cụm."
+    ],
+    "explanation": "Lời giải (Sol): a, b",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 41"
+  },
+  {
+    "id": 72,
+    "type": "single",
+    "text": "Đâu là các thư viện và công cụ có thể sử dụng để thực hiện phân tích thăm dò dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "NLTK, Spacy",
+      "Requests, Scrapy, BeautifulSoup",
+      "Tensorflow, Keras, Scikit-learn",
+      "SciPy, NumPy, Matplotlib and Pandas"
+    ],
+    "correctAnswers": [
+      "SciPy, NumPy, Matplotlib and Pandas"
+    ],
+    "explanation": "Phân tích thăm dò dữ liệu (<b>EDA - Exploratory Data Analysis</b>) yêu cầu các công cụ thao tác dữ liệu cấu trúc, tính toán thống kê và trực quan hóa. <b>Pandas</b> cung cấp cấu trúc <i>DataFrame</i>, <b>NumPy/SciPy</b> tối ưu hóa các phép toán ma trận $\\mathcal{O}(1)$ bằng C-backend, và <b>Matplotlib</b> biểu diễn phân phối dữ liệu (Plotting). Các bộ thư viện khác phục vụ NLP (NLTK), Web Scraping (Scrapy) hoặc Deep Learning (TensorFlow).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 42"
+  },
+  {
+    "id": 73,
+    "type": "single",
+    "text": "Khả năng tổng quát hoá (Generalization) và Quá khớp (overfitting) là hai mặt đối lập của các mô hình học máy",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đúng",
+      "Không, chúng chưa chắc đã đối lập nhau",
+      "Chúng là hai đặc trưng độc lập"
+    ],
+    "correctAnswers": [
+      "Đúng"
+    ],
+    "explanation": "Theo nguyên lý Bias-Variance Tradeoff, <b>Overfitting</b> (quá khớp) tương ứng với mô hình có High Variance, học luôn cả nhiễu (noise) của tập huấn luyện $\\epsilon$. Khi overfitting tăng, độ đo lỗi trên tập kiểm thử $E_{test}$ tăng vọt, đồng nghĩa với việc khả năng <b>Generalization</b> (tổng quát hóa trên dữ liệu mới) bị suy giảm trực tiếp. Do đó, chúng là hai mặt đối lập hoàn toàn.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 74,
+    "type": "single",
+    "text": "Giả sử bạn muốn sử dụng một phương pháp học máy để phân tích tri thức ẩn bên trong một tập dữ liệu, nhưng không có ý niệm gì về những tri thức đó. Bạn có thể đưa về bài toán nào sau đây là phù hợp nhất?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Học không giám sát (Unsupervised learning)",
+      "Học có giám sát (Supervised learning)",
+      "Hồi quy (Regression)",
+      "Phân loại nhiều lớp (Multiclass classification)"
+    ],
+    "correctAnswers": [
+      "Học không giám sát (Unsupervised learning)"
+    ],
+    "explanation": "Việc không có ý niệm trước về tri thức tương đương với bài toán làm việc trên tập dữ liệu không gán nhãn (Unlabeled Dataset $D = \\{x_1, x_2, ..., x_N\\}$). <b>Học không giám sát</b> tự động tìm kiếm cấu trúc ngầm định (latent space) thông qua xác suất phân phối hoặc khoảng cách Euclide/Cosine, điển hình như Clustering (phân cụm) hay Dimensionality Reduction (giảm chiều).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 43"
+  },
+  {
+    "id": 75,
+    "type": "single",
+    "text": "Quá trình học một cây quyết định bằng thuật toán ID3 sẽ dừng nếu",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Cây đã phân loại chính xác hoàn toàn dữ liệu huấn luyện, hoặc tại bất kỳ một đường đi nào từ gốc đến lá, các thuộc tính đã được dùng hết",
+      "Cây đã phân loại chính xác hoàn toàn dữ liệu huấn luyện",
+      "Cây đã đủ lớn",
+      "Cây không thể phân loại chính xác hoàn toàn dữ liệu huấn luyện"
+    ],
+    "correctAnswers": [
+      "Cây đã phân loại chính xác hoàn toàn dữ liệu huấn luyện, hoặc tại bất kỳ một đường đi nào từ gốc đến lá, các thuộc tính đã được dùng hết"
+    ],
+    "explanation": "Giải thuật <b>ID3</b> đệ quy tách node cho đến khi đạt Base Case: (1) Node hiện hành đạt độ tinh khiết tối đa, Entropy $H(S) = 0$ (nghĩa là đã phân loại chính xác hoàn toàn nhánh đó); hoặc (2) Tập thuộc tính $A = \\emptyset$ (các thuộc tính dùng để split node đã bị cạn kiệt trên nhánh đi từ Root đến Leaf hiện tại).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 76,
+    "type": "single",
+    "text": "Vai trò của “information gain” trong thuật toán ID3 khi học một cây quyết định là gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Đo đạc tính phân biệt của các thuộc tính để tìm một thuộc tính kiểm tra tại mỗi đỉnh",
+      "Để xem độ tốt của một thuộc tính sau quá trình huấn luyện",
+      "Để đo đạc lỗi tại mỗi đỉnh trong cây",
+      "Không có vai trò gì"
+    ],
+    "correctAnswers": [
+      "Đo đạc tính phân biệt của các thuộc tính để tìm một thuộc tính kiểm tra tại mỗi đỉnh"
+    ],
+    "explanation": "<b>Information Gain (IG)</b> định lượng mức độ giảm bất định (Entropy) sau khi split dữ liệu theo thuộc tính $A$. Phương trình: $IG(S, A) = H(S) - \\sum_{v \\in Values(A)} \\frac{|S_v|}{|S|} H(S_v)$. Tại mỗi bước của ID3 (Greedy Search), thuật toán sẽ chọn thuộc tính có $\\arg\\max_{A} IG(S, A)$ làm node kiểm tra, nhằm tối ưu khả năng phân tách classes tốt nhất.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 44"
+  },
+  {
+    "id": 77,
+    "type": "single",
+    "text": "K-means là gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Một phương pháp phân cụm",
+      "Một phương pháp phân loại",
+      "Một phương pháp học có giám sát",
+      "Một phương pháp để tính trung bình số học từ dữ liệu"
+    ],
+    "correctAnswers": [
+      "Một phương pháp phân cụm"
+    ],
+    "explanation": "<b>K-means</b> là thuật toán cốt lõi của Học không giám sát, áp dụng vào bài toán <b>Phân cụm (Clustering)</b>. Thuật toán hoạt động bằng cách khởi tạo $K$ centroids ngẫu nhiên, sau đó lặp lại 2 bước liên tục: Assignment step (gán các điểm về centroid gần nhất) và Update step (cập nhật lại tọa độ centroid dựa trên trung bình các điểm), mục tiêu tối thiểu hóa WCSS (Within-Cluster Sum of Squares).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 78,
+    "type": "single",
+    "text": "Một phương pháp học máy có khả năng học được gì?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Một hàm mà có khả năng ánh xạ một điểm dữ liệu đầu vào đến một đầu ra",
+      "Tri thức mới để phán đoán đầu ra",
+      "Học để mô phỏng khả năng của con người",
+      "Bất kỳ thứ gì"
+    ],
+    "correctAnswers": [
+      "Một hàm mà có khả năng ánh xạ một điểm dữ liệu đầu vào đến một đầu ra"
+    ],
+    "explanation": "Bản chất toán học của Machine Learning là <b>Xấp xỉ hàm (Function Approximation)</b>. Quá trình huấn luyện sử dụng thuật toán tối ưu (vd: Gradient Descent) để tìm ra bộ trọng số $\\theta$ tối ưu, định hình một hàm giả thuyết $h(x; \\theta)$ sao cho tiệm cận gần nhất với hàm mục tiêu $f(x)$. Đích đến cuối cùng là ánh xạ chính xác một Input vector không gian $X$ sang Output value không gian $Y$.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 79,
+    "type": "single",
+    "text": "Sự khác nhau giữa học có giám sát và không giám sát nằm ở đâu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Tập huấn luyện, trong đó học có giám sát thường yêu cầu nhãn/ đầu ra cho mỗi mẫu dữ liệu",
+      "Kiểu đầu ra, trong đó học có giám sát thường có đầu ra là số thực",
+      "Cách chúng ta huấn luyện một mô hình, học có giám sát thường yêu cầu chỉ dẫn chi tiết từng bước học ra sao",
+      "Mục tiêu của thuật toán, học không giám sát thường không thực hiện phán đoán nào cả"
+    ],
+    "correctAnswers": [
+      "Tập huấn luyện, trong đó học có giám sát thường yêu cầu nhãn/ đầu ra cho mỗi mẫu dữ liệu"
+    ],
+    "explanation": "Điểm khác biệt định hình kiến trúc mô hình là <b>Ground-truth labels</b> trong tập huấn luyện. <b>Học có giám sát</b> yêu cầu cấu trúc $D = \\{(x_i, y_i)\\}$ (đặc trưng đi kèm nhãn cụ thể) để tính Loss Function và điều hướng trọng số. Trong khi đó, <b>Học không giám sát</b> chỉ nhận đầu vào là các véc-tơ đặc trưng $D = \\{x_i\\}$ hoàn toàn không được gắn nhãn trước.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 45"
+  },
+  {
+    "id": 80,
+    "type": "single",
+    "text": "Phương pháp bình phương tối thiểu học một hàm $f(x) = w_0 + w_1x_1 + \\dots + w_nx_n$ từ một tập học có cỡ $M$ bằng cách tìm véctơ $\\mathbf{w}^* = (w_0^*, w_1^*, \\dots, w_n^*)$, <b>trong đó</b>",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "$\\mathbf{w}^* = \\arg\\min_{\\mathbf{w}} \\sum_{i=1}^M (y_i - w_0 - w_1x_{i1} - \\dots - w_nx_{in})$",
+      "$\\mathbf{w}^* = \\arg\\min_{\\mathbf{w}} \\sum_{i=1}^M (y_i - w_0 - w_1x_{i1} - \\dots - w_nx_{in})^2$",
+      "$\\mathbf{w}^* = \\arg\\min_{\\mathbf{w}} \\sum_{i=1}^M (y_i - w_0 - w_1x_{i1} - \\dots - w_nx_{in})^2 + \\lambda \\|\\mathbf{w}\\|_2^2$"
+    ],
+    "correctAnswers": [
+      "$\\mathbf{w}^* = \\arg\\min_{\\mathbf{w}} \\sum_{i=1}^M (y_i - w_0 - w_1x_{i1} - \\dots - w_nx_{in})^2$"
+    ],
+    "explanation": "Phương pháp bình phương tối thiểu (Ordinary Least Squares - OLS) tìm véctơ trọng số bằng cách cực tiểu hóa tổng bình phương các sai số (Residual Sum of Squares)[cite: 1]. Đáp án thứ hai là công thức chuẩn của hàm mục tiêu OLS[cite: 1]. Đáp án đầu sai logic vì chưa bình phương sai số, có thể dẫn đến việc các sai số âm và dương triệt tiêu lẫn nhau[cite: 1]. Đáp án thứ ba là công thức của hồi quy Ridge (có thêm thành phần điều chuẩn L2 regularization), không phải OLS thuần túy[cite: 1].",
+    "scope": "Học máy (Machine Learning) / Hồi quy tuyến tính (Linear Regression)"
+  },
+  {
+    "id": 81,
+    "type": "single",
+    "text": "Vai trò của hàm lỗi thực nghiệm (empirical loss) là gì?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Để đo đạc lỗi phán đoán theo một nghĩa nào đó và hay được dùng làm hàm mục tiêu khi huấn luyện một mô hình",
+      "Để đo đạc lỗi phán đoán trong tương lai",
+      "Không có vai trò gì"
+    ],
+    "correctAnswers": [
+      "Để đo đạc lỗi phán đoán theo một nghĩa nào đó và hay được dùng làm hàm mục tiêu khi huấn luyện một mô hình"
+    ],
+    "explanation": "Hàm lỗi thực nghiệm (empirical loss) đo lường sai số phán đoán của mô hình trên chính tập dữ liệu huấn luyện (training set). Trong học máy, việc tối thiểu hóa hàm lỗi thực nghiệm (Empirical Risk Minimization) là mục tiêu phổ biến để tìm ra bộ tham số tốt nhất cho mô hình. Việc đo lường lỗi phán đoán trong tương lai (trên dữ liệu chưa từng thấy) là vai trò của hàm lỗi kỳ vọng (expected loss) hay đánh giá trên tập kiểm thử (test set).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 46"
+  },
+  {
+    "id": 82,
+    "type": "single",
+    "text": "Học máy (Machine Learning) cung cấp các phương pháp để phân tích dữ liệu và tạo các phán đoán cho dữ liệu trong tương lai",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Đúng",
+      "Sai, nó cung cấp các nền tảng để mở rộng tính toán",
+      "Đúng, nó còn cung cấp các nền tảng để tăng tốc tính toán"
+    ],
+    "correctAnswers": [
+      "Đúng"
+    ],
+    "explanation": "Học máy (Machine Learning) là một lĩnh vực của trí tuệ nhân tạo chuyên xây dựng các mô hình toán học dựa trên dữ liệu mẫu (dữ liệu huấn luyện) để phân tích, học hỏi các quy luật tổng quát, từ đó đưa ra các phán đoán hoặc quyết định chính xác đối với dữ liệu mới trong tương lai. Việc mở rộng hay tăng tốc tính toán là vai trò của các công nghệ phần cứng, điện toán đám mây và tính toán song song, không phải là định nghĩa cốt lõi của Học máy.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 83,
+    "type": "single",
+    "text": "Định lý “No-free-lunch” nói đến điều gì?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Không có thuật toán nào có thể đánh bại một thuật toán khác trên mọi miền bài toán",
+      "Không có bữa trưa miễn phí nào cho ai",
+      "Nếu không cố gắng nhất, một thuật toán không thể đánh bại các thuật toán khác"
+    ],
+    "correctAnswers": [
+      "Không có thuật toán nào có thể đánh bại một thuật toán khác trên mọi miền bài toán"
+    ],
+    "explanation": "Định lý 'No Free Lunch' (NFL) trong học máy phát biểu rằng: nếu lấy trung bình trên tất cả các bài toán (phân phối dữ liệu) có thể xảy ra, hiệu suất của mọi thuật toán học máy đều tương đương nhau. Điều này đồng nghĩa với việc không tồn tại một thuật toán vạn năng nào có khả năng cho kết quả tốt nhất (đánh bại các thuật toán khác) trên mọi bài toán cụ thể.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 47"
+  },
+  {
+    "id": 84,
+    "type": "single",
+    "text": "Overfitting nói đến tình huống nào?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Một phương pháp tạo ra tỉ lệ lỗi bé trên tập huấn luyện, nhưng có tỉ lệ lỗi lớn trên dữ liệu trong tương lai",
+      "Một phương pháp có thể phán đoán không chính xác về hành vi của một phương pháp khác",
+      "Quá ít dữ liệu huấn luyện",
+      "Có quá nhiều dữ liệu huấn luyện đến nỗi một máy tính có thể học dễ dàng"
+    ],
+    "correctAnswers": [
+      "Một phương pháp tạo ra tỉ lệ lỗi bé trên tập huấn luyện, nhưng có tỉ lệ lỗi lớn trên dữ liệu trong tương lai"
+    ],
+    "explanation": "Overfitting (Hiện tượng quá khớp) xảy ra khi mô hình học máy học quá chi tiết cả những tín hiệu nhiễu (noise) ngẫu nhiên trong dữ liệu huấn luyện. Hậu quả là mô hình có độ chính xác rất cao (tỉ lệ lỗi bé) trên tập dữ liệu này, nhưng lại mất đi tính tổng quát hóa dẫn đến phán đoán rất kém (tỉ lệ lỗi lớn) trên dữ liệu mới trong tương lai hoặc trên tập kiểm thử.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 85,
+    "type": "single",
+    "text": "Kỹ thuật nào sau đây có thể giúp giảm overfitting?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Sử dụng hiệu chỉnh (regularization), kỹ thuật thường giúp hạn chế không gian tìm kiếm khi huấn luyện một mô hình",
+      "Dùng một phương pháp/mô hình mới",
+      "Bỏ bớt dữ liệu nếu có quá nhiều"
+    ],
+    "correctAnswers": [
+      "Sử dụng hiệu chỉnh (regularization), kỹ thuật thường giúp hạn chế không gian tìm kiếm khi huấn luyện một mô hình"
+    ],
+    "explanation": "Kỹ thuật hiệu chỉnh (Regularization, ví dụ như L1, L2) giúp giảm overfitting bằng cách thêm một đại lượng phạt vào hàm mất mát (loss function), từ đó ép các trọng số của mô hình tiến gần về 0. Quá trình này làm giảm độ phức tạp của mô hình và hạn chế không gian tìm kiếm giải pháp, giúp mô hình bớt nhạy cảm với dữ liệu nhiễu. Việc bỏ bớt dữ liệu ngược lại thường làm tăng nguy cơ overfitting.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 48"
+  },
+  {
+    "id": 86,
+    "type": "single",
+    "text": "Học máy xuất hiện ở đâu trong một quy trình khoa học dữ liệu?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Bước mô hình hoá (modeling), nơi mà chúng ta dùng một phương pháp cụ thể để phân tích dữ liệu",
+      "Bước hiểu dữ liệu",
+      "Bước lựa chọn một cách tiếp cận để giải bài toán đang có"
+    ],
+    "correctAnswers": [
+      "Bước mô hình hoá (modeling), nơi mà chúng ta dùng một phương pháp cụ thể để phân tích dữ liệu"
+    ],
+    "explanation": "Trong quy trình chuẩn của một dự án Khoa học dữ liệu (ví dụ như quy trình CRISP-DM), Học máy (Machine Learning) được áp dụng chủ yếu ở pha Mô hình hóa (Modeling). Đây là bước hệ thống sử dụng các thuật toán cụ thể (như Hồi quy, Cây quyết định, Mạng nơ-ron,...) lên dữ liệu đã được làm sạch để huấn luyện ra các mô hình dự đoán hoặc phân loại.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 87,
+    "type": "single",
+    "text": "<b>Veracity</b> là một thách thức liên quan đến dữ liệu lớn và đề cập đến:",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Các loại dữ liệu khác nhau phải được xử lý: dữ liệu có cấu trúc / không có cấu trúc.",
+      "Sức mạnh tính toán mà dữ liệu lớn yêu cầu.",
+      "Dữ liệu đến liên tục và nhanh chóng.",
+      "Dữ liệu có độ không chắc chắn cao do sự hiện diện của thông tin giả mạo / nhiễu trong một số nguồn (đặc biệt là trên internet)."
+    ],
+    "correctAnswers": [
+      "Dữ liệu có độ không chắc chắn cao do sự hiện diện của thông tin giả mạo / nhiễu trong một số nguồn (đặc biệt là trên internet)."
+    ],
+    "explanation": "Trong đặc trưng các chữ V của dữ liệu lớn (Big Data), 'Veracity' (Tính xác thực) đề cập đến mức độ tin cậy, chất lượng và tính chính xác của dữ liệu. Dữ liệu lớn thường được thu thập từ vô số nguồn phi cấu trúc (ví dụ mạng xã hội, diễn đàn), dẫn đến thách thức lớn trong việc xử lý các thông tin bị thiếu, thông tin giả mạo hoặc chứa nhiều nhiễu (noise).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 49"
+  },
+  {
+    "id": 88,
+    "type": "single",
+    "text": "<b>Variety</b> là một thách thức liên quan đến dữ liệu lớn và đề cập đến:",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Các loại dữ liệu khác nhau phải được xử lý: dữ liệu có cấu trúc / không có cấu trúc.",
+      "Sức mạnh tính toán mà dữ liệu lớn yêu cầu.",
+      "Dữ liệu đến liên tục và nhanh chóng.",
+      "Dữ liệu có độ không chắc chắn cao do sự hiện diện của thông tin giả mạo / nhiễu trong một số nguồn (đặc biệt là trên internet)."
+    ],
+    "correctAnswers": [
+      "Các loại dữ liệu khác nhau phải được xử lý: dữ liệu có cấu trúc / không có cấu trúc."
+    ],
+    "explanation": "Đặc tính 'Variety' (Sự đa dạng) trong Big Data mô tả việc dữ liệu hiện đại không chỉ bó hẹp trong các bảng tính hay cơ sở dữ liệu quan hệ (dữ liệu có cấu trúc), mà còn bao gồm các dạng phi cấu trúc và bán cấu trúc như hình ảnh, âm thanh, video, log files, và văn bản tự do, đòi hỏi các công nghệ và phương pháp phân tích hoàn toàn mới.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 89,
+    "type": "multiple",
+    "text": "Làm cách nào để phân tích dữ liệu khả mở (scalable) cho dữ liệu lớn?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Song song hoá các giải thuật học máy",
+      "Sử dụng kiến trúc xử lý thời gian thực",
+      "Sử dụng phân tích thành phần chính (PCA)",
+      "Sử dụng mô hình mạng thần kinh sâu"
+    ],
+    "correctAnswers": [
+      "Song song hoá các giải thuật học máy",
+      "Sử dụng kiến trúc xử lý thời gian thực",
+      "Sử dụng phân tích thành phần chính (PCA)"
+    ],
+    "explanation": "Để hệ thống phân tích có tính khả mở (scalable) với Big Data, ta có thể áp dụng các cách tiếp cận: (1) Song song hóa thuật toán (như MapReduce, Spark) để phân chia lượng tính toán ra nhiều máy; (2) Dùng kiến trúc stream processing để xử lý dữ liệu ngay khi nó tới (thời gian thực); (3) Dùng PCA để giảm số chiều không gian đặc trưng của dữ liệu, giúp các thuật toán phía sau nhẹ và chạy nhanh hơn. Mạng thần kinh sâu (Deep Learning) tự thân nó đòi hỏi năng lực tính toán cực lớn, không phải là một phương pháp trực tiếp để giúp dữ liệu trở nên 'khả mở'.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 50"
+  },
+  {
+    "id": 90,
+    "type": "single",
+    "text": "Chỉ ra phát biểu đúng:",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Hadoop cần chạy trên phần cứng chuyên biệt, cấu hình cao để xử lý dữ liệu lớn.",
+      "Hadoop 2.0 trở lên cho phép chạy các công việc không phải là các công việc MapReduce.",
+      "Trong khung lập trình Hadoop, các tệp tin kết quả được phân chia thành các dòng hoặc bản ghi.",
+      "Không đáp án nào đúng."
+    ],
+    "correctAnswers": [
+      "Hadoop 2.0 trở lên cho phép chạy các công việc không phải là các công việc MapReduce."
+    ],
+    "explanation": "Kiến trúc Hadoop 2.0 mang đến một nâng cấp cốt lõi là YARN (Yet Another Resource Negotiator). YARN giúp tách biệt việc quản lý tài nguyên của cụm máy chủ và việc lập lịch thực thi tác vụ. Nhờ vậy, bên cạnh MapReduce truyền thống, Hadoop 2.0 có thể chạy đồng thời nhiều framework xử lý dữ liệu khác (như Apache Spark, Apache Tez, Flink,...). Đáp án đầu tiên sai vì Hadoop được thiết kế chuyên biệt để có thể mở rộng trên những phần cứng thông thường giá rẻ (commodity hardware) thay vì phần cứng cấu hình cao chuyên biệt.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 51"
+  },
+  {
+    "id": 91,
+    "type": "single",
+    "text": "Chọn phát biểu đúng:",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "MapReduce thực hiện mang dữ liệu tới các nút tính toán.",
+      "MapReduce mang tính toán tới các nút chứa dữ liệu.",
+      "Dữ liệu cho MapReduce bắt buộc nằm trên HDFS.",
+      "Tất cả các đáp án."
+    ],
+    "correctAnswers": [
+      "MapReduce mang tính toán tới các nút chứa dữ liệu."
+    ],
+    "explanation": "Nguyên lý cốt lõi của MapReduce là \"Data Locality\" (địa phương hóa dữ liệu), tức là mang quá trình tính toán (computation) đến tận các nút (node) đang lưu trữ khối dữ liệu thay vì di chuyển lượng lớn dữ liệu qua mạng đến các nút tính toán. Điều này giúp tiết kiệm băng thông mạng và tăng tốc độ xử lý. Dữ liệu đầu vào cho MapReduce cũng không bắt buộc phải nằm trên HDFS mà có thể lấy từ Amazon S3, cơ sở dữ liệu quan hệ, hoặc các hệ thống file khác.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 92,
+    "type": "single",
+    "text": "Phát biểu nào sau đây không đúng về Apache Hadoop?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Xử lý dữ liệu phân tán với mô hình lập trình đơn giản, thân thiện hơn như MapReduce",
+      "Hadoop thiết kế để mở rộng thông qua kỹ thuật scale-out, tăng số lượng máy chủ",
+      "Thiết kế để vận hành trên phần cứng phổ thông, có khả năng chống chịu lỗi phần cứng",
+      "Thiết kế để vận hành trên siêu máy tính, cấu hình mạnh, độ tin cậy cao"
+    ],
+    "correctAnswers": [
+      "Thiết kế để vận hành trên siêu máy tính, cấu hình mạnh, độ tin cậy cao"
+    ],
+    "explanation": "Hadoop được thiết kế đặc biệt để chạy trên các cụm máy chủ phần cứng phổ thông (commodity hardware) có giá thành rẻ, đồng thời sử dụng các cơ chế phần mềm (như nhân bản dữ liệu qua nhiều máy) để đảm bảo khả năng chịu lỗi (fault tolerance). Do đó, phát biểu cho rằng Hadoop thiết kế để chạy trên siêu máy tính, cấu hình mạnh đắt tiền là sai.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 52"
+  },
+  {
+    "id": 93,
+    "type": "single",
+    "text": "Công cụ nào có thể sử dụng để hỗ trợ import, export dữ liệu vào ra hệ sinh thái Hadoop?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Oozie",
+      "Flume",
+      "Sqoop",
+      "Hive"
+    ],
+    "correctAnswers": [
+      "Sqoop"
+    ],
+    "explanation": "Apache Sqoop là công cụ được thiết kế chuyên biệt để chuyển đổi dữ liệu khối lượng lớn (import/export) giữa hệ thống Hadoop (như HDFS, Hive, HBase) và các cơ sở dữ liệu quan hệ có cấu trúc (RDBMS như MySQL, Oracle). Trong khi đó, Flume dùng cho dữ liệu luồng/log (streaming), Oozie dùng để lên lịch tác vụ (workflow scheduler), và Hive là hệ thống kho dữ liệu (data warehouse) hỗ trợ truy vấn SQL.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 53"
+  },
+  {
+    "id": 94,
+    "type": "single",
+    "text": "Vai trò của YARN?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Quản lý và phân phối tài nguyên trong cụm Hadoop",
+      "Cung cấp giao diện người dùng mức cao, biến đổi truy vấn thành các job Mapreduce",
+      "Cung cấp các chức năng phối hợp phân tán độ tin cậy cao như quản lý thành viên, bầu cử, giám sát trạng thái hệ thống"
+    ],
+    "correctAnswers": [
+      "Quản lý và phân phối tài nguyên trong cụm Hadoop"
+    ],
+    "explanation": "YARN (Yet Another Resource Negotiator) được coi là hệ điều hành cụm (cluster operating system) của Hadoop từ phiên bản 2.0. Nó đóng vai trò quản lý, cấp phát tài nguyên tính toán (CPU, RAM) cho các ứng dụng và lên lịch thực thi công việc (job scheduling) trên cụm phân tán. Giao diện truy vấn mức cao là Hive/Pig, còn phối hợp phân tán là vai trò của ZooKeeper.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 54"
+  },
+  {
+    "id": 95,
+    "type": "single",
+    "text": "Hadoop là một hệ sinh thái bao gồm các thành phần nào:",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "MapReduce, YARN",
+      "MapReduce, MySQL",
+      "MapReduce, Skykeeper",
+      "MapReduce, Heron"
+    ],
+    "correctAnswers": [
+      "MapReduce, YARN"
+    ],
+    "explanation": "Lõi của hệ sinh thái Hadoop hiện đại (từ Hadoop 2.x) bao gồm 3 thành phần chính: HDFS (Lưu trữ phân tán), YARN (Quản lý tài nguyên) và MapReduce (Khung xử lý tính toán phân tán). MySQL là hệ quản trị CSDL quan hệ bên ngoài, Heron là một stream processing engine không thuộc lõi Hadoop, và Skykeeper không tồn tại trong hệ sinh thái này (có thể nhầm với ZooKeeper).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 55"
+  },
+  {
+    "id": 96,
+    "type": "single",
+    "text": "Hadoop đạt được độ tin cậy thông qua cơ chế nhân bản dữ liệu trên nhiều máy chủ, do đó không yêu cầu ______ trên các nút máy chủ này.",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "RAID",
+      "Hệ thống tệp tin cục bộ (Local file system)",
+      "Hệ điều hành"
+    ],
+    "correctAnswers": [
+      "RAID"
+    ],
+    "explanation": "Hadoop HDFS chịu lỗi ở mức độ phần mềm bằng cách nhân bản (replication) các block dữ liệu ra nhiều máy chủ DataNode khác nhau (mặc định là 3 bản sao). Nhờ vậy, nếu một ổ cứng bị hỏng thì dữ liệu vẫn còn ở các nút khác, do đó nó không yêu cầu các máy chủ phải thiết lập cơ chế chịu lỗi phần cứng đắt tiền như RAID (Redundant Array of Independent Disks) ở ổ cứng cục bộ.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 97,
+    "type": "single",
+    "text": "Hàm ______ chịu trách nhiệm tổng hợp kết quả từ các tác vụ Map().",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Reduce",
+      "Map",
+      "Sort",
+      "Không có phương án nào."
+    ],
+    "correctAnswers": [
+      "Reduce"
+    ],
+    "explanation": "Trong kiến trúc MapReduce, sau khi hàm Map() chia nhỏ và xử lý dữ liệu để tạo ra các cặp (key, value) trung gian, dữ liệu sẽ được xáo trộn và gom nhóm. Hàm Reduce() tiếp nhận các (key, list_of_values) này để tổng hợp (aggregate) và xuất ra kết quả cuối cùng.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 56"
+  },
+  {
+    "id": 98,
+    "type": "single",
+    "text": "Cơ chế tổ chức dữ liệu của DataNode trong HDFS?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Các chunk là các tệp tin trong hệ thống tệp tin cục bộ của máy chủ DataNode.",
+      "Các chunk là các vùng dữ liệu liên tục trên ổ cứng của máy chủ DataNode.",
+      "Các chunk được lưu trữ tin cậy trên DataNode theo cơ chế RAID."
+    ],
+    "correctAnswers": [
+      "Các chunk là các tệp tin trong hệ thống tệp tin cục bộ của máy chủ DataNode."
+    ],
+    "explanation": "Trong HDFS, các khối dữ liệu (block/chunk) thực chất được lưu trữ dưới dạng các tệp tin vật lý riêng biệt trên hệ thống tệp tin cục bộ (ví dụ: ext4, xfs) của máy chủ DataNode. DataNode không cần sắp xếp dữ liệu ở một vùng liên tục cụ thể trên đĩa cũng như không sử dụng phần cứng RAID, nó chỉ lưu file dưới dạng các chunk được cấu hình sẵn (mặc định 128MB).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 57"
+  },
+  {
+    "id": 99,
+    "type": "single",
+    "text": "Cơ chế nhân bản dữ liệu trong HDFS diễn ra như thế nào?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "NameNode quyết định vị trí các bản sao của các chunk trên DataNode.",
+      "DataNode là primary quyết định vị trí các bản sao của các chunk tại các secondary DataNode.",
+      "Client quyết định vị trí lưu trữ các bản sao với từng chunk."
+    ],
+    "correctAnswers": [
+      "NameNode quyết định vị trí các bản sao của các chunk trên DataNode."
+    ],
+    "explanation": "Trong HDFS, NameNode là trung tâm quản lý toàn bộ metadata của hệ thống. Dựa trên chính sách định tuyến (ví dụ: Rack Awareness), NameNode sẽ tính toán và quyết định chính xác các DataNode nào sẽ lưu trữ các bản sao (replica) của mỗi chunk để tối ưu hóa sự sẵn sàng và băng thông. Client hay DataNode không tự ý đưa ra quyết định này.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 100,
+    "type": "single",
+    "text": "HDFS được lập trình bằng ngôn ngữ nào?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "C++",
+      "Java",
+      "Scala",
+      "Không đáp án nào đúng."
+    ],
+    "correctAnswers": [
+      "Java"
+    ],
+    "explanation": "Hadoop, bao gồm cả hệ thống tệp phân tán HDFS và lõi MapReduce, được xây dựng và lập trình hoàn toàn bằng ngôn ngữ Java. Điều này giúp hệ sinh thái có thể triển khai dễ dàng, độc lập nền tảng trên mọi hệ điều hành có máy ảo Java (JVM).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 101,
+    "type": "single",
+    "text": "Tác vụ ...... có trách nhiệm xử lý một hoặc vài khối (chunk) dữ liệu và trả ra kết quả trung gian.",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Map",
+      "TaskTracker",
+      "Tất cả các phương án",
+      "Reduce"
+    ],
+    "correctAnswers": [
+      "Map"
+    ],
+    "explanation": "Trong mô hình xử lý MapReduce, tác vụ Map chịu trách nhiệm đọc dữ liệu đầu vào (đã được chia nhỏ thành các split/chunk), xử lý chúng và tạo ra các tập hợp cặp khóa-giá trị (key-value pairs) trung gian. Tác vụ Reduce sau đó mới nhận các kết quả trung gian này để tổng hợp lại.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 59"
+  },
+  {
+    "id": 102,
+    "type": "single",
+    "text": "Thành phần ...... có trách nhiệm thực thi các tác vụ (task) được giao bởi JobTracker.",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "MapReduce",
+      "Mapper",
+      "TaskTracker",
+      "JobTracker"
+    ],
+    "correctAnswers": [
+      "TaskTracker"
+    ],
+    "explanation": "Trong kiến trúc Hadoop 1.x, JobTracker là thành phần trung tâm quản lý tài nguyên và điều phối công việc, trong khi TaskTracker là các tiến trình chạy trên các máy trạm (worker nodes) làm nhiệm vụ tiếp nhận và thực thi trực tiếp các tác vụ (Map hoặc Reduce) do JobTracker phân công.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 103,
+    "type": "multiple",
+    "text": "Tình huống nào sau đây có thể <b>không phù hợp</b> với HDFS?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Đọc, ghi ngẫu nhiên vào tệp tin.",
+      "Lưu trữ dữ liệu liên quan đến các ứng dụng yêu cầu quyền truy cập dữ liệu có độ trễ thấp.",
+      "Lưu trữ các tệp tin kích thước nhỏ.",
+      "Không có đáp án đúng."
+    ],
+    "correctAnswers": [
+      "Đọc, ghi ngẫu nhiên vào tệp tin.",
+      "Lưu trữ các tệp tin kích thước nhỏ."
+    ],
+    "explanation": "HDFS được thiết kế tối ưu cho các luồng dữ liệu lớn với mô hình \"ghi một lần, đọc nhiều lần\" (Write-Once-Read-Many) và băng thông cao (throughput). Vì vậy, nó không phù hợp để: (1) Đọc/ghi ngẫu nhiên (random access); (2) Các ứng dụng cần độ trễ thấp (low latency) vì NameNode mất thời gian phân giải metadata; (3) Lưu trữ hàng triệu tệp tin nhỏ vì mỗi tệp đều tiêu tốn bộ nhớ RAM trên NameNode để lưu metadata, gây cạn kiệt tài nguyên cục bộ.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 60"
+  },
+  {
+    "id": 104,
+    "type": "multiple",
+    "text": "Đưa ra phát biểu đúng:",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Một công việc MapReduce thường chia tập dữ liệu đầu vào thành các phần độc lập được các tác vụ map xử lý theo cách hoàn toàn song song.",
+      "MapReduce xem dữ liệu là các cặp khoá-giá trị.",
+      "Các ứng dụng thường triển khai các giao diện Mapper và Reducer để cài đặt các phương thức map và reduce.",
+      "MapReduce chỉ làm việc với dữ liệu trên Hadoop HDFS."
+    ],
+    "correctAnswers": [
+      "Một công việc MapReduce thường chia tập dữ liệu đầu vào thành các phần độc lập được các tác vụ map xử lý theo cách hoàn toàn song song.",
+      "MapReduce xem dữ liệu là các cặp khoá-giá trị.",
+      "Các ứng dụng thường triển khai các giao diện Mapper và Reducer để cài đặt các phương thức map và reduce."
+    ],
+    "explanation": "Ba phát biểu đầu tiên mô tả chính xác kiến trúc và nguyên lý hoạt động của MapReduce. Phát biểu cuối cùng sai vì MapReduce không bị giới hạn chỉ xử lý dữ liệu trên HDFS; nó hoàn toàn có thể đọc và ghi dữ liệu từ các hệ thống khác như Local File System, Amazon S3, HBase, hoặc các cơ sở dữ liệu quan hệ (thông qua các Input/Output Format phù hợp).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 61"
+  },
+  {
+    "id": 105,
+    "type": "single",
+    "text": "Đưa ra đáp án đúng:",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Hive không phải là một cơ sở dữ liệu quan hệ mà là một công cụ truy vấn hỗ trợ SQL để truy vấn dữ liệu.",
+      "HBase là một cơ sở dữ lớn có hỗ trợ SQL.",
+      "Pig là một cơ sở dữ liệu quan hệ có hỗ trợ SQL.",
+      "Tất cả các phương án."
+    ],
+    "correctAnswers": [
+      "Hive không phải là một cơ sở dữ liệu quan hệ mà là một công cụ truy vấn hỗ trợ SQL để truy vấn dữ liệu."
+    ],
+    "explanation": "Apache Hive là một phần mềm kho dữ liệu (data warehouse) hoạt động trên nền tảng Hadoop, cung cấp ngôn ngữ HiveQL tương tự SQL để truy vấn dữ liệu lớn, nhưng bản thân nó không phải là Hệ quản trị CSDL quan hệ (RDBMS). HBase là CSDL NoSQL (không hỗ trợ SQL thuần túy, cần dùng Apache Phoenix nếu muốn viết SQL). Pig là một công cụ phân tích luồng dữ liệu dùng ngôn ngữ script (Pig Latin), không phải là cơ sở dữ liệu.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 63"
+  },
+  {
+    "id": 106,
+    "type": "single",
+    "text": "Một trang tin cậy (authority page) về một chủ đề là gì?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Là trang được trỏ tới từ nhiều hub tốt.",
+      "Là trang được trỏ tới từ nhiều trang tin cậy.",
+      "Là trang trỏ đến nhiều hubs tốt."
+    ],
+    "correctAnswers": [
+      "Là trang được trỏ tới từ nhiều hub tốt."
+    ],
+    "explanation": "Theo thuật toán HITS (Hyperlink-Induced Topic Search) đánh giá mức độ quan trọng của trang web, một trang 'authority' (trang thẩm quyền/tin cậy) được định nghĩa là trang chứa nội dung giá trị và được nhiều trang 'hub' (trang trung tâm) tốt trỏ link tới. Ngược lại, một trang 'hub' tốt là trang hoạt động như một danh bạ, trỏ link tới nhiều trang 'authority' tốt.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 65"
+  },
+  {
+    "id": 107,
+    "type": "single",
+    "text": "Xét ma trận $\\hat{P}$ thu được bằng cách cộng số $0.1$ vào tất cả các phần tử của ma trận xác suất chuyển $P$ ở trên. Vậy $\\hat{P}$ có tạo ra một chuỗi ergodic Markov không?",
+    "code": "",
+    "tables": [
+      {
+        "name": "Ma trận xác suất chuyển P",
+        "headers": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "rows": [
+          ["0", "1/2", "1/2", "0", "0"],
+          ["1/2", "0", "1/2", "0", "0"],
+          ["0", "1", "0", "0", "0"],
+          ["0", "0", "1/3", "1/3", "1/3"],
+          ["0", "0", "1/2", "1/2", "0"]
+        ]
+      }
+    ],
+    "link": "",
+    "options": [
+      "Có",
+      "Không",
+      "Chúng ta không thể nói gì về tính ergodic"
+    ],
+    "correctAnswers": [
+      "Không"
+    ],
+    "explanation": "Điều kiện bắt buộc của một ma trận xác suất chuyển trạng thái (Markov transition matrix) là tổng các phần tử trên mỗi hàng phải đúng bằng $1$. Nếu ta cộng thêm $0.1$ vào tất cả các phần tử, tổng các phần tử trên một hàng sẽ lớn hơn $1$. Khi đó $\\hat{P}$ không còn là một ma trận xác suất hợp lệ, do vậy không thể hình thành một chuỗi Markov (chưa nói đến việc có tính ergodic hay không).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 66"
+  },
+  {
+    "id": 108,
+    "type": "single",
+    "text": "Giá trị của ô $[1,1]$ trong ma trận kề của đồ thị sau là bao nhiêu?",
+    "code": "",
+    "tables": [],
+    "link": "https://drive.google.com/file/d/1cCwD5I_6Qrl0mx6vXR5dL1F_wSg5_RT6/view?usp=sharing",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correctAnswers": [
+      "2"
+    ],
+    "explanation": "Trong lý thuyết đồ thị, giá trị tại ô $[i, j]$ của ma trận kề biểu diễn số lượng cạnh nối trực tiếp từ đỉnh $i$ đến đỉnh $j$. Việc ô $[1,1]$ có giá trị bằng $2$ cho thấy có hai cạnh khuyên (self-loop) quay trở lại chính đỉnh $1$ trong đồ thị đó.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 67"
+  },
+  {
+    "id": 109,
+    "type": "single",
+    "text": "Một chuỗi Markov ergodic (ergodic Markov chain) là gì?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "Một chuỗi cho phép ta có thể đi dần dần từ bất kỳ trạng thái nào đến bất kỳ trạng thái khác với xác suất dương.",
+      "Một chuỗi cho phép ta có thể đi trực tiếp từ bất kỳ trạng thái nào đến bất kỳ trạng thái khác với xác suất dương.",
+      "Một chuỗi mà trong đó tồn tại một cặp trạng thái không thể đi đến nhau."
+    ],
+    "correctAnswers": [
+      "Một chuỗi cho phép ta có thể đi dần dần từ bất kỳ trạng thái nào đến bất kỳ trạng thái khác với xác suất dương."
+    ],
+    "explanation": "Chuỗi Markov được gọi là ergodic nếu nó hội đủ 2 yếu tố: liên thông (irreducible) và phi chu kỳ (aperiodic). Tính liên thông đảm bảo rằng hệ thống có thể chuyển từ bất kỳ trạng thái ban đầu nào đến bất kỳ trạng thái đích nào sau một số hữu hạn các bước chuyển (đi dần dần) với xác suất lớn hơn $0$. Nó không yêu cầu phải đi 'trực tiếp' (chỉ trong 1 bước).",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 110,
+    "type": "single",
+    "text": "Thuật toán PageRank xếp hạng các trang web như thế nào?",
+    "code": "",
+    "tables": [],
+    "link": "",
+    "options": [
+      "PageRank sử dụng tỉ lệ ghé thăm dài hạn (long-term visit rate) của mỗi trang web, và tỉ lệ đó được tính từ ma trận xác suất chuyển.",
+      "PageRank sử dụng số lượng kết nối vào mỗi trang web.",
+      "PageRank sử dụng số lượng kết nối ra từ mỗi trang web.",
+      "PageRank xếp hạng một cách ngẫu nhiên."
+    ],
+    "correctAnswers": [
+      "PageRank sử dụng tỉ lệ ghé thăm dài hạn (long-term visit rate) của mỗi trang web, và tỉ lệ đó được tính từ ma trận xác suất chuyển."
+    ],
+    "explanation": "Thuật toán PageRank mô hình hóa hành vi của một người lướt web ngẫu nhiên. Điểm PageRank của một trang chính là xác suất trạng thái dừng (steady-state probability) hay tỉ lệ ghé thăm dài hạn mà người đó sẽ dừng chân tại trang đó sau chuỗi vô hạn các lượt click ngẫu nhiên. Về mặt toán học, tỷ lệ này tương đương với vector riêng tĩnh (principal eigenvector) của ma trận xác suất chuyển đồ thị các liên kết.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 69"
+  },
+  {
+    "id": 111 - Đến đây,
+    "type": "essay",
+    "text": "Tác vụ nào không có trong phân tích liên kết? Xếp hạng đồ thị Nhận diện cộng đồng Dự đoán liên kết Phân tích cảm xúc",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 112,
+    "type": "essay",
+    "text": "Phương pháp mũ (Power method) có thể ... tính tỉ lệ ghé thăm dài hạn cho mỗi trang web tính phân bố xác suất trạng thái dừng (steady-state probability distribution) cho một chuỗi Markov dùng một chuỗi Markov để dự đoán một chuỗi các trang sẽ ghé thăm tính một chuỗi các trang sẽ ghé thăm, khi cho trước điểm xuất phát",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. tỉ lệ ghé thăm\nb. tính phân bố xác suất tt dừng",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 70"
+  },
+  {
+    "id": 113,
+    "type": "single",
+    "text": "Cho ma trận xác suất chuyển P ở trên. Cho biết P có tạo ra một chuỗi ergodic Markov không? Có",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không"
+    ],
+    "correctAnswers": [
+      "Không"
+    ],
+    "explanation": "Lời giải (Sol): chọn b.Không",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 71"
+  },
+  {
+    "id": 114,
+    "type": "essay",
+    "text": "Sự khác nhau giữa tập cơ sở (Base set S) và tập gốc (Root set W) trong thuật toán HITS là gì? Tập cơ sở được xây dựng từ tập gốc Tập gốc được xây dựng từ tập cơ sở Tập cơ sở là cơ sở để đánh giá chất lượng của các trang tìm được bởi HITS, dựa trên tập gốc",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 72"
+  },
+  {
+    "id": 115,
+    "type": "essay",
+    "text": "Thuật toán HITS xếp hạng các trang web như thế nào? HITS tìm ra một tập nhỏ các hubs và các trang tin cậy, sử dụng một thuật toán lặp để tính toán điểm số cho các trang HITS tìm ra một tập nhỏ các trang tin cậy, sử dụng một thuật toán lặp để tính toán phân bố xác suất trạng thái dừng HITS tìm ra một tập nhỏ các trang tin cậy, sử dụng một thuật toán lặp để tính toán tỉ lệ ghé thăm dài hạn",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. tính toán điểm (score)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 116,
+    "type": "essay",
+    "text": "Trong các độ đo thứ hạng đỉnh dưới đây, độ đo nào chỉ dựa trên các đỉnh liền kề của đỉnh đang xét Độ trung tâm lân cận (Closeness centrality) Độ trung tâm trung gian (Betweenness centrality) Độ quan trọng theo bậc (Degree prestige) Độ quan trọng lân cận (Proximity prestige)",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn c. qtrong theo bậc (degree prestige)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 73"
+  },
+  {
+    "id": 117,
+    "type": "essay",
+    "text": "Có bao nhiêu đường đi ngắn nhất từ A tới K trong đồ thị sau? 4 5 6 7",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn c.6",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 76"
+  },
+  {
+    "id": 118,
+    "type": "single",
+    "text": "Sử dụng thuật toán Dijkstra, đường đi ngắn nhất từ s tới c có độ dài... 8 10 6",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không có đường đi từ s tới c"
+    ],
+    "correctAnswers": [
+      "Không có đường đi từ s tới c"
+    ],
+    "explanation": "Lời giải (Sol): chọn c.6",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 119,
+    "type": "essay",
+    "text": "Cho một chuỗi Markov với 5 trạng thái và ma trận xác suất chuyển P ở trên. Giả sử chúng ta đang ở một trạng thái nào đó, được biểu diễn bởi véctơ xác suất ﻿. Vậy ta sẽ di chuyển đến trạng thái 3 với xác suất là bao nhiêu nếu dùng một bước ngẫu nhiên? 0.350 0 0.1000000 3 0",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): Dựa trên kiến thức cơ sở môn Khoa học dữ liệu.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 78"
+  },
+  {
+    "id": 120,
+    "type": "single",
+    "text": "(CV) Nếu độ sáng của một ảnh đa mức xám là 255, ảnh có đặc điểm nào dưới đây? Ảnh trắng toàn bộ Ảnh đen toàn bộ Ảnh có một vài khối đen, một vài khối trắng",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không có điểm gì quá đặc biệt, có các điểm ảnh có thể nhận giá trị đa dạng trong miền giá trị của nó. x = (0.1,0,0.2,0.3,0.4)"
+    ],
+    "correctAnswers": [
+      "Không có điểm gì quá đặc biệt, có các điểm ảnh có thể nhận giá trị đa dạng trong miền giá trị của nó. x = (0.1,0,0.2,0.3,0.4)"
+    ],
+    "explanation": "Lời giải (Sol): chọn a. trắng full",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 79"
+  },
+  {
+    "id": 121,
+    "type": "single",
+    "text": "(CV) Nếu độ sáng của một ảnh đa mức xám là 0, ảnh có đặc điểm nào dưới đây? Ảnh trắng toàn bộ Ảnh đen toàn bộ Ảnh có một vài khối đen, một vài khối trắng",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không có điểm gì quá đặc biệt, có các điểm ảnh có thể nhận giá trị đa dạng trong miền giá trị của nó."
+    ],
+    "correctAnswers": [
+      "Không có điểm gì quá đặc biệt, có các điểm ảnh có thể nhận giá trị đa dạng trong miền giá trị của nó."
+    ],
+    "explanation": "Lời giải (Sol): chọn b.đen full",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 122,
+    "type": "single",
+    "text": "(CV) Cho 2 histogram tương ứng của 2 ảnh như hình dưới, nhận định nào dưới đây là đúng? Histogram của ảnh I1 Histogram của ảnh I2 Độ sáng của ảnh I1 cao hơn độ sáng của ảnh I2. Độ sáng của ảnh I1 thấp hơn độ sáng của ảnh I2. Độ sáng của 2 ảnh tương tự nhau.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không so sánh được độ sáng của 2 ảnh này."
+    ],
+    "correctAnswers": [
+      "Không so sánh được độ sáng của 2 ảnh này."
+    ],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 80"
+  },
+  {
+    "id": 123,
+    "type": "essay",
+    "text": "(CV) Cho ảnh đa mức xám 256 mức không nén, cần bao nhiêu bytes để lưu trữ mỗi điểm ảnh? 1 3 8 24",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.1",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 81"
+  },
+  {
+    "id": 124,
+    "type": "essay",
+    "text": "(CV) Trong không gian màu nào thành phần màu và độ sáng không được mã hóa tách biệt trong các kênh? RGB HSV Lab YCbCr",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.RGB",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 125,
+    "type": "single",
+    "text": "(CV) Cho 2 histogram tương ứng của 2 ảnh như hình dưới, nhận định nào dưới đây là đúng? Histogram của ảnh I1 Histogram của ảnh I2 Độ tương phản của ảnh I1 tốt hơn độ tương phản của ảnh I2. Độ tương phản của ảnh I2 tốt hơn độ tương phản của ảnh I1. Độ tương phản của ảnh I2 tương tự độ tương phản của ảnh I1.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không so sánh được độ tương phản của ảnh I1 và I2."
+    ],
+    "correctAnswers": [
+      "Không so sánh được độ tương phản của ảnh I1 và I2."
+    ],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 82"
+  },
+  {
+    "id": 126,
+    "type": "essay",
+    "text": "(CV) Nhận định nào dưới đây là đúng? Histogram của hai ảnh khác nhau có thể giống nhau. Histogram của hai ảnh khác nhau luôn khác nhau. Histogram của ảnh luôn có 256 mức (256 bins). Nếu các đối tượng trong ảnh dịch sang trái 10 điểm ảnh, histogram của ảnh cũng được dịch sang trái.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.ảnh khác có thể giống hist.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 84"
+  },
+  {
+    "id": 127,
+    "type": "essay",
+    "text": "(CV) Mục đích của cân bằng histogram là gì? Tăng cường độ tương phản của ảnh.. Tăng độ sáng của ảnh. Biểu diễn nội dung của ảnh. Giảm nhiễu.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): Chọn a. tăng cường độ tương phản",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 85"
+  },
+  {
+    "id": 128,
+    "type": "essay",
+    "text": "(CV) Cho ảnh có đa mức xám 256 mức, cường độ sáng của điểm ảnh nhận giá trị trong khoảng nào? [0, 255] [0, 100] [0, 256] [1, 256]",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 129,
+    "type": "essay",
+    "text": "(CV) Nếu chúng ta chụp ảnh của cùng một đối tượng trong điều kiện chiếu sáng khác nhau, và biểu diễn chúng trong không gian màu Lab thì kênh màu nào có sự khác biệt lớn nhất giữa 2 ảnh? L a b a và b",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): Chọn L(luminance)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 86"
+  },
+  {
+    "id": 130,
+    "type": "essay",
+    "text": "(CV) Có bao nhiêu kênh trong ảnh RGB? 3 1 8 4",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): 3",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 131,
+    "type": "essay",
+    "text": "(CV) Mục đích của bộ phát hiện Canny? Phát hiện biên Trích chọn đặc trưng cục bộ Trích chọn đặc trưng toàn cục Loại bỏ nhiễu",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.biên",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 87"
+  },
+  {
+    "id": 132,
+    "type": "single",
+    "text": "(CV) Bộ phát hiện Canny sử đụng đạo hàm bậc mấy trên ảnh? Đạo hàm bậc nhất Đạo hàm bậc hai Cả đạo hàm bậc nhất và đạo hàm bậc 2",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không sử dụng đạo hàm bậc 1 hay bậc 2."
+    ],
+    "correctAnswers": [
+      "Không sử dụng đạo hàm bậc 1 hay bậc 2."
+    ],
+    "explanation": "Lời giải (Sol): chọn a. đạo hàm bậc nhất",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 88"
+  },
+  {
+    "id": 133,
+    "type": "essay",
+    "text": "(CV) Cho ảnh gốc ở bên trái, bộ lọc nào đã được sử dụng để thu được ảnh kết quả ở bên phải?? Bộ lọc Sobel Bộ lọc trung vị Bộ lọc Gauss Bộ lọc trung bình",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): Chọn a.Sobel",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 89"
+  },
+  {
+    "id": 134,
+    "type": "essay",
+    "text": "(CV) Cho một ma trận điểm ảnh (4x4) và một mặt nạ nhân chập, hãy cho biết giá trị của điểm ảnh (1,1) (điểm được in đậm) sau nhân chập? -60 60 22 50",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.-60 (lấy đối xứng qua tâm)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 90"
+  },
+  {
+    "id": 135,
+    "type": "single",
+    "text": "(CV) Nhận định nào dưới đây về nhân chập 2D KHÔNG chính xác? Giá trị mới của điểm ảnh được tính bằng tổng có trọng số các giá trị điểm ảnh trong lân cận của nó.. Cùng một hàm số được áp dụng lên tất cả các điểm ảnh. Nhân chập 2D có thể được dùng để loại nhiễu, tăng cường độ sắc nét của ảnh hoặc để phát hiện biên..",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "correctAnswers": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "explanation": "Lời giải (Sol): đúng hết",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 91"
+  },
+  {
+    "id": 136,
+    "type": "single",
+    "text": "(CV) Mệnh đề nào sau đây là đúng? Mặt nạ Laplace có thể dùng để tính đạo hàm bậc 2 của ảnh. Mặt nạ Laplace có thể dùng để tính đạo hàm bậc 1 của ảnh. Đạo hàm bậc 2 của ảnh không thể được sấp xỉ bởi phép nhân chập.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "correctAnswers": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "explanation": "Lời giải (Sol): chọn a. bậc 2",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 137,
+    "type": "essay",
+    "text": "(CV) Điểm biên được xác định bằng cách nào ? Tìm điểm đổi dấu (zero-crossing) trên đạo hàm bậc 2. Tìm cực trị địa phương trên đạo hàm bâc 1. Tìm điểm đổi dấu (zero-crossing) trên đạo hàm bậc 1. Tìm cực trị địa phương trên đạo hàm bâc 2.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a,b (detect edge)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 93"
+  },
+  {
+    "id": 138,
+    "type": "single",
+    "text": "(CV) Nhận định nào về đặc trưng ảnh sau đây là đúng? Đặc trưng cục bộ mô tả nội dung một vùng nào đó trong ảnh. Đặc trưng cục bộ biểu diễn thông tin của toàn bộ bức ảnh. Histogram của ảnh là một đặc trưng cục bộ.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "correctAnswers": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "explanation": "Lời giải (Sol): chọn a",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 139,
+    "type": "single",
+    "text": "(CV) Nhận định nào về đặc trưng ảnh sau đây là đúng? Đặc trưng toàn cục biểu diễn thông tin của toàn bộ bức ảnh. Đặc trưng cục bộ mô tả nội dung một vùng nào đó trong ảnh. SURF là một đặc trưng toàn cục.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "correctAnswers": [
+      "Không đáp án nào trong số các đáp án được đề cập."
+    ],
+    "explanation": "Lời giải (Sol): chọn a,b",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 94"
+  },
+  {
+    "id": 140,
+    "type": "essay",
+    "text": "(CV) Mặt nạ dưới đây dùng cho bộ lọc nào? Bộ lọc trung bình Bộ lọc trung vị Bộ lọc gauss Bộ lọc tăng cường độ sắc nét của cạnh",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.trung bình",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 95"
+  },
+  {
+    "id": 141,
+    "type": "essay",
+    "text": "(CV) Mặt nạ dưới đây dùng cho bộ lọc nào? Bộ lọc trung bình Bộ lọc trung vị Bộ lọc gauss Bộ lọc tăng cường độ sắc nét của cạnh",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn c.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 142,
+    "type": "essay",
+    "text": "(CV) Các vùng để tính đặc trưng cục bộ được xác định bằng cách nào? Sử dụng phương phân vùng ảnh Chia ảnh thành các mảnh sử dụng lưới chia định nghĩa trước Phát hiện các điểm đặc trưng và xác định vùng cục bộ xung quanh điểm đặc trưng đó. Tất cả các phương án được đề cập.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 96"
+  },
+  {
+    "id": 143,
+    "type": "essay",
+    "text": "(CV) Hai ảnh dưới đây được là kết quả thu được khi áp dụng mặt nạ trung bình có kích thước khác nhau trên cùng một ảnh. Nếu ảnh bên trái là kết quả của bộ lọc có kích thước 9 x 9 thì ảnh bên phải là kết quả tương ứng của mặt nạ có kích thước nào? 15 x 15 9 x 9 5 x 5 3 x 3",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.15x15 (mờ hơn thì mặt nạ to hơn)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 97"
+  },
+  {
+    "id": 144,
+    "type": "essay",
+    "text": "(CV) SIFT là gì? Đặc trưng cục bộ Đặc trưng toàn cục Phương pháp tăng cường độ tương phản Bộ phát hiện biên",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. cục bộ",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 98"
+  },
+  {
+    "id": 145,
+    "type": "essay",
+    "text": "Giả sử bạn dùng K-means để phân tích dữ liệu từ Facebook để tìm các nhóm người dùng đặc biệt. Khi tăng số lượng nhóm K lên, lỗi phân cụm trên tập huấn luyện sẽ luôn giảm. Bạn có thể gặp khó khi chọn K để thu được kết quả phân cụm tốt nhất. Khi đó bạn nên làm gì? Tìm một (hoặc vài) chuyên gia về lĩnh vực đó để đánh giá chất lượng của các nhóm/cụm tìm được Chọn K mà có lỗi phân cụm nhỏ nhất trên tập huấn luyện Chọn K mà có lỗi gần nhất với lỗi trung bình từ tất cả các thử nghiệm của bạn",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 146,
+    "type": "single",
+    "text": "Hold-out có phải là một phương pháp để tiền xử lý và hiểu dữ liệu?",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [
+      "Không, nó là một chiến lượng để đánh giá một mô hình Đúng, tất nhiên rồi Không, nó là một phương pháp để huấn luyện một mô hình từ một tập dữ liệu cho trước"
+    ],
+    "correctAnswers": [
+      "Không, nó là một chiến lượng để đánh giá một mô hình Đúng, tất nhiên rồi Không, nó là một phương pháp để huấn luyện một mô hình từ một tập dữ liệu cho trước"
+    ],
+    "explanation": "Lời giải (Sol): chọn a. evaluate",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 99"
+  },
+  {
+    "id": 147,
+    "type": "essay",
+    "text": "Giả sử bạn đã xây dựng một hệ thống phát hiện các tấn công mạng và chắc chắn rằng hệ thống đó có độ chính xác (accuracy) trên tập kiểm thử là 99%. Tuy nhiên, sếp của bạn nói rằng hệ thống đó không dùng được trong thực tế. Đâu có thể là lý do? Đánh giá của bạn về hệ thống đó có thể bị làm sai Độ chính xác có thể không phản ánh đúng mong muốn của sếp Sếp không có đủ tri thức để hiểu hệ thống đó và sự vất vả của bạn Tập huấn luyện có thể quá đơn giản. Bạn không may mắn",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. đánh giá sai\nb. độ chính xác ko phản ánh đúng",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 148,
+    "type": "essay",
+    "text": "Đánh giá mô hình là Việc đánh giá hiệu quả (chất lượng) của một mô hình hoặc phương pháp phân tích dữ liệu, bằng cách sử dụng một hoặc nhiều tập dữ liệu Việc đánh giá hiệu quả (chất lượng) của một mô hình hoặc phương pháp phân tích dữ liệu, chỉ bằng cách sử dụng các kịch bản thực tế Việc chúng ta khám phá một mô hình đã được học để tìm ra tri thức mới",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 100"
+  },
+  {
+    "id": 149,
+    "type": "essay",
+    "text": "Giả sử bạn huấn luyện một mô hình phân loại trên một tập huấn luyện gồm 10,000 điểm và thu được độ chính xác trên tập đó là 99%. Tuy nhiên, khi bạn gửi nó lên Kaggle thì thu được độ chính xác là 67%. Cách làm nào sau đây có khả năng giúp bạn tăng hiệu quả trên Kaggle? Đặt hệ số hiệu chỉnh (nếu có) bằng 0 Huấn luyện trên nhiều dữ liệu hơn Dùng bước tối ưu tham số Bỏ bớt dữ liệu một cách ngẫu nhiên khi huấn luyện",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn b. dùng nhiều data hơn\nc.tối ưu tham số",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 150,
+    "type": "essay",
+    "text": "Phát biểu nào sau đây là SAI? Đánh giá mô hình và lựa chọn mô hình trong Học máy là hai thứ độc lập với nhau Đánh giá mô hình thường yêu cầu thực hiện bước lựa chọn mô hình Lựa chọn mô hình là một bước bắt buộc khi muốn so sánh nhiều mô hình (hoặc phương pháp) học máy khác nhau",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. độc lập nhau (là sai)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 101"
+  },
+  {
+    "id": 151,
+    "type": "essay",
+    "text": "Phát biểu nào sau đây là phù hợp nhất về lựa chọn mô hình (model selection)? Lựa chọn mô hình quan tâm đến việc tìm thiết đặt tốt nhất về bộ (siêu) tham số trong một mô hình khi huấn luyện nó từ một tập dữ liệu. Đôi khi nó cũng nói đến việc lựa chọn một trong số các mô hình đang có. Lựa chọn mô hình chỉ quan tâm đến việc lựa chọn một mô hình tốt nhất từ một tập đang có. Các phát biểu khác đều sai.",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 152,
+    "type": "essay",
+    "text": "Khi sử dụng một phương pháp để phân tích dữ liệu, hai lần chạy khác nhau có thể thu được hai kết quả khác nhau mặc dù sử dụng cùng thiết đặt cho bộ tham số. Lý do có thể từ đâu? Do sự ngẫu nhiên khi chia tập dữ liệu đang có thành hai tập con dùng để huấn luyện và kiểm chứng Do việc sử dụng các thiết đặt khác nhau cho các tham số Do việc sử dụng các tập dữ liệu khác nhau Do dùng phương pháp đó sai cách Do tính ngẫu nhiên của thuật toán học/phân tích",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a,e (ngẫu nhiên khi split data, và tính random của \nthuật toán)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 102"
+  },
+  {
+    "id": 153,
+    "type": "essay",
+    "text": "Khi khám phá dữ liệu, bạn phát hiện ra rằng thuộc tính A có tương quan mạnh với nhãn lớp. Tuy nhiên, khi huấn luyện một mô hình học máy từ tập dữ liệu, A thường làm giảm đáng kể độ chính xác. Tại sao tình huống này có thể xảy ra? A là một thuộc tính nhiễu A có tương quan âm với nhãn lớp Đánh giá của bạn có thể chưa kỹ lưỡng A có thể phổ biến và không có tính tách biệt Tình huống này không thể xảy ra",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): Chọn c,d (đánh giá chưa kĩ hoặc thuộc tính phổ biến , không \ncó tính tách biệt)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 103"
+  },
+  {
+    "id": 154,
+    "type": "essay",
+    "text": "Khi khám phá dữ liệu, bạn phát hiện ra rằng thuộc tính A có tương quan rất bé với nhãn lớp. Tuy nhiên, khi huấn luyện một mô hình học máy từ tập dữ liệu, A thường làm tăng độ chính xác. Tại sao tình huống này có thể xảy ra? A là một thuộc tính nhiễu A có tương quan âm với nhãn lớp Cách bạn đo độ tương quan có thể chưa mô tả đúng sự phụ thuộc ẩn giữa A và nhãn lớp A có thể cung cấp thêm tri thức cho mô hình A có thể phổ biến cho tất cả các nhãn lớp Tình huống này không thể xảy ra",
+    "code": "",
+    "table": "",
+    "link": "",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn c,d ( cách đo chưa mô tả đúng, cung cấp thêm tri thức)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 155,
+    "type": "essay",
+    "text": "(viz) 3 tầng kiến trúc của ...... là backend, artist, và scripting. Seaborn Pyplot Matlab Matplotlib",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d. matplotlib",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 156,
+    "type": "essay",
+    "text": "(viz) Bạn sẽ làm gì khi muốn phân tích và khám phá dữ liệu? Thống kê các thông số của dữ liệu (min, max, avg, std,...) Tính toán tần suất xuất hiện của các giá trị dữ liệu Vẽ biểu đồ histogram của dữ liệu Tất cả các đáp án khác đều đúng",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d.tất cả",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 104"
+  },
+  {
+    "id": 157,
+    "type": "single",
+    "text": "(viz) Chỉ ra phát biểu đúng về biểu đồ scatter plot. Tập hợp các điểm được vẽ theo cả hai chiều thẳng đứng và nằm ngang Tập hợp các điểm được vẽ ngẫu nhiên trong hệ trục toạ độ Tập hợp các điểm nằm tập trung quanh một đường thẳng",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [
+      "Không phát biểu nào đúng"
+    ],
+    "correctAnswers": [
+      "Không phát biểu nào đúng"
+    ],
+    "explanation": "Lời giải (Sol): chọn a. tập hợp các điểm 2D",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 158,
+    "type": "essay",
+    "text": "(viz) Chỉ ra phát biểu đúng về hình sau: Biểu đồ cột về dữ liệu chiều cao của cây Histogram về dữ liệu chiều cao của cây Đồ thị hiển thị dữ liệu về số lượng cây Đồ thị hiển thị dữ liệu về chiều cao của cây",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn b.hist",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 105"
+  },
+  {
+    "id": 159,
+    "type": "essay",
+    "text": "(viz) Khi phân tích histogram của dữ liệu, chúng ta muốn tìm kiếm những thông tin gì về dữ liệu? Correlation Asymmetry Statistical information Outliers",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn b,d (asymmetry, outliers)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 106"
+  },
+  {
+    "id": 160,
+    "type": "essay",
+    "text": "(viz) Loại biểu đồ nào sau đây giúp biểu diễn trực quan dữ liệu dạng phân cấp tốt nhất? Treemap Population pyramid Bar chart Các lựa chọn khác là sai",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. treemap",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 107"
+  },
+  {
+    "id": 161,
+    "type": "essay",
+    "text": "(viz) Loại biểu đồ nào thích hợp khi chúng ta muốn theo dõi sự thay đổi theo thời gian? Line graph Column Graph Bar Graph Tất cả các lựa chọn",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d. tất cả (cũng hợp lí thôi)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 162,
+    "type": "essay",
+    "text": "(viz) Loại công cụ trực quan hoá nào sẽ được sử dụng để biểu diễn độ phức tạp mã nguồn phần mềm? Trực quan hoá khoa học Trực quan hoá toán học Trực quan hoá thông tin",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn c",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 108"
+  },
+  {
+    "id": 163,
+    "type": "essay",
+    "text": "(viz) Loại đồ thị nào ít nhập nhằng nhất và thường là lựa chọn tốt nhất để bắt đầu khám phá dữ liệu? Table chart Pie Chart Radial column chart Bar chart",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.table chart",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 164,
+    "type": "essay",
+    "text": "(viz) Một phiên bản của scatter plot cho phép hiển thị dữ liệu 3 chiều? A heatmap A scatter map A bubble plot Các lựa chọn khác là sai",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d. tất cả sai (đáp án đúng là 3D scatter plot)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 165,
+    "type": "essay",
+    "text": "(viz) Một đối tượng cho phép giải thích cho các biểu tượng, màu sắc và các hình dạng mẫu được sử dụng trong các biểu đồ gọi là gì? Legend Chart title Axis title Data label",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.legend",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 109"
+  },
+  {
+    "id": 166,
+    "type": "essay",
+    "text": "(viz) Nhiệt độ thuộc loại dữ liệu nào trong các loại sau đây? Dữ liệu rời rạc không sắp xếp Dữ liệu liên tục sắp xếp được Dữ liệu rời rạc sắp xếp được Dữ liệu liên tục không sắp xếp được",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn b.ltuc sắpxeeps đc",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 167,
+    "type": "essay",
+    "text": "(viz) Những đặc trưng nào về dữ liệu có thể được trực quan hoá trong các biểu đồ scatterplot? Correlation Associations Skewness Dispersion",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a,b (correlation, associations)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 110"
+  },
+  {
+    "id": 168,
+    "type": "essay",
+    "text": "(viz) Phát biểu nào đúng nhất về pie chart? Pie chart được dùng khi chúng ta muốn thể hiện sự kết hợp của các thành phần khác nhau trong dữ liệu Pie chart là 1 đồ thị hình tròn được chia thành các mảng khác nhau, mỗi mảng biểu hiện sự thay đổi theo thời gian Pie chart được sử dụng khi muốn so sánh các hạng mục dữ liệu Các phát biểu khác là sai",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. thể hiện sự kết hợp của các thành phần khác nhau",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 169,
+    "type": "essay",
+    "text": "(viz) Thông tin nào chúng ta có thể rút ra khi quan sát biểu đồ box plot? Lower/upper quantile Gap Probability distribution Skewness",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a.quantile , d. skewness",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 111"
+  },
+  {
+    "id": 170,
+    "type": "essay",
+    "text": "(viz) Thư viện nào cần được sử dụng nếu muốn trực quan hoá dữ liệu với Python? Numpy Pandas Seaborn Pyplot, pandas, seaborn",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d. pyplot, pandas,seaborn",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 171,
+    "type": "essay",
+    "text": "(viz) Thư viện nào của Python thường được sử dụng để trực quan hoá dữ liệu? NLTK, Spacy, … Requests, Scrapy, BeautifulSoup, … Tensorflow, Keras, scikit-learn, … SciPy, NumPy, Matplotlib and Pandas, …",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d.",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 112"
+  },
+  {
+    "id": 172,
+    "type": "essay",
+    "text": "(viz) Trong các phát biểu sau, đâu là phát biểu đúng nhất về việc lựa chọn kĩ thuật trực quan hoá phù hợp cho một loại dữ liệu? Thu thập dữ liệu, Tổ chức dữ liệu và phân tích dữ liệu Sử dụng biểu đồ cột phù hợp cho tất cả các loại dữ liệu Tạo ra các câu hỏi từ một kĩ thuật trực quan hoá dữ liệu Tất cả các phát biểu khác đều đúng",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. thu thập→ tổ chưcs→ phân tích",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 173,
+    "type": "essay",
+    "text": "(viz) Đâu là kết hợp đúng nhất về hàm (function) và tham số (parameter) để tạo ra 1 biểu đồ box plot trong Matplotlib? Function = plot, and Parameter = type with value = “box” Function = boxplot, and Parameter = type with value = “plot” Function = plot and Parameter = kind with value = “box” Function = plot and Parameter = kind with value = “boxplot”",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn a. plot(…,type=’box’)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 6"
+  },
+  {
+    "id": 174,
+    "type": "essay",
+    "text": "(viz) Đoạn code sau đây thể hiện đồ thị nào? question.plot(kind=’barh’) Line graph Column Graph Bar Graph Các lựa chọn khác là sai",
+    "code": "",
+    "table": "",
+    "link": "Cần bổ sung thêm ảnh",
+    "options": [],
+    "correctAnswers": [],
+    "explanation": "Lời giải (Sol): chọn d sai hết ( horizontal bar chart)",
+    "scope": "Khoa học dữ liệu - ôn tập.pdf — Trang 113"
+  }
+]
